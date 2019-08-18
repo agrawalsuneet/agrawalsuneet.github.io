@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Suneet Agrawal</title>
+    <link>https://agrawalsuneet.github.io/</link>
+    <description>Recent content on Suneet Agrawal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Mar 2019 09:51:51 -0400</lastBuildDate>
+    
+	<atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Source Contribution</title>
+      <link>https://agrawalsuneet.github.io/opensourcecontribution/</link>
+      <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/opensourcecontribution/</guid>
+      <description>Contribution to public repositories   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } } .center-justified { text-align: justify; margin: 0 auto; }    CameraView  CameraView is a well documented, high-level library that makes capturing pictures and videos easy, addressing most of the common issues and needs, and still leaving you with flexibility where needed.
+  My contribution to this public repository was the implementation of live filters using fragment and vertex shaders on the previewing and capturing of camera feed on openGL surface view.</description>
+    </item>
+    
+    <item>
+      <title>Personal Games &amp; Apps</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/</link>
+      <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/</guid>
+      <description>Unity Games   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } } .center-justified { text-align: justify; margin: 0 auto; }    Fire Block  Shoot the blocks and make your way
+  Escape between the blocks by making a safe passage to stay alive or shoot them all to increase your score if you really can.  &amp;#39;Fire Block&amp;#39; is a simple arcade game where the player can be controlled with a single finger movement on the screen.</description>
+    </item>
+    
+    <item>
+      <title>Public Appearances</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/</link>
+      <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
+      <description>Upcoming   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } } .center-justified { text-align: justify; margin: 0 auto; }    Speaker at MobileConf 2019  Bangkok, Thailand - 24 Aug 2019
+  Mobile Conf is the conference that gathers people who interested to see the future of mobile development and meet up people with the same interest. They focus heavily on quality and diversity in their topics, no matter what platform you are working on.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Mon, 27 May 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Medium Posts (32 posts)   .center-justified { text-align: justify; margin: 0 auto; }    Native Android screenshot/image sharing in Unity using FileProvider  Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app. read more   28 May 2019        .</description>
+    </item>
+    
+  </channel>
+</rss>

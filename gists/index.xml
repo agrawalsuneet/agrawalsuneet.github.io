@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gists on Suneet Agrawal</title>
+    <link>https://agrawalsuneet.github.io/gists/</link>
+    <description>Recent content in Gists on Suneet Agrawal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 09:51:51 -0400</lastBuildDate>
+    
+	<atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
+      <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
+      <description> This particular script will help you to implement native Android text sharing in Unity. This uses all the native class of Android in Unity using AndroidJavaClass and AndroidJavaObject and performs the Android&#39;s ACTION_SEND in Unity.   For further explaination on how this works, please read the article Native Android text sharing in Unity app.    </description>
+    </item>
+    
+  </channel>
+</rss>

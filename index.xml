@@ -12,13 +12,31 @@
     
     
     <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Wed, 30 Oct 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Medium Posts (33 posts)    partition() : Kotlin  The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations. read more   23 Oct 2019         Native Android screenshot/image sharing in Unity using FileProvider  Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application.</description>
+    </item>
+    
+    <item>
       <title>Public Appearances</title>
       <link>https://agrawalsuneet.github.io/publicappearances/</link>
       <pubDate>Sat, 24 Aug 2019 09:51:51 -0400</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
-      <description>Past   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } } .center-justified { text-align: justify; margin: 0 auto; }    Speaker at GDG Devfest Kolkata  Kolkata, India - 4 Aug 2019
+      <description>Past   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } }    Speaker at GDG Devfest Kolkata  Kolkata, India - 4 Aug 2019
   Do APK or app size matters? Does a user think about the APK size before downloading it? What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not?</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
+      <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
+      <description> This particular script will help you to implement native Android text sharing in Unity. This uses all the native class of Android in Unity using AndroidJavaClass and AndroidJavaObject and performs the Android&#39;s ACTION_SEND in Unity.   For further explaination on how this works, please read the article Native Android text sharing in Unity app.    </description>
     </item>
     
     <item>
@@ -27,7 +45,7 @@
       <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
       
       <guid>https://agrawalsuneet.github.io/opensourcecontribution/</guid>
-      <description>Contribution to public repositories   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } } .center-justified { text-align: justify; margin: 0 auto; }    CameraView  CameraView is a well documented, high-level library that makes capturing pictures and videos easy, addressing most of the common issues and needs, and still leaving you with flexibility where needed.
+      <description>Contribution to public repositories   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } }    CameraView  CameraView is a well documented, high-level library that makes capturing pictures and videos easy, addressing most of the common issues and needs, and still leaving you with flexibility where needed.
   My contribution to this public repository was the implementation of live filters using fragment and vertex shaders on the previewing and capturing of camera feed on openGL surface view.</description>
     </item>
     
@@ -37,17 +55,8 @@
       <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
       
       <guid>https://agrawalsuneet.github.io/personalgamesandapps/</guid>
-      <description>Unity Games   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } } .center-justified { text-align: justify; margin: 0 auto; }    Fire Block  Shoot the blocks and make your way
+      <description>Unity Games   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } }    Fire Block  Shoot the blocks and make your way
   Escape between the blocks by making a safe passage to stay alive or shoot them all to increase your score if you really can.  &amp;#39;Fire Block&amp;#39; is a simple arcade game where the player can be controlled with a single finger movement on the screen.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Mon, 27 May 2019 09:51:51 -0400</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Medium Posts (32 posts)   .center-justified { text-align: justify; margin: 0 auto; }    Native Android screenshot/image sharing in Unity using FileProvider  Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app. read more   28 May 2019        .</description>
     </item>
     
   </channel>

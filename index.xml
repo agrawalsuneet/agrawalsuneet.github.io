@@ -12,12 +12,57 @@
     
     
     <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-in-unity/</link>
+      <pubDate>Thu, 14 Nov 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
+      <description>An example of implementing Android native code in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
+      <pubDate>Wed, 13 Nov 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
+      <description>An example of implementing native Android text sharing in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing to particular app in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</link>
+      <pubDate>Tue, 12 Nov 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</guid>
+      <description>An example of implementing native Android text sharing to a particular app using app&amp;rsquo;s package name in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</link>
+      <pubDate>Mon, 11 Nov 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</guid>
+      <description>An example of implementing native Android image/screenshot sharing in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing using FileProvider in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-using-fileprovider-in-unity/</link>
+      <pubDate>Sun, 10 Nov 2019 09:51:51 -0400</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-using-fileprovider-in-unity/</guid>
+      <description>An example of implementing native Android image/screenshot sharing using FileProvider in Unity.</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://agrawalsuneet.github.io/publications/</link>
       <pubDate>Wed, 30 Oct 2019 09:51:51 -0400</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Medium Posts (33 posts)    partition() : Kotlin  The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations. read more   23 Oct 2019         Native Android screenshot/image sharing in Unity using FileProvider  Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application.</description>
+      <description>Medium Posts (33 posts)   partition() : Kotlin   The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations. read more   23 Oct 2019     Native Android screenshot/image sharing in Unity using FileProvider   Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application.</description>
     </item>
     
     <item>
@@ -28,15 +73,6 @@
       <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
       <description>Past   img { width:100% } @media screen and (min-width: 768px) { img { width:60% } }    Speaker at GDG Devfest Kolkata  Kolkata, India - 4 Aug 2019
   Do APK or app size matters? Does a user think about the APK size before downloading it? What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not?</description>
-    </item>
-    
-    <item>
-      <title>Native Android text sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
-      <pubDate>Sat, 17 Aug 2019 09:51:51 -0400</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
-      <description> This particular script will help you to implement native Android text sharing in Unity. This uses all the native class of Android in Unity using AndroidJavaClass and AndroidJavaObject and performs the Android&#39;s ACTION_SEND in Unity.   For further explaination on how this works, please read the article Native Android text sharing in Unity app.    </description>
     </item>
     
     <item>

@@ -42,7 +42,7 @@ h1{
     margin:.67em 0
 }
 mark{
-    background:#ff0;
+    background:#ddd;
     color:#000
 }
 small{
@@ -1150,8 +1150,9 @@ small,.small{
     font-size:88%
 }
 mark,.mark{
-    background-color:#fcf8e3;
-    padding:.2em
+    padding-left:4px;
+    padding-right:4px;
+    border-radius: 2px;
 }
 .text-left{
     text-align:left
@@ -1391,7 +1392,7 @@ pre code{
     margin-right:auto;
     margin-left:auto;
     padding-left:15px;
-    padding-right:15px
+    padding-right:15px;
 }
 @media (min-width:768px){
     .container{
@@ -5742,8 +5743,3 @@ pre{
 }
 
 
-/* Custom classes */
-.center-justified {
-    text-align: justify;
-    margin: 0 auto;
-  }

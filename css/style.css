@@ -1366,7 +1366,6 @@ kbd kbd{
 pre{
     display:block;
     padding:12px;
-    margin:0 0 12.5px;
     font-size:17px;
     line-height:1.42857143;
     word-break:break-all;
@@ -5709,7 +5708,7 @@ a:hover,a:active{
     font-family:'Oswald',sans-serif
 }
 pre{
-    font-size:.85em
+    font-size:.95em
 }
 .panel-footer{
     border:none;

@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Inheritance vs Extension functions</title>
+      <link>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</guid>
+      <description>We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.  Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs   Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it. read more   02 Dec 2019    Medium Posts (33 posts)   partition() : Kotlin   The collection is something which is used by almost everyone.</description>
+    </item>
+    
+    <item>
       <title>Native Android in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-in-unity/</link>
       <pubDate>Thu, 14 Nov 2019 09:51:51 -0400</pubDate>
@@ -54,15 +72,6 @@
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-using-fileprovider-in-unity/</guid>
       <description>An example of implementing native Android image/screenshot sharing using FileProvider in Unity.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Wed, 30 Oct 2019 09:51:51 -0400</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Medium Posts (33 posts)   partition() : Kotlin   The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations. read more   23 Oct 2019     Native Android screenshot/image sharing in Unity using FileProvider   Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application.</description>
     </item>
     
     <item>

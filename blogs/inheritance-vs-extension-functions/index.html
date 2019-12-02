@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="inheritance vs extension functions,extension functions vs inheritance,inheritance,extension functions,extension functions kotlin, imheritance kotlin, kotlin">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Inheritance vs Extension functions" />
+  <meta property="og:title" content="Inheritance vs Extension functions">
+  <meta property="twitter:title" content="Inheritance vs Extension functions">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Inheritance vs Extension functions">
+  <meta name="description" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
+  <meta property="og:description" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
+  <meta property="twitter:description" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
+  <meta name="abstract" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
+  <meta name="summary" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-12-02">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Inheritance vs Extension functions &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+
+  
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Inheritance vs Extension functions</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br>
+<div class="center-justified text-content">
+        We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.
+        </br>
+        Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other. Once you understand the difference, it will be very easy to decide what to use.
+        </br>
+        </br>
+        Let&rsquo;s understand with code first what are both. I am going to explain using Kotlin language example but the concept is the same across all the languages.
+</div>
+</br></p>
+
+<h3>
+        Inheritance
+</h3>
+
+<div class="center-justified text-content">
+Inheritance is nothing but extending a class and adding functionality to it. You can add properties (variables) as well as functions in the extending class. You can access the variables of extending (Base) class if they are not private (protected or internal or public) can override them if they are not final (open variables) or you can override the functions also.
+
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>open class <b>Person</b>(var firstName : String,<br/>                  protected var lastName : String) {<br/>    open fun getFullDetails() : String {<br/>       return "$firstName $lastName"<br/>    }<br/>}<br/><br/>class <b>Student</b> : <b>Person</b> {<br/>    var rollNumber = 0<br/>    <br/>    constructor(firstName : String, <br/>            lastName: String,<br/>            rollNumber : Int) <br/>            : super (firstName, lastName){<br/>        this.rollNumber = rollNumber<br/>    }<br/>    <br/>    override fun getFullDetails() : String {<br/>     return "$firstName $lastName with Roll number as $rollNumber"<br/>  }<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+And we can call it by using
+</div>
+
+<pre>
+  <br/>var student = Student ("Suneet", "Agrawal", 12)<br/>println(student.getFullDetails())<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+Here we added a property i.e. rollNumber and override the function.
+</br>
+Now let's have a look at almost similar functionality using Extension functions.
+</br>
+</br>
+
+<h3>
+        Extension Function
+</h3>
+
+Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
+</div>
+
+<pre>
+  <br/>class <b>Employee</b>(var firstName : String, var lastName : String) {<br/>}<br/><br/>fun Employee.getFullDetails() : String {<br/>    return "$firstName $lastName"<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+We have a similar kind of class which is non open (final class). we added a function <mark>getFullDetails</mark> as an extension function to the employee class and we call the above function as
+</div>
+
+<pre>
+  <br/>var emp = Employee("Suneet", "Agrawal")<br/>println(emp.getFullDetails())<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+Now that we understand what is extension functions and what is an inheritance, let try to find out the difference which will make our life really easy while choosing what to use when.
+
+</br>
+</br>
+
+<div style="margin-left: 32px; margin-right: 32px;">
+  <img src="../../gif/post_inheritance_vs_extension_functions.gif" alt="Inheritance vs Extension functions">
+</div>
+
+<p></br>
+</br></p>
+
+<h4>
+Merits of Extension functions
+</h4>
+
+<ul>
+  <li>Can add functionality to a final class also. The class need not be a non-final (open) class.</li>
+  <li>Can add functionality without subclassing that means the object reference and the implementation can be of your base class.</li>
+</ul> 
+
+<p></br></p>
+
+<h4>
+Demerits of Extension functions
+</h4>
+
+<ul>
+  <li>Can't access the protected variables/properties or functions of your base class.</li>
+  <li>Can't add any new variable/properties in your extension functions. You can add a property by just writing getter and setter but only without backing field. So basically you can't add a field in the base class.</li>
+</ul> 
+
+<p></br></p>
+
+<h4>
+Merits of Inheritance
+</h4>
+
+<ul>
+  <li>Can add new properties, override functions (non-final) of the base class.</li>
+  <li>Can access all protected variables and functions of the base class.</li>
+</ul> 
+
+<p></br></p>
+
+<h4>
+Demerits of Inheritance
+</h4>
+
+<ul>
+  <li>Can't extend a final class.</li>
+</ul> 
+
+<p></br></p>
+
+<p>I hope this made clear on what are the merits and demerits of extension functions and inheritance. Please note that the extension functions are resolved statically.</p>
+
+<p></div></p>
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

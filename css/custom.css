@@ -12,3 +12,11 @@ div.center-aligned {
   text-align: center;
 }
 
+div.text-content{
+  font-size: 20px;
+}
+
+pre b{
+  color:blue;
+}
+

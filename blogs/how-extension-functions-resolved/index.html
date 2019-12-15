@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="inheritance vs extension functions,extension functions vs inheritance,inheritance,extension functions,extension functions kotlin, inheritance kotlin, kotlin">
+  <meta name="keywords" content="extension functions,extension functions kotlin,statically,kotlin,programming">
 
 
   
@@ -28,26 +28,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Inheritance vs Extension functions" />
-  <meta property="og:title" content="Inheritance vs Extension functions">
-  <meta property="twitter:title" content="Inheritance vs Extension functions">
+  <meta name="title" content="Suneet Agrawal | How extension functions resolved?" />
+  <meta property="og:title" content="How extension functions resolved?">
+  <meta property="twitter:title" content="How extension functions resolved?">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Inheritance vs Extension functions">
-  <meta name="description" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
-  <meta property="og:description" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
-  <meta property="twitter:description" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
-  <meta name="abstract" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
-  <meta name="summary" content="Suneet Agrawal | We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.">
+  <meta name="topic" content="How extension functions resolved?">
+  <meta name="description" content="Suneet Agrawal | how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &#39;Statically&#39;. What does statically means?">
+  <meta property="og:description" content="Suneet Agrawal | how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &#39;Statically&#39;. What does statically means?">
+  <meta property="twitter:description" content="Suneet Agrawal | how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &#39;Statically&#39;. What does statically means?">
+  <meta name="abstract" content="Suneet Agrawal | how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &#39;Statically&#39;. What does statically means?">
+  <meta name="summary" content="Suneet Agrawal | how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &#39;Statically&#39;. What does statically means?">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2019-12-02">
+  <meta property="article:published_time" content="2019-12-15">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -57,7 +57,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -69,7 +69,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Inheritance vs Extension functions &middot; Suneet Agrawal</title>
+  <title>How extension functions resolved? &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,134 +211,76 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Inheritance vs Extension functions</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">How extension functions resolved?</h1>
 	</header>
 
 	<article>
 		<div class="col-xs-12">
 			<p></br>
 <div class="center-justified text-content">
-        We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.
+        &ldquo;how are extension functions resolved?&rdquo;
         </br>
-        Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other. Once you understand the difference, it will be very easy to decide what to use.
+          This question is being asked by almost everyone both in and outside the interviews. 
+        </br>
+          Even I have asked this question to many candidates during the interview. 
+          </br>
+          The shorted or the only answer I get is &ldquo;Statically&rdquo;.
         </br>
         </br>
-        Let&rsquo;s understand with code first what are both. I am going to explain using Kotlin language example but the concept is the same across all the languages.
+        What does statically means?
+        </br>
+        Or how does extension functions are actually resolved?
+        </br>
+        </br>
+        Let&rsquo;s understand this with an example.
+        </br>
+        Consider we have two classes <mark>BaseClass</mark> and <mark>DerivedClass</mark>.
+        We added an extension function with the same function name to both the classes.
 </div>
 </br></p>
 
-<h3>
-        Inheritance
-</h3>
-
-<div class="center-justified text-content">
-Inheritance is nothing but extending a class and adding functionality to it. You can add properties (variables) as well as functions in the extending class. You can access the variables of extending (Base) class if they are not private (protected or internal or public) can override them if they are not final (open variables) or you can override the functions also.
-
-</div>
-
-<p></br></p>
-
 <pre>
-  <br/>open class <b>Person</b>(var firstName : String,<br/>                  protected var lastName : String) {<br/>    open fun getFullDetails() : String {<br/>       return "$firstName $lastName"<br/>    }<br/>}<br/><br/>class <b>Student</b> : <b>Person</b> {<br/>    var rollNumber = 0<br/>    <br/>    constructor(firstName : String, <br/>            lastName: String,<br/>            rollNumber : Int) <br/>            : super (firstName, lastName){<br/>        this.rollNumber = rollNumber<br/>    }<br/>    <br/>    override fun getFullDetails() : String {<br/>     return "$firstName $lastName with Roll number as $rollNumber"<br/>  }<br/>}<br/>
+  <br/>open class <b>BaseClass</b><br/><br/>class <b>DerivedClass</b> : <b>BaseClass()</b><br/><br/>fun <b>BaseClass</b>.someMethod(){<br/>    print("BaseClass.someMethod")<br/>}<br/><br/>fun <b>DerivedClass</b>.someMethod(){<br/>    print("DerivedClass.someMethod")<br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-And we can call it by using
+Now if we try to call the someMethod with <mark>BaseClass</mark> reference but the actual object we passed to it will be <mark>DerivedClass</mark> object,
 </div>
 
 <pre>
-  <br/>var student = Student ("Suneet", "Agrawal", 12)<br/>println(student.getFullDetails())<br/>
+  <br/>fun printMessage(base : BaseClass){<br/>    base.someMethod()<br/>}<br/><br/>//actual call<br/>printMessage(DerivedClass())<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-Here we added a property i.e. rollNumber and override the function.
-</br>
-Now let's have a look at almost similar functionality using Extension functions.
-</br>
-</br>
-
-<h3>
-        Extension Function
-</h3>
-
-Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
+This will print <mark>BaseClass.someMethod</mark>
 </div>
-
-<pre>
-  <br/>class <b>Employee</b>(var firstName : String, var lastName : String) {<br/>}<br/><br/>fun Employee.getFullDetails() : String {<br/>    return "$firstName $lastName"<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-We have a similar kind of class which is non open (final class). we added a function <mark>getFullDetails</mark> as an extension function to the employee class and we call the above function as
-</div>
-
-<pre>
-  <br/>var emp = Employee("Suneet", "Agrawal")<br/>println(emp.getFullDetails())<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-Now that we understand what is extension functions and what is an inheritance, let try to find out the difference which will make our life really easy while choosing what to use when.
-
-</br>
 </br>
 
 <div style="margin-left: 32px; margin-right: 32px;">
-  <img src="../../gif/post_inheritance_vs_extension_functions.gif" alt="Inheritance vs Extension functions">
+  <img src="../../gif/post_how_extension_functions_resolved.gif" alt="How extension functions resolved?">
 </div>
 
-<p></br>
-</br></p>
+<h3>
+        Confused why?
+</h3>
 
-<h4>
-Merits of Extension functions
-</h4>
-
-<ul>
-  <li>Can add functionality to a final class also. The class need not be a non-final (open) class.</li>
-  <li>Can add functionality without subclassing that means the object reference and the implementation can be of your base class.</li>
-</ul> 
-
-<p></br></p>
-
-<h4>
-Demerits of Extension functions
-</h4>
-
-<ul>
-  <li>Can't access the protected variables/properties or functions of your base class.</li>
-  <li>Can't add any new variable/properties in your extension functions. You can add a property by just writing getter and setter but only without backing field. So basically you can't add a field in the base class.</li>
-</ul> 
-
-<p></br></p>
-
-<h4>
-Merits of Inheritance
-</h4>
-
-<ul>
-  <li>Can add new properties, override functions (non-final) of the base class.</li>
-  <li>Can access all protected variables and functions of the base class.</li>
-</ul> 
-
-<p></br></p>
-
-<h4>
-Demerits of Inheritance
-</h4>
-
-<ul>
-  <li>Can't extend a final class.</li>
-</ul> 
-
-<p></br></p>
-
-<p>I hope this made clear on what are the merits and demerits of extension functions and inheritance. Please note that the extension functions are resolved statically.</p>
-
-<p></div></p>
+<div class="center-justified text-content">
+Because the extension function being called depends only on the declared type of the parameter <mark>base</mark> in <mark>printMessage</mark> method, which is the <mark>BaseClass</mark> class. 
+</br>
+</br>
+This is different from runtime polymorphism as here it is resolved statically but not at the runtime. 
+</br>
+</br>
+It completely depends on which class object is calling the function and the extension function of that class only will be called which is why it is called static. 
+</br>
+</br>
+The basic difference between extension functions and inheritance is references are resolved statically in extension functions whereas, in inheritance, it is resolved by run time polymorphism. If you wish to read more about the differences between inheritance and extension functions, please read <a href="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">this</a> blog.
+</br>
+</br>
+So next time if someone asks you "how are extension functions resolved?", Please complete your answer with an example instead of just saying it is resolved statically.
+</div>
 
 		</div>
 	</article>

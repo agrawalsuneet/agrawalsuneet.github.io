@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="native android in unity, unity android, android unity, native android unity, unity 3d, android unity3d, android unity2d">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Native Android in Unity" />
+  <meta property="og:title" content="Native Android in Unity">
+  <meta property="twitter:title" content="Native Android in Unity">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Native Android in Unity">
+  <meta name="description" content="Suneet Agrawal | While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.">
+  <meta property="og:description" content="Suneet Agrawal | While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.">
+  <meta property="twitter:description" content="Suneet Agrawal | While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.">
+  <meta name="abstract" content="Suneet Agrawal | While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.">
+  <meta name="summary" content="Suneet Agrawal | While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-02-08">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/native-android-in-unity/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/native-android-in-unity/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/native-android-in-unity/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/native-android-in-unity/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Native Android in Unity &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+
+  
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Native Android in Unity</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/native-android-unity.png" alt="Native Android in Unity"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.
+        </br>
+        </br>
+        Let’s take a very basic example of native android functionality ie showing a <a href="https://developer.android.com/guide/topics/ui/notifiers/toasts" target="_blank">Toast</a> using unity app.
+        </br>
+        </br>
+        For all those who are not familiar with what a toast is, toast is a simple message popup that appears at the bottom side (by default) of the screen with a custom message and for a long or short duration.
+        A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/native-android-in-unity/toast-android.png" alt="Native Android in Unity"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        To show this toast in native android we need a simple call to the <mark>Toast</mark> class static method <mark>makeText</mark> which return us a <mark>Toast</mark> class object and then call <mark>show</mark> method on that object.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>//Java Code<br/>Context context = getApplicationContext();<br/>CharSequence text = "This is a toast";<br/>int duration = Toast.LENGTH_SHORT;<br/><br/>Toast toast = Toast.makeText(context, text, duration);<br/>toast.show();<br/>//Kotlin Code<br/>val text = "This is a toast"<br/>val duration = Toast.LENGTH_SHORT<br/><br/>val toast = Toast.makeText(applicationContext, text, duration)<br/>toast.show()<br/>
+</pre>
+
+
+<p></br>
+</br></p>
+
+<div class="center-justified text-content">
+        <mark>makeText</mark> accepts three arguments,
+        </br>
+        1. <a href="https://developer.android.com/reference/android/content/Context" target="_blank">Context</a>: the reference of current <a href="https://developer.android.com/reference/android/app/Activity" target="_blank">activity</a> or <a href="https://developer.android.com/reference/android/app/Application" target="_blank">application</a>
+        </br>
+        2. Text to show (CharSequence): text needs to be displayed
+        </br>
+        3. Duration (int): duration for which the toast needs to be displayed
+        </br>
+        </br>
+        The duration value can choose between <a href="https://developer.android.com/reference/android/widget/Toast#LENGTH_LONG" target="_blank">Toast.LENGTH_LONG</a> or <a href="https://developer.android.com/reference/android/widget/Toast#LENGTH_SHORT" target="_blank">Toast.LENGTH_SHORT</a>.
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/native-android-in-unity/native-android-in-unity.gif" alt="Native Android in Unity"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        Now in order to show the same code in unity app, we need use the same Toast class of android but how?
+        </br>
+        </br>
+        using <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html" target="_blank">AndroidJavaClass</a> and <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.html" target="_blank">AndroidJavaObject</a>.
+        </br>
+        </br>
+        <mark>AndroidJavaClass</mark> is the Unity representation of a generic instance of java.lang.Class whereas <mark>AndroidJavaObject</mark> is the Unity representation of a generic instance of java.lang.Object.
+        </br>
+        </br>
+        First, lets put a Platform <a href="https://docs.unity3d.com/Manual/PlatformDependentCompilation.html" target="_blank">#define</a> directives because this particular piece of code will only be supported on the Android platform
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>//C# code<br/>#if <b>UNITY_ANDROID</b><br/>//our entire code<br/>//..<br/>#endif<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Next, create a new <mark>AndroidJavaClass</mark> object of <mark>Toast</mark> class.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>AndroidJavaClass toastClass = <br/>               new AndroidJavaClass("android.widget.Toast");<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The constructor of <mark>AndroidJavaClass</mark> takes a <mark>string</mark> object as the argument. The <mark>string</mark> should be the fully qualified name (&lt;packagename&gt;.&lt;classname&gt;) of the class whose reference need to be created. In our case, the fully qualified name of <mark>Toast</mark> class will be <mark>android.widget.Toast</mark> which can be obtained from the official documents of <mark>Toast</mark> class <a href="https://developer.android.com/reference/android/widget/Toast" target="_blank">here</a>.
+        </br>
+        </br>
+        Now, as we know that <mark>makeText</mark> method of <mark>Toast</mark> class accepts three arguments, but the <mark>AndroidJavaObject.Call</mark> or <mark>AndroidJavaObject.CallStatic</mark> method accepts all the arguments as an <mark>object array</mark> so let’s create an object array with all the required arguments in it.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>//create an object array of 3 size<br/>object[] toastParams = new object[3];<br/><br/>//create a class reference of unity player activity<br/>AndroidJavaClass unityActivity = <br/>        new AndroidJavaClass ("com.unity3d.player.UnityPlayer");<br/><br/>//set the first object in the array <br/>//as current activity reference<br/>toastParams[0] = <br/>    unityActivity.GetStatic<AndroidJavaObject> ("currentActivity");<br/><br/>//set the second object in the array <br/>//as the CharSequence to be displayed<br/>toastParams[1] = "This is a Toast";<br/><br/>//set the third object in the array<br/>//as the duration of the toast from<br/>toastParams[2] = toastClass.GetStatic<int> ("LENGTH_LONG");<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        The thing to notice here is the <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.GetStatic.html" target="_blank">AndroidJavaObject.GetStatic</a> method. This method is used to get the value of a static field in an object type.
+        </br>
+        </br>
+        Now that we have the object array ready, let’s call the makeText method of Toast class with passing the object array as an argument.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>AndroidJavaObject toastObject =<br/>                toastClass.CallStatic<AndroidJavaObject><br/>                             ("makeText", toastParams);<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.CallStatic.html" target="_blank">AndroidJavaObject.CallStatic</a> method is used to call a static Java method on a class. This method returns us an <mark>AndroidJavaObject</mark> class object which is the <mark>Toast</mark> class object in our case. We can call the <mark>show</mark> method on this object now.
+</div>
+
+<p></br>
+</br></p>
+
+<pre>
+  <br/>toastObject.Call ("show");<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.Call.html" target="_blank">AndroidJavaObject.Call</a> method is used to call a Java method on an object (non-static).
+        </br>
+        </br>
+        The entire code put together will be
+</div>
+
+<p></br>
+</br></p>
+
+<pre>
+  <br/>//C# code<br/>private void ShowToast(){<br/> <br/>         #if UNITY_ANDROID<br/> <br/>         AndroidJavaClass toastClass = <br/>                    new AndroidJavaClass("android.widget.Toast");<br/> <br/>         object[] toastParams = new object[3];<br/>         AndroidJavaClass unityActivity = <br/>           new AndroidJavaClass ("com.unity3d.player.UnityPlayer");<br/>         toastParams[0] = <br/>                      unityActivity.GetStatic<AndroidJavaObject><br/>                                ("currentActivity");<br/>         toastParams[1] = "This is a Toast";<br/>         toastParams[2] = toastClass.GetStatic<int><br/>                                ("LENGTH_LONG");<br/> <br/>         AndroidJavaObject toastObject = <br/>                         toastClass.CallStatic<AndroidJavaObject><br/>                                       ("makeText", toastParams);<br/>         toastObject.Call ("show");<br/> <br/>         #endif<br/>     }<br/>
+</pre>
+
+
+<p></br>
+</br></p>
+
+<p><img class="blogimg" src="../../img/blogs/native-android-in-unity/toast-unity.png" alt="Native Android in Unity"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        This will show the required native toast. This toast can be shown on any button click, on start/update or any other method of any game object, on some action performed or network call response, anywhere.
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/native-android-in-unity/native-android-in-unity-2.gif" alt="Native Android in Unity"></p>
+
+<p></br>
+</br></p>
+
+<div class="center-justified text-content">
+        You can find the complete code in a c# Class/MonoBehaviour with all the required functionalities <a href="../../gists/native-android-in-unity/">here</a>.
+</div>
+
+<p></br>
+</br></p>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="../">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="../inheritance-vs-extension-functions/">
+        Inheritance vs Extension functions &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

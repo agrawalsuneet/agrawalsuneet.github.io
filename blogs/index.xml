@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>lateinit property in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
+      <description>There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.</description>
+    </item>
     
     <item>
       <title>Native Android in Unity</title>

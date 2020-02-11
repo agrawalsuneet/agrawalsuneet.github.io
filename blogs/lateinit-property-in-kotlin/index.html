@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="lateinit, lateinit kotlin, late initialized property, property, late initialized, kotlin late initialized, kotlin property, kotlin">
 
 
   
@@ -28,25 +28,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Blogs" />
-  <meta property="og:title" content="Blogs">
-  <meta property="twitter:title" content="Blogs">
+  <meta name="title" content="Suneet Agrawal | lateinit property in Kotlin" />
+  <meta property="og:title" content="lateinit property in Kotlin">
+  <meta property="twitter:title" content="lateinit property in Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Blogs">
-  <meta name="description" content="">
-  <meta property="og:description" content="">
-  <meta property="twitter:description" content="">
-  <meta name="abstract" content="">
-  <meta name="summary" content="">
+  <meta name="topic" content="lateinit property in Kotlin">
+  <meta name="description" content="Suneet Agrawal | There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.">
+  <meta property="og:description" content="Suneet Agrawal | There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.">
+  <meta property="twitter:description" content="Suneet Agrawal | There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.">
+  <meta name="abstract" content="Suneet Agrawal | There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.">
+  <meta name="summary" content="Suneet Agrawal | There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.">
 
   
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-02-11">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -56,7 +57,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -68,7 +69,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Blogs &middot; Suneet Agrawal</title>
+  <title>lateinit property in Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -195,105 +196,137 @@
 				<div id="post" class="col-xs-12">
 
 
-<article>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Blogs</a></h1>
+		<h1 style="margin-left:15px; margin-right:15px;">lateinit property in Kotlin</h1>
 	</header>
-	</br>
 
-	
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
 
-	<div class="col-xs-12 col-md-11 center-justified">
-		<h5>
-			<a href="https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/" style="font-size:20px;">
-				How extension functions resolved?
-			</a>
-		</h5>
-		<p style="margin-top:8px">
-			how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &lsquo;Statically&rsquo;. What does statically means? <a href="https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/"> read more</a>
-		</p>
+<div class="center-justified text-content">
+        There can be two ways to declare and initialize a var property
+</div>
 
-		<div style="font-size: 15px;">
-			15 Dec 2019
+<p></br></p>
+
+<pre>
+  <br/>var variable : <b>CustomClass</b> = CustomClass() <br/> or<br/>var variable : <b>CustomClass?</b> = null<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.
+        </br>
+        But in the second type, the property is initialized with a null value and will require a null check (?.) always while using it.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>variable?.someMethodCall()<br/>//or<br/>variable!!.someMethodCall()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        There can be a use case where we don’t want to initialize the property while declaration but also at the same time we don’t want a null check on that property every time as we are sure that while using that property, it’s value will be not null for sure. Conditions like initialization of property via dependency injection or in a setup method of unit test.
+        </br>
+        </br>
+        To handle this kind of cases, we can mark the property with the ‘lateinit’ modifier
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/><b>lateinit</b> var variable : <b>CustomClass</b><br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        the property ‘variable’ can be initialized later in the constructor or in any method before accessing it. Also, it doesn’t require a null check (!!) every time while using it.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>variable = CustomClass()<br/>variable.someMethodCall()<br/>
+</pre>
+
+
+<p></br>
+</br></p>
+
+<h4>
+Limitations of Late-Initialized Properties
+</h4>
+
+<div class="center-justified text-content">
+        <ol>
+                <li>lateinit can only be used with var properties declared inside the body of class (not in the primary constructor) but not inside any method.</li>
+                <li>It can only be used when the property does not have a custom getter or setter.</li>
+                <li>The type of the property must be non-null, and it must not be a primitive type.</li>
+                <li>Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn’t been initialized.</li>
+                </br>
+        </ol>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="../">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="../how-extension-functions-resolved/">
+        How extension functions resolved? &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
 		</div>
+	</article>
+</main>
 
-		<div class="panel panel-default" style="margin-right:10px"></div>
-	</div>
-	
+&nbsp;
 
-	<div class="col-xs-12 col-md-11 center-justified">
-		<h5>
-			<a href="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/" style="font-size:20px;">
-				Inheritance vs Extension functions
-			</a>
-		</h5>
-		<p style="margin-top:8px">
-			We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it. <a href="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/"> read more</a>
-		</p>
 
-		<div style="font-size: 15px;">
-			02 Dec 2019
-		</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-		<div class="panel panel-default" style="margin-right:10px"></div>
-	</div>
-	
 
-	<div class="col-xs-12 col-md-11 center-justified">
-		<h5>
-			<a href="https://agrawalsuneet.github.io/blogs/native-android-in-unity/" style="font-size:20px;">
-				Native Android in Unity
-			</a>
-		</h5>
-		<p style="margin-top:8px">
-			While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. <a href="https://agrawalsuneet.github.io/blogs/native-android-in-unity/"> read more</a>
-		</p>
-
-		<div style="font-size: 15px;">
-			22 Jun 2018
-		</div>
-
-		<div class="panel panel-default" style="margin-right:10px"></div>
-	</div>
-	
-
-	<div class="col-xs-12 col-md-11 center-justified">
-		<h5>
-			<a href="https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/" style="font-size:20px;">
-				lateinit property in Kotlin
-			</a>
-		</h5>
-		<p style="margin-top:8px">
-			There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it. <a href="https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/"> read more</a>
-		</p>
-
-		<div style="font-size: 15px;">
-			10 Nov 2017
-		</div>
-
-		<div class="panel panel-default" style="margin-right:10px"></div>
-	</div>
-	
-
-	<div class="col-xs-12 col-md-11 center-justified">
-		<h5>
-			<a href="https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/" style="font-size:20px;">
-				Backing Field in Kotlin
-			</a>
-		</h5>
-		<p style="margin-top:8px">
-			Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier. <a href="https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/"> read more</a>
-		</p>
-
-		<div style="font-size: 15px;">
-			05 Aug 2017
-		</div>
-
-		<div class="panel panel-default" style="margin-right:10px"></div>
-	</div>
-	
-
-</article>
 
 						</div>
 					</div>

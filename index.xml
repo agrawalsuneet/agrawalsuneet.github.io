@@ -12,21 +12,30 @@
     
     
     <item>
+      <title>lateinit property in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
+      <description>There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs (5 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
+    </item>
+    
+    <item>
       <title>Native Android in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
       <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (4 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
     </item>
     
     <item>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="?. vs !!, ?., !!,safe calls kotlin, null check kotlin, safe call, nukk check, safe call vs null check, kotlin">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Safe calls(?.) vs Null checks(!!) in Kotlin" />
+  <meta property="og:title" content="Safe calls(?.) vs Null checks(!!) in Kotlin">
+  <meta property="twitter:title" content="Safe calls(?.) vs Null checks(!!) in Kotlin">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Safe calls(?.) vs Null checks(!!) in Kotlin">
+  <meta name="description" content="Suneet Agrawal | In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
+  <meta property="og:description" content="Suneet Agrawal | In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
+  <meta property="twitter:description" content="Suneet Agrawal | In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
+  <meta name="abstract" content="Suneet Agrawal | In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
+  <meta name="summary" content="Suneet Agrawal | In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-02-13">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Safe calls(?.) vs Null checks(!!) in Kotlin &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+
+  
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Safe calls(?.) vs Null checks(!!) in Kotlin</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<div class="center-justified text-content">
+        In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).
+        </br>
+        For example, a normal property can’t hold a null value and will show a compile error.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>var variable : <b>CustomClass</b> = CustomClass()<br/>variable = null //compilation error<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Instead, we can add a <mark>?</mark> after the data type of that property which declares that variable as a nullable property
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>var nullableVariable : <b>CustomClass?</b> = CustomClass()<br/>nullableVariable = null //works fine<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        In any case, the nullable property requires a null check every time before utilizing that property or requires a confirmation from the developer that the estimation of that property won’t be null while utilizing it
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>variable.someMethodCall() //works fine as the compiler is sure that<br/>                          //the variable can’t be null<br/>nullableVariable.someMethodCall() //will highlight compilation error<br/>                                  //as compiler is not sure as<br/>                                  //nullVariable can be null.<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        There are still few techniques for using or accessing the nullable variable. One of them is safe call <mark>?.</mark> and another one is null check <mark>!!</mark> but before figuring out the difference among both, let’s understand what they are in detail first.
+</div>
+
+<p></br></p>
+
+<h3>
+Explicit Null Check
+</h3>
+
+<div class="center-justified text-content">
+        This is the old pattern that we use in every other language, checking the variable if its null or not.
+</div>
+
+<pre>
+  <br/>if ( null <b>!=</b> nullableVariable) {<br/> nullableVariable.someMethodCall()<br/>} else {<br/> // fallback flow<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Note this exclusive works where ‘nullableVariable’ is immutable (i.e. a local property which can’t be altered between the check and the utilization or a member ‘val’ which has a backing field and is not overridable), else it may happen that ‘nullableVariable’ changes to null after the check.
+        </br>
+        If it’s a mutable property, the explicit null check won’t work and the compiler will show the below compilation error.
+</div>
+
+<pre>
+  <br/>Smart cast to ‘CustomClass’ is impossible, because ‘nullableVariable’ is a mutable property that could have been changed by this time.<br/>
+</pre>
+
+
+<p></br></p>
+
+<h3>
+Safe Calls (?.)
+</h3>
+
+<div class="center-justified text-content">
+        Another way of using a nullable property is safe call operator <mark>?.</mark>
+        </br>
+        This calls the method if the property is not null or returns null if that property is null without throwing an NPE (null pointer exception).
+</div>
+
+<pre>
+  <br/>nullableVariable<b>?.</b>someMethodCall()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
+</div>
+
+<pre>
+  <br/>bob<b>?.</b>department<b>?.</b>head<b>?.</b>name<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Such a chain returns null if any of the properties in it is null.
+        </br>
+        </br>
+To perform a certain operation only for non-null values, you can use the safe call operator together with let
+</div>
+
+<pre>
+  <br/>val listWithNulls: List<String?> = listOf(“A”, null)<br/>for (item in listWithNulls) {<br/> item<b>?.</b>let { println(it) } // prints A and ignores null<br/>}<br/>
+</pre>
+
+
+<p></br></p>
+
+<h3>
+Elvis Operator (?:)
+</h3>
+
+<div class="center-justified text-content">
+        This one is similar to safe calls except the fact that it can return a non-null value if the calling property is null even
+</div>
+
+<pre>
+  <br/>val result = nullableVariable<b>?.</b>someMethodCall()<br/>                       <b>?:</b> fallbackIfNullMethodCall()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The Elvis operator will evaluate the left expression and will return it if it’s not null else will evaluate the right side expression. Please note that the right side expression will only be called if the left side expression is null.
+        </br>
+        </br>
+        Note that, since throw and return are expressions in Kotlin, they can also be used on the right-hand side of the Elvis operator. This can be very handy, for example, for checking function arguments
+</div>
+
+<pre>
+  <br/>fun foo(node: Node): String? {<br/> val parent = node.getParent() <b>?:</b> return null<br/> val name = node.getName() <b>?:</b> throw IllegalArgumentException(“name expected”)<br/> // …<br/>}<br/>
+</pre>
+
+
+<p></br></p>
+
+<h3>
+The !! Operator
+</h3>
+
+<div class="center-justified text-content">
+        This operator is used to explicitly tell the compiler that the property is not null and if it’s null, please throw a null pointer exception (NPE)
+</div>
+
+<pre>
+  <br/>nullableVariable<b>!!.</b>someMethodCall()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        this code will work fine if ‘nullableVariable’ is not null else it will throw an NPE.
+</div>
+
+<p></br>
+</br></p>
+
+<h2>
+Difference between ?. and !!
+</h2>
+
+<div class="center-justified text-content">
+        The basic difference while using <mark>?.</mark> and <mark>!!</mark> is if you want to separate a normal flow of var property having a ‘non-null’ value with ‘null’ value flow use <mark>?.</mark>
+        </br>
+        But if you are sure that the var property value is not null use <mark>!!</mark> instead of <mark>?.</mark>
+        </br>
+        Also, <mark>?.</mark> can be used to return or throw a different kind of exceptions using <mark>?:</mark> at the end of the expression but <mark>!!</mark> will only throw an NPE.
+
+
+        </br>
+        </br>
+        Reference: <a href="https://kotlinlang.org/docs/reference/null-safety.html" target="_blank">Kotlin docs</a>
+        </br>
+</br>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="../">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="../how-extension-functions-resolved/">
+        How extension functions resolved? &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

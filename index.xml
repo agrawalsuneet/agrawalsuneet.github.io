@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Companion object in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
+      <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead. If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a companion object declaration inside that class.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs (7 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
+    </item>
+    
+    <item>
       <title>Backing Field in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</link>
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
@@ -27,15 +45,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
       <description>There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (6 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
     </item>
     
     <item>

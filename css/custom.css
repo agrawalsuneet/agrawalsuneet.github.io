@@ -25,7 +25,7 @@ div.text-subtitle{
 }
 
 img.gifimg {
-  width:50%;
+width:50%;
 }
 @media screen and (min-width: 768px) {
   img.gifimg {
@@ -33,9 +33,18 @@ img.gifimg {
   }
 }
 
+
 img.blogimg {
- max-width: 300px;
+max-width: 300px;
 }
+
+@media screen and (min-width: 768px) {
+  img.blogimg {
+    max-width: 600px;
+  }
+}
+
+
 
 
 

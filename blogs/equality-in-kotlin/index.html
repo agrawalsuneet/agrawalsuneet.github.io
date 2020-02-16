@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="Equality in Kotlin, (‘==’, ‘===’ and ‘equals’), kotlin equal,== kotlin">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Equality in Kotlin (‘==’, ‘===’ and ‘equals’)" />
+  <meta property="og:title" content="Equality in Kotlin (‘==’, ‘===’ and ‘equals’)">
+  <meta property="twitter:title" content="Equality in Kotlin (‘==’, ‘===’ and ‘equals’)">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Equality in Kotlin (‘==’, ‘===’ and ‘equals’)">
+  <meta name="description" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
+  <meta property="og:description" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
+  <meta property="twitter:description" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
+  <meta name="abstract" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
+  <meta name="summary" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-02-15">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’) &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+
+  
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/equality-in-kotlin/equality-in-kotlin-1.png" alt="Equality in Kotlin"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.
+        </br>
+        Let’s figure out what are the types of checks available in Kotlin.
+</div>
+</br>
+
+<img class="blogimg" src="../../img/blogs/equality-in-kotlin/equality-in-kotlin-2.gif" alt="Equality in Kotlin">
+
+</br>
+</br>
+<h3>
+Structural Equality (‘==’)
+</h3>
+
+
+<div class="center-justified text-content">
+        <mark>==</mark> operator is used to compare the data of two variables.
+        </br>
+        Please <b>don’t</b> misunderstand this equality operator with the Java <mark>==</mark> operator as both are different. <mark>==</mark> operator in Kotlin only compares the data or variables, whereas in Java or other languages <mark>==</mark> is generally used to compare the references. The negated counterpart of <mark>==</mark> in Kotlin is <mark>!=</mark> which is used to compare if both the values are not equal to each other.
+</div>
+
+<p></br>
+<h3>
+Referential equality (‘===’)
+</h3></p>
+
+<div class="center-justified text-content">
+        <mark>===</mark> operator is used to compare the reference of two variable or object. It will only be <mark>true</mark> if both the objects or variables pointing to the same object. The negated counterpart of <mark>===</mark> in Kotlin is <mark>!==</mark> which is used to compare if both the values are not equal to each other. For values which are represented as primitive types at runtime (for example, Int), the <mark>===</mark> equality check is equivalent to the <mark>==</mark> check.
+</div>
+
+<p></br>
+<h3>
+.equals method
+</h3></p>
+
+<div class="center-justified text-content">
+        <mark>equals(other: Any?)</mark> method is implemented in <mark>Any</mark> class and can be overridden in any extending class. <mark>.equals</mark> method also compares the content of the variables or objects just like <mark>==</mark> operator but it behaves differently in case of <mark>Float</mark> and <mark>Double</mark> comparison.
+        </br>
+        The difference between <mark>==</mark> and <mark>.equals</mark> is in case of <mark>Float</mark> and <mark>Double</mark> comparison, <mark>.equals</mark> disagrees with the IEEE 754 Standard for Floating-Point Arithmetic.
+</div>
+
+<p></br></p>
+
+<h4>
+And what does disagree with IEEE 754 Standard for Floating-Point Arithmetic mean?
+</h4>
+
+<div class="center-justified text-content">
+        It means,
+
+        <ul>
+                <li><mark>NaN</mark> is considered equal to itself</li>
+                <li><mark>NaN</mark> is considered greater than any other element including POSITIVE_INFINITY</li>
+                <li><mark>-0.0</mark> is considered less than <mark>0.0</mark></li>
+        </ul>
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/equality-in-kotlin/equality-in-kotlin-3.gif" alt="Equality in Kotlin"></p>
+
+<p></br></p>
+
+<h4>
+Confused?
+</h4>
+
+<div class="center-justified text-content">
+        Will explain this and everything with examples.
+        </br>
+        First, let’s compare two primitive type Int variables by all the equal checks.
+</div>
+
+<pre>
+  <br/>val int1 = 10<br/>val int2 = 10<br/><br/>println(int1 == int2)        // true<br/>println(int1.equals(int2))   // true<br/>println(int1 === int2)       // true<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        All the above comparisions will print <mark>true</mark> because primitive datatype only checks the value in case of <mark>===</mark> also which will be equal in our case.
+        </br>
+        </br>
+        Now let’s use the wrapper class instead of Primitive datatype and compare all three equal checks
+</div>
+
+<pre>
+  <br/>val first = Integer(10)<br/>val second = Integer(10)<br/><br/>println(first == second)       //true<br/>println(first.equals(second))  //true<br/>println(first === second)      //false<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        In the above case, the <mark>==</mark> and <mark>.equals</mark> prints true because they compare only values whereas <mark>===</mark> compares the references of the objects which were different so it prints <mark>false</mark>.
+        </br>
+        </br>
+        Now, let’s consider another case where we created our own custom class object and compared with all three checks.
+</div>
+
+<pre>
+  <br/>class Employee (val name: String)<br/>val emp1 = Employee(“Suneet”)<br/>val emp2 = Employee(“Suneet”)<br/><br/>println(emp1 == emp2)      //false<br/>println(emp1.equals(emp2)) //false<br/>println(emp1 === emp2)     //false<br/><br/>println(emp1.name == emp2.name)       //true<br/>println(emp1.name.equals(emp2.name))  //true<br/>println(emp1.name === emp2.name)      //true<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The reason for the above comparison is obvious, As Empoyee is not a primitive datatype or wrapper class, all three compared the references, which returns <mark>false</mark> for all three checks. But in the case of string comparison, if only checks the contents of the string which were equal so it returns <mark>true</mark> for every case.
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/equality-in-kotlin/equality-in-kotlin-4.gif" alt="Equality in Kotlin"></p>
+
+<p></br></p>
+
+<h4>
+Wait, but you said <mark>==</mark> and <mark>.equals</mark> only compares the contents of the object which were equal in our case.
+</h4>
+
+<div class="center-justified text-content">
+        <b>Exactly.</b> But the content comparison only works if its a <mark>data</mark> class. If it’s a normal class the compiler consider both the objects as the different objects even if the content is same but if its a <mark>data</mark> class, the compiler compares the data and return <mark>true</mark> if the content is same.
+        </br>
+        </br>
+        Let’s change the above class to data class.
+</div>
+
+<pre>
+  <br/>data class Employee (val name: String)<br/>val emp1 = Employee("Suneet")<br/>val emp2 = Employee("Suneet")<br/><br/>println(emp1 == emp2)         //true<br/>println(emp1.equals(emp2))    //true<br/>println(emp1 === emp2)        //false<br/><br/>println(emp1.name == emp2.name)      //true<br/>println(emp1.name.equals(emp2.name)) //true<br/>println(emp1.name === emp2.name)     //true<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        Last thing, Let’s compare the float values with a negative zero and positive zero.
+</div>
+
+<pre>
+  <br/>val negZero = -0.0f<br/>val posZero = 0.0f<br/><br/>println(negZero == posZero)         //true<br/>println(negZero.equals(posZero))    //false<br/>println(negZero === posZero)        //true<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        As in the case of <mark>Float</mark> and <mark>Double</mark> comparison, <mark>.equals</mark> disagrees with the IEEE 754 Standard for Floating-Point Arithmetic, it returns a <mark>false</mark> when <mark>-0.0</mark> was compared with <mark>0.0</mark> whereas <mark>==</mark> and <mark>===</mark> returns <mark>true</mark>.
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/equality-in-kotlin/equality-in-kotlin-5.gif" alt="Equality in Kotlin"></p>
+
+<p></br></p>
+
+<h4>
+Few things to keep in mind,
+</h4>
+
+<div class="center-justified text-content">
+        <ul>
+                <li>As there is no constructor as <mark>String(“”)</mark> in Kotlin, all string comparison will give <mark>true</mark> if the content will be equal.</li>
+                <li>There’s no point in optimizing code when comparing to <mark>null</mark> explicitly. <mark>a == null</mark> will be automatically translated to <mark>a === null</mark> as null is a reference and at the end, it will a reference check.</li>
+        </ul>
+
+        </br>
+        Reference: <a href="https://kotlinlang.org/docs/reference/equality.html" target="_blank">Kotlin docs</a>
+        </br>
+</div>
+
+<p></br></p>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="../">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="../inheritance-vs-extension-functions/">
+        Inheritance vs Extension functions &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

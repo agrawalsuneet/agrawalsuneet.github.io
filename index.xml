@@ -12,21 +12,30 @@
     
     
     <item>
+      <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</title>
+      <link>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
+      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs (8 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
+    </item>
+    
+    <item>
       <title>Companion object in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
       <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead. If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a companion object declaration inside that class.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (7 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
     </item>
     
     <item>

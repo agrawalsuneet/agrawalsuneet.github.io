@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</title>
+      <link>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
+      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.</description>
+    </item>
     
     <item>
       <title>Companion object in Kotlin</title>

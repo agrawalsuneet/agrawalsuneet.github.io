@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="?. vs !!, ?., !!,safe calls kotlin, null check kotlin, safe call, nukk check, safe call vs null check, kotlin">
+  <meta name="keywords" content="getter and setter,getter kotlin,setter kotlin,kotlin,property kotlin">
 
 
   
@@ -28,26 +28,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Safe calls(?.) vs Null checks(!!) in Kotlin" />
-  <meta property="og:title" content="Safe calls(?.) vs Null checks(!!) in Kotlin">
-  <meta property="twitter:title" content="Safe calls(?.) vs Null checks(!!) in Kotlin">
+  <meta name="title" content="Suneet Agrawal | Property, Getter and Setter — Kotlin" />
+  <meta property="og:title" content="Property, Getter and Setter — Kotlin">
+  <meta property="twitter:title" content="Property, Getter and Setter — Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Safe calls(?.) vs Null checks(!!) in Kotlin">
-  <meta name="description" content="In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
-  <meta property="og:description" content="In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
-  <meta property="twitter:description" content="In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
-  <meta name="abstract" content="In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
-  <meta name="summary" content="In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.">
+  <meta name="topic" content="Property, Getter and Setter — Kotlin">
+  <meta name="description" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
+  <meta property="og:description" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
+  <meta property="twitter:description" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
+  <meta name="abstract" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
+  <meta name="summary" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-02-20">
+  <meta property="article:published_time" content="2020-02-21">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -57,7 +57,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -69,7 +69,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Safe calls(?.) vs Null checks(!!) in Kotlin &middot; Suneet Agrawal</title>
+  <title>Property, Getter and Setter — Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Safe calls(?.) vs Null checks(!!) in Kotlin</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">Property, Getter and Setter — Kotlin</h1>
 	</header>
 
 	<article>
@@ -219,177 +219,204 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).
-        </br>
-        For example, a normal property can’t hold a null value and will show a compile error.
-</div>
-
-<p></br></p>
-
-<pre>
-  <br/>var variable : <b>CustomClass</b> = CustomClass()<br/>variable = null //compilation error<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        Instead, we can add a <mark>?</mark> after the data type of that property which declares that variable as a nullable property
-</div>
-
-<p></br></p>
-
-<pre>
-  <br/>var nullableVariable : <b>CustomClass?</b> = CustomClass()<br/>nullableVariable = null //works fine<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        In any case, the nullable property requires a null check every time before utilizing that property or requires a confirmation from the developer that the estimation of that property won’t be null while utilizing it
-</div>
-
-<p></br></p>
-
-<pre>
-  <br/>variable.someMethodCall() //works fine as the compiler is sure that<br/>                          //the variable can’t be null<br/>nullableVariable.someMethodCall() //will highlight compilation error<br/>                                  //as compiler is not sure as<br/>                                  //nullVariable can be null.<br/>
-</pre>
-
-
-<p></br></p>
-
-<div class="center-justified text-content">
-        There are still few techniques for using or accessing the nullable variable. One of them is safe call <mark>?.</mark> and another one is null check <mark>!!</mark> but before figuring out the difference among both, let’s understand what they are in detail first.
-</div>
-
-<p></br></p>
-
-<h3>
-Explicit Null Check
-</h3>
-
-<div class="center-justified text-content">
-        This is the old pattern that we use in every other language, checking the variable if its null or not.
-</div>
-
-<pre>
-  <br/>if ( null <b>!=</b> nullableVariable) {<br/> nullableVariable.someMethodCall()<br/>} else {<br/> // fallback flow<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        Note this exclusive works where ‘nullableVariable’ is immutable (i.e. a local property which can’t be altered between the check and the utilization or a member ‘val’ which has a backing field and is not overridable), else it may happen that ‘nullableVariable’ changes to null after the check.
-        </br>
-        If it’s a mutable property, the explicit null check won’t work and the compiler will show the below compilation error.
-</div>
-
-<pre>
-  <br/>Smart cast to ‘CustomClass’ is impossible, because ‘nullableVariable’ is a mutable property that could have been changed by this time.<br/>
-</pre>
-
-
-<p></br></p>
-
-<h3>
-Safe Calls (?.)
-</h3>
-
-<div class="center-justified text-content">
-        Another way of using a nullable property is safe call operator <mark>?.</mark>
-        </br>
-        This calls the method if the property is not null or returns null if that property is null without throwing an NPE (null pointer exception).
-</div>
-
-<pre>
-  <br/>nullableVariable<b>?.</b>someMethodCall()<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
-</div>
-
-<pre>
-  <br/>bob<b>?.</b>department<b>?.</b>head<b>?.</b>name<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        Such a chain returns null if any of the properties in it is null.
+        I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods. The moment I converted my Java code to Kotlin, it replaced each variable along with its getter and setter with just a single line of code. Although I was amazed at how can a single line of code replace the complete variable with the same functionality, but later on understanding it, I started liking writing the code in Kotlin. Let’s understand how it works in Kotlin.
         </br>
         </br>
-To perform a certain operation only for non-null values, you can use the safe call operator together with let
+        Variable having a class level scope (member variables) which are declared inside the class but outside the methods or functions is called as <mark>Property</mark> in Kotlin. They are declared with <mark>var</mark> keyword for a mutable one and with val keyword for a read-only/nonmutable one.
+        </br>
+        The full syntax for declaring a property is
 </div>
-
-<pre>
-  <br/>val listWithNulls: List<String?> = listOf(“A”, null)<br/>for (item in listWithNulls) {<br/> item<b>?.</b>let { println(it) } // prints A and ignores null<br/>}<br/>
-</pre>
-
 
 <p></br></p>
 
-<h3>
-Elvis Operator (?:)
-</h3>
-
-<div class="center-justified text-content">
-        This one is similar to safe calls except the fact that it can return a non-null value if the calling property is null even
-</div>
-
 <pre>
-  <br/>val result = nullableVariable<b>?.</b>someMethodCall()<br/>                       <b>?:</b> fallbackIfNullMethodCall()<br/>
+  <br/>var &lt;propertyName&gt;: &lt;PropertyType&gt; = &lt;property_initializer&gt;<br/> [&lt;getter&gt;]<br/> [&lt;setter&gt;]<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        The Elvis operator will evaluate the left expression and will return it if it’s not null else will evaluate the right side expression. Please note that the right side expression will only be called if the left side expression is null.
-        </br>
-        </br>
-        Note that, since throw and return are expressions in Kotlin, they can also be used on the right-hand side of the Elvis operator. This can be very handy, for example, for checking function arguments
+        The initializer, getter and setter are optional.
 </div>
-
-<pre>
-  <br/>fun foo(node: Node): String? {<br/> val parent = node.getParent() <b>?:</b> return null<br/> val name = node.getName() <b>?:</b> throw IllegalArgumentException(“name expected”)<br/> // …<br/>}<br/>
-</pre>
-
 
 <p></br></p>
 
-<h3>
-The !! Operator
-</h3>
-
-<div class="center-justified text-content">
-        This operator is used to explicitly tell the compiler that the property is not null and if it’s null, please throw a null pointer exception (NPE)
-</div>
-
 <pre>
-  <br/>nullableVariable<b>!!.</b>someMethodCall()<br/>
+  <br/>val name : String = "John"<br/>var age : Int = 0<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        this code will work fine if ‘nullableVariable’ is not null else it will throw an NPE.
+        which is exactly the replacement of
 </div>
+
+<p></br></p>
+
+<pre>
+  <br/>public final String name = "John";<br/>public int age = 0;<br/>
+</pre>
+
 
 <p></br>
-</br></p>
-
-<h2>
-Difference between ?. and !!
-</h2>
+<h4>
+Things to notice
+</h4></p>
 
 <div class="center-justified text-content">
-        The basic difference while using <mark>?.</mark> and <mark>!!</mark> is if you want to separate a normal flow of var property having a ‘non-null’ value with ‘null’ value flow use <mark>?.</mark>
-        </br>
-        But if you are sure that the var property value is not null use <mark>!!</mark> instead of <mark>?.</mark>
-        </br>
-        Also, <mark>?.</mark> can be used to return or throw a different kind of exceptions using <mark>?:</mark> at the end of the expression but <mark>!!</mark> will only throw an NPE.
-
-
-        </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/null-safety.html" target="_blank">Kotlin docs</a>
-        </br>
-</br>
+        <ul>
+                <li>No need to add <mark>public</mark> modifier as by default, all properties and functions are public in Kotlin. Add <mark>private</mark> or <mark>protected</mark> if required.</li>
+                <li>A property must be initialized or need to be declared as <mark>abstract</mark> in Kotlin . Instead, we can even use <mark>lateinit</mark> which is better explained <a href="../lateinit-property-in-kotlin/" target="_blank">here</a>.</li>
+                <li>All properties are <mark>final</mark> by default. If you want to override some property or its getter setter, define the property as <mark>open</mark>(explained later in the same post).</li>
+        </ul>
 </div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-1.gif" alt="Property, Getter and Setter — Kotlin"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        But we just broke the rule of encapsulation by defining a variable as <mark>public</mark>. What if I want to declare the variable as <mark>private</mark> having a getter and a setter as <mark>public</mark> methods.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>private String name;<br/>public String getName() {<br/>        return name;<br/>    }<br/>public void setName(String name) {<br/>        this.name = name;<br/>    }<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        Here we go.
+</div>
+
+<pre>
+  <br/>var name: String = “John”<br/>
+</pre>
+
+
+<p></br></p>
+
+<h3>
+        Where are my getter and setter?
+</h3>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-2.gif" alt="Property, Getter and Setter — Kotlin"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        Trust me, they are there. No need to define them explicitly.
+        </br>
+        </br>
+        Ok, I Trust you. What if I want to override the getter and setter.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>private int size = 0;<br/>private boolean isEmpty;<br/>public boolean isEmpty() {<br/>        return size == 0;<br/>    }<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        absolutely simple.
+</div>
+
+<pre>
+  <br/>private val size : Int = 0<br/>var isEmpty: Boolean = false<br/>    private set<br/>    get () = size == 0<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Please note that the setter is set <mark>private</mark> here as it can’t be set from outside the class.
+        </br>
+        </br>
+        This was an easy one. Let me try something complicated.
+        </br>
+        </br>
+        what about this.
+</div>
+
+<pre>
+  <br/>private String firstName;<br/>private String lastName;<br/>//private String name;<br/>public String getName() {<br/>        return firstName + " " + lastName;<br/>    }<br/>public void setName(String name) {<br/>        String nameArray[] = name.split(" ");<br/>        firstName = nameArray[0];<br/>        lastName = nameArray[1];<br/>    }<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        I have three <mark>private</mark> variables firstName, lastName and name but only getter setter of name variable which does break the name into two parts and store them in firstName and lastName respectively in case of the setter. 
+        </br>
+        Also, in case of the getter, it returns the firstName and lastName with a space between them.
+        </br>
+        </br>
+        What will be the equivalent Kotlin code for this?
+</div>
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-3.gif" alt="Property, Getter and Setter — Kotlin"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        Well, it’s not that difficult.
+</div>
+
+<pre>
+  <br/>private var firstName: String? = null<br/>private var lastName: String? = null<br/>var name: String<br/>    get() = firstName + " " + lastName<br/>    set(value) {<br/>        val nameArray = value.split(" ".toRegex())<br/>        firstName = nameArray[0]<br/>        lastName = nameArray[1]<br/>    }<br/>
+</pre>
+
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-4.gif" alt="Property, Getter and Setter — Kotlin"></p>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        Ok. Few questions
+        </br>
+        </br>
+        <h4>
+        1. How can I make setter private?
+        </h4>
+
+        Add <mark>private</mark> keyword before set.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>public var name: String = "John"<br/>   private set<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        <h4>
+        2. How can I override the getter or setter in an extending class?
+        </h4>
+
+        Define the variable as <mark>open</mark> in the base class and use <mark>override</mark> keyword in the extending class.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>//Base class<br/>open var age: Int = 0<br/> get() = 10<br/>//Extending class<br/>override var age: Int = 0<br/> get()= 20<br/>
+</pre>
+
+
+<p></br></p>
+
+<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-5.gif" alt="Property, Getter and Setter — Kotlin"></p>
+
+<p></br></p>
 
 <div class="col-xs-12 center-justified text-subtitle" >
     <div class="col-sm-6 col-xs-12">
@@ -398,8 +425,8 @@ Difference between ?. and !!
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="../property-getter-and-setter-kotlin/">
-        Property, Getter and Setter — Kotlin &gt;&gt;
+      <a href="../companion-object-in-kotlin/">
+        Companion object in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

@@ -4,16 +4,31 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <loc>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</loc>
+    <lastmod>2020-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</loc>
+    <lastmod>2020-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://agrawalsuneet.github.io/publications/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</loc>
     <lastmod>2020-02-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,16 +39,6 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   

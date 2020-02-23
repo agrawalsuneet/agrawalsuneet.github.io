@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs (10 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
+    </item>
+    
+    <item>
+      <title>Variable number of arguments (vararg) : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</guid>
+      <description>Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime. Kotlin provides us to achieve the same by defining a parameter of a function as vararg. We can pass n number of parameters to a vararg variable of the defined datatype or even of a generic type.   Let me give you an example.   We need a function which takes n number as inputs and returns the average of all the inputs.</description>
+    </item>
+    
+    <item>
       <title>lateinit property in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
@@ -27,15 +45,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</guid>
       <description>I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods. The moment I converted my Java code to Kotlin, it replaced each variable along with its getter and setter with just a single line of code. Although I was amazed at how can a single line of code replace the complete variable with the same functionality, but later on understanding it, I started liking writing the code in Kotlin.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (9 posts)   How extension functions resolved?   how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;#39;Statically&amp;#39;. What does statically means? read more   15 Dec 2019     Inheritance vs Extension functions   We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
     </item>
     
     <item>

@@ -4,7 +4,17 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2020-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/publications/</loc>
+    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</loc>
+    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -15,11 +25,6 @@
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</loc>
     <lastmod>2020-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/publications/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>

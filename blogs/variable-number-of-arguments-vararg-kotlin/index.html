@@ -219,7 +219,7 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime. Kotlin provides us to achieve the same by defining a parameter of a function as vararg. We can pass n number of parameters to a vararg variable of the defined datatype or even of a generic type.
+        Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime. Kotlin provides us to achieve the same by defining a parameter of a function as <mark>vararg</mark>. We can pass n number of parameters to a <mark>vararg</mark> variable of the defined datatype or even of a generic type.
         </br>
         </br>
         Let me give you an example.
@@ -254,11 +254,11 @@ if (!doNotTrack) {
 
 <p><img class="blogimg" src="../../img/blogs/variable-number-of-arguments-vararg-kotlin/variable-number-of-arguments-vararg-kotlin-1.gif" alt="Variable number of arguments (vararg) : Kotlin"></p>
 
-<p></br></p>
-
+<p></br>
+<mark>
 <div class="center-justified text-content">
-        We can even use Template type for vararg.
-</div>
+        We can even use <mark>Template</mark> type for <mark>vararg</mark>.
+</div></p>
 
 <pre>
   <br/>fun &lt;T&gt; asList(<b>vararg</b> input: T): List&lt;T&gt; {<br/>    val result = ArrayList&lt;T&gt;()<br/>    for (item in input) // input is an Array<br/>        result.add(item)<br/>    return result<br/>}<br/>
@@ -266,9 +266,9 @@ if (!doNotTrack) {
 
 
 <div class="center-justified text-content">
-        Only one parameter may be marked as vararg. If a vararg parameter is not the last one in the list, values for the following parameters can be passed using the named argument syntax, or if the parameter has a function type, the value can be passed by passing a lambda outside parentheses.
+        Only one parameter may be marked as <mark>vararg</mark>. If a <mark>vararg</mark> parameter is not the last one in the list, values for the following parameters can be passed using the named argument syntax, or if the parameter has a function type, the value can be passed by passing a lambda outside parentheses.
         </br>
-        We can even pass all the elements of an array along with other arguments to a vararg variable. We can use the spread (*) operator to do the same.
+        We can even pass all the elements of an array along with other arguments to a <mark>vararg</mark> variable. We can use the spread (<mark>*</mark>) operator to do the same.
 </div>
 
 <p></br></p>

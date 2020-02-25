@@ -248,7 +248,7 @@ if (!doNotTrack) {
 <p></br></p>
 
 <pre>
-  <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its argument <br/> * and returns its result.<br/> *<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun <T, R> T.<b>let</b>(block: (T) -> R): R {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    return block(this)<br/>}<br/>
+  <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its argument <br/> * and returns its result.<br/> *<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun &lt;T, R&gt; T.<b>let</b>(block: (T) -> R): R {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    return block(this)<br/>}<br/>
 </pre>
 
 

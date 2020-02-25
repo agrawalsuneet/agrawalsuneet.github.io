@@ -254,11 +254,11 @@ if (!doNotTrack) {
 
 <p><img class="blogimg" src="../../img/blogs/variable-number-of-arguments-vararg-kotlin/variable-number-of-arguments-vararg-kotlin-1.gif" alt="Variable number of arguments (vararg) : Kotlin"></p>
 
-<p></br>
-<mark>
+<p></br></p>
+
 <div class="center-justified text-content">
         We can even use <mark>Template</mark> type for <mark>vararg</mark>.
-</div></p>
+</div>
 
 <pre>
   <br/>fun &lt;T&gt; asList(<b>vararg</b> input: T): List&lt;T&gt; {<br/>    val result = ArrayList&lt;T&gt;()<br/>    for (item in input) // input is an Array<br/>        result.add(item)<br/>    return result<br/>}<br/>

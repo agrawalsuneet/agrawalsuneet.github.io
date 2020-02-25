@@ -6,10 +6,28 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&#39;let&#39; scope function : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</guid>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
+      <title>How extension functions resolved?</title>
+      <link>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
+      <description>how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;lsquo;Statically&amp;rsquo;. What does statically means?</description>
+    </item>
     
     <item>
       <title>Variable number of arguments (vararg) : Kotlin</title>
@@ -81,15 +99,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
       <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.</description>
-    </item>
-    
-    <item>
-      <title>How extension functions resolved?</title>
-      <link>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</link>
-      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
-      <description>how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;lsquo;Statically&amp;rsquo;. What does statically means?</description>
     </item>
     
     <item>

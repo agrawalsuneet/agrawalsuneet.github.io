@@ -3,22 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</loc>
-    <lastmod>2020-02-23T00:00:00+00:00</lastmod>
+    <loc>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</loc>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</loc>
+    <lastmod>2020-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://agrawalsuneet.github.io/publications/</loc>
+    <lastmod>2020-02-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</loc>
     <lastmod>2020-02-23T00:00:00+00:00</lastmod>
   </url>
   

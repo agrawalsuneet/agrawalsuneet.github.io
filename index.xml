@@ -12,12 +12,30 @@
     
     
     <item>
+      <title>Why let function is an Extension to Template class?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
+      <description>After reading my last blog about let scope function in Kotlin, a lot of developers have asked me about, why let is an extension to Template class but not Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    The question is why?   Any is the base class for all the class, similar to java.</description>
+    </item>
+    
+    <item>
       <title>&#39;let&#39; scope function : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</guid>
       <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs (12 posts)   Why let function is an Extension to Template class?   Why let is an extension to Template class but not Any class? Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class. The question is why? read more   29 Feb 2020     &amp;#39;let&amp;#39; scope function : Kotlin   Scope functions are nothing but the functions which define a scope to the calling object.</description>
     </item>
     
     <item>
@@ -27,15 +45,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
       <description>how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;lsquo;Statically&amp;rsquo;. What does statically means?</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (11 posts)   &amp;#39;let&amp;#39; scope function : Kotlin   Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function. read more   25 Feb 2020     How extension functions resolved?</description>
     </item>
     
     <item>

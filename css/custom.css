@@ -39,7 +39,7 @@ width:50%;
 
 
 img.blogimg {
-max-width: 300px;
+  max-width: 300px;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,6 +54,16 @@ div.googleads{
 }
 
 
+img.tagicon {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  img.tagicon {
+  width : 56px;
+  height: 56px;
+}
 
 
 

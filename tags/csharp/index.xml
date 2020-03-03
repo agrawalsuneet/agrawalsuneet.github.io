@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSharp on Suneet Agrawal</title>
+    <link>https://agrawalsuneet.github.io/tags/csharp/</link>
+    <description>Recent content in CSharp on Suneet Agrawal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://agrawalsuneet.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
+      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.</description>
+    </item>
+    
+  </channel>
+</rss>

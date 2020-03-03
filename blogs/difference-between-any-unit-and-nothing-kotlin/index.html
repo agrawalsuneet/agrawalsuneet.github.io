@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  
+  <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="kotlin any,kotlin unit,kotlin nothing,any vs unit vs nothing, kotlin">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Difference between Any, Unit and Nothing : Kotlin" />
+  <meta property="og:title" content="Difference between Any, Unit and Nothing : Kotlin">
+  <meta property="twitter:title" content="Difference between Any, Unit and Nothing : Kotlin">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Difference between Any, Unit and Nothing : Kotlin">
+  <meta name="description" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
+  <meta property="og:description" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
+  <meta property="twitter:description" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
+  <meta name="abstract" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
+  <meta name="summary" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-03-03">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Difference between Any, Unit and Nothing : Kotlin &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Difference between Any, Unit and Nothing : Kotlin</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<div class="center-justified text-content">
+        We all know about three classes <mark>Any</mark>, <mark>Unit</mark> and <mark>Nothing</mark> in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.
+        </br>
+        </br>
+        Let try to understand what are these, when to use what and how these are different from one another.
+</div>
+
+<p></br></p>
+
+<div class="col-xs-12">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<p></br></p>
+
+<h3>
+Any
+</h3>
+
+<div class="center-justified text-content">
+        <mark>Any</mark> is an <mark>open</mark> class and by default the superclass for all the classes, whether we define it explicitly or not. This is similar to the <mark>Object</mark> class in Java which is the superclass for each and every class.
+</div>
+
+<pre>
+  <br/>/**<br/> * The root of the Kotlin class hierarchy. Every Kotlin class has [Any] as a superclass.<br/> */<br/>public open class <b>Any</b> {<br/><br/>    public open operator fun <b>equals</b>(other: Any?): Boolean<br/>    public open fun <b>hashCode</b>(): Int<br/>    public open fun <b>toString</b>(): String<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <mark>Any</mark> has 3 functions
+        <ul>
+                <li>equals</li>
+                <li>hashCode</li>
+                <li>toString</li>
+        </ul>
+
+        All three functions are well-known functions which can be overridden in any class.
+</div>
+
+<p></br></p>
+
+<h4>
+equals
+</h4>
+
+<pre>
+  <br/>/**<br/> * Indicates whether some other object is "equal to" this one. Implementations must fulfil the following<br/> * requirements:<br/> *<br/> * * <b>Reflexive</b>: for any non-null value `x`, `x.equals(x)` should return true.<br/> * * <b>Symmetric</b>: for any non-null values `x` and `y`, `x.equals(y)` should return true if and only if `y.equals(x)` returns true.<br/> * * <b>Transitive</b>:  for any non-null values `x`, `y`, and `z`, if `x.equals(y)` returns true and `y.equals(z)` returns true, then `x.equals(z)` should return true.<br/> * * <b>Consistent</b>:  for any non-null values `x` and `y`, multiple invocations of `x.equals(y)` consistently return true or consistently return false, provided no information used in `equals` comparisons on the objects is modified.<br/> * * <b>Never equal to null</b>: for any non-null value `x`, `x.equals(null)` should return false.<br/> */<br/>public open operator fun <b>equals</b>(other: Any?): Boolean<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <mark>equals</mark> functions check if the object is equal to the object passed in parameter. There are different criteria on which <mark>equals</mark> function checks the equality but we can <mark>override</mark> this function in any class.
+</div>
+
+<p></br></p>
+
+<h4>
+hashCode
+</h4>
+
+<pre>
+  <br/>/**<br/> * Returns a hash code value for the object.  The general contract of `hashCode` is:<br/> *<br/> * * Whenever it is invoked on the same object more than once, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified.<br/> * * If two objects are equal according to the `equals()` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.<br/> */<br/>public open fun <b>hashCode</b>(): Int<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <mark>hashCode</mark> returns a unique <mark>integer</mark> for each and every object of that class. This function is also <mark>open</mark> and we can <mark>override</mark> it according to our use case.
+</div>
+
+<p></br></p>
+
+<h4>
+toString
+</h4>
+
+<pre>
+  <br/>/**<br/> * Returns a string representation of the object.<br/> */<br/>public open fun <b>toString</b>(): String<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        This is the most commonly overridden function which is used to represent the object in string form. This is again <mark>open</mark> and we can <mark>override</mark> it according to the use case.
+        </br>
+        </br>
+        We can even create an object of <mark>Any</mark> class and use any of the above functions.
+</div>
+
+<pre>
+  <br/>val any: <b>Any</b> = Any()<br/><br/>any.equals(Any())<br/>any.hashCode()<br/>any.toString()<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="col-xs-12">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<p></br></p>
+
+<h3>
+Unit
+</h3>
+
+<div class="center-justified text-content">
+        <mark>Unit</mark> class is an <mark>object</mark> class which means it a singleton class having only one object.
+</div>
+
+<pre>
+  <br/>/**<br/> * The type with only one value: the `Unit` object. This type corresponds to the `void` type in Java.<br/> */<br/>public object <b>Unit</b> {<br/>    override fun toString() = "kotlin.Unit"<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <mark>Unit</mark> is exactly equivalent to the <mark>void</mark> type in Java. We can explicitly add <mark>Unit</mark> as the return type for functions returning void.
+</div>
+
+<p></br></p>
+
+<pre>
+  <br/>fun doSomething() {<br/>    //do something here<br/>}<br/><br/>fun doSomething() : <b>Unit</b> {<br/>    //do something here<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Both the above functions are absolutely the same but for the second one, there will a warning stating
+</div>
+
+<pre>
+  <br/>Redundant 'Unit' return type<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        We can't extend <mark>Unit</mark> class.
+</div>
+
+<pre>
+  <br/>object <b>AnotherUnit</b> : <b>Unit</b> {<br/>}<br/><br/>class <b>AnotherUnit</b> : <b>Unit</b> {<br/>}<br/><br/>//both above will have <e>Compilation error</e><br/>"Cannot inherit from a Singleton"<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        We can't even create an object of it.
+</div>
+
+<pre>
+  <br/>val unit: <b>Unit</b> = Unit()<br/>unit.toString()<br/><br/>//<e>Compilation error</e> in first line<br/><br/>"Expression 'Unit' of type 'Unit' cannot be invoked as a function.<br/>The funciton 'invoke()' is not found"<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="col-xs-12">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<p></br></p>
+
+<h3>
+Nothing
+</h3>
+
+<div class="center-justified text-content">
+        <mark>Nothing</mark> is used to represent a value which will never exist.
+        </br> 
+        </br>
+        This is has a private constructor and also cannot be extended.
+</div>
+
+<pre>
+  <br/>/**<br/> * Nothing has no instances. You can use Nothing to represent "a value that never exists": for example,<br/> * if a function has the return type of Nothing, it means that it never returns (always throws an exception).<br/> */<br/>public class <b>Nothing</b> private constructor()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        It is used to define a function return type which is going to <mark>throw</mark> an exception every time.
+</div>
+
+<pre>
+  <br/>fun iWillAlwaysThrowException() =  <b>throw</b> Exception("Unnecessary Exception")<br/><br/>//The ebove function will show a <e>compilation error</e><br/><br/>'Nothing' return type needs to be specified explicitely<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        and the correct syntax will be
+</div>
+
+<pre>
+  <br/>fun iWillAlwaysThrowException() : <b>Nothing</b> =  <b>throw</b> Exception("Unnecessary Exception")<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The best example of <mark>Nothing</mark> is in <mark>TODO</mark> function.
+</div>
+
+<pre>
+  <br/>/**<br/> * Always throws [NotImplementedError] stating that operation is not implemented.<br/> */<br/><br/>@kotlin.internal.InlineOnly<br/>public inline fun <b>TODO</b>(): Nothing = throw NotImplementedError()<br/><br/>/**<br/> * Always throws [NotImplementedError] stating that operation is not implemented.<br/> *<br/> * @param reason a string explaining why the implementation is missing.<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun <b>TODO</b>(reason: String): Nothing = throw NotImplementedError("An operation is not implemented: $reason")<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="col-xs-12">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<p></br></p>
+
+<h3>
+Differences between Any, Unit and Nothing
+</h3>
+
+<p></br></p>
+
+<h4>
+Any
+</h4>
+
+<div class="center-justified text-content">
+        <ul>
+                <li><mark>Any</mark> is by default the superclass of all the classes and has 3 functions: <mark>equals</mark>, <mark>hashCode</mark> and <mark>toString</mark>. This is equal to <mark>Object</mark> class in Java.</li>
+                <li>We can create an object of <mark>Any</mark> class directly or even override these functions in any other class.</li>
+        </ul>
+</div>
+
+<p></br></p>
+
+<h4>
+Unit
+</h4>
+
+<div class="center-justified text-content">
+        <ul>
+                <li><mark>Unit</mark> class is a singleton class, we can't extend or even create an object of it.</li>
+                <li><mark>Unit</mark> class in equal to <mark>void</mark> type in Java.</li>
+                <li>The superclass of <mark>Unit</mark> is <mark>Any</mark> and it has overridden <mark>toString</mark> method.</li>
+        </ul>
+</div>
+
+<p></br></p>
+
+<h4>
+Nothing
+</h4>
+
+<div class="center-justified text-content">
+        <ul>
+                <li><mark>Nothing</mark> is non-open (final class) which can't be extended and its constructor is also private that means we can't create the object also.</li>
+                <li>This is usually used to represent the return type of function which will always <mark>throw</mark> an exception.</li>
+                <li>The superclass of <mark>Nothing</mark> is <mark>Any</mark>.</li>
+        </ul>
+</div>
+
+<p></br></p>
+
+<div class="col-xs-12">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<p></br></p>
+
+<div class="col-xs-12 center-justified text-subtitle blogsuggestion" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="../">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="../safe-calls-vs-null-checks-in-kotlin/">
+        Safe calls(?.) vs Null checks(!!) in Kotlin &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

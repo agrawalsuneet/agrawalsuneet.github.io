@@ -6,10 +6,21 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Difference between Any, Unit and Nothing : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</guid>
+      <description>We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.   Let try to understand what are these, when to use what and how these are different from one another.  
+  (adsbygoogle = window.adsbygoogle || []).push({});   
+ Any  Any is an open class and by default the superclass for all the classes, whether we define it explicitly or not.</description>
+    </item>
     
     <item>
       <title>Why let function is an Extension to Template class?</title>
@@ -35,7 +46,7 @@
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
-      <description>how does extension functions are actually resolved? This question is being asked by almost everyone both in and outside the interviews. The shorted or the only answer I get is &amp;lsquo;Statically&amp;rsquo;. What does statically means?</description>
+      <description>&amp;ldquo;how are extension functions resolved?&amp;rdquo;  This question is being asked by almost everyone both in and outside the interviews.  Even I have asked this question to many candidates during the interview.  The shorted or the only answer I get is &amp;ldquo;Statically&amp;rdquo;.   What does statically means?  Or how does extension functions are actually resolved?   Let&amp;rsquo;s understand this with an example.  Consider we have two classes BaseClass and DerivedClass.</description>
     </item>
     
     <item>
@@ -53,7 +64,8 @@
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
-      <description>There can be two ways to declare and initialize a var property. The first property type is initialized while declaration itself and doesn’t require a null check (!!) while using it.</description>
+      <description>There can be two ways to declare and initialize a var property  
+ var variable : CustomClass = CustomClass()  orvar variable : CustomClass? = null  The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.  But in the second type, the property is initialized with a null value and will require a null check (?.) always while using it.</description>
     </item>
     
     <item>
@@ -71,7 +83,8 @@
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</guid>
-      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error.</description>
+      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).  For example, a normal property can’t hold a null value and will show a compile error.  
+ var variable : CustomClass = CustomClass()variable = null //compilation error  Instead, we can add a ? after the data type of that property which declares that variable as a nullable property</description>
     </item>
     
     <item>
@@ -80,7 +93,7 @@
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
-      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.</description>
+      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.  Let’s figure out what are the types of checks available in Kotlin.      Structural Equality (‘==’)  == operator is used to compare the data of two variables.  Please don’t misunderstand this equality operator with the Java == operator as both are different.</description>
     </item>
     
     <item>
@@ -89,7 +102,7 @@
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
-      <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead. If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a companion object declaration inside that class.</description>
+      <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead.  If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a companion object declaration inside that class. By declaring a companion object inside our class, you’ll be able to call its members with the same syntax as calling static methods in Java/C#, using only the class name as a qualifier.</description>
     </item>
     
     <item>
@@ -98,7 +111,8 @@
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</guid>
-      <description>Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier.</description>
+      <description>What is Backing Field ? 
+Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier. This backing field is used to avoid the recursive call of an accessor which ultimately prevents the StackOverflowError.</description>
     </item>
     
     <item>
@@ -107,7 +121,7 @@
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
-      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share.</description>
+      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.</description>
     </item>
     
     <item>
@@ -116,7 +130,7 @@
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</guid>
-      <description>We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.</description>
+      <description>We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.  Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other.</description>
     </item>
     
   </channel>

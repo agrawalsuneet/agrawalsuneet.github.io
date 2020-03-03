@@ -20,6 +20,10 @@ pre b{
   color:blue;
 }
 
+pre e{
+  color:red;
+}
+
 div.text-subtitle{
   font-size: 28px;
 }

@@ -12,21 +12,21 @@
     
     
     <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs (13 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more  3 Mar 2020  Kotlin Android      Why let function is an Extension to Template class?</description>
+    </item>
+    
+    <item>
       <title>Difference between Any, Unit and Nothing : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</guid>
       <description>We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.   Let try to understand what are these, when to use what and how these are different from one another.    (adsbygoogle = window.adsbygoogle || []).push({});    Any  Any is an open class and by default the superclass for all the classes, whether we define it explicitly or not.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (13 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more   3 Mar 2020     Why let function is an Extension to Template class?   Why let is an extension to Template class but not Any class?</description>
     </item>
     
     <item>

@@ -24,6 +24,10 @@ pre e{
   color:red;
 }
 
+pre l{
+  color: chocolate;
+}
+
 div.text-subtitle{
   font-size: 28px;
 }

@@ -6,10 +6,28 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Native Android image sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
+      <description>In continuation to my previous medium post Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app.   If you have not read the previous medium posts, I would strongly recommend to read them first. You can read them on the links below.  Native Android in Unity Native Android text sharing in Unity   As the number says, an image gains more attention than a normal text while sharing.</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
+      <description>In continuation to my previous medium post Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</description>
+    </item>
     
     <item>
       <title>Difference between Any, Unit and Nothing : Kotlin</title>

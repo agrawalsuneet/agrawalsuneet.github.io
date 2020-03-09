@@ -3,18 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://agrawalsuneet.github.io/publications/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/tags/android/</loc>
-    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</loc>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
+    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/publications/</loc>
+    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -24,11 +49,6 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/tags/kotlin/</loc>
-    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,17 +103,7 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
   </url>
   

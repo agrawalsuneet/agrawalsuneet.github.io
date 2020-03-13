@@ -228,14 +228,27 @@ if (!doNotTrack) {
 
 <div class="center-justified text-content">
         I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods. The moment I converted my Java code to Kotlin, it replaced each variable along with its getter and setter with just a single line of code. Although I was amazed at how can a single line of code replace the complete variable with the same functionality, but later on understanding it, I started liking writing the code in Kotlin. Let’s understand how it works in Kotlin.
-        </br>
-        </br>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
         Variable having a class level scope (member variables) which are declared inside the class but outside the methods or functions is called as <mark>Property</mark> in Kotlin. They are declared with <mark>var</mark> keyword for a mutable one and with val keyword for a read-only/nonmutable one.
         </br>
         The full syntax for declaring a property is
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>var &lt;propertyName&gt;: &lt;PropertyType&gt; = &lt;property_initializer&gt;<br/> [&lt;getter&gt;]<br/> [&lt;setter&gt;]<br/>
@@ -246,8 +259,6 @@ if (!doNotTrack) {
         The initializer, getter and setter are optional.
 </div>
 
-<p></br></p>
-
 <pre>
   <br/>val name : String = "John"<br/>var age : Int = 0<br/>
 </pre>
@@ -256,8 +267,6 @@ if (!doNotTrack) {
 <div class="center-justified text-content">
         which is exactly the replacement of
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>public final String name = "John";<br/>public int age = 0;<br/>
@@ -277,17 +286,23 @@ Things to notice
         </ul>
 </div>
 
-<p></br></p>
-
-<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-1.gif" alt="Property, Getter and Setter — Kotlin"></p>
-
-<p></br></p>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 <div class="center-justified text-content">
         But we just broke the rule of encapsulation by defining a variable as <mark>public</mark>. What if I want to declare the variable as <mark>private</mark> having a getter and a setter as <mark>public</mark> methods.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>private String name;<br/>public String getName() {<br/>        return name;<br/>    }<br/>public void setName(String name) {<br/>        this.name = name;<br/>    }<br/>
@@ -305,17 +320,23 @@ Things to notice
 </pre>
 
 
-<p></br></p>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 <h3>
         Where are my getter and setter?
 </h3>
-
-<p></br></p>
-
-<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-2.gif" alt="Property, Getter and Setter — Kotlin"></p>
-
-<p></br></p>
 
 <div class="center-justified text-content">
         Trust me, they are there. No need to define them explicitly.
@@ -323,8 +344,6 @@ Things to notice
         </br>
         Ok, I Trust you. What if I want to override the getter and setter.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>private int size = 0;<br/>private boolean isEmpty;<br/>public boolean isEmpty() {<br/>        return size == 0;<br/>    }<br/>
@@ -364,11 +383,19 @@ Things to notice
         What will be the equivalent Kotlin code for this?
 </div>
 
-<p></br></p>
-
-<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-3.gif" alt="Property, Getter and Setter — Kotlin"></p>
-
-<p></br></p>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 <div class="center-justified text-content">
         Well, it’s not that difficult.
@@ -378,10 +405,6 @@ Things to notice
   <br/>private var firstName: String? = null<br/>private var lastName: String? = null<br/>var name: String<br/>    get() = firstName + " " + lastName<br/>    set(value) {<br/>        val nameArray = value.split(" ".toRegex())<br/>        firstName = nameArray[0]<br/>        lastName = nameArray[1]<br/>    }<br/>
 </pre>
 
-
-<p></br></p>
-
-<p><img class="blogimg" src="../../img/blogs/property-getter-and-setter-kotlin/property-getter-and-setter-kotlin-4.gif" alt="Property, Getter and Setter — Kotlin"></p>
 
 <p></br></p>
 

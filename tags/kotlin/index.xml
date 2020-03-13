@@ -72,8 +72,7 @@
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
-      <description>There can be two ways to declare and initialize a var property  
- var variable : CustomClass = CustomClass()  orvar variable : CustomClass? = null  The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.  But in the second type, the property is initialized with a null value and will require a null check (?.) always while using it.</description>
+      <description>There can be two ways to declare and initialize a var property   var variable : CustomClass = CustomClass()  orvar variable : CustomClass? = null    (adsbygoogle = window.adsbygoogle || []).push({});   The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.  But in the second type, the property is initialized with a null value and will require a null check (?</description>
     </item>
     
     <item>
@@ -91,8 +90,7 @@
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</guid>
-      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).  For example, a normal property can’t hold a null value and will show a compile error.  
- var variable : CustomClass = CustomClass()variable = null //compilation error  Instead, we can add a ? after the data type of that property which declares that variable as a nullable property</description>
+      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).  For example, a normal property can’t hold a null value and will show a compile error.   var variable : CustomClass = CustomClass()variable = null //compilation error    (adsbygoogle = window.adsbygoogle || []).push({});   Instead, we can add a ? after the data type of that property which declares that variable as a nullable property   var nullableVariable : CustomClass?</description>
     </item>
     
     <item>

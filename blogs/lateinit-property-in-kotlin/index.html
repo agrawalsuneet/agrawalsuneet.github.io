@@ -230,20 +230,30 @@ if (!doNotTrack) {
         There can be two ways to declare and initialize a var property
 </div>
 
-<p></br></p>
-
 <pre>
   <br/>var variable : <b>CustomClass</b> = CustomClass() <br/> or<br/>var variable : <b>CustomClass?</b> = null<br/>
 </pre>
 
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 <div class="center-justified text-content">
         The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.
         </br>
         But in the second type, the property is initialized with a null value and will require a null check (?.) always while using it.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>variable?.someMethodCall()<br/>//or<br/>variable!!.someMethodCall()<br/>
@@ -257,8 +267,6 @@ if (!doNotTrack) {
         To handle this kind of cases, we can mark the property with the ‘lateinit’ modifier
 </div>
 
-<p></br></p>
-
 <pre>
   <br/><b>lateinit</b> var variable : <b>CustomClass</b><br/>
 </pre>
@@ -268,8 +276,6 @@ if (!doNotTrack) {
         the property ‘variable’ can be initialized later in the constructor or in any method before accessing it. Also, it doesn’t require a null check (!!) every time while using it.
 </div>
 
-<p></br></p>
-
 <pre>
   <br/>variable = CustomClass()<br/>variable.someMethodCall()<br/>
 </pre>
@@ -278,9 +284,9 @@ if (!doNotTrack) {
 <p></br>
 </br></p>
 
-<h4>
+<h3>
 Limitations of Late-Initialized Properties
-</h4>
+</h3>
 
 <div class="center-justified text-content">
         <ol>

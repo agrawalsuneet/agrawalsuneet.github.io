@@ -231,8 +231,23 @@ if (!doNotTrack) {
         </br>
         </br>
         Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.
-        </br>
-        </br>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
         There are a few scope functions
         <ul>
                 <li>let</li>
@@ -241,7 +256,6 @@ if (!doNotTrack) {
                 <li>apply</li>
                 <li>also</li>
         </ul>
-
         </br>
         To keep this article short and to the point, we will talk only about <mark>let</mark> in this article and all the use cases around it.
         </br>
@@ -269,17 +283,29 @@ if (!doNotTrack) {
                 <li>The return type of the let function is nothing but the last expression we returned from our passed lambda parameter.</li>
                 <li>Since its an extension function to the Template class, it can be called on any object.</li>
         </ol>
+</div>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
         </br>
         <h4>
         Now let's understand what is the contract.
         </h4>
-
-        </br>
         The contract is nothing but a contract applied to the passed lambda as a parameter.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>/**<br/> * Specifies the contract of a function.<br/> *<br/> * The contract description must be at the beginning of a function and have at least one effect.<br/> *<br/> * Only the top-level functions can have a contract for now.<br/> *<br/> * @param builder the lambda where the contract of a function is described with the help of the [ContractBuilder] members.<br/> *<br/>@ContractsDsl<br/>@ExperimentalContracts<br/>@InlineOnly<br/>@SinceKotlin("1.3")<br/>@Suppress("UNUSED_PARAMETER")<br/>public inline fun <b>contract</b>(builder: ContractBuilder.() -> Unit) { }<br/>
@@ -291,19 +317,14 @@ if (!doNotTrack) {
 </div>
 
 <p></br>
-</br>
 <h4>
 And what contract applied in the <mark>let</mark> function
 </h4></p>
-
-<p></br></p>
 
 <pre>
   <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
 </pre>
 
-
-<p></br></p>
 
 <div class="center-justified text-content">
         It superimposes 2 conditions
@@ -311,10 +332,7 @@ And what contract applied in the <mark>let</mark> function
         <li>The lambda will be invoked only during owner function call and it won't be called once the owner function is completed.</li>
         <li>The number of times this lambda function will be invoked (which is exactly once in our case) which is an enum.</li>
         </ol>
-
         The above conditions are clear from there definition itself.
-
-        </br>
         </br>
         <h3>
         So basically, let function will be
@@ -328,13 +346,27 @@ And what contract applied in the <mark>let</mark> function
         </ul>
 </div>
 
-<p></br>
-</br></p>
+<div class="center-justified text-content">
+        
+</div>
 
-<p><h3>
-Now let&rsquo;s look at the use cases
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<h3>
+Now let's look at the use cases
 </h3>
-</br></p>
 
 <div class="center-justified text-content">
         The best use case of this <mark>let</mark> function is to avoid the null check. <mark>let</mark> function used with <mark>?.</mark> ensures the execution only if the expression is non-null. You can read about the null safety in the Kotlin <a href="../../blogs/safe-calls-vs-null-checks-in-kotlin/">here</a>.
@@ -345,23 +377,16 @@ Now let&rsquo;s look at the use cases
 </pre>
 
 
-<p></br></p>
-
 <div class="center-justified text-content">
         Please note that we can point to the calling object by using <mark>it</mark>. 
         </br>
-        </br>
         we can even use a local parameter for the calling object to avoid conflicts in the nested <mark>let</mark> or lambda function.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>employee?.<b>let</b> { person -><br/>    person.firstName?.<b>let</b> { name -><br/>        println(name)<br/>    }<br/>}<br/>
 </pre>
 
-
-<p></br></p>
 
 <div class="center-justified text-content">
         Here the <mark>person</mark> and <mark>name</mark> are the named variable within the let function scope.
@@ -370,20 +395,28 @@ Now let&rsquo;s look at the use cases
         If the let lambda contains only a single expression, we can even use method reference (<mark>::</mark>) instead of lambda
 </div>
 
-<p></br></p>
-
 <pre>
   <br/>employee?.firstName?.<b>let</b> (::println)<br/>
 </pre>
 
 
-<p></br></p>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 <div class="center-justified text-content">
         Also, the <mark>let</mark> function can be used to invoke one or more functions on the result of the chain.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>var list = mutableListOf(6, 1, 5, 2, 4, 3)<br/>list.filter { it % 2 == 0 }.sortedBy { it }.<b>let</b> {<br/>    println("Sorted even numbers are : $it")<br/>}<br/>//this will print<br/>Sorted even numbers are : [2, 4, 6]<br/>

@@ -128,7 +128,7 @@
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
-      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.  Let’s figure out what are the types of checks available in Kotlin.      Structural Equality (‘==’)  == operator is used to compare the data of two variables.  Please don’t misunderstand this equality operator with the Java == operator as both are different.</description>
+      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.  Let’s figure out what are the types of checks available in Kotlin.    (adsbygoogle = window.adsbygoogle || []).push({});    Structural Equality (‘==’)  == operator is used to compare the data of two variables.</description>
     </item>
     
     <item>

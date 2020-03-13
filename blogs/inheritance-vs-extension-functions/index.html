@@ -49,7 +49,7 @@
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2019-12-02">
+  <meta property="article:published_time" content="2020-03-12">
   
 
   <meta name="url" content="https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/">
@@ -229,22 +229,29 @@ if (!doNotTrack) {
         We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.
         </br>
         Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other. Once you understand the difference, it will be very easy to decide what to use.
-        </br>
-        </br>
-        Let&rsquo;s understand with code first what are both. I am going to explain using Kotlin language example but the concept is the same across all the languages.
-</div>
-</br></p>
+</div></p>
 
-<h3>
-        Inheritance
-</h3>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 <div class="center-justified text-content">
-Inheritance is nothing but extending a class and adding functionality to it. You can add properties (variables) as well as functions in the extending class. You can access the variables of extending (Base) class if they are not private (protected or internal or public) can override them if they are not final (open variables) or you can override the functions also.
-
+    Let's understand with code first what are both. I am going to explain using Kotlin language example but the concept is the same across all the languages.
+    <h3>
+    Inheritance
+    </h3>
+    Inheritance is nothing but extending a class and adding functionality to it. You can add properties (variables) as well as functions in the extending class. You can access the variables of extending (Base) class if they are not private (protected or internal or public) can override them if they are not final (open variables) or you can override the functions also.
 </div>
-
-<p></br></p>
 
 <pre>
   <br/>open class <b>Person</b>(var firstName : String,<br/>                  protected var lastName : String) {<br/>    open fun getFullDetails() : String {<br/>       return "$firstName $lastName"<br/>    }<br/>}<br/><br/>class <b>Student</b> : <b>Person</b> {<br/>    var rollNumber = 0<br/>    <br/>    constructor(firstName : String, <br/>            lastName: String,<br/>            rollNumber : Int) <br/>            : super (firstName, lastName){<br/>        this.rollNumber = rollNumber<br/>    }<br/>    <br/>    override fun getFullDetails() : String {<br/>     return "$firstName $lastName with Roll number as $rollNumber"<br/>  }<br/>}<br/>
@@ -252,7 +259,7 @@ Inheritance is nothing but extending a class and adding functionality to it. You
 
 
 <div class="center-justified text-content">
-And we can call it by using
+    And we can call it by using
 </div>
 
 <pre>
@@ -261,17 +268,31 @@ And we can call it by using
 
 
 <div class="center-justified text-content">
-Here we added a property i.e. rollNumber and override the function.
-</br>
-Now let's have a look at almost similar functionality using Extension functions.
-</br>
-</br>
+    Here we added a property i.e. rollNumber and override the function.
+    </br>
+    Now let's have a look at almost similar functionality using Extension functions.
+</div>
 
-<h3>
-        Extension Function
-</h3>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
-Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
+<div class="center-justified text-content">
+    <h3>
+            Extension Function
+    </h3>
+
+    Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
 </div>
 
 <pre>
@@ -291,28 +312,32 @@ We have a similar kind of class which is non open (final class). we added a func
 <div class="center-justified text-content">
 Now that we understand what is extension functions and what is an inheritance, let try to find out the difference which will make our life really easy while choosing what to use when.
 
-</br>
-</br>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
-<img class="blogimg" src="../../img/blogs/inheritance-vs-extension-function/inheritance_vs_extension_functions.gif" alt="Inheritance vs Extension functions">
-
-</br>
-</br>
-
-<h4>
+<h3>
 Merits of Extension functions
-</h4>
+</h3>
 
 <ul>
   <li>Can add functionality to a final class also. The class need not be a non-final (open) class.</li>
   <li>Can add functionality without subclassing that means the object reference and the implementation can be of your base class.</li>
 </ul> 
 
-</br>
-
-<h4>
-Demerits of Extension functions
-</h4>
+<h3>
+Limitations of Extension functions
+</h3>
 
 <ul>
   <li>Can't access the protected variables/properties or functions of your base class.</li>
@@ -321,20 +346,18 @@ Demerits of Extension functions
 
 </br>
 
-<h4>
+<h3>
 Merits of Inheritance
-</h4>
+</h3>
 
 <ul>
   <li>Can add new properties, override functions (non-final) of the base class.</li>
   <li>Can access all protected variables and functions of the base class.</li>
 </ul> 
 
-</br>
-
-<h4>
-Demerits of Inheritance
-</h4>
+<h3>
+Limitations of Inheritance
+</h3>
 
 <ul>
   <li>Can't extend a final class.</li>

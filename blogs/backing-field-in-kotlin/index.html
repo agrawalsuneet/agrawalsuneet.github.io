@@ -255,7 +255,7 @@ if (!doNotTrack) {
 have a look at the below Kotlin code
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var <b>selectedColor</b>: Int = someDefaultValue<br/>        get() = selectedColor<br/>        set(value) {<br/>            this.selectedColor = value<br/>            doSomething()<br/>        }<br/>}<br/>
 </pre>
 
@@ -283,7 +283,7 @@ Classes in Kotlin cannot have fields. However, sometimes it is necessary to have
 Replace the variable with the keyword <mark>field</mark> inside getter and setter
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var <b>selectedColor</b>: Int = someDefaultValue<br/>        get() = field<br/>        set(value) {<br/>            field = value<br/>        }<br/>
 </pre>
 
@@ -303,7 +303,7 @@ Limitations while using Backing field
 For example, in the following case there will be no backing field:
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>val <b>isEmpty</b>: Boolean<br/>    get() = this.size == 0<br/>
 </pre>
 

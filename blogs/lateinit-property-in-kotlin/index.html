@@ -230,7 +230,7 @@ if (!doNotTrack) {
         There can be two ways to declare and initialize a var property
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var variable : <b>CustomClass</b> = CustomClass() <br/> or<br/>var variable : <b>CustomClass?</b> = null<br/>
 </pre>
 
@@ -255,7 +255,7 @@ if (!doNotTrack) {
         But in the second type, the property is initialized with a null value and will require a null check (?.) always while using it.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>variable?.someMethodCall()<br/>//or<br/>variable!!.someMethodCall()<br/>
 </pre>
 
@@ -267,7 +267,7 @@ if (!doNotTrack) {
         To handle this kind of cases, we can mark the property with the ‘lateinit’ modifier
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><b>lateinit</b> var variable : <b>CustomClass</b><br/>
 </pre>
 
@@ -276,7 +276,7 @@ if (!doNotTrack) {
         the property ‘variable’ can be initialized later in the constructor or in any method before accessing it. Also, it doesn’t require a null check (!!) every time while using it.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>variable = CustomClass()<br/>variable.someMethodCall()<br/>
 </pre>
 

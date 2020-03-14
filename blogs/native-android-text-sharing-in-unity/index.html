@@ -274,7 +274,7 @@ if (!doNotTrack) {
         The java code for the same will be
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//Java</l><br/>String shareSubject = "I challenge you to beat my high score in Fire Block";<br/>String shareMessage = "I challenge you to beat my high score in Fire Block. " +<br/>                      "Get the Fire Block app from the link below. \nCheers\n\n" +<br/>                      "http://onelink.to/fireblock";<br/><br/><b>Intent</b> sendIntent = new <b>Intent</b>();<br/>sendIntent.setAction(Intent.ACTION_SEND);<br/>sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareSubject);<br/>sendIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);<br/>sendIntent.setType("text/plain");<br/>startActivity(Intent.<b>createChooser</b>(sendIntent, "Share Via"));<br/>
 </pre>
 
@@ -283,7 +283,7 @@ if (!doNotTrack) {
         And the Kotlin code will be
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//Kotlon</l><br/>val shareSubject = "I challenge you to beat my high score in Fire Block"<br/>val shareMessage = "I challenge you to beat my high score in Fire Block. " +<br/>                   "Get the Fire Block app from the link below. \nCheers\n\n" +<br/>                   "http://onelink.to/fireblock"<br/><br/>val sendIntent = <b>Intent</b>()<br/>sendIntent.action = Intent.ACTION_SEND<br/>sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareSubject)<br/>sendIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)<br/>sendIntent.type = "text/plain"<br/>startActivity(Intent.<b>createChooser</b>(sendIntent, "Share Via"))<br/>
 </pre>
 
@@ -309,7 +309,7 @@ if (!doNotTrack) {
         Let’s use these classes and go step by step. First will create an <mark>AndroidJavaClass</mark> object of <mark>Intent</mark> class and will create and <mark>AndroidJavaObject</mark> of that class.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>//create intent for action send<br/><b>AndroidJavaClass</b> intentClass = new <br/>                 <b>AndroidJavaClass</b>("android.content.Intent");<br/><b>AndroidJavaObject</b> intentObject = new <br/>                 <b>AndroidJavaObject</b>("android.content.Intent");<br/>         <br/> //set action to that intent object   <br/>intentObject.Call&lt;AndroidJavaObject&gt;("setAction", intentClass.GetStatic&lt;string&gt; ("ACTION_SEND"));<br/>
 </pre>
 
@@ -320,7 +320,7 @@ if (!doNotTrack) {
         Next will set the share type as text and set extra subject and text to be shared.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>var shareSubject = "I challenge you to beat my high score in" +<br/>                   "Fire Block";<br/><br/>var shareMessage = "I challenge you to beat my high score in Fire<br/>                    Block. " +<br/>                    "Get the Fire Block app from the link below.<br/>                     \nCheers\n\n" +<br/>                    "http://onelink.to/fireblock";<br/><br/>//set the type as text and put extra subject and text to share<br/>intentObject.Call&lt;AndroidJavaObject&gt;("setType", "text/plain");<br/>intentObject.Call&lt;AndroidJavaObject&gt;("putExtra", intentClass.GetStatic&lt;string&gt; ("EXTRA_SUBJECT"), shareSubject);<br/>intentObject.Call&lt;AndroidJavaObject&gt;("putExtra", intentClass.GetStatic&lt;string&gt; ("EXTRA_TEXT"), shareMessage);<br/>
 </pre>
 
@@ -331,7 +331,7 @@ if (!doNotTrack) {
         Now that we have the intent object ready with all the extras to be shared, let’s call the <mark>Activity</mark> class’ <mark>createChooser</mark> method and pass the intent object along with the text to be displayed over the apps list.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>//create current activity object<br/><b>AndroidJavaClass</b> unity = new<br/>                <b>AndroidJavaClass</b>("com.unity3d.player.UnityPlayer");<br/><b>AndroidJavaObject</b> currentActivity =<br/>             unity.GetStatic&lt;AndroidJavaObject&gt; ("currentActivity");<br/>        <br/>//call createChooser method of activity class     <br/><b>AndroidJavaObject</b> chooser = <br/>        intentClass.CallStatic&lt;AndroidJavaObject&gt; ("createChooser",<br/>                     intentObject, "Share your high score");<br/>currentActivity.Call ("startActivity", chooser);<br/>
 </pre>
 

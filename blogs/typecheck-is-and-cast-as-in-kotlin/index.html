@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="Equality in Kotlin, (‘==’, ‘===’ and ‘equals’), kotlin equal,== kotlin">
+  <meta name="keywords" content="is kotlin,as kotlin,typecheck kotlin,cast kotlin">
 
 
   
@@ -35,26 +35,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Equality in Kotlin (‘==’, ‘===’ and ‘equals’)" />
-  <meta property="og:title" content="Equality in Kotlin (‘==’, ‘===’ and ‘equals’)">
-  <meta property="twitter:title" content="Equality in Kotlin (‘==’, ‘===’ and ‘equals’)">
+  <meta name="title" content="Suneet Agrawal | TypeCheck (‘is’) and Cast (‘as’) in Kotlin" />
+  <meta property="og:title" content="TypeCheck (‘is’) and Cast (‘as’) in Kotlin">
+  <meta property="twitter:title" content="TypeCheck (‘is’) and Cast (‘as’) in Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Equality in Kotlin (‘==’, ‘===’ and ‘equals’)">
-  <meta name="description" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
-  <meta property="og:description" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
-  <meta property="twitter:description" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
-  <meta name="abstract" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
-  <meta name="summary" content="We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.">
+  <meta name="topic" content="TypeCheck (‘is’) and Cast (‘as’) in Kotlin">
+  <meta name="description" content="Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI).">
+  <meta property="og:description" content="Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI).">
+  <meta property="twitter:description" content="Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI).">
+  <meta name="abstract" content="Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI).">
+  <meta name="summary" content="Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI).">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-02-15">
+  <meta property="article:published_time" content="2020-03-13">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -64,7 +64,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/equality-in-kotlin/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -80,7 +80,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’) &middot; Suneet Agrawal</title>
+  <title>TypeCheck (‘is’) and Cast (‘as’) in Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -219,7 +219,7 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">TypeCheck (‘is’) and Cast (‘as’) in Kotlin</h1>
 	</header>
 
 	<article>
@@ -227,9 +227,7 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.
-        </br>
-        Let’s figure out what are the types of checks available in Kotlin.
+       Type check is a way of checking the type(<mark>DataType</mark>) or <mark>Class</mark> of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as <mark>Run Time Type Identification (RTTI)</mark>.
 </div>
 
 <div class="col-xs-12 googleads">
@@ -246,49 +244,144 @@ if (!doNotTrack) {
     </script>
 </div>
 
-<h3>
-Structural Equality (‘==’)
-</h3>
+<div class="center-justified text-content">
+        Let’s consider an example where we have an <mark>Interface</mark> called Shape having an abstract method as <mark>calculateArea</mark>.
+</div>
+
+<pre class="zeropadding">
+  <br/>interface <b>Shape</b> {<br/>     fun calculateArea(): Float<br/>}<br/>
+</pre>
+
 
 <div class="center-justified text-content">
-        <mark>==</mark> operator is used to compare the data of two variables.
+        We have three different classes implementing the same interface and implementing their own area calculating method according to their shapes.
+</div>
+
+<pre class="zeropadding">
+  <br/>class <b>Circle</b> : <b>Shape</b> {<br/>    var radius: Float = 10.0f<br/>    override fun calculateArea(): Float {<br/>       return (22 * radius * radius) / 7<br/>    }<br/>}<br/><br/>class <b>Square</b> : <b>Shape</b> {<br/>    var sideLength: Float = 10.0f<br/>    override fun calculateArea(): Float {<br/>       return sideLength * sideLength<br/>    }<br/>}<br/><br/>class <b>Rectangle</b> : <b>Shape</b> {<br/>    var length: Float = 10.0f<br/>    var breadth: Float = 5.0f<br/>    override fun calculateArea(): Float {<br/>       return length * breadth<br/>    }<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Now let’s create an object with reference to the Shape interface but implementation of different classes based on some condition.
+</div>
+
+<pre class="zeropadding">
+  <br/>var shapeObject: <b>Shape</b><br/>if (/* Some Condition*/) {<br/>    shapeObject = <b>Circle</b>()<br/>} else if (/* Some Other Condition*/) {<br/>    shapeObject = <b>Square</b>()<br/>} else {<br/>    shapeObject = <b>Rectangle</b>()<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Now if we want to tweak the properties of the variable shapeObject (radius in case of Circle, sideLength in case of Square and length and breadth in case of Rectangle), you can’t simply use them directly as the reference to that object is Shape interface.
+</div>
+
+<pre class="zeropadding">
+  <br/>shapeObject.radius = 10.0f <e>//compile time error</e><br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Before accessing the properties of shapeObject one must ensure the type of variable shapeObject.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        ‘is’ and ‘!is’ Operators
+        </h3>
+        <mark>is</mark> operator checks the type of variable and returns boolean as true if it matches the type.
+</div>
+
+<pre class="zeropadding">
+  <br/>if (shapeObject <b>is</b> Circle) {<br/>    print(“it’s a Circle”)<br/>} else if (shapeObject <b>is</b> Square) {<br/>    print(“it’s a Square”)<br/>} else if (shapeObject <b>is</b> Rectangle) {<br/>    print(“it’s a Rectangle”)<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <mark>!is</mark> returns true if the type doesn’t matches. It’s just a <mark>not</mark> operator for <mark>is</mark> operator.
+</div>
+
+<pre class="zeropadding">
+  <br/>if (shapeObject <b>!is</b> Circle) {<br/>    print(“it’s not a Circle”)<br/>} else if (shapeObject <b>!is</b> Square) {<br/>    print(“it’s not a Square”)<br/>} else if (shapeObject <b>!is</b> Rectangle) {<br/>    print(“it’s not a Rectangle”)<br/>}<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        Smart Casts
+        </h3>
+        In other programming languages, the variable requires an explicit casting on the variable before accessing the properties of that variable but Kotlin does a smart casting. The compiler automatically converts the variable shapeObject to a particular class reference once it’s passed through any conditional operator.
+</div>
+
+<pre class="zeropadding">
+  <br/>var area: Float = 0.0f<br/>if (shapeObject <b>is</b> Circle) {<br/>    shapeObject.radius = 10.0f //compiles fine<br/>    area = shapeObject.calculateArea()<br/>} else if (shapeObject <b>is</b> Square) {<br/>    shapeObject.sideLength = 5.0f //compiles fine<br/>    area = shapeObject.calculateArea()<br/>} else if (shapeObject <b>is</b> Rectangle) {<br/>    shapeObject.length = 10.0f //compiles fine<br/>    shapeObject.breadth = 5.0f //compiles fine<br/>    area = shapeObject.calculateArea()<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The compiler is sufficiently smart to know a cast to be safe if a negative check leads to a <mark>return</mark>.
+</div>
+
+<pre class="zeropadding">
+  <br/>if ( shapeObject <b>!is</b> Circle) return<br/>shapeObject.radius = 3.0f /*compiles fine as the non Circle class reference were already returned*/<br/>area = shapeObject.calculateArea()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        It even works on the right-hand side of <mark>&&</mark> and <mark>||</mark>
+</div>
+
+<pre class="zeropadding">
+  <br/>/* Automatically cast the right-hand side of && to Circle */<br/>if (shapeObject <b>is</b> Circle && shapeObject.radius > 5.0f){<br/>    print(“Circle with radius more than 5.0”)<br/>}<br/>/* Automatically cast the right hand side of || to Sqaure */<br/>if (shapeObject <b>!is</b> Square || shapeObject.sideLength < 3.0f){<br/>    print(“Either not square or is a square with side length less than 3.0f”)<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        it even works with <mark>when</mark> conditions or <mark>while</mark> loop
+</div>
+
+<pre class="zeropadding">
+  <br/>when(shapeObject){<br/>    <b>is</b> Circle -> shapeObject.radius = 3.0f<br/>    <b>is</b> Square -> shapeObject.sideLength = 4.0f<br/>    <b>is</b> Rectangle -> {<br/>       shapeObject.length = 5.0f<br/>       shapeObject.breadth = 6.0f<br/>    }<br/>    else -> print(“Undefined type”)<br/>}<br/>var count = 0<br/>while (count < 5 && shapeObject <b>is</b> Circle){<br/>    shapeObject.radius = count.toFloat() //compiles fine<br/>    area += shapeObject.calculateArea()<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Note that smart casts don’t work when the compiler can’t guarantee that the variable can’t change between the check and the usage. 
         </br>
-        Please <b>don’t</b> misunderstand this equality operator with the Java <mark>==</mark> operator as both are different. <mark>==</mark> operator in Kotlin only compares the data or variables, whereas in Java or other languages <mark>==</mark> is generally used to compare the references. The negated counterpart of <mark>==</mark> in Kotlin is <mark>!=</mark> which is used to compare if both the values are not equal to each other.
-</div>
-
-<p></br>
-<h3>
-Referential equality (‘===’)
-</h3></p>
-
-<div class="center-justified text-content">
-        <mark>===</mark> operator is used to compare the reference of two variable or object. It will only be <mark>true</mark> if both the objects or variables pointing to the same object. The negated counterpart of <mark>===</mark> in Kotlin is <mark>!==</mark> which is used to compare if both the values are not equal to each other. For values which are represented as primitive types at runtime (for example, Int), the <mark>===</mark> equality check is equivalent to the <mark>==</mark> check.
-</div>
-
-<p></br>
-<h3>
-.equals method
-</h3></p>
-
-<div class="center-justified text-content">
-        <mark>equals(other: Any?)</mark> method is implemented in <mark>Any</mark> class and can be overridden in any extending class. <mark>.equals</mark> method also compares the content of the variables or objects just like <mark>==</mark> operator but it behaves differently in case of <mark>Float</mark> and <mark>Double</mark> comparison.
+        More specifically, smart casts are applicable according to the following rules:
         </br>
-        The difference between <mark>==</mark> and <mark>.equals</mark> is in case of <mark>Float</mark> and <mark>Double</mark> comparison, <mark>.equals</mark> disagrees with the IEEE 754 Standard for Floating-Point Arithmetic.
-</div>
-
-<p></br></p>
-
-<h4>
-And what does disagree with IEEE 754 Standard for Floating-Point Arithmetic mean?
-</h4>
-
-<div class="center-justified text-content">
-        It means,
-
         <ul>
-                <li><mark>NaN</mark> is considered equal to itself</li>
-                <li><mark>NaN</mark> is considered greater than any other element including POSITIVE_INFINITY</li>
-                <li><mark>-0.0</mark> is considered less than <mark>0.0</mark></li>
+                <li><mark>val</mark> local variables — always</li>
+                <li><mark>val</mark> properties — if the property is private or internal or the check is performed in the same module where the property is declared. Smart casts aren’t applicable to open properties or properties that have custom getters</li>
+                <li><mark>var</mark> local variables — if the variable is not modified between the check and the usage and is not captured in a lambda that modifies it</li>
+                <li><mark>var</mark> properties — never (because the variable can be modified at any time by other code).</li>
         </ul>
 </div>
 
@@ -306,110 +399,37 @@ And what does disagree with IEEE 754 Standard for Floating-Point Arithmetic mean
     </script>
 </div>
 
-<h4>
-Confused?
-</h4>
-
 <div class="center-justified text-content">
-        Will explain this and everything with examples.
-        </br>
-        First, let’s compare two primitive type Int variables by all the equal checks.
+        <h3>
+        Explicit Cast operator ‘as’
+        </h3>
+        <mark>as</mark> operator works as other languages cast operators which casts the object to another object with particular reference.
 </div>
 
 <pre class="zeropadding">
-  <br/>val int1 = 10<br/>val int2 = 10<br/><br/>println(int1 == int2)        // true<br/>println(int1.equals(int2))   // true<br/>println(int1 === int2)       // true<br/>
+  <br/>var otherShapeObject = shapeObject <b>as</b> Circle<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        All the above comparisions will print <mark>true</mark> because primitive datatype only checks the value in case of <mark>===</mark> also which will be equal in our case.
-        </br>
-        </br>
-        Now let’s use the wrapper class instead of Primitive datatype and compare all three equal checks
+        or the nullable type object can only be cast to a new nullable reference type object.
 </div>
 
 <pre class="zeropadding">
-  <br/>val first = Integer(10)<br/>val second = Integer(10)<br/><br/>println(first == second)       //true<br/>println(first.equals(second))  //true<br/>println(first === second)      //false<br/>
+  <br/>var nullableShapeObject : Circle? = shapeObject <b>as</b> Circle?<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        In the above case, the <mark>==</mark> and <mark>.equals</mark> prints true because they compare only values whereas <mark>===</mark> compares the references of the objects which were different so it prints <mark>false</mark>.
+        The above explicit cast is unsafe as it can throw an exception if the cast is not possible. That’s why <mark>as</mark> operator called as unsafe cast operator.
         </br>
-        </br>
-        Now, let’s consider another case where we created our own custom class object and compared with all three checks.
+        Instead, we can use a safe cast operator <mark>as?</mark> where it assigns a <mark>null</mark> value if the cast is not possible without throwing an exception.
 </div>
 
 <pre class="zeropadding">
-  <br/>class Employee (val name: String)<br/>val emp1 = Employee(“Suneet”)<br/>val emp2 = Employee(“Suneet”)<br/><br/>println(emp1 == emp2)      //false<br/>println(emp1.equals(emp2)) //false<br/>println(emp1 === emp2)     //false<br/><br/>println(emp1.name == emp2.name)       //true<br/>println(emp1.name.equals(emp2.name))  //true<br/>println(emp1.name === emp2.name)      //true<br/>
+  <br/>var safeCastObject : Circle? = shapeObject <b>as?</b> Circle<br/>
 </pre>
 
-
-<div class="center-justified text-content">
-        The reason for the above comparison is obvious, As Empoyee is not a primitive datatype or wrapper class, all three compared the references, which returns <mark>false</mark> for all three checks. But in the case of string comparison, if only checks the contents of the string which were equal so it returns <mark>true</mark> for every case.
-</div>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<h4>
-Wait, but you said <mark>==</mark> and <mark>.equals</mark> only compares the contents of the object which were equal in our case.
-</h4>
-
-<div class="center-justified text-content">
-        <b>Exactly.</b> But the content comparison only works if its a <mark>data</mark> class. If it’s a normal class the compiler consider both the objects as the different objects even if the content is same but if its a <mark>data</mark> class, the compiler compares the data and return <mark>true</mark> if the content is same.
-        </br>
-        </br>
-        Let’s change the above class to data class.
-</div>
-
-<pre class="zeropadding">
-  <br/>data class Employee (val name: String)<br/>val emp1 = Employee("Suneet")<br/>val emp2 = Employee("Suneet")<br/><br/>println(emp1 == emp2)         //true<br/>println(emp1.equals(emp2))    //true<br/>println(emp1 === emp2)        //false<br/><br/>println(emp1.name == emp2.name)      //true<br/>println(emp1.name.equals(emp2.name)) //true<br/>println(emp1.name === emp2.name)     //true<br/>
-</pre>
-
-
-<p></br></p>
-
-<div class="center-justified text-content">
-        Last thing, Let’s compare the float values with a negative zero and positive zero.
-</div>
-
-<pre class="zeropadding">
-  <br/>val negZero = -0.0f<br/>val posZero = 0.0f<br/><br/>println(negZero == posZero)         //true<br/>println(negZero.equals(posZero))    //false<br/>println(negZero === posZero)        //true<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        As in the case of <mark>Float</mark> and <mark>Double</mark> comparison, <mark>.equals</mark> disagrees with the IEEE 754 Standard for Floating-Point Arithmetic, it returns a <mark>false</mark> when <mark>-0.0</mark> was compared with <mark>0.0</mark> whereas <mark>==</mark> and <mark>===</mark> returns <mark>true</mark>.
-</div>
-
-<p></br></p>
-
-<h4>
-Few things to keep in mind,
-</h4>
-
-<div class="center-justified text-content">
-        <ul>
-                <li>As there is no constructor as <mark>String(“”)</mark> in Kotlin, all string comparison will give <mark>true</mark> if the content will be equal.</li>
-                <li>There’s no point in optimizing code when comparing to <mark>null</mark> explicitly. <mark>a == null</mark> will be automatically translated to <mark>a === null</mark> as null is a reference and at the end, it will a reference check.</li>
-        </ul>
-
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/equality.html" target="_blank">Kotlin docs</a>
-        </br>
-</div>
 
 <div class="col-xs-12 googleads">
     
@@ -432,8 +452,8 @@ Few things to keep in mind,
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="../variable-number-of-arguments-vararg-kotlin/">
-        Variable number of arguments (vararg) : Kotlin &gt;&gt;
+      <a href="../property-getter-and-setter-kotlin/">
+        Property, Getter and Setter — Kotlin &gt;&gt;
       </a>
     </div>
 </div>

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>TypeCheck (‘is’) and Cast (‘as’) in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</guid>
+      <description>Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI).    (adsbygoogle = window.adsbygoogle || []).push({});   Let’s consider an example where we have an Interface called Shape having an abstract method as calculateArea.  interface Shape { fun calculateArea(): Float}  We have three different classes implementing the same interface and implementing their own area calculating method according to their shapes.</description>
+    </item>
+    
+    <item>
       <title>Inheritance vs Extension functions</title>
       <link>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</link>
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
@@ -44,7 +53,7 @@
       <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs (15 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more  3 Mar 2020  Kotlin Android      Why let function is an Extension to Template class?</description>
+      <description>Technical Blogs (16 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more  3 Mar 2020  Kotlin Android      Why let function is an Extension to Template class?</description>
     </item>
     
     <item>
@@ -99,7 +108,7 @@
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
-      <description>There can be two ways to declare and initialize a var property   var variable : CustomClass = CustomClass()  orvar variable : CustomClass? = null    (adsbygoogle = window.adsbygoogle || []).push({});   The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.  But in the second type, the property is initialized with a null value and will require a null check (?</description>
+      <description>There can be two ways to declare and initialize a var property  var variable : CustomClass = CustomClass()  orvar variable : CustomClass? = null    (adsbygoogle = window.adsbygoogle || []).push({});   The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.  But in the second type, the property is initialized with a null value and will require a null check (?</description>
     </item>
     
     <item>
@@ -117,7 +126,7 @@
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</guid>
-      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).  For example, a normal property can’t hold a null value and will show a compile error.   var variable : CustomClass = CustomClass()variable = null //compilation error    (adsbygoogle = window.adsbygoogle || []).push({});   Instead, we can add a ? after the data type of that property which declares that variable as a nullable property   var nullableVariable : CustomClass?</description>
+      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).  For example, a normal property can’t hold a null value and will show a compile error.  var variable : CustomClass = CustomClass()variable = null //compilation error    (adsbygoogle = window.adsbygoogle || []).push({});   Instead, we can add a ? after the data type of that property which declares that variable as a nullable property  var nullableVariable : CustomClass?</description>
     </item>
     
     <item>

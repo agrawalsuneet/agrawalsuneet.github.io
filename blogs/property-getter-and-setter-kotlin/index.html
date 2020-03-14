@@ -250,7 +250,7 @@ if (!doNotTrack) {
         The full syntax for declaring a property is
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var &lt;propertyName&gt;: &lt;PropertyType&gt; = &lt;property_initializer&gt;<br/> [&lt;getter&gt;]<br/> [&lt;setter&gt;]<br/>
 </pre>
 
@@ -259,7 +259,7 @@ if (!doNotTrack) {
         The initializer, getter and setter are optional.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>val name : String = "John"<br/>var age : Int = 0<br/>
 </pre>
 
@@ -268,7 +268,7 @@ if (!doNotTrack) {
         which is exactly the replacement of
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>public final String name = "John";<br/>public int age = 0;<br/>
 </pre>
 
@@ -304,7 +304,7 @@ Things to notice
         But we just broke the rule of encapsulation by defining a variable as <mark>public</mark>. What if I want to declare the variable as <mark>private</mark> having a getter and a setter as <mark>public</mark> methods.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>private String name;<br/>public String getName() {<br/>        return name;<br/>    }<br/>public void setName(String name) {<br/>        this.name = name;<br/>    }<br/>
 </pre>
 
@@ -315,7 +315,7 @@ Things to notice
         Here we go.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var name: String = “John”<br/>
 </pre>
 
@@ -345,7 +345,7 @@ Things to notice
         Ok, I Trust you. What if I want to override the getter and setter.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>private int size = 0;<br/>private boolean isEmpty;<br/>public boolean isEmpty() {<br/>        return size == 0;<br/>    }<br/>
 </pre>
 
@@ -354,7 +354,7 @@ Things to notice
         absolutely simple.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>private val size : Int = 0<br/>var isEmpty: Boolean = false<br/>    private set<br/>    get () = size == 0<br/>
 </pre>
 
@@ -369,7 +369,7 @@ Things to notice
         what about this.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>private String firstName;<br/>private String lastName;<br/>//private String name;<br/>public String getName() {<br/>        return firstName + " " + lastName;<br/>    }<br/>public void setName(String name) {<br/>        String nameArray[] = name.split(" ");<br/>        firstName = nameArray[0];<br/>        lastName = nameArray[1];<br/>    }<br/>
 </pre>
 
@@ -401,7 +401,7 @@ Things to notice
         Well, it’s not that difficult.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>private var firstName: String? = null<br/>private var lastName: String? = null<br/>var name: String<br/>    get() = firstName + " " + lastName<br/>    set(value) {<br/>        val nameArray = value.split(" ".toRegex())<br/>        firstName = nameArray[0]<br/>        lastName = nameArray[1]<br/>    }<br/>
 </pre>
 
@@ -421,7 +421,7 @@ Things to notice
 
 <p></br></p>
 
-<pre>
+<pre class="zeropadding">
   <br/>public var name: String = "John"<br/>   private set<br/>
 </pre>
 
@@ -438,7 +438,7 @@ Things to notice
 
 <p></br></p>
 
-<pre>
+<pre class="zeropadding">
   <br/>//Base class<br/>open var age: Int = 0<br/> get() = 10<br/>//Extending class<br/>override var age: Int = 0<br/> get()= 20<br/>
 </pre>
 

@@ -256,7 +256,7 @@ Add <mark>companion</mark> keyword in front of object declaration.
 </div>
 
 
-<pre>
+<pre class="zeropadding">
   <br/>class <b>EventManager</b> {<br/><br/>    <b>companion object</b> FirebaseManager {<br/>     <br/>    }  <br/>}<br/><b>val firebaseManager</b> = EventManager.FirebaseManager<br/>
 </pre>
 
@@ -268,7 +268,7 @@ Add <mark>companion</mark> keyword in front of object declaration.
 </div>
 
 
-<pre>
+<pre class="zeropadding">
   <br/>class <b>EventManager</b> {<br/><br/>    <b>companion object</b> {<br/>       <br/>    }<br/>}<br/><b>val firebaseManager</b> = EventManager.Companion<br/>
 </pre>
 
@@ -292,7 +292,7 @@ Add <mark>companion</mark> keyword in front of object declaration.
 </div>
 
 
-<pre>
+<pre class="zeropadding">
   <br/>//Java code<br/>public class <b>EventManager</b> {<br/><br/>    private static EventManager instance;<br/><br/>    private EventManager() {<br/><br/>    }<br/><br/>    public static EventManager getManagerInstance() {<br/>        if (instance == null) {<br/>            instance = new EventManager();<br/>        }<br/><br/>        return instance;<br/>    }<br/><br/>    public boolean sendEvent(String eventName) {<br/>        Log.d("Event Sent", eventName);<br/>        return true;<br/>    }<br/>}<br/>
 </pre>
 
@@ -303,7 +303,7 @@ Add <mark>companion</mark> keyword in front of object declaration.
         Now when we try to implement the same class in the Kotlin, the private static <mark>instance</mark> and the <mark>managerInstance</mark> property will be moved to <mark>companion</mark> object. Rest of the code remains the same.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>//Kotlin code<br/>class <b>EventManager</b> {<br/><br/>    private constructor() {<br/>    }<br/><br/>    <b>companion object</b> {<br/>        private lateinit var instance: EventManager<br/><br/>        val managerInstance: EventManager<br/>            get() {<br/>                if (instance == null) {<br/>                    instance = EventManager()<br/>                }<br/><br/>                return instance<br/>            }<br/>    }<br/><br/>    fun sendEvent(eventName: String): Boolean {<br/>        Log.d("Event Sent", eventName)<br/>        return true;<br/>    }<br/>}<br/>
 </pre>
 
@@ -330,7 +330,7 @@ And how I use the sendEvent method?
         1. When you name the <mark>companion</mark> object as FirebaseManager
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>val firebaseManager = EventManager.FirebaseManager<br/>firebaseManager.managerInstance.sendEvent("some event")<br/>//or<br/>EventManager.FirebaseManager.<b>managerInstance</b>.sendEvent("Some event")<br/>
 </pre>
 
@@ -341,7 +341,7 @@ And how I use the sendEvent method?
         2. When you didn’t name the <mark>companion</mark> object
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>val firebaseManager = EventManager.Companion<br/>firebaseManager.managerInstance.sendEvent("some event")<br/>// or<br/>EventManager.Companion.<b>managerInstance</b>.sendEvent("Some event")<br/>
 </pre>
 
@@ -366,7 +366,7 @@ And how I use the sendEvent method?
         However, if you use the<mark>@JvmStatic</mark> annotation, you can have members of <mark>companion</mark> objects generated as real <mark>static</mark> methods and fields on the JVM.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>//Kotlin code<br/>interface <b>EventManagementInterface</b> {<br/>    fun someMethod()<br/>}<br/><br/>class EventManager {<br/><br/>    companion object <b>FirebaseManager</b> : <b>EventManagementInterface</b> {<br/>        <br/>        override fun someMethod() {<br/>            <br/>        }<br/>    }<br/>}<br/>
 </pre>
 

@@ -268,7 +268,7 @@ if (!doNotTrack) {
         To show this toast in native android we need a simple call to the <mark>Toast</mark> class static method <mark>makeText</mark> which return us a <mark>Toast</mark> class object and then call <mark>show</mark> method on that object.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//Java Code</l><br/>Context context = getApplicationContext();<br/>CharSequence text = "This is a toast";<br/>int duration = Toast.LENGTH_SHORT;<br/><br/>Toast toast = Toast.makeText(context, text, duration);<br/>toast.show();<br/><br/><l>//Kotlin Code</l><br/>val text = "This is a toast"<br/>val duration = Toast.LENGTH_SHORT<br/><br/>val toast = Toast.makeText(applicationContext, text, duration)<br/>toast.show()<br/>
 </pre>
 
@@ -315,7 +315,7 @@ if (!doNotTrack) {
         First, lets put a Platform <a href="https://docs.unity3d.com/Manual/PlatformDependentCompilation.html" target="_blank">#define</a> directives because this particular piece of code will only be supported on the Android platform
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code</l><br/>#if <b>UNITY_ANDROID</b><br/>//our entire code<br/>//..<br/>#endif<br/>
 </pre>
 
@@ -326,7 +326,7 @@ if (!doNotTrack) {
         Next, create a new <mark>AndroidJavaClass</mark> object of <mark>Toast</mark> class.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code</l><br/>AndroidJavaClass toastClass = <br/>               new AndroidJavaClass("android.widget.Toast");<br/>
 </pre>
 
@@ -338,7 +338,7 @@ if (!doNotTrack) {
         Now, as we know that <mark>makeText</mark> method of <mark>Toast</mark> class accepts three arguments, but the <mark>AndroidJavaObject.Call</mark> or <mark>AndroidJavaObject.CallStatic</mark> method accepts all the arguments as an <mark>object array</mark> so let’s create an object array with all the required arguments in it.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code</l><br/>//create an object array of 3 size<br/>object[] toastParams = new object[3];<br/><br/>//create a class reference of unity player activity<br/>AndroidJavaClass unityActivity = <br/>        new AndroidJavaClass ("com.unity3d.player.UnityPlayer");<br/><br/>//set the first object in the array <br/>//as current activity reference<br/>toastParams[0] = <br/>    unityActivity.GetStatic&lt;AndroidJavaObject&gt; ("currentActivity");<br/><br/>//set the second object in the array <br/>//as the CharSequence to be displayed<br/>toastParams[1] = "This is a Toast";<br/><br/>//set the third object in the array<br/>//as the duration of the toast from<br/>toastParams[2] = toastClass.GetStatic&lt;int&gt; ("LENGTH_LONG");<br/>
 </pre>
 
@@ -350,7 +350,7 @@ if (!doNotTrack) {
         Now that we have the object array ready, let’s call the makeText method of Toast class with passing the object array as an argument.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code</l><br/>AndroidJavaObject toastObject =<br/>                toastClass.CallStatic&lt;AndroidJavaObject&gt;<br/>                             ("makeText", toastParams);<br/>
 </pre>
 
@@ -359,7 +359,7 @@ if (!doNotTrack) {
         <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.CallStatic.html" target="_blank">AndroidJavaObject.CallStatic</a> method is used to call a static Java method on a class. This method returns us an <mark>AndroidJavaObject</mark> class object which is the <mark>Toast</mark> class object in our case. We can call the <mark>show</mark> method on this object now.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/><l>//C# code</l><br/>toastObject.Call ("show");<br/>
 </pre>
 

@@ -232,7 +232,7 @@ if (!doNotTrack) {
         For example, a normal property can’t hold a null value and will show a compile error.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var variable : <b>CustomClass</b> = CustomClass()<br/>variable = null //compilation error<br/>
 </pre>
 
@@ -255,7 +255,7 @@ if (!doNotTrack) {
         Instead, we can add a <mark>?</mark> after the data type of that property which declares that variable as a nullable property
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var nullableVariable : <b>CustomClass?</b> = CustomClass()<br/>nullableVariable = null //works fine<br/>
 </pre>
 
@@ -266,7 +266,7 @@ if (!doNotTrack) {
 
 <p></br></p>
 
-<pre>
+<pre class="zeropadding">
   <br/>variable.someMethodCall() //works fine as the compiler is sure that<br/>                          //the variable can’t be null<br/>nullableVariable.someMethodCall() //will highlight compilation error<br/>                                  //as compiler is not sure as<br/>                                  //nullVariable can be null.<br/>
 </pre>
 
@@ -299,7 +299,7 @@ Explicit Null Check
         This is the old pattern that we use in every other language, checking the variable if its null or not.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>if ( null <b>!=</b> nullableVariable) {<br/> nullableVariable.someMethodCall()<br/>} else {<br/> // fallback flow<br/>}<br/>
 </pre>
 
@@ -310,7 +310,7 @@ Explicit Null Check
         If it’s a mutable property, the explicit null check won’t work and the compiler will show the below compilation error.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>Smart cast to ‘CustomClass’ is impossible, because ‘nullableVariable’ is a mutable property that could have been changed by this time.<br/>
 </pre>
 
@@ -339,7 +339,7 @@ Safe Calls (?.)
         This calls the method if the property is not null or returns null if that property is null without throwing an NPE (null pointer exception).
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>nullableVariable<b>?.</b>someMethodCall()<br/>
 </pre>
 
@@ -348,7 +348,7 @@ Safe Calls (?.)
         Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>bob<b>?.</b>department<b>?.</b>head<b>?.</b>name<br/>
 </pre>
 
@@ -360,7 +360,7 @@ Safe Calls (?.)
 To perform a certain operation only for non-null values, you can use the safe call operator together with let
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>val listWithNulls: List<String?> = listOf(“A”, null)<br/>for (item in listWithNulls) {<br/> item<b>?.</b>let { println(it) } // prints A and ignores null<br/>}<br/>
 </pre>
 
@@ -387,7 +387,7 @@ Elvis Operator (?:)
         This one is similar to safe calls except the fact that it can return a non-null value if the calling property is null even
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>val result = nullableVariable<b>?.</b>someMethodCall()<br/>                       <b>?:</b> fallbackIfNullMethodCall()<br/>
 </pre>
 
@@ -399,7 +399,7 @@ Elvis Operator (?:)
         Note that, since throw and return are expressions in Kotlin, they can also be used on the right-hand side of the Elvis operator. This can be very handy, for example, for checking function arguments
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>fun foo(node: Node): String? {<br/> val parent = node.getParent() <b>?:</b> return null<br/> val name = node.getName() <b>?:</b> throw IllegalArgumentException(“name expected”)<br/> // …<br/>}<br/>
 </pre>
 
@@ -426,7 +426,7 @@ The !! Operator
         This operator is used to explicitly tell the compiler that the property is not null and if it’s null, please throw a null pointer exception (NPE)
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>nullableVariable<b>!!.</b>someMethodCall()<br/>
 </pre>
 
@@ -478,8 +478,8 @@ Difference between ?. and !!
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="../property-getter-and-setter-kotlin/">
-        Property, Getter and Setter — Kotlin &gt;&gt;
+      <a href="../typecheck-is-and-cast-as-in-kotlin/">
+        TypeCheck (‘is’) and Cast (‘as’) in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

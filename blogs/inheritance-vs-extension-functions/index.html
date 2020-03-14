@@ -253,7 +253,7 @@ if (!doNotTrack) {
     Inheritance is nothing but extending a class and adding functionality to it. You can add properties (variables) as well as functions in the extending class. You can access the variables of extending (Base) class if they are not private (protected or internal or public) can override them if they are not final (open variables) or you can override the functions also.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>open class <b>Person</b>(var firstName : String,<br/>                  protected var lastName : String) {<br/>    open fun getFullDetails() : String {<br/>       return "$firstName $lastName"<br/>    }<br/>}<br/><br/>class <b>Student</b> : <b>Person</b> {<br/>    var rollNumber = 0<br/>    <br/>    constructor(firstName : String, <br/>            lastName: String,<br/>            rollNumber : Int) <br/>            : super (firstName, lastName){<br/>        this.rollNumber = rollNumber<br/>    }<br/>    <br/>    override fun getFullDetails() : String {<br/>     return "$firstName $lastName with Roll number as $rollNumber"<br/>  }<br/>}<br/>
 </pre>
 
@@ -262,7 +262,7 @@ if (!doNotTrack) {
     And we can call it by using
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var student = Student ("Suneet", "Agrawal", 12)<br/>println(student.getFullDetails())<br/>
 </pre>
 
@@ -295,7 +295,7 @@ if (!doNotTrack) {
     Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>class <b>Employee</b>(var firstName : String, var lastName : String) {<br/>}<br/><br/>fun Employee.getFullDetails() : String {<br/>    return "$firstName $lastName"<br/>}<br/>
 </pre>
 
@@ -304,7 +304,7 @@ if (!doNotTrack) {
 We have a similar kind of class which is non open (final class). we added a function <mark>getFullDetails</mark> as an extension function to the employee class and we call the above function as
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>var emp = Employee("Suneet", "Agrawal")<br/>println(emp.getFullDetails())<br/>
 </pre>
 

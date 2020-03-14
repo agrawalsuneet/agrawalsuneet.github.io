@@ -261,7 +261,7 @@ if (!doNotTrack) {
         We added an extension function with the same function name to both the classes.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>open class <b>BaseClass</b><br/><br/>class <b>DerivedClass</b> : <b>BaseClass()</b><br/><br/>fun <b>BaseClass</b>.someMethod(){<br/>    print("BaseClass.someMethod")<br/>}<br/><br/>fun <b>DerivedClass</b>.someMethod(){<br/>    print("DerivedClass.someMethod")<br/>}<br/>
 </pre>
 
@@ -270,7 +270,7 @@ if (!doNotTrack) {
 Now if we try to call the someMethod with <mark>BaseClass</mark> reference but the actual object we passed to it will be <mark>DerivedClass</mark> object,
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>fun printMessage(base : BaseClass){<br/>    base.someMethod()<br/>}<br/><br/>//actual call<br/>printMessage(DerivedClass())<br/>
 </pre>
 

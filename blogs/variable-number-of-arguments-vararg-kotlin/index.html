@@ -251,7 +251,7 @@ if (!doNotTrack) {
         We need a function which takes n number as inputs and returns the average of all the inputs. If the size of n variables is not fixed, we usually convert it into an array or list and pass it to function.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>fun getAverage(numbersList: List<Int>): Float {<br/><br/>    var sum = 0.0f<br/>    for (item in numbersList) {<br/>        sum += item<br/>    }<br/>    return (sum / numbersList.size)<br/>}<br/><br/>val arrayList = arrayListOf(1, 2, 3, 4)<br/>val result = getAverage(arrayList)<br/>
 </pre>
 
@@ -260,7 +260,7 @@ if (!doNotTrack) {
         Now, what if the function itself takes n inputs and we don’t need to convert it into an array.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>fun getAverage(<b>vararg</b> input: Int): Float {<br/>    var sum = 0.0f<br/>    for (item in input) {<br/>        sum += item<br/>    }<br/>    return (sum / input.size)<br/>}<br/><br/>val result1 = getAverage(1, 2, 3)<br/>val result2 = getAverage(1, 2, 3, 4, 5)<br/>
 </pre>
 
@@ -287,7 +287,7 @@ if (!doNotTrack) {
         We can even use <mark>Template</mark> type for <mark>vararg</mark>.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>fun &lt;T&gt; asList(<b>vararg</b> input: T): List&lt;T&gt; {<br/>    val result = ArrayList&lt;T&gt;()<br/>    for (item in input) // input is an Array<br/>        result.add(item)<br/>    return result<br/>}<br/>
 </pre>
 
@@ -299,7 +299,7 @@ if (!doNotTrack) {
         We can even pass all the elements of an array along with other arguments to a <mark>vararg</mark> variable. We can use the spread (<mark>*</mark>) operator to do the same.
 </div>
 
-<pre>
+<pre class="zeropadding">
   <br/>fun getAverage(<b>vararg</b> input: Int): Float {<br/>    var sum = 0.0f<br/>    for (item in input) {<br/>        sum += item<br/>    }<br/>    return (sum / input.size)<br/>}<br/>val array = intArrayOf(1, 2, 3, 4)<br/>val result = getAverage(1, 2, 3, *array)<br/>
 </pre>
 

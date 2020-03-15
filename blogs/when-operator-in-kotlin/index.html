@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="getter and setter,getter kotlin,setter kotlin,kotlin,property kotlin">
+  <meta name="keywords" content="kotlin when,when kotlin,kotlin when operator">
 
 
   
@@ -35,26 +35,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Property, Getter and Setter : Kotlin" />
-  <meta property="og:title" content="Property, Getter and Setter : Kotlin">
-  <meta property="twitter:title" content="Property, Getter and Setter : Kotlin">
+  <meta name="title" content="Suneet Agrawal | ‘when’ operator in Kotlin" />
+  <meta property="og:title" content="‘when’ operator in Kotlin">
+  <meta property="twitter:title" content="‘when’ operator in Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Property, Getter and Setter : Kotlin">
-  <meta name="description" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
-  <meta property="og:description" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
-  <meta property="twitter:description" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
-  <meta name="abstract" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
-  <meta name="summary" content="I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.">
+  <meta name="topic" content="‘when’ operator in Kotlin">
+  <meta name="description" content="when operator is a replacement of ‘switch’ operator in other languages. ‘when’ operator matches its argument with all the branches until it matches with anyone, else it executes the ‘else’ block.">
+  <meta property="og:description" content="when operator is a replacement of ‘switch’ operator in other languages. ‘when’ operator matches its argument with all the branches until it matches with anyone, else it executes the ‘else’ block.">
+  <meta property="twitter:description" content="when operator is a replacement of ‘switch’ operator in other languages. ‘when’ operator matches its argument with all the branches until it matches with anyone, else it executes the ‘else’ block.">
+  <meta name="abstract" content="when operator is a replacement of ‘switch’ operator in other languages. ‘when’ operator matches its argument with all the branches until it matches with anyone, else it executes the ‘else’ block.">
+  <meta name="summary" content="when operator is a replacement of ‘switch’ operator in other languages. ‘when’ operator matches its argument with all the branches until it matches with anyone, else it executes the ‘else’ block.">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-02-21">
+  <meta property="article:published_time" content="2020-02-14">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -64,7 +64,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -80,7 +80,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Property, Getter and Setter : Kotlin &middot; Suneet Agrawal</title>
+  <title>‘when’ operator in Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -219,7 +219,7 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Property, Getter and Setter : Kotlin</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">‘when’ operator in Kotlin</h1>
 	</header>
 
 	<article>
@@ -227,96 +227,11 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods. The moment I converted my Java code to Kotlin, it replaced each variable along with its getter and setter with just a single line of code. Although I was amazed at how can a single line of code replace the complete variable with the same functionality, but later on understanding it, I started liking writing the code in Kotlin. Let’s understand how it works in Kotlin.
-</div>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<div class="center-justified text-content">
-        Variable having a class level scope (member variables) which are declared inside the class but outside the methods or functions is called as <mark>Property</mark> in Kotlin. They are declared with <mark>var</mark> keyword for a mutable one and with val keyword for a read-only/nonmutable one.
-        </br>
-        The full syntax for declaring a property is
+        <mark>when</mark> operator is a replacement of <mark>switch</mark> operator in other languages.
 </div>
 
 <pre class="zeropadding">
-  <br/>var &lt;propertyName&gt;: &lt;PropertyType&gt; = &lt;property_initializer&gt;<br/> [&lt;getter&gt;]<br/> [&lt;setter&gt;]<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        The initializer, getter and setter are optional.
-</div>
-
-<pre class="zeropadding">
-  <br/>val name : String = "John"<br/>var age : Int = 0<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        which is exactly the replacement of
-</div>
-
-<pre class="zeropadding">
-  <br/>public final String name = "John";<br/>public int age = 0;<br/>
-</pre>
-
-
-<p></br>
-<h4>
-Things to notice
-</h4></p>
-
-<div class="center-justified text-content">
-        <ul>
-                <li>No need to add <mark>public</mark> modifier as by default, all properties and functions are public in Kotlin. Add <mark>private</mark> or <mark>protected</mark> if required.</li>
-                <li>A property must be initialized or need to be declared as <mark>abstract</mark> in Kotlin . Instead, we can even use <mark>lateinit</mark> which is better explained <a href="../lateinit-property-in-kotlin/" target="_blank">here</a>.</li>
-                <li>All properties are <mark>final</mark> by default. If you want to override some property or its getter setter, define the property as <mark>open</mark>(explained later in the same post).</li>
-        </ul>
-</div>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<div class="center-justified text-content">
-        But we just broke the rule of encapsulation by defining a variable as <mark>public</mark>. What if I want to declare the variable as <mark>private</mark> having a getter and a setter as <mark>public</mark> methods.
-</div>
-
-<pre class="zeropadding">
-  <br/>private String name;<br/>public String getName() {<br/>        return name;<br/>    }<br/>public void setName(String name) {<br/>        this.name = name;<br/>    }<br/>
-</pre>
-
-
-<p></br></p>
-
-<div class="center-justified text-content">
-        Here we go.
-</div>
-
-<pre class="zeropadding">
-  <br/>var name: String = “John”<br/>
+  <br/>var intNumber = 10<br/> <b>when</b> (intNumber) {<br/>    1 -> print(“value is 1”)<br/>    2 -> print(“value is 2”)<br/>    else -> {<br/>       print(“value of intNumber is neither 1 nor 2”)<br/>    }<br/> }<br/><br/>
 </pre>
 
 
@@ -334,54 +249,38 @@ Things to notice
     </script>
 </div>
 
-<h3>
-        Where are my getter and setter?
-</h3>
-
 <div class="center-justified text-content">
-        Trust me, they are there. No need to define them explicitly.
-        </br>
-        </br>
-        Ok, I Trust you. What if I want to override the getter and setter.
+    <mark>when</mark> operator matches its argument with all the branches until it matches with anyone, else it executes the <mark>else</mark> block.
+    </br>
+    </br>
+    It can be used as an expression where the value of the satisfied branch becomes the value of the overall expression.
 </div>
 
 <pre class="zeropadding">
-  <br/>private int size = 0;<br/>private boolean isEmpty;<br/>public boolean isEmpty() {<br/>        return size == 0;<br/>    }<br/>
+  <br/>fun calculateAreaOfCircle(radius: Float): Float {<br/>    return (22 * radius * radius) / 7<br/> }<br/>fun calculateAreaOfSquare(sideLength: Float): Float {<br/>    return (sideLength * sideLength)<br/> }<br/>fun calculateArea(shape: Shape) : Float {<br/>    var area = <b>when</b> (shape) {<br/>       is Circle -> calculateAreaOfCircle( radius = 6f)<br/>       is Square -> calculateAreaOfSquare(sideLength = 10f)<br/>       else -> {<br/>          print(“invalid shape”)<br/>          return 0f<br/>       }<br/>    }<br/>   //use area for further use<br/>   return area<br/> }<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        absolutely simple.
+    in the above example, based on the shape type, the overall expression is replaced with the satisfied branch.
+    </br>
+    </br>
+    Or it can be used as a statement where the satisfied block’s statements will be performed.
 </div>
 
 <pre class="zeropadding">
-  <br/>private val size : Int = 0<br/>var isEmpty: Boolean = false<br/>    private set<br/>    get () = size == 0<br/>
+  <br/>var count = 100<br/> <b>when</b> (count) {<br/>    in 0 until 100 -> {<br/>    //count is between 1 to 99<br/>    count++<br/> } <br/> else -> {<br/>    //count is greater than 99<br/>    //set it to 0<br/>    count = 0<br/> }<br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        Please note that the setter is set <mark>private</mark> here as it can’t be set from outside the class.
-        </br>
-        </br>
-        This was an easy one. Let me try something complicated.
-        </br>
-        </br>
-        what about this.
+    The <mark>else</mark> branch is evaluated if none of the other branch conditions is satisfied. If when is used as an expression, the <mark>else</mark> branch is mandatory, unless the compiler can prove that all possible cases are covered with branch conditions
 </div>
 
 <pre class="zeropadding">
-  <br/>private String firstName;<br/>private String lastName;<br/>//private String name;<br/>public String getName() {<br/>        return firstName + " " + lastName;<br/>    }<br/>public void setName(String name) {<br/>        String nameArray[] = name.split(" ");<br/>        firstName = nameArray[0];<br/>        lastName = nameArray[1];<br/>    }<br/>
+  <br/>val boolValue : Boolean = false<br/> <br/> <b>when</b> (boolValue) {<br/>    false -> {<br/>       print(“value is false”)<br/>    }<br/>    true -> {<br/>       print(“value is true”)<br/>    }<br/> }<br/>
 </pre>
 
-
-<div class="center-justified text-content">
-        I have three <mark>private</mark> variables firstName, lastName and name but only getter setter of name variable which does break the name into two parts and store them in firstName and lastName respectively in case of the setter. 
-        </br>
-        Also, in case of the getter, it returns the firstName and lastName with a space between them.
-        </br>
-        </br>
-        What will be the equivalent Kotlin code for this?
-</div>
 
 <div class="col-xs-12 googleads">
     
@@ -398,50 +297,51 @@ Things to notice
 </div>
 
 <div class="center-justified text-content">
-        Well, it’s not that difficult.
+The branch conditions may be combined with a comma (<mark>,</mark>)
 </div>
 
 <pre class="zeropadding">
-  <br/>private var firstName: String? = null<br/>private var lastName: String? = null<br/>var name: String<br/>    get() = firstName + " " + lastName<br/>    set(value) {<br/>        val nameArray = value.split(" ".toRegex())<br/>        firstName = nameArray[0]<br/>        lastName = nameArray[1]<br/>    }<br/>
+  <br/>val value = 100<br/> <br/> <b>when</b> (value) {<br/>    0, 1 -> print(“x == 0 or x == 1”)<br/>    !in 10..20, !in 30..40 -> {<br/>       print(“not in 10 to 20 and 30 to 40”)<br/>    }<br/>    else -> print(“otherwise”)<br/> }<br/>
 </pre>
 
 
 <p></br></p>
 
 <div class="center-justified text-content">
-        Ok. Few questions
-        </br>
-        </br>
-        <h4>
-        1. How can I make setter private?
-        </h4>
-
-        Add <mark>private</mark> keyword before set.
+We can also check a value for being <mark>in</mark> or <mark>!in</mark> a range or a collection
 </div>
 
-<p></br></p>
-
 <pre class="zeropadding">
-  <br/>public var name: String = "John"<br/>   private set<br/>
+  <br/>val value = 21<br/>val initialPrimeNumbers = intArrayOf(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47)<br/> <br/><b>when</b> (value) {<br/>    in 10..20 -> print(“in 10 to 20”)<br/>    !in 30 until 40 -> print(“not in 30 to 39”)<br/>    in initialPrimeNumbers -> print(“exist in array”)<br/>    else -> print(“not present anywhere”)<br/>}<br/>
 </pre>
 
 
 <p></br></p>
 
 <div class="center-justified text-content">
-        <h4>
-        2. How can I override the getter or setter in an extending class?
-        </h4>
-
-        Define the variable as <mark>open</mark> in the base class and use <mark>override</mark> keyword in the extending class.
+Another possibility is to check that a value <mark>is</mark> or <mark>!is</mark> of a particular type.
 </div>
+
+<pre class="zeropadding">
+  <br/>val shape : Shape = Circle()<br/> <br/><b>when</b> (shape) {<br/>    is Circle -> print(“shape is a Circle class object”)<br/>    is Square -> print(“shape is a Square class object”)<br/>    else -> {<br/>       print(“invalid shape”)<br/>    }<br/> }<br/>
+</pre>
+
 
 <p></br></p>
 
+<div class="center-justified text-content">
+    <mark>when</mark> can also be used as a replacement for an <mark>if-else-if</mark> chain. If no argument is supplied, the branch conditions are simply boolean expressions, and a branch is executed when its condition is <mark>true</mark>
+</div>
+
 <pre class="zeropadding">
-  <br/>//Base class<br/>open var age: Int = 0<br/> get() = 10<br/>//Extending class<br/>override var age: Int = 0<br/> get()= 20<br/>
+  <br/>val num = 10<br/> <b>when</b> {<br/>    isPrime(num) -> print(“num is a prime number”)<br/>    isComposite(num) -> print(“num is a composite number”)<br/>    else -> {<br/>       print(“num is neither prime nor composit”)<br/>    }<br/> }<br/>
 </pre>
 
+
+<div class="center-justified text-content">
+    Reference: <a href="https://kotlinlang.org/docs/reference/control-flow.html#when-expression" target="_blank">Kotlin docs</a>
+    </br>
+</div>
 
 <div class="col-xs-12 googleads">
     
@@ -464,8 +364,8 @@ Things to notice
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="../companion-object-in-kotlin/">
-        Companion object in Kotlin &gt;&gt;
+      <a href="../property-getter-and-setter-kotlin/">
+        Property, Getter and Setter : Kotlin &gt;&gt;
       </a>
     </div>
 </div>

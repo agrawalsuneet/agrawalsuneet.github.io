@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  
+  <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="kotlin in,in kotlin,kotlin in operator">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | ‘in’ operator in Kotlin" />
+  <meta property="og:title" content="‘in’ operator in Kotlin">
+  <meta property="twitter:title" content="‘in’ operator in Kotlin">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="‘in’ operator in Kotlin">
+  <meta name="description" content="‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false.">
+  <meta property="og:description" content="‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false.">
+  <meta property="twitter:description" content="‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false.">
+  <meta name="abstract" content="‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false.">
+  <meta name="summary" content="‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-02-13">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+  <meta property="og:tags" content="Kotlin">
+  
+  <meta property="og:tags" content="Android">
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>‘in’ operator in Kotlin &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">‘in’ operator in Kotlin</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<div class="center-justified text-content">
+        ‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false. It can also be used to iterate over a range or collection.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<h3>
+        1. ‘in’ operator in ‘if’ condition
+</h3>
+
+<pre class="zeropadding">
+  <br/>val count = 5;<br/>if (count <b>in</b> 1..10 && count <b>!in</b> 5..7) {<br/>    print(“Number is between range 1 to 10 but not between 5 to 7”)<br/>}<br/><br/>val array: IntArray = intArrayOf(1, 2, 3, 4, 5)<br/>if (count <b>in</b> array) {<br/>    print(“Number is present in property array”)<br/>}<br/>
+</pre>
+
+
+<p></br></p>
+
+<h3>
+        2. ‘in’ operator in ‘when’ condition
+</h3>
+
+<pre class="zeropadding">
+  <br/>when (count) {<br/>   <b>in</b> 11..20 -> print(“Number is between 10 and 20 including both”)<br/>   <b>!in</b> 21..30 -> print(“Number is not between 21 to 30”)<br/>   <b>in</b> array -> print(“Number is present in property array”)<br/>   <b>!in</b> array -> print(“Number is not present in property array”)<br/>}<br/>
+</pre>
+
+
+<p></br></p>
+
+<h3>
+        3. ‘in’ operator in ‘for’ loop
+</h3>
+
+<pre class="zeropadding">
+  <br/>for (item <b>in</b> 1..10){<br/>    print(“iterates loop from 1 to 10”)<br/>}<br/><br/>for (item <b>in</b> array){<br/>    print(“iterates all items in array”)<br/>}<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="../">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="../property-getter-and-setter-kotlin/">
+        Property, Getter and Setter — Kotlin &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

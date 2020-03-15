@@ -6,10 +6,28 @@
     <description>Recent content in Kotlin on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>‘in’ operator in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</guid>
+      <description>‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false. It can also be used to iterate over a range or collection.    (adsbygoogle = window.adsbygoogle || []).push({});    1. ‘in’ operator in ‘if’ condition  val count = 5;if (count in 1.</description>
+    </item>
+    
+    <item>
+      <title>‘when’ operator in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</guid>
+      <description>when operator is a replacement of switch operator in other languages.  var intNumber = 10 when (intNumber) { 1 - print(“value is 1”) 2 - print(“value is 2”) else - { print(“value of intNumber is neither 1 nor 2”) } }    (adsbygoogle = window.adsbygoogle || []).push({});   when operator matches its argument with all the branches until it matches with anyone, else it executes the else block.</description>
+    </item>
     
     <item>
       <title>TypeCheck (‘is’) and Cast (‘as’) in Kotlin</title>
@@ -118,24 +136,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
       <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead.  If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a companion object declaration inside that class. By declaring a companion object inside our class, you’ll be able to call its members with the same syntax as calling static methods in Java/C#, using only the class name as a qualifier.</description>
-    </item>
-    
-    <item>
-      <title>‘in’ operator in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</guid>
-      <description>‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false. It can also be used to iterate over a range or collection.    (adsbygoogle = window.adsbygoogle || []).push({});    1. ‘in’ operator in ‘if’ condition  val count = 5;if (count in 1.</description>
-    </item>
-    
-    <item>
-      <title>‘when’ operator in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</guid>
-      <description>when operator is a replacement of switch operator in other languages.  var intNumber = 10 when (intNumber) { 1 - print(“value is 1”) 2 - print(“value is 2”) else - { print(“value of intNumber is neither 1 nor 2”) } }    (adsbygoogle = window.adsbygoogle || []).push({});   when operator matches its argument with all the branches until it matches with anyone, else it executes the else block.</description>
     </item>
     
     <item>

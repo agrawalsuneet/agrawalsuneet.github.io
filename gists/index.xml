@@ -48,11 +48,11 @@
     </item>
     
     <item>
-      <title>Native Android image sharing using FileProvider in Unity</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-using-fileprovider-in-unity/</link>
+      <title>Native Android image sharing in Unity using FileProvider</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</link>
       <pubDate>Sun, 10 Nov 2019 09:51:51 -0400</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-using-fileprovider-in-unity/</guid>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</guid>
       <description>An example of implementing native Android image/screenshot sharing using FileProvider in Unity.</description>
     </item>
     

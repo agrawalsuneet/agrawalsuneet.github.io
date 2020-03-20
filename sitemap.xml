@@ -49,16 +49,21 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
-    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</loc>
-    <lastmod>2020-03-06T00:00:00+00:00</lastmod>
+    <loc>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</loc>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</loc>
     <lastmod>2020-03-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -158,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/gists/native-android-image-sharing-using-fileprovider-in-unity/</loc>
+    <loc>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</loc>
     <lastmod>2019-11-10T09:51:51-04:00</lastmod>
   </url>
   

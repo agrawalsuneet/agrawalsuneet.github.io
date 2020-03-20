@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>Native Android image sharing in Unity using FileProvider</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
+      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception “android.os.FileUriExposedException” in Android 8 (Oreo) and above.   Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app.</description>
+    </item>
+    
+    <item>
       <title>Native Android image sharing in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>

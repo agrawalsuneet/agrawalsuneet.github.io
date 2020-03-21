@@ -94,7 +94,7 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none; 
+  outline: none !important;
 }
 
 .tabs {

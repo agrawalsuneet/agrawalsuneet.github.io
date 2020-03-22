@@ -6,10 +6,28 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>‘inout’ in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/inout-in-swift/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inout-in-swift/</guid>
+      <description>Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function. Eventually, all the variables passed to a function are of an immutable type which cannot be changed which is similar to a let variable. If it’s a class object, you cannot create a new object but you can manipulate the properties of that class object or you can call any function with that object.</description>
+    </item>
+    
+    <item>
+      <title>‘mutating’ in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</guid>
+      <description>As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.    (adsbygoogle = window.</description>
+    </item>
     
     <item>
       <title>Native Android image sharing in Unity using FileProvider</title>

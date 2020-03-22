@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>‘inout’ in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/inout-in-swift/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inout-in-swift/</guid>
+      <description>Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function. Eventually, all the variables passed to a function are of an immutable type which cannot be changed which is similar to a let variable. If it’s a class object, you cannot create a new object but you can manipulate the properties of that class object or you can call any function with that object.</description>
+    </item>
+    
+    <item>
+      <title>‘mutating’ in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</guid>
+      <description>As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.    (adsbygoogle = window.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (22 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more  3 Mar 2020  Kotlin Android      Why let function is an Extension to Template class?</description>
+    </item>
+    
+    <item>
       <title>Native Android image sharing in Unity using FileProvider</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
@@ -45,15 +72,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</guid>
       <description>when operator is a replacement of switch operator in other languages.  var intNumber = 10 when (intNumber) { 1 - print(“value is 1”) 2 - print(“value is 2”) else - { print(“value of intNumber is neither 1 nor 2”) } }    (adsbygoogle = window.adsbygoogle || []).push({});   when operator matches its argument with all the branches until it matches with anyone, else it executes the else block.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (20 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more  3 Mar 2020  Kotlin Android      Why let function is an Extension to Template class?</description>
     </item>
     
     <item>

@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Partial class in C# (partial modifier)</title>
+      <link>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</guid>
+      <description>Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool.  Or think about a situation where an automatically generated code needs to be added into some class without having to recreate the source file.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (23 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+    </item>
+    
+    <item>
       <title>‘inout’ in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/inout-in-swift/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
@@ -27,15 +45,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</guid>
       <description>As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.    (adsbygoogle = window.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (22 posts)   Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. read more  3 Mar 2020  Kotlin Android      Why let function is an Extension to Template class?</description>
     </item>
     
     <item>

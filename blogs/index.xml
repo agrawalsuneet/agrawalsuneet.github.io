@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Partial class in C# (partial modifier)</title>
+      <link>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</guid>
+      <description>Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool.  Or think about a situation where an automatically generated code needs to be added into some class without having to recreate the source file.</description>
+    </item>
     
     <item>
       <title>‘inout’ in Swift</title>

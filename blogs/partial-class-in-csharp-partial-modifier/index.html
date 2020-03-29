@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  
+  <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="partial class C#,C# partial,C# partial modifier,partial modifier">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Partial class in C# (partial modifier)" />
+  <meta property="og:title" content="Partial class in C# (partial modifier)">
+  <meta property="twitter:title" content="Partial class in C# (partial modifier)">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Partial class in C# (partial modifier)">
+  <meta name="description" content="A partial class is a special type of class where a single class can be split into multiple &#39;.cs&#39; file and while compilation, all the functionalities of same partial classes written in different &#39;.cs&#39; files will be merged and then compile it.">
+  <meta property="og:description" content="A partial class is a special type of class where a single class can be split into multiple &#39;.cs&#39; file and while compilation, all the functionalities of same partial classes written in different &#39;.cs&#39; files will be merged and then compile it.">
+  <meta property="twitter:description" content="A partial class is a special type of class where a single class can be split into multiple &#39;.cs&#39; file and while compilation, all the functionalities of same partial classes written in different &#39;.cs&#39; files will be merged and then compile it.">
+  <meta name="abstract" content="A partial class is a special type of class where a single class can be split into multiple &#39;.cs&#39; file and while compilation, all the functionalities of same partial classes written in different &#39;.cs&#39; files will be merged and then compile it.">
+  <meta name="summary" content="A partial class is a special type of class where a single class can be split into multiple &#39;.cs&#39; file and while compilation, all the functionalities of same partial classes written in different &#39;.cs&#39; files will be merged and then compile it.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-03-29">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+  <meta property="og:tags" content="CSharp">
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Partial class in C# (partial modifier) &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Partial class in C# (partial modifier)</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<div class="center-justified text-content">
+        Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool.
+        </br>
+        Or think about a situation where an automatically generated code needs to be added into some class without having to recreate the source file.
+        </br>
+        </br>
+        A similar kind of challenge We faced while working on a Unity project where we two of the devs were constantly working on some same classes. The only way to avoid conflicts was by separating the areas in the class where we both will add the functionalities. Later I came to know about the partial class which was helpful in such situations.
+        </br>
+        </br>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        What is a Partial class?
+        </h3>
+        A partial class is a special type of class where a single class can be split into multiple <mark>.cs</mark> file and while compilation, all the functionalities of same partial classes written in different <mark>.cs</mark> files will be merged and then compile it.
+        </br>
+        </br>
+        It provides you with functionality where you can split your class into different files based on the requirement and usability.
+        </br>
+        </br>
+        In short, partial class in a way of writing a single class into multiple <mark>.cs</mark> files and these files will be combined when the application is compiled.
+        </br>
+        </br>
+        A partial class is created by using a <mark>partial</mark> keyword. This keyword is also useful to split the functionality of <mark>methods</mark>, <mark>interfaces</mark>, or <mark>structure</mark> into multiple files.
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Someclass1.cs</l><br/>public <b>partial</b> class SomeClass<br/>{<br/>    // code<br/>    private void function1(){ }<br/>}<br/><br/><br/><l>//Someclass2.cs</l><br/>public <b>partial</b> class SomeClass<br/>{<br/>    // code<br/>    private void function2(){ }<br/>}<br/><br/><br/><l>//final compiled code</l><br/>public class SomeClass<br/>{<br/>    private void function1(){ }<br/>    private void function2(){ }<br/>}<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        Requirements of Partial modifier
+        </h3>
+        <ul>
+        <li>A <mark>partial</mark> modifier can be added to a <mark>class</mark> or an <mark>interface</mark> or a <mark>struct</mark>.</li>
+        <li>Every part of the partial class definition should be in the same assembly and namespace, but we can use different source file name.</li>
+        <li>All the parts must have the same accessibility for example <mark>public</mark> or <mark>private</mark>, etc.</li>
+        <li>If any part is declared <mark>abstract</mark>, <mark>sealed</mark> or base type then the whole class is declared of the same type.</li>
+        <li>The <mark>partial</mark> modifier can only appear immediately before the keywords <mark>class</mark>, <mark>struct</mark>, or <mark>interface</mark>.</li>
+        <li>Nested partial types are allowed.</li>
+        <li>Different parts can have different base types like implementing different interfaces and the final class will inherit all the base types.</li>
+        </ul>
+</div>
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        <h3>
+                Advantages of Partial class
+        </h3>
+        <ul>
+                <li>With the concept of <mark>partial</mark> classes, we can better the code structure like by separating business logic and UI implementation within the same class.</li>
+                <li>Can avoid conflicts if multiple developers working on the same <mark>class</mark> or <mark>interface</mark> or <mark>struct</mark>.</li>
+                <li>When we working with automatically generated source, code can be added to the class without having to recreate the source file. For example, Visual Studio separates HTML code for the UI and server-side code into two separate files: .aspx and .cs files.</li>
+        </ul>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="/blogs">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="/blogs/native-android-in-unity/">
+        Native Android in Unity &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

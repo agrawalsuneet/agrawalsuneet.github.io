@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  
+  <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="kotlin let,let kotlin,let function kotlin,?.let kotlin">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Kotlin let function" />
+  <meta property="og:title" content="Kotlin let function">
+  <meta property="twitter:title" content="Kotlin let function">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Kotlin let function">
+  <meta name="description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+  <meta property="og:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+  <meta property="twitter:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+  <meta name="abstract" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+  <meta name="summary" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-02-27">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-let-function/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-let-function/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-let-function/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-let-function/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+  <meta property="og:tags" content="Kotlin">
+  
+  <meta property="og:tags" content="Android">
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Kotlin let function &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Kotlin let function</h1>
+	</header>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<div class="center-justified text-content">
+        Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.
+        </br>
+        </br>
+        Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        There are a few scope functions
+        <ul>
+                <li>let</li>
+                <li>with</li>
+                <li>run</li>
+                <li>apply</li>
+                <li>also</li>
+        </ul>
+        </br>
+        To keep this article short and to the point, we will talk only about <mark>let</mark> in this article and all the use cases around it.
+        </br>
+        </br>
+        <mark>let</mark> scope function is used to apply operations on an object and finally return the lambda expression from that scope function. The return type can also be <mark>void</mark>.
+
+        </br>
+        </br>
+        To understand <mark>let</mark> function lets look at the implementation of <mark>let</mark> function first.
+</div>
+
+<pre class="zeropadding">
+  <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its argument <br/> * and returns its result.<br/> *<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun &lt;T, R&gt; T.<b>let</b>(block: (T) -> R): R {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    return block(this)<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <mark>let</mark> an extension function to Template class which takes a lambda as a parameter, apply contract on it and ultimately return the execution of the lambda we passed as a parameter to it.
+        </br>
+        </br>
+        This clarifies a few things
+        <ol>
+                <li>The return type of the let function is nothing but the last expression we returned from our passed lambda parameter.</li>
+                <li>Since its an extension function to the Template class, it can be called on any object.</li>
+        </ol>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        </br>
+        <h4>
+        Now let's understand what is the contract.
+        </h4>
+        The contract is nothing but a contract applied to the passed lambda as a parameter.
+</div>
+
+<pre class="zeropadding">
+  <br/>/**<br/> * Specifies the contract of a function.<br/> *<br/> * The contract description must be at the beginning of a function and have at least one effect.<br/> *<br/> * Only the top-level functions can have a contract for now.<br/> *<br/> * @param builder the lambda where the contract of a function is described with the help of the [ContractBuilder] members.<br/> *<br/>@ContractsDsl<br/>@ExperimentalContracts<br/>@InlineOnly<br/>@SinceKotlin("1.3")<br/>@Suppress("UNUSED_PARAMETER")<br/>public inline fun <b>contract</b>(builder: ContractBuilder.() -> Unit) { }<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        This superimposes some conditions on the lambda we passed as a parameter to the <mark>let</mark> function. What conditions it superimposed, we need to check the parameter of the contract
+</div>
+
+<p></br>
+<h4>
+And what contract applied in the <mark>let</mark> function
+</h4></p>
+
+<pre class="zeropadding">
+  <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        It superimposes 2 conditions
+        <ol>
+        <li>The lambda will be invoked only during owner function call and it won't be called once the owner function is completed.</li>
+        <li>The number of times this lambda function will be invoked (which is exactly once in our case) which is an enum.</li>
+        </ol>
+        The above conditions are clear from there definition itself.
+        </br>
+        <h3>
+        So basically, let function will be
+        </h3>
+
+        <ul>
+        <li>called only during the owner function will be called.</li>
+        <li>called ONLY ONCE.</li>
+        <li>called on the calling object.</li>
+        <li>and will return the expression returned by the lambda passed to the let function.</li>
+        </ul>
+</div>
+
+<div class="center-justified text-content">
+        
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<h3>
+Now let's look at the use cases
+</h3>
+
+<div class="center-justified text-content">
+        The best use case of this <mark>let</mark> function is to avoid the null check. <mark>let</mark> function used with <mark>?.</mark> ensures the execution only if the expression is non-null. You can read about the null safety in the Kotlin <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">here</a>.
+</div>
+
+<pre class="zeropadding">
+  <br/>class <b>Employee</b> {<br/>    var firstName: String? = null<br/>    var age: Int = 0<br/>}<br/><br/>val employee: <b>Employee?</b> = Employee()<br/>employee?.firstName = "Suneet"<br/>employee?.age = 27<br/><br/>employee?.<b>let</b> {<br/>    println(it.age)<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Please note that we can point to the calling object by using <mark>it</mark>. 
+        </br>
+        we can even use a local parameter for the calling object to avoid conflicts in the nested <mark>let</mark> or lambda function.
+</div>
+
+<pre class="zeropadding">
+  <br/>employee?.<b>let</b> { person -><br/>    person.firstName?.<b>let</b> { name -><br/>        println(name)<br/>    }<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Here the <mark>person</mark> and <mark>name</mark> are the named variable within the let function scope.
+        </br>
+        </br>
+        If the let lambda contains only a single expression, we can even use method reference (<mark>::</mark>) instead of lambda
+</div>
+
+<pre class="zeropadding">
+  <br/>employee?.firstName?.<b>let</b> (::println)<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        Also, the <mark>let</mark> function can be used to invoke one or more functions on the result of the chain.
+</div>
+
+<pre class="zeropadding">
+  <br/>var list = mutableListOf(6, 1, 5, 2, 4, 3)<br/>list.filter { it % 2 == 0 }.sortedBy { it }.<b>let</b> {<br/>    println("Sorted even numbers are : $it")<br/>}<br/>//this will print<br/>Sorted even numbers are : [2, 4, 6]<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        If we want to return that object from <mark>let</mark> function, return without marking any <mark>return</mark> statement. In the below example, the sorted even numbers list will be returned.
+</div>
+
+<pre class="zeropadding">
+  <br/>var list = mutableListOf(6, 1, 5, 2, 4, 3)<br/>var sortedEvenList = list.filter { it % 2 == 0 }.sortedBy { it }.let {<br/>    println("Sorted even numbers are : $it")<br/>    <b>it</b><br/>}<br/>
+</pre>
+
+
+<p></br></p>
+
+<div class="center-justified text-content">
+        <h3>
+        Two things to keep in mind about <mark>let</mark>,
+        </h3>
+        <ol>
+                <li><mark>let</mark> uses the context as <mark>it</mark> or we can use a named parameter.</li>
+                <li><mark>let</mark> return the last expression of the lambda passed which can also be void.</li>
+        </ol>
+
+        </br>
+        </br>
+        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#let" target="_blank">Kotlin docs</a>
+        </br>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="/blogs">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="/blogs/why-let-function-is-an-extension-to-template-class/">
+        Why let function is an Extension to Template class? &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

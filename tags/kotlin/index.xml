@@ -62,15 +62,15 @@
       <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about let scope function in Kotlin, a lot of developers have asked me about, why let is an extension to Template class but not Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?   Any is the base class for all the class, similar to java.</description>
+      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?   Any is the base class for all the class, similar to java.</description>
     </item>
     
     <item>
-      <title>&#39;let&#39; scope function : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</link>
+      <title>Kotlin let function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/let-scope-function-kotlin/</guid>
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
       <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
     </item>
     

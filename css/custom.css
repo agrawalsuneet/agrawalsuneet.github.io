@@ -216,3 +216,16 @@ select:focus {
 }
 
 /* Tabs style end*/
+
+.vertical-centre{
+  display: flex;
+  align-items: flex-end;
+}
+
+.px12{
+  padding:0px 12px
+}
+
+.pl12{
+  padding-left: 36px;
+}

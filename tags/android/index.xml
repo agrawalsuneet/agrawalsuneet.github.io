@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>‘takeIf’ and ‘takeUnless’ : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</guid>
+      <description>Ever thought of chaining an if condition?  What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?   Kotlin has something very interesting to achieve the same.  We can use takeIf and takeUnless to achieve the same. As clear from the name itself, takeIf will proceed in the chain only if the condition inside is true whereas takeUnless is the counter of takeIf and will proceed only if the provided condition is false.</description>
+    </item>
+    
+    <item>
       <title>Native Android image sharing in Unity using FileProvider</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>

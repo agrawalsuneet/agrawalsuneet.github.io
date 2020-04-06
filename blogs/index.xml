@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Infix Notation : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/infix-notation-kotlin/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/infix-notation-kotlin/</guid>
+      <description>Ever imagined calling a public function of a class without dot and parentheses of the parameter in Kotlin. Kotlin provides infix notation with which we can call a function with the class object without using a dot and parentheses across the parameter. Using infix function provides more readability to a function similar to other operators like in, is, as in Kotlin.    (adsbygoogle = window.adsbygoogle || []).push({});   To make a function infix notation enabled, add infix keyword before the function.</description>
+    </item>
     
     <item>
       <title>Partial class in C# (partial modifier)</title>

@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Inline function : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</guid>
+      <description>What is inlining?  Inlining is basically requesting the compiler to copy the (inlined) code at the calling place.   Why it is required?  When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function. The CPU then executes the function code, stores the function return value in a predefined memory location/register and returns control to the calling function.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (26 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+    </item>
+    
+    <item>
       <title>Infix Notation : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/infix-notation-kotlin/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
@@ -27,15 +45,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</guid>
       <description>Ever thought of chaining an if condition?  What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?   Kotlin has something very interesting to achieve the same.  We can use takeIf and takeUnless to achieve the same. As clear from the name itself, takeIf will proceed in the chain only if the condition inside is true whereas takeUnless is the counter of takeIf and will proceed only if the provided condition is false.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (25 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
     </item>
     
     <item>

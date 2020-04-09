@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="kotlin takeif,kotlin takeunless,takeif, takeunless">
+  <meta name="keywords" content="inline function,kotlin inline,inline koitlin">
 
 
   
@@ -35,26 +35,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | ‘takeIf’ and ‘takeUnless’ : Kotlin" />
-  <meta property="og:title" content="‘takeIf’ and ‘takeUnless’ : Kotlin">
-  <meta property="twitter:title" content="‘takeIf’ and ‘takeUnless’ : Kotlin">
+  <meta name="title" content="Suneet Agrawal | Inline function : Kotlin" />
+  <meta property="og:title" content="Inline function : Kotlin">
+  <meta property="twitter:title" content="Inline function : Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="‘takeIf’ and ‘takeUnless’ : Kotlin">
-  <meta name="description" content="Ever thought of chaining an if condition? What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true? Kotlin has something very interesting to achieve the same.">
-  <meta property="og:description" content="Ever thought of chaining an if condition? What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true? Kotlin has something very interesting to achieve the same.">
-  <meta property="twitter:description" content="Ever thought of chaining an if condition? What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true? Kotlin has something very interesting to achieve the same.">
-  <meta name="abstract" content="Ever thought of chaining an if condition? What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true? Kotlin has something very interesting to achieve the same.">
-  <meta name="summary" content="Ever thought of chaining an if condition? What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true? Kotlin has something very interesting to achieve the same.">
+  <meta name="topic" content="Inline function : Kotlin">
+  <meta name="description" content="Inlining is basically requesting the compiler to copy the (inlined) code at the calling place. When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function.">
+  <meta property="og:description" content="Inlining is basically requesting the compiler to copy the (inlined) code at the calling place. When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function.">
+  <meta property="twitter:description" content="Inlining is basically requesting the compiler to copy the (inlined) code at the calling place. When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function.">
+  <meta name="abstract" content="Inlining is basically requesting the compiler to copy the (inlined) code at the calling place. When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function.">
+  <meta name="summary" content="Inlining is basically requesting the compiler to copy the (inlined) code at the calling place. When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function.">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-04-06">
+  <meta property="article:published_time" content="2020-04-08">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -64,7 +64,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -80,7 +80,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>‘takeIf’ and ‘takeUnless’ : Kotlin &middot; Suneet Agrawal</title>
+  <title>Inline function : Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -230,7 +230,7 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">‘takeIf’ and ‘takeUnless’ : Kotlin</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">Inline function : Kotlin</h1>
 	</header>
 
 	<div class="col-xs-12 vertical-centre">
@@ -246,20 +246,20 @@ if (!doNotTrack) {
 		
 
 		<div class="vertical-centre px12 pl12">
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 
 		<div class="vertical-centre px12">
 			<div class="fb-share-button" 
-				data-href="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/?utm_source=share_header&utm_medium=facebook" 
+				data-href="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/?utm_source=share_header&utm_medium=facebook" 
 				data-layout="button">
 			</div>
 		</div>
 
 		<div class="vertical-centre px12">
 			<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/?utm_source=share_header&utm_medium=linkedin"></script>
+			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/inline-function-kotlin/?utm_source=share_header&utm_medium=linkedin"></script>
 		</div>
 		
 	</div>
@@ -269,14 +269,15 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        Ever thought of chaining an <mark>if</mark> condition?
+        <h3>
+                What is inlining?
+        </h3>
+        Inlining is basically requesting the compiler to copy the (inlined) code at the calling place.
         </br>
-        What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?
-        </br>
-        </br>
-        Kotlin has something very interesting to achieve the same.
-        </br>
-        We can use takeIf and takeUnless to achieve the same. As clear from the name itself, takeIf will proceed in the chain only if the condition inside is true whereas takeUnless is the counter of takeIf and will proceed only if the provided condition is false.
+        <h3>
+                Why it is required?
+        </h3>
+        When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function. The CPU then executes the function code, stores the function return value in a predefined memory location/register and returns control to the calling function.
 </div>
 
 <div class="col-xs-12 googleads">
@@ -294,22 +295,42 @@ if (!doNotTrack) {
 </div>
 
 <div class="center-justified text-content">
-        
+        In Kotlin, the higher order functions or lambda expressions, all stored as an object which takes some memory and might increase the memory overhead. Sometimes, the function does a very basic functionality that passing the control is not even worth but as it (the function) is being used at multiple places, we need to create a separate function. To reduce the memory overhead of such functions we can use the <mark>inline</mark> keyword which ultimately requests the CPU to not allocate any memory for the function and simply copy the body of that function at the calling place.
         </br>
-        </br>
-        <mark>takeIf</mark> is a filtering function for a single object whereas <mark>takeUnless</mark> is a counter of <mark>takeIf</mark>.
-        </br>
-        </br>
-        Let’s take an example to understand the same.
+        <h3>
+                Let’s take an example.
+        </h3>
+        suppose we have a function which simply checks if the first argument is a multiple of the second argument and returns a boolean.
 </div>
 
 <pre class="zeropadding">
-  <br/>fun getLatency():Int {<br/>    return (0..30).random()<br/>}<br/><br/>val networkLatency = getLatency()<br/>println(networkLatency)<br/>if (networkLatency < 20){<br/>    // join the game<br/>    println("can join the game with latency $networkLatency")<br/>}<br/>
+  <br/>fun isMultipleOf (number: Int, multipleOf : Int): Boolean{<br/>    return number % multipleOf == 0<br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        In the above example, we need to check the latency of the network and join the game only it is less than 20. Now to achieve the same we need to put an if condition, the reason I need to introduce a new variable <mark>networkLatency</mark> is because I need to pass it to the inner function also.
+        Now to use this function as a higher order function,
+</div>
+
+<pre class="zeropadding">
+  <br/>fun <T> ArrayList<T>.filterOnCondition(condition: (T) -> Boolean): ArrayList<T>{<br/>    val result = arrayListOf<T>()<br/>    for (item in this){<br/>        if (condition(item)){<br/>            result.add(item)<br/>        }<br/>    }<br/>    return result<br/>}<br/><br/>var list = arrayListOf<Int>()<br/>    for (number in 1..10){<br/>        list.add(number)<br/>    }<br/>    <br/>val resultList = list.filterOnCondition { isMultipleOf(it, 5) }<br/>print(resultList)<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        In the above example, the functionality of the <mark>isMultipleOf</mark> is so small that it can be copied but as it can be used at multiple places, we created it as a separate function. As this function is passed as an argument to filterOnCondition function, CPU will assign it to some object which will take some memory. Also, for every item in the list, the CPU will jump to the memory address of <mark>isMultipleOf</mark> function and will pass back to result.
+        </br>
+        </br>
+        To prevent this, we can make the <mark>isMultipleOf</mark> function as inline which will as the compiler to copy it to the calling place which will prevent the memory allocation of the function and jumping of the CPU at runtime.
+</div>
+
+<pre class="zeropadding">
+  <br/><b>inline</b> fun isMultipleOf (number: Int, multipleOf : Int): Boolean {<br/>     return number % multipleOf == 0<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The functionality will remain the same.
 </div>
 
 <div class="col-xs-12 googleads">
@@ -327,32 +348,30 @@ if (!doNotTrack) {
 </div>
 
 <div class="center-justified text-content">
-        Now to achieve the same within single chaining, I can use <mark>takeIf</mark>.
+        <h3>
+                Things to keep in mind
+        </h3>
+        <li>We will lose access to any private variable or function of the class inside the inline function. So it’s better to make functions inline which are very generic and don’t use a class level variable or function to achieve their functionality.</li>
 </div>
 
 <pre class="zeropadding">
-  <br/>getLatency()?.takeIf{ it < 20}<br/>        ?.let{ <br/>            println("can join the game with latency $it") <br/>        }<br/>
+  <br/>private var localVariable : Int = 8<br/><b>inline</b> fun isMultipleOf (number: Int, multipleOf : Int): Boolean {<br/>    print(localVariable) //compilation error<br/>    return number % multipleOf == 0<br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        Please note that both <mark>takeIf</mark> and <mark>takeUnless</mark> returns <mark>null</mark> if the condition is not satisfied, so to chain it further we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin" target="_blank">safe call or null check</a>.
-        </br>
-        </br>
-        Let's take an example of <mark>takeUnless</mark>.
+        The above code will show compilation error
 </div>
-
 <pre class="zeropadding">
-  <br/>getLatency()?.takeUnless{ it < 20}<br/>        ?.let{ <br/>            println("warning : high latency $it") <br/>         }<br/>
+  <br/><e>Public-API inline function cannot access non-public-API 'private var localVariable</e><br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        In this case, this will only proceed when the latency is more than 20 ie not less than 20, and will chain it further. Also, if the condition is false that means if the latency is less than 20, it will return null so we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin" target="_blank">safe call or null check</a>.
+        Which is clear in itself.
         </br>
         </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#takeif-and-takeunless" target="_blank">Kotlin docs</a>
-</div>
+        <li>Do not inline for bigger functions as it degrades the performance.</li>
 </div>
 
 <div class="col-xs-12 googleads">
@@ -376,8 +395,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="/blogs/inheritance-vs-extension-functions/">
-        Inheritance vs Extension functions &gt;&gt;
+      <a href="/blogs/takeif-and-takeunless-kotlin/">
+        ‘takeIf’ and ‘takeUnless’ : Kotlin &gt;&gt;
       </a>
     </div>
 </div>

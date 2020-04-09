@@ -6,10 +6,19 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Qualified ‘this’ in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</guid>
+      <description>The only thing we learnt about this pointer in other languages is “this is an implicit pointer which points to the calling object”. As clear from the definition, it points to the object which calls the respective function or property.    (adsbygoogle = window.adsbygoogle || []).push({});   Now the real problem arises when we have an inner class or anonymous interface implementation. We lose the reference of the outer class.</description>
+    </item>
     
     <item>
       <title>Inline function : Kotlin</title>

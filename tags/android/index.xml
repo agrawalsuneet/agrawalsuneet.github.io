@@ -6,10 +6,19 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kotlin ‘For’ loop</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</guid>
+      <description>While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.   Wait! They are not this tough. In fact, they are very easy, interesting and helpful.    (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
     
     <item>
       <title>Qualified ‘this’ in Kotlin</title>

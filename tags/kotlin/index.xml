@@ -6,10 +6,19 @@
     <description>Recent content in Kotlin on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Type Aliases in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</guid>
+      <description>Life is painful when you have two or more classes with the same name but different package name and you have to use them both in the same place.   Only one import can be added and the other one needs to be referenced by its complete package name dot class name. Every time you use the second class name, you need to use it by the entire package name of that class.</description>
+    </item>
     
     <item>
       <title>Kotlin ‘For’ loop</title>

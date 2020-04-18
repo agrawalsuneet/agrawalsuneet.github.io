@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Higher-order functions in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</guid>
+      <description>What is a higher-order function?  In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function. In other words, a higher-order function is a function that takes functions as parameters or returns a function.    (adsbygoogle = window.adsbygoogle || []).push({});    Let’s take an example   fun &amp;lt;T&amp;gt; ArrayList&amp;lt;T&amp;gt;.</description>
+    </item>
+    
+    <item>
       <title>Pair and Triple in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
@@ -62,7 +71,7 @@
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (30 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+      <description>Technical Blogs  Technical Blogs (31 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
     </item>
     
     <item>

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Higher-order functions in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</guid>
+      <description>What is a higher-order function?  In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function. In other words, a higher-order function is a function that takes functions as parameters or returns a function.    (adsbygoogle = window.adsbygoogle || []).push({});    Let’s take an example   fun &amp;lt;T&amp;gt; ArrayList&amp;lt;T&amp;gt;.</description>
+    </item>
+    
+    <item>
       <title>Pair and Triple in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>

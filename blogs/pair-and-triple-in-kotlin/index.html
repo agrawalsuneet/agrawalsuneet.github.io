@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+  
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');</script>
+  
+
+  
+  <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="kotlin pari,kotlin triple,pair and triple,kotlin pair and triple">
+
+
+  
+  <meta name="author" content="Suneet Agrawal">
+  <meta name="owner" content="Suneet Agrawal">
+  <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+  <meta name="title" content="Suneet Agrawal | Pair and Triple in Kotlin" />
+  <meta property="og:title" content="Pair and Triple in Kotlin">
+  <meta property="twitter:title" content="Pair and Triple in Kotlin">
+  <meta name="twitter:site" content="@agrawalsuneet">
+
+  <meta name="topic" content="Pair and Triple in Kotlin">
+  <meta name="description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a class with just two variables and return that class object from the method.">
+  <meta property="og:description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a class with just two variables and return that class object from the method.">
+  <meta property="twitter:description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a class with just two variables and return that class object from the method.">
+  <meta name="abstract" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a class with just two variables and return that class object from the method.">
+  <meta name="summary" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a class with just two variables and return that class object from the method.">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-04-18">
+  
+
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/">
+  
+  <meta name="site_name" content="Suneet Agrawal">
+  <meta property="og:site_name" content="Suneet Agrawal">
+
+  <meta name="category" content="Portfolio">
+  <meta name="email" content="agrawalsuneet@gmail.com">
+  <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+  <meta name="twitter:creator" content="@agrawalsuneet">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="target" content="all"/>
+  <meta name="audience" content="all"/>
+  <meta name="coverage" content="Worldwide"/>
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="safe for kids"/>
+
+  
+  
+  <meta property="og:tags" content="Kotlin">
+  
+  <meta property="og:tags" content="Android">
+  
+
+  <meta name="generator" content="Hugo 0.57.1" />
+  <title>Pair and Triple in Kotlin &middot; Suneet Agrawal</title>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+
+  
+  <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />
+  
+  
+  <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" />
+  
+</head>
+
+<body>
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+  
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.png" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawal.suneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+	<header>
+		<h1 style="margin-left:15px; margin-right:15px;">Pair and Triple in Kotlin</h1>
+	</header>
+
+	<div class="col-xs-12 vertical-centre">
+		
+		<small class="text-muted">
+			
+			
+				<a href="https://agrawalsuneet.github.io/tags/kotlin"><span class="label label-success">Kotlin</span></a>
+			
+				<a href="https://agrawalsuneet.github.io/tags/android"><span class="label label-success">Android</span></a>
+			
+		</small>
+		
+
+		<div class="vertical-centre px12 pl12">
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+
+		<div class="vertical-centre px12">
+			<div class="fb-share-button" 
+				data-href="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/?utm_source=share_header&utm_medium=facebook" 
+				data-layout="button">
+			</div>
+		</div>
+
+		<div class="vertical-centre px12">
+			<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/?utm_source=share_header&utm_medium=linkedin"></script>
+		</div>
+		
+	</div>
+
+	<article>
+		<div class="col-xs-12">
+			<p></br></p>
+
+<div class="center-justified text-content">
+        It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.
+        </br>
+        </br>
+        What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a class with just two variables and return that class object from the method.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        This approach works fine but is it worth defining a new class every time when we return two value from a method. what if we have several methods which return two values but each method returns the values of different data types. Are we going to create a separate class for each method?
+        </br>
+        <h4>
+        The answer is NO.
+        </h4>
+        </br>
+        Kotlin provides us with a predefined class <mark>Pair</mark> which can be used for the same. <mark>Pair</mark> is used to store or return two values of same or different data types. There can or cannot be any relation between both the values. They can be of the same or different data types.
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        And how do I use it?
+        </h3>
+        Initialise it as a simple <mark>Pair</mark> class object by passing two values to the constructor.
+</div>
+
+<pre class="zeropadding">
+  <br/><b>Pair</b> ("Hello", "How are you")<br/><b>Pair</b> ("First", 1)<br/><b>Pair</b> (10, null)<br/><b>Pair</b> (1.5, listOf(null))<br/>var variable1 = "I am a String"<br/>var variable2 = 10<br/>    <br/><b>Pair</b> (variable1, variable2)<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        And how do I retrieve the values?
+        </h3>
+        Either receive them in a single variable and use <mark>first</mark> and <mark>second</mark> properties or <mark>componentN</mark> method to extract the values, or receive in separate variables and use them directly.
+</div>
+
+<pre class="zeropadding">
+  <br/>var pair = <b>Pair</b>("Hello", "How are you")<br/>println(pair.first)<br/>println(pair.second)<br/><br/>println(pair.component1())<br/>println(pair.component2())<br/>//or<br/>var (firstName, lastName) = <b>Pair</b>("Suneet", "Agrawal")<br/>println(firstName)<br/>println(lastName)<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        </br>
+        We can even use a normal method like <mark>toString()</mark> on this object.
+</div>
+
+<pre class="zeropadding">
+  <br/>val pair = <b>Pair</b>("I am a String", listOf(1,2,3))<br/>print(pair.toString())<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        </br>
+        Or we can even call a <mark>copy</mark> method on a <mark>Pair</mark> object and change its values but while copying, the data type of the variables should be the same as the one we are trying to change the value of.
+</div>
+
+<pre class="zeropadding">
+  <br/>val pair = <b>Pair</b>("I am a String", listOf(1,2,3))<br/>print(pair)<br/>    <br/>val anotherPair = pair.copy(first = "I am new String")<br/>print(anotherPair)<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        </br>
+        We can even convert a <mark>Pair</mark> object to a list using <mark>toList()</mark> method and get the values using positions or perform other operations.
+</div>
+
+<pre class="zeropadding">
+  <br/>val pair = <b>Pair</b>("I am a String", 10)<br/>val list = pair.toList()<br/>    <br/>println(list[0])<br/>println(list.get(1))<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+                Now What if I want to return three values from a method?
+        </h3>
+        Simple, Use <mark>Triple</mark> class. It does the same functionality with three different properties.
+        </br>
+        </br>
+        It has the third property as <mark>third</mark>. We can retrieve the third value as either using <mark>third</mark> or by <mark>component3()</mark>
+</div>
+
+<pre class="zeropadding">
+  <br/>val triple = <b>Triple</b>("I am a String", listOf(1,2,3) , 10)<br/>println(triple.third)<br/>println(triple.component3())<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        It even supports <mark>copy</mark> and <mark>toList()</mark> method which has the same functionality as <mark>Pair</mark> but with three properties.
+</div>
+
+<div class="center-justified text-content">
+        </br>
+        <h3>
+        Last Question. What if I want to return four or more values?
+        </h3>
+        Now you are getting greedy. Create your own data class and return the object of that class.
+        </br>
+        </br>
+        Reference: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/" target="_blank">Pair</a> and <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-triple/" target="_blank">Triple</a>
+        </br>
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle" >
+    <div class="col-sm-6 col-xs-12">
+      <a href="/blogs">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+      <a href="/blogs/lateinit-property-in-kotlin/">
+        lateinit property in Kotlin &gt;&gt;
+      </a>
+    </div>
+</div>
+
+
+		</div>
+	</article>
+</main>
+
+&nbsp;
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

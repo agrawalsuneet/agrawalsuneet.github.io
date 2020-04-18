@@ -6,10 +6,19 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pair and Triple in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</guid>
+      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.   What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a class with just two variables and return that class object from the method.</description>
+    </item>
     
     <item>
       <title>Type Aliases in Kotlin</title>

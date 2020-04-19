@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>partition() : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/partition-kotlin/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/partition-kotlin/</guid>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations.   Recently in one of my use case, the basic operations were not enough for me.</description>
+    </item>
+    
+    <item>
       <title>The Nothing Type : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</link>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>

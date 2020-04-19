@@ -6,10 +6,19 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Nothing Type : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</guid>
+      <description>What if I say there is a class called Nothing in Koltin.   And What does it do? Nothing.   The time I read about the class Nothing for the first time, it sounds interesting to me. This class has no instance and it is used to represent a value which never exists. This class is also used to represent a return type from a method that will never return.</description>
+    </item>
     
     <item>
       <title>Higher-order functions in Kotlin</title>

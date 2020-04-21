@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="kotlin any,kotlin unit,kotlin nothing,any vs unit vs nothing, kotlin">
+  <meta name="keywords" content="kotlin extensions,extensions in kotlin,kotlin extension function">
 
 
   
@@ -35,26 +35,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Difference between Any, Unit and Nothing : Kotlin" />
-  <meta property="og:title" content="Difference between Any, Unit and Nothing : Kotlin">
-  <meta property="twitter:title" content="Difference between Any, Unit and Nothing : Kotlin">
+  <meta name="title" content="Suneet Agrawal | Extensions in Kotlin" />
+  <meta property="og:title" content="Extensions in Kotlin">
+  <meta property="twitter:title" content="Extensions in Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Difference between Any, Unit and Nothing : Kotlin">
-  <meta name="description" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
-  <meta property="og:description" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
-  <meta property="twitter:description" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
-  <meta name="abstract" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
-  <meta name="summary" content="We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.">
+  <meta name="topic" content="Extensions in Kotlin">
+  <meta name="description" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
+  <meta property="og:description" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
+  <meta property="twitter:description" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
+  <meta name="abstract" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
+  <meta name="summary" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-03-03">
+  <meta property="article:published_time" content="2020-04-22">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -64,7 +64,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -80,7 +80,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Difference between Any, Unit and Nothing : Kotlin &middot; Suneet Agrawal</title>
+  <title>Extensions in Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -230,7 +230,7 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Difference between Any, Unit and Nothing : Kotlin</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">Extensions in Kotlin</h1>
 	</header>
 
 	<div class="col-xs-12 vertical-centre">
@@ -246,20 +246,20 @@ if (!doNotTrack) {
 		
 
 		<div class="vertical-centre px12 pl12">
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 
 		<div class="vertical-centre px12">
 			<div class="fb-share-button" 
-				data-href="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/?utm_source=share_header&utm_medium=facebook" 
+				data-href="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/?utm_source=share_header&utm_medium=facebook" 
 				data-layout="button">
 			</div>
 		</div>
 
 		<div class="vertical-centre px12">
 			<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/?utm_source=share_header&utm_medium=linkedin"></script>
+			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/?utm_source=share_header&utm_medium=linkedin"></script>
 		</div>
 		
 	</div>
@@ -269,10 +269,19 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        We all know about three classes <mark>Any</mark>, <mark>Unit</mark> and <mark>Nothing</mark> in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.
+        Have you ever felt some useful functionality missing in an existing class?
+        </br>
+        The class could be in the libraries provided by language also.
         </br>
         </br>
-        Let try to understand what are these, when to use what and how these are different from one another.
+        “Yes”
+        </br>
+        </br>
+        What exactly you do to add that functionality in the class?
+        </br>
+        “Extend the class and add the method and then use my own extended class”
+        </br>
+        If so, Kotlin extensions can definitely make your life easier.
 </div>
 
 <div class="col-xs-12 googleads">
@@ -289,80 +298,184 @@ if (!doNotTrack) {
     </script>
 </div>
 
-<h3>
-Any
-</h3>
-
 <div class="center-justified text-content">
-        <mark>Any</mark> is an <mark>open</mark> class and by default the superclass for all the classes, whether we define it explicitly or not. This is similar to the <mark>Object</mark> class in Java which is the superclass for each and every class.
-</div>
-
-<pre class="zeropadding">
-  <br/>/**<br/> * The root of the Kotlin class hierarchy. Every Kotlin class has [Any] as a superclass.<br/> */<br/>public open class <b>Any</b> {<br/><br/>    public open operator fun <b>equals</b>(other: Any?): Boolean<br/>    public open fun <b>hashCode</b>(): Int<br/>    public open fun <b>toString</b>(): String<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        <mark>Any</mark> has 3 functions
-        <ul>
-                <li>equals</li>
-                <li>hashCode</li>
-                <li>toString</li>
-        </ul>
-
-        All three functions are well-known functions which can be overridden in any class.
-</div>
-
-<p></br></p>
-
-<h4>
-equals
-</h4>
-
-<pre class="zeropadding">
-  <br/>/**<br/> * Indicates whether some other object is "equal to" this one. Implementations must fulfil the following<br/> * requirements:<br/> *<br/> * * <b>Reflexive</b>: for any non-null value `x`, `x.equals(x)` should return true.<br/> * * <b>Symmetric</b>: for any non-null values `x` and `y`, `x.equals(y)` should return true if and only if `y.equals(x)` returns true.<br/> * * <b>Transitive</b>:  for any non-null values `x`, `y`, and `z`, if `x.equals(y)` returns true and `y.equals(z)` returns true, then `x.equals(z)` should return true.<br/> * * <b>Consistent</b>:  for any non-null values `x` and `y`, multiple invocations of `x.equals(y)` consistently return true or consistently return false, provided no information used in `equals` comparisons on the objects is modified.<br/> * * <b>Never equal to null</b>: for any non-null value `x`, `x.equals(null)` should return false.<br/> */<br/>public open operator fun <b>equals</b>(other: Any?): Boolean<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        <mark>equals</mark> functions check if the object is equal to the object passed in parameter. There are different criteria on which <mark>equals</mark> function checks the equality but we can <mark>override</mark> this function in any class.
-</div>
-
-<p></br></p>
-
-<h4>
-hashCode
-</h4>
-
-<pre class="zeropadding">
-  <br/>/**<br/> * Returns a hash code value for the object.  The general contract of `hashCode` is:<br/> *<br/> * * Whenever it is invoked on the same object more than once, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified.<br/> * * If two objects are equal according to the `equals()` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.<br/> */<br/>public open fun <b>hashCode</b>(): Int<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        <mark>hashCode</mark> returns a unique <mark>integer</mark> for each and every object of that class. This function is also <mark>open</mark> and we can <mark>override</mark> it according to our use case.
-</div>
-
-<p></br></p>
-
-<h4>
-toString
-</h4>
-
-<pre class="zeropadding">
-  <br/>/**<br/> * Returns a string representation of the object.<br/> */<br/>public open fun <b>toString</b>(): String<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        This is the most commonly overridden function which is used to represent the object in string form. This is again <mark>open</mark> and we can <mark>override</mark> it according to the use case.
+        Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called <mark>extensions</mark>. These extensions basically add some functionality in an existing class without extending the class.
         </br>
         </br>
-        We can even create an object of <mark>Any</mark> class and use any of the above functions.
+        <h4>
+        And how do we use it?
+        </h4>
+        I will explain this but before that, keep in mind that Kotlin supports both, extension functions and extension properties (Without backing field). Let’s understand them one by one.
+        </br>
+        <h3>
+        Extension Functions
+        </h3>
+        To declare an extension function, we need to prefix its name with a receiver type, i.e. the type being extended or the class name.
+        </br>
+        </br>
+        Let’s say we want to add a function in the <mark>List</mark> Interface implementation which returns the element at the mid position of the list.
 </div>
 
 <pre class="zeropadding">
-  <br/>val any: <b>Any</b> = Any()<br/><br/>any.equals(Any())<br/>any.hashCode()<br/>any.toString()<br/>
+  <br/>fun <T> List<T>.midElement(): T {<br/>    if (isEmpty())<br/>        throw NoSuchElementException("List is empty.")<br/>    return this[size / 2]<br/>}<br/><br/>//to call this method<br/>var list = listOf<Int>(1, 2, 3, 4, 5)<br/>var mid = list.midElement()<br/><br/>//or <br/><br/>var arrayList = arrayListOf(5, 4, 3, 2, 1)<br/>var mid = arrayList.midElement()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <h4>
+        So what we are doing here?
+        </h4>
+        We are adding a method named <mark>midElement</mark> in the <mark>List</mark> implementation which returns us the element at the mid position of the list. This method throws <mark>NoSuchElementException</mark> if the list is empty.
+        </br>
+        </br>
+        Later this <mark>midElement</mark> method can be called with any normal List object.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        Let’s take another example of our very favorite <mark>Toast</mark> class in Android.
+        </br>
+        </br>
+        <mark>Toast</mark> class is used to show a message at the bottom half of the screen in Android for a long or short duration.
+        </br>
+        The native code to show a Toast in Android is
+</div>
+
+<pre class="zeropadding">
+  <br/>Toast.makeText(this, “Hello”, Toast.LENGTH_SHORT).show()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        The above code calls a static method <mark>makeText</mark> of <mark>Toast</mark> class with three parameters (reference of the current <mark>Context</mark> class, the <mark>CharSequence</mark> to be displayed and the <mark>Int</mark> duration for which the toast to be shown). The static method returns the <mark>Toast</mark> class object to which we call the show method.
+        </br>
+        </br>
+        Now to make the call easy to this <mark>Toast</mark> from any class which extends the <mark>Context</mark> class directly or indirectly, we can create an extension method of <mark>Context</mark> class which will do the exact same.
+</div>
+
+<pre class="zeropadding">
+  <br/>fun Context.showToast(text: CharSequence, duration: Int = Toast.LENGTH_SHORT) {<br/>    Toast.makeText(this, text, duration).show()<br/>}<br/><br/>//to call this method from any context extending class<br/>showToast("Hello")<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        <h3>
+        How are extensions resolved?
+        </h3>
+        </h4>
+        Statically.
+        </h4>
+        </br>
+        </br>
+        Extensions do not actually modify classes they extend. By defining an extension, you do not insert new members into a class, but merely make new functions callable with the dot-notation on variables of this type.
+        </br>
+        </br>
+        The extension functions dispatched statically. That means the extension function which will be called is determined by the type of the expression on which the function is invoked, not by the type of the result of evaluating that expression at runtime. In short, they are not virtual by receiver type.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h4>
+        Let me explain.
+        </h4>
+        Let’s say we have two classes, one extending other and both have the same extension functions with same name and signature.
+</div>
+
+<pre class="zeropadding">
+  <br/>open class BaseClass<br/><br/>class DerivedClass : BaseClass()<br/><br/>fun BaseClass.someMethod(){<br/>    print("BaseClass.someMethod")<br/>}<br/><br/>fun DerivedClass.someMethod(){<br/>    print("DerivedClass.someMethod")<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Now if we try to call the <mark>someMethod</mark> with <mark>BaseClass</mark> object but the actual reference we pass to it will be <mark>DerivedClass</mark> reference,
+</div>
+
+<pre class="zeropadding">
+  <br/>fun printMessage(base : BaseClass){<br/>    base.someMethod()<br/>}<br/><br/>//actual call<br/>printMessage(DerivedClass())<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        This will print BaseClass.someMethod
+        </br>
+        <h4>
+        But why?
+        </h4>
+        I passed the <mark>DerivedClass</mark> reference.
+        </br>
+        </br>
+        Because the extension function being called depends only on the declared type of the parameter <mark>base</mark> in <mark>printMessage</mark> method, which is the <mark>BaseClass</mark> class. This is different from runtime polymorphism as here it is resolved statically but not at the runtime.
+        </br>
+        </br>
+        What if my class has the same method with the same signature that we are adding as an extension function?
+        </br>
+        </br>
+        The compiler will call the method declared in the class but not the extension function.
+</div>
+
+<pre class="zeropadding">
+  <br/>class BaseClass{<br/>    fun someMethod(){<br/>        print("I am the actual someMethod")<br/>    }<br/>}<br/><br/>fun BaseClass.someMethod(){<br/>    print("I am the extension function")<br/>}<br/><br/>//to call this method<br/>BaseClass().someMethod()<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        This will call the someMethod which s defined in BaseClass and will print
+        </br>
+        I am the actual someMethod
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        <h3>
+        Nullable Receiver
+        </h3>
+        The extensions can be defined with a nullable receiver type also. These extension function can be called on a nullable object variable.
+        </br>
+        </br>
+        Let’s take an example of toString method.
+</div>
+
+<pre class="zeropadding">
+  <br/>fun Any?.toString(): String {<br/>    if (this == null) return "null"<br/>    // after the null check,<br/>    // 'this' is autocast to a non-null type, <br/>    // so the toString() below<br/>    // resolves to the member function of the Any class<br/>    return toString()<br/>}<br/><br/>// not the above method can be call on a nullable variable also<br/>var nullableVariable : Any? = null<br/>nullableVariable.toString()<br/>
 </pre>
 
 
@@ -380,58 +493,24 @@ toString
     </script>
 </div>
 
-<h3>
-Unit
-</h3>
-
 <div class="center-justified text-content">
-        <mark>Unit</mark> class is an <mark>object</mark> class which means it a singleton class having only one object.
+        <h3>
+        Extension Properties
+        </h3>
+        Similarly to functions, we can add extension properties also.
 </div>
 
 <pre class="zeropadding">
-  <br/>/**<br/> * The type with only one value: the `Unit` object. This type corresponds to the `void` type in Java.<br/> */<br/>public object <b>Unit</b> {<br/>    override fun toString() = "kotlin.Unit"<br/>}<br/>
+  <br/>val <T> List<T>.midIndex: Int<br/>    get() = if (size == 0) 0 else size / 2<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        <mark>Unit</mark> is exactly equivalent to the <mark>void</mark> type in Java. We can explicitly add <mark>Unit</mark> as the return type for functions returning void.
-</div>
-
-<p></br></p>
-
-<pre class="zeropadding">
-  <br/>fun doSomething() {<br/>    //do something here<br/>}<br/><br/>fun doSomething() : <b>Unit</b> {<br/>    //do something here<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        Both the above functions are absolutely the same but for the second one, there will a warning stating
+        Since extensions do not actually insert members into classes, there’s no efficient way for an extension property to have a backing field. This is why initializers are not allowed for extension properties. Their behavior can only be defined by explicitly providing getters/setters.
 </div>
 
 <pre class="zeropadding">
-  <br/>Redundant 'Unit' return type<br/>
-</pre>
-
-
-<p></br></p>
-
-<div class="center-justified text-content">
-        We can't extend <mark>Unit</mark> class.
-</div>
-
-<pre class="zeropadding">
-  <br/>object <b>AnotherUnit</b> : <b>Unit</b> {<br/>}<br/><br/>class <b>AnotherUnit</b> : <b>Unit</b> {<br/>}<br/><br/>//both above will have <e>Compilation error</e><br/>"Cannot inherit from a Singleton"<br/>
-</pre>
-
-
-<p></br></p>
-
-<div class="center-justified text-content">
-        We can't even create an object of it.
-</div>
-
-<pre class="zeropadding">
-  <br/>val unit: <b>Unit</b> = Unit()<br/>unit.toString()<br/><br/>//<e>Compilation error</e> in first line<br/><br/>"Expression 'Unit' of type 'Unit' cannot be invoked as a function.<br/>The funciton 'invoke()' is not found"<br/>
+  <br/>class BaseClass{<br/>}<br/><br/>var BaseClass.index : Int = 10 <e>//compile error</e><br/>//Extension property cannot be initialized<br/>//because it has no backing field<br/>
 </pre>
 
 
@@ -449,106 +528,36 @@ Unit
     </script>
 </div>
 
-<h3>
-Nothing
-</h3>
+<div class="center-justified text-content">
+        <h3>
+        Companion Object Extension
+        </h3>
+        We can also define extension functions and properties for the <a href="/blogs/companion-object-in-kotlin/" target="_blank">Companion object</a>.
+</div>
+
+<pre class="zeropadding">
+  <br/>class BaseClass {<br/><br/>    companion object {<br/>    }<br/>}<br/><br/>fun BaseClass.Companion.companionMethod(){<br/><br/>}<br/>//to call this method<br/>BaseClass.companionMethod()<br/>
+</pre>
+
 
 <div class="center-justified text-content">
-        <mark>Nothing</mark> is used to represent a value which will never exist.
-        </br> 
+        <h3>
+        Scope of Extensions
+        </h3>
+        Most of the time we define extensions on the top level, i.e. directly under packages.
+</div>
+
+<pre class="zeropadding">
+  <br/>package com.example.extension<br/><br/>fun BaseClass.extensionFunction(){<br/>    <br/>}<br/><br/>//and use it with<br/>import com.example.extension.extensionFunction <br/>// importing all extensions by name "extensionFunction"<br/><br/>// or<br/>import com.example.extension.*   <br/>// importing everything from "com.example.extension"<br/><br/>fun usage(base: BaseClass) {<br/>    base.extensionFunction()<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        but if you want to declare an extension function as a member of the other class we have some rules to follow which I will explain in another blog.
         </br>
-        This is has a private constructor and also cannot be extended.
-</div>
-
-<pre class="zeropadding">
-  <br/>/**<br/> * Nothing has no instances. You can use Nothing to represent "a value that never exists": for example,<br/> * if a function has the return type of Nothing, it means that it never returns (always throws an exception).<br/> */<br/>public class <b>Nothing</b> private constructor()<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        It is used to define a function return type which is going to <mark>throw</mark> an exception every time.
-</div>
-
-<pre class="zeropadding">
-  <br/>fun iWillAlwaysThrowException() =  <b>throw</b> Exception("Unnecessary Exception")<br/><br/>//The ebove function will show a <e>compilation error</e><br/><br/>'Nothing' return type needs to be specified explicitely<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        and the correct syntax will be
-</div>
-
-<pre class="zeropadding">
-  <br/>fun iWillAlwaysThrowException() : <b>Nothing</b> =  <b>throw</b> Exception("Unnecessary Exception")<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        The best example of <mark>Nothing</mark> is in <mark>TODO</mark> function.
-</div>
-
-<pre class="zeropadding">
-  <br/>/**<br/> * Always throws [NotImplementedError] stating that operation is not implemented.<br/> */<br/><br/>@kotlin.internal.InlineOnly<br/>public inline fun <b>TODO</b>(): Nothing = throw NotImplementedError()<br/><br/>/**<br/> * Always throws [NotImplementedError] stating that operation is not implemented.<br/> *<br/> * @param reason a string explaining why the implementation is missing.<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun <b>TODO</b>(reason: String): Nothing = throw NotImplementedError("An operation is not implemented: $reason")<br/>
-</pre>
-
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<h3>
-Differences between Any, Unit and Nothing
-</h3>
-
-<p></br></p>
-
-<h4>
-Any
-</h4>
-
-<div class="center-justified text-content">
-        <ul>
-                <li><mark>Any</mark> is by default the superclass of all the classes and has 3 functions: <mark>equals</mark>, <mark>hashCode</mark> and <mark>toString</mark>. This is equal to <mark>Object</mark> class in Java.</li>
-                <li>We can create an object of <mark>Any</mark> class directly or even override these functions in any other class.</li>
-        </ul>
-</div>
-
-<p></br></p>
-
-<h4>
-Unit
-</h4>
-
-<div class="center-justified text-content">
-        <ul>
-                <li><mark>Unit</mark> class is a singleton class, we can't extend or even create an object of it.</li>
-                <li><mark>Unit</mark> class in equal to <mark>void</mark> type in Java.</li>
-                <li>The superclass of <mark>Unit</mark> is <mark>Any</mark> and it has overridden <mark>toString</mark> method.</li>
-        </ul>
-</div>
-
-<p></br></p>
-
-<h4>
-Nothing
-</h4>
-
-<div class="center-justified text-content">
-        <ul>
-                <li><mark>Nothing</mark> is non-open (final class) which can't be extended and its constructor is also private that means we can't create the object also.</li>
-                <li>This is usually used to represent the return type of function which will always <mark>throw</mark> an exception.</li>
-                <li>The superclass of <mark>Nothing</mark> is <mark>Any</mark>.</li>
-        </ul>
+        </br>
+        Reference: <a href="https://kotlinlang.org/docs/reference/extensions.html" target="_blank">Kotlin docs</a>
+        </br>
 </div>
 
 <div class="col-xs-12 googleads">
@@ -572,8 +581,8 @@ Nothing
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">
-        Safe calls(?.) vs Null checks(!!) in Kotlin &gt;&gt;
+      <a href="/blogs/pair-and-triple-in-kotlin">
+        Pair and Triple in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

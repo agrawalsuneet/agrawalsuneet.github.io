@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Extensions as Members : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</guid>
+      <description>In continuation to my last Medium post Extensions in Kotlin where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.   An extension can be defined as members of some other class also.  The benefit of defining an extension as a member of the other class is, we can access all the functions and properties of both the classes inside that extension method.</description>
+    </item>
+    
+    <item>
       <title>Extensions in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>

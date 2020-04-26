@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Label Reference in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</guid>
+      <description>Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.   Let me give you an example  loopi@ for( i in 1..5){ print(i) }   But what is the use? Where I am going to use this label and why would I use it?</description>
+    </item>
     
     <item>
       <title>Extensions as Members : Kotlin</title>

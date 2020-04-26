@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Label Reference in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</guid>
+      <description>Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.   Let me give you an example  loopi@ for( i in 1..5){ print(i) }   But what is the use? Where I am going to use this label and why would I use it?</description>
+    </item>
+    
+    <item>
       <title>Extensions as Members : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
@@ -107,7 +116,7 @@
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (35 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+      <description>Technical Blogs  Technical Blogs (36 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
     </item>
     
     <item>

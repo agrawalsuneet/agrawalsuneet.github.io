@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Kotlin apply function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
+      <description>In continuation to my previous post where I explained about Kotlin let scope function, let&#39;s try to understand today about apply function today.   Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
       <title>Object Expression in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
@@ -125,7 +134,7 @@
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (37 posts)   Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.cs&amp;#39; file and while compilation, all the functionalities of same partial classes written in different &amp;#39;.cs&amp;#39; files will be merged and then compile it. read more  29 Mar 2020  CSharp      Difference between Any, Unit and Nothing : Kotlin   We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+      <description>Technical Blogs  Technical Blogs (38 posts)   Kotlin apply function   Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function. read more  28 April 2020  Kotlin Android      Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.</description>
     </item>
     
     <item>

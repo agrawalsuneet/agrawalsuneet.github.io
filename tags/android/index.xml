@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Kotlin apply function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
+      <description>In continuation to my previous post where I explained about Kotlin let scope function, let&#39;s try to understand today about apply function today.   Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
       <title>Object Expression in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>

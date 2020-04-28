@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="Suneet Agrawal">
 
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="kotlin for loop,for loop kotlin,for loop,for kotlin">
+  <meta name="keywords" content="kotlin object expression,kotlin anonymous interface implementation,object expression kotlin">
 
 
   
@@ -35,26 +35,26 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-  <meta name="title" content="Suneet Agrawal | Kotlin ‘For’ loop" />
-  <meta property="og:title" content="Kotlin ‘For’ loop">
-  <meta property="twitter:title" content="Kotlin ‘For’ loop">
+  <meta name="title" content="Suneet Agrawal | Object Expression in Kotlin" />
+  <meta property="og:title" content="Object Expression in Kotlin">
+  <meta property="twitter:title" content="Object Expression in Kotlin">
   <meta name="twitter:site" content="@agrawalsuneet">
 
-  <meta name="topic" content="Kotlin ‘For’ loop">
-  <meta name="description" content="While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.">
-  <meta property="og:description" content="While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.">
-  <meta property="twitter:description" content="While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.">
-  <meta name="abstract" content="While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.">
-  <meta name="summary" content="While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.">
+  <meta name="topic" content="Object Expression in Kotlin">
+  <meta name="description" content="Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.">
+  <meta property="og:description" content="Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.">
+  <meta property="twitter:description" content="Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.">
+  <meta name="abstract" content="Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.">
+  <meta name="summary" content="Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.">
 
   
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-04-10">
+  <meta property="article:published_time" content="2020-04-28">
   
 
-  <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/">
-  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/">
-  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/">
+  <meta name="url" content="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/">
+  <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/">
+  <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/">
   
   <meta name="site_name" content="Suneet Agrawal">
   <meta property="og:site_name" content="Suneet Agrawal">
@@ -64,7 +64,7 @@
   <meta name="og:email" content="agrawalsuneet@gmail.com">
 
   <meta name="twitter:creator" content="@agrawalsuneet">
-  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/">
+  <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="target" content="all"/>
   <meta name="audience" content="all"/>
@@ -80,7 +80,7 @@
   
 
   <meta name="generator" content="Hugo 0.57.1" />
-  <title>Kotlin ‘For’ loop &middot; Suneet Agrawal</title>
+  <title>Object Expression in Kotlin &middot; Suneet Agrawal</title>
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -230,7 +230,7 @@ if (!doNotTrack) {
 
 <main>
 	<header>
-		<h1 style="margin-left:15px; margin-right:15px;">Kotlin ‘For’ loop</h1>
+		<h1 style="margin-left:15px; margin-right:15px;">Object Expression in Kotlin</h1>
 	</header>
 
 	<div class="col-xs-12 vertical-centre">
@@ -246,20 +246,20 @@ if (!doNotTrack) {
 		
 
 		<div class="vertical-centre px12 pl12">
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/?utm_source=share_header&utm_medium=twitter" data-show-count="false">Tweet</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 
 		<div class="vertical-centre px12">
 			<div class="fb-share-button" 
-				data-href="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/?utm_source=share_header&utm_medium=facebook" 
+				data-href="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/?utm_source=share_header&utm_medium=facebook" 
 				data-layout="button">
 			</div>
 		</div>
 
 		<div class="vertical-centre px12">
 			<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/kotlin-for-loop/?utm_source=share_header&utm_medium=linkedin"></script>
+			<script type="IN/Share" data-url="https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/?utm_source=share_header&utm_medium=linkedin"></script>
 		</div>
 		
 	</div>
@@ -269,10 +269,10 @@ if (!doNotTrack) {
 			<p></br></p>
 
 <div class="center-justified text-content">
-        While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language <mark>for</mark> loops.
+        Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.
         </br>
         </br>
-        Wait! They are not this tough. In fact, they are very easy, interesting and helpful.
+        We can even create an object expression for an <mark>interface</mark> or <mark>abstract</mark> class by just implementing their abstract methods. This functionality is called an anonymous interface implementation or anonymous abstract class implementation.
 </div>
 
 <div class="col-xs-12 googleads">
@@ -290,208 +290,44 @@ if (!doNotTrack) {
 </div>
 
 <div class="center-justified text-content">
-        Let’s check one by one.
+        Let’s understand with examples
         </br>
         </br>
-        <h4>1. Simple <mark>for</mark> loop in java that iterates from some number to some number incrementing one on each loop pass.</h4>
+        We have a class <mark>AClass</mark> having <mark>someFunction</mark> in it. We want to pass <mark>AClass</mark> object to achieve some other functionality but at the same time, we want to <mark>override</mark> the default functionality of <mark>someFunction</mark>. Ideally, this can be done by creating another class extending <mark>AClass</mark> and overriding the <mark>someFunction</mark> method and then pass the object of extending class. But we can achieve the same using an anonymous inner class in Java.
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i++){<br/>    System.out.print(i);<br/>}<br/>
+  <br/><l>//Java code</l><br/><br/>public class AClass {<br/>    public void someFunction(){<br/>        System.out.println("SomeClass : some Function");<br/>    }<br/>}<br/><br/>public class UsageClass {<br/><br/>    public void useSomeClass(AClass someClassObj){<br/>        someClassObj.someFunction();<br/>    }<br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
+        Now to use the method in <mark>UsageClass</mark>,
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Java code</l><br/><br/>UsageClass usageClass = new UsageClass();<br/>usageClass.useSomeClass(new AClass(){<br/>    @Override<br/>    public void someFunction() {<br/>        super.someFunction();<br/>        System.out.println("UsageClass : overridden some Function");<br/>    }<br/>});<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        We created an object of <mark>AClass</mark> and passed it to <mark>useSomeClass</mark> method also we overridden the functionality of <mark>somefunction</mark> without extending the class.
         </br>
-        its equivalent Kotlin code
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for (i in 0..10) {<br/>    print(i)<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        <h3>Things to notice</h3>
-        <ul>
-                <li>no need to declare the data type of variable</li>
-                <li>if iterating over a range, we can use <mark>in</mark> variable</li>
-                <li>the lower and upper (including) limit can be defined on both the sides of <mark>..</mark> operator.</li>
-        </ul>
-</div>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<div class="center-justified text-content">
-        <h4>2. Now let’s say if I don’t don’t want to include the upper limit in the loop and break the loop if it hits the upper limit.</h4>
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int j = 0; j < 10; j++) {<br/>    System.out.print(j); //this will print only up to 9<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
         </br>
-        There are two ways to do the same in kotlin, the first one is decrement the upper limit it while coding and use <mark>..</mark> operator or another way is use <mark>until</mark> operator.
+        The same can be achieved in Kotlin using <mark>object</mark> expression.
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for (j in 0..9) {<br/>    print(j)<br/> }<br/><br/>for (j in 0 until 10) {<br/>    print(j)<br/> }<br/>
+  <br/><l>//Kotlin code</l><br/><br/>open class AClass {<br/>    open fun someFunction() {<br/>        println("SomeClass : some Function")<br/>    }<br/>}<br/><br/>class UsageClass {<br/>    <br/>    fun useSomeClass(someClassObj: AClass) {<br/>        someClassObj.someFunction()<br/>    }<br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
-        Both do the same thing.
-</div>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<div class="center-justified text-content">
-        <h4>3. I want to increment it by 2 or some other number.</h4>
+        Now to use the method in <mark>UsageClass</mark>,
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i += 2) {<br/>    System.out.print(i);<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-        We can use <mark>step</mark> operator here
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for (i in 0..10 step 2) {<br/>    print(i)<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-       <h4>4. Wait, what if I want to run the loop in reverse order. Can I use <mark>10..1</mark> ?</h4>
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 10; i > 0; i--) {<br/>    System.out.print(i);<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        No, you can not use <mark>10..1</mark> as <mark>..</mark> operator never works on the reverse ranges. It won’t give you a compile time or run time error but simply skips the loops by checking the conditions which will be false every time. You have to use <mark>downTo</mark> operator.
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for (i in 10 downTo 1) {<br/>    print(i)<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        You can also change the step size with <mark>step</mark> operator.
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 10; i > 0; i -= 3) {<br/>    System.out.print(i);<br/> }<br/><br/><l>Kotlin code</l><br/>for (i in 10 downTo 1 step 3) {<br/>    print(i)<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        But please note that <mark>until</mark> operator doesn’t work here. <mark>until</mark> operator can only be used for forward increments.
-</div>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-
-<div class="center-justified text-content">
-        <h4>5. What if I have a complex calculation instead of addition or subtraction in each step. Let’s say multiplication or division.</h4>
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int k = 2; k <= 256; k *= 2) {<br/>    System.out.print(k);<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-        Move to while loop, no other way
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>var k = 2<br/>while (k <= 256) {<br/>   print(k)<br/>   k *= 2<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-        <h4>6. I want to iterate over an array now.</h4>
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int i = 0; i < arr.length; i++) {<br/>    System.out.print(arr[i]);<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-        Simple, us the <mark>indices</mark> in kotlin
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>val arr = IntArray(5)<br/>for (i in arr.indices) {<br/>    print(arr[i])<br/>} <br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-        I heard about some for <mark>foreach</mark> also. Can I use the same in kotlin?
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int item: arr) {<br/>    System.out.print(item);<br/> }<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        </br>
-        Yes, you can. <mark>for</mark> loop iterates through anything that provides an iterator. A <mark>for</mark> loop over an array is compiled to an index-based loop that does not create an iterator object.
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for(item in arr){<br/>    print(item)<br/> }<br/>
+  <br/><l>//Kotlin code</l><br/><br/>val usageClass = UsageClass()<br/>usageClass.useSomeClass(object : AClass() {<br/>    override fun someFunction() {<br/>        super.someFunction()<br/>        println("UsageClass : overridden some Function")<br/>    }<br/>})<br/>
 </pre>
 
 
@@ -510,62 +346,138 @@ if (!doNotTrack) {
 </div>
 
 <div class="center-justified text-content">
-        <h4>7. And what about List?</h4>
+        Same can be possible in the case of anonymous <mark>interface</mark> implementation or anonymous <mark>abstract</mark> class implementation also.
+        </br>
+        </br>
+        Let’s have a look.
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Java code</l><br/>List<Integer> arrayList = new ArrayList<>();<br/>for (int i = 0; i < arrayList.size(); i++) {<br/>    System.out.print(arrayList.get(i));<br/>}<br/><br/>List<Integer> vector = new Vector<>();<br/> for (int i = 0; i < vector.size(); i++) {<br/> System.out.print(vector.get(i));<br/> }<br/>
+  <br/><l>//Java code</l><br/><br/>public abstract class AAbstractClass {<br/>    abstract void doSomething();<br/><br/>    public void iAmDoingSomething() {<br/>        System.out.println("AAbstractClass : I am doing something");<br/>    }<br/>}<br/><br/>public interface IInterface {<br/>    void canIDoSomething();<br/>}<br/><br/>public class UsageClass {<br/><br/>    public void useAbstractClass(AAbstractClass abstractClassObj) {<br/><br/>        abstractClassObj.doSomething();<br/>        abstractClassObj.iAmDoingSomething();<br/>    }<br/><br/>    public void useInterface(IInterface iInterfaceObject) {<br/>        iInterfaceObject.canIDoSomething();<br/>    }<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Now to use the functions in the <mark>UsageClass</mark>,
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Java code</l><br/><br/>UsageClass usageClass = new UsageClass();<br/>usageClass.useAbstractClass(new AAbstractClass() {<br/>    @Override<br/>    void doSomething() {<br/>        System.out.println("UsageClass : I am doing something");<br/>    }<br/>});<br/><br/>usageClass.useInterface(new IInterface() {<br/>    @Override<br/>    public void canIDoSomething() {<br/>        System.out.println("UsageClass : can I Do Something");<br/>    }<br/>});<br/>
 </pre>
 
 
 <div class="center-justified text-content">
         </br>
-        Simple. Use <mark>indices</mark> based iteration.
+        The equivalent Kotlin code for the same using <mark>object</mark> expression will be,
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>val arrayList = ArrayList<Int>()<br/>for (i in arrayList.indices) {<br/>    print(arrayList[i])<br/>}<br/><br/>val vector = Vector<Int>()<br/>for (i in vector.indices) {<br/>   print(vector[i])<br/>}<br/>
+  <br/><l>//Kotlin code</l><br/><br/>abstract class AAbstractClass {<br/>    internal abstract fun doSomething()<br/><br/>    fun iAmDoingSomething() {<br/>        println("AAbstractClass : I am doing something")<br/>    }<br/>}<br/><br/>interface IInterface {<br/>    fun canIDoSomething()<br/>}<br/><br/>class UsageClass {<br/><br/>    fun useAbstractClass(abstractClassObj: AAbstractClass) {<br/><br/>        abstractClassObj.doSomething()<br/>        abstractClassObj.iAmDoingSomething()<br/>    }<br/><br/>    fun useInterface(iInterfaceObject: IInterface) {<br/>        iInterfaceObject.canIDoSomething()<br/>    }<br/><br/>    fun useSomeClass(someClassObj: AClass) {<br/>        someClassObj.someFunction()<br/>    }<br/>}<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        To use the <mark>UsageClass</mark>,
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Kotlin code</l><br/><br/>val usageClass = UsageClass()<br/>usageClass.useAbstractClass(object : AAbstractClass() {<br/>    override fun doSomething() {<br/>        println("UsageClass : I am doing something")<br/>    }<br/>})<br/><br/>usageClass.useInterface(object : IInterface {<br/>    override fun canIDoSomething() {<br/>        println("UsageClass : can I Do Something")<br/>    }<br/>})<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        If a supertype has a constructor, appropriate constructor parameters must be passed to it. Many supertypes may be specified as a comma-separated list after the colon <mark>:<mark>
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Kotlin code</l><br/><br/>open class BClass(val x: Int){<br/>    open val y = 20<br/>}<br/>interface IInterface {<br/>    fun canIDoSomething()<br/>}<br/>val bClassObj : BClass = object : BClass(10), IInterface {<br/>    <br/>    override val y: Int = 30<br/><br/>    override fun canIDoSomething() {<br/>        println("bClassObj : can I do something")<br/>    }<br/><br/>}<br/>
 </pre>
 
 
 <div class="center-justified text-content">
         </br>
-        No, I am a fan of <mark>foreach</mark> loop.
+        We can even create just an object with no nontrivial supertypes. This is called an anonymous object.
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int item : arrayList) {<br/>    System.out.print(item);<br/>}<br/><br/>for (int item : vector) {<br/>    System.out.print(item);<br/>}<br/>
+  <br/><l>//Kotlin code</l><br/><br/>val justAnObject = object {<br/>    var x = 10<br/>    var y = 20<br/>    fun sum(): Int = x + y<br/>}<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        But the anonymous objects can only be used as types only in <mark>local</mark> and <mark>private</mark> declarations. If you use an anonymous object as a return type of a public function or the type of a public property, the actual type of that function or property will be the declared supertype of the anonymous object, or <mark>Any</mark> if you didn’t declare any supertype. In that case, the members added in the anonymous object will not be accessible.
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Kotlin code</l><br/><br/>class CClass {<br/>    // Private function, so the return type is <br/>    // the anonymous object type<br/>    private fun privateFunction() = object {<br/>        val x: String = "x"<br/>    }<br/><br/>    // Public function, so the return type is Any<br/>    fun publicFunction() = object {<br/>        val x: String = "x"<br/>    }<br/><br/>    fun main() {<br/>        val x1 = privateFunction().x        // Works fine<br/>        val x2 = publicFunction().x        // ERROR: <br/>                                        //Unresolved reference 'x'<br/>    }<br/>}<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="center-justified text-content">
+        One last thing, unlike Java we can access non-final variables also inside an <mark>object</mark> expression.
+</div>
+
+<pre class="zeropadding">
+  <br/><l>//Java code</l><br/><br/>int value = 0;<br/>usageClass.useInterface(new IInterface() {<br/>    @Override<br/>    public void canIDoSomething() {<br/>        value++;       // Error<br/>                      <br/>// variable 'value' is access from withing inner class, needs to be declared final.<br/>    }<br/>});<br/>
 </pre>
 
 
 <div class="center-justified text-content">
         </br>
-        Ok, no problem, there you go.
+        In Kotlin, this works fine
 </div>
 
 <pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for (item in arrayList) {<br/>    print(item)<br/>}<br/><br/>for (item in vector) {<br/>    print(item)<br/>}<br/>
+  <br/><l>//Kotlin code</l><br/><br/>var value = 0<br/><br/>usageClass.useInterface(object : IInterface {<br/>    override fun canIDoSomething() {<br/>        value++           // works fine<br/>    }<br/>})<br/><br/>
 </pre>
 
 
 <div class="center-justified text-content">
         </br>
-        <h4>8. You can also use the <mark>withIndex</mark> library function</h4>
-</div>
-
-<pre class="zeropadding">
-  <br/><l>Kotlin code</l><br/>for ((i, value) in arr.withIndex()) {<br/>    println(“the element at $i is $value”)<br/>}<br/>
-</pre>
-
-
-<div class="center-justified text-content">
-        Usually you don’t need the <mark>withIndex</mark> function for iteration.
         </br>
-        </br>
-        And we are done. See I told you this will be very easy and interesting.
-        </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/control-flow.html#for-loops" target="_blank">Kotlin docs</a>
+        Reference: <a href="https://kotlinlang.org/docs/reference/object-declarations.html#object-expressions" target="_blank">Kotlin docs</a>
         </br>
 </div>
 
@@ -590,8 +502,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-      <a href="/blogs/property-getter-and-setter-kotlin/">
-        Property, Getter and Setter : Kotlin &gt;&gt;
+      <a href="/blogs/infix-notation-kotlin/">
+        Infix Notation : Kotlin &gt;&gt;
       </a>
     </div>
 </div>

@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Object Expression in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</guid>
+      <description>Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.   We can even create an object expression for an interface or abstract class by just implementing their abstract methods. This functionality is called an anonymous interface implementation or anonymous abstract class implementation.</description>
+    </item>
     
     <item>
       <title>Label Reference in Kotlin</title>

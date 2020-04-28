@@ -18,11 +18,6 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url>
@@ -30,6 +25,11 @@
   <url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</loc>
+    <lastmod>2020-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>

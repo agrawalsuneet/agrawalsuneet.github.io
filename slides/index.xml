@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides on Suneet Agrawal</title>
+    <link>https://agrawalsuneet.github.io/slides/</link>
+    <description>Recent content in Slides on Suneet Agrawal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://agrawalsuneet.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Object-Oriented Programming Concepts</title>
+      <link>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
+      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more.   The basic concepts of Object-oriented programming are,  Abstraction Encapsulation Dependency Association Composition Aggregation  Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding   Packaging   Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>
+    </item>
+    
+  </channel>
+</rss>

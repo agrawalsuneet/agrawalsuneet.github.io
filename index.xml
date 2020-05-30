@@ -12,21 +12,21 @@
     
     
     <item>
-      <title>Object-Oriented Programming Concepts</title>
-      <link>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</link>
-      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
-      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more.   The basic concepts of Object-oriented programming are,  Abstraction Encapsulation Dependency Association Composition Aggregation  Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding   Packaging   Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>
-    </item>
-    
-    <item>
       <title>Publications</title>
       <link>https://agrawalsuneet.github.io/publications/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
       <description>Technical Blogs  Technical Blogs (38 posts)   Kotlin apply function   Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function. read more  27 April 2020  Kotlin Android      Partial class in C# (partial modifier)   A partial class is a special type of class where a single class can be split into multiple &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Object-Oriented Programming (OOP) Concepts</title>
+      <link>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
+      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more.   The basic concepts of Object-oriented programming are,  Abstraction Encapsulation Dependency Association Composition Aggregation  Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding   Packaging   Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>
     </item>
     
     <item>

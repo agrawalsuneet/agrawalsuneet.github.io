@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Public Appearances</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
+      <description>Past   img { width: 100% } @media screen and (min-width: 768px) { img { width: 60% } }     Speaker at Android Bootcamps part of Google for Startup Program   Remote - 6 June 2020   Java or Kotlin, what do you use?  Spoke about the benefits of using Kotlin over Java for the Android app development in current time. Shared the insights and other details of Kotlin along with a few examples on how Kotlin can reduce the number of line of code drastically and how easy it is to start using it along with Java from today itself in your existing codebase without the entire app revamp or even any major changes.</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://agrawalsuneet.github.io/publications/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
@@ -419,15 +428,6 @@ This particular script will help you to implement native Android text sharing in
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</guid>
       <description>This particular script will help you to implement native Android image sharing using Android&#39;s FileProvider in Unity. This is a fix for “android.os.FileUriExposedException” in Android 8 (Oreo) and above.  We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT, EXTRA_TEXT and EXTRA_STREAM. The content type is set to image/png in the below example but you can change it to any type and share other formats also.</description>
-    </item>
-    
-    <item>
-      <title>Public Appearances</title>
-      <link>https://agrawalsuneet.github.io/publicappearances/</link>
-      <pubDate>Sat, 24 Aug 2019 09:51:51 -0400</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
-      <description>Past   img { width: 100% } @media screen and (min-width: 768px) { img { width: 60% } }     Speaker at GDG Devfest Kolkata   Kolkata, India - 4 Aug 2019   Do APK or app size matters? Does a user think about the APK size before downloading it? What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not?</description>
     </item>
     
     <item>

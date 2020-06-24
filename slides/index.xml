@@ -6,7 +6,7 @@
     <description>Recent content in Slides on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Java or Kotlin, What do you use?</title>
       <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
-      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
       <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot. It has multiple benefits and on top of everything, it&#39;s really easy to use.   Its been three years, still devs or some companies hesitate to use it.    What is Kotlin? How can it benefit your startup? Why devs resist themselves moving from Java to Kotlin language?</description>
@@ -23,7 +23,7 @@
     <item>
       <title>Object-Oriented Programming (OOP) Concepts</title>
       <link>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</link>
-      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
       <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more.   The basic concepts of Object-oriented programming are,  Abstraction Encapsulation Dependency Association Composition Aggregation  Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding   Packaging   Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>

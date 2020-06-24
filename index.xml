@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Cut your APK Size with features on demand</title>
+      <link>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</guid>
+      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone? Is your App size is more than just a few MBs?   What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not?   Yes, The user thinks about the app size before downloading or updating an app which has a size larger than a few MBs.</description>
+    </item>
+    
+    <item>
       <title>Java or Kotlin, What do you use?</title>
       <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>

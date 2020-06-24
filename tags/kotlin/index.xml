@@ -6,10 +6,19 @@
     <description>Recent content in Kotlin on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java or Kotlin, What do you use?</title>
+      <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
+      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot. It has multiple benefits and on top of everything, it&#39;s really easy to use.   Its been three years, still devs or some companies hesitate to use it.    What is Kotlin? How can it benefit your startup? Why devs resist themselves moving from Java to Kotlin language?</description>
+    </item>
     
     <item>
       <title>Backing Field in Kotlin</title>

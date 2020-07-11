@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>How can I migrate my Android code from Java to Kotlin?</title>
+      <link>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
+      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.   Developers know the benefit of Kotlin over Java for Android app development but they hesitate to try it or even sometimes doesn&#39;t know how to start using it in their existing code base.</description>
+    </item>
+    
+    <item>
       <title>Cut your APK Size with features on demand</title>
       <link>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
@@ -44,7 +53,7 @@
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
-      <description>Past   img { width: 100% } @media screen and (min-width: 768px) { img { width: 60% } }     Speaker at Android Bootcamps part of Google for Startup Program   Remote - 6 June 2020   Java or Kotlin, what do you use?  Spoke about the benefits of using Kotlin over Java for the Android app development in current time. Shared the insights and other details of Kotlin along with a few examples on how Kotlin can reduce the number of line of code drastically and how easy it is to start using it along with Java from today itself in your existing codebase without the entire app revamp or even any major changes.</description>
+      <description>Past   img { width: 100% } @media screen and (min-width: 768px) { img { width: 60% } }     Speaker at Android Bootcamps part of Google for Startup Program   Remote - 11 July 2020   How can I migrate my Android code from Java to Kotlin?  Spoke about how can we migrate an existing codebase from Java to Kotlin and how beneficial it will be to do the same.</description>
     </item>
     
     <item>

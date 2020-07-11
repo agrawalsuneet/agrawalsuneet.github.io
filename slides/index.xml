@@ -6,10 +6,19 @@
     <description>Recent content in Slides on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How can I migrate my Android code from Java to Kotlin?</title>
+      <link>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
+      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.   Developers know the benefit of Kotlin over Java for Android app development but they hesitate to try it or even sometimes doesn&#39;t know how to start using it in their existing code base.</description>
+    </item>
     
     <item>
       <title>Cut your APK Size with features on demand</title>

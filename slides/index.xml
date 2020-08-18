@@ -6,10 +6,19 @@
     <description>Recent content in Slides on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Low Level Design : Tic-Tac-Toe</title>
+      <link>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</guid>
+      <description>System designing is the process of designing system elements such as architectures, modules, components, different interfaces of those components. Its the process of defining the lowest level entities in a software. It is the backbone of any software.   System design is of two types  Low level design High level design   There is no fine line or a separator difference between the two that upto this part of software is low level and above this is high level but mostly,  Low level defines reusable entities and relationship between them as well as the object creation and dependencies.</description>
+    </item>
     
     <item>
       <title>How can I migrate my Android code from Java to Kotlin?</title>

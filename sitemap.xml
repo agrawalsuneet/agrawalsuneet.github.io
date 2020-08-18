@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/programming-basics/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/slides/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://agrawalsuneet.github.io/tags/android/</loc>
     <lastmod>2020-07-11T00:00:00+00:00</lastmod>
   </url>
@@ -18,16 +38,6 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/slides/</loc>
-    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
-    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
@@ -39,11 +49,6 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</loc>
-    <lastmod>2020-06-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/programming-basics/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
   

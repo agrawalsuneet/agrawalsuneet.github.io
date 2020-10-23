@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android : Share message directly to whatsapp contact</title>
+      <link>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</link>
+      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</guid>
+      <description>Whatsapp is something which doesn&#39;t require any introduction. It&#39;s a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp.   During recent times, I was asked multiple times in the comments section or even emails, if there is any possible way where we can send the text message directly to a WhatsApp contact?</description>
+    </item>
     
     <item>
       <title>Extensions in Kotlin</title>

@@ -6,63 +6,63 @@
     <description>Recent content in CSharp on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Partial class in C# (partial modifier)</title>
-      <link>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</link>
-      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</guid>
-      <description>Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool.  Or think about a situation where an automatically generated code needs to be added into some class without having to recreate the source file.</description>
-    </item>
-    
-    <item>
-      <title>Native Android image sharing in Unity using FileProvider</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
-      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception “android.os.FileUriExposedException” in Android 8 (Oreo) and above.   Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app.</description>
-    </item>
-    
-    <item>
-      <title>Native Android text sharing to particular app in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>In the previous medium posts Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.   If you have not read the previous medium posts, I would strongly recommend to read them first.</description>
-    </item>
-    
-    <item>
       <title>Native Android image sharing in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
-      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
       <description>In continuation to my previous medium post Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app.   If you have not read the previous medium posts, I would strongly recommend to read them first. You can read them on the links below.  Native Android in Unity Native Android text sharing in Unity   As the number says, an image gains more attention than a normal text while sharing.</description>
     </item>
     
     <item>
+      <title>Native Android image sharing in Unity using FileProvider</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
+      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception “android.os.FileUriExposedException” in Android 8 (Oreo) and above.   Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app.</description>
+    </item>
+    
+    <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
+      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.</description>
+    </item>
+    
+    <item>
       <title>Native Android text sharing in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
       <description>In continuation to my previous medium post Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</description>
     </item>
     
     <item>
-      <title>Native Android in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
-      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <title>Native Android text sharing to particular app in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
-      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</guid>
+      <description>In the previous medium posts Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.   If you have not read the previous medium posts, I would strongly recommend to read them first.</description>
+    </item>
+    
+    <item>
+      <title>Partial class in C# (partial modifier)</title>
+      <link>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</guid>
+      <description>Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool.  Or think about a situation where an automatically generated code needs to be added into some class without having to recreate the source file.</description>
     </item>
     
   </channel>

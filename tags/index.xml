@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,34 +14,16 @@
     <item>
       <title>Android</title>
       <link>https://agrawalsuneet.github.io/tags/android/</link>
-      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Kotlin</title>
-      <link>https://agrawalsuneet.github.io/tags/kotlin/</link>
-      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming-Basics</title>
-      <link>https://agrawalsuneet.github.io/tags/programming-basics/</link>
-      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/programming-basics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CSharp</title>
       <link>https://agrawalsuneet.github.io/tags/csharp/</link>
-      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/csharp/</guid>
       <description></description>
@@ -50,16 +32,34 @@
     <item>
       <title>iOS</title>
       <link>https://agrawalsuneet.github.io/tags/ios/</link>
-      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/ios/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Kotlin</title>
+      <link>https://agrawalsuneet.github.io/tags/kotlin/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming-Basics</title>
+      <link>https://agrawalsuneet.github.io/tags/programming-basics/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/programming-basics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Swift</title>
       <link>https://agrawalsuneet.github.io/tags/swift/</link>
-      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>Unity</title>
       <link>https://agrawalsuneet.github.io/tags/unity/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/unity/</guid>
       <description></description>

@@ -55,7 +55,7 @@
     <meta name="abstract" content="Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function. Eventually, all the variables passed to a function are of an immutable type which cannot be changed which is similar to a let variable.">
     <meta name="summary" content="Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function. Eventually, all the variables passed to a function are of an immutable type which cannot be changed which is similar to a let variable."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-03-23 "> 
+    <meta property="article:published_time" content=" 2020-10-26 "> 
 
     <meta name="url" content="https://agrawalsuneet.github.io/blogs/inout-in-swift/">
     <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/inout-in-swift/">
@@ -389,26 +389,62 @@ if (!doNotTrack) {
     </article>
 </main>
 
-&nbsp;  <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+ 
+
+<div id="disqus_thread">
+    <div id="disqus_empty"></div>
+</div>
+
+<script type="text/javascript">
+
+    function onContentScrolled(e) {
+        var currentScroll = document.scrollingElement.scrollTop;
+        var disqus_target = document.getElementById('disqus_thread');
+
+        if (disqus_target && (currentScroll > disqus_target.getBoundingClientRect().top - 150)) {
+            load_disqus();
+            console.log('Disqus comments loaded');
+        }
+    }
+
+    function load_disqus() {
+        if (window.location.hostname == "localhost") {
+            var content = document.getElementById("content");
+            content.removeEventListener('scroll', onContentScrolled, false)
             return;
         }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "agrawalsuneet" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+
+        
+        var is_disqus_empty = document.getElementById('disqus_empty'),
+            disqus_target = document.getElementById('disqus_thread'),
+            disqus_embed = document.createElement('script'),
+            disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+
+        var disqus_shortname = 'agrawalsuneet';
+
+        
+        if (disqus_target && is_disqus_empty) {
+            disqus_embed.type = 'text/javascript';
+            disqus_embed.async = true;
+            disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            disqus_hook.appendChild(disqus_embed);
+            is_disqus_empty.remove();
+        }
+
+        var content = document.getElementById("content");
+        content.removeEventListener('scroll', onContentScrolled, false)
+    }
+
+    (function () {
+        var content = document.getElementById("content");
+        content.addEventListener('scroll', onContentScrolled, false);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  						</div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+						</div>
 					</div>
 				</div>
 			</div>

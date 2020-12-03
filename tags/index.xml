@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Android</title>
       <link>https://agrawalsuneet.github.io/tags/android/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/android/</guid>
       <description></description>
@@ -23,9 +23,18 @@
     <item>
       <title>CSharp</title>
       <link>https://agrawalsuneet.github.io/tags/csharp/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity</title>
+      <link>https://agrawalsuneet.github.io/tags/unity/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/unity/</guid>
       <description></description>
     </item>
     
@@ -62,15 +71,6 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Unity</title>
-      <link>https://agrawalsuneet.github.io/tags/unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/unity/</guid>
       <description></description>
     </item>
     

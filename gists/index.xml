@@ -70,5 +70,16 @@ This particular script will help you to implement native Android text sharing in
       <description>This particular script will help you to implement native Android text sharing to a particular app in Unity.  We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT, and share the content to a particular app with package name.   For further explaination on how this works, please read the article Native Android share to a particular app in Unity.</description>
     </item>
     
+    <item>
+      <title>Native Android text sharing to Whatsapp contact in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
+      <description>
+This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.  
+   (adsbygoogle = window.adsbygoogle || []).push({});   </description>
+    </item>
+    
   </channel>
 </rss>

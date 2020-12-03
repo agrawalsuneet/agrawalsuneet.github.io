@@ -4,7 +4,32 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/tags/android/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/</loc>
+    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
+    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-whatsapp-contact-in-unity/</loc>
+    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
+    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -198,6 +213,11 @@
   </url>
   
   <url>
+    <loc>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
@@ -253,11 +273,6 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
@@ -269,11 +284,6 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   

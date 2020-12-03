@@ -6,10 +6,19 @@
     <description>Recent content in CSharp on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Native Android text sharing to Whatsapp contact in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-whatsapp-contact-in-unity/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
+      <description>In the previous blogs, we learnt about how can we trigger native Android text, image or any other format file sharing in Unity App. A lot of you have asked me about how can we share some text directly to a WhatsApp contact.   If you have not read the previous medium posts, I would strongly recommend to read them first. You can read them on the links below.</description>
+    </item>
     
     <item>
       <title>Native Android image sharing in Unity</title>
@@ -53,7 +62,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>In the previous medium posts Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.   If you have not read the previous medium posts, I would strongly recommend to read them first.</description>
+      <description>In the previous posts Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.   If you have not read the previous medium posts, I would strongly recommend to read them first.</description>
     </item>
     
     <item>

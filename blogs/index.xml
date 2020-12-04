@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Variable vs Object vs Reference</title>
+      <link>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</guid>
+      <description>Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them.   Let&#39;s try to understand a very basic definition along with an example for all three. The concept is similar in any object-oriented programming language but for reference, I&#39;ll be using Java examples. Feel free to comment below if you need examples in any specific language.    (adsbygoogle = window.</description>
+    </item>
     
     <item>
       <title>Native Android text sharing to Whatsapp contact in Unity</title>

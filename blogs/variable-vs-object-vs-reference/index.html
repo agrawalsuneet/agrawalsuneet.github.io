@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+    
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');
+    </script>
+    
+
+    
+    <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+    <meta property="og:site_name" content="Suneet Agrawal">
+
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="variable,object,reference,variables,objects,references">
+
+
+    
+    <meta name="author" content="Suneet Agrawal">
+    <meta name="owner" content="Suneet Agrawal">
+    <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+    <meta name="title" content="Suneet Agrawal | Variable vs Object vs Reference" />
+    <meta property="og:title" content="Variable vs Object vs Reference">
+    <meta property="twitter:title" content="Variable vs Object vs Reference">
+    <meta name="twitter:site" content="@agrawalsuneet">
+
+    <meta name="topic" content="Variable vs Object vs Reference">
+    <meta name="description" content="Variables are named storage of any primitive data type. Objects are variables of non-primitive data types or user-defined classes. A reference is nothing but a pointer pointing to the object.">
+    <meta property="og:description" content="Variables are named storage of any primitive data type. Objects are variables of non-primitive data types or user-defined classes. A reference is nothing but a pointer pointing to the object.">
+    <meta property="twitter:description" content="Variables are named storage of any primitive data type. Objects are variables of non-primitive data types or user-defined classes. A reference is nothing but a pointer pointing to the object.">
+    <meta name="abstract" content="Variables are named storage of any primitive data type. Objects are variables of non-primitive data types or user-defined classes. A reference is nothing but a pointer pointing to the object.">
+    <meta name="summary" content="Variables are named storage of any primitive data type. Objects are variables of non-primitive data types or user-defined classes. A reference is nothing but a pointer pointing to the object."> 
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content=" 2020-12-04 "> 
+
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/">
+
+    <meta name="site_name" content="Suneet Agrawal">
+    <meta property="og:site_name" content="Suneet Agrawal">
+
+    <meta name="category" content="Portfolio">
+    <meta name="email" content="agrawalsuneet@gmail.com">
+    <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+    <meta name="twitter:creator" content="@agrawalsuneet">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="target" content="all" />
+    <meta name="audience" content="all" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="safe for kids" /> 
+    <meta property="og:tags" content="Programming-Basics">  <meta name="generator" content="Hugo 0.59.0" />
+    <title>Variable vs Object vs Reference &middot; Suneet Agrawal</title>
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
+    <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
+    <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
+</head>
+
+<body>
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.jpg" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawalsuneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+ 
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+    <header>
+        <h1 class="mx16">Variable vs Object vs Reference</h1>
+    </header>
+
+    <div class="col-xs-12 vertical-centre">
+        
+        <small class="text-muted">
+			
+			
+				<a href="https://agrawalsuneet.github.io/tags/programming-basics"><span class="label label-success">Programming-Basics</span></a>
+			
+		</small> 
+
+        
+
+    </div>
+
+    <article>
+        <div class="col-xs-12">
+            <p></br></p>
+
+<div class="center-justified text-content">
+        Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them.
+        </br>
+        </br>
+        Let's try to understand a very basic definition along with an example for all three. The concept is similar in any object-oriented programming language but for reference, I'll be using Java examples. Feel free to comment below if you need examples in any specific language.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<h3>
+        Variables
+</h3>
+
+<div class="center-justified text-content">
+        Variables are named storage of any primitive data type.
+        </br>
+        </br>
+        Name storage means we (developers) define the name of the variable.
+        </br>
+        Primitive data types are something which predefined in any language like int, float, boolean etc. 
+        </br>
+        Keep in mind Int with the capital <mark>I</mark> or Float with the capital <mark>F</mark> are not primitive data types, those are non-primitive data types.
+        </br>
+        The size of the variable depends on the type of it. 
+        </br>
+        In Java, a <mark>char</mark> takes 2 bytes, <mark>int</mark> takes 4 bytes, <mark>float</mark> takes 8 bytes and so on.
+</div>
+
+<pre class="zeropadding">
+  <br/>int age = 5;<br/>float pi = 3.14;<br/>
+</pre>
+
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<h3>
+        Objects
+</h3>
+
+<div class="center-justified text-content">
+        Objects are variables of non-primitive data types or user-defined classes.
+        </br>
+        An object can't exist without its class.
+        </br>
+        It is created by the <mark>new</mark> keyword which calls the constructor of that class which ultimately assigns some memory to that object.
+        </br>
+        Its size depends on the properties defined in that class.
+        </br>
+        In java, an object is created on the heap.
+</div>
+
+<pre class="zeropadding">
+  <br/>Employee emp = new Employee();<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        Here an object of <mark>Employee</mark> will be created by calling the <mark>new</mark> keyword. Keep in mind that technically <mark>emp</mark> is not an object, its just a reference pointing to the object which is created on heap.
+        </br>
+        Read Refrence below to understand it better.
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<h3>
+        Reference
+</h3>
+
+<div class="center-justified text-content">
+        A reference is nothing but a pointer pointing to the object. In other words, it is holding the memory address of the object created by <mark>new</mark> keyword.
+</div>
+
+<pre class="zeropadding">
+  <br/>Employee emp = new Employee();<br/>
+</pre>
+
+
+<div class="center-justified text-content">
+        In the same above example, <mark>emp</mark> is a reference to the object which is created using the <mark>new</mark> keyword.
+</div>
+
+<p></br></p>
+
+<h3>
+        Basic differences between them
+</h3>
+
+<div class="center-justified text-content">
+        <ul>
+                <li>You can't create a variable using the <mark>new</mark> keyword.</li>
+                <li>Variables can't hold <mark>null</mark> values as primitive data types doesn't allow that.</li>
+                <li>If you just write <mark>new Employee();</mark> it will call the constructor and will even assign the memory in heap to that object but there is no reference so you can't access it.</li>
+                <li>Chaining is possible in references using the dot(<mark>.</mark>) is most of the languages. you can call a function using object reference followed by a dot(<mark>.</mark>)</li>
+                <li>If you assign once reference to another like <mark>Employee emp2 = emp;</mark> it just copies the reference and but internally both the references are pointing to the same object.</li>
+        </ul> 
+</div>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="col-xs-12 center-justified text-subtitle">
+    <div class="col-sm-6 col-xs-12">
+        <a href="/blogs">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+        <a href="/blogs/higher-order-functions-in-kotlin">
+        Higher-order functions in Kotlin &gt;&gt;
+      </a>
+    </div>
+</div>
+
+        </div>
+    </article>
+</main>
+
+ 
+<div id="disqus_thread">
+    <div id="disqus_empty"></div>
+</div>
+
+<script type="text/javascript" defer>
+
+    function onContentScrolled(e) {
+        var currentScroll = document.scrollingElement.scrollTop;
+        var disqus_target = document.getElementById('disqus_thread');
+
+        if (disqus_target && (currentScroll > disqus_target.getBoundingClientRect().top - 150)) {
+            load_disqus();
+            console.log('Disqus comments loaded');
+        }
+    }
+
+    function load_disqus() {
+        if (window.location.hostname == "localhost") {
+            var content = document.getElementById("content");
+            content.removeEventListener('scroll', onContentScrolled, false)
+            return;
+        }
+
+        
+        var is_disqus_empty = document.getElementById('disqus_empty'),
+            disqus_target = document.getElementById('disqus_thread'),
+            disqus_embed = document.createElement('script'),
+            disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+
+        var disqus_shortname = 'agrawalsuneet';
+
+        
+        if (disqus_target && is_disqus_empty) {
+            disqus_embed.type = 'text/javascript';
+            disqus_embed.async = true;
+            disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            disqus_hook.appendChild(disqus_embed);
+            is_disqus_empty.remove();
+        }
+
+        var content = document.getElementById("content");
+        content.removeEventListener('scroll', onContentScrolled, false)
+    }
+
+    (function () {
+        var content = document.getElementById("content");
+        content.addEventListener('scroll', onContentScrolled, false);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

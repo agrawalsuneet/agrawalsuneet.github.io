@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming-Basics</title>
+      <link>https://agrawalsuneet.github.io/tags/programming-basics/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/programming-basics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android</title>
@@ -53,15 +62,6 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming-Basics</title>
-      <link>https://agrawalsuneet.github.io/tags/programming-basics/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/programming-basics/</guid>
       <description></description>
     </item>
     

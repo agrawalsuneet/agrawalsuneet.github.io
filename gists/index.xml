@@ -6,10 +6,21 @@
     <description>Recent content in Gists on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UIView ClickListener : Swift</title>
+      <link>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
+      <description>
+This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.  
+   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
     
     <item>
       <title>Android : Share message directly to whatsapp contact</title>

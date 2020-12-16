@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kotlin Enum Classes</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</guid>
+      <description>Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable.   The easiest way to define an enum is  enum class Direction { EAST, WEST, NORTH, SOUTH}  Here each enum constant is an object.   For using these values  var direction : Direction = Direction.EAST    (adsbygoogle = window.</description>
+    </item>
     
     <item>
       <title>UIView ClickListener : Swift</title>

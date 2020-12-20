@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UIView ClickListener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
+      <description>Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.   If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController.</description>
+    </item>
     
     <item>
       <title>Kotlin Enum Classes</title>
@@ -18,15 +27,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</guid>
       <description>Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable.   The easiest way to define an enum is  enum class Direction { EAST, WEST, NORTH, SOUTH}  Here each enum constant is an object.   For using these values  var direction : Direction = Direction.EAST    (adsbygoogle = window.</description>
-    </item>
-    
-    <item>
-      <title>UIView ClickListener : Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</link>
-      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
-      <description>Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.   If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController.</description>
     </item>
     
     <item>

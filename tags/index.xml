@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iOS</title>
+      <link>https://agrawalsuneet.github.io/tags/ios/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>https://agrawalsuneet.github.io/tags/swift/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android</title>
@@ -26,24 +44,6 @@
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iOS</title>
-      <link>https://agrawalsuneet.github.io/tags/ios/</link>
-      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Swift</title>
-      <link>https://agrawalsuneet.github.io/tags/swift/</link>
-      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
       <description></description>
     </item>
     

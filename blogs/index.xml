@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reified : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/reified-kotlin/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/reified-kotlin/</guid>
+      <description>Before we learn about reified,  Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety.    (adsbygoogle = window.adsbygoogle || []).push({});   The best example for a generics is Array or any List/Collection implementation.  package kotlin/** * Represents an array (specifically, a Java array when targeting the JVM platform).</description>
+    </item>
+    
     <item>
       <title>UIView ClickListener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</link>

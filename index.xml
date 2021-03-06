@@ -10,10 +10,19 @@
     <item>
       <title>Publications</title>
       <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (44 posts)   Kotlin Enum Classes   Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable. read more  16 Dec 2020  Kotlin Android      UIView ClickListener : Swift   Adding a click event to a UIView is something which is required most of the times.</description>
+      <description>Technical Blogs  Technical Blogs (45 posts)   Reified : Kotlin   Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety. To get the information about the type of Template class, we will have to use a keyword called reified read more  6 Mar 2021  Kotlin Android      Kotlin Enum Classes   Enums are special classes which limit the possible values of an object for that class.</description>
+    </item>
+    
+    <item>
+      <title>Reified : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/reified-kotlin/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/reified-kotlin/</guid>
+      <description>Before we learn about reified,  Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety.    (adsbygoogle = window.adsbygoogle || []).push({});   The best example for a generics is Array or any List/Collection implementation.  package kotlin/** * Represents an array (specifically, a Java array when targeting the JVM platform).</description>
     </item>
     
     <item>

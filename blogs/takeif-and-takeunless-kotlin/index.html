@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>‘takeIf’ and ‘takeUnless’ : Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,8 +243,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Ever thought of chaining an <mark>if</mark> condition?
         </br>
@@ -255,7 +254,6 @@ if (!doNotTrack) {
         </br>
         We can use takeIf and takeUnless to achieve the same. As clear from the name itself, takeIf will proceed in the chain only if the condition inside is true whereas takeUnless is the counter of takeIf and will proceed only if the provided condition is false.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -269,26 +267,22 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
-        
-        </br>
-        </br>
-        <mark>takeIf</mark> is a filtering function for a single object whereas <mark>takeUnless</mark> is a counter of <mark>takeIf</mark>.
-        </br>
-        </br>
-        Let’s take an example to understand the same.
+<pre><code>    &lt;/br&gt;
+    &lt;/br&gt;
+    &lt;mark&gt;takeIf&lt;/mark&gt; is a filtering function for a single object whereas &lt;mark&gt;takeUnless&lt;/mark&gt; is a counter of &lt;mark&gt;takeIf&lt;/mark&gt;.
+    &lt;/br&gt;
+    &lt;/br&gt;
+    Let’s take an example to understand the same.
+</code></pre>
 </div>
-
 <pre class="zeropadding">
   <br/>fun getLatency():Int {<br/>    return (0..30).random()<br/>}<br/><br/>val networkLatency = getLatency()<br/>println(networkLatency)<br/>if (networkLatency < 20){<br/>    // join the game<br/>    println("can join the game with latency $networkLatency")<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         In the above example, we need to check the latency of the network and join the game only it is less than 20. Now to achieve the same we need to put an if condition, the reason I need to introduce a new variable <mark>networkLatency</mark> is because I need to pass it to the inner function also.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -302,15 +296,12 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now to achieve the same within single chaining, I can use <mark>takeIf</mark>.
 </div>
-
 <pre class="zeropadding">
   <br/>getLatency()?.takeIf{ it < 20}<br/>        ?.let{ <br/>            println("can join the game with latency $it") <br/>        }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Please note that both <mark>takeIf</mark> and <mark>takeUnless</mark> returns <mark>null</mark> if the condition is not satisfied, so to chain it further we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin" target="_blank">safe call or null check</a>.
@@ -318,11 +309,9 @@ if (!doNotTrack) {
         </br>
         Let's take an example of <mark>takeUnless</mark>.
 </div>
-
 <pre class="zeropadding">
   <br/>getLatency()?.takeUnless{ it < 20}<br/>        ?.let{ <br/>            println("warning : high latency $it") <br/>         }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         In this case, this will only proceed when the latency is more than 20 ie not less than 20, and will chain it further. Also, if the condition is false that means if the latency is less than 20, it will return null so we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin" target="_blank">safe call or null check</a>.
@@ -331,7 +320,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#takeif-and-takeunless" target="_blank">Kotlin docs</a>
 </div>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -345,7 +333,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

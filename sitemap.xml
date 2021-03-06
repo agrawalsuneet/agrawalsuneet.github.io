@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://agrawalsuneet.github.io/tags/android/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/camera/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/publications/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/slides/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
   </url>
@@ -18,18 +53,8 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/tags/android/</loc>
-    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -39,11 +64,6 @@
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</loc>
-    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/</loc>
     <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -283,22 +303,12 @@
   </url>
   
   <url>
-    <loc>https://agrawalsuneet.github.io/publications/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://agrawalsuneet.github.io/slides/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   

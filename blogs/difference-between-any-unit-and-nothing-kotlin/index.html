@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Difference between Any, Unit and Nothing : Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,15 +243,13 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         We all know about three classes <mark>Any</mark>, <mark>Unit</mark> and <mark>Nothing</mark> in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.
         </br>
         </br>
         Let try to understand what are these, when to use what and how these are different from one another.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -265,19 +263,15 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Any
 </h3>
-
 <div class="center-justified text-content">
         <mark>Any</mark> is an <mark>open</mark> class and by default the superclass for all the classes, whether we define it explicitly or not. This is similar to the <mark>Object</mark> class in Java which is the superclass for each and every class.
 </div>
-
 <pre class="zeropadding">
   <br/>/**<br/> * The root of the Kotlin class hierarchy. Every Kotlin class has [Any] as a superclass.<br/> */<br/>public open class <b>Any</b> {<br/><br/>    public open operator fun <b>equals</b>(other: Any?): Boolean<br/>    public open fun <b>hashCode</b>(): Int<br/>    public open fun <b>toString</b>(): String<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         <mark>Any</mark> has 3 functions
@@ -286,50 +280,38 @@ Any
                 <li>hashCode</li>
                 <li>toString</li>
         </ul>
-
-        All three functions are well-known functions which can be overridden in any class.
+<pre><code>    All three functions are well-known functions which can be overridden in any class.
+</code></pre>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
 equals
 </h4>
-
 <pre class="zeropadding">
   <br/>/**<br/> * Indicates whether some other object is "equal to" this one. Implementations must fulfil the following<br/> * requirements:<br/> *<br/> * * <b>Reflexive</b>: for any non-null value `x`, `x.equals(x)` should return true.<br/> * * <b>Symmetric</b>: for any non-null values `x` and `y`, `x.equals(y)` should return true if and only if `y.equals(x)` returns true.<br/> * * <b>Transitive</b>:  for any non-null values `x`, `y`, and `z`, if `x.equals(y)` returns true and `y.equals(z)` returns true, then `x.equals(z)` should return true.<br/> * * <b>Consistent</b>:  for any non-null values `x` and `y`, multiple invocations of `x.equals(y)` consistently return true or consistently return false, provided no information used in `equals` comparisons on the objects is modified.<br/> * * <b>Never equal to null</b>: for any non-null value `x`, `x.equals(null)` should return false.<br/> */<br/>public open operator fun <b>equals</b>(other: Any?): Boolean<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         <mark>equals</mark> functions check if the object is equal to the object passed in parameter. There are different criteria on which <mark>equals</mark> function checks the equality but we can <mark>override</mark> this function in any class.
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
 hashCode
 </h4>
-
 <pre class="zeropadding">
   <br/>/**<br/> * Returns a hash code value for the object.  The general contract of `hashCode` is:<br/> *<br/> * * Whenever it is invoked on the same object more than once, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified.<br/> * * If two objects are equal according to the `equals()` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.<br/> */<br/>public open fun <b>hashCode</b>(): Int<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         <mark>hashCode</mark> returns a unique <mark>integer</mark> for each and every object of that class. This function is also <mark>open</mark> and we can <mark>override</mark> it according to our use case.
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
 toString
 </h4>
-
 <pre class="zeropadding">
   <br/>/**<br/> * Returns a string representation of the object.<br/> */<br/>public open fun <b>toString</b>(): String<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This is the most commonly overridden function which is used to represent the object in string form. This is again <mark>open</mark> and we can <mark>override</mark> it according to the use case.
@@ -337,12 +319,10 @@ toString
         </br>
         We can even create an object of <mark>Any</mark> class and use any of the above functions.
 </div>
-
 <pre class="zeropadding">
   <br/>val any: <b>Any</b> = Any()<br/><br/>any.equals(Any())<br/>any.hashCode()<br/>any.toString()<br/>
 </pre>
 
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -356,61 +336,46 @@ toString
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Unit
 </h3>
-
 <div class="center-justified text-content">
         <mark>Unit</mark> class is an <mark>object</mark> class which means it a singleton class having only one object.
 </div>
-
 <pre class="zeropadding">
   <br/>/**<br/> * The type with only one value: the `Unit` object. This type corresponds to the `void` type in Java.<br/> */<br/>public object <b>Unit</b> {<br/>    override fun toString() = "kotlin.Unit"<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         <mark>Unit</mark> is exactly equivalent to the <mark>void</mark> type in Java. We can explicitly add <mark>Unit</mark> as the return type for functions returning void.
 </div>
-
-<p></br></p>
-
+</br>
 <pre class="zeropadding">
   <br/>fun doSomething() {<br/>    //do something here<br/>}<br/><br/>fun doSomething() : <b>Unit</b> {<br/>    //do something here<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Both the above functions are absolutely the same but for the second one, there will a warning stating
 </div>
-
 <pre class="zeropadding">
   <br/>Redundant 'Unit' return type<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         We can't extend <mark>Unit</mark> class.
 </div>
-
 <pre class="zeropadding">
   <br/>object <b>AnotherUnit</b> : <b>Unit</b> {<br/>}<br/><br/>class <b>AnotherUnit</b> : <b>Unit</b> {<br/>}<br/><br/>//both above will have <e>Compilation error</e><br/>"Cannot inherit from a Singleton"<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         We can't even create an object of it.
 </div>
-
 <pre class="zeropadding">
   <br/>val unit: <b>Unit</b> = Unit()<br/>unit.toString()<br/><br/>//<e>Compilation error</e> in first line<br/><br/>"Expression 'Unit' of type 'Unit' cannot be invoked as a function.<br/>The funciton 'invoke()' is not found"<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -425,49 +390,39 @@ Unit
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Nothing
 </h3>
-
 <div class="center-justified text-content">
         <mark>Nothing</mark> is used to represent a value which will never exist.
         </br> 
         </br>
         This is has a private constructor and also cannot be extended.
 </div>
-
 <pre class="zeropadding">
   <br/>/**<br/> * Nothing has no instances. You can use Nothing to represent "a value that never exists": for example,<br/> * if a function has the return type of Nothing, it means that it never returns (always throws an exception).<br/> */<br/>public class <b>Nothing</b> private constructor()<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         It is used to define a function return type which is going to <mark>throw</mark> an exception every time.
 </div>
-
 <pre class="zeropadding">
   <br/>fun iWillAlwaysThrowException() =  <b>throw</b> Exception("Unnecessary Exception")<br/><br/>//The ebove function will show a <e>compilation error</e><br/><br/>'Nothing' return type needs to be specified explicitely<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         and the correct syntax will be
 </div>
-
 <pre class="zeropadding">
   <br/>fun iWillAlwaysThrowException() : <b>Nothing</b> =  <b>throw</b> Exception("Unnecessary Exception")<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         The best example of <mark>Nothing</mark> is in <mark>TODO</mark> function.
 </div>
-
 <pre class="zeropadding">
   <br/>/**<br/> * Always throws [NotImplementedError] stating that operation is not implemented.<br/> */<br/><br/>@kotlin.internal.InlineOnly<br/>public inline fun <b>TODO</b>(): Nothing = throw NotImplementedError()<br/><br/>/**<br/> * Always throws [NotImplementedError] stating that operation is not implemented.<br/> *<br/> * @param reason a string explaining why the implementation is missing.<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun <b>TODO</b>(reason: String): Nothing = throw NotImplementedError("An operation is not implemented: $reason")<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -482,30 +437,23 @@ Nothing
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Differences between Any, Unit and Nothing
 </h3>
-
-<p></br></p>
-
+</br>
 <h4>
 Any
 </h4>
-
 <div class="center-justified text-content">
         <ul>
                 <li><mark>Any</mark> is by default the superclass of all the classes and has 3 functions: <mark>equals</mark>, <mark>hashCode</mark> and <mark>toString</mark>. This is equal to <mark>Object</mark> class in Java.</li>
                 <li>We can create an object of <mark>Any</mark> class directly or even override these functions in any other class.</li>
         </ul>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
 Unit
 </h4>
-
 <div class="center-justified text-content">
         <ul>
                 <li><mark>Unit</mark> class is a singleton class, we can't extend or even create an object of it.</li>
@@ -513,13 +461,10 @@ Unit
                 <li>The superclass of <mark>Unit</mark> is <mark>Any</mark> and it has overridden <mark>toString</mark> method.</li>
         </ul>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
 Nothing
 </h4>
-
 <div class="center-justified text-content">
         <ul>
                 <li><mark>Nothing</mark> is non-open (final class) which can't be extended and its constructor is also private that means we can't create the object also.</li>
@@ -527,7 +472,6 @@ Nothing
                 <li>The superclass of <mark>Nothing</mark> is <mark>Any</mark>.</li>
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -541,7 +485,6 @@ Nothing
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

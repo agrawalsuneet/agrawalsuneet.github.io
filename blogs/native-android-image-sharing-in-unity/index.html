@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="CSharp"> 
     <meta property="og:tags" content="Unity"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Native Android image sharing in Unity &middot; Suneet Agrawal</title>
 
     
@@ -246,12 +246,9 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity"></p>
-
-<p></br></p>
-
+            </br>
+<img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity">
+</br>
 <div class="center-justified text-content">
         In continuation to my previous medium post <a href="/blogs/native-android-in-unity/" target="_blank">Native Android in Unity</a> and <a href="/blogs/native-android-text-sharing-in-unity/" target="_blank">Native Android text sharing in Unity</a>, will consider another example of native Android screenshot sharing functionality in the unity app.
         </br>
@@ -264,7 +261,6 @@ if (!doNotTrack) {
         </br>
         As the number says, an image gains more attention than a normal text while sharing. It’s better to challenge a player with your own high score screenshot in games instead of sharing just a plain text.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -278,7 +274,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         As in the previous post, we saw Android uses an <a href="https://developer.android.com/reference/android/content/Intent" target="_blank">Intent</a> class object to perform any sharing operation and we can use the same <mark>Intent</mark> class in unity using <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html" target="_blank">AndroidJavaClass</a> and <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.html" target="_blank">AndroidJavaObject</a>.
         </br>
@@ -288,23 +283,18 @@ if (!doNotTrack) {
         </br>
         Let’s have a look at its native android code first.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Java</l><br/>String screenShotPath = "fireblock_highscore.png";<br/>Uri uriToImage = Uri.fromFile(new File("file://" + screenShotPath));<br/>String shareSubject = "I challenge you to beat my high score in Fire Block";<br/>String shareMessage = "I challenge you to beat my high score in Fire Block. " +<br/>        "Get the Fire Block app from the link below. \nCheers\n\n" +<br/>        "http://onelink.to/fireblock";<br/><br/><br/>Intent shareIntent = new Intent();<br/>shareIntent.setAction(Intent.ACTION_SEND);<br/><br/><br/>shareIntent.putExtra(Intent.EXTRA_STREAM, uriToImage);<br/>shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareSubject);<br/>shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);<br/><br/>shareIntent.setType("image/png");<br/>startActivity(Intent.createChooser(shareIntent, "Share your high score"));<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         And the Kotlin code will be
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Kotlin</l><br/>val screenShotPath = "fireblock_highscore.png"<br/>val uriToImage = Uri.fromFile(File("file://" + screenShotPath))<br/><br/>val shareSubject = "I challenge you to beat my high score in Fire Block"<br/>val shareMessage = "I challenge you to beat my high score in Fire Block. " +<br/>        "Get the Fire Block app from the link below. \nCheers\n\n" +<br/>        "http://onelink.to/fireblock"<br/><br/>val shareIntent = Intent()<br/>shareIntent.action = Intent.ACTION_SEND<br/><br/>shareIntent.putExtra(Intent.EXTRA_STREAM, uriToImage)<br/>shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareSubject)<br/>shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)<br/><br/>shareIntent.type = "image/png"<br/>startActivity(Intent.createChooser(shareIntent, "Share your high score"))<br/>
 </pre>
 
-
-<p><img class="blogimg" src="/img/blogs/native-android-image-sharing-in-unity/native-android-image-sharing-in-unity-1.png" alt="Native Android image sharing in Unity"></p>
-
+<img class="blogimg" src="/img/blogs/native-android-image-sharing-in-unity/native-android-image-sharing-in-unity-1.png" alt="Native Android image sharing in Unity">
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -318,7 +308,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now let’s have a look at how we can use the same native Android screenshot share functionality in a unity app.
         </br>
@@ -329,11 +318,9 @@ if (!doNotTrack) {
         This method has two variants (method overloading) but will use the one which takes two parameters as below.
         The java code for the same will be
 </div>
-
 <pre class="zeropadding">
   <br/>CaptureScreenshot(string filename, int superSize)<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This method takes the first parameter as the file name in <mark>string</mark> format with which the screenshot will be saved and the second parameter as the factor by which to increase resolution in <mark>int</mark> format.
@@ -341,23 +328,18 @@ if (!doNotTrack) {
         </br>
         The code will look like
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>var screenshotName = “fireblock_highscore.png”;<br/>// wait for graphics to render<br/>yield return new WaitForEndOfFrame ();<br/>string screenShotPath = Application.persistentDataPath + “/” + screenshotName;<br/>ScreenCapture.CaptureScreenshot (screenshotName, 1);<br/>yield return new WaitForSeconds (0.5f);<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         Now that we got the screenshot captured in png format and saved at the path, we can share this image using the same <mark>Intent</mark> we used while sharing the normal text. The only difference here will be the sharing type and the attaching of the image to the intent.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>//create intent for action send<br/>AndroidJavaClass intentClass = new <br/>                 AndroidJavaClass("android.content.Intent");<br/>AndroidJavaObject intentObject = new <br/>                 AndroidJavaObject ("android.content.Intent");<br/>         <br/> //set action to that intent object   <br/>intentObject.Call&lt;AndroidJavaObject&gt; <br/>("setAction", intentClass.GetStatic&lt;string&gt;("ACTION_SEND"));<br/>
 </pre>
 
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -371,31 +353,23 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now that we got the intent object, we will set the share type as “image/png” and attach the screenshot to it. In order to attach the screenshot, we need to convert it into <a href="https://developer.android.com/reference/java/net/URI" target="_blank">Uniform Resource Identifier (URI)</a> object from the file path.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>var shareSubject = "I challenge you to beat my high score in" +<br/>                   "Fire Block";<br/>var shareMessage = "I challenge you to beat my high score in Fire<br/>                    Block. " +<br/>                    "Get the Fire Block app from the link below.<br/>                     \nCheers\n\n" +<br/>                    "http://onelink.to/fireblock";<br/>//create URI for that intent<br/>             AndroidJavaClass uriClass = new AndroidJavaClass ("android.net.Uri");<br/>             AndroidJavaObject uriObject = uriClass.CallStatic&lt;AndroidJavaObject&gt;("parse", "file://" + screenShotPath);<br/>//set the type <br/>intentObject.Call&lt;AndroidJavaObject&gt;("setType", "image/png");<br/>//put image and string extra<br/>             intentObject.Call&lt;AndroidJavaObject&gt;("putExtra", intentClass.GetStatic&lt;string&gt;("EXTRA_STREAM"), uriObject);<br/>             <br/>             intentObject.Call&lt;AndroidJavaObject&gt;("putExtra", intentClass.GetStatic<string> ("EXTRA_SUBJECT"), shareSubject);<br/>             intentObject.Call&lt;AndroidJavaObject&gt;("putExtra", intentClass.GetStatic<string> ("EXTRA_TEXT"), shareMessage);<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         Now that we have the intent object ready with all the extras to be shared, let’s call the <mark>Activity</mark> class’ <mark>createChooser</mark> method and pass the intent object along with the text to be displayed over the apps list. This step is the same what we did while sharing the text.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code in unity</l><br/>//create current activity object<br/>AndroidJavaClass unity = new<br/>                AndroidJavaClass("com.unity3d.player.UnityPlayer");<br/>AndroidJavaObject currentActivity =<br/>             unity.GetStatic&lt;AndroidJavaObject&gt;("currentActivity");<br/>        <br/>//call createChooser method of activity class     <br/>AndroidJavaObject chooser = <br/>        intentClass.CallStatic&lt;AndroidJavaObject&gt;("createChooser",<br/>                     intentObject, "Share your high score");<br/>currentActivity.Call ("startActivity", chooser);<br/>
 </pre>
 
-
-<p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-image-sharing-in-unity/native-android-image-sharing-in-unity-2.png" alt="Native Android image sharing in Unity"></p>
-
+</br>
+<img class="blogimg" src="/img/blogs/native-android-image-sharing-in-unity/native-android-image-sharing-in-unity-2.png" alt="Native Android image sharing in Unity">
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -409,15 +383,11 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         The entire script for Android native screenshot sharing in unity (C#) would be
 </div>
-
-<p></br></p>
-
+</br>
 <script type="application/javascript" src="https://gist.github.com/agrawalsuneet/a39cdbee9fa093a16b817742b602f9e7.js"></script>
-
 
 <div class="center-justified text-content">
         The above script can be used in any unity app targeting Android platform to share a text or high score natively in Android.
@@ -430,7 +400,6 @@ if (!doNotTrack) {
                 <li><a href="/blogs/native-android-image-sharing-in-unity-using-fileprovider/" target="_blank">Native Android image sharing in Unity using FileProvider</a></li>       
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -444,7 +413,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

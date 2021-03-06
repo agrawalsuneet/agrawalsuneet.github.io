@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Extensions as Members : Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,8 +243,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         In continuation to my last Medium post <a href="/blogs/extensions-in-kotlin" target="_blank">Extensions in Kotlin</a> where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.
         </br>
@@ -253,7 +252,6 @@ if (!doNotTrack) {
         </br>
         The benefit of defining an extension as a member of the other class is, we can access all the functions and properties of both the classes inside that extension method.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -267,20 +265,16 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let’s take an example
 </div>
-
 <pre class="zeropadding">
   <br/>class BaseClass {<br/>    fun baseClassFunctionality() {<br/><br/>    }<br/>}<br/><br/>class OtherClass {<br/><br/>    fun otherClassFunctionality() {<br/><br/>    }<br/><br/>    fun BaseClass.additionalFunctionality() {<br/>        baseClassFunctionality()<br/>        otherClassFunctionality()<br/>    }<br/><br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         We have two classes named <mark>BaseClass</mark> and <mark>OtherClass</mark>. We have a method called <mark>baseClassFunctionality</mark> in <mark>BaseClass</mark> and <mark>otherClassFunctionality</mark> in <mark>OtherClass</mark>. Now, we added an extension function of BaseClass in OtherClass naming additionalFunctionality. The benefit of adding an extension function of <mark>BaseClass</mark> in <mark>OtherClass</mark> is we can access all the methods of <mark>BaseClass</mark> and <mark>OtherClass</mark> in that method.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -294,18 +288,15 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>
         What if both the classes have some same method with the same signature?
         </h4>
         It will call the method of the class for which the extension function is defined. But if we want to call the method of the class in which the extension function is defined, we can use the qualified this expression.
 </div>
-
 <pre class="zeropadding">
   <br/>class BaseClass {<br/><br/>    fun printString() {<br/>        println("I am in BaseClass")<br/>    }<br/>}<br/><br/>class OtherClass {<br/><br/>    fun otherClassFunctionality() {<br/>        BaseClass().additionalFunctionality()<br/>    }<br/><br/>    fun printString() {<br/>        println("I am in OtherClass")<br/>    }<br/><br/>    fun BaseClass.additionalFunctionality() {<br/>        printString()<br/>        this@OtherClass.printString()<br/>    }<br/><br/>}<br/><br/>// the output of<br/>OtherClass().otherClassFunctionality()<br/><br/>//will be<br/>I am in BaseClass <br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -320,7 +311,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Extension function as members can also be declared as open and can be overridden in the derived class. Which function will be called will be decided at runtime for virtual methods but statically for extension methods.
         </br>
@@ -332,11 +322,9 @@ if (!doNotTrack) {
         </br>
         Now we have another class called <mark>OtherClass</mark> having two open extension functions of both <mark>BaseClass</mark> and <mark>DerivedClass</mark> (one each). Also, we have one more class extending the <mark>OtherClass</mark> and overriding both the extension methods.
 </div>
-
 <pre class="zeropadding">
   <br/>open class BaseClass {<br/>}<br/><br/>class DerivedClass : BaseClass() {<br/>}<br/><br/>open class OtherClass {<br/><br/>    open fun BaseClass.someFunctionality() {<br/>        println("BaseClass.someFunctionality in OtherClass")<br/>    }<br/><br/>    open fun DerivedClass.someFunctionality() {<br/>        println("DerivedClass.someFunctionality in OtherClass")<br/>    }<br/><br/>    fun caller(baseClass: BaseClass) {<br/>        baseClass.someFunctionality()<br/>    }<br/>}<br/><br/>class DerivedOtherClass : OtherClass() {<br/>    override open fun BaseClass.someFunctionality() {<br/>        println("BaseClass.someFunctionality in DerivedOtherClass")<br/>    }<br/><br/>    override fun DerivedClass.someFunctionality() {<br/>        println("DerivedClass.someFunctionality in<br/>                 DerivedOtherClass")<br/>    }<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -351,25 +339,20 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now will consider four different cases which will clear the picture of overriding extension methods.
 </div>
-
 <pre class="zeropadding">
   <br/>OtherClass().caller(BaseClass())<br/><br/>DerivedOtherClass().caller(BaseClass())<br/><br/>OtherClass().caller(DerivedClass())<br/><br/>DerivedOtherClass().caller(DerivedClass())<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         1. When we call the caller method of <mark>OtherClass</mark> with <mark>OtherClass</mark> reference object and pass the <mark>BaseClass</mark> object as the parameter.
 </div>
-
 <pre class="zeropadding">
   <br/>OtherClass().caller(BaseClass())<br/>//the output of the above code will be<br/>BaseClass.someFunctionality in OtherClass<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This will call the extension function of <mark>BaseClass</mark> defined in <mark>OtherClass</mark>. There was no confusion because both the references were of the superclasses.
@@ -377,18 +360,15 @@ if (!doNotTrack) {
         </br>
         2. When we call the caller method of <mark>OtherClass</mark> with <mark>DerivedOtherClass</mark> reference object and pass the <mark>BaseClass</mark> object as the parameter.
 </div>
-
 <pre class="zeropadding">
   <br/>DerivedOtherClass().caller(BaseClass())<br/><br/>//the output of the above code will be<br/>BaseClass.someFunctionality in DerivedOtherClass<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This will call the extension function of <mark>BaseClass</mark> overridden in <mark>DerivedOtherClass</mark>.
         </br>
         The virtual dependency of <mark>OtherClass</mark> and <mark>DerivedOtherClass</mark> was resolved at runtime and it called the <mark>DerivedOtherClass’s</mark> overridden method.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -402,15 +382,12 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         3. When we call the caller method of <mark>OtherClass</mark> with <mark>OtherClass</mark> reference object and pass the <mark>DerivedClass</mark> object as the parameter.
 </div>
-
 <pre class="zeropadding">
   <br/>OtherClass().caller(DerivedClass())<br/><br/>//the output of the above code will be<br/>BaseClass.someFunctionality in OtherClass<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This will call the extension function of <mark>BaseClass</mark> defined in <mark>OtherClass</mark>.
@@ -422,11 +399,9 @@ if (!doNotTrack) {
         </br>
         4. When we call the caller method of <mark>OtherClass</mark> with <mark>DerivedOtherClass</mark> reference object and pass the <mark>DerivedClass</mark> object as the parameter.
 </div>
-
 <pre class="zeropadding">
   <br/>DerivedOtherClass().caller(DerivedClass())<br/><br/>//the output of the above code will be<br/>BaseClass.someFunctionality in DerivedOtherClass<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This will call the extension function of <mark>BaseClass</mark> overridden in <mark>DerivedOtherClass</mark>.
@@ -451,7 +426,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/docs/reference/extensions.html" target="_blank">Kotlin docs</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -465,7 +439,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

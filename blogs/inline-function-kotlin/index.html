@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Inline function : Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,8 +243,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         <h3>
                 What is inlining?
@@ -256,7 +255,6 @@ if (!doNotTrack) {
         </h3>
         When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function. The CPU then executes the function code, stores the function return value in a predefined memory location/register and returns control to the calling function.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -270,7 +268,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         In Kotlin, the higher order functions or lambda expressions, all stored as an object which takes some memory and might increase the memory overhead. Sometimes, the function does a very basic functionality that passing the control is not even worth but as it (the function) is being used at multiple places, we need to create a separate function. To reduce the memory overhead of such functions we can use the <mark>inline</mark> keyword which ultimately requests the CPU to not allocate any memory for the function and simply copy the body of that function at the calling place.
         </br>
@@ -279,20 +276,16 @@ if (!doNotTrack) {
         </h3>
         suppose we have a function which simply checks if the first argument is a multiple of the second argument and returns a boolean.
 </div>
-
 <pre class="zeropadding">
   <br/>fun isMultipleOf (number: Int, multipleOf : Int): Boolean{<br/>    return number % multipleOf == 0<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Now to use this function as a higher order function,
 </div>
-
 <pre class="zeropadding">
   <br/>fun <T> ArrayList<T>.filterOnCondition(condition: (T) -> Boolean): ArrayList<T>{<br/>    val result = arrayListOf<T>()<br/>    for (item in this){<br/>        if (condition(item)){<br/>            result.add(item)<br/>        }<br/>    }<br/>    return result<br/>}<br/><br/>var list = arrayListOf<Int>()<br/>    for (number in 1..10){<br/>        list.add(number)<br/>    }<br/>    <br/>val resultList = list.filterOnCondition { isMultipleOf(it, 5) }<br/>print(resultList)<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         In the above example, the functionality of the <mark>isMultipleOf</mark> is so small that it can be copied but as it can be used at multiple places, we created it as a separate function. As this function is passed as an argument to filterOnCondition function, CPU will assign it to some object which will take some memory. Also, for every item in the list, the CPU will jump to the memory address of <mark>isMultipleOf</mark> function and will pass back to result.
@@ -300,16 +293,13 @@ if (!doNotTrack) {
         </br>
         To prevent this, we can make the <mark>isMultipleOf</mark> function as inline which will as the compiler to copy it to the calling place which will prevent the memory allocation of the function and jumping of the CPU at runtime.
 </div>
-
 <pre class="zeropadding">
   <br/><b>inline</b> fun isMultipleOf (number: Int, multipleOf : Int): Boolean {<br/>     return number % multipleOf == 0<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         The functionality will remain the same.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -323,18 +313,15 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
                 Things to keep in mind
         </h3>
         <li>We will lose access to any private variable or function of the class inside the inline function. So it’s better to make functions inline which are very generic and don’t use a class level variable or function to achieve their functionality.</li>
 </div>
-
 <pre class="zeropadding">
   <br/>private var localVariable : Int = 8<br/><b>inline</b> fun isMultipleOf (number: Int, multipleOf : Int): Boolean {<br/>    print(localVariable) //compilation error<br/>    return number % multipleOf == 0<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The above code will show compilation error
@@ -343,14 +330,12 @@ if (!doNotTrack) {
   <br/><e>Public-API inline function cannot access non-public-API 'private var localVariable</e><br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Which is clear in itself.
         </br>
         </br>
         <li>Do not inline for bigger functions as it degrades the performance.</li>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -364,7 +349,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

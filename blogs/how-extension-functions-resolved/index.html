@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>How extension functions resolved? &middot; Suneet Agrawal</title>
 
     
@@ -243,22 +243,21 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br>
+            </br>
 <div class="center-justified text-content">
-        &ldquo;how are extension functions resolved?&rdquo;
+        "how are extension functions resolved?"
         </br>
           This question is being asked by almost everyone both in and outside the interviews. 
         </br>
           Even I have asked this question to many candidates during the interview. 
           </br>
-          The shorted or the only answer I get is &ldquo;Statically&rdquo;.
+          The shorted or the only answer I get is "Statically".
         </br>
         </br>
         What does statically means?
         </br>
         Or how does extension functions are actually resolved?
-</div></p>
-
+</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -272,32 +271,26 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let's understand this with an example.
         </br>
         Consider we have two classes <mark>BaseClass</mark> and <mark>DerivedClass</mark>.
         We added an extension function with the same function name to both the classes.
 </div>
-
 <pre class="zeropadding">
   <br/>open class <b>BaseClass</b><br/><br/>class <b>DerivedClass</b> : <b>BaseClass()</b><br/><br/>fun <b>BaseClass</b>.someMethod(){<br/>    print("BaseClass.someMethod")<br/>}<br/><br/>fun <b>DerivedClass</b>.someMethod(){<br/>    print("DerivedClass.someMethod")<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
 Now if we try to call the someMethod with <mark>BaseClass</mark> reference but the actual object we passed to it will be <mark>DerivedClass</mark> object,
 </div>
-
 <pre class="zeropadding">
   <br/>fun printMessage(base : BaseClass){<br/>    base.someMethod()<br/>}<br/><br/>//actual call<br/>printMessage(DerivedClass())<br/>
 </pre>
 
-
 <div class="center-justified text-content">
 This will print <mark>BaseClass.someMethod</mark>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -311,11 +304,9 @@ This will print <mark>BaseClass.someMethod</mark>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
         Confused why?
 </h3>
-
 <div class="center-justified text-content">
 Because the extension function being called depends only on the declared type of the parameter <mark>base</mark> in <mark>printMessage</mark> method, which is the <mark>BaseClass</mark> class. 
 </br>
@@ -331,7 +322,6 @@ The basic difference between extension functions and inheritance is references a
 </br>
 So next time if someone asks you "how are extension functions resolved?", Please complete your answer with an example instead of just saying it is resolved statically.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -345,7 +335,6 @@ So next time if someone asks you "how are extension functions resolved?", Please
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

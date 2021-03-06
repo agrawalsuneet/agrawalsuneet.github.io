@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="CSharp"> 
     <meta property="og:tags" content="Unity"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Native Android text sharing to Whatsapp contact in Unity &middot; Suneet Agrawal</title>
 
     
@@ -246,12 +246,9 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity"></p>
-
-<p></br></p>
-
+            </br>
+<img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity">
+</br>
 <div class="center-justified text-content">
         In the previous blogs, we learnt about how can we trigger native Android text, image or any other format file sharing in Unity App. A lot of you have asked me about how can we share some text directly to a WhatsApp contact.
         </br>
@@ -264,9 +261,7 @@ if (!doNotTrack) {
                 <li><a href="/blogs/native-android-image-sharing-in-unity/" target="_blank">Native Android image sharing in Unity</a></li>
                 <li><a href="/blogs/native-android-text-sharing-to-particular-app-in-unity/" target="_blank">Native Android text sharing to particular app in Unity</a></li>
         </ul>
-
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -280,7 +275,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Whatsapp is something which doesn't require any introduction. It's a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp.
         </br>
@@ -289,7 +283,6 @@ if (!doNotTrack) {
         </br>
         </br>
 </div>
-
 <div class="center-justified text-content">
         The ideal way any app accepts text, image, video or any other format for sharing is through intent filters defined in the manifest file.
         </br>
@@ -301,11 +294,9 @@ if (!doNotTrack) {
         </br>
         There is an API from WhatsApp which accepts <mark>phone</mark> and <mark>text</mark> and query parameters and if you call that API, it actually opens WhatsApp, check if that number exists on WhatsApp, if yes it opens conversation with that number and paste the message. If the contact or mobile numbers doesn't exist on WhatsApp, it shows a popup saying contact doesn't exist on WhatsApp.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/><br/>fun <b>onWhatsAppShareClicked</b>(context: Context, mobileNumber: String) {<br/>        val url =<br/>            "https://api.whatsapp.com/send?phone=${mobileNumber}&text=You%20can%20now%20send%20me%20audio%20and%20video%20messages%20on%20the%20app%20-%20Chirp.%20%0A%0Ahttps%3A//bit.ly/chirp_android"<br/>            <br/>        val intent = Intent(Intent.ACTION_VIEW).apply {<br/>            this.data = Uri.parse(url)<br/>            this.`package` = "com.whatsapp"<br/>        }<br/><br/>        try {<br/>            context.startActivity(intent)<br/>        } catch (ex : ActivityNotFoundException){<br/>            //whatsapp not installled<br/>        }<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -320,13 +311,10 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
         Things to notice here
 </h4>
-
 <div class="center-justified text-content">
         <ol>
                 <li>We are not triggering the share intent. Instead, we are triggering an Action_VIEW intent with a URI which holds our url to hit.</li>
@@ -334,19 +322,15 @@ if (!doNotTrack) {
                 <li>Before triggering this you need to check whether Whatsapp is installed or not using below code.</li>
         </ol>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
         Limitations
 </h4>
-
 <div class="center-justified text-content">
         <ul>
                 <li>We can only share text in this format. we can't pass an image, video or any other format in this way. But we can pass an URL to an image which can be on the server.</li>
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -360,22 +344,17 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now let's look at the equivalent code in Unity. 
 </div>
-
 <pre class="zeropadding">
   <br/><l>C# code</l><br/><br/><b>#if UNITY_ANDROID </b><br/>public IEnumerator <b>ShareTextToWhatsContact()</b> {<br/>        isProcessing = true;<br/>        if (!Application.isEditor) {<br/><br/>                //var url = "https://api.whatsapp.com/send?phone=${mobileNumber}&text=You%20can%20now%20send%20me%20audio%20and%20video%20messages%20on%20the%20app%20-%20Chirp.%20%0A%0Ahttps%3A//bit.ly/chirp_android";<br/>                var url = "https://api.whatsapp.com/send?phone=+919876543210&text=You%20can%20now%20send%20me%20audio%20and%20video%20messages%20on%20the%20app%20-%20Chirp.%20%0A%0Ahttps%3A//bit.ly/chirp_android";<br/><br/>                //Create intent for action send<br/>                AndroidJavaClass intentClass = <br/>                        new AndroidJavaClass ("android.content.Intent");<br/>                AndroidJavaObject intentObject = <br/>                        new AndroidJavaObject ("android.content.Intent");<br/>                intentObject.Call<AndroidJavaObject> <br/>                ("setAction", intentClass.GetStatic<string> ("ACTION_VIEW"));<br/><br/>                //uri class<br/>                AndroidJavaClass uriClass = new AndroidJavaClass("android.net.Uri");<br/><br/>                //set data<br/>                intentObject.Call<AndroidJavaObject>("setData", <br/>                        uriClass.CallStatic<AndroidJavaObject>("parse", url));<br/><br/>                //set the package to whatsapp package<br/>                intentObject.Call<AndroidJavaObject> ("setPackage", packageName);<br/><br/>                //call start activity method<br/>                AndroidJavaClass unity = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");<br/>                AndroidJavaObject currentActivity = <br/>                        unity.GetStatic<AndroidJavaObject> ("currentActivity");<br/>                currentActivity.Call ("startActivity", intentObject);<br/>        }<br/><br/>        yield return new WaitUntil (() => isFocus);<br/>        isProcessing = false;<br/>}<br/>        <br/><b>#endif</b><br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         If you have read my previous unity blogs, you'll understand very easily what we are doing here. We just used <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html" target="_blank">AndroidJavaClass</a> and <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.html" target="_blank">AndroidJavaObject</a> and created the same intent object with action as <a href="https://developer.android.com/reference/android/content/Intent#ACTION_VIEW" target="_blank">ACTION_VIEW</a> and set the data as the Uri object by parsing the url and finally triggered the <mark>startActivity</mark> function on the context.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -389,15 +368,11 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">   
         The final script will look like below.
 </div>
-
-<p></br></p>
-
+</br>
 <script type="application/javascript" src="https://gist.github.com/agrawalsuneet/611ceaee870c7b33ed7890077248bbff.js"></script>
-
 
 <div class="col-xs-12 googleads">
     
@@ -412,7 +387,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

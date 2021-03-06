@@ -6,10 +6,15 @@
     <description>Recent content in Slides on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://agrawalsuneet.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/slides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The power of Camera APIs and OpenGL all together</title>
+      <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
+      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen? Do you think your camera should do way more than just clicking a picture? Did you ever try to process the frames like applying filters or beautification before previewing it? How a view or camera frame is drawn on the screen? What is OpenGL?</description>
+    </item>
     
     <item>
       <title>Cut your APK Size with features on demand</title>

@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Inheritance vs Extension functions &middot; Suneet Agrawal</title>
 
     
@@ -243,13 +243,12 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br>
+            </br>
 <div class="center-justified text-content">
         We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.
         </br>
         Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other. Once you understand the difference, it will be very easy to decide what to use.
-</div></p>
-
+</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -263,7 +262,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
     Let's understand with code first what are both. I am going to explain using Kotlin language example but the concept is the same across all the languages.
     <h3>
@@ -271,27 +269,22 @@ if (!doNotTrack) {
     </h3>
     Inheritance is nothing but extending a class and adding functionality to it. You can add properties (variables) as well as functions in the extending class. You can access the variables of extending (Base) class if they are not private (protected or internal or public) can override them if they are not final (open variables) or you can override the functions also.
 </div>
-
 <pre class="zeropadding">
   <br/>open class <b>Person</b>(var firstName : String,<br/>                  protected var lastName : String) {<br/>    open fun getFullDetails() : String {<br/>       return "$firstName $lastName"<br/>    }<br/>}<br/><br/>class <b>Student</b> : <b>Person</b> {<br/>    var rollNumber = 0<br/>    <br/>    constructor(firstName : String, <br/>            lastName: String,<br/>            rollNumber : Int) <br/>            : super (firstName, lastName){<br/>        this.rollNumber = rollNumber<br/>    }<br/>    <br/>    override fun getFullDetails() : String {<br/>     return "$firstName $lastName with Roll number as $rollNumber"<br/>  }<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
     And we can call it by using
 </div>
-
 <pre class="zeropadding">
   <br/>var student = Student ("Suneet", "Agrawal", 12)<br/>println(student.getFullDetails())<br/>
 </pre>
-
 
 <div class="center-justified text-content">
     Here we added a property i.e. rollNumber and override the function.
     </br>
     Now let's have a look at almost similar functionality using Extension functions.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -305,32 +298,26 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
     <h3>
             Extension Function
     </h3>
-
-    Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
+<pre><code>Extension functions are the functions where you add a functionality to an existing class by just adding a function without extending the class and this will be resolved statically and all the objects of that class can use it.
+</code></pre>
 </div>
-
 <pre class="zeropadding">
   <br/>class <b>Employee</b>(var firstName : String, var lastName : String) {<br/>}<br/><br/>fun Employee.getFullDetails() : String {<br/>    return "$firstName $lastName"<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
 We have a similar kind of class which is non open (final class). we added a function <mark>getFullDetails</mark> as an extension function to the employee class and we call the above function as
 </div>
-
 <pre class="zeropadding">
   <br/>var emp = Employee("Suneet", "Agrawal")<br/>println(emp.getFullDetails())<br/>
 </pre>
 
-
 <div class="center-justified text-content">
 Now that we understand what is extension functions and what is an inheritance, let try to find out the difference which will make our life really easy while choosing what to use when.
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -344,49 +331,37 @@ Now that we understand what is extension functions and what is an inheritance, l
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Merits of Extension functions
 </h3>
-
 <ul>
   <li>Can add functionality to a final class also. The class need not be a non-final (open) class.</li>
   <li>Can add functionality without subclassing that means the object reference and the implementation can be of your base class.</li>
 </ul> 
-
 <h3>
 Limitations of Extension functions
 </h3>
-
 <ul>
   <li>Can't access the protected variables/properties or functions of your base class.</li>
   <li>Can't add any new variable/properties in your extension functions. You can add a property by just writing getter and setter but only without backing field. So basically you can't add a field in the base class.</li>
 </ul> 
-
 </br>
-
 <h3>
 Merits of Inheritance
 </h3>
-
 <ul>
   <li>Can add new properties, override functions (non-final) of the base class.</li>
   <li>Can access all protected variables and functions of the base class.</li>
 </ul> 
-
 <h3>
 Limitations of Inheritance
 </h3>
-
 <ul>
   <li>Can't extend a final class.</li>
 </ul> 
-
 </br>
-
-I hope this made clear on what are the merits and demerits of extension functions and inheritance. Please note that the extension functions are resolved statically.
+<p>I hope this made clear on what are the merits and demerits of extension functions and inheritance. Please note that the extension functions are resolved statically.</p>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -400,7 +375,6 @@ I hope this made clear on what are the merits and demerits of extension function
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

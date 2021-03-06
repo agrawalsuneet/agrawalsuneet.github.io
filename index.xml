@@ -6,10 +6,24 @@
     <description>Recent content on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (44 posts)   Kotlin Enum Classes   Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable. read more  16 Dec 2020  Kotlin Android      UIView ClickListener : Swift   Adding a click event to a UIView is something which is required most of the times.</description>
+    </item>
     
-	<atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>The power of Camera APIs and OpenGL all together</title>
+      <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
+      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen? Do you think your camera should do way more than just clicking a picture? Did you ever try to process the frames like applying filters or beautification before previewing it? How a view or camera frame is drawn on the screen? What is OpenGL?</description>
+    </item>
     
     <item>
       <title>UIView ClickListener : Swift</title>
@@ -35,9 +49,7 @@
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description>
-This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -64,9 +76,7 @@ This particular script will help you to implement a Click listener to all UIView
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</guid>
-      <description>
-This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.   For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.   For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -93,9 +103,7 @@ This particular script will help you to implement a text message sharing directl
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
-      <description>
-This particular script will help you to implement basic native Android in Unity.  This show an example of showing a native Android&#39;s Toast in unity using AndroidJavaClass and AndroidJavaObject.   For further explaination on how this works, please read the article Native Android in Unity.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android text sharing in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement basic native Android in Unity.  This show an example of showing a native Android&#39;s Toast in unity using AndroidJavaClass and AndroidJavaObject.   For further explaination on how this works, please read the article Native Android in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android text sharing in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -104,8 +112,7 @@ This particular script will help you to implement basic native Android in Unity.
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
-      <description>
-This particular script will help you to implement native Android text sharing in Unity.  We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.   For further explaination on how this works, please read the article Native Android text sharing in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android image sharing in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement native Android text sharing in Unity.  We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.   For further explaination on how this works, please read the article Native Android text sharing in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android image sharing in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -132,9 +139,7 @@ This particular script will help you to implement native Android text sharing in
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description>
-This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -152,8 +157,7 @@ This particular script will help you to implement a text message sharing directl
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</guid>
-      <description>What is Backing Field ? 
-Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier. This backing field is used to avoid the recursive call of an accessor which ultimately prevents the StackOverflowError.</description>
+      <description>What is Backing Field ?  Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier. This backing field is used to avoid the recursive call of an accessor which ultimately prevents the StackOverflowError.</description>
     </item>
     
     <item>
@@ -234,8 +238,7 @@ Backing field is an autogenerated field for any property which can only be used 
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
-      <description>&amp;ldquo;how are extension functions resolved?&amp;rdquo;  This question is being asked by almost everyone both in and outside the interviews.  Even I have asked this question to many candidates during the interview.  The shorted or the only answer I get is &amp;ldquo;Statically&amp;rdquo;.   What does statically means?  Or how does extension functions are actually resolved? 
-  (adsbygoogle = window.adsbygoogle || []).push({});   Let&#39;s understand this with an example.</description>
+      <description>&#34;how are extension functions resolved?&#34;  This question is being asked by almost everyone both in and outside the interviews.  Even I have asked this question to many candidates during the interview.  The shorted or the only answer I get is &#34;Statically&#34;.   What does statically means?  Or how does extension functions are actually resolved?    (adsbygoogle = window.adsbygoogle || []).push({});   Let&#39;s understand this with an example.</description>
     </item>
     
     <item>
@@ -428,15 +431,6 @@ Backing field is an autogenerated field for any property which can only be used 
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (44 posts)   Kotlin Enum Classes   Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable. read more  16 Dec 2020  Kotlin Android      UIView ClickListener : Swift   Adding a click event to a UIView is something which is required most of the times.</description>
-    </item>
-    
-    <item>
       <title>Qualified ‘this’ in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
@@ -541,7 +535,7 @@ Backing field is an autogenerated field for any property which can only be used 
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
-      <description>Past   img { width: 100% } @media screen and (min-width: 768px) { img { width: 60% } }     Speaker at Android Bootcamps part of Google for Startup Program   Remote - 11 July 2020   How can I migrate my Android code from Java to Kotlin?  Spoke about how can we migrate an existing codebase from Java to Kotlin and how beneficial it will be to do the same.</description>
+      <description>Past   img { width: 100% } @media screen and (min-width: 768px) { img { width: 60% } }     Speaker at Mobile Optimized 2020   Minsk, Belarus (Remote) - 06-07 Nov 2020   The power of Camera APIs and OpenGL all together  Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen?</description>
     </item>
     
     <item>

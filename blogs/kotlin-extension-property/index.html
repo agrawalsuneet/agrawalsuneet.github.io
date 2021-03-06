@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Kotlin Extension Property &middot; Suneet Agrawal</title>
 
     
@@ -243,8 +243,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Extension functions are really-really helpful while writing code in Kotlin. You don't have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties.
         </br>
@@ -258,7 +257,6 @@ if (!doNotTrack) {
             Can we add a property/variable as an extension to an existing class?
         </h4>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -272,7 +270,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         According to the theory of extension functions, this is not possible since you can only add the extension functions but not properties, but there is a workaround which can solve the purpose.
         </br>
@@ -282,11 +279,9 @@ if (!doNotTrack) {
         </br>
         Say there is a class name <mark>Temperature</mark> which only has one property <mark>tempInCelsius</mark> which it takes as a parameter in the constructor.
 </div>
-
 <pre class="zeropadding">
   <br/>class <b>Temperature</b>(var tempInCelsius: Float)<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Now I want to add one more property <mark>tempInFahrenheit</mark> which will be holding the same value of temperature but in Fahrenheit. 
@@ -294,20 +289,16 @@ if (!doNotTrack) {
         </br>
         I actually can't add a property for the same but I can add getter and setter which are nothing but the extension functions to the same.
 </div>
-
 <pre class="zeropadding">
   <br/>var <b>Temperature</b>.tempInFahrenheit: Float<br/>    get() = (tempInCelsius * 9 / 5) + 32<br/>    set(value) {<br/>        tempInCelsius = (value - 32) * 5 / 9<br/>    }<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         and I can call this property simply like any other property of that class.
 </div>
-
 <pre class="zeropadding">
   <br/>val temp = Temperature(32f)<br/>println(temp.tempInFahrenheit)<br/><br/>temp.tempInFahrenheit = 90f<br/>println(temp.tempInCelsius)<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -322,7 +313,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>
         What exactly we did?
@@ -338,11 +328,9 @@ if (!doNotTrack) {
         </h4>
         Since we never added an actual property, we can't use the backing field.
 </div>
-
 <pre class="zeropadding">
   <br/>var <b>Temperature</b>.tempInFahrenheit: Float = 32 <e>//compilation error</e><br/><e>initializers are not allowed for extension properties</e><br/><br/>var <b>Temperature</b>.tempInFahrenheit: Float<br/>    get() = field <e>//compilation error</e><br/>    set(value) {<br/>        field = value <e>//compilation error</e><br/>    }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Also, we can only do some processing but to store that value we need some existing variable only within the class. We can never save the value in the so-called extension property variable (<mark>tempInFahrenheit</mark> in our case) as at the end it is not a property.
@@ -352,7 +340,6 @@ if (!doNotTrack) {
         </br>
         </br>
 </div>
-
 <div class="center-justified text-content">
     Read more about extension functions on the below links.
     <ul>
@@ -364,7 +351,6 @@ if (!doNotTrack) {
     Reference: <a href="https://kotlinlang.org/docs/reference/extensions.html#extension-properties" target="_blank">Kotlin docs</a>
     </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -378,7 +364,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

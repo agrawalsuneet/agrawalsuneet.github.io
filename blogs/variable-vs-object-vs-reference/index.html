@@ -76,7 +76,7 @@
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="Programming-Basics">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Programming-Basics">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Variable vs Object vs Reference &middot; Suneet Agrawal</title>
 
     
@@ -240,15 +240,13 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them.
         </br>
         </br>
         Let's try to understand a very basic definition along with an example for all three. The concept is similar in any object-oriented programming language but for reference, I'll be using Java examples. Feel free to comment below if you need examples in any specific language.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -262,11 +260,9 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
         Variables
 </h3>
-
 <div class="center-justified text-content">
         Variables are named storage of any primitive data type.
         </br>
@@ -281,11 +277,9 @@ if (!doNotTrack) {
         </br>
         In Java, a <mark>char</mark> takes 2 bytes, <mark>int</mark> takes 4 bytes, <mark>float</mark> takes 8 bytes and so on.
 </div>
-
 <pre class="zeropadding">
   <br/>int age = 5;<br/>float pi = 3.14;<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -300,11 +294,9 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
         Objects
 </h3>
-
 <div class="center-justified text-content">
         Objects are variables of non-primitive data types or user-defined classes.
         </br>
@@ -316,18 +308,15 @@ if (!doNotTrack) {
         </br>
         In java, an object is created on the heap.
 </div>
-
 <pre class="zeropadding">
   <br/>Employee emp = new Employee();<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Here an object of <mark>Employee</mark> will be created by calling the <mark>new</mark> keyword. Keep in mind that technically <mark>emp</mark> is not an object, its just a reference pointing to the object which is created on heap.
         </br>
         Read Refrence below to understand it better.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -341,30 +330,23 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
         Reference
 </h3>
-
 <div class="center-justified text-content">
         A reference is nothing but a pointer pointing to the object. In other words, it is holding the memory address of the object created by <mark>new</mark> keyword.
 </div>
-
 <pre class="zeropadding">
   <br/>Employee emp = new Employee();<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         In the same above example, <mark>emp</mark> is a reference to the object which is created using the <mark>new</mark> keyword.
 </div>
-
-<p></br></p>
-
+</br>
 <h3>
         Basic differences between them
 </h3>
-
 <div class="center-justified text-content">
         <ul>
                 <li>You can't create a variable using the <mark>new</mark> keyword.</li>
@@ -374,7 +356,6 @@ if (!doNotTrack) {
                 <li>If you assign once reference to another like <mark>Employee emp2 = emp;</mark> it just copies the reference and but internally both the references are pointing to the same object.</li>
         </ul> 
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -388,7 +369,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

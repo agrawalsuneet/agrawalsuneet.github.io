@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Qualified ‘this’ in Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,12 +243,10 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         The only thing we learnt about <mark>this</mark> pointer in other languages is “this is an implicit pointer which points to the calling object”. As clear from the definition, it points to the object which calls the respective function or property.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -262,15 +260,12 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now the real problem arises when we have an inner class or anonymous interface implementation. We lose the reference of the outer class. Let me give you an example.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//java code<br/>//extending Android View class</l><br/><br/>public class CustomView extends View {<br/><br/>    public CustomView(Context context) {<br/>        super(context);<br/><br/>        getViewTreeObserver()<br/>                .addOnGlobalLayoutListener(<br/>                       new ViewTreeObserver.OnGlobalLayoutListener()<br/>                       {<br/>                            @Override<br/>                            public void onGlobalLayout() {<br/>                                //this.<br/>                                //will not get the reference of  <br/>                                //CustomView here<br/>                            }<br/>                        });<br/>    }<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         In the above code, we extended the class from <mark>View</mark> class which has a property of class <mark>ViewTreeObserver</mark>. <mark>ViewTreeObserver</mark> class has two functions <mark>addOnGlobalLayoutListener</mark> and <mark>removeGlobalOnLayoutListener</mark> which takes <mark>OnGlobalLayoutListener</mark> Interface reference object.
@@ -281,11 +276,9 @@ if (!doNotTrack) {
         </br>
         To do the same we need to define another final variable and use it.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//java code<br/>//extending Android View class</l><br/><br/>public class CustomView extends View {<br/><br/>    public CustomView(Context context) {<br/>        super(context);<br/><br/>        final CustomView view = this;<br/><br/>        getViewTreeObserver()<br/>                .addOnGlobalLayoutListener(<br/>                      new ViewTreeObserver.OnGlobalLayoutListener() <br/>                       {<br/>                            @Override<br/>                            public void onGlobalLayout() {<br/>                                view.doSomething();<br/>                            }<br/>                        });<br/>    }<br/><br/>    private void doSomething(){<br/><br/>    }<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -300,33 +293,27 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now to make our life easy, Kotlin has something called qualified ‘this’.
         </br>
         </br>
         Let me give you the equivalent code in Kotlin.
 </div>
-
 <pre class="zeropadding">
   <br/>class CustomView : View {<br/><br/>    constructor(context: Context) : super(context) {<br/><br/>        viewTreeObserver<br/>                .addOnGlobalLayoutListener (<br/>                  object : ViewTreeObserver.OnGlobalLayoutListener {<br/>                       override fun onGlobalLayout() {<br/>                             <b>this@CustomView</b>.doSomething()<br/>                       }<br/>                })<br/>    }<br/><br/>    private fun doSomething() {<br/>    }<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         or if you want to use a lambda
 </div>
-
 <pre class="zeropadding">
   <br/>class CustomView : View {<br/><br/>    constructor(context: Context) : super(context) {<br/><br/>        viewTreeObserver<br/>                .addOnGlobalLayoutListener { <br/>                      <b>this@CustomView</b>.doSomething() <br/>                }<br/>    }<br/><br/>    private fun doSomething() {<br/>    }<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         as you can see we can even reference the <mark>this</mark> pointer using <mark>@</mark> followed by the scope of that this pointer.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -340,15 +327,12 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let's take some other example
 </div>
-
 <pre class="zeropadding">
   <br/>class OuterClass {<br/><br/>    inner class InnerClass{<br/><br/>        fun Int.intExtensionFunction(){<br/><br/>            val outerThis = <b>this@OuterClass</b><br/>            val innerThis = <b>this@InnerClass</b><br/>            val intExtThis = <b>this@intExtensionFunction</b><br/><br/>            val currentThis = this<br/>            // int receiver, which will be an int<br/><br/>            val funLiteral = lambda@ fun String.() {<br/>                val funLiteralThis = this<br/>                // funLiteral's receiver which will be a string<br/>            }<br/><br/><br/>            val funLiteral2 = { string: String -><br/>                val funLiteral2This = this<br/>                //since this lambada doesn't have any receiver,<br/>                //this will be an int (the extension fun reference)<br/>            }<br/><br/>        }<br/>    }<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         We can use any reference inside the inner class or even inner function based on our use case.
@@ -366,7 +350,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/docs/reference/this-expressions.html" target="_blank">Kotlin docs</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -380,7 +363,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

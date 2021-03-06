@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Variable number of arguments (vararg) : Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,12 +243,10 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime. Kotlin provides us to achieve the same by defining a parameter of a function as <mark>vararg</mark>. We can pass n number of parameters to a <mark>vararg</mark> variable of the defined datatype or even of a generic type.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -262,32 +260,26 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let me give you an example.
         </br>
         </br>
         We need a function which takes n number as inputs and returns the average of all the inputs. If the size of n variables is not fixed, we usually convert it into an array or list and pass it to function.
 </div>
-
 <pre class="zeropadding">
   <br/>fun getAverage(numbersList: List<Int>): Float {<br/><br/>    var sum = 0.0f<br/>    for (item in numbersList) {<br/>        sum += item<br/>    }<br/>    return (sum / numbersList.size)<br/>}<br/><br/>val arrayList = arrayListOf(1, 2, 3, 4)<br/>val result = getAverage(arrayList)<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Now, what if the function itself takes n inputs and we don’t need to convert it into an array.
 </div>
-
 <pre class="zeropadding">
   <br/>fun getAverage(<b>vararg</b> input: Int): Float {<br/>    var sum = 0.0f<br/>    for (item in input) {<br/>        sum += item<br/>    }<br/>    return (sum / input.size)<br/>}<br/><br/>val result1 = getAverage(1, 2, 3)<br/>val result2 = getAverage(1, 2, 3, 4, 5)<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         We can pass n number of inputs to the same function and can get the result back. Inside the function, the parameter is available as an Array object and we can perform all normal array operations on it.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -301,15 +293,12 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         We can even use <mark>Template</mark> type for <mark>vararg</mark>.
 </div>
-
 <pre class="zeropadding">
   <br/>fun &lt;T&gt; asList(<b>vararg</b> input: T): List&lt;T&gt; {<br/>    val result = ArrayList&lt;T&gt;()<br/>    for (item in input) // input is an Array<br/>        result.add(item)<br/>    return result<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Only one parameter may be marked as <mark>vararg</mark>. If a <mark>vararg</mark> parameter is not the last one in the list, values for the following parameters can be passed using the named argument syntax, or if the parameter has a function type, the value can be passed by passing a lambda outside parentheses.
@@ -317,11 +306,9 @@ if (!doNotTrack) {
         </br>
         We can even pass all the elements of an array along with other arguments to a <mark>vararg</mark> variable. We can use the spread (<mark>*</mark>) operator to do the same.
 </div>
-
 <pre class="zeropadding">
   <br/>fun getAverage(<b>vararg</b> input: Int): Float {<br/>    var sum = 0.0f<br/>    for (item in input) {<br/>        sum += item<br/>    }<br/>    return (sum / input.size)<br/>}<br/>val array = intArrayOf(1, 2, 3, 4)<br/>val result = getAverage(1, 2, 3, *array)<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
@@ -329,7 +316,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs" target="_blank">Kotlin docs</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -343,7 +329,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

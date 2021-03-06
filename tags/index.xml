@@ -6,10 +6,24 @@
     <description>Recent content in Tags on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android</title>
+      <link>https://agrawalsuneet.github.io/tags/android/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/android/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Camera</title>
+      <link>https://agrawalsuneet.github.io/tags/camera/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/camera/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>iOS</title>
@@ -26,15 +40,6 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Android</title>
-      <link>https://agrawalsuneet.github.io/tags/android/</link>
-      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/android/</guid>
       <description></description>
     </item>
     

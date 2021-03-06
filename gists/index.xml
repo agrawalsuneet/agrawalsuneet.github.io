@@ -6,20 +6,14 @@
     <description>Recent content in Gists on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UIView ClickListener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description>
-This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -28,9 +22,7 @@ This particular script will help you to implement a Click listener to all UIView
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</guid>
-      <description>
-This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.   For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.   For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -57,9 +49,7 @@ This particular script will help you to implement a text message sharing directl
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
-      <description>
-This particular script will help you to implement basic native Android in Unity.  This show an example of showing a native Android&#39;s Toast in unity using AndroidJavaClass and AndroidJavaObject.   For further explaination on how this works, please read the article Native Android in Unity.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android text sharing in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement basic native Android in Unity.  This show an example of showing a native Android&#39;s Toast in unity using AndroidJavaClass and AndroidJavaObject.   For further explaination on how this works, please read the article Native Android in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android text sharing in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -68,8 +58,7 @@ This particular script will help you to implement basic native Android in Unity.
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
-      <description>
-This particular script will help you to implement native Android text sharing in Unity.  We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.   For further explaination on how this works, please read the article Native Android text sharing in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android image sharing in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement native Android text sharing in Unity.  We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.   For further explaination on how this works, please read the article Native Android text sharing in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android image sharing in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -87,9 +76,7 @@ This particular script will help you to implement native Android text sharing in
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description>
-This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.  
-   (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
   </channel>

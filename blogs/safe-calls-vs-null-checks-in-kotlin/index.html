@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Safe calls(?.) vs Null checks(!!) in Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,19 +243,16 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).
         </br>
         For example, a normal property can’t hold a null value and will show a compile error.
 </div>
-
 <pre class="zeropadding">
   <br/>var variable : <b>CustomClass</b> = CustomClass()<br/>variable = null //compilation error<br/>
 </pre>
 
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -269,33 +266,25 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Instead, we can add a <mark>?</mark> after the data type of that property which declares that variable as a nullable property
 </div>
-
 <pre class="zeropadding">
   <br/>var nullableVariable : <b>CustomClass?</b> = CustomClass()<br/>nullableVariable = null //works fine<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         In any case, the nullable property requires a null check every time before utilizing that property or requires a confirmation from the developer that the estimation of that property won’t be null while utilizing it
 </div>
-
-<p></br></p>
-
+</br>
 <pre class="zeropadding">
   <br/>variable.someMethodCall() //works fine as the compiler is sure that<br/>                          //the variable can’t be null<br/>nullableVariable.someMethodCall() //will highlight compilation error<br/>                                  //as compiler is not sure as<br/>                                  //nullVariable can be null.<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         There are still few techniques for using or accessing the nullable variable. One of them is safe call <mark>?.</mark> and another one is null check <mark>!!</mark> but before figuring out the difference among both, let’s understand what they are in detail first.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -309,30 +298,24 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Explicit Null Check
 </h3>
-
 <div class="center-justified text-content">
         This is the old pattern that we use in every other language, checking the variable if its null or not.
 </div>
-
 <pre class="zeropadding">
   <br/>if ( null <b>!=</b> nullableVariable) {<br/> nullableVariable.someMethodCall()<br/>} else {<br/> // fallback flow<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Note this exclusive works where ‘nullableVariable’ is immutable (i.e. a local property which can’t be altered between the check and the utilization or a member ‘val’ which has a backing field and is not overridable), else it may happen that ‘nullableVariable’ changes to null after the check.
         </br>
         If it’s a mutable property, the explicit null check won’t work and the compiler will show the below compilation error.
 </div>
-
 <pre class="zeropadding">
   <br/>Smart cast to ‘CustomClass’ is impossible, because ‘nullableVariable’ is a mutable property that could have been changed by this time.<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -347,30 +330,24 @@ Explicit Null Check
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Safe Calls (?.)
 </h3>
-
 <div class="center-justified text-content">
         Another way of using a nullable property is safe call operator <mark>?.</mark>
         </br>
         This calls the method if the property is not null or returns null if that property is null without throwing an NPE (null pointer exception).
 </div>
-
 <pre class="zeropadding">
   <br/>nullableVariable<b>?.</b>someMethodCall()<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
 </div>
-
 <pre class="zeropadding">
   <br/>bob<b>?.</b>department<b>?.</b>head<b>?.</b>name<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Such a chain returns null if any of the properties in it is null.
@@ -378,11 +355,9 @@ Safe Calls (?.)
         </br>
 To perform a certain operation only for non-null values, you can use the safe call operator together with let
 </div>
-
 <pre class="zeropadding">
   <br/>val listWithNulls: List<String?> = listOf(“A”, null)<br/>for (item in listWithNulls) {<br/> item<b>?.</b>let { println(it) } // prints A and ignores null<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -397,19 +372,15 @@ To perform a certain operation only for non-null values, you can use the safe ca
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 Elvis Operator (?:)
 </h3>
-
 <div class="center-justified text-content">
         This one is similar to safe calls except the fact that it can return a non-null value if the calling property is null even
 </div>
-
 <pre class="zeropadding">
   <br/>val result = nullableVariable<b>?.</b>someMethodCall()<br/>                       <b>?:</b> fallbackIfNullMethodCall()<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The Elvis operator will evaluate the left expression and will return it if it’s not null else will evaluate the right side expression. Please note that the right side expression will only be called if the left side expression is null.
@@ -417,11 +388,9 @@ Elvis Operator (?:)
         </br>
         Note that, since throw and return are expressions in Kotlin, they can also be used on the right-hand side of the Elvis operator. This can be very handy, for example, for checking function arguments
 </div>
-
 <pre class="zeropadding">
   <br/>fun foo(node: Node): String? {<br/> val parent = node.getParent() <b>?:</b> return null<br/> val name = node.getName() <b>?:</b> throw IllegalArgumentException(“name expected”)<br/> // …<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -436,31 +405,24 @@ Elvis Operator (?:)
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 The !! Operator
 </h3>
-
 <div class="center-justified text-content">
         This operator is used to explicitly tell the compiler that the property is not null and if it’s null, please throw a null pointer exception (NPE)
 </div>
-
 <pre class="zeropadding">
   <br/>nullableVariable<b>!!.</b>someMethodCall()<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         this code will work fine if ‘nullableVariable’ is not null else it will throw an NPE.
 </div>
-
-<p></br>
-</br></p>
-
+</br>
+</br>
 <h2>
 Difference between ?. and !!
 </h2>
-
 <div class="center-justified text-content">
         The basic difference while using <mark>?.</mark> and <mark>!!</mark> is if you want to separate a normal flow of var property having a ‘non-null’ value with ‘null’ value flow use <mark>?.</mark>
         </br>
@@ -473,7 +435,6 @@ Difference between ?. and !!
         </br>
 </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -487,7 +448,6 @@ Difference between ?. and !!
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

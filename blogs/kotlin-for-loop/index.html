@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Kotlin ‘For’ loop &middot; Suneet Agrawal</title>
 
     
@@ -243,15 +243,13 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language <mark>for</mark> loops.
         </br>
         </br>
         Wait! They are not this tough. In fact, they are very easy, interesting and helpful.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -265,28 +263,23 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let’s check one by one.
         </br>
         </br>
         <h4>1. Simple <mark>for</mark> loop in java that iterates from some number to some number incrementing one on each loop pass.</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i++){<br/>    System.out.print(i);<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         its equivalent Kotlin code
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (i in 0..10) {<br/>    print(i)<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         <h3>Things to notice</h3>
@@ -296,7 +289,6 @@ if (!doNotTrack) {
                 <li>the lower and upper (including) limit can be defined on both the sides of <mark>..</mark> operator.</li>
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -310,30 +302,24 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>2. Now let’s say if I don’t don’t want to include the upper limit in the loop and break the loop if it hits the upper limit.</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int j = 0; j < 10; j++) {<br/>    System.out.print(j); //this will print only up to 9<br/> }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         There are two ways to do the same in kotlin, the first one is decrement the upper limit it while coding and use <mark>..</mark> operator or another way is use <mark>until</mark> operator.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (j in 0..9) {<br/>    print(j)<br/> }<br/><br/>for (j in 0 until 10) {<br/>    print(j)<br/> }<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Both do the same thing.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -347,58 +333,46 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>3. I want to increment it by 2 or some other number.</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i += 2) {<br/>    System.out.print(i);<br/> }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         We can use <mark>step</mark> operator here
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (i in 0..10 step 2) {<br/>    print(i)<br/> }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
        <h4>4. Wait, what if I want to run the loop in reverse order. Can I use <mark>10..1</mark> ?</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int i = 10; i > 0; i--) {<br/>    System.out.print(i);<br/> }<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         No, you can not use <mark>10..1</mark> as <mark>..</mark> operator never works on the reverse ranges. It won’t give you a compile time or run time error but simply skips the loops by checking the conditions which will be false every time. You have to use <mark>downTo</mark> operator.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (i in 10 downTo 1) {<br/>    print(i)<br/> }<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         You can also change the step size with <mark>step</mark> operator.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int i = 10; i > 0; i -= 3) {<br/>    System.out.print(i);<br/> }<br/><br/><l>Kotlin code</l><br/>for (i in 10 downTo 1 step 3) {<br/>    print(i)<br/> }<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         But please note that <mark>until</mark> operator doesn’t work here. <mark>until</mark> operator can only be used for forward increments.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -412,65 +386,52 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>5. What if I have a complex calculation instead of addition or subtraction in each step. Let’s say multiplication or division.</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int k = 2; k <= 256; k *= 2) {<br/>    System.out.print(k);<br/> }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         Move to while loop, no other way
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>var k = 2<br/>while (k <= 256) {<br/>   print(k)<br/>   k *= 2<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         <h4>6. I want to iterate over an array now.</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int i = 0; i < arr.length; i++) {<br/>    System.out.print(arr[i]);<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         Simple, us the <mark>indices</mark> in kotlin
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>val arr = IntArray(5)<br/>for (i in arr.indices) {<br/>    print(arr[i])<br/>} <br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         I heard about some for <mark>foreach</mark> also. Can I use the same in kotlin?
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int item: arr) {<br/>    System.out.print(item);<br/> }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         Yes, you can. <mark>for</mark> loop iterates through anything that provides an iterator. A <mark>for</mark> loop over an array is compiled to an index-based loop that does not create an iterator object.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for(item in arr){<br/>    print(item)<br/> }<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -485,55 +446,44 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>7. And what about List?</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>List<Integer> arrayList = new ArrayList<>();<br/>for (int i = 0; i < arrayList.size(); i++) {<br/>    System.out.print(arrayList.get(i));<br/>}<br/><br/>List<Integer> vector = new Vector<>();<br/> for (int i = 0; i < vector.size(); i++) {<br/> System.out.print(vector.get(i));<br/> }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         Simple. Use <mark>indices</mark> based iteration.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>val arrayList = ArrayList<Int>()<br/>for (i in arrayList.indices) {<br/>    print(arrayList[i])<br/>}<br/><br/>val vector = Vector<Int>()<br/>for (i in vector.indices) {<br/>   print(vector[i])<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         No, I am a fan of <mark>foreach</mark> loop.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int item : arrayList) {<br/>    System.out.print(item);<br/>}<br/><br/>for (int item : vector) {<br/>    System.out.print(item);<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         Ok, no problem, there you go.
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (item in arrayList) {<br/>    print(item)<br/>}<br/><br/>for (item in vector) {<br/>    print(item)<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         <h4>8. You can also use the <mark>withIndex</mark> library function</h4>
 </div>
-
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for ((i, value) in arr.withIndex()) {<br/>    println(“the element at $i is $value”)<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         Usually you don’t need the <mark>withIndex</mark> function for iteration.
@@ -545,7 +495,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/docs/reference/control-flow.html#for-loops" target="_blank">Kotlin docs</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -559,7 +508,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

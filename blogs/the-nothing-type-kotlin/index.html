@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>The Nothing Type : Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,8 +243,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         What if I say there is a class called <mark>Nothing</mark> in Koltin.
         </br>
@@ -254,7 +253,6 @@ if (!doNotTrack) {
         </br>
         The time I read about the class <mark>Nothing</mark> for the first time, it sounds interesting to me. This class has no instance and it is used to represent a value which never exists. This class is also used to represent a return type from a method that will never return.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -268,18 +266,15 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
         Confused? Let me explain.
         </h3>
         If we use <mark>null</mark> to initialize a value of an inferred type and there is no other information that can be used to determine a more specific type, the compiler considers it as <mark>Nothing?</mark> type.
 </div>
-
 <pre class="zeropadding">
   <br/>val variable = null<br/><br/>//compiler will read this as<br/>// val variable : <b>Nothing?</b> = null<br/><br/>val list = listOf(null)<br/><br/>//compiler will read this as<br/>//val list : List&lt;<b>Nothing?</b>&gt; = listOf(null)<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The type of variable will be <mark>Nothing?.</mark> Or even if we initialize a list of nulls, the compiler will consider it as a list of <mark>Nothing?</mark> type.
@@ -287,21 +282,17 @@ if (!doNotTrack) {
         </br>
         Nothing has no type and can also be used to mark code locations that can never be reached. Let’s say we have a method which throws an exception. The return type of that method would be <mark>Nothing</mark> type.
 </div>
-
 <pre class="zeropadding">
   <br/>fun throwException(message: String): <b>Nothing</b> {<br/>    throw IllegalArgumentException(message)<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         As looking at the above method, we are pretty sure that the method will never return and will <mark>throw</mark> an exception before that. The return type can be denoted by <mark>Nothing</mark> class. We could have used <mark>void</mark> type also in place of <mark>Nothing</mark> in the same method but in that case, the compiler won’t be sure that the method will return or not. But if we replace the return type by <mark>Nothing</mark>, the compiler will be sure that this will never return.
 </div>
-
 <pre class="zeropadding">
   <br/>fun throwException(message: String) {<br/>    throw IllegalArgumentException(message)<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -316,24 +307,19 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         As we know that <mark>throw</mark> is an expression in Kotlin and can be used as a part of <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/" target="_blank">Elvis operator</a> also.
 </div>
-
 <pre class="zeropadding">
   <br/>val personName = person.name ?: throw IllegalArgumentException("Name required")<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         The above code can be replace with
 </div>
-
 <pre class="zeropadding">
   <br/>fun throwException(message: String): <b>Nothing</b> {<br/>    throw IllegalArgumentException(message)<br/>}<br/><br/>val personName = person.name ?: throwException("Name required")<br/><br/>//we are sure that personName is not null<br/>println(personName)<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         And the compiler will know that the execution will not continue if the value of <mark>personName</mark>  is <mark>null</mark>
@@ -349,7 +335,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html" target="_blank">Nothing Class</a> and <a href="https://kotlinlang.org/docs/reference/exceptions.html#the-nothing-type" target="_blank">Nothing Type</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -363,7 +348,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

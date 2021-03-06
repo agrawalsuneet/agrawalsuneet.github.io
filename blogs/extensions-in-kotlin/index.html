@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Extensions in Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,8 +243,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Have you ever felt some useful functionality missing in an existing class?
         </br>
@@ -260,7 +259,6 @@ if (!doNotTrack) {
         </br>
         If so, Kotlin extensions can definitely make your life easier.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -274,7 +272,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called <mark>extensions</mark>. These extensions basically add some functionality in an existing class without extending the class.
         </br>
@@ -292,11 +289,9 @@ if (!doNotTrack) {
         </br>
         Let’s say we want to add a function in the <mark>List</mark> Interface implementation which returns the element at the mid position of the list.
 </div>
-
 <pre class="zeropadding">
   <br/>fun <T> List<T>.midElement(): T {<br/>    if (isEmpty())<br/>        throw NoSuchElementException("List is empty.")<br/>    return this[size / 2]<br/>}<br/><br/>//to call this method<br/>var list = listOf<Int>(1, 2, 3, 4, 5)<br/>var mid = list.midElement()<br/><br/>//or <br/><br/>var arrayList = arrayListOf(5, 4, 3, 2, 1)<br/>var mid = arrayList.midElement()<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         <h4>
@@ -307,7 +302,6 @@ if (!doNotTrack) {
         </br>
         Later this <mark>midElement</mark> method can be called with any normal List object.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -321,7 +315,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let’s take another example of our very favorite <mark>Toast</mark> class in Android.
         </br>
@@ -330,11 +323,9 @@ if (!doNotTrack) {
         </br>
         The native code to show a Toast in Android is
 </div>
-
 <pre class="zeropadding">
   <br/>Toast.makeText(this, “Hello”, Toast.LENGTH_SHORT).show()<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The above code calls a static method <mark>makeText</mark> of <mark>Toast</mark> class with three parameters (reference of the current <mark>Context</mark> class, the <mark>CharSequence</mark> to be displayed and the <mark>Int</mark> duration for which the toast to be shown). The static method returns the <mark>Toast</mark> class object to which we call the show method.
@@ -342,11 +333,9 @@ if (!doNotTrack) {
         </br>
         Now to make the call easy to this <mark>Toast</mark> from any class which extends the <mark>Context</mark> class directly or indirectly, we can create an extension method of <mark>Context</mark> class which will do the exact same.
 </div>
-
 <pre class="zeropadding">
   <br/>fun Context.showToast(text: CharSequence, duration: Int = Toast.LENGTH_SHORT) {<br/>    Toast.makeText(this, text, duration).show()<br/>}<br/><br/>//to call this method from any context extending class<br/>showToast("Hello")<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         <h3>
@@ -362,7 +351,6 @@ if (!doNotTrack) {
         </br>
         The extension functions dispatched statically. That means the extension function which will be called is determined by the type of the expression on which the function is invoked, not by the type of the result of evaluating that expression at runtime. In short, they are not virtual by receiver type.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -376,27 +364,22 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>
         Let me explain.
         </h4>
         Let’s say we have two classes, one extending other and both have the same extension functions with same name and signature.
 </div>
-
 <pre class="zeropadding">
   <br/>open class BaseClass<br/><br/>class DerivedClass : BaseClass()<br/><br/>fun BaseClass.someMethod(){<br/>    print("BaseClass.someMethod")<br/>}<br/><br/>fun DerivedClass.someMethod(){<br/>    print("DerivedClass.someMethod")<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Now if we try to call the <mark>someMethod</mark> with <mark>BaseClass</mark> object but the actual reference we pass to it will be <mark>DerivedClass</mark> reference,
 </div>
-
 <pre class="zeropadding">
   <br/>fun printMessage(base : BaseClass){<br/>    base.someMethod()<br/>}<br/><br/>//actual call<br/>printMessage(DerivedClass())<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This will print BaseClass.someMethod
@@ -415,18 +398,15 @@ if (!doNotTrack) {
         </br>
         The compiler will call the method declared in the class but not the extension function.
 </div>
-
 <pre class="zeropadding">
   <br/>class BaseClass{<br/>    fun someMethod(){<br/>        print("I am the actual someMethod")<br/>    }<br/>}<br/><br/>fun BaseClass.someMethod(){<br/>    print("I am the extension function")<br/>}<br/><br/>//to call this method<br/>BaseClass().someMethod()<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         This will call the someMethod which s defined in BaseClass and will print
         </br>
         I am the actual someMethod
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -440,7 +420,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
         Nullable Receiver
@@ -450,11 +429,9 @@ if (!doNotTrack) {
         </br>
         Let’s take an example of toString method.
 </div>
-
 <pre class="zeropadding">
   <br/>fun Any?.toString(): String {<br/>    if (this == null) return "null"<br/>    // after the null check,<br/>    // 'this' is autocast to a non-null type, <br/>    // so the toString() below<br/>    // resolves to the member function of the Any class<br/>    return toString()<br/>}<br/><br/>// not the above method can be call on a nullable variable also<br/>var nullableVariable : Any? = null<br/>nullableVariable.toString()<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -469,27 +446,22 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
         Extension Properties
         </h3>
         Similarly to functions, we can add extension properties also.
 </div>
-
 <pre class="zeropadding">
   <br/>val <T> List<T>.midIndex: Int<br/>    get() = if (size == 0) 0 else size / 2<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         Since extensions do not actually insert members into classes, there’s no efficient way for an extension property to have a backing field. This is why initializers are not allowed for extension properties. Their behavior can only be defined by explicitly providing getters/setters.
 </div>
-
 <pre class="zeropadding">
   <br/>class BaseClass{<br/>}<br/><br/>var BaseClass.index : Int = 10 <e>//compile error</e><br/>//Extension property cannot be initialized<br/>//because it has no backing field<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -504,18 +476,15 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
         Companion Object Extension
         </h3>
         We can also define extension functions and properties for the <a href="/blogs/companion-object-in-kotlin/" target="_blank">Companion object</a>.
 </div>
-
 <pre class="zeropadding">
   <br/>class BaseClass {<br/><br/>    companion object {<br/>    }<br/>}<br/><br/>fun BaseClass.Companion.companionMethod(){<br/><br/>}<br/>//to call this method<br/>BaseClass.companionMethod()<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         <h3>
@@ -523,11 +492,9 @@ if (!doNotTrack) {
         </h3>
         Most of the time we define extensions on the top level, i.e. directly under packages.
 </div>
-
 <pre class="zeropadding">
   <br/>package com.example.extension<br/><br/>fun BaseClass.extensionFunction(){<br/>    <br/>}<br/><br/>//and use it with<br/>import com.example.extension.extensionFunction <br/>// importing all extensions by name "extensionFunction"<br/><br/>// or<br/>import com.example.extension.*   <br/>// importing everything from "com.example.extension"<br/><br/>fun usage(base: BaseClass) {<br/>    base.extensionFunction()<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         but if you want to declare an extension function as a member of the other class we have some rules to follow which I will explain in another blog.
@@ -543,7 +510,6 @@ if (!doNotTrack) {
         Reference: <a href="https://kotlinlang.org/docs/reference/extensions.html" target="_blank">Kotlin docs</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -557,7 +523,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Companion object in Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,14 +243,12 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead.
         </br>
         If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a <mark>companion</mark> object declaration inside that class. By declaring a companion object inside our class, you’ll be able to call its members with the same syntax as calling static methods in Java/C#, using only the class name as a qualifier.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -264,34 +262,25 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
         How should I declare a companion object inside a class?
 </h3>
 </br>
-
 <div class="center-justified text-content">
 Add <mark>companion</mark> keyword in front of object declaration.
 </div>
-
-
 <pre class="zeropadding">
   <br/>class <b>EventManager</b> {<br/><br/>    <b>companion object</b> FirebaseManager {<br/>     <br/>    }  <br/>}<br/><b>val firebaseManager</b> = EventManager.FirebaseManager<br/>
 </pre>
 
-
 </br>
-
 <div class="center-justified text-content">
         Optionally, you can even remove the <mark>companion</mark> object name also. In that case the name Companion will be used.
 </div>
-
-
 <pre class="zeropadding">
   <br/>class <b>EventManager</b> {<br/><br/>    <b>companion object</b> {<br/>       <br/>    }<br/>}<br/><b>val firebaseManager</b> = EventManager.Companion<br/>
 </pre>
 
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -305,28 +294,21 @@ Add <mark>companion</mark> keyword in front of object declaration.
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let’s take an example of Singleton class where a single instance of the class exists and we get that instance using getInstance static method.
 </div>
-
-
 <pre class="zeropadding">
   <br/>//Java code<br/>public class <b>EventManager</b> {<br/><br/>    private static EventManager instance;<br/><br/>    private EventManager() {<br/><br/>    }<br/><br/>    public static EventManager getManagerInstance() {<br/>        if (instance == null) {<br/>            instance = new EventManager();<br/>        }<br/><br/>        return instance;<br/>    }<br/><br/>    public boolean sendEvent(String eventName) {<br/>        Log.d("Event Sent", eventName);<br/>        return true;<br/>    }<br/>}<br/>
 </pre>
 
-
 </br>
-
 <div class="center-justified text-content">
         Now when we try to implement the same class in the Kotlin, the private static <mark>instance</mark> and the <mark>managerInstance</mark> property will be moved to <mark>companion</mark> object. Rest of the code remains the same.
 </div>
-
 <pre class="zeropadding">
   <br/>//Kotlin code<br/>class <b>EventManager</b> {<br/><br/>    private constructor() {<br/>    }<br/><br/>    <b>companion object</b> {<br/>        private lateinit var instance: EventManager<br/><br/>        val managerInstance: EventManager<br/>            get() {<br/>                if (instance == null) {<br/>                    instance = EventManager()<br/>                }<br/><br/>                return instance<br/>            }<br/>    }<br/><br/>    fun sendEvent(eventName: String): Boolean {<br/>        Log.d("Event Sent", eventName)<br/>        return true;<br/>    }<br/>}<br/>
 </pre>
 
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -340,30 +322,23 @@ Add <mark>companion</mark> keyword in front of object declaration.
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
 And how I use the sendEvent method?
 </h3>
-
 <div class="center-justified text-content">
         1. When you name the <mark>companion</mark> object as FirebaseManager
 </div>
-
 <pre class="zeropadding">
   <br/>val firebaseManager = EventManager.FirebaseManager<br/>firebaseManager.managerInstance.sendEvent("some event")<br/>//or<br/>EventManager.FirebaseManager.<b>managerInstance</b>.sendEvent("Some event")<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         2. When you didn’t name the <mark>companion</mark> object
 </div>
-
 <pre class="zeropadding">
   <br/>val firebaseManager = EventManager.Companion<br/>firebaseManager.managerInstance.sendEvent("some event")<br/>// or<br/>EventManager.Companion.<b>managerInstance</b>.sendEvent("Some event")<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -378,17 +353,14 @@ And how I use the sendEvent method?
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <b>Please keep in mind,</b> even though the members of <mark>companion</mark> object look like <mark>static</mark> members in other languages, at runtime those are still instance members of real objects, and can, for example, implement interfaces.
         </br>
         However, if you use the<mark>@JvmStatic</mark> annotation, you can have members of <mark>companion</mark> objects generated as real <mark>static</mark> methods and fields on the JVM.
 </div>
-
 <pre class="zeropadding">
   <br/>//Kotlin code<br/>interface <b>EventManagementInterface</b> {<br/>    fun someMethod()<br/>}<br/><br/>class EventManager {<br/><br/>    companion object <b>FirebaseManager</b> : <b>EventManagementInterface</b> {<br/>        <br/>        override fun someMethod() {<br/>            <br/>        }<br/>    }<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         A <mark>companion</mark> object is initialized when the corresponding class is loaded (resolved), matching the semantics of a Java static initializer. Means that the <mark>companion</mark> object will be initialized even before calling the constructor of that class as similar to Java static initializer.
@@ -397,7 +369,6 @@ And how I use the sendEvent method?
         Reference: <a href="https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects" target="_blank">Kotlin docs</a>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -411,7 +382,6 @@ And how I use the sendEvent method?
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Higher-order functions in Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,15 +243,13 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         <h3>
         What is a higher-order function?
         </h3>
         In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function. In other words, a higher-order function is a function that takes functions as parameters or returns a function.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -265,17 +263,14 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h4>
         Let’s take an example
         </h4>
 </div>
-
 <pre class="zeropadding">
   <br/>fun &lt;T&gt; ArrayList&lt;T&gt;.filterOnCondition(condition: (T) -> Boolean): ArrayList&lt;T&gt;{<br/>    val result = arrayListOf&lt;T&gt;()<br/>    for (item in this){<br/>        if (condition(item)){<br/>            result.add(item)<br/>        }<br/>    }<br/><br/>    return result<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         in the above code,
@@ -306,16 +301,13 @@ if (!doNotTrack) {
         </br>
         </br>
 </div>
-
 <pre class="zeropadding">
   <br/>{<br/>val result = arrayListOf&lt;T&gt;()<br/>for (item in this){<br/>if (condition(item)){<br/>result.add(item)<br/>}<br/>}<br/>return result<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         this defines the body of the higher-order function which creates a new object of <mark>ArrayList</mark> of the template class and on each element of calling <mark>ArrayList</mark> object, it calls the condition method based on which it add the same item in result <mark>ArrayList</mark> and returns the result object.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -329,15 +321,12 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         now let’s define a conditioning method
 </div>
-
 <pre class="zeropadding">
   <br/>fun isMultipleOf (number: Int, multipleOf : Int): Boolean{<br/>    return number % multipleOf == 0<br/>}<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         the above method checks if the passed first argument is a multiple of another passed argument and returns a <mark>Boolean</mark> value.
@@ -345,11 +334,9 @@ if (!doNotTrack) {
         </br>
         Now let’s call the higher-order function with this condition
 </div>
-
 <pre class="zeropadding">
   <br/>var list = arrayListOf&lt;Int&gt;()<br/>for (number in 1..10){<br/>    list.add(number)<br/>}<br/>var resultList = list.filterOnCondition { isMultipleOf(it, 5) }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The above code will filter the list object with the multiples of 5 and returns a new <mark>ArrayList</mark> object having 5 and 10 in it.
@@ -360,26 +347,21 @@ if (!doNotTrack) {
         </br>
         The below two lines will do the same as the last line of above code snippet doing.
 </div>
-
 <pre class="zeropadding">
   <br/>var resultList = list.filterOnCondition { it -> it % 5 == 0  } <br/>or<br/>var resultList = list.filterOnCondition { it % 5 == 0 }<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         </br>
         The same method can be called for any other data type also.
 </div>
-
 <pre class="zeropadding">
   <br/>var listOfStr = arrayListOf&lt;String&gt;()<br/>listOfStr.add("Hello")<br/>listOfStr.add("World")<br/>listOfStr.add("How")<br/>listOfStr.add("are")<br/>listOfStr.add("you")<br/><br/>var modifiedList = listOfStr.filterOnCondition { it.contains("e") }<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         In this case the <mark>modifiedList</mark> will be an <mark>ArrayList</mark> of <mark>String</mark> type having two object “Hello” and “are” in it.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -393,7 +375,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

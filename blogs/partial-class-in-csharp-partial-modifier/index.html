@@ -76,7 +76,7 @@
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="CSharp">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="CSharp">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Partial class in C# (partial modifier) &middot; Suneet Agrawal</title>
 
     
@@ -240,8 +240,7 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool.
         </br>
@@ -252,7 +251,6 @@ if (!doNotTrack) {
         </br>
         </br>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -266,7 +264,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
         What is a Partial class?
@@ -282,11 +279,9 @@ if (!doNotTrack) {
         </br>
         A partial class is created by using a <mark>partial</mark> keyword. This keyword is also useful to split the functionality of <mark>methods</mark>, <mark>interfaces</mark>, or <mark>structure</mark> into multiple files.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Someclass1.cs</l><br/>public <b>partial</b> class SomeClass<br/>{<br/>    // code<br/>    private void function1(){ }<br/>}<br/><br/><br/><l>//Someclass2.cs</l><br/>public <b>partial</b> class SomeClass<br/>{<br/>    // code<br/>    private void function2(){ }<br/>}<br/><br/><br/><l>//final compiled code</l><br/>public class SomeClass<br/>{<br/>    private void function1(){ }<br/>    private void function2(){ }<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -301,7 +296,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         <h3>
         Requirements of Partial modifier
@@ -316,9 +310,7 @@ if (!doNotTrack) {
         <li>Different parts can have different base types like implementing different interfaces and the final class will inherit all the base types.</li>
         </ul>
 </div>
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         <h3>
                 Advantages of Partial class
@@ -329,7 +321,6 @@ if (!doNotTrack) {
                 <li>When we working with automatically generated source, code can be added to the class without having to recreate the source file. For example, Visual Studio separates HTML code for the UI and server-side code into two separate files: .aspx and .cs files.</li>
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -343,7 +334,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

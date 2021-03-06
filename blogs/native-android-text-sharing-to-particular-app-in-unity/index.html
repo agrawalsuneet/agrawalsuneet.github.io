@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="CSharp"> 
     <meta property="og:tags" content="Unity"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Native Android text sharing to particular app in Unity &middot; Suneet Agrawal</title>
 
     
@@ -246,12 +246,9 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity"></p>
-
-<p></br></p>
-
+            </br>
+<img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity">
+</br>
 <div class="center-justified text-content">
         In the previous posts <a href="/blogs/native-android-text-sharing-in-unity/" target="_blank">Native Android text sharing in Unity</a> and <a href="/blogs/native-android-image-sharing-in-unity/" target="_blank">Native Android image sharing in Unity</a> we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.
         </br>
@@ -263,9 +260,7 @@ if (!doNotTrack) {
                 <li><a href="/blogs/native-android-text-sharing-in-unity/" target="_blank">Native Android text sharing in Unity</a></li>
                 <li><a href="/blogs/native-android-image-sharing-in-unity/" target="_blank">Native Android image sharing in Unity</a></li>
         </ul>
-
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -279,7 +274,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Direct accessibility is a feature that usually boosts the numbers as it reduces the number of clicks in an app. Sharing your score directly on some app can be one of them. Let’s take an example of WhatsApp in our case. There can be a use case where we want to provide a feature in the Unity app where a user can share their score in the form of text or image directly to WhatsApp.
         </br>
@@ -292,20 +286,16 @@ if (!doNotTrack) {
         </br>
         The Jave code for this check would be
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Java</l><br/>public boolean checkIfAppInstalled(Context context, String packageName) {<br/>    List<PackageInfo> list = context.getPackageManager().getInstalledPackages(PackageManager.GET_ACTIVITIES);<br/><br/>    for (PackageInfo item : list){<br/>        if (item.packageName.equalsIgnoreCase(packageName)){<br/>            return true;<br/>        }<br/>    }<br/><br/>    return false;<br/>}<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         And the Kotlin code would be
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Kotlin</l><br/>fun checkIfAppInstalled(context: Context, packageName: String): Boolean {<br/>    <br/>val list = context.packageManager<br/>          .getInstalledPackages(PackageManager.GET_ACTIVITIES)<br/><br/>    for (item in list) {<br/>        if (item.packageName.equals(packageName, ignoreCase = true){<br/>            return true<br/>        }<br/>    }<br/><br/>    return false<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -320,24 +310,18 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h4>
 But where can I get the package name of the app I want to share on?
 </h4>
-
 <div class="center-justified text-content">
         You can visit the Play Store page of that particular app and get the package name from the URL of that page.
         </br>
         </br>
         It will be the marked as <mark>id=&lt;packagename&gt;</mark>
 </div>
-
-<p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-text-sharing-to-particular-app-in-unity/native-android-text-sharing-to-particular-app-in-unity-1.png" alt="Native Android text sharing to particular app in Unity"></p>
-
-<p></br></p>
-
+</br>
+<img class="blogimg" src="/img/blogs/native-android-text-sharing-to-particular-app-in-unity/native-android-text-sharing-to-particular-app-in-unity-1.png" alt="Native Android text sharing to particular app in Unity">
+</br>
 <div class="center-justified text-content">
         In the case of WhatsApp, it will be <mark>com.whatsapp</mark>
         </br>
@@ -347,16 +331,12 @@ But where can I get the package name of the app I want to share on?
         </br>
         The C# code in Unity for the same will be
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code</l><br/>private bool CheckIfAppInstalled(){<br/>         <br/>         #if UNITY_ANDROID<br/> <br/>         string packageName = "com.whatsapp";<br/> <br/>         //create a class reference of unity player activity<br/>         AndroidJavaClass unityActivity = <br/>             new AndroidJavaClass ("com.unity3d.player.UnityPlayer");<br/> <br/>         //get the context of current activity<br/>         AndroidJavaObject context = unityActivity.GetStatic<AndroidJavaObject> ("currentActivity");<br/> <br/>         //get package manager reference<br/>         AndroidJavaObject packageManager = context.Call<AndroidJavaObject> ("getPackageManager");<br/> <br/>         //get the list of all the apps installed on the device<br/>         AndroidJavaObject appsList = packageManager.Call<AndroidJavaObject>("getInstalledPackages", 1);<br/> <br/>         //get the size of the list for app installed apps<br/>         int size = appsList.Call<int> ("size");<br/> <br/>         for (int i = 0; i < size; i++) {<br/>             AndroidJavaObject appInfo = appsList.Call<AndroidJavaObject> ("get", i);<br/>             string packageNew = appInfo.Get<string> ("packageName");<br/> <br/>             if (packageNew.CompareTo (packageName) == 0) {<br/>                 return true;<br/>             }<br/>         }<br/> <br/>         return false;<br/> <br/>         #endif<br/>     }<br/><br/>
 </pre>
 
-
-<p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-text-sharing-to-particular-app-in-unity/native-android-text-sharing-to-particular-app-in-unity-2.png" alt="Native Android text sharing to particular app in Unity"></p>
-
+</br>
+<img class="blogimg" src="/img/blogs/native-android-text-sharing-to-particular-app-in-unity/native-android-text-sharing-to-particular-app-in-unity-2.png" alt="Native Android text sharing to particular app in Unity">
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -370,45 +350,35 @@ But where can I get the package name of the app I want to share on?
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
        Now that we got a check if the app is installed on the user’s device or not, we can share to the app (WhatsApp in our case) directly by simply setting the package to the intent. Rest all will still be the same as it was in the case of text sharing or screenshot sharing in Unity.
        </br>
        </br>
         The java code for the same is 
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Jave</l><br/>Intent intent = new Intent();<br/>intent.setPackage(packageName);<br/>
 </pre>
 
-
 <div class="center-justified text-content">
        and the Kotlin code would be 
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Kotlin</l><br/>val intent = Intent()<br/>intent.`package` = packageName<br/>
 </pre>
 
-
 <div class="center-justified text-content">
        And the equivalent code in C# for Unity would be 
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# for Unity</l><br/>string packageName = "com.whatsapp";<br/> <br/>AndroidJavaObject intentObject = <br/>             new AndroidJavaObject ("android.content.Intent");<br/> <br/>intentObject.Call ("setPackage", packageName);<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         And this will open the WhatsApp directly for sharing.
 </div>
-
-<p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-text-sharing-to-particular-app-in-unity/native-android-text-sharing-to-particular-app-in-unity-3.png" alt="Native Android text sharing to particular app in Unity"></p>
-
+</br>
+<img class="blogimg" src="/img/blogs/native-android-text-sharing-to-particular-app-in-unity/native-android-text-sharing-to-particular-app-in-unity-3.png" alt="Native Android text sharing to particular app in Unity">
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -422,15 +392,11 @@ But where can I get the package name of the app I want to share on?
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">   
         The final script will look like below.
 </div>
-
-<p></br></p>
-
+</br>
 <script type="application/javascript" src="https://gist.github.com/agrawalsuneet/5c5b861410c87f4e6e42602f2ecf658e.js"></script>
-
 
 <div class="center-justified text-content">
         The above script can be used in any unity app targeting Android platform to share a text or high score natively to any particular app in Android.
@@ -443,7 +409,6 @@ But where can I get the package name of the app I want to share on?
                 <li><a href="/blogs/native-android-image-sharing-in-unity-using-fileprovider/" target="_blank">Native Android image sharing in Unity using FileProvider</a></li>       
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -457,7 +422,6 @@ But where can I get the package name of the app I want to share on?
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

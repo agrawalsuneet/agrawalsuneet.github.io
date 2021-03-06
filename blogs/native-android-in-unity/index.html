@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="CSharp"> 
     <meta property="og:tags" content="Unity"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Native Android in Unity &middot; Suneet Agrawal</title>
 
     
@@ -246,16 +246,12 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity"></p>
-
-<p></br></p>
-
+            </br>
+<img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity">
+</br>
 <div class="center-justified text-content">
         While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -269,7 +265,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Let’s take a very basic example of native android functionality ie showing a <a href="https://developer.android.com/guide/topics/ui/notifiers/toasts" target="_blank">Toast</a> using unity app.
         </br>
@@ -277,24 +272,17 @@ if (!doNotTrack) {
         For all those who are not familiar with what a toast is, toast is a simple message popup that appears at the bottom side (by default) of the screen with a custom message and for a long or short duration.
         A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.
 </div>
-
-<p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-in-unity/toast-android.png" alt="Native Android in Unity"></p>
-
-<p></br></p>
-
+</br>
+<img class="blogimg" src="/img/blogs/native-android-in-unity/toast-android.png" alt="Native Android in Unity">
+</br>
 <div class="center-justified text-content">
         To show this toast in native android we need a simple call to the <mark>Toast</mark> class static method <mark>makeText</mark> which return us a <mark>Toast</mark> class object and then call <mark>show</mark> method on that object.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//Java Code</l><br/>Context context = getApplicationContext();<br/>CharSequence text = "This is a toast";<br/>int duration = Toast.LENGTH_SHORT;<br/><br/>Toast toast = Toast.makeText(context, text, duration);<br/>toast.show();<br/><br/><l>//Kotlin Code</l><br/>val text = "This is a toast"<br/>val duration = Toast.LENGTH_SHORT<br/><br/>val toast = Toast.makeText(applicationContext, text, duration)<br/>toast.show()<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         <mark>makeText</mark> accepts three arguments,
         </br>
@@ -307,7 +295,6 @@ if (!doNotTrack) {
         </br>
         The duration value can choose between <a href="https://developer.android.com/reference/android/widget/Toast#LENGTH_LONG" target="_blank">Toast.LENGTH_LONG</a> or <a href="https://developer.android.com/reference/android/widget/Toast#LENGTH_SHORT" target="_blank">Toast.LENGTH_SHORT</a>.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -321,7 +308,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         Now in order to show the same code in unity app, we need use the same Toast class of android but how?
         </br>
@@ -334,22 +320,17 @@ if (!doNotTrack) {
         </br>
         First, lets put a Platform <a href="https://docs.unity3d.com/Manual/PlatformDependentCompilation.html" target="_blank">#define</a> directives because this particular piece of code will only be supported on the Android platform
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code</l><br/>#if <b>UNITY_ANDROID</b><br/>//our entire code<br/>//..<br/>#endif<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <div class="center-justified text-content">
         Next, create a new <mark>AndroidJavaClass</mark> object of <mark>Toast</mark> class.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code</l><br/>AndroidJavaClass toastClass = <br/>               new AndroidJavaClass("android.widget.Toast");<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The constructor of <mark>AndroidJavaClass</mark> takes a <mark>string</mark> object as the argument. The <mark>string</mark> should be the fully qualified name (&lt;packagename&gt;.&lt;classname&gt;) of the class whose reference need to be created. In our case, the fully qualified name of <mark>Toast</mark> class will be <mark>android.widget.Toast</mark> which can be obtained from the official documents of <mark>Toast</mark> class <a href="https://developer.android.com/reference/android/widget/Toast" target="_blank">here</a>.
@@ -357,11 +338,9 @@ if (!doNotTrack) {
         </br>
         Now, as we know that <mark>makeText</mark> method of <mark>Toast</mark> class accepts three arguments, but the <mark>AndroidJavaObject.Call</mark> or <mark>AndroidJavaObject.CallStatic</mark> method accepts all the arguments as an <mark>object array</mark> so let’s create an object array with all the required arguments in it.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code</l><br/>//create an object array of 3 size<br/>object[] toastParams = new object[3];<br/><br/>//create a class reference of unity player activity<br/>AndroidJavaClass unityActivity = <br/>        new AndroidJavaClass ("com.unity3d.player.UnityPlayer");<br/><br/>//set the first object in the array <br/>//as current activity reference<br/>toastParams[0] = <br/>    unityActivity.GetStatic&lt;AndroidJavaObject&gt; ("currentActivity");<br/><br/>//set the second object in the array <br/>//as the CharSequence to be displayed<br/>toastParams[1] = "This is a Toast";<br/><br/>//set the third object in the array<br/>//as the duration of the toast from<br/>toastParams[2] = toastClass.GetStatic&lt;int&gt; ("LENGTH_LONG");<br/>
 </pre>
-
 
 <div class="center-justified text-content">
         The thing to notice here is the <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.GetStatic.html" target="_blank">AndroidJavaObject.GetStatic</a> method. This method is used to get the value of a static field in an object type.
@@ -369,25 +348,20 @@ if (!doNotTrack) {
         </br>
         Now that we have the object array ready, let’s call the makeText method of Toast class with passing the object array as an argument.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code</l><br/>AndroidJavaObject toastObject =<br/>                toastClass.CallStatic&lt;AndroidJavaObject&gt;<br/>                             ("makeText", toastParams);<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.CallStatic.html" target="_blank">AndroidJavaObject.CallStatic</a> method is used to call a static Java method on a class. This method returns us an <mark>AndroidJavaObject</mark> class object which is the <mark>Toast</mark> class object in our case. We can call the <mark>show</mark> method on this object now.
 </div>
-
 <pre class="zeropadding">
   <br/><l>//C# code</l><br/>toastObject.Call ("show");<br/>
 </pre>
 
-
 <div class="center-justified text-content">
         <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.Call.html" target="_blank">AndroidJavaObject.Call</a> method is used to call a Java method on an object (non-static).
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -401,22 +375,15 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         The entire code put together will be
 </div>
-
-<p></br></p>
-
+</br>
 <script type="application/javascript" src="https://gist.github.com/agrawalsuneet/d839f6b64f9434a648ad3197a1854d1c.js"></script>
 
-
-<p></br></p>
-
-<p><img class="blogimg" src="/img/blogs/native-android-in-unity/toast-unity.jpg" alt="Native Android in Unity"></p>
-
-<p></br></p>
-
+</br>
+<img class="blogimg" src="/img/blogs/native-android-in-unity/toast-unity.jpg" alt="Native Android in Unity">
+</br>
 <div class="center-justified text-content">
         This will show the required native toast. This toast can be shown on any button click, on start/update or any other method of any game object, on some action performed or network call response, anywhere.
         </br>
@@ -428,7 +395,6 @@ if (!doNotTrack) {
                 <li><a href="/blogs/native-android-image-sharing-in-unity/" target="_blank">Native Android image sharing in Unity</a></li>        
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -442,7 +408,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

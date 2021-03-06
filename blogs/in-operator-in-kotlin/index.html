@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.80.0" />
     <title>‘in’ operator in Kotlin &middot; Suneet Agrawal</title>
 
     
@@ -243,12 +243,10 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         ‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false. It can also be used to iterate over a range or collection.
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -262,37 +260,28 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <h3>
         1. ‘in’ operator in ‘if’ condition
 </h3>
-
 <pre class="zeropadding">
   <br/>val count = 5;<br/>if (count <b>in</b> 1..10 && count <b>!in</b> 5..7) {<br/>    print(“Number is between range 1 to 10 but not between 5 to 7”)<br/>}<br/><br/>val array: IntArray = intArrayOf(1, 2, 3, 4, 5)<br/>if (count <b>in</b> array) {<br/>    print(“Number is present in property array”)<br/>}<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <h3>
         2. ‘in’ operator in ‘when’ condition
 </h3>
-
 <pre class="zeropadding">
   <br/>when (count) {<br/>   <b>in</b> 11..20 -> print(“Number is between 10 and 20 including both”)<br/>   <b>!in</b> 21..30 -> print(“Number is not between 21 to 30”)<br/>   <b>in</b> array -> print(“Number is present in property array”)<br/>   <b>!in</b> array -> print(“Number is not present in property array”)<br/>}<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <h3>
         3. ‘in’ operator in ‘for’ loop
 </h3>
-
 <pre class="zeropadding">
   <br/>for (item <b>in</b> 1..10){<br/>    print(“iterates loop from 1 to 10”)<br/>}<br/><br/>for (item <b>in</b> array){<br/>    print(“iterates all items in array”)<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -307,7 +296,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

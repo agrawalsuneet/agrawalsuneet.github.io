@@ -77,7 +77,7 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Android"> 
-    <meta property="og:tags" content="Kotlin">  <meta name="generator" content="Hugo 0.59.0" />
+    <meta property="og:tags" content="Kotlin">  <meta name="generator" content="Hugo 0.80.0" />
     <title>Android : Share message directly to whatsapp contact &middot; Suneet Agrawal</title>
 
     
@@ -243,15 +243,13 @@ if (!doNotTrack) {
 
     <article>
         <div class="col-xs-12">
-            <p></br></p>
-
+            </br>
 <div class="center-justified text-content">
         Whatsapp is something which doesn't require any introduction. It's a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp.
         </br>
         </br>
         During recent times, I was asked multiple times in the comments section or even emails, if there is any possible way where we can send the text message directly to a WhatsApp contact?
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -265,7 +263,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="center-justified text-content">
         The ideal way any app accepts text, image, video or any other format for sharing is through intent filters defined in the manifest file.
         </br>
@@ -277,11 +274,9 @@ if (!doNotTrack) {
         </br>
         There is an API from WhatsApp which accepts <mark>phone</mark> and <mark>text</mark> and query parameters and if you call that API, it actually opens WhatsApp, check if that number exists on WhatsApp, if yes it opens conversation with that number and paste the message. If the contact or mobile numbers doesn't exist on WhatsApp, it shows a popup saying contact doesn't exist on WhatsApp.
 </div>
-
 <pre class="zeropadding">
   <br/>fun <b>onWhatsAppShareClicked</b>(context: Context, mobileNumber: String) {<br/>        val url =<br/>            "https://api.whatsapp.com/send?phone=${mobileNumber}&text=You%20can%20now%20send%20me%20audio%20and%20video%20messages%20on%20the%20app%20-%20Chirp.%20%0A%0Ahttps%3A//bit.ly/chirp_android"<br/>            <br/>        val intent = Intent(Intent.ACTION_VIEW).apply {<br/>            this.data = Uri.parse(url)<br/>            this.`package` = "com.whatsapp"<br/>        }<br/><br/>        try {<br/>            context.startActivity(intent)<br/>        } catch (ex : ActivityNotFoundException){<br/>            //whatsapp not installled<br/>        }<br/>}<br/>
 </pre>
-
 
 <div class="col-xs-12 googleads">
     
@@ -296,13 +291,10 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
         Things to notice here
 </h4>
-
 <div class="center-justified text-content">
         <ol>
                 <li>We are not triggering the share intent. Instead, we are triggering an Action_VIEW intent with a URI which holds our url to hit.</li>
@@ -310,24 +302,19 @@ if (!doNotTrack) {
                 <li>Before triggering this you need to check whether Whatsapp is installed or not using below code.</li>
         </ol>
 </div>
-
 <pre class="zeropadding">
   <br/>fun <b>isPackageInstalled</b>(context: Context, packageName: String): Boolean {<br/>        return try {<br/>            context.packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)<br/>            true<br/>        } catch (ex: Exception) {<br/>            false<br/>        }<br/>    }<br/>
 </pre>
 
-
-<p></br></p>
-
+</br>
 <h4>
         Limitations
 </h4>
-
 <div class="center-justified text-content">
         <ul>
                 <li>We can only share text in this format. we can't pass an image, video or any other format in this way. But we can pass an URL to an image which can be on the server.</li>
         </ul>
 </div>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -341,18 +328,13 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
-<p></br></p>
-
+</br>
 <h4>
         Complete code
 </h4>
-
 <script type="application/javascript" src="https://gist.github.com/agrawalsuneet/c67c9aca8493a78442d8ead1d1e366cb.js"></script>
 
-
-<p></br></p>
-
+</br>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -366,7 +348,6 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs">

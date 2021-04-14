@@ -8,12 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kotlin : Single Expression Function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</guid>
+      <description>Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code.   The single expression function, as his name suggests, is the function that just has a single expression. We can remove the return type of that function, braces as well as return keyword from it.    (adsbygoogle = window.</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://agrawalsuneet.github.io/publications/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (45 posts)   Reified : Kotlin   Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety. To get the information about the type of Template class, we will have to use a keyword called reified read more  6 Mar 2021  Kotlin Android      Kotlin Enum Classes   Enums are special classes which limit the possible values of an object for that class.</description>
+      <description>Technical Blogs  Technical Blogs (46 posts)   Kotlin : Single Expression Function   Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code. The single expression function, as his name suggests, is the function that just has a single expression. We can remove the return type of that function, braces as well as return keyword from it.</description>
     </item>
     
     <item>

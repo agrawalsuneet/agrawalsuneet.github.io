@@ -6,7 +6,16 @@
     <description>Recent content in Kotlin on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kotlin : Single Expression Function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</guid>
+      <description>Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code.   The single expression function, as his name suggests, is the function that just has a single expression. We can remove the return type of that function, braces as well as return keyword from it.    (adsbygoogle = window.</description>
+    </item>
+    
     <item>
       <title>Reified : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/reified-kotlin/</link>

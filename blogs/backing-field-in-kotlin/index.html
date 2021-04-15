@@ -381,6 +381,29 @@ Limitations while using Backing field
 
         var content = document.getElementById("content");
         content.removeEventListener('scroll', onContentScrolled, false)
+
+        
+        let remove_ads = setInterval(() => {
+            console.log('Calling setInterval');
+
+            let iframes = document.getElementsByTagName('iframe');
+
+            for (var iframe in iframes) {
+                if (typeof iframes[iframe].src === 'undefined') {
+                    continue;
+                }
+
+                if (iframes[iframe].src.match(/(ads-iframe)|(disqusads)/gi)) {
+                    iframes[iframe].style.display = 'none';
+                    clearInterval(remove_ads);
+                    console.log('Disqus Ads removed');
+                }
+            }
+        }, 500);
+
+        setTimeout(function () {
+            clearInterval(remove_ads);
+        }, 1000);
     }
 
     (function () {

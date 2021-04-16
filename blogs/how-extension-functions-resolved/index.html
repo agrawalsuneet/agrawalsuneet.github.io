@@ -398,7 +398,7 @@ So next time if someone asks you "how are extension functions resolved?", Please
 
         
         let remove_ads = setInterval(() => {
-            console.log('Calling setInterval');
+            console.log('Checking for Disqus Ads');
 
             let iframes = document.getElementsByTagName('iframe');
 
@@ -417,7 +417,7 @@ So next time if someone asks you "how are extension functions resolved?", Please
 
         setTimeout(function () {
             clearInterval(remove_ads);
-        }, 1000);
+        }, 500);
     }
 
     (function () {

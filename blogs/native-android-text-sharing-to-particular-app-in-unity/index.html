@@ -485,7 +485,7 @@ But where can I get the package name of the app I want to share on?
 
         
         let remove_ads = setInterval(() => {
-            console.log('Calling setInterval');
+            console.log('Checking for Disqus Ads');
 
             let iframes = document.getElementsByTagName('iframe');
 
@@ -504,7 +504,7 @@ But where can I get the package name of the app I want to share on?
 
         setTimeout(function () {
             clearInterval(remove_ads);
-        }, 1000);
+        }, 500);
     }
 
     (function () {

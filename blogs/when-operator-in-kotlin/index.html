@@ -417,7 +417,7 @@ Another possibility is to check that a value <mark>is</mark> or <mark>!is</mark>
 
         
         let remove_ads = setInterval(() => {
-            console.log('Calling setInterval');
+            console.log('Checking for Disqus Ads');
 
             let iframes = document.getElementsByTagName('iframe');
 
@@ -436,7 +436,7 @@ Another possibility is to check that a value <mark>is</mark> or <mark>!is</mark>
 
         setTimeout(function () {
             clearInterval(remove_ads);
-        }, 1000);
+        }, 500);
     }
 
     (function () {

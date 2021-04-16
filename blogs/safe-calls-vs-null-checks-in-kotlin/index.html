@@ -511,7 +511,7 @@ Difference between ?. and !!
 
         
         let remove_ads = setInterval(() => {
-            console.log('Calling setInterval');
+            console.log('Checking for Disqus Ads');
 
             let iframes = document.getElementsByTagName('iframe');
 
@@ -530,7 +530,7 @@ Difference between ?. and !!
 
         setTimeout(function () {
             clearInterval(remove_ads);
-        }, 1000);
+        }, 500);
     }
 
     (function () {

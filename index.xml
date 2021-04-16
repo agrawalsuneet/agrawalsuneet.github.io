@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>if vs if let vs guard let in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</guid>
+      <description>if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality.   To understand their differences, let&#39;s try to understand what they are in details first.    (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
+    
+    <item>
       <title>Kotlin : Single Expression Function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
@@ -22,7 +31,7 @@
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (46 posts)   Kotlin : Single Expression Function   Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code. The single expression function, as his name suggests, is the function that just has a single expression. We can remove the return type of that function, braces as well as return keyword from it.</description>
+      <description>Technical Blogs  Technical Blogs (47 posts)   if vs if let vs guard let in Swift   if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality. read more  16 April 2021  Swift iOS      Kotlin : Single Expression Function   Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java.</description>
     </item>
     
     <item>

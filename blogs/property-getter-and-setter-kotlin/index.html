@@ -506,9 +506,9 @@ Things to notice
             let iframes = document.getElementsByTagName('iframe');
 
             for (var iframe in iframes) {
-                if (typeof iframes[iframe].src === 'undefined') {
-                    continue;
-                }
+                
+                
+                
 
                 if (iframes[iframe].src.match(/(ads-iframe)|(disqusads)/gi)) {
                     iframes[iframe].style.display = 'none';
@@ -516,11 +516,11 @@ Things to notice
                     console.log('Disqus Ads removed');
                 }
             }
-        }, 500);
+        }, 1000);
 
         setTimeout(function () {
             clearInterval(remove_ads);
-        }, 1000);
+        }, 5000);
     }
 
     (function () {

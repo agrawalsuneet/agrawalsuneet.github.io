@@ -8,21 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>any(), none() &amp; all() : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</guid>
+      <description>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface.   Let try to understand what do they do, why they are required and when to use them. But before we begin, I am assuming a basic knowledge of Map, Set and List.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (48 posts)   any(), none() &amp;amp; all() : Kotlin   Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface. read more  20 April 2021  Kotlin Android      if vs if let vs guard let in Swift   if let and guard let are two conditional operators or condition checker which make our life super easy.</description>
+    </item>
+    
+    <item>
       <title>if vs if let vs guard let in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</guid>
       <description>if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality.   To understand their differences, let&#39;s try to understand what they are in details first.    (adsbygoogle = window.adsbygoogle || []).</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (47 posts)   if vs if let vs guard let in Swift   if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality. read more  16 April 2021  Swift iOS      Kotlin : Single Expression Function   Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java.</description>
     </item>
     
     <item>

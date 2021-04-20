@@ -6,7 +6,16 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>any(), none() &amp; all() : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</guid>
+      <description>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface.   Let try to understand what do they do, why they are required and when to use them. But before we begin, I am assuming a basic knowledge of Map, Set and List.</description>
+    </item>
+    
     <item>
       <title>Kotlin : Single Expression Function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</link>

@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin any,kotlin none,kotlin all,list,set,map">
+    <meta name="keywords" content="kotlin collection,collections,collections kotlin">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | any(), none() &amp; all() : Kotlin" />
-    <meta property="og:title" content="any(), none() &amp; all() : Kotlin">
-    <meta property="twitter:title" content="any(), none() &amp; all() : Kotlin">
+    <meta name="title" content="Suneet Agrawal | Collections in Kotlin" />
+    <meta property="og:title" content="Collections in Kotlin">
+    <meta property="twitter:title" content="Collections in Kotlin">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="any(), none() &amp; all() : Kotlin">
-    <meta name="description" content="Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface.">
-    <meta property="og:description" content="Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface.">
-    <meta property="twitter:description" content="Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface.">
-    <meta name="abstract" content="Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface.">
-    <meta name="summary" content="Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface."> 
+    <meta name="topic" content="Collections in Kotlin">
+    <meta name="description" content="Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package.">
+    <meta property="og:description" content="Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package.">
+    <meta property="twitter:description" content="Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package.">
+    <meta name="abstract" content="Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package.">
+    <meta name="summary" content="Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-04-20 "> 
+    <meta property="article:published_time" content=" 2021-04-22 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/collections-in-kotlin/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/collections-in-kotlin/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/collections-in-kotlin/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/collections-in-kotlin/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
     <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>any(), none() &amp; all() : Kotlin &middot; Suneet Agrawal</title>
+    <title>Collections in Kotlin &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">any(), none() &amp; all() : Kotlin</h1>
+        <h1 class="mx16">Collections in Kotlin</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,10 +245,23 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-        Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are <mark>any</mark>, <mark>non</mark> and <mark>all</mark> functions which were added to the Iterable interface and Map interface.
-        </br>
-        </br>
-        Let try to understand what do they do, why they are required and when to use them. But before we begin, I am assuming a basic knowledge of <mark>Map</mark>, <mark>Set</mark> and <mark>List</mark>.
+        Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in <mark>kotlin.collections</mark> package.
+</div>
+<h3>
+Types of Collection in Kotlin
+</h3>
+<div class="center-justified text-content">
+        There are two types of collection in Kotlin
+        <ol>
+                </br>
+                <li>Immutable
+                </br>
+                The one which can't be modified once the object is created. We can just iterate over them or create a copy of them but we can't modify the actual one.</li>
+                </br>
+                <li>Mutable
+                </br>
+                These can be modified means that we can add items or elements to the original object once they are created along with iteration and copy.</li>
+        </ol>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -264,22 +277,16 @@ if (!doNotTrack) {
     </script>
 </div>
 <div class="center-justified text-content">
-        Any <mark>Set</mark> or <mark>List</mark> implementation implements <mark>Collection</mark> interface (indirectly) which extends <mark>Iterable</mark> and any <mark>Map</mark> implementation implement <mark>Map</mark> interface. All three of them are used to store similar data types with different benefits among the three.
+        To understand the immutable and mutable types, Let's try to understand the interfaces in the Collection package of Kotlin first.
         </br>
         </br>
-        The <mark>List</mark> provides the functionality to maintain the ordered collection. whereas <mark>Set</mark> and <mark>Map</mark> don't provide the ordering. Both of them provides uniqueness but <mark>Map</mark> is a key-value pair mapping.
-        </br>
-        </br>
-        In short, all three of them are used to store data/objects of similar types.
-        </br>
-        </br>
-        Since the collection is involved, filtering will be required to iterate the data faster.
-        </br>
-        To make this filter easier, Kotlin has added a few functions as an extension function to <mark>Iterable</mark> as well as <mark>Map</mark>.
-        </br>
-        </br>
-        Let look at them one by one.
+        Keep in mind we are only talking about the interfaces and implementations of Kotlin. Although, Android is compatible with Java also and we can use the Collections of Java also defined in <mark>java.util</mark> package but Kotlin has a separate Collection and a few of the implementations like <mark>Vector</mark>, <mark>CopyOnWriteArrayList</mark>, <mark>CopyOnWriteArraySet</mark> and many more are not there in Kotlin.
 </div>
+</br>
+</br>
+<img class="blogimg" src="/img/blogs/collection-in-kotlin/collection-in-kotlin.png" alt="Native Android in Unity">
+</br>
+</br>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -294,21 +301,24 @@ if (!doNotTrack) {
     </script>
 </div>
 <h3>
-Any
+Iterable 
 </h3>
 <div class="center-justified text-content">
-        <mark>Any</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which take a <a href="/blogs/higher-order-functions-in-kotlin" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true, if any of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
+        The parent of all the interfaces is <mark>Iterable</mark>. As the name suggests, it confirms the functionality of iteration by the class which implements it. This has an abstract function iterator that returns the <mark>Iterator</mark> reference object.
 </div>
 <pre class="zeropadding">
-  <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>any</b> { it.endsWith("e") })    // true<br/>println(set.<b>any</b> { it.endsWith("e") })    // true<br/>println(map.<b>any</b> { it.value.endsWith("e") })    // true<br/>
+  <br/>/**<br/> * Classes that inherit from this interface can be represented as a sequence of elements that can<br/> * be iterated over.<br/> * @param T the type of element being iterated over. The iterator is covariant on its element type.<br/> */<br/>public interface <b>Iterable</b>&lt;out T&gt; {<br/>    /**<br/>     * Returns an iterator over the elements of this object.<br/>     */<br/>    public operator fun iterator(): Iterator&lt;T&gt;<br/>}<br/>
 </pre>
 
 </br>
+<h3>
+MutableIterable 
+</h3>
 <div class="center-justified text-content">
-        Let's look at the extension function <mark>any</mark>, defined in Kotlin
+        <mark>Iterable</mark> is further extended by another interface ie <mark>MutableIterable</mark>. This particular interface confirms the iteration along with the mutability. This means the object can be mutated or modified.
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Returns `true` if at least one element matches the given [predicate].<br/> * <br/> * @sample samples.collections.Collections.Aggregates.anyWithPredicate<br/> */<br/>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<b>any</b>(predicate: (T) -> Boolean): Boolean {<br/>    if (this is Collection && isEmpty()) return false<br/>    for (element in this) if (predicate(element)) return true<br/>    return false<br/>}<br/><br/><br/>/**<br/> * Returns `true` if at least one entry matches the given [predicate].<br/> * <br/> * @sample samples.collections.Collections.Aggregates.anyWithPredicate<br/> */<br/>public inline fun &lt;K, V&gt; Map&lt;out K, V&gt;.<b>any</b>(predicate: (Map.Entry&lt;K, V&gt;) -> Boolean): Boolean {<br/>    if (isEmpty()) return false<br/>    for (element in this) if (predicate(element)) return true<br/>    return false<br/>}<br/><br/>
+  <br/>/**<br/> * Classes that inherit from this interface can be represented as a sequence of elements that can<br/> * be iterated over and that supports removing elements during iteration.<br/> * @param T the type of element being iterated over. The mutable iterator is invariant on its element type.<br/> */<br/>public interface <b>MutableIterable</b>&lt;out T&gt; : <b>Iterable</b>&lt;T&gt; {<br/>    /**<br/>     * Returns an iterator over the elements of this sequence that supports removing elements during iteration.<br/>     */<br/>    override fun iterator(): MutableIterator&lt;T&gt;<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -325,21 +335,24 @@ Any
     </script>
 </div>
 <h3>
-None
+Collection 
 </h3>
 <div class="center-justified text-content">
-        Similar to <mark>Any</mark>, <mark>None</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true if none of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
+        The <mark>Iterable</mark> is also extended by the <mark>Collection</mark> interface which provides the basic functions like size, isEmpty, contains and containsAll. 
 </div>
 <pre class="zeropadding">
-  <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>none</b> { it.endsWith("e") })    //false<br/>println(set.<b>none</b> { it.endsWith("e") })    //false<br/>println(map.<b>none</b> { it.value.endsWith("e") })    //false<br/>
+  <br/>/**<br/> * A generic collection of elements. Methods in this interface support only read-only access to the collection;<br/> * read/write access is supported through the MutableCollection interface.<br/> * @param E the type of elements contained in the collection. The collection is covariant on its element type.<br/> */<br/>public interface <b>Collection</b>&lt;out E&gt; : <b>Iterable</b>&lt;E&gt; {<br/>    // Query Operations<br/>    /**<br/>     * Returns the size of the collection.<br/>     */<br/>    public val size: Int<br/><br/>    /**<br/>     * Returns `true` if the collection is empty (contains no elements), `false` otherwise.<br/>     */<br/>    public fun isEmpty(): Boolean<br/><br/>    /**<br/>     * Checks if the specified element is contained in this collection.<br/>     */<br/>    public operator fun contains(element: @UnsafeVariance E): Boolean<br/><br/>    override fun iterator(): Iterator&lt;E&gt;<br/><br/>    // Bulk Operations<br/>    /**<br/>     * Checks if all elements in the specified collection are contained in this collection.<br/>     */<br/>    public fun containsAll(elements: Collection&lt;@UnsafeVariance E&gt;): Boolean<br/>}<br/>
 </pre>
 
 </br>
+<h3>
+MutableCollection 
+</h3>
 <div class="center-justified text-content">
-        Let's look at the extension function <mark>none</mark>, defined in Kotlin
+        <mark>MutableIterable</mark> and <mark>Collection</mark> are further extended by <mark>MutableCollection</mark> which provides mutability to the Collection like add, remove, addAll, removeAll, retainAll, clear.
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Returns `true` if no elements match the given [predicate].<br/> * <br/> * @sample samples.collections.Collections.Aggregates.noneWithPredicate<br/> */<br/>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<b>none</b>(predicate: (T) -> Boolean): Boolean {<br/>    if (this is Collection && isEmpty()) return true<br/>    for (element in this) if (predicate(element)) return false<br/>    return true<br/>}<br/><br/><br/>/**<br/> * Returns `true` if no entries match the given [predicate].<br/> * <br/> * @sample samples.collections.Collections.Aggregates.noneWithPredicate<br/> */<br/>public inline fun &lt;K, V&gt; Map&lt;out K, V&gt;.<b>none</b>(predicate: (Map.Entry&lt;K, V&gt;) -> Boolean): Boolean {<br/>    if (isEmpty()) return true<br/>    for (element in this) if (predicate(element)) return false<br/>    return true<br/>}<br/><br/>
+  <br/>/**<br/> * A generic collection of elements that supports adding and removing elements.<br/> *<br/> * @param E the type of elements contained in the collection. The mutable collection is invariant on its element type.<br/> */<br/>public interface <b>MutableCollection</b>&lt;E&gt; : <b>Collection</b>&lt;E&gt;, <b>MutableIterable</b>&lt;E&gt; {<br/>    // Query Operations<br/>    override fun iterator(): MutableIterator&lt;E&gt;<br/><br/>    // Modification Operations<br/>    /**<br/>     * Adds the specified element to the collection.<br/>     *<br/>     * @return `true` if the element has been added, `false` if the collection does not support duplicates<br/>     * and the element is already contained in the collection.<br/>     */<br/>    public fun add(element: E): Boolean<br/><br/>    /**<br/>     * Removes a single instance of the specified element from this<br/>     * collection, if it is present.<br/>     *<br/>     * @return `true` if the element has been successfully removed; `false` if it was not present in the collection.<br/>     */<br/>    public fun remove(element: E): Boolean<br/><br/>    // Bulk Modification Operations<br/>    /**<br/>     * Adds all of the elements of the specified collection to this collection.<br/>     *<br/>     * @return `true` if any of the specified elements was added to the collection, `false` if the collection was not modified.<br/>     */<br/>    public fun addAll(elements: Collection&lt;E&gt;): Boolean<br/><br/>    /**<br/>     * Removes all of this collection's elements that are also contained in the specified collection.<br/>     *<br/>     * @return `true` if any of the specified elements was removed from the collection, `false` if the collection was not modified.<br/>     */<br/>    public fun removeAll(elements: Collection&lt;E&gt;): Boolean<br/><br/>    /**<br/>     * Retains only the elements in this collection that are contained in the specified collection.<br/>     *<br/>     * @return `true` if any element was removed from the collection, `false` if the collection was not modified.<br/>     */<br/>    public fun retainAll(elements: Collection&lt;E&gt;): Boolean<br/><br/>    /**<br/>     * Removes all elements from this collection.<br/>     */<br/>    public fun clear(): Unit<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -356,23 +369,65 @@ None
     </script>
 </div>
 <h3>
-All
+List 
 </h3>
 <div class="center-justified text-content">
-        Similar to <mark>Any</mark> and <mark>None</mark>, <mark>All</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true if all of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
+        <mark>List</mark> is an ordered collection where we can access the elements by indices. <mark>List</mark> interface is extended by <mark>Collection</mark> interface.
+</div>
+</br>
+<h3>
+MutableList 
+</h3>
+<div class="center-justified text-content">
+        <mark>MutableList</mark> is also an ordered collection where we can access the elements by indices but this is mutable. This means we can modify the object created, we can add remove elements it in. <mark>MutableList</mark> is extended by <mark>MutableCollection</mark> interface.
+</div>
+</br>
+<h3>
+Set 
+</h3>
+<div class="center-justified text-content">
+        <mark>Set</mark> is an unordered collection of unique elements. The order of insertion of elements or items is not maintained in <mark>Set</mark>. It is extended by <mark>Collection</mark> interface.
+</div>
+</br>
+<h3>
+MutableSet
+</h3>
+<div class="center-justified text-content">
+        <mark>MutableSet</mark> is also an unordered collection of unique elements but this is mutable. The order of insertion of elements or items is also not maintained in <mark>MutableSet</mark>. It is extended by <mark>MutableCollection</mark> interface.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Map
+</h3>
+<div class="center-justified text-content">
+        <mark>Map</mark> is a set of key-value pairs where Keys are unique, and each of them maps to exactly one value. The values can be duplicates but the keys will be unique. The order of insertion of elements or items is not maintained in the map also. <mark>Map</mark> is immutable means we can't modify the object(add or remove elements) once it's created.
+        </br>
+        </br>
+        This has no connection with any of the above interfaces but this has two objects, keys and values which are of types <mark>Set</mark> and <mark>Collection</mark> respectively.
 </div>
 <pre class="zeropadding">
-  <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>all</b> { it.endsWith("e") })    //false<br/>println(set.<b>all</b> { it.endsWith("e") })    //false<br/>println(map.<b>all</b> { it.value.endsWith("e") })    //false<br/>
+  <br/>/**<br/> * A collection that holds pairs of objects (keys and values) and supports efficiently retrieving<br/> * the value corresponding to each key. Map keys are unique; the map holds only one value for each key.<br/> * Methods in this interface support only read-only access to the map; read-write access is supported through<br/> * the [MutableMap] interface.<br/> * @param K the type of map keys. The map is invariant on its key type, as it<br/> *          can accept key as a parameter (of [containsKey] for example) and return it in [keys] set.<br/> * @param V the type of map values. The map is covariant on its value type.<br/> */<br/>public interface <b>Map</b>&lt;K, out V&gt; {<br/>    <br/>    ...<br/><br/>    /**<br/>     * Returns a read-only [Set] of all keys in this map.<br/>     */<br/>    public val keys: <b>Set</b>&lt;K&gt;<br/><br/>    /**<br/>     * Returns a read-only [Collection] of all values in this map. Note that this collection may contain duplicate values.<br/>     */<br/>    public val values: <b>Collection</b>&lt;V&gt;<br/><br/>    ...<br/>}<br/>
 </pre>
 
 </br>
+<h3>
+MautableMap 
+</h3>
 <div class="center-justified text-content">
-        Let's look at the extension function <mark>all</mark>, defined in Kotlin
+        <mark>MutableMap</mark> is similar to <mark>Map</mark> only which holds key-value but this is mutable. This also has no connection with any of the above interfaces.
 </div>
-<pre class="zeropadding">
-  <br/>/**<br/> * Returns `true` if all elements match the given [predicate].<br/> * <br/> * @sample samples.collections.Collections.Aggregates.all<br/> */<br/>public inline fun &lt;T&gt; Iterable&lt;T&gt;.<b>all</b>(predicate: (T) -> Boolean): Boolean {<br/>    if (this is Collection && isEmpty()) return true<br/>    for (element in this) if (!predicate(element)) return false<br/>    return true<br/>}<br/><br/><br/>/**<br/> * Returns `true` if all entries match the given [predicate].<br/> * <br/> * @sample samples.collections.Collections.Aggregates.all<br/> */<br/>public inline fun &lt;K, V&gt; Map&lt;out K, V&gt;.<b>all</b>(predicate: (Map.Entry&lt;K, V&gt;) -> Boolean): Boolean {<br/>    if (isEmpty()) return true<br/>    for (element in this) if (!predicate(element)) return false<br/>    return true<br/>}<br/><br/>
-</pre>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -386,51 +441,37 @@ All
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<h3>
-Any and None without any params
-</h3>
 <div class="center-justified text-content">
-        <mark>Any</mark> and <mark>None</mark> functions also have an overload to both <mark>Iterable</mark> and <mark>Map</mark> interfaces which don't take any param but just check if the collection is empty or not.
-        </br>
-        </br>
-        <mark>Any</mark> returns true if the collection is not empty whereas <mark>None</mark> return true if the collection is empty.
+        Now that we have a clear picture of interfaces, lets look at how can we initialise the respective objects in Kotlin
 </div>
+</br>
+<h3>
+Immutable and Mutable List
+</h3>
 <pre class="zeropadding">
-  <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>any()</b>)    //true<br/>println(set.<b>any()</b>)    //true<br/>println(map.<b>any()</b>)    //true<br/><br/>println(list.<b>none()</b>)    //false<br/>println(set.<b>none()</b>)    //false<br/>println(map.<b>none()</b>)    //false<br/>
+  <br/><l>//Immutable Lists</l><br/>val list = listOf(1, 2, 3)<br/>val listOfNonNull = listOfNotNull(1, 2, 3)<br/><br/><l>//Mutable Lists</l><br/>val arrayList = ArrayList<Int>()<br/>val arrayList2 = arrayListOf(1, 2, 3)<br/>val mutableList = mutableListOf(1, 2, 3)<br/>
 </pre>
 
 </br>
-<div class="center-justified text-content">
-        Let's look at the extension functions, defined in Kotlin
-</div>
+<h3>
+Immutable and Mutable Set
+</h3>
 <pre class="zeropadding">
-  <br/>/**<br/> * Returns `true` if collection has at least one element.<br/> * <br/> * @sample samples.collections.Collections.Aggregates.any<br/> */<br/>public fun &lt;T&gt; Iterable&lt;T&gt;.<b>any()</b>: Boolean {<br/>    if (this is Collection) return !isEmpty()<br/>    return iterator().hasNext()<br/>}<br/><br/><br/>/**<br/> * Returns `true` if map has at least one entry.<br/> * <br/> * @sample samples.collections.Collections.Aggregates.any<br/> */<br/>public fun &lt;K, V&gt; Map&lt;out K, V&gt;.<b>any()</b>: Boolean {<br/>    return !isEmpty()<br/>}<br/><br/>/**<br/> * Returns `true` if the collection has no elements.<br/> * <br/> * @sample samples.collections.Collections.Aggregates.none<br/> */<br/>public fun &lt;T&gt; Iterable&lt;T&gt;.<b>none()</b>: Boolean {<br/>    if (this is Collection) return isEmpty()<br/>    return !iterator().hasNext()<br/>}<br/><br/>/**<br/> * Returns `true` if the map has no entries.<br/> * <br/> * @sample samples.collections.Collections.Aggregates.none<br/> */<br/>public fun &lt;K, V&gt; Map&lt;out K, V&gt;.<b>none()</b>: Boolean {<br/>    return isEmpty()<br/>}<br/><br/>
+  <br/><l>//Immutable Sets</l><br/>val set = setOf(1, 2, 3)<br/><br/><l>//Mutable Sets</l><br/>val hashSet = hashSetOf(1, 2, 3)<br/>val mutableSet = mutableSetOf(1, 2, 3)<br/>val linkedSet = linkedSetOf(1, 2, 3)<br/>
 </pre>
 
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
+</br>
 <h3>
-Benefits of using these functions
+Immutable and Mutable Map
 </h3>
+<pre class="zeropadding">
+  <br/><l>//Immutable Maps</l><br/>val map = mapOf(1 to "One", 2 to "Two", 3 to "Three")<br/><br/><l>//Mutable Maps</l><br/>val hashMap = hashMapOf(1 to "One", 2 to "Two", 3 to "Three")<br/>val mutableMap = mutableMapOf(1 to "One", 2 to "Two", 3 to "Three")<br/>val sortedMap = sortedMapOf(1 to "One", 2 to "Two", 3 to "Three")<br/>
+</pre>
+
 <div class="center-justified text-content">
-        There is no difference in the implementation but since these are inbuild <a href="/blogs/inline-function-kotlin" target="_blank">inline function</a>, you don’t have to write the entire iteration and condition check on your own. Please note that there is no difference in time or space complexity also.
         </br>
         </br>
-        The only reason I wrote about this as a blog is because I feel I am lazy and prefers to use all inbuild functions to write fewer lines of code. :) These were a few of them.
-        </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/collection-filtering.html#test-predicates" target="_blank">Kotlin docs</a>
+        Reference: <a href="https://kotlinlang.org/docs/collections-overview.html" target="_blank">Kotlin docs</a>
         </br>
 </div>
 <div class="col-xs-12 googleads">
@@ -453,8 +494,8 @@ Benefits of using these functions
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/collections-in-kotlin">
-        Collections in Kotlin &gt;&gt;
+        <a href="/blogs/higher-order-functions-in-kotlin">
+        Higher-order functions in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

@@ -6,7 +6,16 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collections in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</guid>
+      <description>Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package.   Types of Collection in Kotlin  There are two types of collection in Kotlin   Immutable  The one which can&#39;t be modified once the object is created.</description>
+    </item>
+    
     <item>
       <title>any(), none() &amp; all() : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>

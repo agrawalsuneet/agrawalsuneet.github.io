@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Collections in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</guid>
+      <description>Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package.   Types of Collection in Kotlin  There are two types of collection in Kotlin   Immutable  The one which can&#39;t be modified once the object is created.</description>
+    </item>
+    
+    <item>
       <title>any(), none() &amp; all() : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
@@ -22,7 +31,7 @@
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (48 posts)   any(), none() &amp;amp; all() : Kotlin   Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface. read more  20 April 2021  Kotlin Android      if vs if let vs guard let in Swift   if let and guard let are two conditional operators or condition checker which make our life super easy.</description>
+      <description>Technical Blogs  Technical Blogs (49 posts)   Collections in Kotlin   Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package. read more  22 April 2021  Kotlin Android      any(), none() &amp;amp; all() : Kotlin   Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java.</description>
     </item>
     
     <item>

@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Why Map does not extend Collection interface?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</guid>
+      <description>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set.   The Map is a well-known data structure used to store key-value pairs where keys will be unique.    (adsbygoogle = window.adsbygoogle || []).push({});   We can take a reference of any language but let&#39;s look at the example of Java for reference as Collection Framework from Java is very popular.</description>
+    </item>
+    
+    <item>
       <title>Collections in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
@@ -31,7 +40,7 @@
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (49 posts)   Collections in Kotlin   Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package. read more  22 April 2021  Kotlin Android      any(), none() &amp;amp; all() : Kotlin   Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java.</description>
+      <description>Technical Blogs  Technical Blogs (50 posts)   Why Map does not extend Collection interface   Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set. The Map is a well-known data structure used to store key-value pairs where keys will be unique. read more  23 April 2021  Programming-Basics      Collections in Kotlin   Collections are a common concept for most programming languages.</description>
     </item>
     
     <item>

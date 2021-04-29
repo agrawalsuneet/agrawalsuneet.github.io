@@ -6,11 +6,11 @@
     <description>Recent content in Programming-Basics on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/programming-basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/programming-basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Map does not extend Collection interface?</title>
       <link>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</link>
-      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</guid>
       <description>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set.   The Map is a well-known data structure used to store key-value pairs where keys will be unique.    (adsbygoogle = window.adsbygoogle || []).push({});   We can take a reference of any language but let&#39;s look at the example of Java for reference as Collection Framework from Java is very popular.</description>

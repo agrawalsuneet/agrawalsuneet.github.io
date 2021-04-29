@@ -55,7 +55,7 @@
     <meta name="abstract" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta name="summary" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-10-26 "> 
+    <meta property="article:published_time" content=" 2021-04-29 "> 
 
     <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-let-function/">
     <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-let-function/">
@@ -269,8 +269,8 @@ if (!doNotTrack) {
                 <li>let</li>
                 <li>with</li>
                 <li>run</li>
-                <li><a href="/blogs/kotlin-apply-function" target="_blank">apply</a></li>
-                <li>also</li>
+                <li><a href="/blogs/kotlin-apply-function/" target="_blank">apply</a></li>
+                <li><a href="/blogs/kotlin-also-function/" target="_blank">also</a></li>
         </ul>
         </br>
         To keep this article short and to the point, we will talk only about <mark>let</mark> in this article and all the use cases around it.
@@ -285,11 +285,15 @@ if (!doNotTrack) {
   <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its argument <br/> * and returns its result.<br/> *<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun &lt;T, R&gt; T.<b>let</b>(block: (T) -> R): R {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    return block(this)<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
         <mark>let</mark> is an extension function to Template class which takes a lambda as a parameter, apply contract on it and ultimately return the execution of the lambda we passed as a parameter to it.
-        </br>
-        </br>
+</div>
+</br>
+<h3>
         This clarifies a few things
+</h3>
+<div class="center-justified text-content">
         <ol>
                 <li>The return type of the let function is nothing but the last expression we returned from our passed lambda parameter.</li>
                 <li>Since its an extension function to the Template class, it can be called on any object.</li>
@@ -308,11 +312,11 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+</br>
+<h3>
+Now let's understand what is the contract.
+</h3>
 <div class="center-justified text-content">
-        </br>
-        <h4>
-        Now let's understand what is the contract.
-        </h4>
         The contract is nothing but a contract applied to the passed lambda as a parameter.
 </div>
 <pre class="zeropadding">
@@ -323,9 +327,9 @@ if (!doNotTrack) {
         This is exactly the same contract as to any other scope function. This superimposes some conditions on the lambda we passed as a parameter to the <mark>let</mark> function. What conditions it superimposed, we need to check the parameter of the contract
 </div>
 </br>
-<h4>
+<h3>
 And what contract applied in the <mark>let</mark> function
-</h4>
+</h3>
 <pre class="zeropadding">
   <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
 </pre>
@@ -337,18 +341,18 @@ And what contract applied in the <mark>let</mark> function
         <li>The number of times this lambda function will be invoked (which is exactly once in our case) which is an enum.</li>
         </ol>
         The above conditions are clear from there definition itself.
-        </br>
+</div>
+</br>
         <h3>
         So basically, let function will be
         </h3>
+<div class="center-justified text-content">
         <ul>
         <li>called only during the owner function will be called.</li>
         <li>called ONLY ONCE.</li>
         <li>called on the calling object.</li>
         <li>and will return the expression returned by the lambda passed to the <mark>let</mark> function.</li>
         </ul>
-</div>
-<div class="center-justified text-content">
 </div>
 <div class="col-xs-12 googleads">
     
@@ -373,6 +377,7 @@ Now let's look at the use cases
   <br/>class <b>Employee</b> {<br/>    var firstName: String? = null<br/>    var age: Int = 0<br/>}<br/><br/>val employee: <b>Employee?</b> = Employee()<br/>employee?.firstName = "Suneet"<br/>employee?.age = 27<br/><br/>employee?.<b>let</b> {<br/>    println(it.age)<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
         Please note that we can point to the calling object by using <mark>it</mark>. 
         </br>
@@ -382,6 +387,7 @@ Now let's look at the use cases
   <br/>employee?.<b>let</b> { person -><br/>    person.firstName?.<b>let</b> { name -><br/>        println(name)<br/>    }<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
         Here the <mark>person</mark> and <mark>name</mark> are the named variable within the let function scope.
         </br>
@@ -421,10 +427,10 @@ Now let's look at the use cases
 </pre>
 
 </br>
-<div class="center-justified text-content">
-        <h3>
+<h3>
         Two things to keep in mind about <mark>let</mark>,
-        </h3>
+</h3>
+<div class="center-justified text-content">
         <ol>
                 <li><mark>let</mark> uses the context as <mark>it</mark> or we can use a named parameter.</li>
                 <li><mark>let</mark> return the last expression of the lambda passed which can also be void.</li>

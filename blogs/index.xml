@@ -6,11 +6,38 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kotlin also function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-also-function/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-also-function/</guid>
+      <description>In continuation to my previous post where I explained about Kotlin let function and Kotlin apply function, let&#39;s try to understand today about also function today.   Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
+      <title>Kotlin apply function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
+      <description>In continuation to my previous post where I explained about Kotlin let function, let&#39;s try to understand today about apply function today.   Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
+      <title>Kotlin let function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
     <item>
       <title>Why Map does not extend Collection interface?</title>
       <link>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</link>
-      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</guid>
       <description>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set.   The Map is a well-known data structure used to store key-value pairs where keys will be unique.    (adsbygoogle = window.adsbygoogle || []).push({});   We can take a reference of any language but let&#39;s look at the example of Java for reference as Collection Framework from Java is very popular.</description>
@@ -215,30 +242,12 @@
     </item>
     
     <item>
-      <title>Kotlin apply function</title>
-      <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
-      <description>In continuation to my previous post where I explained about Kotlin let scope function, let&#39;s try to understand today about apply function today.   Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
-    </item>
-    
-    <item>
       <title>Kotlin Extension Property</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-extension-property/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-extension-property/</guid>
       <description>Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties.   A very interesting question asked to me during an interview or even a general situation where we need to add a property (variable) to an existing class without extending it.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin let function</title>
-      <link>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
     </item>
     
     <item>

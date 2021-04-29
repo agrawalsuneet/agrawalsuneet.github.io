@@ -304,7 +304,7 @@ if (!doNotTrack) {
 </pre>
 
 <div class="center-justified text-content">
-        Please note that both <mark>takeIf</mark> and <mark>takeUnless</mark> returns <mark>null</mark> if the condition is not satisfied, so to chain it further we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin" target="_blank">safe call or null check</a>.
+        Please note that both <mark>takeIf</mark> and <mark>takeUnless</mark> returns <mark>null</mark> if the condition is not satisfied, so to chain it further we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/" target="_blank">safe call or null check</a>.
         </br>
         </br>
         Let's take an example of <mark>takeUnless</mark>.
@@ -314,7 +314,7 @@ if (!doNotTrack) {
 </pre>
 
 <div class="center-justified text-content">
-        In this case, this will only proceed when the latency is more than 20 ie not less than 20, and will chain it further. Also, if the condition is false that means if the latency is less than 20, it will return null so we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin" target="_blank">safe call or null check</a>.
+        In this case, this will only proceed when the latency is more than 20 ie not less than 20, and will chain it further. Also, if the condition is false that means if the latency is less than 20, it will return null so we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/" target="_blank">safe call or null check</a>.
         </br>
         </br>
         Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#takeif-and-takeunless" target="_blank">Kotlin docs</a>

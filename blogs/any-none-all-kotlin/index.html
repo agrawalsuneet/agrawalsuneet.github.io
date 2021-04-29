@@ -297,7 +297,7 @@ if (!doNotTrack) {
 Any
 </h3>
 <div class="center-justified text-content">
-        <mark>Any</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which take a <a href="/blogs/higher-order-functions-in-kotlin" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true, if any of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
+        <mark>Any</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which take a <a href="/blogs/higher-order-functions-in-kotlin/" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true, if any of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
 </div>
 <pre class="zeropadding">
   <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>any</b> { it.endsWith("e") })    // true<br/>println(set.<b>any</b> { it.endsWith("e") })    // true<br/>println(map.<b>any</b> { it.value.endsWith("e") })    // true<br/>
@@ -328,7 +328,7 @@ Any
 None
 </h3>
 <div class="center-justified text-content">
-        Similar to <mark>Any</mark>, <mark>None</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true if none of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
+        Similar to <mark>Any</mark>, <mark>None</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin/" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true if none of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
 </div>
 <pre class="zeropadding">
   <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>none</b> { it.endsWith("e") })    //false<br/>println(set.<b>none</b> { it.endsWith("e") })    //false<br/>println(map.<b>none</b> { it.value.endsWith("e") })    //false<br/>
@@ -359,7 +359,7 @@ None
 All
 </h3>
 <div class="center-justified text-content">
-        Similar to <mark>Any</mark> and <mark>None</mark>, <mark>All</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true if all of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
+        Similar to <mark>Any</mark> and <mark>None</mark>, <mark>All</mark> is a function that is added as an extension to <mark>Iterable</mark> and <mark>Map</mark> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin/" target="_blank">higher-order function</a> as param to predicate the condition and return <mark>Boolean</mark> as true if all of the items in <mark>List</mark>, <mark>Set</mark> or <mark>Map</mark> confirms that condition, else return false.
 </div>
 <pre class="zeropadding">
   <br/>val list = listOf("one", "two", "three", "four")<br/>val set = setOf("one", "two", "three", "four")<br/>val map = mapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")<br/><br/>println(list.<b>all</b> { it.endsWith("e") })    //false<br/>println(set.<b>all</b> { it.endsWith("e") })    //false<br/>println(map.<b>all</b> { it.value.endsWith("e") })    //false<br/>
@@ -424,7 +424,7 @@ Any and None without any params
 Benefits of using these functions
 </h3>
 <div class="center-justified text-content">
-        There is no difference in the implementation but since these are inbuild <a href="/blogs/inline-function-kotlin" target="_blank">inline function</a>, you don’t have to write the entire iteration and condition check on your own. Please note that there is no difference in time or space complexity also.
+        There is no difference in the implementation but since these are inbuild <a href="/blogs/inline-function-kotlin/" target="_blank">inline function</a>, you don’t have to write the entire iteration and condition check on your own. Please note that there is no difference in time or space complexity also.
         </br>
         </br>
         The only reason I wrote about this as a blog is because I feel I am lazy and prefers to use all inbuild functions to write fewer lines of code. :) These were a few of them.

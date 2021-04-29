@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin extension property,kotlin extension function,extension property kotlin,kotlin extension">
+    <meta name="keywords" content="kotlin apply,apply kotlin,apply function kotlin,.apply kotlin">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Kotlin Extension Property" />
-    <meta property="og:title" content="Kotlin Extension Property">
-    <meta property="twitter:title" content="Kotlin Extension Property">
+    <meta name="title" content="Suneet Agrawal | Kotlin also function" />
+    <meta property="og:title" content="Kotlin also function">
+    <meta property="twitter:title" content="Kotlin also function">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Kotlin Extension Property">
-    <meta name="description" content="Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties. Is it even possible?">
-    <meta property="og:description" content="Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties. Is it even possible?">
-    <meta property="twitter:description" content="Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties. Is it even possible?">
-    <meta name="abstract" content="Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties. Is it even possible?">
-    <meta name="summary" content="Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties. Is it even possible?"> 
+    <meta name="topic" content="Kotlin also function">
+    <meta name="description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+    <meta property="og:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+    <meta property="twitter:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+    <meta name="abstract" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
+    <meta name="summary" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-10-26 "> 
+    <meta property="article:published_time" content=" 2021-04-29 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-extension-property/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-extension-property/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-extension-property/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-extension-property/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
     <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>Kotlin Extension Property &middot; Suneet Agrawal</title>
+    <title>Kotlin also function &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Kotlin Extension Property</h1>
+        <h1 class="mx16">Kotlin also function</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,17 +245,10 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-        Extension functions are really-really helpful while writing code in Kotlin. You don't have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties.
+        In continuation to my previous post where I explained about <a href="/blogs/kotlin-let-function/" target="_blank">Kotlin let function</a> and <a href="/blogs/kotlin-apply-function/" target="_blank">Kotlin apply function</a>, let's try to understand today about <mark>also</mark> function today.
         </br>
         </br>
-        A very interesting question asked to me during an interview or even a general situation where we need to add a property (variable) to an existing class without extending it. 
-        </br>
-        <h4>
-            Is it even possible? 
-            </br>
-            </br>
-            Can we add a property/variable as an extension to an existing class?
-        </h4>
+        Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -271,33 +264,127 @@ if (!doNotTrack) {
     </script>
 </div>
 <div class="center-justified text-content">
-        According to the theory of extension functions, this is not possible since you can only add the extension functions but not properties, but there is a workaround which can solve the purpose.
+        There are a few scope functions
+        <ul>
+                <li><a href="/blogs/kotlin-let-function/" target="_blank">let</a></li>
+                <li>with</li>
+                <li>run</li>
+                <li><a href="/blogs/kotlin-apply-function/" target="_blank">apply</a></li>
+                <li>also</li>
+        </ul>
+        </br>
+        To keep this article short and to the point, we will talk only about <mark>also</mark> in this article and all the use cases around it.
         </br>
         </br>
-        Let's try to understand that workaround first and then talk about the limitations.
+        <mark>also</mark> is used to perform some actions on the object and returns the object itself. A reference to the calling object is available inside the also function instead of the context (<mark>this</mark>).
+        </br>
+        More than functional, <mark>also</mark> can be used as grammatical where we can read as "also do the following with the object.
         </br>
         </br>
-        Say there is a class name <mark>Temperature</mark> which only has one property <mark>tempInCelsius</mark> which it takes as a parameter in the constructor.
+        To understand <mark>also</mark> function lets look at the implementation of <mark>also</mark> function first.
 </div>
 <pre class="zeropadding">
-  <br/>class <b>Temperature</b>(var tempInCelsius: Float)<br/>
+  <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its argument <br/> * and returns `this` value.<br/> */<br/>@kotlin.internal.InlineOnly<br/>@SinceKotlin("1.1")<br/>public inline fun &lt;T&gt; T.<b>also(</b>block: (T) -> Unit): T {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    block(this)<br/>    return this<br/>}<br/>
+</pre>
+
+</br>
+<div class="center-justified text-content">
+        <mark>also</mark> is an extension function to Template class which takes a lambda as a parameter, apply contract on it, execute the lambda function within the scope of calling object and ultimately return the same calling object of Template class itself.
+</div>
+</br>
+<h3>
+        This clarifies a few things
+</h3>
+<div class="center-justified text-content">
+        <ol>
+                <li>The return type of the <mark>also</mark> function is nothing but the same calling object.</li>
+                <li>Since its an extension function to the Template class, it can be called on any object.</li>
+        </ol>
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</br>
+<h3>
+Now let's understand what is the contract.
+</h3>
+<div class="center-justified text-content">
+        The contract is nothing but a contract applied to the passed lambda as a parameter.
+</div>
+<pre class="zeropadding">
+  <br/>/**<br/> * Specifies the contract of a function.<br/> *<br/> * The contract description must be at the beginning of a function and have at least one effect.<br/> *<br/> * Only the top-level functions can have a contract for now.<br/> *<br/> * @param builder the lambda where the contract of a function is described with the help of the [ContractBuilder] members.<br/> *<br/>@ContractsDsl<br/>@ExperimentalContracts<br/>@InlineOnly<br/>@SinceKotlin("1.3")<br/>@Suppress("UNUSED_PARAMETER")<br/>public inline fun <b>contract</b>(builder: ContractBuilder.() -> Unit) { }<br/>
 </pre>
 
 <div class="center-justified text-content">
-        Now I want to add one more property <mark>tempInFahrenheit</mark> which will be holding the same value of temperature but in Fahrenheit. 
-        </br>
-        </br>
-        I actually can't add a property for the same but I can add getter and setter which are nothing but the extension functions to the same.
+        This is exactly the same contract as to any other scope function. This superimposes some conditions on the lambda we passed as a parameter to the <mark>also</mark> function. What conditions it superimposed, we need to check the parameter of the contract
 </div>
+</br>
+<h3>
+And what contract applied in the <mark>also</mark> function
+</h3>
 <pre class="zeropadding">
-  <br/>var <b>Temperature</b>.tempInFahrenheit: Float<br/>    get() = (tempInCelsius * 9 / 5) + 32<br/>    set(value) {<br/>        tempInCelsius = (value - 32) * 5 / 9<br/>    }<br/>
+  <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
 </pre>
 
 <div class="center-justified text-content">
-        and I can call this property simply like any other property of that class.
+        It superimposes 2 conditions
+        <ol>
+        <li>The lambda will be invoked only during owner function call and it won't be called once the owner function is completed.</li>
+        <li>The number of times this lambda function will be invoked (which is exactly once in our case) which is an enum.</li>
+        </ol>
+        The above conditions are clear from there definition itself.
+</div>
+</br>
+<h3>
+        So basically, also function will be
+</h3>
+<div class="center-justified text-content">
+        <ul>
+        <li>called only during the owner function will be called.</li>
+        <li>called ONLY ONCE.</li>
+        <li>called on the calling object.</li>
+        <li>and will return the object itself on which the <mark>also</mark> function is called.</li>
+        </ul>
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Now let's look at the use cases
+</h3>
+<div class="center-justified text-content">
+        <mark>also</mark> is used to perform actions on the object that take the context object as an argument. 
 </div>
 <pre class="zeropadding">
-  <br/>val temp = Temperature(32f)<br/>println(temp.tempInFahrenheit)<br/><br/>temp.tempInFahrenheit = 90f<br/>println(temp.tempInCelsius)<br/>
+  <br/>class <b>ConnectionManager</b> {<br/>    var endPoint: String = ""<br/>    var credentials: Pair&lt;String, String&gt; = Pair("", "")<br/><br/>    fun connect() {<br/>        //make network connection<br/>    }<br/>}<br/><br/>val connectionManager = ConnectionManager()<br/>        .apply {<br/>            endPoint = "http://endpoint.com"<br/>            credentials = Pair("username", "password")<br/>        }<br/>        .<b>also</b> {<br/>            it.connect()<br/>        }<br/>
+</pre>
+
+</br>
+<div class="center-justified text-content">
+        it can also be used for chaining as <mark>also</mark> returns this context only.
+</div>
+<pre class="zeropadding">
+  <br/>val connectionManager = ConnectionManager()<br/>        .apply {<br/>            endPoint = "http://endpoint.com"<br/>            credentials = Pair("username", "password")<br/>        }<br/>        .<b>also</b> {<br/>            it.connect()<br/>        }<br/>        .<b>also</b> {<br/>          print("connection is made on ${it.endPoint}")<br/>        }<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -314,42 +401,29 @@ if (!doNotTrack) {
     </script>
 </div>
 <div class="center-justified text-content">
-        <h4>
-        What exactly we did?
-        </h4>
-        We didn't add any property but using the syntactical sugar, we added one setter and one getter under the name of one variable, which ultimately read and writes to one of the existing variables.
-        </br>
-        </br>
-        This setter function takes a float value and the setter also return the float value. This might look like a new property but this is not. This is just a set of new getter setter. 
-        </br>
-        </br>
-        <h4>
-        What are the limitations?
-        </h4>
-        Since we never added an actual property, we can't use the backing field.
+        we can even use a named parameter in <mark>also</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>var <b>Temperature</b>.tempInFahrenheit: Float = 32 <e>//compilation error</e><br/><e>initializers are not allowed for extension properties</e><br/><br/>var <b>Temperature</b>.tempInFahrenheit: Float<br/>    get() = field <e>//compilation error</e><br/>    set(value) {<br/>        field = value <e>//compilation error</e><br/>    }<br/>
+  <br/>val connectionManager = ConnectionManager()<br/>        .apply {<br/>            endPoint = "http://endpoint.com"<br/>            credentials = Pair("username", "password")<br/>        }<br/>        .<b>also</b> { manager -><br/>            manager.connect()<br/>        }<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        Also, we can only do some processing but to store that value we need some existing variable only within the class. We can never save the value in the so-called extension property variable (<mark>tempInFahrenheit</mark> in our case) as at the end it is not a property.
-        </br>
-        </br>
-        So to answer the question, there is no possible way you can add an extension property with backing field or which can store value but using syntactical sugar, you can add a property which ultimately is a getter or/and setter which can do the job for you.
-        </br>
-        </br>
+        Since there is no <mark>this</mark> context passed inside also function, it doesn't shadow the <mark>this</mark> context from the outer scope.
 </div>
+</br>
 <div class="center-justified text-content">
-    Read more about extension functions on the below links.
-    <ul>
-        <li><a href="/blogs/extensions-in-kotlin/">Extensions in Kotlin</a></li>
-        <li><a href="/blogs/how-extension-functions-resolved/">How extension functions resolved?</a></li>
-        <li><a href="/blogs/inheritance-vs-extension-functions/">Inheritance vs Extension functions</a></li>
-    </ul>
-    </br>
-    Reference: <a href="https://kotlinlang.org/docs/reference/extensions.html#extension-properties" target="_blank">Kotlin docs</a>
-    </br>
+        <h3>
+        Two things to keep in mind about <mark>also</mark>,
+        </h3>
+        <ol>
+                <li><mark>also</mark> uses the context as <mark>it</mark> or we can use a named parameter.</li>
+                <li><mark>also</mark> returns the calling object itself.</li>
+        </ol>
+        </br>
+        </br>
+        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#also" target="_blank">Kotlin docs</a>
+        </br>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -366,13 +440,13 @@ if (!doNotTrack) {
 </div>
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
-        <a href="/blogs">
+        <a href="/blogs/">
         &lt;&lt; All Blogs
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/kotlin-enum-classes">
-        Kotlin Enum Classes &gt;&gt;
+        <a href="/blogs/higher-order-functions-in-kotlin/">
+        Higher-order functions in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

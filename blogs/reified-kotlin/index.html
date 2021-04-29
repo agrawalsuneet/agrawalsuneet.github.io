@@ -328,7 +328,7 @@ Now, let's try to get the type of this template at run time within the function.
         Reified
 </h3>
 <div class="center-justified text-content">
-        To get the information about the type of Template class, we will have to use a keyword called <mark>reified</mark> in Kotlin. Also, in order to use the <mark>reified</mark> type, we need to mark the function as <a href="/blogs/inline-function-kotlin" target="_blank">inline</a>.
+        To get the information about the type of Template class, we will have to use a keyword called <mark>reified</mark> in Kotlin. Also, in order to use the <mark>reified</mark> type, we need to mark the function as <a href="/blogs/inline-function-kotlin/" target="_blank">inline</a>.
 </div>
 <pre class="zeropadding">
   <br/><b>inline</b> fun &lt;<b>reified</b> T&gt; Array&lt;T&gt;.average() : Float {<br/>    print("${T::class.java}")<br/><br/>    //return default value<br/>    return 0.0f<br/>}<br/>

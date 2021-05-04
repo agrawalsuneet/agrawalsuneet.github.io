@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kotlin with function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-with-function/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-with-function/</guid>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
+    <item>
       <title>Kotlin also function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-also-function/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
@@ -40,7 +49,7 @@
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (51 posts)   Kotlin also function   Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function. read more  29 April 2021  Kotlin Android      Why Map does not extend Collection interface   Collections in any language is an interface that stores similar data type objects and provides an iteration functionality.</description>
+      <description>Technical Blogs  Technical Blogs (52 posts)   Kotlin with function   Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function. read more  04 May 2021  Kotlin Android      Kotlin also function   Scope functions are nothing but the functions which define a scope to the calling object.</description>
     </item>
     
     <item>

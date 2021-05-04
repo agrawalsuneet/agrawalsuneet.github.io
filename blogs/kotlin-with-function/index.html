@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin apply,apply kotlin,apply function kotlin,.apply kotlin">
+    <meta name="keywords" content="kotlin scope functions,kotlin with,with kotlin,with function kotlin">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Kotlin also function" />
-    <meta property="og:title" content="Kotlin also function">
-    <meta property="twitter:title" content="Kotlin also function">
+    <meta name="title" content="Suneet Agrawal | Kotlin with function" />
+    <meta property="og:title" content="Kotlin with function">
+    <meta property="twitter:title" content="Kotlin with function">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Kotlin also function">
+    <meta name="topic" content="Kotlin with function">
     <meta name="description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta property="og:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta property="twitter:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta name="abstract" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta name="summary" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-04-29 "> 
+    <meta property="article:published_time" content=" 2021-05-04 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-with-function/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-with-function/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-with-function/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-also-function/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-with-function/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
     <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>Kotlin also function &middot; Suneet Agrawal</title>
+    <title>Kotlin with function &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Kotlin also function</h1>
+        <h1 class="mx16">Kotlin with function</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,10 +245,10 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-        In continuation to my previous post where I explained about <a href="/blogs/kotlin-let-function/" target="_blank">Kotlin let function</a> and <a href="/blogs/kotlin-apply-function/" target="_blank">Kotlin apply function</a>, let's try to understand today about <mark>also</mark> function today.
+        Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.
         </br>
         </br>
-        Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.
+        Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -267,38 +267,41 @@ if (!doNotTrack) {
         There are a few scope functions
         <ul>
                 <li><a href="/blogs/kotlin-let-function/" target="_blank">let</a></li>
-                <li><a href="/blogs/kotlin-with-function/" target="_blank">with</a></li>
+                <li>with</li>
                 <li>run</li>
                 <li><a href="/blogs/kotlin-apply-function/" target="_blank">apply</a></li>
-                <li>also</li>
+                <li><a href="/blogs/kotlin-also-function/" target="_blank">also</a></li>
         </ul>
         </br>
-        To keep this article short and to the point, we will talk only about <mark>also</mark> in this article and all the use cases around it.
+        To keep this article short and to the point, we will talk only about <mark>with</mark> in this article and all the use cases around it.
         </br>
         </br>
-        <mark>also</mark> is used to perform some actions on the object and returns the object itself. A reference to the calling object is available inside the also function instead of the context (<mark>this</mark>).
+        <mark>with</mark> is not an extension function but a normal function that takes a Template class object and a higher-order function as parameters, applies the operations to the passed Template class object and return the lambda expression or results. The return type can also be <mark>void</mark>.
         </br>
-        More than functional, <mark>also</mark> can be used as grammatical where we can read as "also do the following with the object".
+        More than functional, <mark>with</mark> can be used as grammatical where we can read as "with this object, do the following.".
+</div>
+</br>
+<h3>
+        Why with is not an extension function?
+</h3>
+<div class="center-justified text-content">
+        <mark>with</mark> is not an extension function because we don't want to use it for chaining purpose. For chaining purpose, we have <mark>let</mark>, <mark>also</mark> and <mark>apply</mark> scope functions. <mark>with</mark> can only be the starting point of any expression. That's the reason it's not an extension function to the Template class.
         </br>
         </br>
-        To understand <mark>also</mark> function lets look at the implementation of <mark>also</mark> function first.
+        To understand <mark>with</mark> function lets look at the implementation of <mark>with</mark> function first.
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its argument <br/> * and returns `this` value.<br/> */<br/>@kotlin.internal.InlineOnly<br/>@SinceKotlin("1.1")<br/>public inline fun &lt;T&gt; T.<b>also(</b>block: (T) -> Unit): T {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    block(this)<br/>    return this<br/>}<br/>
+  <br/>/**<br/> * Calls the specified function [block] with the given [receiver] as its receiver and returns its result.<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun &lt;T, R&gt; with(receiver: T, block: T.() -> R): R {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    return receiver.block()<br/>}<br/>
 </pre>
 
-</br>
-<div class="center-justified text-content">
-        <mark>also</mark> is an extension function to Template class which takes a lambda as a parameter, apply contract on it, execute the lambda function within the scope of calling object and ultimately return the same calling object of Template class itself.
-</div>
 </br>
 <h3>
         This clarifies a few things
 </h3>
 <div class="center-justified text-content">
         <ol>
-                <li>The return type of the <mark>also</mark> function is nothing but the same calling object.</li>
-                <li>Since its an extension function to the Template class, it can be called on any object.</li>
+                <li>The return type of the with function is nothing but the last expression we returned from our passed lambda parameter.</li>
+                <li>Although it's not an extension function but we can pass any object as the first param to with function.</li>
         </ol>
 </div>
 <div class="col-xs-12 googleads">
@@ -326,11 +329,11 @@ Now let's understand what is the contract.
 </pre>
 
 <div class="center-justified text-content">
-        This is exactly the same contract as to any other scope function. This superimposes some conditions on the lambda we passed as a parameter to the <mark>also</mark> function. What conditions it superimposed, we need to check the parameter of the contract
+        This is exactly the same contract as to any other scope function. This superimposes some conditions on the lambda we passed as a parameter to the <mark>with</mark> function. What conditions it superimposed, we need to check the parameter of the contract
 </div>
 </br>
 <h3>
-And what contract applied in the <mark>also</mark> function
+And what contract applied in the <mark>with</mark> function
 </h3>
 <pre class="zeropadding">
   <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
@@ -346,14 +349,14 @@ And what contract applied in the <mark>also</mark> function
 </div>
 </br>
 <h3>
-        So basically, also function will be
+        So basically, with function will be
 </h3>
 <div class="center-justified text-content">
         <ul>
         <li>called only during the owner function will be called.</li>
         <li>called ONLY ONCE.</li>
         <li>called on the calling object.</li>
-        <li>and will return the object itself on which the <mark>also</mark> function is called.</li>
+        <li>and will return the expression returned by the lambda passed to the <mark>with</mark> function.</li>
         </ul>
 </div>
 <div class="col-xs-12 googleads">
@@ -373,18 +376,31 @@ And what contract applied in the <mark>also</mark> function
 Now let's look at the use cases
 </h3>
 <div class="center-justified text-content">
-        <mark>also</mark> is used to perform actions on the object that take the context object as an argument. 
+        <mark>with</mark> is used to call the function on the context object without providing the lambda result.
+        </br>
+        This means <mark>with</mark> can't be chained or we can't pass any lambda result to <mark>with</mark> function. <mark>with</mark> will always be the starting point of any expression.
 </div>
 <pre class="zeropadding">
-  <br/>class <b>ConnectionManager</b> {<br/>    var endPoint: String = ""<br/>    var credentials: Pair&lt;String, String&gt; = Pair("", "")<br/><br/>    fun connect() {<br/>        //make network connection<br/>    }<br/>}<br/><br/>val connectionManager = ConnectionManager()<br/>        .apply {<br/>            endPoint = "http://endpoint.com"<br/>            credentials = Pair("username", "password")<br/>        }<br/>        .<b>also</b> {<br/>            it.connect()<br/>        }<br/>
+  <br/>class <b>Employee</b> {<br/>    var firstName: String = ""<br/>    var age: Int = 0<br/>}<br/><br/>val employee: Employee = Employee()<br/><br/><b>with</b>(employee){<br/>    firstName = "Suneet"<br/>    age = 27<br/><br/>    println(firstName)<br/>}<br/>
 </pre>
 
 </br>
 <div class="center-justified text-content">
-        it can also be used for chaining as <mark>also</mark> returns this context only.
+        Please note that we can even point to the calling object by <mark>this</mark> but we can't use a named parameter in <mark>apply</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>val connectionManager = ConnectionManager()<br/>        .apply {<br/>            endPoint = "http://endpoint.com"<br/>            credentials = Pair("username", "password")<br/>        }<br/>        .<b>also</b> {<br/>            it.connect()<br/>        }<br/>        .<b>also</b> {<br/>          print("connection is made on ${it.endPoint}")<br/>        }<br/>
+  <br/>val employee: Employee = Employee()<br/><br/><b>with</b>(employee){<br/>    this.firstName = "Suneet"<br/>    this.age = 27<br/><br/>    println(this.firstName)<br/>}<br/>
+</pre>
+
+</br>
+<div class="center-justified text-content">
+        We can avoid the use of <mark>this</mark> pointer or use it to avoid the conflicts between other properties or objects with the same name within that class. It points to the calling object only.
+        </br>
+        </br>
+        we can return the last expression from the higher-order function passed to the <mark>with</mark> function.
+</div>
+<pre class="zeropadding">
+  <br/>val details = <b>with</b>(employee){<br/>    this.firstName = "Suneet"<br/>    this.age = 27<br/><br/>    "The name of the employee is $firstName and age is $age"<br/>}<br/><br/>println(details)<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -401,28 +417,25 @@ Now let's look at the use cases
     </script>
 </div>
 <div class="center-justified text-content">
-        we can even use a named parameter in <mark>also</mark>.
+        We can even chain the <mark>with</mark> function
 </div>
 <pre class="zeropadding">
-  <br/>val connectionManager = ConnectionManager()<br/>        .apply {<br/>            endPoint = "http://endpoint.com"<br/>            credentials = Pair("username", "password")<br/>        }<br/>        .<b>also</b> { manager -><br/>            manager.connect()<br/>        }<br/>
+  <br/>val list = listOf(1, 2, 3, 4, 5)<br/><b>with</b>(list){<br/>    list.filter { it % 2 == 0 }<br/>}<br/>.forEach { <br/>    println(it) <br/>}<br/>
 </pre>
 
 </br>
+<h3>
+        Two things to keep in mind about <mark>with</mark>,
+</h3>
 <div class="center-justified text-content">
-        Since there is no <mark>this</mark> context passed inside also function, it doesn't shadow the <mark>this</mark> context from the outer scope.
-</div>
-</br>
-<div class="center-justified text-content">
-        <h3>
-        Two things to keep in mind about <mark>also</mark>,
-        </h3>
         <ol>
-                <li><mark>also</mark> uses the context as <mark>it</mark> or we can use a named parameter.</li>
-                <li><mark>also</mark> returns the calling object itself.</li>
+                <li><mark>with</mark> is not an extension function.</li>
+                <li><mark>with</mark> uses the context as <mark>this</mark> and we can not use a named parameter instead of <mark>this</mark>.</li>
+                <li><mark>with</mark> return the last expression of the lambda passed which can also be void.</li>
         </ol>
         </br>
         </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#also" target="_blank">Kotlin docs</a>
+        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#with" target="_blank">Kotlin docs</a>
         </br>
 </div>
 <div class="col-xs-12 googleads">
@@ -445,8 +458,8 @@ Now let's look at the use cases
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/kotlin-with-function/">
-        Kotlin with function &gt;&gt;
+        <a href="/blogs/higher-order-functions-in-kotlin/">
+        Higher-order functions in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

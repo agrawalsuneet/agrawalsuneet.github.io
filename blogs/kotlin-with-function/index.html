@@ -276,16 +276,16 @@ if (!doNotTrack) {
         To keep this article short and to the point, we will talk only about <mark>with</mark> in this article and all the use cases around it.
         </br>
         </br>
-        <mark>with</mark> is not an extension function but a normal function that takes a Template class object and a higher-order function as parameters, applies the operations to the passed Template class object and return the lambda expression or results. The return type can also be <mark>void</mark>.
+        <mark>with</mark> is not an extension function to Template class but a normal extension (to Any class) function that takes a Template class object and a higher-order function as parameters, applies the operations to the passed Template class object and return the lambda expression or results. The return type can also be <mark>void</mark>.
         </br>
         More than functional, <mark>with</mark> can be used as grammatical where we can read as "with this object, do the following.".
 </div>
 </br>
 <h3>
-        Why with is not an extension function?
+        Why with is not an extension function to Template class?
 </h3>
 <div class="center-justified text-content">
-        <mark>with</mark> is not an extension function because we don't want to use it for chaining purpose. For chaining purpose, we have <mark>let</mark>, <mark>also</mark> and <mark>apply</mark> scope functions. <mark>with</mark> can only be the starting point of any expression. That's the reason it's not an extension function to the Template class.
+        <mark>with</mark> is not an extension function to Template class because we don't want to use it for chaining purpose. For chaining purpose, we have <mark>let</mark>, <mark>also</mark> and <mark>apply</mark> scope functions. <mark>with</mark> can only be the starting point of any expression. That's the reason it's not an extension function to the Template class.
         </br>
         </br>
         To understand <mark>with</mark> function lets look at the implementation of <mark>with</mark> function first.
@@ -301,7 +301,7 @@ if (!doNotTrack) {
 <div class="center-justified text-content">
         <ol>
                 <li>The return type of the with function is nothing but the last expression we returned from our passed lambda parameter.</li>
-                <li>Although it's not an extension function but we can pass any object as the first param to with function.</li>
+                <li>Although it's not an extension function to Template class but we can pass any object as the first param to with function.</li>
         </ol>
 </div>
 <div class="col-xs-12 googleads">
@@ -429,7 +429,7 @@ Now let's look at the use cases
 </h3>
 <div class="center-justified text-content">
         <ol>
-                <li><mark>with</mark> is not an extension function.</li>
+                <li><mark>with</mark> is not an extension function to Template class.</li>
                 <li><mark>with</mark> uses the context as <mark>this</mark> and we can not use a named parameter instead of <mark>this</mark>.</li>
                 <li><mark>with</mark> return the last expression of the lambda passed which can also be void.</li>
         </ol>

@@ -268,7 +268,7 @@ if (!doNotTrack) {
         <ul>
                 <li><a href="/blogs/kotlin-let-function/" target="_blank">let</a></li>
                 <li><a href="/blogs/kotlin-with-function/" target="_blank">with</a></li>
-                <li>run</li>
+                <li><a href="/blogs/kotlin-run-function/" target="_blank">run</a></li>
                 <li><a href="/blogs/kotlin-apply-function/" target="_blank">apply</a></li>
                 <li>also</li>
         </ul>
@@ -412,18 +412,19 @@ Now let's look at the use cases
         Since there is no <mark>this</mark> context passed inside also function, it doesn't shadow the <mark>this</mark> context from the outer scope.
 </div>
 </br>
+<h3>
+        Things to keep in mind about <mark>also</mark>,
+</h3>
 <div class="center-justified text-content">
-        <h3>
-        Two things to keep in mind about <mark>also</mark>,
-        </h3>
-        <ol>
-                <li><mark>also</mark> uses the context as <mark>it</mark> or we can use a named parameter.</li>
-                <li><mark>also</mark> returns the calling object itself.</li>
-        </ol>
-        </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#also" target="_blank">Kotlin docs</a>
-        </br>
+<pre><code>    &lt;ol&gt;
+            &lt;li&gt;&lt;mark&gt;also&lt;/mark&gt; uses the context as &lt;mark&gt;it&lt;/mark&gt; or we can use a named parameter.&lt;/li&gt;
+            &lt;li&gt;&lt;mark&gt;also&lt;/mark&gt; returns the calling object itself.&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/br&gt;
+    &lt;/br&gt;
+    Reference: &lt;a href=&quot;https://kotlinlang.org/docs/reference/scope-functions.html#also&quot; target=&quot;_blank&quot;&gt;Kotlin docs&lt;/a&gt;
+    &lt;/br&gt;
+</code></pre>
 </div>
 <div class="col-xs-12 googleads">
     

@@ -6,7 +6,16 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kotlin run function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</guid>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+    </item>
+    
     <item>
       <title>Kotlin with function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-with-function/</link>

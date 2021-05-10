@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why with function is not an Extension to Template class?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</guid>
+      <description>After reading my last blog about Kotlin with function, a lot of developers have asked me about, why with is not an extension to Template class like other scope functions?   Not only with, but run also has two implementations among which one is not an extension to Template class but a generic extension function.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?</description>
+    </item>
+    
     <item>
       <title>Kotlin run function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</link>
@@ -436,7 +445,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?   Any is the base class for all the class, similar to java.</description>
+      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not to Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?   Any is the base class for all the classes, similar to java.</description>
     </item>
     
     <item>

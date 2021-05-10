@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (54 posts)   Why with function is not an Extension to Template class?   Why with is not an extension to the Template class? As all the other scope functions are an extension to Template class but not with function. The question is why? How its different from other scope functions? read more  10 May 2021  Kotlin Android      Kotlin run function   Scope functions are nothing but the functions which define a scope to the calling object.</description>
+    </item>
+    
+    <item>
+      <title>Why with function is not an Extension to Template class?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</guid>
+      <description>After reading my last blog about Kotlin with function, a lot of developers have asked me about, why with is not an extension to Template class like other scope functions?   Not only with, but run also has two implementations among which one is not an extension to Template class but a generic extension function.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?</description>
+    </item>
+    
+    <item>
       <title>Kotlin run function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
@@ -50,15 +68,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
       <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.   Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (53 posts)   Kotlin run function   Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function. read more  09 May 2021  Kotlin Android      Kotlin with function   Scope functions are nothing but the functions which define a scope to the calling object.</description>
     </item>
     
     <item>
@@ -571,7 +580,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?   Any is the base class for all the class, similar to java.</description>
+      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not to Any class?   Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class.    (adsbygoogle = window.adsbygoogle || []).push({});    The question is why?   Any is the base class for all the classes, similar to java.</description>
     </item>
     
     <item>

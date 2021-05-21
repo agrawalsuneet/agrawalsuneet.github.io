@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin pari,kotlin triple,pair and triple,kotlin pair and triple">
+    <meta name="keywords" content="kotlin pair,kotlin triple,pair and triple,kotlin pair and triple">
 
 
     
@@ -264,7 +264,10 @@ if (!doNotTrack) {
     </script>
 </div>
 <div class="center-justified text-content">
-        This approach works fine but is it worth defining a new class every time when we return two value from a method. what if we have several methods which return two values but each method returns the values of different data types. Are we going to create a separate class for each method?
+        This approach works fine but is it worth defining a new class every time when we return two value from a method.
+        </br>
+        What if we have several methods which return two values but each method returns the values of different data types?
+        </br>Are we going to create a separate class for each method?
         </br>
         <h4>
         The answer is NO.
@@ -272,10 +275,10 @@ if (!doNotTrack) {
         </br>
         Kotlin provides us with a predefined class <mark>Pair</mark> which can be used for the same. <mark>Pair</mark> is used to store or return two values of same or different data types. There can or cannot be any relation between both the values. They can be of the same or different data types.
 </div>
-<div class="center-justified text-content">
-        <h3>
+<h3>
         And how do I use it?
-        </h3>
+</h3>
+<div class="center-justified text-content">
         Initialise it as a simple <mark>Pair</mark> class object by passing two values to the constructor.
 </div>
 <pre class="zeropadding">
@@ -295,10 +298,10 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<div class="center-justified text-content">
-        <h3>
+<h3>
         And how do I retrieve the values?
-        </h3>
+</h3>
+<div class="center-justified text-content">
         Either receive them in a single variable and use <mark>first</mark> and <mark>second</mark> properties or <mark>componentN</mark> method to extract the values, or receive in separate variables and use them directly.
 </div>
 <pre class="zeropadding">
@@ -313,8 +316,8 @@ if (!doNotTrack) {
   <br/>val pair = <b>Pair</b>("I am a String", listOf(1,2,3))<br/>print(pair.toString())<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         Or we can even call a <mark>copy</mark> method on a <mark>Pair</mark> object and change its values but while copying, the data type of the variables should be the same as the one we are trying to change the value of.
 </div>
 <pre class="zeropadding">
@@ -363,7 +366,7 @@ if (!doNotTrack) {
         <h3>
         Last Question. What if I want to return four or more values?
         </h3>
-        Now you are getting greedy. Create your own data class and return the object of that class.
+        Now you are getting greedy. Create your data class and return the object of that class.
         </br>
         </br>
         Reference: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/" target="_blank">Pair</a> and <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-triple/" target="_blank">Triple</a>
@@ -384,7 +387,7 @@ if (!doNotTrack) {
 </div>
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
-        <a href="/blogs">
+        <a href="/blogs/">
         &lt;&lt; All Blogs
       </a>
     </div>

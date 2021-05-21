@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="swift mutating,mutating swift,mutating keyword swift">
+    <meta name="keywords" content="kotlin pari,kotlin triple,pair and triple,kotlin pair and triple">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | ‘mutating’ in Swift" />
-    <meta property="og:title" content="‘mutating’ in Swift">
-    <meta property="twitter:title" content="‘mutating’ in Swift">
+    <meta name="title" content="Suneet Agrawal | Tuple in Swift" />
+    <meta property="og:title" content="Tuple in Swift">
+    <meta property="twitter:title" content="Tuple in Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="‘mutating’ in Swift">
-    <meta name="description" content="As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.">
-    <meta property="og:description" content="As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.">
-    <meta property="twitter:description" content="As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.">
-    <meta name="abstract" content="As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.">
-    <meta name="summary" content="As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value."> 
+    <meta name="topic" content="Tuple in Swift">
+    <meta name="description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
+    <meta property="og:description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
+    <meta property="twitter:description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
+    <meta name="abstract" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
+    <meta name="summary" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-12-14 "> 
+    <meta property="article:published_time" content=" 2021-05-21 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/mutating-in-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/mutating-in-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/mutating-in-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/mutating-in-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>‘mutating’ in Swift &middot; Suneet Agrawal</title>
+    <title>Tuple in Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">‘mutating’ in Swift</h1>
+        <h1 class="mx16">Tuple in Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,7 +245,10 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-        As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.
+        It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.
+        </br>
+        </br>
+        What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a struct with just two variables and return that struct object from the method.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -261,69 +264,85 @@ if (!doNotTrack) {
     </script>
 </div>
 <div class="center-justified text-content">
-        If we try to change any variable inside a class it’s straight forward.
+        This approach works fine but is it worth defining a new struct every time when we return two value from a method. 
+        </br>
+        What if we have several methods which return two values but each method returns the values of different data types? 
+        </br>
+        Are we going to create a separate struct for each method?
+        </br>
+        <h4>
+                The answer is NO.
+        </h4>
+        </br>
+        Swift provides us with a type called <mark>Tuple</mark> which is used to group multiple values in a single compound value. <mark>Tuple</mark> is used to store or return two values of same or different data types. There can or cannot be any relation between both the values.
+</div>
+ <h3>
+        And how do I use it?
+</h3>
+<div class="center-justified text-content">
+        It can be initialised in two ways.
+        <ol>
+        <li>Unnamed variables</li>
+        <li>Named variables</li>
+        </ol>
+</div>
+<h3>
+        Unnamed variables Tuple
+</h3>
+<div class="center-justified text-content">
+        Unnamed variables Tuple is where we don't define the names to the Tuple variables and while using them, we use their position to access it.
 </div>
 <pre class="zeropadding">
-  <br/>class Employee {<br/>    var name : String<br/>    var teamName : String<br/>    <br/>    init(name: String, teamName: String) {<br/>        self.name = name<br/>        self.teamName = teamName<br/>    }<br/>    <br/>    func changeTeam(newTeamName : String){<br/>        self.teamName = newTeamName<br/>    }<br/>}<br/><br/>var emp1 = Employee(name : "Suneet", teamName:"Engineering")<br/>print(emp1.teamName)    //Engineering<br/>emp1.changeTeam(newTeamName : "Product")<br/>print(emp1.teamName)    //Product<br/>
+  <br/>var tuple = <b>("Suneet", "Agrawal")</b><br/><br/>print(tuple.0)<br/>print(tuple.1)<br/>
 </pre>
 
+<h3>
+Named variables Tuple
+</h3>
 <div class="center-justified text-content">
-        Whereas if you try to do the same in any value type, it will show us a compilation error,
+        Named variables Tuple is where we define the names of the Tuple variables and while using them, we can use the same names with which we defined them with.
 </div>
 <pre class="zeropadding">
-  <br/>struct Employee {<br/>    var name : String<br/>    var teamName : String<br/><br/>    init(name: String, teamName: String) {<br/>        self.name = name<br/>        self.teamName = teamName<br/>    }<br/><br/>    func changeTeam(newTeamName : String){<br/>        self.teamName = newTeamName<br/>        <e>//cannot assign to property: 'self' is immutable</e><br/>    }<br/>}<br/>
+  <br/>var tuple = <b>(firstName : "Suneet", lastName : "Agrawal")</b><br/><br/>print(tuple.firstName)<br/>print(tuple.lastName)<br/>
 </pre>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <div class="center-justified text-content">
-        It will show us the below error
+        To define the type of Tuple we can simply use brackets <mark>()</mark> and define the type inside it.
 </div>
 <pre class="zeropadding">
-  <br/><e>cannot assign to property: 'self' is immutable</e><br/>
+  <br/>var tuple : <b>(String, Int)</b><br/><br/>func getEmployeeDetails() -> <b>(String, Int)</b> {<br/>    return (name : "Suneet Agrawal", employeeId : 100)<br/>}<br/>
 </pre>
 
 </br>
+<h3>
+        What if I want to return three values from a method?
+</h3>
 <div class="center-justified text-content">
-        It clearly states that adding <mark>mutating</mark> keyword to any function in value type can enable them to modify the variable. Internally when we try to mutate the value type, it does not mutate its value but it mutates the variable holding that value.
+        There is no direct way or type defined in Swift but as a work around we can put a Tuple inside another Tuple but keep in mind it might overcomplicate your code so use it wisely.
 </div>
 <pre class="zeropadding">
-  <br/>struct Employee {<br/>    var name : String<br/>    var teamName : String<br/><br/>    init(name: String, teamName: String) {<br/>        self.name = name<br/>        self.teamName = teamName<br/>    }<br/>    <br/>    <b>mutating</b> func changeTeam(newTeamName : String){<br/>        self.teamName = newTeamName<br/>    }<br/>    <br/>}<br/><br/>var emp1 = Employee(name : "Suneet", teamName:"Engineering")<br/>print(emp1.teamName)    //Engineering<br/>emp1.changeTeam(newTeamName : "Product")<br/>print(emp1.teamName)    //Product<br/>
+  <br/>var tuple = <b>(name : (firstName: "Suneet", lastName : "Agrawal"), employeeId : 100)</b><br/>print(tuple.name.firstName)<br/>print(tuple.name.lastName)<br/>print(tuple.employeeId)<br/>
 </pre>
 
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
+</br>
+<h3>
+Last Question. What if I want to return four or more values?
+</h3>
 <div class="center-justified text-content">
-        Not only <mark>enum</mark> or <mark>struct</mark> but there are other data types also which are of value type.
-        </br>
-        <ul>
-                <li>enum</li>
-                <li>struct</li>
-                <li>Int</li>
-                <li>Double</li>
-                <li>String</li>
-                <li>Array</li>
-                <li>Dictionary</li>
-                <li>Set</li>
-                <li>Tuple</li>
-        </ul>
-        </br>
-        Whereas the below ones of reference type
-        </br>
-        <ul>
-                <li>Functions</li>
-                <li>Closures</li>
-                <li>Class</li>
-        </ul>
+        You can put as many Tuple inside each other as you want but now you are getting greedy. I'll suggest to create your own struct and return the object of it.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -345,8 +364,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/uiview-clicklistener-swift">
-        UIView ClickListener : Swift &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

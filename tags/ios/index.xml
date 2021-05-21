@@ -6,7 +6,16 @@
     <description>Recent content in iOS on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tuple in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</guid>
+      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.   What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a struct with just two variables and return that struct object from the method.</description>
+    </item>
+    
     <item>
       <title>if vs if let vs guard let in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</link>

@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Custom Android Manifest File in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/</guid>
+      <description>The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. The manifest file contains information about package name, permissions, application name, icon, activities, services, providers and much more.   Usually, Unity takes care of this manifest file generation and putting it in the right place but sometimes we need to add some custom tags to the final generated manifest file like adding intent-filters to the activity tag.</description>
+    </item>
+    
+    <item>
       <title>Typecast Android Object in Untiy</title>
       <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
@@ -22,7 +31,16 @@
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</guid>
-      <description> This particular script will help you to typecast one Android/Java object into another in Unity.   For further explaination on how this works, please read the article Native Android in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to typecast one Android/Java object into another in Unity.   For further explaination on how this works, please read the article Native Android in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Custom Android Manifest File in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
+    <item>
+      <title>Custom Android Manifest File in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</guid>
+      <description> This particular xml is an example of custom Android Manifest file which can be used in unity.   For further explaination on how this works, please read the article Custom Android Manifest File in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -40,7 +58,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (56 posts)   Typecast One to Another Android Object in Untiy   We can convert one Android/Java object to another by just using AndroidJavaClass and AndroidJavaObject. We can use java.lang.Class and its two functions forName and cast to typecast it to the desired Android/Java object. read more  28 May 2021  CSharp Unity Android      Tuple in Swift   It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.</description>
+      <description>Technical Blogs  Technical Blogs (58 posts)   Custom Android Manifest File in Unity   The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. read more  29 May 2021  CSharp Unity Android      Typecast One to Another Android Object in Untiy   We can convert one Android/Java object to another by just using AndroidJavaClass and AndroidJavaObject.</description>
     </item>
     
     <item>

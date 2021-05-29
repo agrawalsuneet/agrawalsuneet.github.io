@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Typecast Android Object in Untiy</title>
+      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
+      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity.   If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below.</description>
+    </item>
+    
+    <item>
+      <title>Typecast Android Object in Untiy</title>
+      <link>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</guid>
+      <description> This particular script will help you to typecast one Android/Java object into another in Unity.   For further explaination on how this works, please read the article Native Android in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
+    <item>
       <title>Tuple in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</link>
       <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
@@ -22,7 +40,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (55 posts)   Tuple in Swift   It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.</description>
+      <description>Technical Blogs  Technical Blogs (56 posts)   Typecast One to Another Android Object in Untiy   We can convert one Android/Java object to another by just using AndroidJavaClass and AndroidJavaObject. We can use java.lang.Class and its two functions forName and cast to typecast it to the desired Android/Java object. read more  28 May 2021  CSharp Unity Android      Tuple in Swift   It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.</description>
     </item>
     
     <item>
@@ -256,7 +274,7 @@
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.   For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Typecast Android Object in Untiy &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -445,7 +463,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
-      <description>In continuation to my previous medium post Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app.   If you have not read the previous medium posts, I would strongly recommend to read them first. You can read them on the links below.  Native Android in Unity Native Android text sharing in Unity   As the number says, an image gains more attention than a normal text while sharing.</description>
+      <description>In continuation to my previous blogs Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app.   If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below.  Native Android in Unity Native Android text sharing in Unity   As the number says, an image gains more attention than a normal text while sharing.</description>
     </item>
     
     <item>
@@ -472,7 +490,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
-      <description>In continuation to my previous medium post Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</description>
+      <description>In continuation to my previous blogs Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</description>
     </item>
     
     <item>
@@ -481,7 +499,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>In the previous posts Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.   If you have not read the previous medium posts, I would strongly recommend to read them first.</description>
+      <description>In the previous blogs Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly.   If you have not read the previous blogs, I would strongly recommend to read them first.</description>
     </item>
     
     <item>

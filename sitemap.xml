@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://agrawalsuneet.github.io/tags/android/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2021-05-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/gists/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/ios/</loc>
     <lastmod>2021-05-21T00:00:00+00:00</lastmod>
@@ -11,14 +32,8 @@
     <loc>https://agrawalsuneet.github.io/tags/swift/</loc>
     <lastmod>2021-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
-    <lastmod>2021-05-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</loc>
     <lastmod>2021-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/android/</loc>
-    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/kotlin/</loc>
     <lastmod>2021-05-10T00:00:00+00:00</lastmod>
@@ -83,9 +98,6 @@
     <loc>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</loc>
     <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/gists/</loc>
-    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</loc>
     <lastmod>2020-12-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -96,9 +108,6 @@
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</loc>
@@ -120,9 +129,6 @@
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</loc>

@@ -58,7 +58,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (58 posts)   Custom Android Manifest File in Unity   The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. read more  29 May 2021  CSharp Unity Android      Typecast One to Another Android Object in Untiy   We can convert one Android/Java object to another by just using AndroidJavaClass and AndroidJavaObject.</description>
+      <description>Technical Blogs  Technical Blogs (58 posts)   Custom Android Manifest File in Unity   The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. read more  29 May 2021  CSharp Unity Android      Typecast Android Object in Untiy   We can convert one Android/Java object to another by just using AndroidJavaClass and AndroidJavaObject.</description>
     </item>
     
     <item>

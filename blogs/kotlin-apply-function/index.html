@@ -328,7 +328,7 @@ if (!doNotTrack) {
 </div>
 </br>
 <h3>
-And what contract applied in the <mark>apply</mark> function
+And what contract applied in the <mark>apply</mark> function ?
 </h3>
 <pre class="zeropadding">
   <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
@@ -515,7 +515,13 @@ Now let's look at the use cases
                 
                 
 
-                if (iframes[iframe].src.match(/(ads-iframe)|(disqusads)/gi)) {
+                
+                
+                
+                
+                
+
+                if (!iframes[iframe].src.includes("agrawalsuneet")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

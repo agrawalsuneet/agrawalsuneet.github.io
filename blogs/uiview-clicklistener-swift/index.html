@@ -305,7 +305,7 @@ if (!doNotTrack) {
     Create our <mark>ClickListener</mark> class object and add a selector to it. Add the passed argument to this <mark>ClickListener</mark> and add the gesture object to the view.
 </div>
 <pre class="zeropadding">
-  <br/>extension <b>UIView</b> {<br/>	 <br/>	 func setOnClickListener(action :@escaping () -> Void){<br/>	 let tapRecogniser = ClickListener(target: self, action: #selector(onViewClicked(sender:)))<br/>	 tapRecogniser.onClick = action<br/>	 self.addGestureRecognizer(tapRecogniser)<br/>	 }<br/>	 <br/>	 @objc func onViewClicked(sender: ClickListener) {<br/>	 if let onClick = sender.onClick {<br/>	 onClick()<br/>	 }<br/>	 }<br/>	 <br/>	}<br/>
+  <br/>extension <b>UIView</b> {<br/>	 <br/>	 func setOnClickListener(action :@escaping () -> Void){<br/>        let tapRecogniser = ClickListener(target: self, action: #selector(onViewClicked(sender:)))<br/>        tapRecogniser.onClick = action<br/>        self.addGestureRecognizer(tapRecogniser)<br/>	 }<br/>	 <br/>	 @objc func onViewClicked(sender: ClickListener) {<br/>        if let onClick = sender.onClick {<br/>        onClick()<br/>        }<br/>	 }<br/>	 <br/>	}<br/>
 </pre>
 
 <div class="center-justified text-content">
@@ -425,7 +425,13 @@ if (!doNotTrack) {
                 
                 
 
-                if (iframes[iframe].src.match(/(ads-iframe)|(disqusads)/gi)) {
+                
+                
+                
+                
+                
+
+                if (!iframes[iframe].src.includes("agrawalsuneet")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

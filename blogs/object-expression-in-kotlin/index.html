@@ -509,7 +509,13 @@ if (!doNotTrack) {
                 
                 
 
-                if (iframes[iframe].src.match(/(ads-iframe)|(disqusads)/gi)) {
+                
+                
+                
+                
+                
+
+                if (!iframes[iframe].src.includes("agrawalsuneet")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

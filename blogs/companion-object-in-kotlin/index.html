@@ -460,7 +460,9 @@ And how I use the sendEvent method?
                 
                 
 
-                if (!iframes[iframe].src.includes("agrawalsuneet")) {
+                if (iframes[iframe].id.includes("dsq") 
+                && iframes[iframe].name.includes("dsq") 
+                && !iframes[iframe].src.includes("agrawalsuneet")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

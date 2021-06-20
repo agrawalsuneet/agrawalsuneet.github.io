@@ -565,7 +565,9 @@ Immutable and Mutable Map
                 
                 
 
-                if (!iframes[iframe].src.includes("agrawalsuneet")) {
+                if (iframes[iframe].id.includes("dsq") 
+                && iframes[iframe].name.includes("dsq") 
+                && !iframes[iframe].src.includes("agrawalsuneet")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

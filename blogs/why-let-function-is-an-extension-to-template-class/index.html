@@ -390,7 +390,7 @@ So to make these functions available for all the classes having any other superc
 
                 if (iframes[iframe].id.includes("dsq") 
                 && iframes[iframe].name.includes("dsq") 
-                && !iframes[iframe].src.includes("agrawalsuneet")) {
+                && iframes[iframe].src.includes("ads-iframe")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

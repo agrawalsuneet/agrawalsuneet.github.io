@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Native Android Receive Text from Other Apps in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/</guid>
+      <description>In continuation to my previous blog Native Android text sharing in Unity, where we learnt about sharing text from a Unity app targeting the Android platform, let&#39;s try to learn about how can we receive a text from other apps. Accepting a text from other apps is not that common but sometimes location-based games required to accept text or location shared from other apps. There can be a generic use case also where we want to accept some text from other apps for any purpose.</description>
+    </item>
+    
+    <item>
       <title>Custom Android Manifest File in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/</link>
       <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
@@ -58,7 +67,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (58 posts)   Custom Android Manifest File in Unity   The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. read more  29 May 2021  CSharp Unity Android      Typecast Android Object in Untiy   We can convert one Android/Java object to another by just using AndroidJavaClass and AndroidJavaObject.</description>
+      <description>Technical Blogs  Technical Blogs (59 posts)   Native Android Receive Text from Other Apps in Unity   Android provides a native share functionality to handle text or multimedia sharing. Any app can trigger an intent along with extra params to share a text. To receive the text or show our app in the sharing intent list handled by Android, we majorly have to do two things. Register Intent Filter in Manifest file.</description>
     </item>
     
     <item>

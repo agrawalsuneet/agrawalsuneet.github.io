@@ -312,8 +312,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/native-android-in-unity/">
-        Native Android in Unity &gt;&gt;
+        <a href="/blogs/native-android-receive-text-from-other-apps-in-unity/">
+        Native Android Receive Text from Other Apps in Unity &gt;&gt;
       </a>
     </div>
 </div>
@@ -385,7 +385,7 @@ if (!doNotTrack) {
 
                 if (iframes[iframe].id.includes("dsq") 
                 && iframes[iframe].name.includes("dsq") 
-                && !iframes[iframe].src.includes("agrawalsuneet")) {
+                && iframes[iframe].src.includes("ads-iframe")) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

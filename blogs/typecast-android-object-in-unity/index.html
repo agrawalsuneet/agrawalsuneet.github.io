@@ -466,7 +466,7 @@ And to use it for our use case,
 
                 if (iframes[iframe].id.includes("dsq") 
                 && iframes[iframe].name.includes("dsq") 
-                && iframes[iframe].src.includes("ads-iframe")) {
+                && (iframes[iframe].src == 'undefined' || iframes[iframe].src.includes("ads-iframe"))) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

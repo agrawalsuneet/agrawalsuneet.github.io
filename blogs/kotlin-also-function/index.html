@@ -416,15 +416,14 @@ Now let's look at the use cases
         Things to keep in mind about <mark>also</mark>,
 </h3>
 <div class="center-justified text-content">
-<pre><code>    &lt;ol&gt;
-            &lt;li&gt;&lt;mark&gt;also&lt;/mark&gt; uses the context as &lt;mark&gt;it&lt;/mark&gt; or we can use a named parameter.&lt;/li&gt;
-            &lt;li&gt;&lt;mark&gt;also&lt;/mark&gt; returns the calling object itself.&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;/br&gt;
-    &lt;/br&gt;
-    Reference: &lt;a href=&quot;https://kotlinlang.org/docs/reference/scope-functions.html#also&quot; target=&quot;_blank&quot;&gt;Kotlin docs&lt;/a&gt;
-    &lt;/br&gt;
-</code></pre>
+        <ol>
+                <li><mark>also</mark> uses the context as <mark>it</mark> or we can use a named parameter.</li>
+                <li><mark>also</mark> returns the calling object itself.</li>
+        </ol>
+        </br>
+        </br>
+        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#also" target="_blank">Kotlin docs</a>
+        </br>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -519,7 +518,7 @@ Now let's look at the use cases
 
                 if (iframes[iframe].id.includes("dsq") 
                 && iframes[iframe].name.includes("dsq") 
-                && iframes[iframe].src.includes("ads-iframe")) {
+                && (iframes[iframe].src == 'undefined' || iframes[iframe].src.includes("ads-iframe"))) {
                     iframes[iframe].style.display = 'none';
                     clearInterval(remove_ads);
                     console.log('Disqus Ads removed');

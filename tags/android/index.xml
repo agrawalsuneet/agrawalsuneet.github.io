@@ -6,7 +6,16 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lazy Property in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</guid>
+      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it&#39;s not observable.</description>
+    </item>
+    
     <item>
       <title>Native Android Receive Text from Other Apps in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/</link>
@@ -314,7 +323,7 @@
     </item>
     
     <item>
-      <title>lateinit property in Kotlin</title>
+      <title>lateinit Property in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       

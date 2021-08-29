@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="lazy,lazy kotlin,property,lazy initialized,kotlin lazy initialized,kotlin property,kotlin">
+    <meta name="keywords" content="lateinit,lazy,lateinit vs lazy kotlin,property,lazy initialized">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | lazy Property in Kotlin" />
-    <meta property="og:title" content="lazy Property in Kotlin">
-    <meta property="twitter:title" content="lazy Property in Kotlin">
+    <meta name="title" content="Suneet Agrawal | lateinit vs lazy Property in Kotlin" />
+    <meta property="og:title" content="lateinit vs lazy Property in Kotlin">
+    <meta property="twitter:title" content="lateinit vs lazy Property in Kotlin">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="lazy Property in Kotlin">
-    <meta name="description" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
-    <meta property="og:description" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
-    <meta property="twitter:description" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
-    <meta name="abstract" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
-    <meta name="summary" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack."> 
+    <meta name="topic" content="lateinit vs lazy Property in Kotlin">
+    <meta name="description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
+    <meta property="og:description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
+    <meta property="twitter:description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
+    <meta name="abstract" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
+    <meta name="summary" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-08-04 "> 
+    <meta property="article:published_time" content=" 2021-08-29 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
     <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>lazy Property in Kotlin &middot; Suneet Agrawal</title>
+    <title>lateinit vs lazy Property in Kotlin &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">lazy Property in Kotlin</h1>
+        <h1 class="mx16">lateinit vs lazy Property in Kotlin</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,16 +245,10 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-        Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it's not observable.
+        Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.
         </br>
         </br>
-        Sometimes we don't need all the objects to be initialised during the class object creation itself.
-        </br>
-        There can be two reasons for that.
-        <ol>
-                <li>That object/property/variable is dependent on another object to initialise first and use its reference.</li>
-                <li>The flow is such that we need that object only in a certain condition.</li>
-        </ol>
+        Let's try to understand some basic differences between then and when to use what. But before that let's quickly recap the lateinit and lazy properties
 </div>
 <div class="col-xs-12 googleads">
     
@@ -269,29 +263,97 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+</br>
+<h3>
+        lateinit property
+</h3>
 <div class="center-justified text-content">
-        In Kotlin, we have certain features which can help us in delaying that object initialisation as per the requirement.
-        </br>
-        One way to do that is by using <a href="/blogs/lateinit-property-in-kotlin/" target="_blank">lateinit Property</a> where we just declare the object/property and its type but didn't initialise it.
-        </br>
-        </br>
-        The drawbacks with lateinit var is
-        <ol>
-                <li>Its var that means it's mutable</li>
-                <li>We (developer) need to remember to initialise it.</li>
-                <li>We can't have a custom getter to the lateinit property</li>
-        </ol>
-        </br>
-        We have another way also to delay the initialisation of a property ie by using lazy initialisation.
-        </br>
-        </br>
-        lazy initialisation is a delegation of object creation when the first time that object will be called. The reference will be created but the object will not be created. The object will only be created when the first time that object will be accessed and every next time the same reference will be used.
-        </br>
-        </br>
-        The basic initialisation of a User class object by using lazy will look like below
+        lateinit properties are the <mark>var</mark> properties that can be initialised later in the constructor or in any function according to the use.
 </div>
 <pre class="zeropadding">
-  <br/>data class <b>User</b>(val id : Long,<br/>                 val username : String)<br/><br/>val user : User by <b>lazy</b> {<br/>        //can do other initialisation here<br/>        User(id = 1001, username = "ballu")<br/>    }<br/>
+  <br/>data class User (val id : Long,<br/>                 val username : String) : Serializable<br/><br/><b>lateinit</b> var lateinitUser : User<br/>
+</pre>
+
+</br>
+<h3>
+        lazy property
+</h3>
+<div class="center-justified text-content">
+        lazy properties are the <mark>val</mark> properties that can also be initialised later when they are called the first time.
+</div>
+<pre class="zeropadding">
+  <br/>val lazyUser : User? by <b>lazy</b> {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h4>
+        Now lets try to understand difference between them.
+</h4>
+</br>
+<h3>
+        lateinit var whereas lazy val
+</h3>
+<div class="center-justified text-content">
+        lateinit can only be used with a <mark>var</mark> property whereas lazy will always be used with <mark>val</mark> property. 
+        </br>
+        A lateinit property can be reinitialised again and again as per the use whereas the lazy property can only be initialised once.
+</div>
+<pre class="zeropadding">
+  <br/>lateinit <b>var</b> lateinitUser : User<br/><br/><b>val</b> lazyUser : User? by lazy {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+</pre>
+
+</br>
+<h3>
+        lateinit can't have custom getter or setter whereas lazy has custom getter
+</h3>
+<div class="center-justified text-content">
+        A lateinit property can't have a custom getter whereas a lazy property has a block that gets executed whenever the first time that property is called.
+</div>
+<pre class="zeropadding">
+  <br/>val lazyUser : User by <b>lazy</b> {<br/>        //can do other initialisation here<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</br>
+<h3>
+        isInitialized
+</h3>
+<div class="center-justified text-content">
+        In order to check if a lateinit property is initialised or not, we can use the extension function to <mark>KProperty</mark> directly which returns a <mark>boolean</mark> if the property is initialised or not.
+</div>
+<pre class="zeropadding">
+  <br/>/**<br/> * Returns `true` if this lateinit property has been assigned a value, and `false` otherwise.<br/> *<br/> * Cannot be used in an inline function, to avoid binary compatibility issues.<br/> */<br/>@SinceKotlin("1.2")<br/>@InlineOnly<br/>inline val @receiver:AccessibleLateinitPropertyLiteral KProperty0<*>.<b>isInitialized</b>: Boolean<br/>    get() = throw NotImplementedError("Implementation is intrinsic")<br/><br/>println(::lateinitUser.<b>isInitialized</b>)    <br/>
+</pre>
+
+<div class="center-justified text-content">
+        Since the lazy block returns an object which implements the Lazy interface, we can check if the variable is initialised or not in the case of the lazy property also but for that, we need to split the lazy call.
+</div>
+<pre class="zeropadding">
+  <br/>val lazyUserDelegate = lazy { User(id = 1, username = "agrawalsuneet") }<br/>val lazyUser by lazyUserDelegate   <br/><br/>println(lazyUserDelegate.<b>isInitialized()</b>)<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -308,39 +370,24 @@ if (!doNotTrack) {
     </script>
 </div>
 <h3>
-Let's try to understand what exactly lazy is
+Primitive types
 </h3>
-</br>
 <div class="center-justified text-content">
-        <mark>lazy</mark> is a function defined in <mark>kotlin</mark> package which takes a lambda or higher-order function as a parameter and returns <mark>Lazy&lt;T&gt;</mark> object.
-        </br>
-        The passed lambda or higher-order function should return the object of Template class (<mark>T</mark>). 
+        lateinit properties can't be of primitive data types whereas lazy properties can be of primitive date types also. 
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Creates a new instance of the [Lazy] that uses the specified initialization function [initializer]<br/> * and the default thread-safety mode [LazyThreadSafetyMode.SYNCHRONIZED].<br/> *<br/> * If the initialization of a value throws an exception, it will attempt to reinitialize the value at next access.<br/> *<br/> * Note that the returned instance uses itself to synchronize on. Do not synchronize from external code on<br/> * the returned instance as it may cause accidental deadlock. Also this behavior can be changed in the future.<br/> */<br/>public actual fun &lt;T&gt; <b>lazy</b>(initializer: () -> T): Lazy&lt;T&gt; = SynchronizedLazyImpl(initializer)<br/>
+  <br/>lateinit var lateinitInt : Int <e>//compilation error: 'lateinit' modifier is not allowed on properties of primitive types</e><br/><br/>val lazyInt by lazy {<br/>    10<br/>}<br/>
 </pre>
 
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
+</br>
+<h3>
+Thread Safety
+</h3>
 <div class="center-justified text-content">
-        The return type of the above lazy function is a <mark>Lazy</mark> interface reference object which is also defined in <mark>kotlin</mark> package. This <mark>Lazy</mark> reference object server as a delegate for implementation of lazy property. 
-        </br>
-        </br>
-        The first call to property's <mark>get()</mark> executes the lambda passed to the <mark>lazy</mark> function and remembers the result. Any subsequent calls to get the property simply return the remembered result.
+        We can't define the thready safety in case of lateinit property but in case of lazy, we can choose between <mark>SYNCHRONIZED</mark>, <mark>PUBLICATION</mark> and <mark>NONE</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Represents a value with lazy initialization.<br/> *<br/> * To create an instance of [Lazy] use the [lazy] function.<br/> */<br/>public interface <b>Lazy</b>&lt;out T&gt; {<br/>    /**<br/>     * Gets the lazily initialized value of the current Lazy instance.<br/>     * Once the value was initialized it must not change during the rest of lifetime of this Lazy instance.<br/>     */<br/>    public val value: T<br/><br/>    /**<br/>     * Returns `true` if a value for this Lazy instance has been already initialized, and `false` otherwise.<br/>     * Once this function has returned `true` it stays `true` for the rest of lifetime of this Lazy instance.<br/>     */<br/>    public fun isInitialized(): Boolean<br/>}<br/>
+  <br/>val lazyUser : User? by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -357,75 +404,29 @@ Let's try to understand what exactly lazy is
     </script>
 </div>
 <h3>
-Let's look at the thread-safety of lazy property
+Nullable Type
 </h3>
-</br>
 <div class="center-justified text-content">
-        By default, the lazy property is synchronised or thread-safe. That means only a single thread will compute its value and all threads will use the same value. But there is an overload to the lazy function where we can pass the <mark>LazyThreadSafetyMode</mark> also.
+       A lazy property can be of nullable type but a lateinit property can't be of nullable type.
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Creates a new instance of the [Lazy] that uses the specified initialization function [initializer]<br/> * and thread-safety [mode].<br/> *<br/> * If the initialization of a value throws an exception, it will attempt to reinitialize the value at next access.<br/> *<br/> * Note that when the [LazyThreadSafetyMode.SYNCHRONIZED] mode is specified the returned instance uses itself<br/> * to synchronize on. Do not synchronize from external code on the returned instance as it may cause accidental deadlock.<br/> * Also this behavior can be changed in the future.<br/> */<br/>public actual fun &lt;T&gt; <b>lazy</b>(mode: LazyThreadSafetyMode, initializer: () -> T): Lazy&lt;T&gt; =<br/>    when (mode) {<br/>        LazyThreadSafetyMode.SYNCHRONIZED -> SynchronizedLazyImpl(initializer)<br/>        LazyThreadSafetyMode.PUBLICATION -> SafePublicationLazyImpl(initializer)<br/>        LazyThreadSafetyMode.NONE -> UnsafeLazyImpl(initializer)<br/>    }<br/>
+  <br/>lateinit var lateinitUser : User<b>?</b> <e>//compilation error: 'lateinit' modifier is not allowed on properties of nullable types</e><br/><br/>val lazyUser : User<b>?</b> by lazy {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
 </pre>
 
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        <mark>LazyThreadSafetyMode</mark> is an enum class with values as below
-</div>
-<pre class="zeropadding">
-  <br/>/**<br/> * Specifies how a [Lazy] instance synchronizes initialization among multiple threads.<br/> */<br/>public enum class <b>LazyThreadSafetyMode</b> {<br/><br/>    /**<br/>     * Locks are used to ensure that only a single thread can initialize the [Lazy] instance.<br/>     */<br/>    SYNCHRONIZED,<br/><br/>    /**<br/>     * Initializer function can be called several times on concurrent access to uninitialized [Lazy] instance value,<br/>     * but only the first returned value will be used as the value of [Lazy] instance.<br/>     */<br/>    PUBLICATION,<br/><br/>    /**<br/>     * No locks are used to synchronize an access to the [Lazy] instance value; if the instance is accessed from multiple threads, its behavior is undefined.<br/>     *<br/>     * This mode should not be used unless the [Lazy] instance is guaranteed never to be initialized from more than one thread.<br/>     */<br/>    NONE,<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-       All 3 types are explained by themselves.
-       <ul>
-        <li>SYNCHRONIZED is used to ensure thread safety. Only a single thread will initialise the value and it uses lock to ensure the same.</li>
-        <li>PUBLICATION can be called several times but the returned value will be used.</li>
-        <li>NONE is a tricky one and not suggested to use until for a specific reason. no locks are used and if accessed from multiple threads its behaviour is undefined.</li>
-        </ul>
-        </br>
-        By default the lazy function uses SYNCHRONIZED but we can change it by passing it as a parameter to the lazy function.
-</div>
-<pre class="zeropadding">
-  <br/>val user : User by lazy(<b>LazyThreadSafetyMode.PUBLICATION</b>) {<br/>        //can do other initialisation here<br/>        User(id = 1001, username = "ballu")<br/>    }<br/>
-</pre>
-
-</br>
 </br>
 <h3>
-Few things to remember about lazy property
+Accessing before initialisation
 </h3>
 <div class="center-justified text-content">
-        <ol>
-                <li>Every lazy property is a val (immutable) property and cannot be changed once assigned.</li>
-                <li>The property initialisation is conditional based and will only be initialised when it will be called the first time.</li>
-                <li>By default, the property initialisation is thread-safe.</li>
-                <li>We can do other computations also before initialising the actual property in the same lazy function.</li>
-        </ol>
+       Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn’t been initialized.
+       </br>
+        We can't ever access a lazy property before it hased been initialised. Remember that the lazy property can be null but the initialisation will still happen when the first time the property will be called.
+        </br>
+        </br>  
+        </br>
+        Based on the above difference we can decide when to use the lateinit property or when to use the lazy property. The developer doesn't have to remember if the property is initialised or not in case of lazy property but in case of lateinit we need to remember the flow. 
+        </br>
+        There are no guidelines in order to decide when to use what but according to the use case, we can decide.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -447,8 +448,8 @@ Few things to remember about lazy property
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/lateinit-vs-lazy-property-in-kotlin/">
-        lateinit vs lazy Property in Kotlin &gt;&gt;
+        <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">
+        Safe calls(?.) vs Null checks(!!) in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

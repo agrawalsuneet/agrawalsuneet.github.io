@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>lateinit vs lazy Property in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</guid>
+      <description>Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.   Let&#39;s try to understand some basic differences between then and when to use what. But before that let&#39;s quickly recap the lateinit and lazy properties    (adsbygoogle = window.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (60 posts)   lateinit vs lazy Property in Kotlin   Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. read more  29 Aug 2021  Kotlin Android      lazy Property in Kotlin   Object creation is a heavy process.</description>
+    </item>
+    
+    <item>
       <title>lazy Property in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
@@ -68,15 +86,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</guid>
       <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.   What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a struct with just two variables and return that struct object from the method.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (60 posts)   lazy Property in Kotlin   Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. read more  04 Aug 2021  Kotlin Android      Native Android Receive Text from Other Apps in Unity   Android provides a native share functionality to handle text or multimedia sharing.</description>
     </item>
     
     <item>

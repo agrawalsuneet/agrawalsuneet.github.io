@@ -297,7 +297,7 @@ Limitations of Late-Initialized Properties
 </h3>
 <div class="center-justified text-content">
         <ol>
-                <li>lateinit can only be used with var properties declared inside the body of class (not in the primary constructor) but not inside any method.</li>
+                <li>lateinit can only be used with var properties declared inside the body of class (not in the primary constructor).</li>
                 <li>It can only be used when the property does not have a custom getter or setter.</li>
                 <li>The type of the property must be non-null, and it must not be a primitive type.</li>
                 <li>Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn’t been initialized.</li>

@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/tags/android/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/kotlin/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
+    <loc>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/publications/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
@@ -49,9 +55,6 @@
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</loc>
     <lastmod>2021-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/publications/</loc>
-    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</loc>
     <lastmod>2021-05-10T00:00:00+00:00</lastmod>

@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin pari,kotlin triple,pair and triple,kotlin pair and triple">
+    <meta name="keywords" content="lazy,swift,lazy var,lazy property">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Tuple in Swift" />
-    <meta property="og:title" content="Tuple in Swift">
-    <meta property="twitter:title" content="Tuple in Swift">
+    <meta name="title" content="Suneet Agrawal | lazy Property in Swift" />
+    <meta property="og:title" content="lazy Property in Swift">
+    <meta property="twitter:title" content="lazy Property in Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Tuple in Swift">
-    <meta name="description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
-    <meta property="og:description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
-    <meta property="twitter:description" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
-    <meta name="abstract" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method.">
-    <meta name="summary" content="It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables or we create a struct with just two variables and return that struct object from the method."> 
+    <meta name="topic" content="lazy Property in Swift">
+    <meta name="description" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
+    <meta property="og:description" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
+    <meta property="twitter:description" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
+    <meta name="abstract" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack.">
+    <meta name="summary" content="Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-05-21 "> 
+    <meta property="article:published_time" content=" 2021-09-05 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>Tuple in Swift &middot; Suneet Agrawal</title>
+    <title>lazy Property in Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Tuple in Swift</h1>
+        <h1 class="mx16">lazy Property in Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,65 +245,46 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-        It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.
+        Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it's not observable.
         </br>
         </br>
-        What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a struct with just two variables and return that struct object from the method.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        This approach works fine but is it worth defining a new struct every time when we return two value from a method. 
+        Sometimes we don't need all the objects to be initialised during the class object creation itself.
         </br>
-        What if we have several methods which return two values but each method returns the values of different data types? 
-        </br>
-        Are we going to create a separate struct for each method?
-        </br>
-        <h4>
-                The answer is NO.
-        </h4>
-        </br>
-        Swift provides us with a type called <mark>Tuple</mark> which is used to group multiple values in a single compound value. <mark>Tuple</mark> is used to store or return two values of same or different data types. There can or cannot be any relation between both the values.
-</div>
- <h3>
-        And how do I use it?
-</h3>
-<div class="center-justified text-content">
-        It can be initialised in two ways.
+        There can be two reasons for that.
         <ol>
-        <li>Unnamed variables</li>
-        <li>Named variables</li>
+                <li>That object/property/variable is dependent on another object to initialise first and use its reference.</li>
+                <li>The flow is such that we need that object only in a certain condition.</li>
         </ol>
 </div>
-<h3>
-        Unnamed variables Tuple
-</h3>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <div class="center-justified text-content">
-        Unnamed variables Tuple is where we don't define the names to the Tuple variables and while using them, we use their position to access it.
+        In Swift, we have certain features which can help us in delaying that object initialisation as per the requirement.
+        </br>
+        </br>
+        One way of doing that is using lazy initialization. 
+        </br>
+        Lazy initialisation is also denoted as <mark>lazy var</mark> in Swift.
+        </br>
+        </br>
+        lazy initialisation is a delegation of object creation when the first time that object will be called. The reference will be created but the object will not be created. The object will only be created when the first time that object will be accessed and every next time the same reference will be used.
+        </br>
+        </br>
+        The basic initialisation of a <mark>User</mark> struct object by using lazy will look like below
 </div>
 <pre class="zeropadding">
-  <br/>var tuple = <b>("Suneet", "Agrawal")</b><br/><br/>print(tuple.0)<br/>print(tuple.1)<br/>
-</pre>
-
-<h3>
-Named variables Tuple
-</h3>
-<div class="center-justified text-content">
-        Named variables Tuple is where we define the names of the Tuple variables and while using them, we can use the same names with which we defined them with.
-</div>
-<pre class="zeropadding">
-  <br/>var tuple = <b>(firstName : "Suneet", lastName : "Agrawal")</b><br/><br/>print(tuple.firstName)<br/>print(tuple.lastName)<br/>
+  <br/>struct User {<br/>    let name : String<br/>    let age : Int<br/>}<br/><br/>struct Department {<br/>    var users : [User]<br/>    <br/>    init(users : [User]) {<br/>        print("Department constructor is called")<br/>        self.users = users<br/>    }<br/>    <br/>    <b>lazy</b> var youngestUser : User? = {<br/>        print("Department youngestUser is computed")<br/>        return self.users.min(by: {$0.age < $1.age})<br/>    }()<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -319,30 +300,173 @@ Named variables Tuple
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+<h3>
+Let's try to understand what exactly lazy is
+</h3>
+</br>
 <div class="center-justified text-content">
-        To define the type of Tuple we can simply use brackets <mark>()</mark> and define the type inside it.
+        Lazy initialisation is a delegation of property initialisation that will only be called when that property will be used the first time.
+        </br>
+        Even if we initialise the <mark>struct</mark> or <mark>class</mark> object, the lazy property will not be set.
+        </br>
+        </br>
+        Lets see this with an example.
 </div>
 <pre class="zeropadding">
-  <br/>var tuple : <b>(String, Int)</b><br/><br/>func getEmployeeDetails() -> <b>(String, Int)</b> {<br/>    return (name : "Suneet Agrawal", employeeId : 100)<br/>}<br/>
+  <br/>struct User {<br/>    let name : String<br/>    let age : Int<br/>}<br/><br/>struct Department {<br/>    var users : [User]<br/>    <br/>    init(users : [User]) {<br/>        print("Department constructor is called")<br/>        self.users = users<br/>    }<br/>    <br/>    <b>lazy</b> var youngestUser : User? = {<br/>        print("Department youngestUser is computed")<br/>        return self.users.min(by: {$0.age < $1.age})<br/>    }()<br/>}<br/><br/>var engineeringDepartment = Department(users: [<br/>    User(name: "Suneet", age: 29),<br/>    User(name: "Ballu", age: 20),<br/>    User(name: "Agrawal", age: 50)<br/>])<br/><br/>//This will print: Department constructor is called<br/><br/>print(engineeringDepartment.youngestUser ?? "")<br/><br/>//This will print: Department youngestUser is computed<br/>//followed by : User(name: "Ballu", age: 20)<br/>
 </pre>
 
-</br>
+<div class="center-justified text-content">
+        As we can see the lazy property was not initialised even when we initialised the <mark>Department</mark> struct object. That only got initialised when we called the lazy property for the first time.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h4>
+Things to keep in mind while working with lazy property
+</h4>
 <h3>
-        What if I want to return three values from a method?
+Can only be used with var
 </h3>
 <div class="center-justified text-content">
-        There is no direct way or type defined in Swift but as a work around we can put a Tuple inside another Tuple but keep in mind it might overcomplicate your code so use it wisely.
+        lazy can only be used with <mark>var</mark> but it can't be used with a <mark>let</mark> (immutable) property.
 </div>
 <pre class="zeropadding">
-  <br/>var tuple = <b>(name : (firstName: "Suneet", lastName : "Agrawal"), employeeId : 100)</b><br/>print(tuple.name.firstName)<br/>print(tuple.name.lastName)<br/>print(tuple.employeeId)<br/>
+  <br/>struct Department {<br/>   //...<br/>    <br/>    <b>lazy</b> let youngestUser : User? = {    <e>//'lazy' cannot be used on a let</e><br/>        print("Department youngestUser is computed")<br/>        return self.users.min(by: {$0.age < $1.age})<br/>    }()<br/>}<br/>
 </pre>
 
-</br>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <h3>
-Last Question. What if I want to return four or more values?
+Can be of primitive or non-primitive type
 </h3>
 <div class="center-justified text-content">
-        You can put as many Tuple inside each other as you want but now you are getting greedy. I'll suggest to create your own struct and return the object of it.
+        A lazy property can be of primitive or non-primitive type. 
+</div>
+<pre class="zeropadding">
+  <br/>struct Department {<br/>    //...<br/>    <br/>    <b>lazy</b> var youngestUserAge : Int? = {<br/>        return self.users.min(by: {$0.age < $1.age})?.age<br/>    }()<br/>    <br/>    <b>lazy</b> var youngestUser : User? = {<br/>        print("Department youngestUser is computed")<br/>        return self.users.min(by: {$0.age < $1.age})<br/>    }()<br/>}<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Can only be used inside a class or struct
+</h3>
+<div class="center-justified text-content">
+        Lazy can only be used inside a <mark>class</mark> or <mark>struct</mark>. We can't define it in a function or at the root level of a playground file.
+</div>
+<pre class="zeropadding">
+  <br/><b>lazy</b> var youngestUser : Int = {  <e>//Lazy is only valid for members of a struct or class</e><br/>   return 1<br/>}()<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+The struct or class object accessing lazy property should also be var
+</h3>
+<div class="center-justified text-content">
+        The object which is trying to access the lazy property should also be mutable means <mark>var</mark>.
+</div>
+<pre class="zeropadding">
+  <br/>struct Department {<br/>   //...<br/>    <br/>    <b>lazy</b> var youngestUser : User? = {<br/>        print("Department youngestUser is computed")<br/>        return self.users.min(by: {$0.age < $1.age})<br/>    }()<br/>}<br/><br/>let engineeringDepartment = Department(users: [<br/>    User(name: "Suneet", age: 29),<br/>    User(name: "Ballu", age: 20),<br/>    User(name: "Agrawal", age: 50)<br/>])<br/><br/>print(engineeringDepartment.youngestUser ?? "") <br/><e>//Cannot use mutating getter on immutable value: 'engineeringDepartment' is a 'let' constant</e><br/>
+</pre>
+
+<div class="center-justified text-content">
+        Please note that it's not compulsory to create all the objects of that <mark>class</mark> or <mark>struct</mark> should be <mark>var</mark> but in order to access the lazy property, the variable should be <mark>var</mark> (mutable) type.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Once the value is computed, it will not change until the constructor is called again
+</h3>
+<div class="center-justified text-content">
+        The computation of the lazy property will only happen once. Later the same values will be returned without computation.
+</div>
+<pre class="zeropadding">
+  <br/>var engineeringDepartment = Department(users: [<br/>    User(name: "Suneet", age: 29),<br/>    User(name: "Ballu", age: 20),<br/>    User(name: "Agrawal", age: 50)<br/>])<br/><br/>print(engineeringDepartment.youngestUser ?? "")<br/>//This will print: User(name: "Ballu", age: 20)<br/><br/>engineeringDepartment.users.append(User(name: "John", age: 18))<br/>//or<br/>engineeringDepartment.users = [User(name: "John", age: 18)]<br/><br/>print(engineeringDepartment.youngestUser ?? "")<br/>//This will still print: User(name: "Ballu", age: 20)<br/>
+</pre>
+
+<div class="center-justified text-content">
+        As we can see, even if changed values in the <mark>users</mark> array or even initialised the array again, the lazy property is still holding the last values.
+        </br>
+        The lazy property will only be computed again when the <mark>Department</mark> constructor will be called on same object else the lazy property will hold the same values.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</br>
+</br>
+<h3>
+Few things to remember about lazy property
+</h3>
+<div class="center-justified text-content">
+        Lazy property is used to delay the initialisation of property and it will be initialised only when the first time that property will be called but it will only be called once. Later it will return the same values.
+        </br>
+        Also, it can only be used inside a <mark>class</mark> or <mark>struct</mark> and the calling object should also be <mark>var</mark>.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -364,8 +488,8 @@ Last Question. What if I want to return four or more values?
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/lazy-property-in-swift/">
-        lazy Property in Swift &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

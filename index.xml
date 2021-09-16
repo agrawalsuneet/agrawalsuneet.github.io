@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Computed Property in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</guid>
+      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it&#39;s not observable.</description>
+    </item>
+    
+    <item>
       <title>lazy Property in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
@@ -31,7 +40,7 @@
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (61 posts)   lazy Property in Swift   Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. read more  05 Sep 2021  Swift iOS      lateinit vs lazy Property in Kotlin   Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.</description>
+      <description>Technical Blogs  Technical Blogs (62 posts)   Computed Property in Swift   Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. read more  16 Sep 2021  Swift iOS      lazy Property in Swift   Object creation is a heavy process.</description>
     </item>
     
     <item>

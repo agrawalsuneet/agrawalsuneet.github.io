@@ -273,20 +273,20 @@ if (!doNotTrack) {
   <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i++){<br/>    System.out.print(i);<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         its equivalent Kotlin code
 </div>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (i in 0..10) {<br/>    print(i)<br/>}<br/>
 </pre>
 
+<h3>Things to notice</h3>
 <div class="center-justified text-content">
-        <h3>Things to notice</h3>
         <ul>
-                <li>no need to declare the data type of variable</li>
-                <li>if iterating over a range, we can use <mark>in</mark> variable</li>
-                <li>the lower and upper (including) limit can be defined on both the sides of <mark>..</mark> operator.</li>
+                <li>No need to declare the data type of variable</li>
+                <li>If iterating over a range, we can use <mark>in</mark> variable</li>
+                <li>The lower and upper (including) limit can be defined on both the sides of <mark>..</mark> operator.</li>
         </ul>
 </div>
 <div class="col-xs-12 googleads">
@@ -302,15 +302,13 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<div class="center-justified text-content">
-        <h4>2. Now let’s say if I don’t don’t want to include the upper limit in the loop and break the loop if it hits the upper limit.</h4>
-</div>
+<h4>2. Now let’s say if I don’t don’t want to include the upper limit in the loop and break the loop if it hits the upper limit.</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int j = 0; j < 10; j++) {<br/>    System.out.print(j); //this will print only up to 9<br/> }<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         There are two ways to do the same in kotlin, the first one is decrement the upper limit it while coding and use <mark>..</mark> operator or another way is use <mark>until</mark> operator.
 </div>
 <pre class="zeropadding">
@@ -333,25 +331,33 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<div class="center-justified text-content">
-        <h4>3. I want to increment it by 2 or some other number.</h4>
-</div>
+<h4>3. I want to increment it by 2 or some other number.</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i += 2) {<br/>    System.out.print(i);<br/> }<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         We can use <mark>step</mark> operator here
 </div>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (i in 0..10 step 2) {<br/>    print(i)<br/> }<br/>
 </pre>
 
-<div class="center-justified text-content">
-        </br>
-       <h4>4. Wait, what if I want to run the loop in reverse order. Can I use <mark>10..1</mark> ?</h4>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
+<h4>4. Wait, what if I want to run the loop in reverse order. Can I use <mark>10..1</mark> ?</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int i = 10; i > 0; i--) {<br/>    System.out.print(i);<br/> }<br/>
 </pre>
@@ -386,47 +392,65 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<div class="center-justified text-content">
-        <h4>5. What if I have a complex calculation instead of addition or subtraction in each step. Let’s say multiplication or division.</h4>
-</div>
+<h4>5. What if I have a complex calculation instead of addition or subtraction in each step. Let’s say multiplication or division.</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int k = 2; k <= 256; k *= 2) {<br/>    System.out.print(k);<br/> }<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         Move to while loop, no other way
 </div>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>var k = 2<br/>while (k <= 256) {<br/>   print(k)<br/>   k *= 2<br/>}<br/>
 </pre>
 
-<div class="center-justified text-content">
-        </br>
-        <h4>6. I want to iterate over an array now.</h4>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
+<h4>6. I want to iterate over an array now.</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int i = 0; i < arr.length; i++) {<br/>    System.out.print(arr[i]);<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         Simple, us the <mark>indices</mark> in kotlin
 </div>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>val arr = IntArray(5)<br/>for (i in arr.indices) {<br/>    print(arr[i])<br/>} <br/>
 </pre>
 
-<div class="center-justified text-content">
-        </br>
-        I heard about some for <mark>foreach</mark> also. Can I use the same in kotlin?
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
+<h4>7. I heard about some for <mark>foreach</mark> also. Can I use the same in kotlin?</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int item: arr) {<br/>    System.out.print(item);<br/> }<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         Yes, you can. <mark>for</mark> loop iterates through anything that provides an iterator. A <mark>for</mark> loop over an array is compiled to an index-based loop that does not create an iterator object.
 </div>
 <pre class="zeropadding">
@@ -446,41 +470,49 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<div class="center-justified text-content">
-        <h4>7. And what about List?</h4>
-</div>
+<h4>8. And what about List?</h4>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>List<Integer> arrayList = new ArrayList<>();<br/>for (int i = 0; i < arrayList.size(); i++) {<br/>    System.out.print(arrayList.get(i));<br/>}<br/><br/>List<Integer> vector = new Vector<>();<br/> for (int i = 0; i < vector.size(); i++) {<br/> System.out.print(vector.get(i));<br/> }<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         Simple. Use <mark>indices</mark> based iteration.
 </div>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>val arrayList = ArrayList<Int>()<br/>for (i in arrayList.indices) {<br/>    print(arrayList[i])<br/>}<br/><br/>val vector = Vector<Int>()<br/>for (i in vector.indices) {<br/>   print(vector[i])<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         No, I am a fan of <mark>foreach</mark> loop.
 </div>
 <pre class="zeropadding">
   <br/><l>Java code</l><br/>for (int item : arrayList) {<br/>    System.out.print(item);<br/>}<br/><br/>for (int item : vector) {<br/>    System.out.print(item);<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        </br>
         Ok, no problem, there you go.
 </div>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for (item in arrayList) {<br/>    print(item)<br/>}<br/><br/>for (item in vector) {<br/>    print(item)<br/>}<br/>
 </pre>
 
-<div class="center-justified text-content">
-        </br>
-        <h4>8. You can also use the <mark>withIndex</mark> library function</h4>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
+<h4>9. You can also use the <mark>withIndex</mark> library function</h4>
 <pre class="zeropadding">
   <br/><l>Kotlin code</l><br/>for ((i, value) in arr.withIndex()) {<br/>    println(“the element at $i is $value”)<br/>}<br/>
 </pre>

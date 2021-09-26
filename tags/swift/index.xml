@@ -6,7 +6,16 @@
     <description>Recent content in Swift on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift ‘For’ loop</title>
+      <link>https://agrawalsuneet.github.io/blogs/swift-for-loop/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/swift-for-loop/</guid>
+      <description>For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.   While comparing with other languages, I realized in Swift, there are few concepts which are completely different from java or any other another language for loops.</description>
+    </item>
+    
     <item>
       <title>Computed Property in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</link>

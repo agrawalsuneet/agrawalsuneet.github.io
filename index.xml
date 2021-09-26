@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Swift ‘For’ loop</title>
+      <link>https://agrawalsuneet.github.io/blogs/swift-for-loop/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/swift-for-loop/</guid>
+      <description>For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.   While comparing with other languages, I realized in Swift, there are few concepts which are completely different from java or any other another language for loops.</description>
+    </item>
+    
+    <item>
       <title>Computed Property in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
@@ -40,7 +49,7 @@
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (62 posts)   Computed Property in Swift   Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. read more  16 Sep 2021  Swift iOS      lazy Property in Swift   Object creation is a heavy process.</description>
+      <description>Technical Blogs  Technical Blogs (63 posts)   Swift ‘For’ loop   For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes. read more  25 Sep 2021  Swift iOS      Computed Property in Swift   Object creation is a heavy process.</description>
     </item>
     
     <item>

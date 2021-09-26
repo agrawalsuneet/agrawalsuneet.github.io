@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>For-in vs For-each in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</link>
+      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</guid>
+      <description>For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.   To understand their differences, let&#39;s try to understand their examples in details first.    (adsbygoogle = window.adsbygoogle || []).push({});    For-in loop  For-in loop is used to iterate over a range, set or dictionary using both the indexes as well an element based iteration.</description>
+    </item>
+    
     <item>
       <title>Swift ‘For’ loop</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-for-loop/</link>

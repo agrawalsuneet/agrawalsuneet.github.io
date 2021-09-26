@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="Swift for loop,for loop Swift,for loop,for Swift">
+    <meta name="keywords" content="for loop swift,for-in swift,for-each-swift,swift loops">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Swift ‘For’ loop" />
-    <meta property="og:title" content="Swift ‘For’ loop">
-    <meta property="twitter:title" content="Swift ‘For’ loop">
+    <meta name="title" content="Suneet Agrawal | For-in vs For-each in Swift" />
+    <meta property="og:title" content="For-in vs For-each in Swift">
+    <meta property="twitter:title" content="For-in vs For-each in Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Swift ‘For’ loop">
-    <meta name="description" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta property="og:description" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta property="twitter:description" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta name="abstract" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta name="summary" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes."> 
+    <meta name="topic" content="For-in vs For-each in Swift">
+    <meta name="description" content="For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.">
+    <meta property="og:description" content="For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.">
+    <meta property="twitter:description" content="For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.">
+    <meta name="abstract" content="For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.">
+    <meta name="summary" content="For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-09-25 "> 
+    <meta property="article:published_time" content=" 2021-09-26 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>Swift ‘For’ loop &middot; Suneet Agrawal</title>
+    <title>For-in vs For-each in Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Swift ‘For’ loop</h1>
+        <h1 class="mx16">For-in vs For-each in Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,13 +245,10 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-       For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes. 
-       </br>
-       </br>
-       While comparing with other languages, I realized in Swift, there are few concepts which are completely different from java or any other another language <mark>for</mark> loops.
+        For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.
         </br>
         </br>
-        Wait! They are not this tough. In fact, they are very easy, interesting and helpful.
+        To understand their differences, let's try to understand their examples in details first.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -266,270 +263,121 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+<h3>
+For-in loop
+</h3>
 <div class="center-justified text-content">
-        Let’s check one by one.
+        For-in loop is used to iterate over a range, set or dictionary using both the indexes as well an element based iteration.
 </div>
-</br>
-</br>
-<h4>1. Simple <mark>for</mark> loop in java that iterates from some number to some number incrementing one on each loop pass.</h4>
 <pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i++){<br/>    System.out.print(i);<br/>}<br/>
+  <br/>for item in 0...5 {<br/>    print(item)<br/>}<br/><br/>let dictionary = ["Suneet": "Engineering", "Ballu": "Sales", "John": "Marketing"]<br/>for (name, department) in dictionary {<br/>    print("\(name) is working in \(department) department")<br/>}<br/><br/>let set = ["Suneet", "Agrawal", "Ballu"]<br/>for item in set {<br/>    print(item)<br/>}<br/>
 </pre>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+For-each loop
+</h3>
 <div class="center-justified text-content">
+        For-each loop can also be used to iterate over a range, set or dictionary using both the indexes as well an element based iteration.
+</div>
+<pre class="zeropadding">
+  <br/>(0...5).forEach{ item in<br/>    print(item)<br/>}<br/><br/>let dictionary = ["Suneet": "Engineering", "Ballu": "Sales", "John": "Marketing"]<br/>dictionary.forEach{ name, department in<br/>    print("\(name) is working in \(department) department")<br/>}<br/><br/>let set = ["Suneet", "Agrawal", "Ballu"]<br/>set.forEach{ item in<br/>    print(item)<br/>}<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h2>
+Difference between for-in and for-each
+</h2>
+<h3>
+1. Break and continue statements cannot be used in for-each loop
+</h3>
+<div class="center-justified text-content">
+        <mark>break</mark> and <mark>continue</mark> are the basic syntaxes of for loop which is used to either break the loop iteration or to continue to the next element. 
         </br>
-        its equivalent Swift code
+        Since for-each is not a statement but it's a function, break and continue can't be used inside a for-each iteration.
 </div>
 <pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in 1...10 {<br/>    print(i)<br/>}<br/>
+  <br/><l>//For-in loop</l><br/>var evenNumbers = [Int]()<br/><br/>for number in 0...50 {<br/>    guard evenNumbers.count < 5 else {<br/>        break<br/>    }<br/><br/>    guard number % 2 == 0 else {<br/>        continue<br/>    }<br/>    evenNumbers.append(number)<br/>}<br/><br/>print(evenNumbers)<br/>//this will print [0, 2, 4, 6, 8]<br/><br/>-------------------------------------------<br/><l>//For-each loop</l><br/>var evenNumbers = [Int]()<br/><br/>(0...50).forEach{ number in<br/>    guard evenNumbers.count < 5 else {<br/>        break     //<e>'break' is only allowed inside a loop, if, do, or switch</e><br/>    }<br/><br/>    guard number % 2 == 0 else {<br/>        continue    //<e>'continue' is only allowed inside a loop</e><br/>    }<br/>    evenNumbers.append(number)<br/>}<br/><br/>print(evenNumbers)<br/><br/>
 </pre>
 
-<h3>Things to notice</h3>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+2. Return from scope is not possible from for-in loop
+</h3>
+<div class="center-justified text-content">
+        Return from the scope of the for loop is not possible in the case of the for-in loop. Please note that we can use <mark>return</mark> in the for-in loop if inside a function, but that will return from the function but not from the for-loop scope.
+</div>
+<pre class="zeropadding">
+  <br/><l>//For-in loop</l><br/>var evenNumbers = [Int]()<br/><br/>for number in 0...50 {<br/>    guard evenNumbers.count < 5 else {<br/>        return    //<e>Return invalid outside of a func</e><br/>    }<br/><br/>    guard number % 2 == 0 else {<br/>        return    //<e>Return invalid outside of a func</e><br/>    }<br/>    evenNumbers.append(number)<br/>}<br/><br/>print(evenNumbers)<br/><br/>-------------------------------------------<br/><l>//For-each loop</l><br/>var evenNumbers = [Int]()<br/><br/>(0...50).forEach{ number in<br/>    guard evenNumbers.count < 5 else {<br/>        return<br/>    }<br/><br/>    guard number % 2 == 0 else {<br/>        return<br/>    }<br/>    evenNumbers.append(number)<br/>}<br/><br/>print(evenNumbers)<br/>//this will print [0, 2, 4, 6, 8]<br/><br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+3. For-each can be used with Swift's closures or first class functions
+</h3>
+<div class="center-justified text-content">
+        Since for-each is a function but not a statement, it can be used with closures or first-class functions whereas the same is not possible with the case of the for-in loop.
+</div>
+<pre class="zeropadding">
+  <br/><l>//For-each loop</l><br/>func doSomethingWithNumber(for number : Int){<br/>    guard number % 2 == 0 else {<br/>        return<br/>    }<br/>    <br/>    print(number)<br/>}<br/><br/>(0...10).forEach(doSomethingWithNumber)<br/>
+</pre>
+
+</br>
+<h3>To sum it up</h3>
 <div class="center-justified text-content">
         <ul>
-                <li>No need to declare the data type of variable.</li>
-                <li>If iterating over a range, we can use <mark>...</mark> (closed range) operator.</li>
-                <li>The lower and upper (including) limit can be defined on both the sides of <mark>...</mark> operator.</li>
+                <li>For-in is a statement whereas for-each is a function.</li>
+                <li>For-in loop gives us a much greater degree of control over an iteration like using break, continue.</li>
+                <li>For-each enables us to take advantage of the power of closures and first-class functions.</li>
         </ul>
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>2. Now let’s say if I don’t don’t want to include the upper limit in the loop and break the loop if it hits the upper limit.</h4>
-<p><pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int j = 0; j < 10; j++) {<br/>    System.out.print(j); //this will print only up to 9<br/> }<br/>
-</pre>
-
-</br></p>
-<div class="center-justified text-content">
-        We can use the half-open range operator (<mark>..<</mark>).
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in 1..&lt;10 {<br/>    print(i)<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>3. I want to increment it by 2 or some other number.</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i += 2) {<br/>    System.out.print(i);<br/> }<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        We can use <mark>stride</mark> function here
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in stride(from: 0, through: 10, by: 2) {<br/>    print(i)<br/>}<br/>//this will run till last value, in our case till 10<br/><br/><br/>for i in stride(from: 0, to: 10, by: 2) {<br/>    print(i)<br/>}<br/>//this will run less then last value, in our case till 8<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>4. Wait, what if I want to run the loop in reverse order. Can I use <mark>10...1</mark> ?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 10; i > 0; i--) {<br/>    System.out.print(i);<br/> }<br/>
-</pre>
-
-<div class="center-justified text-content">
-        No, you can not use <mark>10...1</mark> directly as <mark>...</mark> operator never works on the reverse ranges. 
-        It will give you below run time error.
-</div>
-<pre class="zeropadding">
-  <br/><e>Error</e><br/>error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION (code=EXC_I386_INVOP, subcode=0x0).<br/>The process has been left at the point where it was interrupted, use "thread return -x" to return to the state before expression evaluation.<br/><br/>
-</pre>
-
-<div class="center-justified text-content">
-        You have to use <mark>reversed()</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in (0...10).reversed() {<br/>    print(i)<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        You can also change the step size with <mark>stride</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 10; i > 0; i -= 2) {<br/>    System.out.print(i);<br/> }<br/><br/><l>Swift code</l><br/>for i in stride(from: 0, to: 10, by: 2).reversed() {<br/>    print(i)<br/>}<br/><br/>for i in stride(from: 0, through: 10, by: 2).reversed() {<br/>    print(i)<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        But please note that <mark>stride</mark> function overload <mark>to</mark> and <mark>through</mark> works on upper range, in both nomral as well as in reversed case.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>5. What if I have a complex calculation instead of addition or subtraction in each step. Let’s say multiplication or division.</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int k = 2; k <= 256; k *= 2) {<br/>    System.out.print(k);<br/> }<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Move to while loop, no other way
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>var k = 2<br/>while (k <= 256) {<br/>   print(k)<br/>   k *= 2<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>6. I want to iterate over an array now.</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int item: arr) {<br/>    System.out.print(item);<br/> }<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Simple, use the <mark>in</mark> in Swift
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let arr = [0,1,2,3,4]<br/>for element in arr {<br/>    print(element)<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>7. I want to use the position (index) also. How can I do that?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int i = 0; i < arr.length; i++) {<br/>    System.out.print(arr[i]);<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Just use <mark>enumerated</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let arr = [0,1,2,3,4]<br/>for (index, element) in arr.enumerated() {<br/>    print("The element at \(index) is \(element)")<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>8. I heard about some for foreach also. Can I use the same in Swift?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>let arr = [0,1,2,3,4]<br/>for element in arr {<br/>    print(element)<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Just use <mark>foreach</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let arr = [0,1,2,3,4]<br/>arr.forEach{ element in<br/>    print(element)<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>9. And what about Dicionary?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>HashMap<String,String> map = new HashMap();<br/>map.put("Suneet","Engineering");<br/>map.put("Ballu","Sales");<br/>map.put("John","Marketing");<br/><br/>for (Map.Entry<String, String> entry : map.entrySet()) {<br/>        System.out.println(entry.getKey() + " is working in " + entry.getValue());<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Simple. Use <mark>in</mark> based iteration.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let employee = ["Suneet": "Engineering", "Ballu": "Sales", "John": "Marketing"]<br/>for (name, department) in employee {<br/>    print("\(name) is working in \(department) department")<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        No, I am a fan of <mark>foreach</mark> loop.
-        </br>
-        </br>
-        Ok, no problem, there you go.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let employee = ["Suneet": "Engineering", "Ballu": "Sales", "John": "Marketing"]<br/>employee.forEach { name, department in<br/>    print("\(name) is working in \(department) department")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        And we are done. See I told you this will be very easy and interesting.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -551,8 +399,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/for-in-vs-for-each-in-swift/">
-        For-in vs For-each in Swift &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

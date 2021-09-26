@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>For-in vs For-each in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</link>
+      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</guid>
+      <description>For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access.   To understand their differences, let&#39;s try to understand their examples in details first.    (adsbygoogle = window.adsbygoogle || []).push({});    For-in loop  For-in loop is used to iterate over a range, set or dictionary using both the indexes as well an element based iteration.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs  Technical Blogs (64 posts)   For-in vs For-each in Swift   For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access. read more  26 Sep 2021  Swift iOS      Swift ‘For’ loop   For loops are used by every developer regularly.</description>
+    </item>
+    
+    <item>
       <title>Swift ‘For’ loop</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-for-loop/</link>
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
@@ -41,15 +59,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</guid>
       <description>Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.   Let&#39;s try to understand some basic differences between then and when to use what. But before that let&#39;s quickly recap the lateinit and lazy properties    (adsbygoogle = window.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (63 posts)   Swift ‘For’ loop   For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes. read more  25 Sep 2021  Swift iOS      Computed Property in Swift   Object creation is a heavy process.</description>
     </item>
     
     <item>

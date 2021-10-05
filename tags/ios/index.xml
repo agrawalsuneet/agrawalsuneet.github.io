@@ -6,7 +6,16 @@
     <description>Recent content in iOS on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift Range Operators</title>
+      <link>https://agrawalsuneet.github.io/blogs/swift-range-operators/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/swift-range-operators/</guid>
+      <description>Range Operator in Swift is a basic operator that is used to operate over a range. There are multiple types of range operators where we can include or exclude the upper range. Or we can start the range with some value or can end before some max value.   The range operators can be used with for loops, if conditions, switch conditions or even in array iteration. First, let to see a basic example of a range operator.</description>
+    </item>
+    
     <item>
       <title>For-in vs For-each in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</link>

@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Destructuring Declarations in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</guid>
+      <description>Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself. It is beneficial for a few reasons like,  We don&#39;t have to use the dot property on the object again and again. If the object is of a nullable type, we can do the null check only once and then we can destructure it to non-nullable properties.</description>
+    </item>
+    
+    <item>
       <title>Swift Range Operators</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-range-operators/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
@@ -31,7 +40,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (65 posts)   Swift Range Operators   Range Operator in Swift is a basic operator that is used to operate over a range. There are multiple types of range operators where we can include or exclude the upper range. Or we can start the range with some value or can end before some max value. read more  06 Oct 2021  Swift iOS      For-in vs For-each in Swift   For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary.</description>
+      <description>Technical Blogs  Technical Blogs (66 posts)   Destructuring Declarations in Kotlin   Sometimes it&amp;#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself. read more  03 Dec 2021  Kotlin Android      Swift Range Operators   Range Operator in Swift is a basic operator that is used to operate over a range.</description>
     </item>
     
     <item>

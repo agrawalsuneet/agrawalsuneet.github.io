@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Destructuring Declarations in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</guid>
+      <description>Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself. It is beneficial for a few reasons like,  We don&#39;t have to use the dot property on the object again and again. If the object is of a nullable type, we can do the null check only once and then we can destructure it to non-nullable properties.</description>
+    </item>
+    
     <item>
       <title>Swift Range Operators</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-range-operators/</link>

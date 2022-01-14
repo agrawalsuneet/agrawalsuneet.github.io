@@ -70,6 +70,10 @@ div.googleads {
     margin-bottom: 24px;
 }
 
+div.position-fixed {
+    position: fixed;
+}
+
 div.fonttitle {
     font-size: 22px;
 }

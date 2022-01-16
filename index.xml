@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kotlin Range Operator</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</guid>
+      <description>Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.   The range operators can be used with for loops, if conditions or even in when operator. First, let to see a basic example of a range operator.    (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
+    
+    <item>
       <title>Iterators in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/iterators-in-kotlin/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
@@ -49,7 +58,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (67 posts)   Iterators in Kotlin   Iterators are used to traverse over a collection object. It provides access to the elements of the collection object sequentially without exposing the underlying structure of the collection. read more  20 Dec 2021  Kotlin Android      Destructuring Declarations in Kotlin   Sometimes it&amp;#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using .</description>
+      <description>Technical Blogs  Technical Blogs (68 posts)   Kotlin Range Operator   Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion. read more  15 Jan 2022  Kotlin Android      Iterators in Kotlin   Iterators are used to traverse over a collection object.</description>
     </item>
     
     <item>

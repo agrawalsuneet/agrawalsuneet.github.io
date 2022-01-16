@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin extensions,extensions in kotlin,kotlin extension function">
+    <meta name="keywords" content="kotlin range,range,rangeTo,..,downTo,until,step">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Extensions in Kotlin" />
-    <meta property="og:title" content="Extensions in Kotlin">
-    <meta property="twitter:title" content="Extensions in Kotlin">
+    <meta name="title" content="Suneet Agrawal | Kotlin Range Operator" />
+    <meta property="og:title" content="Kotlin Range Operator">
+    <meta property="twitter:title" content="Kotlin Range Operator">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Extensions in Kotlin">
-    <meta name="description" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
-    <meta property="og:description" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
-    <meta property="twitter:description" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
-    <meta name="abstract" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions.">
-    <meta name="summary" content="Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called extensions."> 
+    <meta name="topic" content="Kotlin Range Operator">
+    <meta name="description" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
+    <meta property="og:description" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
+    <meta property="twitter:description" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
+    <meta name="abstract" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
+    <meta name="summary" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-10-26 "> 
+    <meta property="article:published_time" content=" 2022-01-15 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
     <meta property="og:tags" content="Android">  <meta name="generator" content="Hugo 0.82.0" />
-    <title>Extensions in Kotlin &middot; Suneet Agrawal</title>
+    <title>Kotlin Range Operator &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Extensions in Kotlin</h1>
+        <h1 class="mx16">Kotlin Range Operator</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -247,19 +247,10 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-        Have you ever felt some useful functionality missing in an existing class?
-        </br>
-        The class could be in the libraries provided by language also.
-        </br>
-        </br>
-        “Yes”
-        </br>
-        </br>
-        What exactly you do to add that functionality in the class?
-        </br>
-        “Extend the class and add the method and then use my own extended class”
-        </br>
-        If so, Kotlin extensions can definitely make your life easier.
+        Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion. 
+       </br>
+       </br>
+        The range operators can be used with <a href="/blogs/kotlin-for-loop/" target="_blank">for loops</a>, if conditions or even in <a href="/blogs/when-operator-in-kotlin/" target="_blank">when operator</a>. First, let to see a basic example of a range operator.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -275,164 +266,29 @@ if (!doNotTrack) {
     </script>
 </div>
 <div class="center-justified text-content">
-        Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done using a special declaration called <mark>extensions</mark>. These extensions basically add some functionality in an existing class without extending the class.
-        </br>
-        </br>
-        <h4>
-        And how do we use it?
-        </h4>
-        I will explain this but before that, keep in mind that Kotlin supports both, extension functions and extension properties (Without backing field). Let’s understand them one by one.
-        </br>
-        <h3>
-        Extension Functions
-        </h3>
-        To declare an extension function, we need to prefix its name with a receiver type, i.e. the type being extended or the class name.
-        </br>
-        </br>
-        Let’s say we want to add a function in the <mark>List</mark> Interface implementation which returns the element at the mid position of the list.
+        A basic range operator can be defined with <mark>..</mark> having a lower range value to the left side and upper range value to the right side of <mark>..</mark>
 </div>
 <pre class="zeropadding">
-  <br/>fun &lt;T&gt; List&lt;T&gt;.midElement(): T {<br/>    if (isEmpty())<br/>        throw NoSuchElementException("List is empty.")<br/>    return this[size / 2]<br/>}<br/><br/>//to call this method<br/>var list = listOf&lt;Int&gt;(1, 2, 3, 4, 5)<br/>var mid = list.midElement()<br/><br/>//or <br/><br/>var arrayList = arrayListOf(5, 4, 3, 2, 1)<br/>var mid = arrayList.midElement()<br/>
+  <br/>val x = 4<br/><br/>for (item in <b>1..10</b>){<br/>    println(item)<br/>}<br/><br/>if ((<b>1..10</b>).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in <b>1..10</b> -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        <h4>
-        So what we are doing here?
-        </h4>
-        We are adding a method named <mark>midElement</mark> in the <mark>List</mark> implementation which returns us the element at the mid position of the list. This method throws <mark>NoSuchElementException</mark> if the list is empty.
-        </br>
-        </br>
-        Later this <mark>midElement</mark> method can be called with any normal List object.
+        Lets try to understand the <mark>..</mark> operator and its return type first.
 </div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
+<h3>
+rangeTo() function
+</h3>
 <div class="center-justified text-content">
-        Let’s take another example of our very favorite <mark>Toast</mark> class in Android.
+        <mark>..</mark> is an operator overloading to <mark>rangeTo()</mark> function which is defined in <mark>kotlin.ranges</mark> package.
         </br>
         </br>
-        <mark>Toast</mark> class is used to show a message at the bottom half of the screen in Android for a long or short duration.
+        <mark>rangeTo()</mark> function is an extension function to the <mark>Template</mark> class where the <mark>Template</mark> class should implement the <mark>Comparable</mark> interface.
         </br>
-        The native code to show a Toast in Android is
+        That means we can create a range to any primitive or non primitive data type which implements the <mark>Comparable</mark> interface.
 </div>
 <pre class="zeropadding">
-  <br/>Toast.makeText(this, “Hello”, Toast.LENGTH_SHORT).show()<br/>
-</pre>
-
-<div class="center-justified text-content">
-        The above code calls a static method <mark>makeText</mark> of <mark>Toast</mark> class with three parameters (reference of the current <mark>Context</mark> class, the <mark>CharSequence</mark> to be displayed and the <mark>Int</mark> duration for which the toast to be shown). The static method returns the <mark>Toast</mark> class object to which we call the show method.
-        </br>
-        </br>
-        Now to make the call easy to this <mark>Toast</mark> from any class which extends the <mark>Context</mark> class directly or indirectly, we can create an extension method of <mark>Context</mark> class which will do the exact same.
-</div>
-<pre class="zeropadding">
-  <br/>fun Context.showToast(text: CharSequence, duration: Int = Toast.LENGTH_SHORT) {<br/>    Toast.makeText(this, text, duration).show()<br/>}<br/><br/>//to call this method from any context extending class<br/>showToast("Hello")<br/>
-</pre>
-
-<div class="center-justified text-content">
-        <h3>
-        How are extensions resolved?
-        </h3>
-        </h4>
-        Statically.
-        </h4>
-        </br>
-        </br>
-        Extensions do not actually modify classes they extend. By defining an extension, you do not insert new members into a class, but merely make new functions callable with the dot-notation on variables of this type.
-        </br>
-        </br>
-        The extension functions dispatched statically. That means the extension function which will be called is determined by the type of the expression on which the function is invoked, not by the type of the result of evaluating that expression at runtime. In short, they are not virtual by receiver type.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        <h4>
-        Let me explain.
-        </h4>
-        Let’s say we have two classes, one extending other and both have the same extension functions with same name and signature.
-</div>
-<pre class="zeropadding">
-  <br/>open class BaseClass<br/><br/>class DerivedClass : BaseClass()<br/><br/>fun BaseClass.someMethod(){<br/>    print("BaseClass.someMethod")<br/>}<br/><br/>fun DerivedClass.someMethod(){<br/>    print("DerivedClass.someMethod")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        Now if we try to call the <mark>someMethod</mark> with <mark>BaseClass</mark> object but the actual reference we pass to it will be <mark>DerivedClass</mark> reference,
-</div>
-<pre class="zeropadding">
-  <br/>fun printMessage(base : BaseClass){<br/>    base.someMethod()<br/>}<br/><br/>//actual call<br/>printMessage(DerivedClass())<br/>
-</pre>
-
-<div class="center-justified text-content">
-        This will print BaseClass.someMethod
-        </br>
-        <h4>
-        But why?
-        </h4>
-        I passed the <mark>DerivedClass</mark> reference.
-        </br>
-        </br>
-        Because the extension function being called depends only on the declared type of the parameter <mark>base</mark> in <mark>printMessage</mark> method, which is the <mark>BaseClass</mark> class. This is different from runtime polymorphism as here it is resolved statically but not at the runtime.
-        </br>
-        </br>
-        What if my class has the same method with the same signature that we are adding as an extension function?
-        </br>
-        </br>
-        The compiler will call the method declared in the class but not the extension function.
-</div>
-<pre class="zeropadding">
-  <br/>class BaseClass{<br/>    fun someMethod(){<br/>        print("I am the actual someMethod")<br/>    }<br/>}<br/><br/>fun BaseClass.someMethod(){<br/>    print("I am the extension function")<br/>}<br/><br/>//to call this method<br/>BaseClass().someMethod()<br/>
-</pre>
-
-<div class="center-justified text-content">
-        This will call the someMethod which s defined in BaseClass and will print
-        </br>
-        I am the actual someMethod
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        <h3>
-        Nullable Receiver
-        </h3>
-        The extensions can be defined with a nullable receiver type also. These extension function can be called on a nullable object variable.
-        </br>
-        </br>
-        Let’s take an example of toString method.
-</div>
-<pre class="zeropadding">
-  <br/>fun Any?.toString(): String {<br/>    if (this == null) return "null"<br/>    // after the null check,<br/>    // 'this' is autocast to a non-null type, <br/>    // so the toString() below<br/>    // resolves to the member function of the Any class<br/>    return toString()<br/>}<br/><br/>// not the above method can be call on a nullable variable also<br/>var nullableVariable : Any? = null<br/>nullableVariable.toString()<br/>
+  <br/>/**<br/> * Creates a range from this [Comparable] value to the specified [that] value.<br/> *<br/> * This value needs to be smaller than or equal to [that] value, otherwise the returned range will be empty.<br/> * @sample samples.ranges.Ranges.rangeFromComparable<br/> */<br/>public operator fun &lt;T : Comparable&lt;T&gt;&gt; T.<b>rangeTo</b>(that: T): ClosedRange&lt;T&gt; = ComparableRange(this, that)<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -448,21 +304,14 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+<h3>
+ClosedRange
+</h3>
 <div class="center-justified text-content">
-        <h3>
-        Extension Properties
-        </h3>
-        Similarly to functions, we can add extension properties also.
+        The <mark>rangeTo()</mark> function returns a <mark>ClosedRange</mark> interface object which has a <mark>start</mark> and an <mark>endInclusive</mark> variables and <mark>contains</mark> operator function which is used by the <mark>in</mark> operator and an <mark>isEmpty</mark> function.
 </div>
 <pre class="zeropadding">
-  <br/>val <T> List<T>.midIndex: Int<br/>    get() = if (size == 0) 0 else size / 2<br/>
-</pre>
-
-<div class="center-justified text-content">
-        Since extensions do not actually insert members into classes, there’s no efficient way for an extension property to have a backing field. This is why initializers are not allowed for extension properties. Their behavior can only be defined by explicitly providing getters/setters.
-</div>
-<pre class="zeropadding">
-  <br/>class BaseClass{<br/>}<br/><br/>var BaseClass.index : Int = 10 <e>//compile error</e><br/>//Extension property cannot be initialized<br/>//because it has no backing field<br/>
+  <br/>package kotlin.ranges<br/><br/>/**<br/> * Represents a range of values (for example, numbers or characters).<br/> */<br/>public interface <b>ClosedRange</b>&lt;T: Comparable&lt;T&gt;&gt; {<br/>    /**<br/>     * The minimum value in the range.<br/>     */<br/>    public val start: T<br/><br/>    /**<br/>     * The maximum value in the range (inclusive).<br/>     */<br/>    public val endInclusive: T<br/><br/>    /**<br/>     * Checks whether the specified [value] belongs to the range.<br/>     */<br/>    public operator fun contains(value: T): Boolean = value >= start && value <= endInclusive<br/><br/>    /**<br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    public fun isEmpty(): Boolean = start &gt; endInclusive<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -478,38 +327,89 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+<h3>
+CharRange, IntRange & LongRange
+</h3>
 <div class="center-justified text-content">
-        <h3>
-        Companion Object Extension
-        </h3>
-        We can also define extension functions and properties for the <a href="/blogs/companion-object-in-kotlin/" target="_blank">Companion object</a>.
+        <mark>ClosedRange</mark> is further extended by <mark>CharRange</mark>, <mark>IntRange</mark> and <mark>LongRange</mark> which provides the functionality of <mark>Iterable</mark> also along with closed range which is used by <a href="/blogs/kotlin-for-loop/" target="_blank">for loops</a>.
 </div>
 <pre class="zeropadding">
-  <br/>class BaseClass {<br/><br/>    companion object {<br/>    }<br/>}<br/><br/>fun BaseClass.Companion.companionMethod(){<br/><br/>}<br/>//to call this method<br/>BaseClass.companionMethod()<br/>
+  <br/>package kotlin.ranges<br/><br/>/**<br/> * A range of values of type `Char`.<br/> */<br/>public class <b>CharRange</b>(start: Char, endInclusive: Char) : CharProgression(start, endInclusive, 1), ClosedRange&lt;Char&gt; {<br/>    override val start: Char get() = first<br/>    override val endInclusive: Char get() = last<br/><br/>    override fun contains(value: Char): Boolean = first <= value && value <= last<br/><br/>    /** <br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    override fun isEmpty(): Boolean = first > last<br/><br/>    override fun equals(other: Any?): Boolean =<br/>        other is CharRange && (isEmpty() && other.isEmpty() ||<br/>        first == other.first && last == other.last)<br/><br/>    override fun hashCode(): Int =<br/>        if (isEmpty()) -1 else (31 * first.code + last.code)<br/><br/>    override fun toString(): String = "$first..$last"<br/><br/>    companion object {<br/>        /** An empty range of values of type Char. */<br/>        public val EMPTY: CharRange = CharRange(1.toChar(), 0.toChar())<br/>    }<br/>}<br/><br/>/**<br/> * A range of values of type `Int`.<br/> */<br/>public class <b>IntRange</b>(start: Int, endInclusive: Int) : IntProgression(start, endInclusive, 1), ClosedRange&lt;Int&gt; {<br/>    override val start: Int get() = first<br/>    override val endInclusive: Int get() = last<br/><br/>    override fun contains(value: Int): Boolean = first <= value && value <= last<br/><br/>    /** <br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    override fun isEmpty(): Boolean = first > last<br/><br/>    override fun equals(other: Any?): Boolean =<br/>        other is IntRange && (isEmpty() && other.isEmpty() ||<br/>        first == other.first && last == other.last)<br/><br/>    override fun hashCode(): Int =<br/>        if (isEmpty()) -1 else (31 * first + last)<br/><br/>    override fun toString(): String = "$first..$last"<br/><br/>    companion object {<br/>        /** An empty range of values of type Int. */<br/>        public val EMPTY: IntRange = IntRange(1, 0)<br/>    }<br/>}<br/><br/>/**<br/> * A range of values of type `Long`.<br/> */<br/><br/>public class <b>LongRange</b>(start: Long, endInclusive: Long) : LongProgression(start, endInclusive, 1), ClosedRange&lt;Long&gt; {<br/>    override val start: Long get() = first<br/>    override val endInclusive: Long get() = last<br/><br/>    override fun contains(value: Long): Boolean = first <= value && value <= last<br/><br/>    /** <br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    override fun isEmpty(): Boolean = first > last<br/><br/>    override fun equals(other: Any?): Boolean =<br/>        other is LongRange && (isEmpty() && other.isEmpty() ||<br/>        first == other.first && last == other.last)<br/><br/>    override fun hashCode(): Int =<br/>        if (isEmpty()) -1 else (31 * (first xor (first ushr 32)) + (last xor (last ushr 32))).toInt()<br/><br/>    override fun toString(): String = "$first..$last"<br/><br/>    companion object {<br/>        /** An empty range of values of type Long. */<br/>        public val EMPTY: LongRange = LongRange(1, 0)<br/>    }<br/>}<br/>
 </pre>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+downTo
+</h3>
 <div class="center-justified text-content">
-        <h3>
-        Scope of Extensions
-        </h3>
-        Most of the time we define extensions on the top level, i.e. directly under packages.
+        To iterate over a range in reverse order, we can use <mark>downTo</mark> operator which is an extension function on different types like <mark>Int</mark>, <mark>Long</mark>, <mark>Char</mark> and provides the reverse iteration with step size as <mark>-1</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>package com.example.extension<br/><br/>fun BaseClass.extensionFunction(){<br/>    <br/>}<br/><br/>//and use it with<br/>import com.example.extension.extensionFunction <br/>// importing all extensions by name "extensionFunction"<br/><br/>// or<br/>import com.example.extension.*   <br/>// importing everything from "com.example.extension"<br/><br/>fun usage(base: BaseClass) {<br/>    base.extensionFunction()<br/>}<br/>
+  <br/>val x = 4<br/><br/>for (item in 10 <b>downTo</b> 1){<br/>    println(item)<br/>}<br/><br/>if ((10 <b>downTo</b> 1).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in 10 <b>downTo</b> 1 -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
 </pre>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+until
+</h3>
 <div class="center-justified text-content">
-        but if you want to declare an extension function as a member of the other class we have some rules to follow which I will explain in another blog.
-        </br>
-        </br>
-        Read more about extension functions on the below links.
-        <ul>
-                <li><a href="/blogs/kotlin-extension-property/">Kotlin Extension Property</a></li>
-                <li><a href="/blogs/how-extension-functions-resolved/">How extension functions resolved?</a></li>
-                <li><a href="/blogs/inheritance-vs-extension-functions/">Inheritance vs Extension functions</a></li>
-        </ul>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/extensions.html" target="_blank">Kotlin docs</a>
+        The <mark>until</mark> operator can be used to exclude the <mark>endElement</mark>. The <mark>iterator</mark> or the <mark>if</mark> and <mark>when</mark> condition will not include the end element in case of <mark>until</mark>.
+</div>
+<pre class="zeropadding">
+  <br/>val x = 4<br/><br/>for (item in 1 <b>until</b> 10){<br/>    println(item)<br/>}<br/><br/>if ((1 <b>until</b> 10).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in 1 <b>until</b> 10 -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+step
+</h3>
+<div class="center-justified text-content">
+        The <mark>step</mark> can be used to change the step size of the iteration over the range. 
+</div>
+<pre class="zeropadding">
+  <br/>val x = 4<br/><br/>for (item in 1..10 <b>step</b> 2){<br/>    println(item)<br/>}<br/><br/>if ((1 until 10 <b>step</b> 2).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in 10 downTo 1 <b>step</b> 2 -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
+</pre>
+
+</br>
+</br>
+<div class="center-justified text-content">
+        Reference: <a href="https://kotlinlang.org/docs/ranges.html#range" target="_blank">Kotlin docs</a>
         </br>
 </div>
 <div class="col-xs-12 googleads">
@@ -540,6 +440,7 @@ if (!doNotTrack) {
     </script>
 </div>
 </div>
+</div>
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
         <a href="/blogs/">
@@ -547,8 +448,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/extensions-as-members-kotlin">
-        Extensions as Members : Kotlin &gt;&gt;
+        <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">
+        Safe calls(?.) vs Null checks(!!) in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

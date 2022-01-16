@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kotlin Range Operator</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</guid>
+      <description>Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.   The range operators can be used with for loops, if conditions or even in when operator. First, let to see a basic example of a range operator.    (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
+    
     <item>
       <title>Iterators in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/iterators-in-kotlin/</link>

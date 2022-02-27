@@ -6,7 +6,16 @@
     <description>Recent content in Swift on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switch Statement in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</guid>
+      <description>The switch statement in Swift is used to execute a particular block of code based on multiple conditions. A switch statement is useful for more than one condition. For one or two conditions, if-else is a better option but for conditions more than that, a switch statement is a better option.   We will try to understand the flow of switch statement in detail but let&#39;s try to understand its basic syntax first.</description>
+    </item>
+    
     <item>
       <title>Swift Range Operators</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-range-operators/</link>

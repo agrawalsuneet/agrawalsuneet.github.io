@@ -6,7 +6,16 @@
     <description>Recent content in Gists on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UITextField Text Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</guid>
+      <description> This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.   For further explaination on how this works, please read the article UITextField TextListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
     <item>
       <title>Typecast Android Object in Untiy</title>
       <link>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</link>
@@ -31,7 +40,7 @@
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   UITextField Text Listener : Swift &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>

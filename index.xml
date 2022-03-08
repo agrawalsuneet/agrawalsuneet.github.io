@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>UITextField Text Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</guid>
+      <description>Adding an editing event to a UITextField is something that is required most of the time. For views like UITextField, we can connect an IBAction with the event type as editing did end or value changed and get a callback for editing finished or value changed.   If you are not using xib or storyboard but creating the layout programmatically or by using swiftUI, you can the editing event using a target action that takes three parameters,  target of Any type which is nullable action of Selector type controlEvents of UIControl.</description>
+    </item>
+    
+    <item>
+      <title>UITextField Text Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</guid>
+      <description> This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.   For further explaination on how this works, please read the article UITextField TextListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
+    <item>
       <title>Switch Statement in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</link>
       <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
@@ -67,7 +85,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (69 posts)   Switch Statement in Swift   The switch statement in Swift is used to execute a particular block of code based on multiple conditions. A switch statement is useful for more than one condition. For one or two conditions, if-else is a better option but for conditions more than that, a switch statement is a better option. read more  27 Feb 2022  Swift iOS      Kotlin Range Operator   Range Operator in Kotlin is a basic operator that is used to operate over a range.</description>
+      <description>Technical Blogs  Technical Blogs (70 posts)   UITextField Text Listener : Swift   Adding an editing event to a UITextField is something that is required most of the time. For views like UITextField, we can connect an IBAction with the event type as editing did end or value changed and get a callback for editing finished or value changed. read more  08 Mar 2022  Swift iOS      Switch Statement in Swift   The switch statement in Swift is used to execute a particular block of code based on multiple conditions.</description>
     </item>
     
     <item>
@@ -292,7 +310,7 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
-      <description>Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.   If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController.</description>
+      <description>Adding a click event to a UIView is something that is required most of the time. For views like UIButton, we can connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.   If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController.    (adsbygoogle = window.</description>
     </item>
     
     <item>
@@ -310,7 +328,7 @@
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   UITextField Text Listener : Swift &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>

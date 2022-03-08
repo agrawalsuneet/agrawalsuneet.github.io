@@ -6,7 +6,25 @@
     <description>Recent content in iOS on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UITextField Text Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</guid>
+      <description>Adding an editing event to a UITextField is something that is required most of the time. For views like UITextField, we can connect an IBAction with the event type as editing did end or value changed and get a callback for editing finished or value changed.   If you are not using xib or storyboard but creating the layout programmatically or by using swiftUI, you can the editing event using a target action that takes three parameters,  target of Any type which is nullable action of Selector type controlEvents of UIControl.</description>
+    </item>
+    
+    <item>
+      <title>UITextField Text Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</guid>
+      <description> This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.   For further explaination on how this works, please read the article UITextField TextListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
     <item>
       <title>Switch Statement in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</link>
@@ -85,7 +103,7 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
-      <description>Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.   If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController.</description>
+      <description>Adding a click event to a UIView is something that is required most of the time. For views like UIButton, we can connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.   If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController.    (adsbygoogle = window.</description>
     </item>
     
     <item>
@@ -94,7 +112,7 @@
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.   For further explaination on how this works, please read the article UIView ClickListener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   UITextField Text Listener : Swift &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>

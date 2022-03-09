@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="UIView click event,iOS view click event,iOS clicklistener">
+    <meta name="keywords" content="uidatepicker datechange listener,value change listener,UIDatePicker date change event,iOS value change listener,iOS date change event">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | UIView ClickListener : Swift (Github Gist)" />
-    <meta property="og:title" content="UIView ClickListener : Swift (Github Gist)">
-    <meta property="twitter:title" content="UIView ClickListener : Swift (Github Gist)">
+    <meta name="title" content="Suneet Agrawal | UIDatePicker Date Change Listener : Swift" />
+    <meta property="og:title" content="UIDatePicker Date Change Listener : Swift">
+    <meta property="twitter:title" content="UIDatePicker Date Change Listener : Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="UIView ClickListener : Swift (Github Gist)">
-    <meta name="description" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta property="og:description" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta property="twitter:description" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta name="abstract" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta name="summary" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views."> 
+    <meta name="topic" content="UIDatePicker Date Change Listener : Swift">
+    <meta name="description" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta property="og:description" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta property="twitter:description" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta name="abstract" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta name="summary" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-12-14 "> 
+    <meta property="article:published_time" content=" 2022-03-09 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS"> 
-    <title>UIView ClickListener : Swift (Github Gist) &middot; Suneet Agrawal</title>
+    <title>UIDatePicker Date Change Listener : Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">UIView ClickListener : Swift (Github Gist)</h1>
+        <h1 class="mx16">UIDatePicker Date Change Listener : Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -244,14 +244,90 @@ if (!doNotTrack) {
     <article>
         <div class="col-xs-12">
             </br>
+<div class="row">
+<div class="col-lg-10">
 <div class="center-justified text-content">
-    This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way. 
+    Adding an editing event to a <mark>UIDatePicker</mark> is something that is required most of the time. For views like <mark>UIDatePicker</mark>, we can connect an <mark>IBAction</mark> with the event type as <mark>value changed</mark> and get a callback for the value changed.
     </br>
     </br>
-    For further explaination on how this works, please read the article <a href="/blogs/uiview-clicklistener-swift/" target="_blank">UIView ClickListener : Swift</a>.
+    If you are not using <mark>xib</mark> or <mark>storyboard</mark> but creating the layout programmatically or by using <mark>swiftUI</mark>, you can the editing event using a target action that takes three parameters,
+   <ol>
+        <li>target of <mark>Any</mark> type which is nullable</li>
+        <li>action of <mark>Selector</mark> type</li>
+        <li>controlEvents of <mark>UIControl.Event</mark></li>
+   </ol>
 </div>
-</br>
-<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/e16589342e83b622161ea4494863ee51.js"></script>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<div class="center-justified text-content">
+    The code for the same will look like below.
+</div>
+<pre class="zeropadding">
+  <br/><l>//swift code in viewcontroller</l><br/><br/>self.datePicker.<b>addTarget</b>(self, action: #selector(onDateValueChanged(_:)), for: .valueChanged)<br/><br/> @objc private func onDateValueChanged(_ datePicker: UIDatePicker) {<br/>    //do something here<br/>}<br/>
+</pre>
+
+<div class="center-justified text-content">
+    Since the <mark>Selector</mark> takes only <mark>@objc</mark> functions which can only be defined as a member of the class or an extension of the class, we need to define it at a class level only.
+</div>
+<pre class="zeropadding">
+  <br/><e>@objc can only be used with members of classes, @objc protocols, and concrete extensions of classes</e><br/>
+</pre>
+
+<div class="center-justified text-content">
+    This way is a bit inefficient as we need to add one function for each <mark>UIDatePicker</mark> where we need editing event.
+    </br>
+    </br>
+    There is a better way where we can add this functionality to each <mark>UIDatePicker</mark> without making our class messy.
+    </br>
+    We can add this to the <mark>UIDatePicker</mark> extension itself which will be a very clean approach and will make our life super easy.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<div class="center-justified text-content">
+    First, add a function as an extension to <mark>UIDatePicker</mark> class which takes a function as a parameter with 0 params and Void return type.
+    </br>
+    Since this function will be our callback function, add <mark>@escaping</mark> to the function passed as the parameter.
+</div>
+<pre class="zeropadding">
+  <br/>//MARK: - UIDatePicker Extension<br/>extension UIDatePicker {<br/>    func <b>setOnDateChangeListener</b>(onDateChanged :<b>@escaping</b> () -> Void){<br/>        <br/>    }<br/>}<br/>
+</pre>
+
+<div class="center-justified text-content">
+   Now add an action to the <mark>UIDatePicker</mark> object in the same function which takes two parameters.
+    <ol>
+        <li>action of <mark>UIAction</mark> type</li>
+        <li>controlEvents of <mark>UIControl.Event</mark></li>
+    </ol>
+    </br>
+    There are multiple constructors for <mark>UIAction</mark> but will take the most simple one where it takes one parameter ie handler of <mark>UIActionHandler</mark> type. Rest all params either have a default value or are of nullable types.
+    </br>
+    And, we can call our callback function in the handler callback.
+</div>
+<pre class="zeropadding">
+  <br/>//MARK: - UIDatePicker Extension<br/>@available(iOS 14.0, *)<br/>extension UIDatePicker {<br/>    <br/>    func setOnDateChangeListener(onDateChanged :@escaping () -> Void){   <br/>        self.addAction(UIAction(){ action in<br/>            <br/>            <b>onDateChanged()</b><br/><br/>        }, for: .valueChanged) <br/>    }<br/>}<br/>
+</pre>
 
 <div class="col-xs-12 googleads">
     
@@ -266,15 +342,69 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+<div class="center-justified text-content">
+    This took care of all the boilerplate code and added a simple public function to each <mark>UIDatePicker</mark> for text change event.
+    </br>
+    </br>
+    To call this function, simply call <mark>setOnDateChangeListener</mark> to any <mark>UIDatePicker</mark> in your ViewController.
+</div>
+<pre class="zeropadding">
+  <br/><l>//swift code in view viewcontroller</l><br/><br/>self.datePicker.setOnDateChangeListener {<br/>    print("date changed")<br/>}<br/>
+</pre>
+
+<div class="center-justified text-content">
+    No extra function required in ViewController and it will be very clean. 
+</div>
+<h3>
+But keep in mind, the function <mark>addAction</mark> is only available in iOS 14 or above
+</h3>
+<div class="center-justified text-content">
+    If your codebase still supports below iOS 14, then you need to go with the <mark>addTarget</mark> and <mark>Selector</mark> function only.
+</div>
+<h3>
+        Complete code
+</h3>
+<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/a1d3c148269b2e0b794c7ca2d722d827.js"></script>
+
+</br>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</div>
+<div class="col-lg-2 position-sticky-top">
+<div class="googleads">
+    
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-1093303282603666"
+        data-ad-slot="5801291010"
+        data-ad-format="vertical"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</div>
+</div>
 <div class="col-xs-12 center-justified text-subtitle">
     <div class="col-sm-6 col-xs-12">
-        <a href="/gists">
-        &lt;&lt; All Gists
+        <a href="/blogs/">
+        &lt;&lt; All Blogs
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/gists/uitextfield-text-listener-swift/">
-        UITextField Text Listener : Swift &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

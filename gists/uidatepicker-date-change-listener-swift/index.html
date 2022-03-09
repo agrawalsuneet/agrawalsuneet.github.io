@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="UIView click event,iOS view click event,iOS clicklistener">
+    <meta name="keywords" content="uidatepicker datechange listener,value change listener,UIDatePicker date change event,iOS value change listener,iOS date change event">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | UIView ClickListener : Swift (Github Gist)" />
-    <meta property="og:title" content="UIView ClickListener : Swift (Github Gist)">
-    <meta property="twitter:title" content="UIView ClickListener : Swift (Github Gist)">
+    <meta name="title" content="Suneet Agrawal | UIDatePicker Date Change Listener : Swift (Github Gist)" />
+    <meta property="og:title" content="UIDatePicker Date Change Listener : Swift (Github Gist)">
+    <meta property="twitter:title" content="UIDatePicker Date Change Listener : Swift (Github Gist)">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="UIView ClickListener : Swift (Github Gist)">
-    <meta name="description" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta property="og:description" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta property="twitter:description" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta name="abstract" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.">
-    <meta name="summary" content="Adding a click event to a UIView is something which is required most of the times. For views like UIButton, we can simply connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views."> 
+    <meta name="topic" content="UIDatePicker Date Change Listener : Swift (Github Gist)">
+    <meta name="description" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta property="og:description" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta property="twitter:description" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta name="abstract" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
+    <meta name="summary" content="Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-12-14 "> 
+    <meta property="article:published_time" content=" 2022-03-09 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS"> 
-    <title>UIView ClickListener : Swift (Github Gist) &middot; Suneet Agrawal</title>
+    <title>UIDatePicker Date Change Listener : Swift (Github Gist) &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">UIView ClickListener : Swift (Github Gist)</h1>
+        <h1 class="mx16">UIDatePicker Date Change Listener : Swift (Github Gist)</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,13 +245,13 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-    This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way. 
+    This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way. 
     </br>
     </br>
-    For further explaination on how this works, please read the article <a href="/blogs/uiview-clicklistener-swift/" target="_blank">UIView ClickListener : Swift</a>.
+    For further explaination on how this works, please read the article <a href="/blogs/uidatepicker-date-change-listener-swift/" target="_blank">UIDatePicker Date Change Listener : Swift</a>.
 </div>
 </br>
-<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/e16589342e83b622161ea4494863ee51.js"></script>
+<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/a1d3c148269b2e0b794c7ca2d722d827.js"></script>
 
 <div class="col-xs-12 googleads">
     
@@ -273,8 +273,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/gists/uitextfield-text-listener-swift/">
-        UITextField Text Listener : Swift &gt;&gt;
+        <a href="/gists/native-android-in-unity">
+        Native Android in Unity &gt;&gt;
       </a>
     </div>
 </div>

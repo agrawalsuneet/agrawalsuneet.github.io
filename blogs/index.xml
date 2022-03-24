@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UserDefaults in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</guid>
+      <description>A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.  Let&#39;s try to understand what are UserDefaults first.</description>
+    </item>
+    
     <item>
       <title>UIDatePicker Date Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</link>

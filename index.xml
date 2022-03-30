@@ -17,6 +17,24 @@
     </item>
     
     <item>
+      <title>UISwitch Value Change Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</guid>
+      <description>Adding an value change event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.   If you are not using xib or storyboard but creating the layout programmatically or by using swiftUI, you can the editing event using a target action that takes three parameters,  target of Any type which is nullable action of Selector type controlEvents of UIControl.</description>
+    </item>
+    
+    <item>
+      <title>UISwitch Value Change Listener : Swift (Github Gist)</title>
+      <link>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</guid>
+      <description> This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.   For further explaination on how this works, please read the article UISwitch Value Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
+    <item>
       <title>UIDatePicker Date Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
@@ -31,7 +49,7 @@
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</guid>
-      <description> This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way.   For further explaination on how this works, please read the article UIDatePicker Date Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way.   For further explaination on how this works, please read the article UIDatePicker Date Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   UISwitch Value Change Listener : Swift &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>
@@ -112,7 +130,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (72 posts)   UserDefaults in Swift   A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.</description>
+      <description>Technical Blogs  Technical Blogs (73 posts)   UserDefaults in Swift   A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.</description>
     </item>
     
     <item>

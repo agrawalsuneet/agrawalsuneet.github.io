@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="uiview,click listener,UIView click event,iOS click listener,iOS view click event">
+    <meta name="keywords" content="userdefaults,custom object userdefaults,userdefaults swift">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | UserDefaults in Swift" />
-    <meta property="og:title" content="UserDefaults in Swift">
-    <meta property="twitter:title" content="UserDefaults in Swift">
+    <meta name="title" content="Suneet Agrawal | Custom Object in UserDefaults : Swift" />
+    <meta property="og:title" content="Custom Object in UserDefaults : Swift">
+    <meta property="twitter:title" content="Custom Object in UserDefaults : Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="UserDefaults in Swift">
-    <meta name="description" content="A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.">
-    <meta property="og:description" content="A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.">
-    <meta property="twitter:description" content="A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.">
-    <meta name="abstract" content="A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.">
-    <meta name="summary" content="A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults."> 
+    <meta name="topic" content="Custom Object in UserDefaults : Swift">
+    <meta name="description" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta property="og:description" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta property="twitter:description" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta name="abstract" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta name="summary" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults."> 
     <meta property="og:type" content="article">
     <meta property="article:published_time" content=" 2022-03-24 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS"> 
-    <title>UserDefaults in Swift &middot; Suneet Agrawal</title>
+    <title>Custom Object in UserDefaults : Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">UserDefaults in Swift</h1>
+        <h1 class="mx16">Custom Object in UserDefaults : Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -247,10 +247,10 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-        A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults.
+        In continuation to my previous blog <a href="/blogs/userdefaults-in-swift/" target="_blank">UserDefaults in Swift</a>, where we understand the basic functionality of UserDefaults, we'll try to understand today how can we store custom objects in UserDefaults. 
         <br>
         </br>
-        Let's try to understand what are UserDefaults first.
+        UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults. Let's try to understand in detail along with an example.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -266,40 +266,31 @@ if (!doNotTrack) {
     </script>
 </div>
 <h3>
-What is UserDefaults
+What are Custom Objects and Codable?
 </h3>
 <div class="center-justified text-content">
-    UserDefault is used to store small pieces of data which can persist across sessions or app launches. Things like auth token, username, emailid, display name which are being used accross the sessions can be store in UserDefaults.
-</div>
-<h3>
-How UserDefaults works
-</h3>
-<div class="center-justified text-content">
-    UserDefaults stores data in a key-value pair where the key can be of string type and value can be of <mark>Int</mark>, <mark>Float</mark>, <mark>Double</mark>, <mark>Bool</mark>, <mark>String</mark>, <mark>Data</mark>, <mark>URL</mark>, <mark>Array</mark>, <mark>Dictionary</mark> and much more. 
+    User-defined class or struct objects are known as custom objects. These classes or structs can have any number of properties. 
     </br>
     </br>
-    The information will be stored in a <mark>.plist</mark> format on the local disk. 
+    To store them in UserDefaults, we need to implement or confirm <mark>Codable</mark> to the user-defined class or struct.
     </br>
     </br>
-    Currently, there is no size limit to store data in UserDefaults but it's usually preferred for the small size of data only.
-</div>
-<h3>
-How to use UserDefaults
-</h3>
-<div class="center-justified text-content">
-   In order to use the UserDefaults, first, get the <mark>standard</mark> UserDefault object.
+    <mark>Codable</mark> is a typealias of <mark>Decodable</mark> & <mark>Encodable</mark> protocols. It adds the functionality of Encoding and Decoding to the class or struct.
 </div>
 <pre class="zeropadding">
-  <br/>let defaults = <b>UserDefaults.standard</b><br/>
+  <br/>/// A type that can convert itself into and out of an external representation.<br/>///<br/>/// `Codable` is a type alias for the `Encodable` and `Decodable` protocols.<br/>/// When you use `Codable` as a type or a generic constraint, it matches<br/>/// any type that conforms to both protocols.<br/>public typealias <b>Codable</b> = <b>Decodable</b> & <b>Encodable</b><br/>
 </pre>
 
 <div class="center-justified text-content">
-   <mark>standard</mark> is a global instance of NSUserDefaults or which only getter is exposed. We can't set any reference to it.
+   To implement or confirm the <mark>Codable</mark> protocol, we can add the protocol and go with coding keys as the variable names or can define our own custom keys according to the need.
 </div>
 <pre class="zeropadding">
-  <br/>/**<br/>+standardUserDefaults returns a global instance of NSUserDefaults configured to search the current application's search list.<br/>*/<br/>open class var <b>standard</b>: UserDefaults { get }<br/>
+  <br/>//MARK :- Employee<br/>struct <b>Employee</b>: <b>Codable</b> {<br/>    let employeeId: Int<br/>    let name, department: String<br/>}<br/><br/>// OR<br/><br/>//MARK :- Employee<br/>struct <b>Employee</b>: <b>Codable</b> {<br/>    let employeeID: Int<br/>    let name, department: String<br/><br/>    enum CodingKeys: String, CodingKey {<br/>        case employeeID = "employeeId"<br/>        case name, department<br/>    }<br/>}<br/>
 </pre>
 
+<div class="center-justified text-content">
+   Keep in mind that any custom class used inside the <mark>Codable</mark> class or struct should also confirm the <mark>Codable</mark> protocol.
+</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -314,72 +305,35 @@ How to use UserDefaults
     </script>
 </div>
 <h3>
-Write data to UserDefaults
+How to store custom object in UserDefaults?
 </h3>
 <div class="center-justified text-content">
-    We can set the value for any key using <mark>set</mark> function on <mark>UserDefault.standard</mark> object. The set method has multiple overloads that have the same signature but takes different parameters as a value along with a <mark>String</mark> key.
-</div>
-<pre class="zeropadding">
-  <br/>let defaults = UserDefaults.standard<br/><br/>//<l>String Value</l><br/>defaults.<b>set</b>("Suneet Agrawal", forKey: "stringKey")<br/><br/>//<l>Int Value</l><br/>defaults.<b>set</b>(1, forKey: "integerKey")<br/><br/>//<l>Double Value</l><br/>defaults.<b>set</b>(30.0, forKey: "doubleKey")<br/><br/>//<l>Array Value</l><br/>defaults.<b>set</b>([1,2,3], forKey: "intArrayKey")<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-Read data from UserDefaults
-</h3>
-<div class="center-justified text-content">
-    The syntax for getting the value from UserDefault is a bit different from <mark>set</mark>. Each has the datatype as a function name which takes a key as a <mark>String</mark> type parameter for which we want to get the value.
+    <mark>Codable</mark> provides the functionality to convert an object into a <mark>Data</mark> class object.
     </br>
     </br>
-    Keep in mind these function returns <mark>nil</mark> if there is no value existing for the key or is of a different datatype.
+    UserDefaults has a function similar to primitive data types which takes an <mark>Any?</mark> class object and store the value against the key provided. 
 </div>
 <pre class="zeropadding">
-  <br/>let defaults = UserDefaults.standard<br/><br/> //<l>String Value</l><br/>let stringValue = defaults.<b>string</b>(forKey: "stringKey")<br/><br/>//<l>Int Value</l><br/>let intValue = defaults.<b>integer</b>(forKey: "integerKey")<br/><br/>//<l>Double Value</l><br/>let doubleValue = defaults.<b>double</b>(forKey: "doubleKey")<br/><br/>//<l>Array Value</l><br/>let intArrayValue = defaults.<b>string</b>(forKey: "intArrayKey")<br/>
+  <br/>/**<br/>-setObject:forKey: immediately stores a value (or removes the value if nil is passed as the value) for the provided key in the search list entry for the receiver's suite name in the current user and any host, then asynchronously stores the value persistently, where it is made available to other processes.<br/>*/<br/>open func <b>set</b>(_ value: Any?, forKey defaultName: String)<br/>
 </pre>
 
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-Remove data for key
-</h3>
 <div class="center-justified text-content">
-    The value for a particular key can be removed using <mark>removeObject</mark> function. This will set the value as <mark>nil</mark>.
+    We can't provide the object directly but we need to convert the object into a <mark>Data</mark> class object using <mark>JSONEncoder</mark>, else it will throw the below error.
 </div>
 <pre class="zeropadding">
-  <br/>/// -removeObjectForKey: is equivalent to -[... setObject:nil forKey:defaultName]<br/>open func removeObject(forKey defaultName: String)<br/><br/>let defaults = UserDefaults.standard<br/><br/>defaults.<b>removeObject</b>(forKey: "stringKey")<br/>
+  <br/><e>Attempt to insert non-property list object &lt;object name&gt; for key &lt;key&gt;</e><br/>
 </pre>
 
-<h3>
-Remove data for all keys
-</h3>
 <div class="center-justified text-content">
-    There is no direct function to remove all key-value pairs. The best way to do the same is to iterate over all the keys and remove them one by one.
+    Also, since <mark>JSONEncoder</mark> can throw an error if the object is not encoded properly, we need to wrap it around the <mark>try-catch</mark> block. 
+    </br>
+    </br>
+    Once the codable is converted to the <mark>Data</mark> class object, we can put it into UserDefaults using the above <mark>set</mark> method. 
+    </br>
+    The final code will look like the below.
 </div>
 <pre class="zeropadding">
-  <br/>for key in Array(UserDefaults.standard.dictionaryRepresentation().keys) {<br/>    UserDefaults.standard.<b>removeObject</b>(forKey: key)<br/>}<br/>
+  <br/>let employee = Employee(employeeId: 100, <br/>                        name: "Suneet Agrawal", <br/>                        department: "Engineering")<br/><br/>do {<br/>    let data = try <b>JSONEncoder()</b>.encode(employee)<br/>    UserDefaults.standard.<b>set</b>(data, forKey: "employee")<br/>} catch let error {<br/>    print("Error encoding: \(error)")<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -396,31 +350,77 @@ Remove data for all keys
     </script>
 </div>
 <h3>
-Default value for key in UserDefaults
+How to retrieve custom object from UserDefaults?
 </h3>
 <div class="center-justified text-content">
-    The behavior for the get type is weird if the key is not set.
-    <br>
-    In that case, if we are trying to get the value for any primitive data type, it will return a default value like <mark>0</mark> for <mark>Integer</mark> but if we are trying to get an object value, it will return <mark>nil</mark>.
+    UserDefaults has a function to retrieve <mark>Data</mark> class objects similar to any other primitive data type.
     </br>
-    </br>
-    In order to unify the behavior across the app, we can use <mark>object(forKey:)</mark> function which returns <mark>Any?</mark> and we can cast it to the required datatype. We can even provide the default value if it returns <mark>nil</mark> or the key doesn't exist.
+    The same can be used to retrieve data from UserDefaults but the returned result will be in the <mark>Data?</mark> class object. 
 </div>
 <pre class="zeropadding">
-  <br/>let defaultValue = UserDefaults.standard.<b>object</b>(forKey: "intArrayKey") as? [Int]? ?? [Int]()<br/>
+  <br/>/// -dataForKey: is equivalent to -objectForKey:, except that it will return nil if the value is not an NSData.<br/>open func data(forKey defaultName: String) -> Data?<br/>
 </pre>
 
+<div class="center-justified text-content">
+    Keep in mind that it can also return <mark>nil</mark> if no such data is stored with the key. In that case, we need to add a null safety also.
+</div>
+<pre class="zeropadding">
+  <br/>if let data = UserDefaults.standard.<b>data(</b>forKey: "employee") {<br/>    //do something here<br/>}<br/>
+</pre>
+
+</br>
+<div class="center-justified text-content">
+    Now that we got the data back, we can convert it into the same original class or struct object (<mark>Employee</mark> in our case) using <mark>JSONDecoder</mark>.
+    </br>
+    </br>
+    But similar to <mark>JSONEncoder</mark>, <mark>JSONDecoder</mark> can also throw an error if the object is not decoded properly, we need to wrap it around the <mark>try-catch</mark> block. 
+</div>
+<pre class="zeropadding">
+  <br/>do {<br/>    if let data = UserDefaults.standard.<b>data</b>(forKey: "employee") {<br/>        let employee = try <b>JSONDecoder</b>().decode(Employee.self, from: data)<br/>        print(employee)<br/>    }<br/>} catch let error {<br/>    print("Error decoding: \(error)")<br/>}<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <h3>
-Things to keep in mind while using UserDefault
+Generic Extension
 </h3>
 <div class="center-justified text-content">
-    <ul>
-    <li>It stores data in key-value pairs. The key-value pairs are stored in <mark>.plist</mark> format on the local disk.</li>
-    <li>We can store multiple data types in UserDefault.</li>
-    <li>UserDefault is useful only for a small set of data. It is not a replacement for core data.</li>
-    </ul>
+    We can even add a generic functionality to the UserDefaults class which will store the <mark>Codable</mark> class or struct object of Template type and retrieve back the same object using the same key.
 </div>
 </br>
+<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/2546e6c36c01d8ac4808fce3a781e819.js"></script>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<div class="center-justified text-content">
+    The above functions can be used as below.
+</div>
+<pre class="zeropadding">
+  <br/>let employee = Employee(employeeId: 100, <br/>                        name: "Suneet", <br/>                        department: "Engineering") <br/><br/>//setting the object<br/>UserDefaults.standard.<b>storeCodable</b>(employee, key: "employee")<br/><br/>//getting the object<br/>let emp : Employee? = UserDefaults.standard.<b>retrieveCodable</b>(for: "employee")<br/><br/>print(emp) <br/>//this will print optional<br/><br/>if let emp = emp {<br/>    print(emp)<br/>}<br/>
+</pre>
+
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -457,8 +457,8 @@ Things to keep in mind while using UserDefault
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/double-vs-float-swift/">
-        Double vs Float : Swift &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="uiswitch value listener,value change listener,UISwitch value change event,iOS value change listener,iOS switch value change event">
+    <meta name="keywords" content="userdefaults,custom object userdefaults,userdefaults swift">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | UISwitch Value Change Listener : Swift (Github Gist)" />
-    <meta property="og:title" content="UISwitch Value Change Listener : Swift (Github Gist)">
-    <meta property="twitter:title" content="UISwitch Value Change Listener : Swift (Github Gist)">
+    <meta name="title" content="Suneet Agrawal | Custom Object in UserDefaults : Swift (Github Gist)" />
+    <meta property="og:title" content="Custom Object in UserDefaults : Swift (Github Gist)">
+    <meta property="twitter:title" content="Custom Object in UserDefaults : Swift (Github Gist)">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="UISwitch Value Change Listener : Swift (Github Gist)">
-    <meta name="description" content="Adding an editing event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
-    <meta property="og:description" content="Adding an editing event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
-    <meta property="twitter:description" content="Adding an editing event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
-    <meta name="abstract" content="Adding an editing event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.">
-    <meta name="summary" content="Adding an editing event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed."> 
+    <meta name="topic" content="Custom Object in UserDefaults : Swift (Github Gist)">
+    <meta name="description" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta property="og:description" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta property="twitter:description" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta name="abstract" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.">
+    <meta name="summary" content="UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2022-03-20 "> 
+    <meta property="article:published_time" content=" 2022-03-24 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS"> 
-    <title>UISwitch Value Change Listener : Swift (Github Gist) &middot; Suneet Agrawal</title>
+    <title>Custom Object in UserDefaults : Swift (Github Gist) &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">UISwitch Value Change Listener : Swift (Github Gist)</h1>
+        <h1 class="mx16">Custom Object in UserDefaults : Swift (Github Gist)</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -245,13 +245,13 @@ if (!doNotTrack) {
         <div class="col-xs-12">
             </br>
 <div class="center-justified text-content">
-    This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way. 
+    This particular script will help you to store and retrieve custom class or struct objects in UserDefaults. 
     </br>
     </br>
-    For further explaination on how this works, please read the article <a href="/blogs/uiswitch-value-change-listener-swift/" target="_blank">UISwitch Value Change Listener : Swift</a>.
+    For further explaination on how this works, please read the article <a href="/blogs/custom-object-in-userdefaults-swift/" target="_blank">Custom Object in UserDefaults : Swift</a>.
 </div>
 </br>
-<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/f08c850869a53d1f14378344337d82eb.js"></script>
+<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/2546e6c36c01d8ac4808fce3a781e819.js"></script>
 
 <div class="col-xs-12 googleads">
     
@@ -273,8 +273,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/gists/custom-object-in-userdefaults-swift/">
-        Custom Object in UserDefaults : Swift &gt;&gt;
+        <a href="/gists/native-android-in-unity">
+        Native Android in Unity &gt;&gt;
       </a>
     </div>
 </div>

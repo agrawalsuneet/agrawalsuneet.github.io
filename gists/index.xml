@@ -6,14 +6,23 @@
     <description>Recent content in Gists on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Object in UserDefaults : Swift (Github Gist)</title>
+      <link>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</guid>
+      <description> This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.   For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
     <item>
       <title>UISwitch Value Change Listener : Swift (Github Gist)</title>
       <link>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</guid>
-      <description> This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.   For further explaination on how this works, please read the article UISwitch Value Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.   For further explaination on how this works, please read the article UISwitch Value Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Custom Object in UserDefaults : Swift &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>

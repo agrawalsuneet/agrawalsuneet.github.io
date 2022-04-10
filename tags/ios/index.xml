@@ -6,7 +6,34 @@
     <description>Recent content in iOS on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Double vs Float : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</guid>
+      <description>Swift has two data types (Double and Float) to hold the decimal values. Both of them hold the same decimal type values but have some differences.   The basic difference is around the size of memory they both use based on which their precision varies.    (adsbygoogle = window.adsbygoogle || []).push({});   Let&#39;s try to understand the differences between both with example.   Number of Digits   The Double type is used to store values in up to 17 places.</description>
+    </item>
+    
+    <item>
+      <title>Custom Object in UserDefaults : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</guid>
+      <description>In continuation to my previous blog UserDefaults in Swift, where we understand the basic functionality of UserDefaults, we&#39;ll try to understand today how can we store custom objects in UserDefaults.  UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.</description>
+    </item>
+    
+    <item>
+      <title>Custom Object in UserDefaults : Swift (Github Gist)</title>
+      <link>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</guid>
+      <description> This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.   For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+    </item>
+    
     <item>
       <title>UserDefaults in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</link>
@@ -31,7 +58,7 @@
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</guid>
-      <description> This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.   For further explaination on how this works, please read the article UISwitch Value Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Native Android in Unity &amp;gt;&amp;gt;    </description>
+      <description> This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.   For further explaination on how this works, please read the article UISwitch Value Change Listener : Swift.      (adsbygoogle = window.adsbygoogle || []).push({});   &amp;lt;&amp;lt; All Gists   Custom Object in UserDefaults : Swift &amp;gt;&amp;gt;    </description>
     </item>
     
     <item>

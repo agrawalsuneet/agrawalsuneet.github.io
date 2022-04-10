@@ -3,22 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</loc>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/ios/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/swift/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/gists/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/gists/</loc>
-    <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>

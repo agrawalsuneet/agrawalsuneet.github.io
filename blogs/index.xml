@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math.round vs Math.floor vs Math.ceil : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/</guid>
+      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up.  Let&#39;s understand them in detail before comparing.   Before reading this blog, keep in mind that -3 is bigger than -4 and -3.</description>
+    </item>
+    
     <item>
       <title>Double vs Float : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</link>

@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin range,range,rangeTo,..,downTo,until,step">
+    <meta name="keywords" content="math round,math floor,math ceil,math kotlin">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Kotlin Range Operator" />
-    <meta property="og:title" content="Kotlin Range Operator">
-    <meta property="twitter:title" content="Kotlin Range Operator">
+    <meta name="title" content="Suneet Agrawal | Math.round vs Math.floor vs Math.ceil : Kotlin" />
+    <meta property="og:title" content="Math.round vs Math.floor vs Math.ceil : Kotlin">
+    <meta property="twitter:title" content="Math.round vs Math.floor vs Math.ceil : Kotlin">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Kotlin Range Operator">
-    <meta name="description" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
-    <meta property="og:description" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
-    <meta property="twitter:description" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
-    <meta name="abstract" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.">
-    <meta name="summary" content="Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion."> 
+    <meta name="topic" content="Math.round vs Math.floor vs Math.ceil : Kotlin">
+    <meta name="description" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta property="og:description" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta property="twitter:description" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta name="abstract" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta name="summary" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2022-01-15 "> 
+    <meta property="article:published_time" content=" 2022-04-11 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-range-operator/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
     <meta property="og:tags" content="Android"> 
-    <title>Kotlin Range Operator &middot; Suneet Agrawal</title>
+    <title>Math.round vs Math.floor vs Math.ceil : Kotlin &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Kotlin Range Operator</h1>
+        <h1 class="mx16">Math.round vs Math.floor vs Math.ceil : Kotlin</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -247,10 +247,12 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-        Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion. 
-       </br>
-       </br>
-        The range operators can be used with <a href="/blogs/kotlin-for-loop/" target="_blank">for loops</a>, if conditions or even in <a href="/blogs/when-operator-in-kotlin/" target="_blank">when operator</a>. First, let to see a basic example of a range operator.
+        Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up. 
+        </br>
+        Let's understand them in detail before comparing.
+        </br>
+        </br>
+        Before reading this blog, keep in mind that -3 is bigger than -4 and -3.5 is bigger than -3.51
 </div>
 <div class="col-xs-12 googleads">
     
@@ -265,153 +267,126 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+<h3>
+Math.round()
+</h3>
 <div class="center-justified text-content">
-        A basic range operator can be defined with <mark>..</mark> having a lower range value to the left side and upper range value to the right side of <mark>..</mark>
+        <ul>
+                <li><mark>Math.round</mark> rounds up to the nearest Integer which can be above or below or even equal to the actual value.</li>
+                <li>In the case of a positive number, anything which is equal to or below <mark>x.49</mark> will be converted to a lower number ie <mark>x.00</mark> whereas anything which is equal to or more than <mark>x.5</mark> will be converted to a higher number ie <mark>x+1.00</mark></li>
+                <li>In the case of a negative number, anything which is equal to or below <mark>-x.51</mark> will be converted to a lower number ie <mark>-x-1.00</mark> whereas anything which is equal to or more than <mark>-x.5</mark> will be converted to a higher number ie <mark>-x.00</mark></li>
+        </ul>
 </div>
 <pre class="zeropadding">
-  <br/>val x = 4<br/><br/>for (item in <b>1..10</b>){<br/>    println(item)<br/>}<br/><br/>if ((<b>1..10</b>).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in <b>1..10</b> -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
+  <br/>println(Math.round(3.00))<br/>//this will print: 3<br/><br/>println(Math.round(3.49))<br/>//this will print: 3<br/><br/>println(Math.round(3.5))<br/>//this will print: 4<br/><br/>println(Math.round(-3.00))<br/>//this will print: -3<br/><br/>println(Math.round(-3.5))<br/>//this will print: -3<br/><br/>println(Math.round(-3.51))<br/>//this will print: -4<br/>
 </pre>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Math.floor()
+</h3>
+<div class="center-justified text-content">
+        <ul>
+                <li>Math.floor rounds up to the nearest Integer which can be equal to or below the actual value.</li>
+                <li>In the case of a positive number, anything between <mark>x.01</mark> to <mark>x.99</mark> will be converted to a lower number ie <mark>x.00</mark> whereas <mark>x.00</mark> will remain the same <mark>x.00</mark></li>
+                <li>In the case of a negative number, anything between <mark>-x.01</mark> to <mark>-x.99</mark> will be converted to a lower number ie <mark>-x-1.00</mark> whereas <mark>-x.00</mark> will remain the same <mark>-x.00</mark></li>
+        </ul>
+</div>
+<pre class="zeropadding">
+  <br/>println(Math.floor(3.00))<br/>//this will print: 3<br/><br/>println(Math.floor(3.01))<br/>//this will print: 3<br/><br/>println(Math.floor(3.99))<br/>//this will print: 3<br/>    <br/>println(Math.floor(-3.00))<br/>//this will print: -3<br/><br/>println(Math.floor(-3.01))<br/>//this will print: -4<br/><br/>println(Math.floor(-3.99))<br/>//this will print: -4<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Math.ceil()
+</h3>
+<div class="center-justified text-content">
+        <ul>
+                <li>Math.ceil rounds up to the nearest Integer which can be equal to or above the actual value.</li>
+                <li>In the case of a positive number, anything between <mark>x.01</mark> to <mark>x.99</mark> will be converted to an upper number ie <mark>x+1.00</mark> whereas <mark>x.00</mark> will remain the same <mark>x.00</mark></li>
+                <li>In the case of a negative number, anything between <mark>-x.01</mark> to <mark>-x.99</mark> will be converted to an upper number ie <mark>-x.00</mark> whereas <mark>-x.00</mark> will remain the same <mark>-x.00</mark></li>
+        </ul>
+</div>
+<pre class="zeropadding">
+  <br/>println(Math.ceil(3.00))<br/>//this will print: 3<br/><br/>println(Math.ceil(3.01))<br/>//this will print: 4<br/><br/>println(Math.ceil(3.99))<br/>//this will print: 4<br/><br/>println(Math.ceil(-3.00))<br/>//this will print: -3<br/><br/>println(Math.ceil(-3.01))<br/>//this will print: -3<br/><br/>println(Math.ceil(-3.99))<br/>//this will print: -3<br/>
+</pre>
+
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Common between Math.round, Math.floor and Math.ceil
+</h3>
+<div class="center-justified text-content">
+        <ul>
+                <li>All three work on both <mark>Double</mark> as well as on <mark>Float</mark>.</li>
+                <li>Although they round to the nearest <mark>Integer</mark>, the output still remains <mark>Double</mark> in the case of <mark>Double</mark> and <mark>Float</mark> in the case of <mark>Float</mark>.</li>
+        </ul>
+</div>
 </br>
-<div class="center-justified text-content">
-        Lets try to understand the <mark>..</mark> operator and its return type first.
-</div>
 <h3>
-rangeTo() function
+Difference between Math.round, Math.floor and Math.ceil
 </h3>
 <div class="center-justified text-content">
-        <mark>..</mark> is an operator overloading to <mark>rangeTo()</mark> function which is defined in <mark>kotlin.ranges</mark> package.
-        </br>
-        </br>
-        <mark>rangeTo()</mark> function is an extension function to the <mark>Template</mark> class where the <mark>Template</mark> class should implement the <mark>Comparable</mark> interface.
-        </br>
-        That means we can create a range to any primitive or non primitive data type which implements the <mark>Comparable</mark> interface.
+        <ul>
+                <li><mark>Math.round</mark> rounds up to the nearest Integer which can be above, below or equal to the actual value.</li>
+                <ul>
+                        <li>x.0 to x.49 -> x.0</li>
+                        <li>x.5 to x.99 -> x+1.0</li>
+                        <li>-x to -x.5 -> x.0</li>
+                        <li>-x.51 to -x.99 -> -x-1.0</li>
+                </ul>
+                <li><mark>Math.floor</mark> rounds up to the nearest Integer which can be equal to or below the actual value.</li>
+                <ul>
+                        <li>x.0 to x.99 -> x.0</li>
+                        <li>-x.01 to -x.99 -> -x-1.0</li>
+                </ul>
+                <li><mark>Math.ceil</mark> rounds up to the nearest Integer which can be equal to or above the actual value.</li>
+                <ul>
+                        <li>x.01 to x.99 -> x+1.0</li>
+                        <li>-x.01 to -x.99 -> -x.0</li>
+                </ul>
+        </ul>
 </div>
-<pre class="zeropadding">
-  <br/>/**<br/> * Creates a range from this [Comparable] value to the specified [that] value.<br/> *<br/> * This value needs to be smaller than or equal to [that] value, otherwise the returned range will be empty.<br/> * @sample samples.ranges.Ranges.rangeFromComparable<br/> */<br/>public operator fun &lt;T : Comparable&lt;T&gt;&gt; T.<b>rangeTo</b>(that: T): ClosedRange&lt;T&gt; = ComparableRange(this, that)<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-ClosedRange
-</h3>
-<div class="center-justified text-content">
-        The <mark>rangeTo()</mark> function returns a <mark>ClosedRange</mark> interface object which has a <mark>start</mark> and an <mark>endInclusive</mark> variables and <mark>contains</mark> operator function which is used by the <mark>in</mark> operator and an <mark>isEmpty</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/>package kotlin.ranges<br/><br/>/**<br/> * Represents a range of values (for example, numbers or characters).<br/> */<br/>public interface <b>ClosedRange</b>&lt;T: Comparable&lt;T&gt;&gt; {<br/>    /**<br/>     * The minimum value in the range.<br/>     */<br/>    public val start: T<br/><br/>    /**<br/>     * The maximum value in the range (inclusive).<br/>     */<br/>    public val endInclusive: T<br/><br/>    /**<br/>     * Checks whether the specified [value] belongs to the range.<br/>     */<br/>    public operator fun contains(value: T): Boolean = value >= start && value <= endInclusive<br/><br/>    /**<br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    public fun isEmpty(): Boolean = start &gt; endInclusive<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-CharRange, IntRange & LongRange
-</h3>
-<div class="center-justified text-content">
-        <mark>ClosedRange</mark> is further extended by <mark>CharRange</mark>, <mark>IntRange</mark> and <mark>LongRange</mark> which provides the functionality of <mark>Iterable</mark> also along with closed range which is used by <a href="/blogs/kotlin-for-loop/" target="_blank">for loops</a>.
-</div>
-<pre class="zeropadding">
-  <br/>package kotlin.ranges<br/><br/>/**<br/> * A range of values of type `Char`.<br/> */<br/>public class <b>CharRange</b>(start: Char, endInclusive: Char) : CharProgression(start, endInclusive, 1), ClosedRange&lt;Char&gt; {<br/>    override val start: Char get() = first<br/>    override val endInclusive: Char get() = last<br/><br/>    override fun contains(value: Char): Boolean = first <= value && value <= last<br/><br/>    /** <br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    override fun isEmpty(): Boolean = first > last<br/><br/>    override fun equals(other: Any?): Boolean =<br/>        other is CharRange && (isEmpty() && other.isEmpty() ||<br/>        first == other.first && last == other.last)<br/><br/>    override fun hashCode(): Int =<br/>        if (isEmpty()) -1 else (31 * first.code + last.code)<br/><br/>    override fun toString(): String = "$first..$last"<br/><br/>    companion object {<br/>        /** An empty range of values of type Char. */<br/>        public val EMPTY: CharRange = CharRange(1.toChar(), 0.toChar())<br/>    }<br/>}<br/><br/>/**<br/> * A range of values of type `Int`.<br/> */<br/>public class <b>IntRange</b>(start: Int, endInclusive: Int) : IntProgression(start, endInclusive, 1), ClosedRange&lt;Int&gt; {<br/>    override val start: Int get() = first<br/>    override val endInclusive: Int get() = last<br/><br/>    override fun contains(value: Int): Boolean = first <= value && value <= last<br/><br/>    /** <br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    override fun isEmpty(): Boolean = first > last<br/><br/>    override fun equals(other: Any?): Boolean =<br/>        other is IntRange && (isEmpty() && other.isEmpty() ||<br/>        first == other.first && last == other.last)<br/><br/>    override fun hashCode(): Int =<br/>        if (isEmpty()) -1 else (31 * first + last)<br/><br/>    override fun toString(): String = "$first..$last"<br/><br/>    companion object {<br/>        /** An empty range of values of type Int. */<br/>        public val EMPTY: IntRange = IntRange(1, 0)<br/>    }<br/>}<br/><br/>/**<br/> * A range of values of type `Long`.<br/> */<br/><br/>public class <b>LongRange</b>(start: Long, endInclusive: Long) : LongProgression(start, endInclusive, 1), ClosedRange&lt;Long&gt; {<br/>    override val start: Long get() = first<br/>    override val endInclusive: Long get() = last<br/><br/>    override fun contains(value: Long): Boolean = first <= value && value <= last<br/><br/>    /** <br/>     * Checks whether the range is empty.<br/>     *<br/>     * The range is empty if its start value is greater than the end value.<br/>     */<br/>    override fun isEmpty(): Boolean = first > last<br/><br/>    override fun equals(other: Any?): Boolean =<br/>        other is LongRange && (isEmpty() && other.isEmpty() ||<br/>        first == other.first && last == other.last)<br/><br/>    override fun hashCode(): Int =<br/>        if (isEmpty()) -1 else (31 * (first xor (first ushr 32)) + (last xor (last ushr 32))).toInt()<br/><br/>    override fun toString(): String = "$first..$last"<br/><br/>    companion object {<br/>        /** An empty range of values of type Long. */<br/>        public val EMPTY: LongRange = LongRange(1, 0)<br/>    }<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-downTo
-</h3>
-<div class="center-justified text-content">
-        To iterate over a range in reverse order, we can use <mark>downTo</mark> operator which is an extension function on different types like <mark>Int</mark>, <mark>Long</mark>, <mark>Char</mark> and provides the reverse iteration with step size as <mark>-1</mark>.
-</div>
-<pre class="zeropadding">
-  <br/>val x = 4<br/><br/>for (item in 10 <b>downTo</b> 1){<br/>    println(item)<br/>}<br/><br/>if ((10 <b>downTo</b> 1).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in 10 <b>downTo</b> 1 -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-until
-</h3>
-<div class="center-justified text-content">
-        The <mark>until</mark> operator can be used to exclude the <mark>endElement</mark>. The <mark>iterator</mark> or the <mark>if</mark> and <mark>when</mark> condition will not include the end element in case of <mark>until</mark>.
-</div>
-<pre class="zeropadding">
-  <br/>val x = 4<br/><br/>for (item in 1 <b>until</b> 10){<br/>    println(item)<br/>}<br/><br/>if ((1 <b>until</b> 10).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in 1 <b>until</b> 10 -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-step
-</h3>
-<div class="center-justified text-content">
-        The <mark>step</mark> can be used to change the step size of the iteration over the range. 
-</div>
-<pre class="zeropadding">
-  <br/>val x = 4<br/><br/>for (item in 1..10 <b>step</b> 2){<br/>    println(item)<br/>}<br/><br/>if ((1 until 10 <b>step</b> 2).contains(x)){<br/>    println("X is in range")<br/>}<br/><br/>when (x){<br/>    in 10 downTo 1 <b>step</b> 2 -> {<br/>        println("X is in range")<br/>    }<br/>}<br/>
-</pre>
-
 </br>
+<h4>
+The third digit after decimal doesn't make any difference.
+</h4>
 </br>
-<div class="center-justified text-content">
-        Reference: <a href="https://kotlinlang.org/docs/ranges.html#range" target="_blank">Kotlin docs</a>
-        </br>
-</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -448,8 +423,8 @@ step
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/">
-        Math.round vs Math.floor vs Math.ceil : Kotlin &gt;&gt;
+        <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">
+        Safe calls(?.) vs Null checks(!!) in Kotlin &gt;&gt;
       </a>
     </div>
 </div>

@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Map Operator : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-operator-kotlin/</link>
+      <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-operator-kotlin/</guid>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.   To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Map operator is one of them.  Lets try to understand the map operator in detail.    (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
+    
+    <item>
       <title>Math.round vs Math.floor vs Math.ceil : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/</link>
       <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
@@ -166,7 +175,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (76 posts)   Math.round vs Math.floor vs Math.ceil : Kotlin   Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.</description>
+      <description>Technical Blogs  Technical Blogs (77 posts)   Map Operator : Kotlin   The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Map operator is one of them. read more  23 April 2022  Kotlin Android      Math.</description>
     </item>
     
     <item>

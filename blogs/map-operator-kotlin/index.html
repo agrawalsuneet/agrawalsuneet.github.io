@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin partition,partition function,partition function kotlin">
+    <meta name="keywords" content="kotlin map,map operator,list map,set map,map operator">
 
 
     
@@ -326,7 +326,7 @@ Map with List
         map operator can be used over a list to transform its elements and return the resultant list. It can be used with a named parameter or using <mark>it</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>val list = listOf(1,2,3,4,5)<br/>    <br/>val mapList = list.<b>map</b>{item -> item * 10}<br/>println(mapList)<br/><br/>val mapList2 = list.<b>map</b>{ it * 10 }<br/>println(mapList2)<br/><br/>val mapNotNullList = list.<b>mapNotNull</b>{ if (it % 2 == 0) null else it }<br/>println(mapNotNullList)<br/>
+  <br/>val list = listOf(1, 2, 3, 4, 5)<br/>    <br/>val mapList = list.<b>map</b>{item -> item * 10}<br/>println(mapList)<br/><br/>val mapList2 = list.<b>map</b>{ it * 10 }<br/>println(mapList2)<br/><br/>val mapNotNullList = list.<b>mapNotNull</b>{ if (it % 2 == 0) null else it }<br/>println(mapNotNullList)<br/>
 </pre>
 
 </br>
@@ -342,7 +342,7 @@ Map with List
         In the case of <mark>mapIndexed</mark> and <mark>mapIndexedNotNull</mark>, since we have two variables passed in the lambda function, we can not skip the named parameters.
 </div>
 <pre class="zeropadding">
-  <br/>val list = listOf(1,2,3,4,5)<br/>    <br/>val mapIndexedList = list.<b>mapIndexed</b>{index, item -> index * item }<br/>println(mapIndexedList)<br/><br/>val mapIndexedNotNullList = list.<b>mapIndexedNotNull</b>{<br/>        index, item -> if (it % 2 == 0) null <br/>                        else (item * index) <br/>}<br/>println(mapIndexedNotNullList)<br/>
+  <br/>val list = listOf(1, 2, 3, 4, 5)<br/>    <br/>val mapIndexedList = list.<b>mapIndexed</b>{index, item -> index * item }<br/>println(mapIndexedList)<br/><br/>val mapIndexedNotNullList = list.<b>mapIndexedNotNull</b>{<br/>        index, item -> if (it % 2 == 0) null <br/>                        else (item * index) <br/>}<br/>println(mapIndexedNotNullList)<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -365,7 +365,7 @@ Map with Set
         Similar to List, map operator can be used over a set to transform its elements and return the resultant set. It can be used with a named parameter or using <mark>it</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>val set = setOf(1,2,3,4,5)<br/><br/>val mapSet = set.<b>map</b>{item -> item * 10}<br/>println(mapSet)<br/><br/>val mapSet2 = set.<b>map</b>{ it * 10 }<br/>println(mapSet2)<br/><br/>val mapSetNotNull = list.<b>mapNotNull</b>{ if (it % 2 == 0) null else it }<br/>println(mapSetNotNull)<br/>
+  <br/>val set = setOf(1, 2, 3, 4, 5)<br/><br/>val mapSet = set.<b>map</b>{item -> item * 10}<br/>println(mapSet)<br/><br/>val mapSet2 = set.<b>map</b>{ it * 10 }<br/>println(mapSet2)<br/><br/>val mapSetNotNull = list.<b>mapNotNull</b>{ if (it % 2 == 0) null else it }<br/>println(mapSetNotNull)<br/>
 </pre>
 
 </br>
@@ -373,7 +373,7 @@ Map with Set
         map can also be used to transform a set of one data type to a list of another data type. In the below example, Set of <mark>Int</mark> is converted to Set of <mark>String</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>val set = setOf(1,2,3,4,5)<br/>    <br/>val stringSet = set.<b>map</b>{ it.toString()}<br/>    <br/>println(stringSet::class.simpleName)<br/>//this will print: ArrayList<br/><br/>println(stringSet[0]::class.simpleName)<br/>//this will print: String<br/>
+  <br/>val set = setOf(1, 2, 3, 4, 5)<br/>    <br/>val stringSet = set.<b>map</b>{ it.toString()}<br/>    <br/>println(stringSet::class.simpleName)<br/>//this will print: ArrayList<br/><br/>println(stringSet[0]::class.simpleName)<br/>//this will print: String<br/>
 </pre>
 
 </br>
@@ -381,7 +381,7 @@ Map with Set
         In the case of <mark>mapIndexed</mark> and <mark>mapIndexedNotNull</mark>, since we have two variables passed in the lambda function, we can not skip the named parameters.
 </div>
 <pre class="zeropadding">
-  <br/>val set = setOf(1,2,3,4,5)<br/>    <br/>val mapIndexedSet = set.<b>mapIndexed</b>{index, item -> index * item }<br/>println(mapIndexedSet)<br/><br/>val mapIndexedNotNullSet = set.<b>mapIndexedNotNull</b>{<br/>        index, item -> if (it % 2 == 0) null <br/>                        else (item * index) <br/>}<br/>println(mapIndexedNotNullSet)<br/>
+  <br/>val set = setOf(1, 2, 3, 4, 5)<br/>    <br/>val mapIndexedSet = set.<b>mapIndexed</b>{index, item -> index * item }<br/>println(mapIndexedSet)<br/><br/>val mapIndexedNotNullSet = set.<b>mapIndexedNotNull</b>{<br/>        index, item -> if (it % 2 == 0) null <br/>                        else (item * index) <br/>}<br/>println(mapIndexedNotNullSet)<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -451,8 +451,8 @@ Map with Map
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">
-        Safe calls(?.) vs Null checks(!!) in Kotlin &gt;&gt;
+        <a href="/blogs/filter-operator-kotlin/">
+        Filter Operator : Kotlin &gt;&gt;
       </a>
     </div>
 </div>

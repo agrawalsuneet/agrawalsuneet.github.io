@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Plus(&#43;) and Minus(-) Operator : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</guid>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.   To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Plus and Minus operator are few of them of them.  Lets try to understand the plus and minus operator in detail.    (adsbygoogle = window.</description>
+    </item>
+    
+    <item>
       <title>Filter Operator : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/filter-operator-kotlin/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
@@ -184,7 +193,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (78 posts)   Filter Operator : Kotlin   The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Filter operator is one of them. read more  01 May 2022  Kotlin Android      Map Operator : Kotlin   The collection is something which is used by almost everyone.</description>
+      <description>Technical Blogs  Technical Blogs (79 posts)   Plus(&amp;#43;) and Minus(-) Operator : Kotlin   The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Plus and Minus operator are few of them of them.</description>
     </item>
     
     <item>

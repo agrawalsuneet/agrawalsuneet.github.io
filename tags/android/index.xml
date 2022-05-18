@@ -6,7 +6,16 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plus(&#43;) and Minus(-) Operator : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</guid>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.   To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Plus and Minus operator are few of them of them.  Lets try to understand the plus and minus operator in detail.    (adsbygoogle = window.</description>
+    </item>
+    
     <item>
       <title>Filter Operator : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/filter-operator-kotlin/</link>

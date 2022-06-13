@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kotlin Count Function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-count-function/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-count-function/</guid>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.   To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds functions. Count function is one of them.  Lets try to understand the count function in detail.    (adsbygoogle = window.adsbygoogle || []).push({});    What is Count function?</description>
+    </item>
+    
+    <item>
       <title>Plus(&#43;) and Minus(-) Operator : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</link>
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
@@ -193,7 +202,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (79 posts)   Plus(&amp;#43;) and Minus(-) Operator : Kotlin   The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Plus and Minus operator are few of them of them.</description>
+      <description>Technical Blogs  Technical Blogs (80 posts)   Kotlin Count Function   The count function is used to get the total number of elements in the collection. It can also be used to get the number of elements in the collection that satisfy some condition. The count function has two overloads. read more  18 May 2022  Kotlin Android      Plus(&amp;#43;) and Minus(-) Operator : Kotlin   The collection is something which is used by almost everyone.</description>
     </item>
     
     <item>

@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Question Mark (? vs ?. vs ?? vs ? :) in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/question-mark-in-swift/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/question-mark-in-swift/</guid>
+      <description>In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.   Let&#39;s try to understand them in detail before looking at their differences.    (adsbygoogle = window.adsbygoogle || []).push({});    Optional Variable ?  It makes the variable type optional if added as a suffix to the variable type while defining any variable.</description>
+    </item>
+    
+    <item>
       <title>Double vs Float : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>

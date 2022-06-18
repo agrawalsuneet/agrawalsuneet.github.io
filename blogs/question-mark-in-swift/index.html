@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="?. vs !., ?.,!.,safe calls swift, nil check swift,safe call,nil check, safe call vs nil check, swift">
+    <meta name="keywords" content="?,?.,??,? :,ternary operator,swift,optional chaining,optional variable,swift">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Safe calls(?.) vs Nil checks(!.) in Swift" />
-    <meta property="og:title" content="Safe calls(?.) vs Nil checks(!.) in Swift">
-    <meta property="twitter:title" content="Safe calls(?.) vs Nil checks(!.) in Swift">
+    <meta name="title" content="Suneet Agrawal | Question Mark (? vs ?. vs ?? vs ? :) in Swift" />
+    <meta property="og:title" content="Question Mark (? vs ?. vs ?? vs ? :) in Swift">
+    <meta property="twitter:title" content="Question Mark (? vs ?. vs ?? vs ? :) in Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Safe calls(?.) vs Nil checks(!.) in Swift">
-    <meta name="description" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
-    <meta property="og:description" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
-    <meta property="twitter:description" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
-    <meta name="abstract" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
-    <meta name="summary" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error."> 
+    <meta name="topic" content="Question Mark (? vs ?. vs ?? vs ? :) in Swift">
+    <meta name="description" content="In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.">
+    <meta property="og:description" content="In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.">
+    <meta property="twitter:description" content="In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.">
+    <meta name="abstract" content="In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.">
+    <meta name="summary" content="In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2022-06-18 "> 
+    <meta property="article:published_time" content=" 2022-06-16 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/question-mark-in-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/question-mark-in-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/question-mark-in-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/question-mark-in-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS"> 
-    <title>Safe calls(?.) vs Nil checks(!.) in Swift &middot; Suneet Agrawal</title>
+    <title>Question Mark (? vs ?. vs ?? vs ? :) in Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Safe calls(?.) vs Nil checks(!.) in Swift</h1>
+        <h1 class="mx16">Question Mark (? vs ?. vs ?? vs ? :) in Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -247,45 +247,10 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-        In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references).
+        In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining. 
         </br>
-        For example, a normal property can’t hold a nil value and will show a compile error.
-</div>
-<pre class="zeropadding">
-  <br/>var variable : <b>CustomClass</b> = CustomClass()<br/>variable = nil //compilation error <br/><e>//'nil' cannot be assigned to type 'CustomClass'</e><br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        Instead, we can add a <mark>?</mark> after the data type of that property which declares that variable as a nillable property.
-</div>
-<pre class="zeropadding">
-  <br/>var nillableVariable : <b>CustomClass?</b> = CustomClass()<br/>nillableVariable = nil //works fine<br/>
-</pre>
-
-<div class="center-justified text-content">
-        In any case, the nillable property requires a nil check every time before accessing that property or requires a confirmation from the developer that the estimation of that property won’t be nil while accessing it.
-</div>
-</br>
-<pre class="zeropadding">
-  <br/>variable.someMethodCall() //works fine as the compiler is sure that<br/>                          //the variable can’t be nil<br/>nillableVariable.someMethodCall() //will highlight compilation error<br/>                                  //as compiler is not sure as<br/>                                  //nilVariable can be nil.<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        There are still few techniques for using or accessing the nillable variable. One of them is safe call <mark>?.</mark> and another one is nil check <mark>!.</mark> but before figuring out the difference among both, let’s understand what they are in detail first.
+        </br>
+        Let's try to understand them in detail before looking at their differences.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -301,34 +266,20 @@ if (!doNotTrack) {
     </script>
 </div>
 <h3>
-If Let and Guard Let
+Optional Variable <mark>?</mark>
 </h3>
 <div class="center-justified text-content">
-        This is the old pattern that we use in every other language, checking the variable if its nil or not.
+        It makes the variable type optional if added as a suffix to the variable type while defining any variable. It will need a <a href="/blogs/safe-calls-vs-nil-checks-in-swift/" target="_blank">nil check</a> before accessing the optional variable.
         </br>
         </br>
-        If let checks if the nillable variable is nil or not. 
+        You can read about the different types of variables in the blog <a href="/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/" target="_blank">Default vs Optional vs Explicit Non-nil Variables: Swift</a>. 
         </br>
-        If the variable is nil, this will go to else block.
-        </br>
-        If not, it will copy the non-nil reference into another variable within its scope where we can use it without any nil checks.
+        The syntax will look like the below for the optional variable.
 </div>
 <pre class="zeropadding">
-  <br/><b>if let</b> nillableVariable = nillableVariable {<br/>    nillableVariable.someMethodCall()<br/>} else {<br/>    // fallback flow<br/>}<br/>
+  <br/>var nullableVariable: Int<b>?</b><br/>
 </pre>
 
-<div class="center-justified text-content">
-        Guard let separates the failure case first. It is designed to exit the current function, loop or condition if the check fails.
-        </br>
-        It is used to run a code block and return if the variable is nil otherwise below else condition, the variable is non-nil and we can use it without any nil checks.
-</div>
-<pre class="zeropadding">
-  <br/><b>guard let</b> nillableVariable = nillableVariable else {<br/>    //do something in nil case<br/>    return<br/>}<br/>        <br/>nillableVariable.someMethodCall()<br/>
-</pre>
-
-<div class="center-justified text-content">
-        You can read the difference between if-let and guard-let on <a href="/blogs/if-vs-if-let-vs-guard-let-in-swift/" target="_blank">if vs if let vs guard let in Swift</a>.
-</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -343,19 +294,13 @@ If Let and Guard Let
     </script>
 </div>
 <h3>
-Safe Calls (?.)
+Safe Call or Optional Chaining Operator <mark>?.</mark>
 </h3>
 <div class="center-justified text-content">
-        Another way of using a nillable property is safe call operator <mark>?.</mark>
+        It is used to chain any optional variable or property further to other properties or functional calls.
         </br>
-        This calls the method if the property is not nil or returns nil if that property is nil without throwing an NPE (nil pointer exception).
-</div>
-<pre class="zeropadding">
-  <br/>nillableVariable<b>?.</b>someMethodCall()<br/>
-</pre>
-
-<div class="center-justified text-content">
-        Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
+        </br>
+        Safe calls are useful in chaining. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
 </div>
 <pre class="zeropadding">
   <br/>let departmentHead = bob<b>?.</b>department<b>?.</b>head<b>?.</b>name<br/>
@@ -378,18 +323,18 @@ Safe Calls (?.)
     </script>
 </div>
 <h3>
-Nil-Coalescing Operator (??)
+Default Value <mark>??</mark>
 </h3>
 <div class="center-justified text-content">
-        This one is similar to safe calls except the fact that it can return a non-nil value if the calling property is nil even
+        The default value is used to provide the default value if the expression before the default value operator is nil.
+        </br>
+        </br>
+        For example in the above example where we were looking for the department head name, if the left expression is nil, we can provide the default value as below.
 </div>
 <pre class="zeropadding">
-  <br/>val result = nillableVariable<b>?.</b>someMethodCall()<br/>                       <b>??</b> fallbackIfnilMethodCall()<br/>
+  <br/>let departmentHead = bob?.department?.head?.name <br/>					<b>??</b> "No department head found"<br/>
 </pre>
 
-<div class="center-justified text-content">
-        The Nil-Coalescing operator will evaluate the left expression and will return it if it’s not nil else will evaluate the right side expression. Please note that the right side expression will only be called if the left side expression is nil.
-</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -404,30 +349,42 @@ Nil-Coalescing Operator (??)
     </script>
 </div>
 <h3>
-The !. Operator
+Ternary Operator <mark>? :</mark>
 </h3>
 <div class="center-justified text-content">
-        This operator is used to explicitly tell the compiler that the property is not nil and if it’s nil, please throw a nil pointer exception (<mark>NPE</mark>)
+        The ternary operator is used to separate the flows for true and false conditions for a bool variable or condition. We can call functions, assign values or even executes some code block in both true and false conditions.
+        </br>
+        </br>
+        The syntax for the same will look like below.
 </div>
 <pre class="zeropadding">
-  <br/>nillableVariable<b>!.</b>someMethodCall()<br/>
+  <br/>let a = 10<br/>        <br/>let result = a == 10 <b>?</b> "Ten" <b>:</b> "Some Other Value"<br/>
 </pre>
 
-<div class="center-justified text-content">
-        This code will work fine if ‘nillableVariable’ is not nil else it will throw an <mark>NPE</mark>.
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
-</br>
-</br>
-<h2>
-Difference between ?. and !.
-</h2>
+<h3>
+Difference Between <mark>?</mark> , <mark>?.</mark> , <mark>??</mark> and <mark>? :</mark>
+</h3>
 <div class="center-justified text-content">
         <ul>
-        <li>The basic difference while using <mark>?.</mark> and <mark>!.</mark> is if you want to separate a normal flow of <mark>var</mark> or <mark>let</mark> property having a ‘non-nil’ value with ‘nil’ value flow use <mark>?.</mark></li>
-        <li>But if you are sure that the property value is not nil use <mark>!.</mark> instead of <mark>?.</mark></li>
-        <li>Also, <mark>?.</mark> can be used to call default flow using <mark>??</mark> at the end of the expression but <mark>!!</mark> will only throw an NPE.</li>
+        <li><mark>?</mark> is used to make the variable an optional type.</li>
+        <li><mark>?.</mark> is used for optional chaining.</li>
+        <li><mark>??</mark> is used to provide the default value.</li>
+        <li><mark>? :</mark> separates the true and false flow for any condition or bool variable.
+</li>
         </ul>
-</br>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -465,8 +422,8 @@ Difference between ?. and !.
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/inout-in-swift/">
-        &#39;inout&#39; in Swift &gt;&gt;
+        <a href="/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/">
+        Default vs Optional vs Explicit Non-nil Variables: Swift &gt;&gt;
       </a>
     </div>
 </div>

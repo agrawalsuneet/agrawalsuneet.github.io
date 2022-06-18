@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="lateinit,lazy,lateinit vs lazy kotlin,property,lazy initialized">
+    <meta name="keywords" content="optional variable,default variable,non-nil variables,variables swift, swift">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | lateinit vs lazy Property in Kotlin" />
-    <meta property="og:title" content="lateinit vs lazy Property in Kotlin">
-    <meta property="twitter:title" content="lateinit vs lazy Property in Kotlin">
+    <meta name="title" content="Suneet Agrawal | Default vs Optional vs Explicit Non-nil Variables: Swift" />
+    <meta property="og:title" content="Default vs Optional vs Explicit Non-nil Variables: Swift">
+    <meta property="twitter:title" content="Default vs Optional vs Explicit Non-nil Variables: Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="lateinit vs lazy Property in Kotlin">
-    <meta name="description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta property="og:description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta property="twitter:description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta name="abstract" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta name="summary" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required."> 
+    <meta name="topic" content="Default vs Optional vs Explicit Non-nil Variables: Swift">
+    <meta name="description" content="In Swift, we can differentiate the variables into three different categories based on their possible values. The variable can be of default type, optional type or an explicit non-nil type.">
+    <meta property="og:description" content="In Swift, we can differentiate the variables into three different categories based on their possible values. The variable can be of default type, optional type or an explicit non-nil type.">
+    <meta property="twitter:description" content="In Swift, we can differentiate the variables into three different categories based on their possible values. The variable can be of default type, optional type or an explicit non-nil type.">
+    <meta name="abstract" content="In Swift, we can differentiate the variables into three different categories based on their possible values. The variable can be of default type, optional type or an explicit non-nil type.">
+    <meta name="summary" content="In Swift, we can differentiate the variables into three different categories based on their possible values. The variable can be of default type, optional type or an explicit non-nil type."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-08-29 "> 
+    <meta property="article:published_time" content=" 2022-06-17 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,16 +69,16 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android"> 
-    <title>lateinit vs lazy Property in Kotlin &middot; Suneet Agrawal</title>
+    <meta property="og:tags" content="Swift"> 
+    <meta property="og:tags" content="iOS"> 
+    <title>Default vs Optional vs Explicit Non-nil Variables: Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">lateinit vs lazy Property in Kotlin</h1>
+        <h1 class="mx16">Default vs Optional vs Explicit Non-nil Variables: Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -231,9 +231,9 @@ if (!doNotTrack) {
         <small class="text-muted">
 			
 			
-				<a href="https://agrawalsuneet.github.io/tags/kotlin"><span class="label label-success">Kotlin</span></a>
+				<a href="https://agrawalsuneet.github.io/tags/swift"><span class="label label-success">Swift</span></a>
 			
-				<a href="https://agrawalsuneet.github.io/tags/android"><span class="label label-success">Android</span></a>
+				<a href="https://agrawalsuneet.github.io/tags/ios"><span class="label label-success">iOS</span></a>
 			
 		</small> 
 
@@ -247,10 +247,14 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-        Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.
+        In Swift, we can differentiate the variables into three different categories based on their possible values. 
+        </br>
+        The variable can be of default type, optional type or an explicit non-nil type. 
         </br>
         </br>
-        Let's try to understand some basic differences between then and when to use what. But before that let's quickly recap the lateinit and lazy properties
+        All three types of variables can be clubbed with both <mark>let</mark> and <mark>var</mark>. Or they can also be used with any data type. 
+        </br>
+        Before looking at their differences, Let's try to understand them one by one in detail.
 </div>
 <div class="col-xs-12 googleads">
     
@@ -265,97 +269,19 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-</br>
 <h3>
-        lateinit property
+Default Type Variable
 </h3>
 <div class="center-justified text-content">
-        lateinit properties are the <mark>var</mark> properties that can be initialised later in the constructor or in any function according to the use.
-</div>
-<pre class="zeropadding">
-  <br/>data class User (val id : Long,<br/>                 val username : String) : Serializable<br/><br/><b>lateinit</b> var lateinitUser : User<br/>
-</pre>
-
-</br>
-<h3>
-        lazy property
-</h3>
-<div class="center-justified text-content">
-        lazy properties are the <mark>val</mark> properties that can also be initialised later when they are called the first time.
-</div>
-<pre class="zeropadding">
-  <br/>val lazyUser : User? by <b>lazy</b> {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>
-        Now lets try to understand difference between them.
-</h4>
-</br>
-<h3>
-        lateinit var whereas lazy val
-</h3>
-<div class="center-justified text-content">
-        lateinit can only be used with a <mark>var</mark> property whereas lazy will always be used with <mark>val</mark> property. 
+        Default type variables are the ones which need to be initialised either in the constructor or need to be declared along with the definition itself. It can be initialised with some default value and later can be changed if it's a mutable <mark>var</mark> type. 
         </br>
-        A lateinit property can be reinitialised again and again as per the use whereas the lazy property can only be initialised once.
+        </br>
+        There is no separate syntax for default type variables.
+        </br>
+        If we don't initialise the variable with definition and even in the constructor, The compiler will show an error.
 </div>
 <pre class="zeropadding">
-  <br/>lateinit <b>var</b> lateinitUser : User<br/><br/><b>val</b> lazyUser : User? by lazy {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
-</pre>
-
-</br>
-<h3>
-        lateinit can't have custom getter or setter whereas lazy has custom getter
-</h3>
-<div class="center-justified text-content">
-        A lateinit property can't have a custom getter whereas a lazy property has a block that gets executed whenever the first time that property is called.
-</div>
-<pre class="zeropadding">
-  <br/>val lazyUser : User by <b>lazy</b> {<br/>        //can do other initialisation here<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</br>
-<h3>
-        isInitialized
-</h3>
-<div class="center-justified text-content">
-        In order to check if a lateinit property is initialised or not, we can use the extension function to <mark>KProperty</mark> directly which returns a <mark>boolean</mark> if the property is initialised or not.
-</div>
-<pre class="zeropadding">
-  <br/>/**<br/> * Returns `true` if this lateinit property has been assigned a value, and `false` otherwise.<br/> *<br/> * Cannot be used in an inline function, to avoid binary compatibility issues.<br/> */<br/>@SinceKotlin("1.2")<br/>@InlineOnly<br/>inline val @receiver:AccessibleLateinitPropertyLiteral KProperty0<*>.<b>isInitialized</b>: Boolean<br/>    get() = throw NotImplementedError("Implementation is intrinsic")<br/><br/>println(::lateinitUser.<b>isInitialized</b>)    <br/>
-</pre>
-
-<div class="center-justified text-content">
-        Since the lazy block returns an object which implements the Lazy interface, we can check if the variable is initialised or not in the case of the lazy property also but for that, we need to split the lazy call.
-</div>
-<pre class="zeropadding">
-  <br/>val lazyUserDelegate = lazy { User(id = 1, username = "agrawalsuneet") }<br/>val lazyUser by lazyUserDelegate   <br/><br/>println(lazyUserDelegate.<b>isInitialized()</b>)<br/>
+  <br/>class CustomClass{<br/>    <br/>    var <b>defaultVariable: Int</b><br/><br/>    var <b>defaultVariable2: Int</b> = -1<br/><br/>    init(defaultVariable : Int){<br/>        self.defaultVariable = defaultVariable<br/>    }<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -372,24 +298,21 @@ if (!doNotTrack) {
     </script>
 </div>
 <h3>
-Primitive types
+Optional Type Variable
 </h3>
 <div class="center-justified text-content">
-        lateinit properties can't be of primitive data types whereas lazy properties can be of primitive date types also. 
+        Optional type variables are the ones which can hold a nil value as well. 
+        </br>
+        Initialising the optional type variables is optional at both the places ie while defining or in the constructor. 
+        </br>
+        By default, the compiler will initialise the optional variable with a nil value. It can be changed to nil if the variable is of <mark>var</mark> type.
+        </br>
+        </br>
+        Optional variables can be defined using <mark>?</mark> as a suffix to the variable type.
+        Option variables require a <a href="/blogs/safe-calls-vs-nil-checks-in-swift/" target="_blank">nil check</a> or unwrapping while using them.
 </div>
 <pre class="zeropadding">
-  <br/>lateinit var lateinitInt : Int <e>//compilation error: 'lateinit' modifier is not allowed on properties of primitive types</e><br/><br/>val lazyInt by lazy {<br/>    10<br/>}<br/>
-</pre>
-
-</br>
-<h3>
-Thread Safety
-</h3>
-<div class="center-justified text-content">
-        We can't define the thready safety in case of lateinit property but in case of lazy, we can choose between <mark>SYNCHRONIZED</mark>, <mark>PUBLICATION</mark> and <mark>NONE</mark>.
-</div>
-<pre class="zeropadding">
-  <br/>val lazyUser : User? by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+  <br/>class CustomClass{<br/>    <br/>    var <b>optionalVariable: Int?</b><br/>    <br/>    var <b>optionalVariable2: Int?</b> = -1<br/>}<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -406,29 +329,42 @@ Thread Safety
     </script>
 </div>
 <h3>
-Nullable Type
+Explicit Non-nil Variables
 </h3>
 <div class="center-justified text-content">
-       A lazy property can be of nullable type but a lateinit property can't be of nullable type.
+        Explicit Non-nil variables are the ones which are not required to be initialised while defining the variable as well as in the construct but whenever we are going to use the variable, it will be treated as a non-optional or default type variable. 
+        </br>
+        This means we don't have to add any nil check while using this variable.
+        </br>
+        </br>
+        In short, we tell the compiler that it will be the developer's responsibility to initialise the property before using it. If we don't initialise before using it, it will throw an <mark>NPE</mark>.
 </div>
 <pre class="zeropadding">
-  <br/>lateinit var lateinitUser : User<b>?</b> <e>//compilation error: 'lateinit' modifier is not allowed on properties of nullable types</e><br/><br/>val lazyUser : User<b>?</b> by lazy {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+  <br/>class CustomClass{<br/>    <br/>    var <b>explicitNonNilVariable: Int!</b><br/>    <br/>    var <b>explicitNonNilVariable2: Int!</b> = -1<br/>}<br/>
 </pre>
 
-</br>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <h3>
-Accessing before initialisation
+Default vs Optional vs Explicit Non-nil Variables
 </h3>
 <div class="center-justified text-content">
-       Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn’t been initialized.
-       </br>
-        We can't ever access a lazy property before it hased been initialised. Remember that the lazy property can be null but the initialisation will still happen when the first time the property will be called.
-        </br>
-        </br>  
-        </br>
-        Based on the above difference we can decide when to use the lateinit property or when to use the lazy property. The developer doesn't have to remember if the property is initialised or not in case of lazy property but in case of lateinit we need to remember the flow. 
-        </br>
-        There are no guidelines in order to decide when to use what but according to the use case, we can decide.
+        <ul>
+        <li>A default variable needs to be initialised while defining or in the constructor. There is no need to use a nil check while using the default variable.</li>
+        <li>An optional variable doesn't need to be initialised while defining or in the constructor. This will need a nil check before using it.</li>
+        <li>An explicit non-nil variable doesn't need to be initialised while defining or in the construct but it's the developer's responsibility to make sure that it will be non-nil before accessing it. There is no need to use a nil check while using it as well.</li>
+        </ul>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -466,8 +402,8 @@ Accessing before initialisation
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/destructuring-declarations-in-kotlin/">
-        Destructuring Declarations in Kotlin &gt;&gt;
+        <a href="/blogs/safe-calls-vs-nil-checks-in-swift/">
+        Safe calls(?.) vs Nil checks(!.) in Swift &gt;&gt;
       </a>
     </div>
 </div>

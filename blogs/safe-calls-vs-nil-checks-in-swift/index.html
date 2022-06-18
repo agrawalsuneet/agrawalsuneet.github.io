@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="lateinit,lazy,lateinit vs lazy kotlin,property,lazy initialized">
+    <meta name="keywords" content="?. vs !., ?.,!.,safe calls swift, nil check swift,safe call,nil check, safe call vs nil check, swift">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | lateinit vs lazy Property in Kotlin" />
-    <meta property="og:title" content="lateinit vs lazy Property in Kotlin">
-    <meta property="twitter:title" content="lateinit vs lazy Property in Kotlin">
+    <meta name="title" content="Suneet Agrawal | Safe calls(?.) vs Nil checks(!.) in Swift" />
+    <meta property="og:title" content="Safe calls(?.) vs Nil checks(!.) in Swift">
+    <meta property="twitter:title" content="Safe calls(?.) vs Nil checks(!.) in Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="lateinit vs lazy Property in Kotlin">
-    <meta name="description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta property="og:description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta property="twitter:description" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta name="abstract" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.">
-    <meta name="summary" content="Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required."> 
+    <meta name="topic" content="Safe calls(?.) vs Nil checks(!.) in Swift">
+    <meta name="description" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
+    <meta property="og:description" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
+    <meta property="twitter:description" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
+    <meta name="abstract" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error.">
+    <meta name="summary" content="In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-08-29 "> 
+    <meta property="article:published_time" content=" 2022-06-18 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,16 +69,16 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android"> 
-    <title>lateinit vs lazy Property in Kotlin &middot; Suneet Agrawal</title>
+    <meta property="og:tags" content="Swift"> 
+    <meta property="og:tags" content="iOS"> 
+    <title>Safe calls(?.) vs Nil checks(!.) in Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">lateinit vs lazy Property in Kotlin</h1>
+        <h1 class="mx16">Safe calls(?.) vs Nil checks(!.) in Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -231,9 +231,9 @@ if (!doNotTrack) {
         <small class="text-muted">
 			
 			
-				<a href="https://agrawalsuneet.github.io/tags/kotlin"><span class="label label-success">Kotlin</span></a>
+				<a href="https://agrawalsuneet.github.io/tags/swift"><span class="label label-success">Swift</span></a>
 			
-				<a href="https://agrawalsuneet.github.io/tags/android"><span class="label label-success">Android</span></a>
+				<a href="https://agrawalsuneet.github.io/tags/ios"><span class="label label-success">iOS</span></a>
 			
 		</small> 
 
@@ -247,44 +247,12 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-        Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.
+        In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references).
         </br>
-        </br>
-        Let's try to understand some basic differences between then and when to use what. But before that let's quickly recap the lateinit and lazy properties
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</br>
-<h3>
-        lateinit property
-</h3>
-<div class="center-justified text-content">
-        lateinit properties are the <mark>var</mark> properties that can be initialised later in the constructor or in any function according to the use.
+        For example, a normal property can’t hold a nil value and will show a compile error.
 </div>
 <pre class="zeropadding">
-  <br/>data class User (val id : Long,<br/>                 val username : String) : Serializable<br/><br/><b>lateinit</b> var lateinitUser : User<br/>
-</pre>
-
-</br>
-<h3>
-        lazy property
-</h3>
-<div class="center-justified text-content">
-        lazy properties are the <mark>val</mark> properties that can also be initialised later when they are called the first time.
-</div>
-<pre class="zeropadding">
-  <br/>val lazyUser : User? by <b>lazy</b> {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+  <br/>var variable : <b>CustomClass</b> = CustomClass()<br/>variable = nil //compilation error <br/><e>//'nil' cannot be assigned to type 'CustomClass'</e><br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -300,64 +268,25 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<h4>
-        Now lets try to understand difference between them.
-</h4>
-</br>
-<h3>
-        lateinit var whereas lazy val
-</h3>
 <div class="center-justified text-content">
-        lateinit can only be used with a <mark>var</mark> property whereas lazy will always be used with <mark>val</mark> property. 
-        </br>
-        A lateinit property can be reinitialised again and again as per the use whereas the lazy property can only be initialised once.
+        Instead, we can add a <mark>?</mark> after the data type of that property which declares that variable as a nillable property.
 </div>
 <pre class="zeropadding">
-  <br/>lateinit <b>var</b> lateinitUser : User<br/><br/><b>val</b> lazyUser : User? by lazy {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+  <br/>var nillableVariable : <b>CustomClass?</b> = CustomClass()<br/>nillableVariable = nil //works fine<br/>
 </pre>
 
-</br>
-<h3>
-        lateinit can't have custom getter or setter whereas lazy has custom getter
-</h3>
 <div class="center-justified text-content">
-        A lateinit property can't have a custom getter whereas a lazy property has a block that gets executed whenever the first time that property is called.
-</div>
-<pre class="zeropadding">
-  <br/>val lazyUser : User by <b>lazy</b> {<br/>        //can do other initialisation here<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+        In any case, the nillable property requires a nil check every time before accessing that property or requires a confirmation from the developer that the estimation of that property won’t be nil while accessing it.
 </div>
 </br>
-<h3>
-        isInitialized
-</h3>
-<div class="center-justified text-content">
-        In order to check if a lateinit property is initialised or not, we can use the extension function to <mark>KProperty</mark> directly which returns a <mark>boolean</mark> if the property is initialised or not.
-</div>
 <pre class="zeropadding">
-  <br/>/**<br/> * Returns `true` if this lateinit property has been assigned a value, and `false` otherwise.<br/> *<br/> * Cannot be used in an inline function, to avoid binary compatibility issues.<br/> */<br/>@SinceKotlin("1.2")<br/>@InlineOnly<br/>inline val @receiver:AccessibleLateinitPropertyLiteral KProperty0<*>.<b>isInitialized</b>: Boolean<br/>    get() = throw NotImplementedError("Implementation is intrinsic")<br/><br/>println(::lateinitUser.<b>isInitialized</b>)    <br/>
+  <br/>variable.someMethodCall() //works fine as the compiler is sure that<br/>                          //the variable can’t be nil<br/>nillableVariable.someMethodCall() //will highlight compilation error<br/>                                  //as compiler is not sure as<br/>                                  //nilVariable can be nil.<br/>
 </pre>
 
+</br>
 <div class="center-justified text-content">
-        Since the lazy block returns an object which implements the Lazy interface, we can check if the variable is initialised or not in the case of the lazy property also but for that, we need to split the lazy call.
+        There are still few techniques for using or accessing the nillable variable. One of them is safe call <mark>?.</mark> and another one is nil check <mark>!.</mark> but before figuring out the difference among both, let’s understand what they are in detail first.
 </div>
-<pre class="zeropadding">
-  <br/>val lazyUserDelegate = lazy { User(id = 1, username = "agrawalsuneet") }<br/>val lazyUser by lazyUserDelegate   <br/><br/>println(lazyUserDelegate.<b>isInitialized()</b>)<br/>
-</pre>
-
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -372,26 +301,34 @@ if (!doNotTrack) {
     </script>
 </div>
 <h3>
-Primitive types
+If Let and Guard Let
 </h3>
 <div class="center-justified text-content">
-        lateinit properties can't be of primitive data types whereas lazy properties can be of primitive date types also. 
+        This is the old pattern that we use in every other language, checking the variable if its nil or not.
+        </br>
+        </br>
+        If let checks if the nillable variable is nil or not. 
+        </br>
+        If the variable is nil, this will go to else block.
+        </br>
+        If not, it will copy the non-nil reference into another variable within its scope where we can use it without any nil checks.
 </div>
 <pre class="zeropadding">
-  <br/>lateinit var lateinitInt : Int <e>//compilation error: 'lateinit' modifier is not allowed on properties of primitive types</e><br/><br/>val lazyInt by lazy {<br/>    10<br/>}<br/>
+  <br/><b>if let</b> nillableVariable = nillableVariable {<br/>    nillableVariable.someMethodCall()<br/>} else {<br/>    // fallback flow<br/>}<br/>
 </pre>
 
-</br>
-<h3>
-Thread Safety
-</h3>
 <div class="center-justified text-content">
-        We can't define the thready safety in case of lateinit property but in case of lazy, we can choose between <mark>SYNCHRONIZED</mark>, <mark>PUBLICATION</mark> and <mark>NONE</mark>.
+        Guard let separates the failure case first. It is designed to exit the current function, loop or condition if the check fails.
+        </br>
+        It is used to run a code block and return if the variable is nil otherwise below else condition, the variable is non-nil and we can use it without any nil checks.
 </div>
 <pre class="zeropadding">
-  <br/>val lazyUser : User? by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+  <br/><b>guard let</b> nillableVariable = nillableVariable else {<br/>    //do something in nil case<br/>    return<br/>}<br/>        <br/>nillableVariable.someMethodCall()<br/>
 </pre>
 
+<div class="center-justified text-content">
+        You can read the difference between if-let and guard-let on <a href="/blogs/if-vs-if-let-vs-guard-let-in-swift/" target="_blank">if vs if let vs guard let in Swift</a>.
+</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -406,29 +343,91 @@ Thread Safety
     </script>
 </div>
 <h3>
-Nullable Type
+Safe Calls (?.)
 </h3>
 <div class="center-justified text-content">
-       A lazy property can be of nullable type but a lateinit property can't be of nullable type.
+        Another way of using a nillable property is safe call operator <mark>?.</mark>
+        </br>
+        This calls the method if the property is not nil or returns nil if that property is nil without throwing an NPE (nil pointer exception).
 </div>
 <pre class="zeropadding">
-  <br/>lateinit var lateinitUser : User<b>?</b> <e>//compilation error: 'lateinit' modifier is not allowed on properties of nullable types</e><br/><br/>val lazyUser : User<b>?</b> by lazy {<br/>        User(id = 1, username = "agrawalsuneet")<br/>    }<br/>
+  <br/>nillableVariable<b>?.</b>someMethodCall()<br/>
 </pre>
 
-</br>
+<div class="center-justified text-content">
+        Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following
+</div>
+<pre class="zeropadding">
+  <br/>bob<b>?.</b>department<b>?.</b>head<b>?.</b>name<br/>
+</pre>
+
+<div class="center-justified text-content">
+        Such a chain returns nil if any of the properties in it is nil.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <h3>
-Accessing before initialisation
+Nil-Coalescing Operator (??)
 </h3>
 <div class="center-justified text-content">
-       Accessing a lateinit property before it has been initialized throws a special exception that clearly identifies the property being accessed and the fact that it hasn’t been initialized.
-       </br>
-        We can't ever access a lazy property before it hased been initialised. Remember that the lazy property can be null but the initialisation will still happen when the first time the property will be called.
-        </br>
-        </br>  
-        </br>
-        Based on the above difference we can decide when to use the lateinit property or when to use the lazy property. The developer doesn't have to remember if the property is initialised or not in case of lazy property but in case of lateinit we need to remember the flow. 
-        </br>
-        There are no guidelines in order to decide when to use what but according to the use case, we can decide.
+        This one is similar to safe calls except the fact that it can return a non-nil value if the calling property is nil even
+</div>
+<pre class="zeropadding">
+  <br/>val result = nillableVariable<b>?.</b>someMethodCall()<br/>                       <b>??</b> fallbackIfnilMethodCall()<br/>
+</pre>
+
+<div class="center-justified text-content">
+        The Nil-Coalescing operator will evaluate the left expression and will return it if it’s not nil else will evaluate the right side expression. Please note that the right side expression will only be called if the left side expression is nil.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+The !. Operator
+</h3>
+<div class="center-justified text-content">
+        This operator is used to explicitly tell the compiler that the property is not nil and if it’s nil, please throw a nil pointer exception (<mark>NPE</mark>)
+</div>
+<pre class="zeropadding">
+  <br/>nillableVariable<b>!.</b>someMethodCall()<br/>
+</pre>
+
+<div class="center-justified text-content">
+        This code will work fine if ‘nillableVariable’ is not nil else it will throw an <mark>NPE</mark>.
+</div>
+</br>
+</br>
+<h2>
+Difference between ?. and !.
+</h2>
+<div class="center-justified text-content">
+        <ul>
+        <li>The basic difference while using <mark>?.</mark> and <mark>!.</mark> is if you want to separate a normal flow of <mark>var</mark> or <mark>let</mark> property having a ‘non-nil’ value with ‘nil’ value flow use <mark>?.</mark></li>
+        <li>But if you are sure that the property value is not nil use <mark>!.</mark> instead of <mark>?.</mark></li>
+        <li>Also, <mark>?.</mark> can be used to call default flow using <mark>??</mark> at the end of the expression but <mark>!!</mark> will only throw an NPE.</li>
+        </ul>
+</br>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -466,8 +465,8 @@ Accessing before initialisation
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/destructuring-declarations-in-kotlin/">
-        Destructuring Declarations in Kotlin &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

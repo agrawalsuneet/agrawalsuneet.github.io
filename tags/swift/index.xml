@@ -6,7 +6,25 @@
     <description>Recent content in Swift on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Safe calls(?.) vs Nil checks(!.) in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</link>
+      <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</guid>
+      <description>In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references).  For example, a normal property can’t hold a nil value and will show a compile error.  var variable : CustomClass = CustomClass()variable = nil //compilation error //&#39;nil&#39; cannot be assigned to type &#39;CustomClass&#39;    (adsbygoogle = window.adsbygoogle || []).push({});   Instead, we can add a ?</description>
+    </item>
+    
+    <item>
+      <title>Default vs Optional vs Explicit Non-nil Variables: Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/</link>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/</guid>
+      <description>In Swift, we can differentiate the variables into three different categories based on their possible values.  The variable can be of default type, optional type or an explicit non-nil type.   All three types of variables can be clubbed with both let and var. Or they can also be used with any data type.  Before looking at their differences, Let&#39;s try to understand them one by one in detail.</description>
+    </item>
+    
     <item>
       <title>Double vs Float : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</link>

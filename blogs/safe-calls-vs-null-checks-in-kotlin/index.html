@@ -276,7 +276,7 @@ if (!doNotTrack) {
 </pre>
 
 <div class="center-justified text-content">
-        In any case, the nullable property requires a null check every time before utilizing that property or requires a confirmation from the developer that the estimation of that property won’t be null while utilizing it
+        In any case, the nullable property requires a null check every time before accessing that property or requires a confirmation from the developer that the estimation of that property won’t be null while accessing it.
 </div>
 </br>
 <pre class="zeropadding">
@@ -411,14 +411,14 @@ Elvis Operator (?:)
 The !! Operator
 </h3>
 <div class="center-justified text-content">
-        This operator is used to explicitly tell the compiler that the property is not null and if it’s null, please throw a null pointer exception (NPE)
+        This operator is used to explicitly tell the compiler that the property is not null and if it’s null, please throw a null pointer exception (<mark>NPE</mark>)
 </div>
 <pre class="zeropadding">
   <br/>nullableVariable<b>!!.</b>someMethodCall()<br/>
 </pre>
 
 <div class="center-justified text-content">
-        this code will work fine if ‘nullableVariable’ is not null else it will throw an NPE.
+        this code will work fine if ‘nullableVariable’ is not null else it will throw an <mark>NPE</mark>.
 </div>
 </br>
 </br>
@@ -426,16 +426,15 @@ The !! Operator
 Difference between ?. and !!
 </h2>
 <div class="center-justified text-content">
-        The basic difference while using <mark>?.</mark> and <mark>!!</mark> is if you want to separate a normal flow of var property having a ‘non-null’ value with ‘null’ value flow use <mark>?.</mark>
+        <ul>
+        <li>The basic difference while using <mark>?.</mark> and <mark>!!</mark> is if you want to separate a normal flow of var property having a ‘non-null’ value with ‘null’ value flow use <mark>?.</mark></li>
+        <li>But if you are sure that the var property value is not null use <mark>!!</mark> instead of <mark>?.</mark></li>
+        <li>Also, <mark>?.</mark> can be used to return or throw a different kind of exceptions using <mark>?:</mark> at the end of the expression but <mark>!!</mark> will only throw an NPE.</li>
+        </ul>
         </br>
-        But if you are sure that the var property value is not null use <mark>!!</mark> instead of <mark>?.</mark>
         </br>
-        Also, <mark>?.</mark> can be used to return or throw a different kind of exceptions using <mark>?:</mark> at the end of the expression but <mark>!!</mark> will only throw an NPE.
+        Reference: <a href="https://kotlinlang.org/docs/null-safety.html" target="_blank">Kotlin docs</a>
         </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/null-safety.html" target="_blank">Kotlin docs</a>
-        </br>
-</br>
 </div>
 <div class="col-xs-12 googleads">
     
@@ -483,16 +482,17 @@ Difference between ?. and !!
     </article>
 </main>
 
-<script data-name="BMC-Widget" 
-        data-cfasync="false" 
-        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-        data-id="agrawalsuneet" 
-        data-description="Support me on Buy me a coffee!" 
-        data-message="If you find this blog helpful, support us to keep this website up and free !!!" 
-        data-color="#ff813f" 
-        data-position="Right" 
-        data-x_margin="18" 
-        data-y_margin="18"></script>
+<script
+    data-name="BMC-Widget" 
+    data-cfasync="false" 
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+    data-id="agrawalsuneet" 
+    data-description="Support me on Buy me a coffee!" 
+    data-message="If you find this blog helpful, support us to keep this website up and free !!!" 
+    data-color="#ff813f" 
+    data-position="Right" 
+    data-x_margin="18" 
+    data-y_margin="18"></script>
 
  
 <div id="disqus_thread">

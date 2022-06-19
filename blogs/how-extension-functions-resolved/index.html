@@ -371,9 +371,23 @@ So next time if someone asks you "how are extension functions resolved?", Please
 </main>
 
 <script async>
-    if( window.canLoadAds === undefined ){
-      
-      console.log("Adblocker detected, Its blocking the ads");
+    if(window.canLoadAds){
+        console.log("Adblocker allowed, loading ads");
+
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'allowed',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/how-extension-functions-resolved\/'
+        });
+    } else {
+        
+        console.log("Adblocker detected, Its blocking the ads");
+
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'blocked',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/how-extension-functions-resolved\/'
+        });
     }
 </script>
 

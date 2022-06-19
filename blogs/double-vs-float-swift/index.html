@@ -412,21 +412,21 @@ When to Use What
 </main>
 
 <script async>
-    if(window.canLoadAds){
+    if( window.canLoadAds === undefined ){
+        
+        console.log("Adblocker detected, its blocking the ads");
+
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'blocked',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/double-vs-float-swift\/'
+        });
+    } else {
         console.log("Adblocker allowed, loading ads");
 
         dataLayer.push({
             event: 'adblocker', 
             'status' : 'allowed',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/double-vs-float-swift\/'
-        });
-    } else {
-        
-        console.log("Adblocker detected, Its blocking the ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'blocked',
             'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/double-vs-float-swift\/'
         });
     }

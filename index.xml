@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Round vs Floor vs Ceil : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</guid>
+      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up.  Let&#39;s understand them in detail before comparing.   Before reading this blog, keep in mind that -3 is bigger than -4 and -3.</description>
+    </item>
+    
+    <item>
       <title>Safe calls(?.) vs Nil checks(!.) in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</link>
       <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
@@ -229,7 +238,7 @@
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs  Technical Blogs (83 posts)   Safe calls(?.) vs Nil checks(!.) in Swift   In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error. read more  18 June 2022  Swift iOS      Default vs Optional vs Explicit Non-nil Variables: Swift   In Swift, we can differentiate the variables into three different categories based on their possible values.</description>
+      <description>Technical Blogs  Technical Blogs (84 posts)   Round vs Floor vs Ceil : Swoft   Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.</description>
     </item>
     
     <item>

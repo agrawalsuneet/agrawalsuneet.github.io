@@ -299,7 +299,7 @@ Math.floor()
 </h3>
 <div class="center-justified text-content">
         <ul>
-                <li>Math.floor rounds up to the nearest Integer which can be equal to or below the actual value.</li>
+                <li><mark>Math.floor</mark> rounds up to the nearest Integer which can be equal to or below the actual value.</li>
                 <li>In the case of a positive number, anything between <mark>x.01</mark> to <mark>x.99</mark> will be converted to a lower number ie <mark>x.00</mark> whereas <mark>x.00</mark> will remain the same <mark>x.00</mark></li>
                 <li>In the case of a negative number, anything between <mark>-x.01</mark> to <mark>-x.99</mark> will be converted to a lower number ie <mark>-x-1.00</mark> whereas <mark>-x.00</mark> will remain the same <mark>-x.00</mark></li>
         </ul>
@@ -326,7 +326,7 @@ Math.ceil()
 </h3>
 <div class="center-justified text-content">
         <ul>
-                <li>Math.ceil rounds up to the nearest Integer which can be equal to or above the actual value.</li>
+                <li><mark>Math.ceil</mark> rounds up to the nearest Integer which can be equal to or above the actual value.</li>
                 <li>In the case of a positive number, anything between <mark>x.01</mark> to <mark>x.99</mark> will be converted to an upper number ie <mark>x+1.00</mark> whereas <mark>x.00</mark> will remain the same <mark>x.00</mark></li>
                 <li>In the case of a negative number, anything between <mark>-x.01</mark> to <mark>-x.99</mark> will be converted to an upper number ie <mark>-x.00</mark> whereas <mark>-x.00</mark> will remain the same <mark>-x.00</mark></li>
         </ul>
@@ -433,26 +433,7 @@ The third digit after decimal doesn't make any difference.
     </article>
 </main>
 
-<script>
-    if( window.canLoadAds === undefined ){
-        
-        console.log("Adblocker detected, its blocking the ads");
 
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'blocked',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/math-round-vs-math-floor-vs-math-ceil-kotlin\/'
-        });
-    } else {
-        console.log("Adblocker allowed, loading ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'allowed',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/math-round-vs-math-floor-vs-math-ceil-kotlin\/'
-        });
-    }
-</script>
 
 <script
     data-name="BMC-Widget" 

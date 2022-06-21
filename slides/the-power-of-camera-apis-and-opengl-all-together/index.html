@@ -296,26 +296,7 @@ if (!doNotTrack) {
     </article>
 </main>
 
-<script>
-    if( window.canLoadAds === undefined ){
-        
-        console.log("Adblocker detected, its blocking the ads");
 
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'blocked',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/slides\/the-power-of-camera-apis-and-opengl-all-together\/'
-        });
-    } else {
-        console.log("Adblocker allowed, loading ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'allowed',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/slides\/the-power-of-camera-apis-and-opengl-all-together\/'
-        });
-    }
-</script>
 
 <script
     data-name="BMC-Widget" 

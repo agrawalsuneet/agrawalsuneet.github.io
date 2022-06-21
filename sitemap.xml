@@ -3,18 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2022-06-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/ios/</loc>
-    <lastmod>2022-06-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</loc>
-    <lastmod>2022-06-18T00:00:00+00:00</lastmod>
+    <loc>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/swift/</loc>
-    <lastmod>2022-06-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</loc>
     <lastmod>2022-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/</loc>

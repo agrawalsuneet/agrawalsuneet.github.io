@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="Swift for loop,for loop Swift,for loop,for Swift">
+    <meta name="keywords" content="round swift,floor swift,ceil swift,math swift">
 
 
     
@@ -43,23 +43,23 @@
     <meta name="owner" content="Suneet Agrawal">
     <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
 
-    <meta name="title" content="Suneet Agrawal | Swift ‘For’ loop" />
-    <meta property="og:title" content="Swift ‘For’ loop">
-    <meta property="twitter:title" content="Swift ‘For’ loop">
+    <meta name="title" content="Suneet Agrawal | Round vs Floor vs Ceil : Swift" />
+    <meta property="og:title" content="Round vs Floor vs Ceil : Swift">
+    <meta property="twitter:title" content="Round vs Floor vs Ceil : Swift">
     <meta name="twitter:site" content="@agrawalsuneet">
 
-    <meta name="topic" content="Swift ‘For’ loop">
-    <meta name="description" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta property="og:description" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta property="twitter:description" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta name="abstract" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes.">
-    <meta name="summary" content="For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes."> 
+    <meta name="topic" content="Round vs Floor vs Ceil : Swift">
+    <meta name="description" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta property="og:description" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta property="twitter:description" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta name="abstract" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction.">
+    <meta name="summary" content="Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-09-25 "> 
+    <meta property="article:published_time" content=" 2022-06-21 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -69,7 +69,7 @@
     <meta name="og:email" content="agrawalsuneet@gmail.com">
 
     <meta name="twitter:creator" content="@agrawalsuneet">
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/swift-for-loop/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -78,7 +78,7 @@
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Swift"> 
     <meta property="og:tags" content="iOS"> 
-    <title>Swift ‘For’ loop &middot; Suneet Agrawal</title>
+    <title>Round vs Floor vs Ceil : Swift &middot; Suneet Agrawal</title>
 
     
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
 
 <main>
     <header>
-        <h1 class="mx16">Swift ‘For’ loop</h1>
+        <h1 class="mx16">Round vs Floor vs Ceil : Swift</h1>
     </header>
 
     <div class="col-xs-12 vertical-centre">
@@ -247,13 +247,12 @@ if (!doNotTrack) {
 <div class="row">
 <div class="col-lg-10">
 <div class="center-justified text-content">
-       For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes. 
-       </br>
-       </br>
-       While comparing with other languages, I realized in Swift, there are few concepts which are completely different from java or any other another language <mark>for</mark> loops.
+        Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up. 
+        </br>
+        Let's understand them in detail before comparing.
         </br>
         </br>
-        Wait! They are not this tough. In fact, they are very easy, interesting and helpful.
+        Before reading this blog, keep in mind that -3 is bigger than -4 and -3.5 is bigger than -3.51
 </div>
 <div class="col-xs-12 googleads">
     
@@ -268,32 +267,20 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<div class="center-justified text-content">
-        Let’s check one by one.
-</div>
-</br>
-</br>
-<h4>1. Simple <mark>for</mark> loop in java that iterates from some number to some number incrementing one on each loop pass.</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i++){<br/>    System.out.print(i);<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        </br>
-        its equivalent Swift code
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in 1...10 {<br/>    print(i)<br/>}<br/>
-</pre>
-
-<h3>Things to notice</h3>
+<h3>
+round()
+</h3>
 <div class="center-justified text-content">
         <ul>
-                <li>No need to declare the data type of variable.</li>
-                <li>If iterating over a range, we can use <mark>...</mark> (closed range) operator.</li>
-                <li>The lower and upper (including) limit can be defined on both the sides of <mark>...</mark> operator.</li>
+                <li><mark>round</mark> rounds up to the nearest Integer which can be above or below or even equal to the actual value.</li>
+                <li>In the case of a positive number, anything which is equal to or below <mark>x.49</mark> will be converted to a lower number ie <mark>x.00</mark> whereas anything which is equal to or more than <mark>x.5</mark> will be converted to a higher number ie <mark>x+1.00</mark></li>
+                <li>In the case of a negative number, anything which is equal to or below <mark>-x.5</mark> will be converted to a lower number ie <mark>-x-1.00</mark> whereas anything which is equal to or more than <mark>-x.49</mark> will be converted to a higher number ie <mark>-x.00</mark></li>
         </ul>
 </div>
+<pre class="zeropadding">
+  <br/>print(round(3.00))<br/>//this will print: 3<br/><br/>print(round(3.49))<br/>//this will print: 3<br/><br/>print(round(3.5))<br/>//this will print: 4<br/><br/>print(round(-3.00))<br/>//this will print: -3<br/><br/>print(round(-3.49))<br/>//this will print: -3<br/><br/>print(round(-3.5))<br/>//this will print: -4<br/>
+</pre>
+
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -307,17 +294,18 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<h4>2. Now let’s say if I don’t don’t want to include the upper limit in the loop and break the loop if it hits the upper limit.</h4>
-<p><pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int j = 0; j < 10; j++) {<br/>    System.out.print(j); //this will print only up to 9<br/> }<br/>
-</pre>
-
-</br></p>
+<h3>
+floor()
+</h3>
 <div class="center-justified text-content">
-        We can use the half-open range operator (<mark>..<</mark>).
+        <ul>
+                <li><mark>floor</mark> rounds up to the nearest Integer which can be equal to or below the actual value.</li>
+                <li>In the case of a positive number, anything between <mark>x.01</mark> to <mark>x.99</mark> will be converted to a lower number ie <mark>x.00</mark> whereas <mark>x.00</mark> will remain the same <mark>x.00</mark></li>
+                <li>In the case of a negative number, anything between <mark>-x.01</mark> to <mark>-x.99</mark> will be converted to a lower number ie <mark>-x-1.00</mark> whereas <mark>-x.00</mark> will remain the same <mark>-x.00</mark></li>
+        </ul>
 </div>
 <pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in 1..&lt;10 {<br/>    print(i)<br/>}<br/>
+  <br/>print(floor(3.00))<br/>//this will print: 3<br/><br/>print(floor(3.01))<br/>//this will print: 3<br/><br/>print(floor(3.99))<br/>//this will print: 3<br/>    <br/>print(floor(-3.00))<br/>//this will print: -3<br/><br/>print(floor(-3.01))<br/>//this will print: -4<br/><br/>print(floor(-3.99))<br/>//this will print: -4<br/>
 </pre>
 
 <div class="col-xs-12 googleads">
@@ -333,206 +321,72 @@ if (!doNotTrack) {
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
-<h4>3. I want to increment it by 2 or some other number.</h4>
+<h3>
+ceil()
+</h3>
+<div class="center-justified text-content">
+        <ul>
+                <li><mark>ceil</mark> rounds up to the nearest Integer which can be equal to or above the actual value.</li>
+                <li>In the case of a positive number, anything between <mark>x.01</mark> to <mark>x.99</mark> will be converted to an upper number ie <mark>x+1.00</mark> whereas <mark>x.00</mark> will remain the same <mark>x.00</mark></li>
+                <li>In the case of a negative number, anything between <mark>-x.01</mark> to <mark>-x.99</mark> will be converted to an upper number ie <mark>-x.00</mark> whereas <mark>-x.00</mark> will remain the same <mark>-x.00</mark></li>
+        </ul>
+</div>
 <pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 0; i <= 10; i += 2) {<br/>    System.out.print(i);<br/> }<br/>
+  <br/>print(ceil(3.00))<br/>//this will print: 3<br/><br/>print(ceil(3.01))<br/>//this will print: 4<br/><br/>print(ceil(3.99))<br/>//this will print: 4<br/><br/>print(ceil(-3.00))<br/>//this will print: -3<br/><br/>print(ceil(-3.01))<br/>//this will print: -3<br/><br/>print(ceil(-3.99))<br/>//this will print: -3<br/>
 </pre>
 
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+Common between round, floor and ceil
+</h3>
+<div class="center-justified text-content">
+        <ul>
+                <li>All three work on both <mark>Double</mark> as well as on <mark>Float</mark>.</li>
+                <li>Although they round to the nearest <mark>Integer</mark>, the output still remains <mark>Double</mark> in the case of <mark>Double</mark> and <mark>Float</mark> in the case of <mark>Float</mark>.</li>
+        </ul>
+</div>
 </br>
+<h3>
+Difference between round, floor and ceil
+</h3>
 <div class="center-justified text-content">
-        We can use <mark>stride</mark> function here
+        <ul>
+                <li><mark>round</mark> rounds up to the nearest Integer which can be above, below or equal to the actual value.</li>
+                <ul>
+                        <li>x.0 to x.49 -> x.0</li>
+                        <li>x.5 to x.99 -> x+1.0</li>
+                        <li>-x to -x.49 -> x.0</li>
+                        <li>-x.5 to -x.99 -> -x-1.0</li>
+                </ul>
+                <li><mark>floor</mark> rounds up to the nearest Integer which can be equal to or below the actual value.</li>
+                <ul>
+                        <li>x.0 to x.99 -> x.0</li>
+                        <li>-x.01 to -x.99 -> -x-1.0</li>
+                </ul>
+                <li><mark>ceil</mark> rounds up to the nearest Integer which can be equal to or above the actual value.</li>
+                <ul>
+                        <li>x.01 to x.99 -> x+1.0</li>
+                        <li>-x.01 to -x.99 -> -x.0</li>
+                </ul>
+        </ul>
 </div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in stride(from: 0, through: 10, by: 2) {<br/>    print(i)<br/>}<br/>//this will run till last value, in our case till 10<br/><br/><br/>for i in stride(from: 0, to: 10, by: 2) {<br/>    print(i)<br/>}<br/>//this will run less then last value, in our case till 8<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>4. Wait, what if I want to run the loop in reverse order. Can I use <mark>10...1</mark> ?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 10; i > 0; i--) {<br/>    System.out.print(i);<br/> }<br/>
-</pre>
-
-<div class="center-justified text-content">
-        No, you can not use <mark>10...1</mark> directly as <mark>...</mark> operator never works on the reverse ranges. 
-        It will give you below run time error.
-</div>
-<pre class="zeropadding">
-  <br/><e>Error</e><br/>error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION (code=EXC_I386_INVOP, subcode=0x0).<br/>The process has been left at the point where it was interrupted, use "thread return -x" to return to the state before expression evaluation.<br/><br/>
-</pre>
-
-<div class="center-justified text-content">
-        You have to use <mark>reversed()</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>for i in (0...10).reversed() {<br/>    print(i)<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        You can also change the step size with <mark>stride</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int i = 10; i > 0; i -= 2) {<br/>    System.out.print(i);<br/> }<br/><br/><l>Swift code</l><br/>for i in stride(from: 0, to: 10, by: 2).reversed() {<br/>    print(i)<br/>}<br/><br/>for i in stride(from: 0, through: 10, by: 2).reversed() {<br/>    print(i)<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        But please note that <mark>stride</mark> function overload <mark>to</mark> and <mark>through</mark> works on upper range, in both nomral as well as in reversed case.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>5. What if I have a complex calculation instead of addition or subtraction in each step. Let’s say multiplication or division.</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>for (int k = 2; k <= 256; k *= 2) {<br/>    System.out.print(k);<br/> }<br/>
-</pre>
-
 </br>
-<div class="center-justified text-content">
-        Move to while loop, no other way
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>var k = 2<br/>while (k <= 256) {<br/>   print(k)<br/>   k *= 2<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>6. I want to iterate over an array now.</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int item: arr) {<br/>    System.out.print(item);<br/> }<br/>
-</pre>
-
+<h4>
+The third digit after decimal doesn't make any difference.
+</h4>
 </br>
-<div class="center-justified text-content">
-        Simple, use the <mark>in</mark> in Swift
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let arr = [0,1,2,3,4]<br/>for element in arr {<br/>    print(element)<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>7. I want to use the position (index) also. How can I do that?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>int[] arr = new int[5];<br/>for (int i = 0; i < arr.length; i++) {<br/>    System.out.print(arr[i]);<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Just use <mark>enumerated</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let arr = [0,1,2,3,4]<br/>for (index, element) in arr.enumerated() {<br/>    print("The element at \(index) is \(element)")<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>8. I heard about some for foreach also. Can I use the same in Swift?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>let arr = [0,1,2,3,4]<br/>for element in arr {<br/>    print(element)<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Just use <mark>foreach</mark> function.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let arr = [0,1,2,3,4]<br/>arr.forEach{ element in<br/>    print(element)<br/>}<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h4>9. And what about Dicionary?</h4>
-<pre class="zeropadding">
-  <br/><l>Java code</l><br/>HashMap<String,String> map = new HashMap();<br/>map.put("Suneet","Engineering");<br/>map.put("Ballu","Sales");<br/>map.put("John","Marketing");<br/><br/>for (Map.Entry<String, String> entry : map.entrySet()) {<br/>        System.out.println(entry.getKey() + " is working in " + entry.getValue());<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Simple. Use <mark>in</mark> based iteration.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let employee = ["Suneet": "Engineering", "Ballu": "Sales", "John": "Marketing"]<br/>for (name, department) in employee {<br/>    print("\(name) is working in \(department) department")<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        No, I am a fan of <mark>foreach</mark> loop.
-        </br>
-        </br>
-        Ok, no problem, there you go.
-</div>
-<pre class="zeropadding">
-  <br/><l>Swift code</l><br/>let employee = ["Suneet": "Engineering", "Ballu": "Sales", "John": "Marketing"]<br/>employee.forEach { name, department in<br/>    print("\(name) is working in \(department) department")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        And we are done. See I told you this will be very easy and interesting.
-</div>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -569,8 +423,8 @@ if (!doNotTrack) {
       </a>
     </div>
     <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/for-in-vs-for-each-in-swift/">
-        For-in vs For-each in Swift &gt;&gt;
+        <a href="/blogs/inout-in-swift/">
+        &#39;inout&#39; in Swift &gt;&gt;
       </a>
     </div>
 </div>

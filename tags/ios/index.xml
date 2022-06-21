@@ -6,7 +6,16 @@
     <description>Recent content in iOS on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Round vs Floor vs Ceil : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</guid>
+      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up.  Let&#39;s understand them in detail before comparing.   Before reading this blog, keep in mind that -3 is bigger than -4 and -3.</description>
+    </item>
+    
     <item>
       <title>Safe calls(?.) vs Nil checks(!.) in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</link>

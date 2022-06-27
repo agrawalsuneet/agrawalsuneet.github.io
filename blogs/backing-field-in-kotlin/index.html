@@ -363,27 +363,6 @@ Limitations while using Backing field
     </article>
 </main>
 
-<script>
-    if( window.canLoadAds === undefined ){
-        
-        console.log("Adblocker detected, its blocking the ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'blocked',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/backing-field-in-kotlin\/'
-        });
-    } else {
-        console.log("Adblocker allowed, loading ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'allowed',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/backing-field-in-kotlin\/'
-        });
-    }
-</script>
-
 <script
     data-name="BMC-Widget" 
     data-cfasync="false" 

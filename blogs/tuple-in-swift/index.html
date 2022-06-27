@@ -399,27 +399,6 @@ Last Question. What if I want to return four or more values?
     </article>
 </main>
 
-<script>
-    if( window.canLoadAds === undefined ){
-        
-        console.log("Adblocker detected, its blocking the ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'blocked',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/tuple-in-swift\/'
-        });
-    } else {
-        console.log("Adblocker allowed, loading ads");
-
-        dataLayer.push({
-            event: 'adblocker', 
-            'status' : 'allowed',
-            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/tuple-in-swift\/'
-        });
-    }
-</script>
-
 <script
     data-name="BMC-Widget" 
     data-cfasync="false" 

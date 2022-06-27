@@ -26,7 +26,14 @@
     <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
     </script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    function onErrorLoadingAds() {
+      console.log("AdBlocker blocks the ads")
+    }
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
+    onerror="onErrorLoadingAds()"></script>
     
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -89,8 +96,6 @@
     <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
     <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
     <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
-
-    <script src="https://agrawalsuneet.github.io/js/adsbygoogle.js"></script>
 </head>
 
 <body>

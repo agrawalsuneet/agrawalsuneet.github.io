@@ -89,6 +89,8 @@
     <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
     <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
     <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
+
+    <script src="https://agrawalsuneet.github.io/js/ads.js"></script>
 </head>
 
 <body>
@@ -421,7 +423,26 @@ And to use it for our use case,
     </article>
 </main>
 
+<script>
+    if( window.canLoadAds === undefined ){
+        
+        console.log("Adblocker detected, its blocking the ads");
 
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'blocked',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/typecast-android-object-in-unity\/'
+        });
+    } else {
+        console.log("Adblocker allowed, loading ads");
+
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'allowed',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/typecast-android-object-in-unity\/'
+        });
+    }
+</script>
 
 <script
     data-name="BMC-Widget" 
@@ -550,7 +571,6 @@ And to use it for our use case,
   
   
   <script src="https://agrawalsuneet.github.io//js/App.js"></script>
-  <script src="https://agrawalsuneet.github.io//js/ads.js"></script>
   
 </body>
 </html>

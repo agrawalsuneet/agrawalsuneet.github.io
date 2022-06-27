@@ -88,6 +88,8 @@
     <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
     <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
     <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
+
+    <script src="https://agrawalsuneet.github.io/js/ads.js"></script>
 </head>
 
 <body>
@@ -392,7 +394,26 @@ Last Question. What if I want to return four or more values?
     </article>
 </main>
 
+<script>
+    if( window.canLoadAds === undefined ){
+        
+        console.log("Adblocker detected, its blocking the ads");
 
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'blocked',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/tuple-in-swift\/'
+        });
+    } else {
+        console.log("Adblocker allowed, loading ads");
+
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'allowed',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/tuple-in-swift\/'
+        });
+    }
+</script>
 
 <script
     data-name="BMC-Widget" 
@@ -521,7 +542,6 @@ Last Question. What if I want to return four or more values?
   
   
   <script src="https://agrawalsuneet.github.io//js/App.js"></script>
-  <script src="https://agrawalsuneet.github.io//js/ads.js"></script>
   
 </body>
 </html>

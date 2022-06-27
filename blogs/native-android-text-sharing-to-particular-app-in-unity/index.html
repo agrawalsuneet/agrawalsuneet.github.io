@@ -89,6 +89,8 @@
     <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
     <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
     <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
+
+    <script src="https://agrawalsuneet.github.io/js/ads.js"></script>
 </head>
 
 <body>
@@ -457,7 +459,26 @@ But where can I get the package name of the app I want to share on?
     </article>
 </main>
 
+<script>
+    if( window.canLoadAds === undefined ){
+        
+        console.log("Adblocker detected, its blocking the ads");
 
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'blocked',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/native-android-text-sharing-to-particular-app-in-unity\/'
+        });
+    } else {
+        console.log("Adblocker allowed, loading ads");
+
+        dataLayer.push({
+            event: 'adblocker', 
+            'status' : 'allowed',
+            'page' : 'https:\/\/agrawalsuneet.github.io\/blogs\/native-android-text-sharing-to-particular-app-in-unity\/'
+        });
+    }
+</script>
 
 <script
     data-name="BMC-Widget" 
@@ -586,7 +607,6 @@ But where can I get the package name of the app I want to share on?
   
   
   <script src="https://agrawalsuneet.github.io//js/App.js"></script>
-  <script src="https://agrawalsuneet.github.io//js/ads.js"></script>
   
 </body>
 </html>

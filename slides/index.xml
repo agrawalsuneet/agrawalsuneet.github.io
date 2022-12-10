@@ -22,7 +22,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</guid>
-      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone? Is your App size is more than just a few MBs?   What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not?   Yes, The user thinks about the app size before downloading or updating an app which has a size larger than a few MBs.</description>
+      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone? Is your App size is more than just a few MBs? What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not? Yes, The user thinks about the app size before downloading or updating an app which has a size larger than a few MBs.</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
-      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.   Developers know the benefit of Kotlin over Java for Android app development but they hesitate to try it or even sometimes doesn&#39;t know how to start using it in their existing code base.</description>
+      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same. Developers know the benefit of Kotlin over Java for Android app development but they hesitate to try it or even sometimes doesn&#39;t know how to start using it in their existing code base.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
-      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot. It has multiple benefits and on top of everything, it&#39;s really easy to use.   Its been three years, still devs or some companies hesitate to use it.    What is Kotlin? How can it benefit your startup? Why devs resist themselves moving from Java to Kotlin language?</description>
+      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot. It has multiple benefits and on top of everything, it&#39;s really easy to use. Its been three years, still devs or some companies hesitate to use it. What is Kotlin? How can it benefit your startup? Why devs resist themselves moving from Java to Kotlin language?</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</guid>
-      <description>System designing is the process of designing system elements such as architectures, modules, components, different interfaces of those components. Its the process of defining the lowest level entities in a software. It is the backbone of any software.   System design is of two types  Low level design High level design   There is no fine line or a separator difference between the two that upto this part of software is low level and above this is high level but mostly,  Low level defines reusable entities and relationship between them as well as the object creation and dependencies.</description>
+      <description>System designing is the process of designing system elements such as architectures, modules, components, different interfaces of those components. Its the process of defining the lowest level entities in a software. It is the backbone of any software. System design is of two types Low level design High level design There is no fine line or a separator difference between the two that upto this part of software is low level and above this is high level but mostly, Low level defines reusable entities and relationship between them as well as the object creation and dependencies.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
-      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more.   The basic concepts of Object-oriented programming are,  Abstraction Encapsulation Dependency Association Composition Aggregation  Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding   Packaging   Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>
+      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more. The basic concepts of Object-oriented programming are, Abstraction Encapsulation Dependency Association Composition Aggregation Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding Packaging Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>
     </item>
     
   </channel>

@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Nested Class vs Inner Class : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</guid>
+      <description>Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way. In this blog, we&#39;ll explore these concepts and understand how they can be used in Kotlin. Nested Classes A nested class is a class that is defined inside another class. It is also known as a static inner class, as it is not tied to any specific instance of the outer class.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs Technical Blogs (85 posts) Nested Class vs Inner Class : Kotlin A nested class is a class that is defined inside another class and is static, while an inner class is a class that is defined inside another class and has access to its properties and methods. We can use nested classes to group related classes together, while we use inner classes to create classes that are closely related to the outer class.</description>
+    </item>
+    
+    <item>
       <title>Public Appearances</title>
       <link>https://agrawalsuneet.github.io/publicappearances/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
@@ -239,15 +257,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</guid>
       <description>For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access. To understand their differences, let&#39;s try to understand their examples in details first. For-in loop For-in loop is used to iterate over a range, set or dictionary using both the indexes as well an element based iteration.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (84 posts) Round vs Floor vs Ceil : Swift Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction. read more 21 June 2022 Kotlin Android Safe calls(?</description>
     </item>
     
     <item>

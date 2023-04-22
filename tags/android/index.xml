@@ -6,7 +6,16 @@
     <description>Recent content in Android on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nested Class vs Inner Class : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</guid>
+      <description>Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way. In this blog, we&#39;ll explore these concepts and understand how they can be used in Kotlin. Nested Classes A nested class is a class that is defined inside another class. It is also known as a static inner class, as it is not tied to any specific instance of the outer class.</description>
+    </item>
+    
     <item>
       <title>Kotlin Count Function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-count-function/</link>

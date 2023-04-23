@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lerp Function : Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
+      <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. In this blog post, we will explore the lerp function in Unity and its implementation. What is Lerp Function? The Lerp function stands for linear interpolation. The function returns a value that is a linear interpolation between the starting and ending values, based on the weight parameter.</description>
+    </item>
+    
     <item>
       <title>Nested Class vs Inner Class : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</link>

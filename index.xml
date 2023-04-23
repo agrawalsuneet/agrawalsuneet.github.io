@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Lerp Function : Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
+      <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. In this blog post, we will explore the lerp function in Unity and its implementation. What is Lerp Function? The Lerp function stands for linear interpolation. The function returns a value that is a linear interpolation between the starting and ending values, based on the weight parameter.</description>
+    </item>
+    
+    <item>
       <title>Nested Class vs Inner Class : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</link>
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
@@ -22,7 +31,7 @@
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (85 posts) Nested Class vs Inner Class : Kotlin A nested class is a class that is defined inside another class and is static, while an inner class is a class that is defined inside another class and has access to its properties and methods. We can use nested classes to group related classes together, while we use inner classes to create classes that are closely related to the outer class.</description>
+      <description>Technical Blogs Technical Blogs (86 posts) Lerp Function : Unity In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. read more 23 Apr 2023 CSharp Unity Nested Class vs Inner Class : Kotlin A nested class is a class that is defined inside another class and is static, while an inner class is a class that is defined inside another class and has access to its properties and methods.</description>
     </item>
     
     <item>

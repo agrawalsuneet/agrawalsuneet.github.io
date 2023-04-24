@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</guid>
+      <description>In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript. = Operator in JS The = operator is used for assigning values to variables. It is called the assignment operator. When using the = operator, the value on the right side of the operator is assigned to the variable on the left side.</description>
+    </item>
+    
     <item>
       <title>Lerp Function : Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>

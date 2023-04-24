@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+
+    
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');
+    </script>
+    
+
+    
+    <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+
+    <script>
+    function onErrorLoadingAds() {
+      console.log("AdBlocker blocks the ads")
+    }
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
+    onerror="onErrorLoadingAds()"></script>
+    
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+
+    <meta property="og:site_name" content="Suneet Agrawal">
+
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="= vs == vs ===,javascript equal,== js,js">
+
+
+    
+    <meta name="author" content="Suneet Agrawal">
+    <meta name="owner" content="Suneet Agrawal">
+    <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
+
+    <meta name="title" content="Suneet Agrawal | Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript" />
+    <meta property="og:title" content="Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript">
+    <meta property="twitter:title" content="Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript">
+    <meta name="twitter:site" content="@agrawalsuneet">
+
+    <meta name="topic" content="Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript">
+    <meta name="description" content="In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript.">
+    <meta property="og:description" content="In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript.">
+    <meta property="twitter:description" content="In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript.">
+    <meta name="abstract" content="In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript.">
+    <meta name="summary" content="In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript."> 
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content=" 2023-04-24 "> 
+
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/equality-in-javascript/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/equality-in-javascript/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/equality-in-javascript/">
+
+    <meta name="site_name" content="Suneet Agrawal">
+    <meta property="og:site_name" content="Suneet Agrawal">
+
+    <meta name="category" content="Portfolio">
+    <meta name="email" content="agrawalsuneet@gmail.com">
+    <meta name="og:email" content="agrawalsuneet@gmail.com">
+
+    <meta name="twitter:creator" content="@agrawalsuneet">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/equality-in-javascript/">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="target" content="all" />
+    <meta name="audience" content="all" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="safe for kids" /> 
+    <meta property="og:tags" content="JavaScript"> 
+    <title>Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript &middot; Suneet Agrawal</title>
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
+    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
+    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
+    <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
+    <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
+</head>
+
+<body>
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
+				
+					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+
+		
+			<a href="https://agrawalsuneet.github.io/">
+				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.jpg" alt="My Picture" class="img-circle center-block">
+			</a>
+		
+
+		
+			<h1 class="text-center" style="font-size:30px;">
+				<a href="https://agrawalsuneet.github.io/">
+					Suneet Agrawal
+				</a>
+		</h1>
+		
+
+		
+
+		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
+			
+			
+				<a href="https://agrawalsuneet.github.io/publications">
+						Publications
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/publicappearances">
+						Public Appearances
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
+						Personal Games &amp; Apps
+				</a>
+				</br>
+			
+				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
+						Open Source Contribution
+				</a>
+				</br>
+			
+		</div>
+
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
+			
+				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
+			
+				<a href="https://www.facebook.com/agrawalsuneet"><i class="fa fa-facebook fa-2x"></i></a>
+			
+
+			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-xs-12">
+ 
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-112616552-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<main>
+    <header>
+        <h1 class="mx16">Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript</h1>
+    </header>
+
+    <div class="col-xs-12 vertical-centre">
+        
+        <small class="text-muted">
+			
+			
+				<a href="https://agrawalsuneet.github.io/tags/javascript"><span class="label label-success">JavaScript</span></a>
+			
+		</small> 
+
+        
+
+    </div>
+
+    <article>
+        <div class="col-xs-12">
+            </br>
+<div class="row">
+<div class="col-lg-10">
+<div class="center-justified text-content">
+        In JavaScript, there are three types of equality operators: <mark>=</mark>, <mark>==</mark>, and <mark>===</mark>. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+= Operator in JS
+</h3>
+<div class="center-justified text-content">
+        The <mark>=</mark> operator is used for assigning values to variables. It is called the assignment operator. When using the <mark>=</mark> operator, the value on the right side of the operator is assigned to the variable on the left side.
+        </br>
+        </br>
+        For example:
+</div>
+<pre class="zeropadding">
+  <br/>var x <b>=</b> 5; <br/>
+</pre>
+
+<div class="center-justified text-content">
+        This assigns the value of <mark>5</mark> to the variable <mark>x</mark>.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+== Operator in JS
+</h3>
+<div class="center-justified text-content">
+        The <mark>==</mark> operator is used for checking equality between two values. It is called the loose equality operator. When using the <mark>==</mark> operator, JavaScript performs type coercion to compare the values. Type coercion is the process of converting one data type to another data type.
+        </br>
+        </br>
+        For example:
+</div>
+<pre class="zeropadding">
+  <br/>console.log(5 <b>==</b> '5'); // true<br/>
+</pre>
+
+<div class="center-justified text-content">
+        Here, the <mark>==</mark> operator compares the values <mark>5</mark> and <mark>'5'</mark>. Even though they are of different data types (one is a number and the other is a string), JavaScript performs type coercion and returns <mark>true</mark>.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+=== Operator in JS
+</h3>
+<div class="center-justified text-content">
+        The <mark>===</mark> operator is used for checking strict equality between two values. It is called the strict equality operator. When using the <mark>===</mark> operator, JavaScript compares the values and their data types. If the values and data types are the same, the operator returns <mark>true</mark>. If the values or data types are different, the operator returns <mark>false</mark>.
+        </br>
+        </br>
+        For example:
+</div>
+<pre class="zeropadding">
+  <br/>console.log(5 <b>===</b> '5'); // false<br/>
+</pre>
+
+<div class="center-justified text-content">
+        Here, the <mark>===</mark> operator compares the values <mark>5</mark> and <mark>'5'</mark>. Since they are of different data types, JavaScript returns <mark>false</mark>.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+<h3>
+When to use which operator?
+</h3>
+<div class="center-justified text-content">
+        <ul>
+                <li>It is recommended to use the <mark>===</mark> operator whenever possible because it ensures strict equality checking and avoids unexpected results due to type coercion.</li>
+                <li>The <mark>==</mark> operator can be used when type coercion is needed or when comparing values of the same data type.</li>
+                <li>The <mark>=</mark> operator is used for assigning values to variables and should not be confused with the equality operators.</li>
+        </ul>
+</div>
+</br>
+<h3>
+Conclusion
+</h3>
+<div class="center-justified text-content">
+        In conclusion, understanding the differences between the <mark>=</mark>, <mark>==</mark>, and <mark>===</mark> operators in JavaScript is essential for writing reliable and efficient code. The <mark>=</mark> operator is used for assignment, the <mark>==</mark> operator is used for loose equality checking, and the <mark>===</mark> operator is used for strict equality checking.
+</div>
+<div class="col-xs-12 googleads">
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</div>
+<div class="col-lg-2 position-sticky-top">
+<div class="googleads">
+    
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-1093303282603666"
+        data-ad-slot="5801291010"
+        data-ad-format="vertical"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+</div>
+</div>
+<div class="col-xs-12 center-justified text-subtitle">
+    <div class="col-sm-6 col-xs-12">
+        <a href="/blogs/">
+        &lt;&lt; All Blogs
+      </a>
+    </div>
+    <div class="col-sm-6 col-xs-12 text-right">
+        <a href="/blogs/native-android-in-unity/">
+        Native Android in Unity &gt;&gt;
+      </a>
+    </div>
+</div>
+
+        </div>
+    </article>
+</main>
+
+<script
+    data-name="BMC-Widget" 
+    data-cfasync="false" 
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+    data-id="agrawalsuneet" 
+    data-description="Support me on Buy me a coffee!" 
+    data-message="If you find this blog helpful, support us to keep this website up and free !!!" 
+    data-color="#ff813f" 
+    data-position="Right" 
+    data-x_margin="18" 
+    data-y_margin="18"></script>
+
+ 
+<div id="disqus_thread">
+    <div id="disqus_empty"></div>
+</div>
+
+<script type="text/javascript" defer>
+
+    function onContentScrolled(e) {
+        var currentScroll = document.scrollingElement.scrollTop;
+        var disqus_target = document.getElementById('disqus_thread');
+
+        if (disqus_target && (currentScroll > disqus_target.getBoundingClientRect().top - 150)) {
+            load_disqus();
+            console.log('Disqus comments loaded');
+        }
+    }
+
+    function load_disqus() {
+        if (window.location.hostname == "localhost") {
+            var content = document.getElementById("content");
+            content.removeEventListener('scroll', onContentScrolled, false)
+            return;
+        }
+
+        
+        var is_disqus_empty = document.getElementById('disqus_empty'),
+            disqus_target = document.getElementById('disqus_thread'),
+            disqus_embed = document.createElement('script'),
+            disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+
+        var disqus_shortname = 'agrawalsuneet';
+
+        
+        if (disqus_target && is_disqus_empty) {
+            disqus_embed.type = 'text/javascript';
+            disqus_embed.async = true;
+            disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            disqus_hook.appendChild(disqus_embed);
+            is_disqus_empty.remove();
+        }
+
+        var content = document.getElementById("content");
+        content.removeEventListener('scroll', onContentScrolled, false)
+
+        
+        let remove_ads = setInterval(() => {
+            console.log('Checking for Disqus Ads');
+
+            let iframes = document.getElementsByTagName('iframe');
+
+            for (var iframe in iframes) {
+                
+                
+                
+
+                
+                
+                
+                
+                
+
+                if (iframes[iframe].id.includes("dsq") 
+                && iframes[iframe].name.includes("dsq") 
+                && !iframes[iframe].src.includes("disqus.com/embed/comments")) {
+                    iframes[iframe].style.display = 'none';
+                    clearInterval(remove_ads);
+                    console.log('Disqus Ads removed');
+                }
+            }
+        }, 1000);
+
+        setTimeout(function () {
+            clearInterval(remove_ads);
+        }, 5000);
+    }
+
+    (function () {
+        var content = document.getElementById("content");
+        content.addEventListener('scroll', onContentScrolled, false);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  </script>
+  
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  
+</body>
+</html>

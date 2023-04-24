@@ -3,7 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</loc>
+    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/javascript/</loc>
+    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
@@ -11,7 +20,7 @@
     <loc>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <loc>https://agrawalsuneet.github.io/publications/</loc>
     <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/unity/</loc>
@@ -24,9 +33,6 @@
     <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/publications/</loc>
     <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/publicappearances/</loc>

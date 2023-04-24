@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</guid>
+      <description>In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript. = Operator in JS The = operator is used for assigning values to variables. It is called the assignment operator. When using the = operator, the value on the right side of the operator is assigned to the variable on the left side.</description>
+    </item>
+    
+    <item>
       <title>Lerp Function : Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
@@ -17,21 +26,21 @@
     </item>
     
     <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs Technical Blogs (87 posts) Equality (&amp;#39;=&amp;#39; vs &amp;#39;==&amp;#39; vs &amp;#39;===&amp;#39;) in JavaScript In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript. read more 24 Apr 2023 JavaScript Lerp Function : Unity In game development, one of the most common problems is the smooth transition of objects from one position to another.</description>
+    </item>
+    
+    <item>
       <title>Nested Class vs Inner Class : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</link>
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</guid>
       <description>Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way. In this blog, we&#39;ll explore these concepts and understand how they can be used in Kotlin. Nested Classes A nested class is a class that is defined inside another class. It is also known as a static inner class, as it is not tied to any specific instance of the outer class.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (86 posts) Lerp Function : Unity In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. read more 23 Apr 2023 CSharp Unity Nested Class vs Inner Class : Kotlin A nested class is a class that is defined inside another class and is static, while an inner class is a class that is defined inside another class and has access to its properties and methods.</description>
     </item>
     
     <item>

@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
+      <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</guid>
+      <description>JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. These methods allow you to add and remove elements from the beginning or end of an array. In this blog, we will discuss these methods and their usage in JavaScript. Push Method in JS The push() method is used to add one or more elements to the end of an array.</description>
+    </item>
+    
+    <item>
       <title>Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript</title>
       <link>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
@@ -31,7 +40,7 @@
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (87 posts) Equality (&amp;#39;=&amp;#39; vs &amp;#39;==&amp;#39; vs &amp;#39;===&amp;#39;) in JavaScript In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript. read more 24 Apr 2023 JavaScript Lerp Function : Unity In game development, one of the most common problems is the smooth transition of objects from one position to another.</description>
+      <description>Technical Blogs Technical Blogs (88 posts) Array Operations in JavaScript (Push, Pop, Shift and Unshift) JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. read more 25 Apr 2023 JavaScript Equality (&amp;#39;=&amp;#39; vs &amp;#39;==&amp;#39; vs &amp;#39;===&amp;#39;) in JavaScript In JavaScript, there are three types of equality operators: =, ==, and ===.</description>
     </item>
     
     <item>

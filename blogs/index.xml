@@ -6,7 +6,25 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Map Implementation in Java</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</guid>
+      <description>Java provides a powerful data structure called Map, which is used to store key-value pairs. A Map is a collection of unique keys and their corresponding values, and it provides efficient methods to add, remove, and access elements in constant time. In this blog, we will discuss the implementation of the Map interface in Java and explore some of its useful methods. What is a Map? A map is used to store key value pairs where each key in a map will be unique.</description>
+    </item>
+    
+    <item>
+      <title>Set Implementation in Java</title>
+      <link>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</guid>
+      <description>Set is an interface in Java that represents a collection of unique elements, meaning that no two elements in a set can be the same. Java provides several implementations of Set, each with its own unique features and trade-offs. In this blog post, we will explore the different implementations of Set in Java and their use cases. What is a Set? A set is a collection of unique elements. This means that each element in a set is distinct from all other elements.</description>
+    </item>
+    
     <item>
       <title>Function Expression : JavaScript</title>
       <link>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</link>

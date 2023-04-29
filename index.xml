@@ -8,12 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Map Implementation in Java</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</guid>
+      <description>Java provides a powerful data structure called Map, which is used to store key-value pairs. A Map is a collection of unique keys and their corresponding values, and it provides efficient methods to add, remove, and access elements in constant time. In this blog, we will discuss the implementation of the Map interface in Java and explore some of its useful methods. What is a Map? A map is used to store key value pairs where each key in a map will be unique.</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>https://agrawalsuneet.github.io/publications/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (90 posts) Function Expression : JavaScript Function expressions are a powerful tool in JavaScript that allows you to define functions on the fly and use them as first-class citizens. They can be assigned to variables, passed as arguments to other functions, and even returned as values from functions. read more 27 Apr 2023 JavaScript JavaScript ‘For’ Loop The for loop is a powerful tool for iterating through data structures in JavaScript.</description>
+      <description>Technical Blogs Technical Blogs (92 posts) Map Implementation in Java The Map interface in Java provides a convenient way to store a key-value pairs. The three most commonly used implementations of the Map interface are HashMap, TreeMap, and LinkedHashMap. HashMap provides constant time performance for basic operations. read more 29 Apr 2023 Java Set Implementation in Java The Set interface in Java provides a convenient way to store a collection of unique elements.</description>
+    </item>
+    
+    <item>
+      <title>Set Implementation in Java</title>
+      <link>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</guid>
+      <description>Set is an interface in Java that represents a collection of unique elements, meaning that no two elements in a set can be the same. Java provides several implementations of Set, each with its own unique features and trade-offs. In this blog post, we will explore the different implementations of Set in Java and their use cases. What is a Set? A set is a collection of unique elements. This means that each element in a set is distinct from all other elements.</description>
     </item>
     
     <item>

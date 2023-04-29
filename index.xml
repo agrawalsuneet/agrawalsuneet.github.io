@@ -8,6 +8,33 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Publications</title>
+      <link>https://agrawalsuneet.github.io/publications/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publications/</guid>
+      <description>Technical Blogs Technical Blogs (90 posts) Function Expression : JavaScript Function expressions are a powerful tool in JavaScript that allows you to define functions on the fly and use them as first-class citizens. They can be assigned to variables, passed as arguments to other functions, and even returned as values from functions. read more 27 Apr 2023 JavaScript JavaScript ‘For’ Loop The for loop is a powerful tool for iterating through data structures in JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Function Expression : JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</guid>
+      <description>JavaScript is a dynamic and versatile programming language that allows developers to create complex and dynamic applications. One of the key features of JavaScript is its ability to use functions as first-class citizens. This means that functions can be assigned to variables, passed as arguments to other functions, and even returned as values from functions. In this article, we&#39;ll take a closer look at function expressions in JavaScript and explore how they can be used in your code.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript ‘For’ Loop</title>
+      <link>https://agrawalsuneet.github.io/blogs/javascript-for-loop/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/javascript-for-loop/</guid>
+      <description>Loops are an essential part of any programming language, and JavaScript is no exception. One of the most common loops used in JavaScript is the for loop. In this blog, we will focus on the for loop in JavaScript and how it can be used to iterate over an array or object. What is a for loop? A for loop is a programming construct used to repeat a section of code for a specified number of times.</description>
+    </item>
+    
+    <item>
       <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
       <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
@@ -32,15 +59,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
       <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. In this blog post, we will explore the lerp function in Unity and its implementation. What is Lerp Function? The Lerp function stands for linear interpolation. The function returns a value that is a linear interpolation between the starting and ending values, based on the weight parameter.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (88 posts) Array Operations in JavaScript (Push, Pop, Shift and Unshift) JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. read more 25 Apr 2023 JavaScript Equality (&amp;#39;=&amp;#39; vs &amp;#39;==&amp;#39; vs &amp;#39;===&amp;#39;) in JavaScript In JavaScript, there are three types of equality operators: =, ==, and ===.</description>
     </item>
     
     <item>

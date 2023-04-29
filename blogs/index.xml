@@ -6,7 +6,25 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Function Expression : JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</guid>
+      <description>JavaScript is a dynamic and versatile programming language that allows developers to create complex and dynamic applications. One of the key features of JavaScript is its ability to use functions as first-class citizens. This means that functions can be assigned to variables, passed as arguments to other functions, and even returned as values from functions. In this article, we&#39;ll take a closer look at function expressions in JavaScript and explore how they can be used in your code.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript ‘For’ Loop</title>
+      <link>https://agrawalsuneet.github.io/blogs/javascript-for-loop/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/javascript-for-loop/</guid>
+      <description>Loops are an essential part of any programming language, and JavaScript is no exception. One of the most common loops used in JavaScript is the for loop. In this blog, we will focus on the for loop in JavaScript and how it can be used to iterate over an array or object. What is a for loop? A for loop is a programming construct used to repeat a section of code for a specified number of times.</description>
+    </item>
+    
     <item>
       <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
       <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>

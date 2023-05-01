@@ -6,7 +6,16 @@
     <description>Recent content in CSharp on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Typecast Android Object in Untiy</title>
+      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
+      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity Native Android image sharing in Unity AndroidJavaClass is the Unity representation of a generic instance of java.</description>
+    </item>
+    
     <item>
       <title>Lerp Function : Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
@@ -32,15 +41,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/</guid>
       <description>The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. The manifest file contains information about package name, permissions, application name, icon, activities, services, providers and much more. Usually, Unity takes care of this manifest file generation and putting it in the right place but sometimes we need to add some custom tags to the final generated manifest file like adding intent-filters to the activity tag.</description>
-    </item>
-    
-    <item>
-      <title>Typecast Android Object in Untiy</title>
-      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
-      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity Native Android image sharing in Unity AndroidJavaClass is the Unity representation of a generic instance of java.</description>
     </item>
     
     <item>

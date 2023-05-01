@@ -6,7 +6,16 @@
     <description>Recent content in JavaScript on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
+      <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</guid>
+      <description>JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. These methods allow you to add and remove elements from the beginning or end of an array. In this blog, we will discuss these methods and their usage in JavaScript. Push Method in JS The push() method is used to add one or more elements to the end of an array.</description>
+    </item>
+    
     <item>
       <title>Function Expression : JavaScript</title>
       <link>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</link>
@@ -23,15 +32,6 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/javascript-for-loop/</guid>
       <description>Loops are an essential part of any programming language, and JavaScript is no exception. One of the most common loops used in JavaScript is the for loop. In this blog, we will focus on the for loop in JavaScript and how it can be used to iterate over an array or object. What is a for loop? A for loop is a programming construct used to repeat a section of code for a specified number of times.</description>
-    </item>
-    
-    <item>
-      <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
-      <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>
-      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</guid>
-      <description>JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. These methods allow you to add and remove elements from the beginning or end of an array. In this blog, we will discuss these methods and their usage in JavaScript. Push Method in JS The push() method is used to add one or more elements to the end of an array.</description>
     </item>
     
     <item>

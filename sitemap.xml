@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://agrawalsuneet.github.io/blogs/</loc>
+    <lastmod>2023-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/java/</loc>
+    <lastmod>2023-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2023-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/vector-in-java/</loc>
+    <lastmod>2023-05-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,10 +32,10 @@
     <loc>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</loc>
+    <loc>https://agrawalsuneet.github.io/blogs/arraylist-in-java/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/blogs/</loc>
+    <loc>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/csharp/</loc>
@@ -60,9 +72,6 @@
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/swift/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</loc>
@@ -112,9 +121,6 @@
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/java/</loc>
-    <lastmod>2023-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</loc>
     <lastmod>2023-04-29T00:00:00+00:00</lastmod>

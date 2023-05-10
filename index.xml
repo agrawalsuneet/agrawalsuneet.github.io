@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Vector in Java</title>
+      <link>https://agrawalsuneet.github.io/blogs/vector-in-java/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/vector-in-java/</guid>
+      <description>Vectors are an important data structure in Java programming that are used to store and manipulate collections of elements. A vector is similar to an array, but with some additional features that make it more flexible and convenient to use. In this blog, we will explore the basics of vectors in Java, how they differ from arrays, and how to use them in your programs. What is a Vector in Java?</description>
+    </item>
+    
+    <item>
       <title>‘takeIf’ and ‘takeUnless’ : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
@@ -50,6 +59,15 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</guid>
       <description>JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. These methods allow you to add and remove elements from the beginning or end of an array. In this blog, we will discuss these methods and their usage in JavaScript. Push Method in JS The push() method is used to add one or more elements to the end of an array.</description>
+    </item>
+    
+    <item>
+      <title>ArrayList in Java</title>
+      <link>https://agrawalsuneet.github.io/blogs/arraylist-in-java/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/arraylist-in-java/</guid>
+      <description>ArrayList is one of the most commonly used data structures in Java. It provides a dynamic array implementation that allows you to add and remove elements from the list. The size of the ArrayList can also be dynamically changed based on the number of elements added or removed from the list. In this blog, we will dive into the details of ArrayList in Java, how it works, and some examples of how to use it.</description>
     </item>
     
     <item>
@@ -112,7 +130,7 @@
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (92 posts) Map Implementation in Java The Map interface in Java provides a convenient way to store a key-value pairs. The three most commonly used implementations of the Map interface are HashMap, TreeMap, and LinkedHashMap. HashMap provides constant time performance for basic operations. read more 29 Apr 2023 Java Set Implementation in Java The Set interface in Java provides a convenient way to store a collection of unique elements.</description>
+      <description>Technical Blogs Technical Blogs (94 posts) Vector in Java Vector is a dynamic array that can grow or shrink in size as needed. Java provides a built-in Vector class that can be used to implement this data structure. The Vector class provides several useful methods for adding, accessing, and removing elements from the vector. read more 02 May 2023 Java ArrayList in Java An ArrayList is a class in Java that provides a dynamic array implementation that can resize itself during runtime.</description>
     </item>
     
     <item>

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Suneet Agrawal</title>
-    <link>https://mahigarg.github.io/tags/java/</link>
+    <link>https://agrawalsuneet.github.io/tags/java/</link>
     <description>Recent content in Java on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mahigarg.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vector in Java</title>
-      <link>https://mahigarg.github.io/blog/vector-in-java/</link>
+      <link>https://agrawalsuneet.github.io/blog/vector-in-java/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mahigarg.github.io/blog/vector-in-java/</guid>
+      <guid>https://agrawalsuneet.github.io/blog/vector-in-java/</guid>
       <description>Vectors are an important data structure in Java programming that are used to store and manipulate collections of elements. A vector is similar to an array, but with some additional features that make it more flexible and convenient to use.</description>
     </item>
     
     <item>
       <title>ArrayList in Java</title>
-      <link>https://mahigarg.github.io/blog/arraylist-in-java/</link>
+      <link>https://agrawalsuneet.github.io/blog/arraylist-in-java/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mahigarg.github.io/blog/arraylist-in-java/</guid>
+      <guid>https://agrawalsuneet.github.io/blog/arraylist-in-java/</guid>
       <description>ArrayList is one of the most commonly used data structures in Java. It provides a dynamic array implementation that allows you to add and remove elements from the list.</description>
     </item>
     

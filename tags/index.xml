@@ -2,98 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Suneet Agrawal</title>
-    <link>https://agrawalsuneet.github.io/tags/</link>
+    <link>https://mahigarg.github.io/tags/</link>
     <description>Recent content in Tags on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mahigarg.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java</title>
-      <link>https://agrawalsuneet.github.io/tags/java/</link>
+      <link>https://mahigarg.github.io/tags/java/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/java/</guid>
+      <guid>https://mahigarg.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Android</title>
-      <link>https://agrawalsuneet.github.io/tags/android/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <title>Code</title>
+      <link>https://mahigarg.github.io/tags/code/</link>
+      <pubDate>Mon, 20 Jul 2020 12:49:27 +0600</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/android/</guid>
+      <guid>https://mahigarg.github.io/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CSharp</title>
-      <link>https://agrawalsuneet.github.io/tags/csharp/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <title>Fun</title>
+      <link>https://mahigarg.github.io/tags/fun/</link>
+      <pubDate>Mon, 13 Jul 2020 12:49:27 +0600</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/csharp/</guid>
+      <guid>https://mahigarg.github.io/tags/fun/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>iOS</title>
-      <link>https://agrawalsuneet.github.io/tags/ios/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <title>App</title>
+      <link>https://mahigarg.github.io/tags/app/</link>
+      <pubDate>Sun, 05 Jul 2020 12:49:27 +0600</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/ios/</guid>
+      <guid>https://mahigarg.github.io/tags/app/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>JavaScript</title>
-      <link>https://agrawalsuneet.github.io/tags/javascript/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <title>Mobile</title>
+      <link>https://mahigarg.github.io/tags/mobile/</link>
+      <pubDate>Sun, 05 Jul 2020 12:49:27 +0600</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/javascript/</guid>
+      <guid>https://mahigarg.github.io/tags/mobile/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Kotlin</title>
-      <link>https://agrawalsuneet.github.io/tags/kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <title>Hugo</title>
+      <link>https://mahigarg.github.io/tags/hugo/</link>
+      <pubDate>Fri, 15 May 2020 12:49:27 +0600</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming-Basics</title>
-      <link>https://agrawalsuneet.github.io/tags/programming-basics/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/programming-basics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Swift</title>
-      <link>https://agrawalsuneet.github.io/tags/swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Unity</title>
-      <link>https://agrawalsuneet.github.io/tags/unity/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/unity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Camera</title>
-      <link>https://agrawalsuneet.github.io/tags/camera/</link>
-      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/tags/camera/</guid>
+      <guid>https://mahigarg.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

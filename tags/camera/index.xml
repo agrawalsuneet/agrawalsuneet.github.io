@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Camera on Suneet Agrawal</title>
+    <link>https://agrawalsuneet.github.io/tags/camera/</link>
+    <description>Recent content in Camera on Suneet Agrawal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/camera/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The power of Camera APIs and OpenGL all together</title>
+      <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
+      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -17,47 +17,74 @@
     </item>
     
     <item>
-      <title>Code</title>
-      <link>https://agrawalsuneet.github.io/tags/code/</link>
-      <pubDate>Mon, 20 Jul 2020 12:49:27 +0600</pubDate>
+      <title>JavaScript</title>
+      <link>https://agrawalsuneet.github.io/tags/javascript/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/code/</guid>
+      <guid>https://agrawalsuneet.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Fun</title>
-      <link>https://agrawalsuneet.github.io/tags/fun/</link>
-      <pubDate>Mon, 13 Jul 2020 12:49:27 +0600</pubDate>
+      <title>Kotlin</title>
+      <link>https://agrawalsuneet.github.io/tags/kotlin/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/fun/</guid>
+      <guid>https://agrawalsuneet.github.io/tags/kotlin/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>App</title>
-      <link>https://agrawalsuneet.github.io/tags/app/</link>
-      <pubDate>Sun, 05 Jul 2020 12:49:27 +0600</pubDate>
+      <title>Swift</title>
+      <link>https://agrawalsuneet.github.io/tags/swift/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/app/</guid>
+      <guid>https://agrawalsuneet.github.io/tags/swift/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Mobile</title>
-      <link>https://agrawalsuneet.github.io/tags/mobile/</link>
-      <pubDate>Sun, 05 Jul 2020 12:49:27 +0600</pubDate>
+      <title>CSharp</title>
+      <link>https://agrawalsuneet.github.io/tags/csharp/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/mobile/</guid>
+      <guid>https://agrawalsuneet.github.io/tags/csharp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>https://agrawalsuneet.github.io/tags/hugo/</link>
-      <pubDate>Fri, 15 May 2020 12:49:27 +0600</pubDate>
+      <title>Unity</title>
+      <link>https://agrawalsuneet.github.io/tags/unity/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/tags/hugo/</guid>
+      <guid>https://agrawalsuneet.github.io/tags/unity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming-Basics</title>
+      <link>https://agrawalsuneet.github.io/tags/programming-basics/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/programming-basics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://agrawalsuneet.github.io/tags/android/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camera</title>
+      <link>https://agrawalsuneet.github.io/tags/camera/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/tags/camera/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Suneet Agrawal</title>
+    <link>https://agrawalsuneet.github.io/tags/android/</link>
+    <description>Recent content in Android on Suneet Agrawal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The power of Camera APIs and OpenGL all together</title>
+      <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
+      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen?</description>
+    </item>
+    
+    <item>
+      <title>How can I migrate my Android code from Java to Kotlin?</title>
+      <link>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
+      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.</description>
+    </item>
+    
+    <item>
+      <title>Java or Kotlin, What do you use?</title>
+      <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
+      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot.</description>
+    </item>
+    
+    <item>
+      <title>Cut your APK Size with features on demand</title>
+      <link>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</guid>
+      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone?</description>
+    </item>
+    
+  </channel>
+</rss>

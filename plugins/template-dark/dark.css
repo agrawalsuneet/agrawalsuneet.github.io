@@ -217,7 +217,7 @@ body.dark-skin {
 * Header
 **/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1800px) {
 	.dark-skin .header.sticky {
 		background: #1d222a;
 	}
@@ -267,10 +267,10 @@ body.dark-skin {
 	color: #eaeaea;
 }
 
-.dark-skin .header__builder .logo img,
+/* .dark-skin .header__builder .logo img,
 .dark-skin .preloader .spinner-logo img {
-  filter: brightness(0) invert(1);
-}
+  filter: brightness(0) invert(1); 
+} */
 
 /**
 * Footer
@@ -481,6 +481,13 @@ body.dark-skin {
 	background: #222831;
 }
 
+@media screen and (max-width: 767px) {
+	.dark-skin .works-items.works-list-items .works-item {
+		background: #1d222a;
+		border-radius: 20px;
+	}
+}
+
 .dark-skin .works-items.works-list-items .works-item .desc .name {
 	color: #fff;
 }
@@ -620,7 +627,7 @@ body.dark-skin {
 .dark-skin .post-content table td,
 .dark-skin .wp-block-table.is-style-stripes td {
 	border: 1px solid #666;
-	color: #fff;
+	color: #000;
 }
 
 .dark-skin .post-content ol,
@@ -655,6 +662,7 @@ body.dark-skin {
 
 .dark-skin .col__sedebar .content-sidebar {
 	border-left: 1px solid #666;
+	padding: 0px 8px;
 }
 
 .dark-skin .content-sidebar .search-form input[type="text"],

@@ -8,6 +8,33 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Set in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/set-in-javascript/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/set-in-javascript/</guid>
+      <description>When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling.</description>
+    </item>
+    
+    <item>
+      <title>Map in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-in-javascript/</link>
+      <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-in-javascript/</guid>
+      <description>In the world of JavaScript, data manipulation is a crucial skill for developers. While arrays and objects are common choices for storing data, the Map data type is a powerful alternative that offers unique advantages.</description>
+    </item>
+    
+    <item>
+      <title>Map function in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-function-in-javascript/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-function-in-javascript/</guid>
+      <description>When it comes to working with arrays in JavaScript, the map() function is a versatile and powerful tool that should not be overlooked.</description>
+    </item>
+    
+    <item>
       <title>Vector in Java</title>
       <link>https://agrawalsuneet.github.io/blogs/vector-in-java/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>

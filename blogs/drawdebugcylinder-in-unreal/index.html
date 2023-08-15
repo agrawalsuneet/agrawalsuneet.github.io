@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Set in JavaScript &middot; Suneet Agrawal</title>
+  <title>DrawDebugCylinder in Unreal &middot; Suneet Agrawal</title>
 
   <!-- Meta -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -13,33 +13,33 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta property="twitter:title" content="Suneet Agrawal">
 
-  <meta name="topic" content="Set in JavaScript">
-    <meta name="description" content="When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling.">
-    <meta property="og:description" content="When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling.">
-    <meta property="twitter:description" content="When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling.">
-    <meta name="abstract" content="When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling.">
-    <meta name="summary" content="When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling."> 
+  <meta name="topic" content="DrawDebugCylinder in Unreal">
+    <meta name="description" content="Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world.">
+    <meta property="og:description" content="Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world.">
+    <meta property="twitter:description" content="Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world.">
+    <meta name="abstract" content="Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world.">
+    <meta name="summary" content="Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2023-08-08 "> 
+    <meta property="article:published_time" content=" 2023-08-14 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/set-in-javascript/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/set-in-javascript/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/set-in-javascript/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
 
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="set in javascript,js,js set">
+    <meta name="keywords" content="drawdebugcylinder,unreal,unreal cpp,c&#43;&#43;">
 
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/set-in-javascript/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="JavaScript"> 
+    <meta property="og:tags" content="Unreal"> 
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
@@ -276,10 +276,10 @@
 				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
 				
 				
-				/ August 8, 2023 / 3 mins read / By Suneet Agrawal
+				/ August 14, 2023 / 3 mins read / By Suneet Agrawal
 			</div>
 			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
-				Set in JavaScript
+				DrawDebugCylinder in Unreal
 			</h1>
 		</div>
 
@@ -299,117 +299,90 @@
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
-						<p>When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling. In this blog post, we&rsquo;re going to delve into the world of Sets, explore their features, and provide real-world examples of how you can leverage their power in your JavaScript projects.</p>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3 id="what-is-a-set">What is a Set?</h3>
-<p>A Set is a built-in object in JavaScript that allows you to store unique values of any data type, whether they are primitive values or object references. Unlike arrays, Sets don&rsquo;t allow duplicate values, making them perfect for situations where you need to maintain a list of distinct items.</p>
-<h3 id="creating-a-set">Creating a Set</h3>
-<p>You can create a new Set using the Set constructor or by passing an iterable (such as an array) to the constructor. Here&rsquo;s how you can create a Set and add values to it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Creating an empty Set
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mySet</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>();
+						<p>Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world. In this blog post, we will dive into the details of DrawDebugCylinder in Unreal Engine using C++, including its function signature, parameter explanation, necessary headers, and real-world examples.</p>
+<h3 id="function-signature">Function Signature</h3>
+<p>The <code>DrawDebugCylinder</code> function is a part of the <code>UKismetSystemLibrary</code> class, and its signature is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>UKismetSystemLibrary<span style="color:#f92672">::</span>DrawDebugCylinder(
+</span></span><span style="display:flex;"><span>    UObject<span style="color:#f92672">*</span> WorldContextObject,
+</span></span><span style="display:flex;"><span>    FVector Start,
+</span></span><span style="display:flex;"><span>    FVector End,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> Radius,
+</span></span><span style="display:flex;"><span>    int32 Segments,
+</span></span><span style="display:flex;"><span>    FLinearColor Color,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> Duration,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> Thickness
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>Let&rsquo;s break down each parameter:</p>
+<ul>
+<li><strong>WorldContextObject</strong>: A reference to the current world context, typically obtained through the this pointer in your gameplay code.</li>
+<li><strong>Start</strong>: The starting point of the cylinder in world space.</li>
+<li><strong>End</strong>: The end point of the cylinder in world space. This defines the length of the cylinder.</li>
+<li><strong>Radius</strong>: The radius of the cylinder.</li>
+<li><strong>Segments</strong>: The number of segments used to approximate the cylinder&rsquo;s curved surface. A higher value results in a smoother cylinder.</li>
+<li><strong>Color</strong>: The color of the debug cylinder.</li>
+<li><strong>Duration</strong>: The duration, in seconds, for which the debug cylinder will be visible in the game world.</li>
+<li><strong>Thickness</strong>: The thickness of the lines used to draw the cylinder.</li>
+</ul>
+<h3 id="headers-to-include">Headers to Include</h3>
+<p>To utilize the DrawDebugCylinder function, you need to include the following header files:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;Kismet/KismetSystemLibrary.h&#34;</span><span style="color:#75715e">
+</span></span></span></code></pre></div><h4 id="real-world-examples">Real-World Examples</h4>
+<h3 id="drawing-a-wireframe-pipe">Drawing a Wireframe Pipe</h3>
+<p>Let&rsquo;s say you&rsquo;re developing a sci-fi game, and you want to visualize a network of pipes connecting different modules. You can use DrawDebugCylinder to draw wireframe cylinders to represent these pipes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;Kismet/KismetSystemLibrary.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> AMyGameMode<span style="color:#f92672">::</span>DrawPipes()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    FVector PipeStart <span style="color:#f92672">=</span> FVector(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    FVector PipeEnd <span style="color:#f92672">=</span> FVector(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> PipeRadius <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.0f</span>;
+</span></span><span style="display:flex;"><span>    int32 PipeSegments <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>;
+</span></span><span style="display:flex;"><span>    FLinearColor PipeColor <span style="color:#f92672">=</span> FLinearColor<span style="color:#f92672">::</span>Red;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> PipeDuration <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.0f</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> PipeThickness <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0f</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Adding values to the Set
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">mySet</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">1</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mySet</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">2</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mySet</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">3</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mySet</span>); <span style="color:#75715e">// Output: Set { 1, 2, 3 }
-</span></span></span></code></pre></div><div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3 id="removing-duplicate-elements">Removing Duplicate Elements</h3>
-<p>One of the most common use cases for Sets is removing duplicates from an array. Here&rsquo;s how you can achieve this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">duplicateArray</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">uniqueSet</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>(<span style="color:#a6e22e">duplicateArray</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([...<span style="color:#a6e22e">uniqueSet</span>]); <span style="color:#75715e">// Output: [1, 2, 3, 4, 5]
-</span></span></span></code></pre></div><h3 id="checking-membership">Checking Membership</h3>
-<p>Sets provide efficient membership checking. You can use the <code>has()</code> method to determine whether a value exists in the Set:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">colors</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([<span style="color:#e6db74">&#39;red&#39;</span>, <span style="color:#e6db74">&#39;green&#39;</span>, <span style="color:#e6db74">&#39;blue&#39;</span>]);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;green&#39;</span>)); <span style="color:#75715e">// Output: true
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;yellow&#39;</span>)); <span style="color:#75715e">// Output: false
-</span></span></span></code></pre></div><div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3 id="iterating-through-a-set">Iterating Through a Set</h3>
-<p>You can easily iterate through the elements of a Set using a for&hellip;of loop:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">vowels</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;u&#39;</span>]);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">vowel</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">vowels</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">vowel</span>);
+</span></span><span style="display:flex;"><span>    UKismetSystemLibrary<span style="color:#f92672">::</span>DrawDebugCylinder(
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>,
+</span></span><span style="display:flex;"><span>        PipeStart,
+</span></span><span style="display:flex;"><span>        PipeEnd,
+</span></span><span style="display:flex;"><span>        PipeRadius,
+</span></span><span style="display:flex;"><span>        PipeSegments,
+</span></span><span style="display:flex;"><span>        PipeColor,
+</span></span><span style="display:flex;"><span>        PipeDuration,
+</span></span><span style="display:flex;"><span>        PipeThickness
+</span></span><span style="display:flex;"><span>    );
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output:
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// a
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// e
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// i
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// o
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// u
-</span></span></span></code></pre></div><h3 id="set-operations">Set Operations</h3>
-<p>Sets also support various set operations like union, intersection, and difference. Here&rsquo;s a quick example of finding the intersection of two sets:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">setA</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">setB</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>]);
+</span></span></code></pre></div><h3 id="visualizing-a-laser-beam">Visualizing a Laser Beam</h3>
+<p>In a space-themed game, you might want to visualize a laser beam traveling from a spaceship to a target. You can achieve this by drawing a thin cylinder to represent the laser&rsquo;s path:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;Kismet/KismetSystemLibrary.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> AMyGameMode<span style="color:#f92672">::</span>DrawLaserBeam()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    FVector LaserStart <span style="color:#f92672">=</span> Spaceship<span style="color:#f92672">-&gt;</span>GetActorLocation();
+</span></span><span style="display:flex;"><span>    FVector LaserEnd <span style="color:#f92672">=</span> Target<span style="color:#f92672">-&gt;</span>GetActorLocation();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> LaserRadius <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0f</span>;
+</span></span><span style="display:flex;"><span>    int32 LaserSegments <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>    FLinearColor LaserColor <span style="color:#f92672">=</span> FLinearColor<span style="color:#f92672">::</span>Green;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> LaserDuration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1f</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> LaserThickness <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2f</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">intersection</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([...<span style="color:#a6e22e">setA</span>].<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">value</span> =&gt; <span style="color:#a6e22e">setB</span>.<span style="color:#a6e22e">has</span>(<span style="color:#a6e22e">value</span>)));
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([...<span style="color:#a6e22e">intersection</span>]); <span style="color:#75715e">// Output: [3, 4]
-</span></span></span></code></pre></div><div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3 id="storing-object-references">Storing Object References</h3>
-<p>Sets are not limited to primitive values. They can also store object references, making them useful for maintaining unique collections of objects:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user1</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Alice&#39;</span> };
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user2</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bob&#39;</span> };
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user3</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Charlie&#39;</span> };
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userSet</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([<span style="color:#a6e22e">user1</span>, <span style="color:#a6e22e">user2</span>, <span style="color:#a6e22e">user3</span>]);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">userSet</span>.<span style="color:#a6e22e">has</span>(<span style="color:#a6e22e">user2</span>)); <span style="color:#75715e">// Output: true
-</span></span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
-<p>Sets are a powerful addition to JavaScript&rsquo;s array of data structures. Their ability to store unique values, efficient membership checking, and support for set operations make them an invaluable tool for handling collections in a wide range of scenarios. Whether you&rsquo;re removing duplicates, checking for existence, or managing object references, Sets offer a clean and efficient solution that can simplify your code and improve its performance. So, next time you find yourself dealing with a collection of unique values, consider harnessing the magic of Sets in your JavaScript projects.</p>
+</span></span><span style="display:flex;"><span>    UKismetSystemLibrary<span style="color:#f92672">::</span>DrawDebugCylinder(
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>,
+</span></span><span style="display:flex;"><span>        LaserStart,
+</span></span><span style="display:flex;"><span>        LaserEnd,
+</span></span><span style="display:flex;"><span>        LaserRadius,
+</span></span><span style="display:flex;"><span>        LaserSegments,
+</span></span><span style="display:flex;"><span>        LaserColor,
+</span></span><span style="display:flex;"><span>        LaserDuration,
+</span></span><span style="display:flex;"><span>        LaserThickness
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
+<p>The DrawDebugCylinder function in Unreal Engine provides an efficient way to visualize cylindrical shapes in your game world, aiding in debugging and visual design. By understanding its function signature, parameter meanings, necessary headers, and real-world examples, you can leverage this tool to create more engaging and visually appealing games. Whether you&rsquo;re representing pipes, laser beams, or any other cylindrical structures, DrawDebugCylinder is a valuable addition to your Unreal Engine toolkit. Happy coding!</p>
 <div class="col-xs-12 googleads">
     
     <ins class="adsbygoogle"
@@ -429,7 +402,7 @@
 						<div class="tags-links">
 							<span>Tags:</span>
 							
-							<a href="https://agrawalsuneet.github.io/tags/javascript/" rel="tag">JavaScript</a>
+							<a href="https://agrawalsuneet.github.io/tags/unreal/" rel="tag">Unreal</a>
 							
 						</div>
 						
@@ -458,26 +431,17 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				<div class="h-titles h-navs">
 					
-					<a href="https://agrawalsuneet.github.io/blogs/map-in-javascript/">
+					<a href="https://agrawalsuneet.github.io/blogs/drawdebugsphere-in-unreal/">
 						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
 							Previous Post
 						</span>
 						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-							Map in JavaScript
+							DrawDebugSphere in Unreal
 						</span>
 					</a>
 					
 					</br>
 					</br>
-					
-					<a href="https://agrawalsuneet.github.io/blogs/drawdebugline-in-unreal/">
-						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
-							Next Post
-						</span>
-						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-							DrawDebugLine in Unreal
-						</span>
-					</a>
 					
 				</div>
 			</div>

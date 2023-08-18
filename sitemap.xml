@@ -3,26 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/categories/blog/</loc>
-    <lastmod>2023-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2023-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/categories/</loc>
-    <lastmod>2023-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</loc>
-    <lastmod>2023-08-14T00:00:00+00:00</lastmod>
+    <loc>https://agrawalsuneet.github.io/blogs/date-object-in-javascript/</loc>
+    <lastmod>2023-08-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/javascript/</loc>
+    <lastmod>2023-08-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2023-08-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/map-vs-object-javascript/</loc>
+    <lastmod>2023-08-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/this-keyword-in-javascript/</loc>
+    <lastmod>2023-08-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,11 +59,6 @@
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/drawdebugline-in-unreal/</loc>
     <lastmod>2023-08-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/javascript/</loc>
-    <lastmod>2023-08-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -799,34 +814,6 @@
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</loc>
     <lastmod>2017-08-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/explore/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/gooir/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/kana/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/mozar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/stay-fit/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/portfolio/zorro/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -6,7 +6,34 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Date Object in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/date-object-in-javascript/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/date-object-in-javascript/</guid>
+      <description>Dates and time are fundamental concepts in programming, essential for tasks ranging from displaying the current date on a webpage to performing complex date calculations.</description>
+    </item>
+    
+    <item>
+      <title>Map vs Object : JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-vs-object-javascript/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-vs-object-javascript/</guid>
+      <description>In JavaScript, data structures play a vital role in organizing and manipulating data efficiently. Two commonly used data structures for storing key-value pairs are the Map and the Object.</description>
+    </item>
+    
+    <item>
+      <title>This Keyword in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/this-keyword-in-javascript/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/this-keyword-in-javascript/</guid>
+      <description>JavaScript is a versatile and dynamic programming language used extensively for web development. One of its key features is the this keyword, which plays a crucial role in determining the context of function execution.</description>
+    </item>
+    
     <item>
       <title>DrawDebugCylinder in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</link>

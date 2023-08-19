@@ -134,7 +134,7 @@
 			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
 
 				
-				<a href="#" class="switcher-btn">
+				<a href="#" class="switcher-btn" aria-label="switcher-button">
 					<span class="sw-before">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
 							<path id="Dark_Theme" data-name="Dark Theme" fill="#000" d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z" transform="translate(-1737 -98)" />
@@ -148,7 +148,7 @@
 				</a>
 
 				
-				<a href="#" class="menu-btn">
+				<a href="#" class="menu-btn" aria-label="menu-button">
 					<span></span>
 					<span></span>
 				</a>
@@ -300,7 +300,8 @@
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling. In this blog post, we&rsquo;re going to delve into the world of Sets, explore their features, and provide real-world examples of how you can leverage their power in your JavaScript projects.</p>
-<div class="col-xs-12 googleads">
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -312,6 +313,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="what-is-a-set">What is a Set?</h3>
 <p>A Set is a built-in object in JavaScript that allows you to store unique values of any data type, whether they are primitive values or object references. Unlike arrays, Sets don&rsquo;t allow duplicate values, making them perfect for situations where you need to maintain a list of distinct items.</p>
@@ -326,7 +328,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">mySet</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">3</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mySet</span>); <span style="color:#75715e">// Output: Set { 1, 2, 3 }
-</span></span></span></code></pre></div><div class="col-xs-12 googleads">
+</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -338,6 +341,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="removing-duplicate-elements">Removing Duplicate Elements</h3>
 <p>One of the most common use cases for Sets is removing duplicates from an array. Here&rsquo;s how you can achieve this:</p>
@@ -352,7 +356,8 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;green&#39;</span>)); <span style="color:#75715e">// Output: true
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#39;yellow&#39;</span>)); <span style="color:#75715e">// Output: false
-</span></span></span></code></pre></div><div class="col-xs-12 googleads">
+</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -364,6 +369,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="iterating-through-a-set">Iterating Through a Set</h3>
 <p>You can easily iterate through the elements of a Set using a for&hellip;of loop:</p>
@@ -386,7 +392,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">intersection</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>([...<span style="color:#a6e22e">setA</span>].<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">value</span> =&gt; <span style="color:#a6e22e">setB</span>.<span style="color:#a6e22e">has</span>(<span style="color:#a6e22e">value</span>)));
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([...<span style="color:#a6e22e">intersection</span>]); <span style="color:#75715e">// Output: [3, 4]
-</span></span></span></code></pre></div><div class="col-xs-12 googleads">
+</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -398,6 +405,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="storing-object-references">Storing Object References</h3>
 <p>Sets are not limited to primitive values. They can also store object references, making them useful for maintaining unique collections of objects:</p>
@@ -410,7 +418,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">userSet</span>.<span style="color:#a6e22e">has</span>(<span style="color:#a6e22e">user2</span>)); <span style="color:#75715e">// Output: true
 </span></span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
 <p>Sets are a powerful addition to JavaScript&rsquo;s array of data structures. Their ability to store unique values, efficient membership checking, and support for set operations make them an invaluable tool for handling collections in a wide range of scenarios. Whether you&rsquo;re removing duplicates, checking for existence, or managing object references, Sets offer a clean and efficient solution that can simplify your code and improve its performance. So, next time you find yourself dealing with a collection of unique values, consider harnessing the magic of Sets in your JavaScript projects.</p>
-<div class="col-xs-12 googleads">
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -422,6 +431,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 
 

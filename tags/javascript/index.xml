@@ -6,7 +6,16 @@
     <description>Recent content in JavaScript on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nested Function in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/nested-function-in-javascript/</link>
+      <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/nested-function-in-javascript/</guid>
+      <description>JavaScript is a versatile and widely used programming language that empowers developers to create interactive and dynamic web applications. One of its powerful features is the ability to define functions within functions, known as nested functions.</description>
+    </item>
+    
     <item>
       <title>Date Object in JavaScript</title>
       <link>https://agrawalsuneet.github.io/blogs/date-object-in-javascript/</link>
@@ -59,6 +68,24 @@
       
       <guid>https://agrawalsuneet.github.io/blogs/map-function-in-javascript/</guid>
       <description>When it comes to working with arrays in JavaScript, the map() function is a versatile and powerful tool that should not be overlooked.</description>
+    </item>
+    
+    <item>
+      <title>Bind Function in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/bind-function-in-javascript/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/bind-function-in-javascript/</guid>
+      <description>JavaScript is a versatile programming language that empowers developers to create dynamic and interactive web applications. To harness its full potential, understanding its various features and functions is crucial.</description>
+    </item>
+    
+    <item>
+      <title>Closures in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/closures-in-javascript/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/closures-in-javascript/</guid>
+      <description>JavaScript, a language renowned for its versatility, offers a wealth of features that enable developers to create powerful and dynamic applications.</description>
     </item>
     
     <item>

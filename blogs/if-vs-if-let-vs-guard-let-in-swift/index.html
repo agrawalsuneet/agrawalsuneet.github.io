@@ -134,7 +134,7 @@
 			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
 
 				
-				<a href="#" class="switcher-btn">
+				<a href="#" class="switcher-btn" aria-label="switcher-button">
 					<span class="sw-before">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
 							<path id="Dark_Theme" data-name="Dark Theme" fill="#000" d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z" transform="translate(-1737 -98)" />
@@ -148,7 +148,7 @@
 				</a>
 
 				
-				<a href="#" class="menu-btn">
+				<a href="#" class="menu-btn" aria-label="menu-button">
 					<span></span>
 					<span></span>
 				</a>
@@ -301,7 +301,8 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p><code>if let</code> and <code>guard let</code> are two conditional operators or condition checker which make our life super easy. Other languages have only <code>if</code> as condition checker but swift provides <code>if let</code> as well as <code>guard let</code> also which are operationally same but a bit different in functionality.</p>
 <p>To understand their differences, let&rsquo;s try to understand what they are in details first.</p>
-<div class="col-xs-12 googleads">
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -313,6 +314,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="if-condition">if condition</h3>
 <p>Normal <code>if</code> condition is nothing but to check whether a condition is true or not.</p>
@@ -337,7 +339,8 @@
 </span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;red and green both are not present in palette&#34;</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads">
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -349,6 +352,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="if-let">if let</h3>
 <p>Now let&rsquo;s think about someplace where we want to compute something and based on the computed value we need to put an <code>if</code> condition.</p>
@@ -372,7 +376,8 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We combined the computation and evaluation within a single statement by using <code>if let</code>.</p>
 <h4 id="the-thing-to-notice-here-is-that-the-variable-index-is-not-nullable-in-if-let-whereas-it-was-a-nullable-variable-in-if-condition">The thing to notice here is that the variable <code>index</code> is not nullable in <code>if let</code> whereas it was a nullable variable in <code>if</code> condition.</h4>
-<div class="col-xs-12 googleads">
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -384,6 +389,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <p>We can club multiple <code>if let</code> also within the same condition check by spearating them using comma <code>,</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> colors : [String] = [<span style="color:#e6db74">&#34;red&#34;</span>, <span style="color:#e6db74">&#34;green&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>]
@@ -416,7 +422,8 @@
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(green) &lt;e&gt;<span style="color:#75715e">//Compile type error: cannot find &#39;green&#39; in scope&lt;/e&gt;</span>
-</span></span></code></pre></div><div class="col-xs-12 googleads">
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -428,6 +435,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="guard-let">guard let</h3>
 <p><code>guard let</code> can also be used for condition check and it can also unwrap the optional values but it works a bit different from <code>if let</code>.</p>
@@ -456,7 +464,8 @@
 </span></span><span style="display:flex;"><span>    print(print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>green<span style="color:#e6db74">)</span><span style="color:#e6db74"> is present in palette at position </span><span style="color:#e6db74">\(</span>index<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>))
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The important thing to notice here is that the <code>let</code> variables defined in guard statements are also accessible after the statement but they are inaccessible inside the else condition.</p>
-<div class="col-xs-12 googleads">
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -468,6 +477,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 <h3 id="difference-between-if-and-if-letguard-let">Difference between if and if let/guard let</h3>
 <ul>
@@ -482,7 +492,8 @@
 <li>In <code>if let</code>, the defined <code>let</code> variables are available within the scope of that if condition but not in <code>else</code> condition or even below that.</li>
 </ul>
 <p>In <code>guard let</code>, the defined <code>let</code> variables are not available in the <code>else</code> condition but after that, it&rsquo;s available throughout till the function ends or anything.</p>
-<div class="col-xs-12 googleads">
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
     
     <ins class="adsbygoogle"
      style="display:block"
@@ -494,6 +505,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    
 </div>
 
 

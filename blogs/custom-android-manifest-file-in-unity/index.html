@@ -1,61 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Custom Android Manifest File in Unity &middot; Suneet Agrawal</title>
 
-<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+  <!-- Meta -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
 
-    
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');
-    </script>
-    
+  <meta name="author" content="Suneet Agrawal" />  
+  <meta name="owner" content="Suneet Agrawal">
+  <meta property="twitter:title" content="Suneet Agrawal">
 
-    
-    <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-    </script>
-
-    <script>
-    function onErrorLoadingAds() {
-      console.log("AdBlocker blocks the ads")
-    }
-    </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
-    onerror="onErrorLoadingAds()"></script>
-    
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
-
-    <meta property="og:site_name" content="Suneet Agrawal">
-
-    <meta name="robots" content="index,follow">
-    <meta name="keywords" content="manifest,androidmanifest,android manifest,manifest.xml">
-
-
-    
-    <meta name="author" content="Suneet Agrawal">
-    <meta name="owner" content="Suneet Agrawal">
-    <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
-
-    <meta name="title" content="Suneet Agrawal | Custom Android Manifest File in Unity" />
-    <meta property="og:title" content="Custom Android Manifest File in Unity">
-    <meta property="twitter:title" content="Custom Android Manifest File in Unity">
-    <meta name="twitter:site" content="@agrawalsuneet">
-
-    <meta name="topic" content="Custom Android Manifest File in Unity">
+  <meta name="topic" content="Custom Android Manifest File in Unity">
     <meta name="description" content="The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file.">
     <meta property="og:description" content="The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file.">
     <meta property="twitter:description" content="The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file.">
@@ -70,12 +28,10 @@
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
-
-    <meta name="category" content="Portfolio">
-    <meta name="email" content="agrawalsuneet@gmail.com">
-    <meta name="og:email" content="agrawalsuneet@gmail.com">
-
-    <meta name="twitter:creator" content="@agrawalsuneet">
+    
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="manifest,androidmanifest,android manifest,manifest.xml">
+    
     <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
@@ -83,397 +39,509 @@
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="CSharp"> 
     <meta property="og:tags" content="Unity"> 
-    <meta property="og:tags" content="Android"> 
-    <title>Custom Android Manifest File in Unity &middot; Suneet Agrawal</title>
 
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
-    <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
-    <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
-</head>
-
-<body>
-
-    
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-    
-
-    
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			
-				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
-			
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				
-				
-					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
-				
-			</ul>
-		</div>
-	</div>
-</nav>
-<div class="container-fluid">
-	<div class="row">
-		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
-	<div id="menu-content" class="vertical-align">
-
-		
-			<a href="https://agrawalsuneet.github.io/">
-				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.jpg" alt="My Picture" class="img-circle center-block">
-			</a>
-		
-
-		
-			<h1 class="text-center" style="font-size:30px;">
-				<a href="https://agrawalsuneet.github.io/">
-					Suneet Agrawal
-				</a>
-		</h1>
-		
-
-		
-
-		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
-			
-			
-				<a href="https://agrawalsuneet.github.io/publications">
-						Publications
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/publicappearances">
-						Public Appearances
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
-						Personal Games &amp; Apps
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
-						Open Source Contribution
-				</a>
-				</br>
-			
-		</div>
-
-		<div id="social" class="text-center">
-			
-				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
-			
-				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
-			
-				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
-			
-				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
-			
-				<a href="https://www.facebook.com/agrawalsuneet"><i class="fa fa-facebook fa-2x"></i></a>
-			
-
-			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
-		</div>
-
-
-
-	</div>
-</div>
-
-		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
-			<div class="row">
-				<div id="post" class="col-xs-12">
- 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-112616552-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-<main>
-    <header>
-        <h1 class="mx16">Custom Android Manifest File in Unity</h1>
-    </header>
-
-    <div class="col-xs-12 vertical-centre">
-        
-        <small class="text-muted">
-			
-			
-				<a href="https://agrawalsuneet.github.io/tags/csharp"><span class="label label-success">CSharp</span></a>
-			
-				<a href="https://agrawalsuneet.github.io/tags/unity"><span class="label label-success">Unity</span></a>
-			
-				<a href="https://agrawalsuneet.github.io/tags/android"><span class="label label-success">Android</span></a>
-			
-		</small> 
-
-        
-
-    </div>
-
-    <article>
-        <div class="col-xs-12">
-            </br>
-<div class="row">
-<div class="col-lg-10">
-<img class="blogimg" src="/img/blogs/native-android-unity.png" alt="Native Android in Unity">
-</br>
-<div class="center-justified text-content">
-        The <a href="https://developer.android.com/guide/topics/manifest/manifest-intro" target="_blank">Android manifest file</a> describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. The manifest file contains information about package name, permissions, application name, icon, activities, services, providers and much more.
-        </br>
-        </br>
-        Usually, Unity takes care of this manifest file generation and putting it in the right place but sometimes we need to add some custom tags to the final generated manifest file like adding intent-filters to the activity tag.
-        </br>
-        </br>
-        We can add a custom manifest file and Unity will generate a merged manifest file at the end which will be shipped along with the final apk generated.
-        </br>
-        </br>
-        We can copy a basic structure of the custom manifest file from <mark>/Temp/StagingArea/AndroidManifest.xml</mark>
-        </br>
-        And can paste the modified AndroidManifest.xml at <mark>Assests/Plugins/Android/AndroidManifest.xml</mark>
-        </br>
-        </br>
-        Please note that if this file doesn't exist for you, change the target platform to Android and build the Unity project once. It will generate the <mark>Temp</mark> folder and this file inside it. This is a temporary file that is created by Unity but we can copy it. 
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        The AndroidManifest.xml for a new hello world project in unity looks like the below one but I will suggest you create your own and copy that instead of using the below one.
-</div>
-</br>
-<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/07c234795d6a011e7f50cc81b9c6b797.js"></script>
-
-</br>
-<div class="center-justified text-content">
-        The final output file will be a merge of one created by Unity and the one we pasted at Assests/Plugins/Android/AndroidManifest.xml
-        </br>
-        </br>
-        Now we can modify it according to our need like we can add intent-filters to it and that will be available in the final Manifest file generated by Unity.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</div>
-<div class="col-lg-2 position-sticky-top">
-<div class="googleads">
-    
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-1093303282603666"
-        data-ad-slot="5801291010"
-        data-ad-format="vertical"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</div>
-</div>
-<div class="col-xs-12 center-justified text-subtitle">
-    <div class="col-sm-6 col-xs-12">
-        <a href="/blogs/">
-        &lt;&lt; All Blogs
-      </a>
-    </div>
-    <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/native-android-receive-text-from-other-apps-in-unity/">
-        Native Android Receive Text from Other Apps in Unity &gt;&gt;
-      </a>
-    </div>
-</div>
-
-        </div>
-    </article>
-</main>
-
-<script
-    data-name="BMC-Widget" 
-    data-cfasync="false" 
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-    data-id="agrawalsuneet" 
-    data-description="Support me on Buy me a coffee!" 
-    data-message="If you find this blog helpful, support us to keep this website up and free !!!" 
-    data-color="#ff813f" 
-    data-position="Right" 
-    data-x_margin="18" 
-    data-y_margin="18"></script>
-
- 
-<div id="disqus_thread">
-    <div id="disqus_empty"></div>
-</div>
-
-<script type="text/javascript" defer>
-
-    function onContentScrolled(e) {
-        var currentScroll = document.scrollingElement.scrollTop;
-        var disqus_target = document.getElementById('disqus_thread');
-
-        if (disqus_target && (currentScroll > disqus_target.getBoundingClientRect().top - 150)) {
-            load_disqus();
-            console.log('Disqus comments loaded');
-        }
-    }
-
-    function load_disqus() {
-        if (window.location.hostname == "localhost") {
-            var content = document.getElementById("content");
-            content.removeEventListener('scroll', onContentScrolled, false)
-            return;
-        }
-
-        
-        var is_disqus_empty = document.getElementById('disqus_empty'),
-            disqus_target = document.getElementById('disqus_thread'),
-            disqus_embed = document.createElement('script'),
-            disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
-
-        var disqus_shortname = 'agrawalsuneet';
-
-        
-        if (disqus_target && is_disqus_empty) {
-            disqus_embed.type = 'text/javascript';
-            disqus_embed.async = true;
-            disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            disqus_hook.appendChild(disqus_embed);
-            is_disqus_empty.remove();
-        }
-
-        var content = document.getElementById("content");
-        content.removeEventListener('scroll', onContentScrolled, false)
-
-        
-        let remove_ads = setInterval(() => {
-            console.log('Checking for Disqus Ads');
-
-            let iframes = document.getElementsByTagName('iframe');
-
-            for (var iframe in iframes) {
-                
-                
-                
-
-                
-                
-                
-                
-                
-
-                if (iframes[iframe].id.includes("dsq") 
-                && iframes[iframe].name.includes("dsq") 
-                && !iframes[iframe].src.includes("disqus.com/embed/comments")) {
-                    iframes[iframe].style.display = 'none';
-                    clearInterval(remove_ads);
-                    console.log('Disqus Ads removed');
-                }
-            }
-        }, 1000);
-
-        setTimeout(function () {
-            clearInterval(remove_ads);
-        }, 5000);
-    }
-
-    (function () {
-        var content = document.getElementById("content");
-        content.addEventListener('scroll', onContentScrolled, false);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-  </div>
-
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
 
   
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1093303282603666"
+     crossorigin="anonymous">
+  </script>
 
-    ga('create', 'code-here', 'auto');
-    ga('send', 'pageview');
-    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  <script>
+  function onErrorLoadingAds() {
+    console.log("AdBlocker blocks the ads")
+  }
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
+  onerror="onErrorLoadingAds()">
   </script>
   
 
+  
+  <meta name="google-site-verification" content="WsYlsB659Cuy0GKk82CS1ogZoTK0FIxmdSE759c1rMU" />
+  
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- Plugins Stylesheets -->
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/splitting/splitting.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/animate/animate.css" />
+
+  <!-- Main Stylesheets -->
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/scss/style.min.css" />
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/template-dark/dark.css" />
   
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+
   
-  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WET08JY2Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WET08JY2Z');
+  </script>
   
+
+  </head>
+
+<body class="page dark-skin">
+  <div class="container-page ">
+    <!-- Preloader -->
+    
+<div class="preloader">
+  <div class="centrize full-width">
+    <div class="vertical-center">
+      <div class="spinner-logo">
+		
+        <img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="https://agrawalsuneet.github.io/Suneet%20Agrawal" />
+        <div class="spinner-dot"></div>
+        <div class="spinner spinner-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Header -->
+    
+<header class="header">
+	<div class="header__builder">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+				
+				<div class="logo">
+					<a href="https://agrawalsuneet.github.io/">
+            			
+						<img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="Suneet Agrawal" />
+					</a>
+				</div>
+
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+
+				
+				<a href="#" class="switcher-btn" aria-label="switcher-button">
+					<span class="sw-before">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+							<path id="Dark_Theme" data-name="Dark Theme" fill="#000" d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z" transform="translate(-1737 -98)" />
+						</svg>
+					</span>
+					<span class="sw-after">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313" viewBox="0 0 22.22 22.313">
+							<path id="Light_Theme" data-name="Light Theme" fill="#fff" d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z" transform="translate(-1737.44 -98.313)" />
+						</svg>
+					</span>
+				</a>
+
+				
+				<a href="#" class="menu-btn" aria-label="menu-button">
+					<span></span>
+					<span></span>
+				</a>
+
+				
+				<div class="menu-full-overlay">
+					<div class="menu-full-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									
+									<div class="menu-full">
+										<ul class="menu-full">
+											
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//">Home</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item menu-item-has-children has-children">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publications">Publications</a>
+                        
+                        <ul class="sub-menu">
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/blogs">Blogs</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/slides">Slides</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/gists">Gists</a></li>
+                          
+                        </ul>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publicappearances">Public Appearances</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//personalgamesandapps">Personal Games &amp; Apps</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//opensourcecontribution">Open Source Contribution</a>
+                        
+                      </li>
+                      
+										</ul>
+									</div>
+
+									
+									<div class="menu-social-links">
+                    
+                    <a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Linkedin">
+                      <i aria-hidden="true" class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Github">
+                      <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    
+                    <a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Medium">
+                      <i aria-hidden="true" class="fab fa-medium"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Youtube">
+                      <i aria-hidden="true" class="fab fa-youtube"></i>
+                    </a>
+                    
+									</div>
+
+									<div class="v-line-block"><span></span></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-overlay"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+    <!-- Wrapper -->
+		<div class="wrapper single-post">
+      
+
+
+
+<section class="section section-inner started-heading">
+	<div class="container">
+
+		
+		<div class="m-titles align-center">
+			<div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				
+				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
+				
+				
+				/ May 29, 2021 / 2 mins read / By Suneet Agrawal
+			</div>
+			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Custom Android Manifest File in Unity
+			</h1>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+<section class="section section-inner m-archive">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+				
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+						<p>The <a href="https://developer.android.com/guide/topics/manifest/manifest-intro">Android manifest file</a> describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. The manifest file contains information about package name, permissions, application name, icon, activities, services, providers and much more.</p>
+<p>Usually, Unity takes care of this manifest file generation and putting it in the right place but sometimes we need to add some custom tags to the final generated manifest file like adding intent-filters to the activity tag.</p>
+<p>We can add a custom manifest file and Unity will generate a merged manifest file at the end which will be shipped along with the final apk generated.</p>
+<p>We can copy a basic structure of the custom manifest file from <code>/Temp/StagingArea/AndroidManifest.xml</code></p>
+<p>And can paste the modified AndroidManifest.xml at <code>Assests/Plugins/Android/AndroidManifest.xml</code></p>
+<p>Please note that if this file doesn&rsquo;t exist for you, change the target platform to Android and build the Unity project once. It will generate the <code>Temp</code> folder and this file inside it. This is a temporary file that is created by Unity but we can copy it.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>The AndroidManifest.xml for a new hello world project in unity looks like the below one but I will suggest you create your own and copy that instead of using the below one.</p>
+<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/07c234795d6a011e7f50cc81b9c6b797.js"></script>
+
+<p>The final output file will be a merge of one created by Unity and the one we pasted at <code>Assests/Plugins/Android/AndroidManifest.xml</code></p>
+<p>Now we can modify it according to our need like we can add intent-filters to it and that will be available in the final Manifest file generated by Unity.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+
+
+						
+						<div class="tags-links">
+							<span>Tags:</span>
+							
+							<a href="https://agrawalsuneet.github.io/tags/unity/" rel="tag">Unity</a>
+							
+						</div>
+						
+
+						
+					</div>
+				</div>
+
+				
+				
+				<div class="comments-post scrolla-element-anim-1 scroll-animate" data-animate="active">
+					<div class="section__comments">
+
+						<div class="m-titles">
+							<div class="m-title align-left">Comments</div>
+						</div>
+
+						<div class="comments">
+							<div id="disqus_trigger" class="load-more">
+								<button onclick="load_disqus()" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<span>Load Comments</span>
+								</a>
+							</div>
+							<div id="disqus_thread"></div>
+							<script>
+								function load_disqus() {
+								  
+								  var disqus_trigger = document.getElementById('disqus_trigger'),
+									  disqus_target = document.getElementById('disqus_thread'),
+									  disqus_embed  = document.createElement('script'),
+									  disqus_hook   = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+								
+								  
+								  if( disqus_target && disqus_trigger ) {
+									disqus_embed.type = 'text/javascript';
+									disqus_embed.async = true;
+									disqus_embed.src = 'https://agrawalsuneet.disqus.com/embed.js';
+									disqus_hook.appendChild(disqus_embed);
+									disqus_trigger.remove();
+									console.log('Disqus loaded');
+
+									
+									let remove_ads = setInterval(() => {
+										console.log('Checking for Disqus Ads');
+
+										let iframes = document.getElementsByTagName('iframe');
+
+										for (var iframe in iframes) {
+											if (iframes[iframe].id.includes("dsq") 
+											&& iframes[iframe].name.includes("dsq") 
+											&& !iframes[iframe].src.includes("disqus.com/embed/comments")) {
+												iframes[iframe].style.display = 'none';
+												clearInterval(remove_ads);
+												console.log('Disqus Ads removed');
+											}
+										}
+									}, 1000);
+
+									setTimeout(function () {
+										clearInterval(remove_ads);
+									}, 5000);
+								  }
+								}
+							</script>
+							
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+	</div>
+</section>
+
+
+
+<div class="section section-inner m-page-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				<div class="h-titles h-navs">
+					
+					<a href="https://agrawalsuneet.github.io/blogs/lerp-function-unity/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Previous Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							Lerp Function : Unity
+						</span>
+					</a>
+					
+					</br>
+					</br>
+					
+					<a href="https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Next Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							Native Android Receive Text from Other Apps in Unity
+						</span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    
+<div class="footer">
+	<div class="footer__builder">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				<a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" title="Linkedin">
+				  <i aria-hidden="true" class="fab fa-linkedin"></i>
+				</a>
+				
+				<a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" title="Github">
+				  <i aria-hidden="true" class="fab fa-github"></i>
+				</a>
+				
+				<a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Medium">
+				  <i aria-hidden="true" class="fab fa-medium"></i>
+				</a>
+				
+				<a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Youtube">
+				  <i aria-hidden="true" class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		  </div>
+
+		  
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+				© 2023 <strong>Suneet</strong>. All rights reserved
+			</div>
+		  </div>
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Developed by <strong>Suneet Agrawal</strong>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Cursor -->
+	<div class="cursor"></div>
+
+  <!-- Scripts -->
+  <script src="https://agrawalsuneet.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/validate/jquery.validate.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/splitting/splitting.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/isotope/isotope.pkgd.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/jarallax/jarallax.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/scrolla/jquery.scrolla.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/skrollr/skrollr.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/cookie/jquery.cookie.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/typed/typed.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/rrssb/rrssb.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/plugins/mark/mark.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/fuse/fuse.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/search/simple-search.js"></script>
+
+
+
+<script src="https://agrawalsuneet.github.io/js/form-handler.min.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/js/common.min.js"></script>
+
 </body>
+
 </html>

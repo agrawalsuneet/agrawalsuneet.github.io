@@ -1,68 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Label Reference in Kotlin &middot; Suneet Agrawal</title>
 
-<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+  <!-- Meta -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
 
-    
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');
-    </script>
-    
+  <meta name="author" content="Suneet Agrawal" />  
+  <meta name="owner" content="Suneet Agrawal">
+  <meta property="twitter:title" content="Suneet Agrawal">
 
-    
-    <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-    </script>
-
-    <script>
-    function onErrorLoadingAds() {
-      console.log("AdBlocker blocks the ads")
-    }
-    </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
-    onerror="onErrorLoadingAds()"></script>
-    
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
-
-    <meta property="og:site_name" content="Suneet Agrawal">
-
-    <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin label reference,kotlin @,kotlin label,label kotlin">
-
-
-    
-    <meta name="author" content="Suneet Agrawal">
-    <meta name="owner" content="Suneet Agrawal">
-    <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
-
-    <meta name="title" content="Suneet Agrawal | Label Reference in Kotlin" />
-    <meta property="og:title" content="Label Reference in Kotlin">
-    <meta property="twitter:title" content="Label Reference in Kotlin">
-    <meta name="twitter:site" content="@agrawalsuneet">
-
-    <meta name="topic" content="Label Reference in Kotlin">
+  <meta name="topic" content="Label Reference in Kotlin">
     <meta name="description" content="Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.">
     <meta property="og:description" content="Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.">
     <meta property="twitter:description" content="Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.">
     <meta name="abstract" content="Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.">
     <meta name="summary" content="Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2020-10-26 "> 
+    <meta property="article:published_time" content=" 2018-06-08 "> 
 
     <meta name="url" content="https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/">
     <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/">
@@ -70,12 +28,10 @@
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
-
-    <meta name="category" content="Portfolio">
-    <meta name="email" content="agrawalsuneet@gmail.com">
-    <meta name="og:email" content="agrawalsuneet@gmail.com">
-
-    <meta name="twitter:creator" content="@agrawalsuneet">
+    
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="kotlin label reference,kotlin @,kotlin label,label kotlin">
+    
     <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
@@ -84,588 +40,706 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android"> 
-    <title>Label Reference in Kotlin &middot; Suneet Agrawal</title>
 
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
-    <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
-    <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
-</head>
-
-<body>
-
-    
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-    
-
-    
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			
-				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
-			
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				
-				
-					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
-				
-			</ul>
-		</div>
-	</div>
-</nav>
-<div class="container-fluid">
-	<div class="row">
-		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
-	<div id="menu-content" class="vertical-align">
-
-		
-			<a href="https://agrawalsuneet.github.io/">
-				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.jpg" alt="My Picture" class="img-circle center-block">
-			</a>
-		
-
-		
-			<h1 class="text-center" style="font-size:30px;">
-				<a href="https://agrawalsuneet.github.io/">
-					Suneet Agrawal
-				</a>
-		</h1>
-		
-
-		
-
-		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
-			
-			
-				<a href="https://agrawalsuneet.github.io/publications">
-						Publications
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/publicappearances">
-						Public Appearances
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
-						Personal Games &amp; Apps
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
-						Open Source Contribution
-				</a>
-				</br>
-			
-		</div>
-
-		<div id="social" class="text-center">
-			
-				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
-			
-				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
-			
-				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
-			
-				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
-			
-				<a href="https://www.facebook.com/agrawalsuneet"><i class="fa fa-facebook fa-2x"></i></a>
-			
-
-			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
-		</div>
-
-
-
-	</div>
-</div>
-
-		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
-			<div class="row">
-				<div id="post" class="col-xs-12">
- 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-112616552-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-<main>
-    <header>
-        <h1 class="mx16">Label Reference in Kotlin</h1>
-    </header>
-
-    <div class="col-xs-12 vertical-centre">
-        
-        <small class="text-muted">
-			
-			
-				<a href="https://agrawalsuneet.github.io/tags/kotlin"><span class="label label-success">Kotlin</span></a>
-			
-				<a href="https://agrawalsuneet.github.io/tags/android"><span class="label label-success">Android</span></a>
-			
-		</small> 
-
-        
-
-    </div>
-
-    <article>
-        <div class="col-xs-12">
-            </br>
-<div class="row">
-<div class="col-lg-10">
-<div class="center-justified text-content">
-        Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by <mark>@</mark> sign in front of any expression.
-        </br>
-        </br>
-        Let me give you an example
-</div>
-<pre class="zeropadding">
-  <br/><b>loopi@</b> for( i in 1..5){<br/>     print(i)<br/> }<br/>
-</pre>
-
-<div class="center-justified text-content">
-        </br>
-        But what is the use? Where I am going to use this label and why would I use it?
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        These labels are really helpful when dealing with nested loops or nested functions.
-        </br>
-        </br>
-        Will explain the use cases in detail of label references but before that, we need to understand what are jump and return expressions.
-        </br>
-        </br>
-        <ul>
-                <li><mark>break</mark> : Terminates the nearest enclosing loop.</li>
-                <li><mark>continue</mark> : Proceeds to the next step of the nearest enclosing loop.</li>
-                <li><mark>return</mark> : Return from the nearest enclosing function or anonymous function.</li>
-        </ul>
-        </br>
-        </br>
-        Now let’s take an example of nested loop first to understand the use of label reference.
-</div>
-<pre class="zeropadding">
-  <br/>for( i in 1..3){<br/>        for (j in 5..7){<br/>            print ((i * 100) + j)<br/>            print(" ")<br/>        }<br/>        <br/>        println( i.toString() + " loop ends")<br/>    }<br/>    <br/>println("We are done")<br/>
-</pre>
-
-<div class="center-justified text-content">
-        The output of the above code is
-</div>
-<pre class="zeropadding">
-  <br/>105 106 107 1 loop ends <br/>205 206 207 2 loop ends <br/>305 306 307 3 loop ends <br/>We are done<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        Now in the above example, what if I want to break the <mark>i loop</mark> (means the entire execution of loops) when <mark>i equals to 2</mark> and <mark>j equals to 6</mark> but still want to execute below code of lines.
-        </br>
-        </br>
-        Means I want the output as
-</div>
-<pre class="zeropadding">
-  <br/>105 106 107 1 loop ends <br/>205 <br/>We are done<br/>
-</pre>
-
-<div class="center-justified text-content">
-        I’ll use a break statement with if condition (<mark>i == 2 && j == 6</mark>) inside the j loop and another if condition (<mark>i == 2</mark>) after execution of j loop.
-</div>
-<pre class="zeropadding">
-  <br/>for( i in 1..3){<br/>        for (j in 5..7){<br/>            if(i == 2 && j == 6) break<br/>            print ((i * 100) + j)<br/>            print(" ")<br/>        }<br/>        <br/>        if(i == 2) break<br/>        println( i.toString() + " loop ends")<br/>    }<br/>    <br/>println("We are done")<br/>
-</pre>
-
-<div class="center-justified text-content">
-        We need to add two condition checks and break statements because the break statement only works for the nearest enclosing loop.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        What if I say there is a better way to do the same in Kotlin.
-        </br>
-        Label the <mark>i loop</mark> and <mark>break</mark> the same loop using label reference by checking the condition inside the <mark>j loop</mark>.
-</div>
-<pre class="zeropadding">
-  <br/><b>loopi@</b> for( i in 1..3){<br/>        for (j in 5..7){<br/>            if(i == 2 && j == 6) <b>break@loopi</b><br/>            print ((i * 100) + j)<br/>            print(" ")<br/>        }        <br/>        println( i.toString() + " loop ends")<br/>    }<br/>    <br/>println("We are done")<br/>
-</pre>
-
-<div class="center-justified text-content">
-        In the above code, we labelled the outer loop as <mark>loopi</mark> and while checking the condition we break the loop using the same label. And this will break the entire execution of the loops when the condition will be true.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        The same can be used with <mark>continue</mark> expression also. The continue expression also works for the nearest enclosing loop but if we want to continue the outer loop, we can use the label reference.
-</div>
-<pre class="zeropadding">
-  <br/><b>loopi@</b> for( i in 1..3){<br/>        for (j in 5..7){<br/>            if(i == 2 && j == 6) <b>continue@loopi</b><br/>            print ((i * 100) + j)<br/>            print(" ")<br/>        }        <br/>        println( i.toString() + " loop ends")<br/>    }<br/>    <br/>println("We are done")<br/>
-</pre>
-
-<div class="center-justified text-content">
-        And the output will be
-</div>
-<pre class="zeropadding">
-  <br/>105 106 107 1 loop ends <br/>205 <br/>305 306 307 3 loop ends <br/>We are done<br/>
-</pre>
-
-<div class="center-justified text-content">
-        Now that we understand that labels can be used to <mark>break</mark> or <mark>continue</mark> the non-nearest enclosing loops, lets understand the use of label reference in <mark>return</mark> expression.
-        </br>
-        </br>
-        With function literals, local functions and object expression, functions can be nested in Kotlin. Qualified returns allow us to return from an outer function.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        Lets take an example of labmda expression.
-</div>
-<pre class="zeropadding">
-  <br/>fun somefunction() {<br/>    listOf(1, 2, 3, 4, 5).forEach {<br/>        if (it == 3) return<br/>        print(it)<br/>        println()<br/>    }<br/>    println("I will never be printed :( ")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        In the above code, the function will return from the outer most function when the condition will be true and the output will be
-</div>
-<pre class="zeropadding">
-  <br/>1 2<br/>
-</pre>
-
-<div class="center-justified text-content"> 
-        </br>
-        If we need to return from a lambda expression, we have to label it and qualify the <mark>return</mark>.
-</div>
-<pre class="zeropadding">
-  <br/>fun somefunction() {<br/>    listOf(1, 2, 3, 4, 5).forEach <b>lambda@</b>{<br/>        if (it == 3) <b>return@lambda</b> <br/>        print(it)<br/>        print(" ")<br/>    }<br/>    println("I'll be printed too :) ")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        And the output will be
-</div>
-<pre class="zeropadding">
-  <br/>1 2 4 5 I'll be printed too :)<br/>
-</pre>
-
-<div class="center-justified text-content">
-        The reason why 4 and 5 were printed is that the forEach loop was called for each and every value separately. The condition for it == 3 passes and <mark>return</mark> for that condition only but not for 4 and 5.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        We can even use the implicit labels that are the same name as the function to which the lambda is passed and we don’t have to define the label explicitly.
-</div>
-<pre class="zeropadding">
-  <br/>fun somefunction() {<br/>    listOf(1, 2, 3, 4, 5).forEach {<br/>        if (it == 3) <b>return@forEach</b><br/>        print(it)<br/>        print(" ")<br/>    }<br/>    println("I'll be printed too :) ")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        In the above example, we can even replace the lambda expression with an anonymous function. A <mark>return</mark> statement in an anonymous function will return from the anonymous function only and rest of the code will execute normally.
-</div>
-<pre class="zeropadding">
-  <br/>fun somefunction() {<br/>    listOf(1, 2, 3, 4, 5).forEach(fun(value: Int) {<br/>        if (value == 3) return<br/>        print(value)<br/>        print(" ")<br/>    })<br/>    print("I'll be printed too :) ")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        The above code works as similar to the continue statement in <mark>for</mark> loop and will still print 4 and 5. If we want to <mark>break</mark> the loop or function execution based on some condition, we can use a nested labmda expression along with label referencing.
-</div>
-<pre class="zeropadding">
-  <br/>fun somefunction() {<br/>    run <b>loop@</b>{<br/>        listOf(1, 2, 3, 4, 5).forEach {<br/>            if (it == 3) <b>return@loop</b><br/>            print(it)<br/>            print(" ")<br/>        }<br/>    }<br/>    print("Now I'll be printed too :) ")<br/>}<br/>
-</pre>
-
-<div class="center-justified text-content">
-        In the above code, the inner lambda expression will return from outer lambda expression that is labelled as <mark>loop</mark> based on the condition and will execute after the outer lambda expression.
-        </br>
-        </br>
-        The output for the above code will be
-</div>
-<pre class="zeropadding">
-  <br/>1 2 I'll be printed too :)<br/>
-</pre>
-
-<div class="center-justified text-content">
-        </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/returns.html" target="_blank">Kotlin docs</a>
-        </br>
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</div>
-<div class="col-lg-2 position-sticky-top">
-<div class="googleads">
-    
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-1093303282603666"
-        data-ad-slot="5801291010"
-        data-ad-format="vertical"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</div>
-</div>
-<div class="col-xs-12 center-justified text-subtitle">
-    <div class="col-sm-6 col-xs-12">
-        <a href="/blogs/">
-        &lt;&lt; All Blogs
-      </a>
-    </div>
-    <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/the-nothing-type-kotlin/">
-        The Nothing Type : Kotlin &gt;&gt;
-      </a>
-    </div>
-</div>
-
-        </div>
-    </article>
-</main>
-
-<script
-    data-name="BMC-Widget" 
-    data-cfasync="false" 
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-    data-id="agrawalsuneet" 
-    data-description="Support me on Buy me a coffee!" 
-    data-message="If you find this blog helpful, support us to keep this website up and free !!!" 
-    data-color="#ff813f" 
-    data-position="Right" 
-    data-x_margin="18" 
-    data-y_margin="18"></script>
-
- 
-<div id="disqus_thread">
-    <div id="disqus_empty"></div>
-</div>
-
-<script type="text/javascript" defer>
-
-    function onContentScrolled(e) {
-        var currentScroll = document.scrollingElement.scrollTop;
-        var disqus_target = document.getElementById('disqus_thread');
-
-        if (disqus_target && (currentScroll > disqus_target.getBoundingClientRect().top - 150)) {
-            load_disqus();
-            console.log('Disqus comments loaded');
-        }
-    }
-
-    function load_disqus() {
-        if (window.location.hostname == "localhost") {
-            var content = document.getElementById("content");
-            content.removeEventListener('scroll', onContentScrolled, false)
-            return;
-        }
-
-        
-        var is_disqus_empty = document.getElementById('disqus_empty'),
-            disqus_target = document.getElementById('disqus_thread'),
-            disqus_embed = document.createElement('script'),
-            disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
-
-        var disqus_shortname = 'agrawalsuneet';
-
-        
-        if (disqus_target && is_disqus_empty) {
-            disqus_embed.type = 'text/javascript';
-            disqus_embed.async = true;
-            disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            disqus_hook.appendChild(disqus_embed);
-            is_disqus_empty.remove();
-        }
-
-        var content = document.getElementById("content");
-        content.removeEventListener('scroll', onContentScrolled, false)
-
-        
-        let remove_ads = setInterval(() => {
-            console.log('Checking for Disqus Ads');
-
-            let iframes = document.getElementsByTagName('iframe');
-
-            for (var iframe in iframes) {
-                
-                
-                
-
-                
-                
-                
-                
-                
-
-                if (iframes[iframe].id.includes("dsq") 
-                && iframes[iframe].name.includes("dsq") 
-                && !iframes[iframe].src.includes("disqus.com/embed/comments")) {
-                    iframes[iframe].style.display = 'none';
-                    clearInterval(remove_ads);
-                    console.log('Disqus Ads removed');
-                }
-            }
-        }, 1000);
-
-        setTimeout(function () {
-            clearInterval(remove_ads);
-        }, 5000);
-    }
-
-    (function () {
-        var content = document.getElementById("content");
-        content.addEventListener('scroll', onContentScrolled, false);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-  </div>
-
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
 
   
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1093303282603666"
+     crossorigin="anonymous">
+  </script>
 
-    ga('create', 'code-here', 'auto');
-    ga('send', 'pageview');
-    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  <script>
+  function onErrorLoadingAds() {
+    console.log("AdBlocker blocks the ads")
+  }
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
+  onerror="onErrorLoadingAds()">
   </script>
   
 
+  
+  <meta name="google-site-verification" content="WsYlsB659Cuy0GKk82CS1ogZoTK0FIxmdSE759c1rMU" />
+  
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- Plugins Stylesheets -->
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/splitting/splitting.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/animate/animate.css" />
+
+  <!-- Main Stylesheets -->
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/scss/style.min.css" />
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/template-dark/dark.css" />
   
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+
   
-  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WET08JY2Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WET08JY2Z');
+  </script>
   
+
+  </head>
+
+<body class="page dark-skin">
+  <div class="container-page ">
+    <!-- Preloader -->
+    
+<div class="preloader">
+  <div class="centrize full-width">
+    <div class="vertical-center">
+      <div class="spinner-logo">
+		
+        <img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="https://agrawalsuneet.github.io/Suneet%20Agrawal" />
+        <div class="spinner-dot"></div>
+        <div class="spinner spinner-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Header -->
+    
+<header class="header">
+	<div class="header__builder">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+				
+				<div class="logo">
+					<a href="https://agrawalsuneet.github.io/">
+            			
+						<img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="Suneet Agrawal" />
+					</a>
+				</div>
+
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+
+				
+				<a href="#" class="switcher-btn" aria-label="switcher-button">
+					<span class="sw-before">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+							<path id="Dark_Theme" data-name="Dark Theme" fill="#000" d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z" transform="translate(-1737 -98)" />
+						</svg>
+					</span>
+					<span class="sw-after">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313" viewBox="0 0 22.22 22.313">
+							<path id="Light_Theme" data-name="Light Theme" fill="#fff" d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z" transform="translate(-1737.44 -98.313)" />
+						</svg>
+					</span>
+				</a>
+
+				
+				<a href="#" class="menu-btn" aria-label="menu-button">
+					<span></span>
+					<span></span>
+				</a>
+
+				
+				<div class="menu-full-overlay">
+					<div class="menu-full-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									
+									<div class="menu-full">
+										<ul class="menu-full">
+											
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//">Home</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item menu-item-has-children has-children">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publications">Publications</a>
+                        
+                        <ul class="sub-menu">
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/blogs">Blogs</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/slides">Slides</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/gists">Gists</a></li>
+                          
+                        </ul>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publicappearances">Public Appearances</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//personalgamesandapps">Personal Games &amp; Apps</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//opensourcecontribution">Open Source Contribution</a>
+                        
+                      </li>
+                      
+										</ul>
+									</div>
+
+									
+									<div class="menu-social-links">
+                    
+                    <a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Linkedin">
+                      <i aria-hidden="true" class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Github">
+                      <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    
+                    <a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Medium">
+                      <i aria-hidden="true" class="fab fa-medium"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Youtube">
+                      <i aria-hidden="true" class="fab fa-youtube"></i>
+                    </a>
+                    
+									</div>
+
+									<div class="v-line-block"><span></span></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-overlay"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+    <!-- Wrapper -->
+		<div class="wrapper single-post">
+      
+
+
+
+<section class="section section-inner started-heading">
+	<div class="container">
+
+		
+		<div class="m-titles align-center">
+			<div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				
+				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
+				
+				
+				/ June 8, 2018 / 5 mins read / By Suneet Agrawal
+			</div>
+			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Label Reference in Kotlin
+			</h1>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+<section class="section section-inner m-archive">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+				
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+						<p>Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by <code>@</code> sign in front of any expression.</p>
+<p>Let me give you an example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>loopi<span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#66d9ef">for</span>( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">5</span>){
+</span></span><span style="display:flex;"><span>     print(i)
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p>But what is the use? Where I am going to use this label and why would I use it?</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>These labels are really helpful when dealing with nested loops or nested functions.</p>
+<p>Will explain the use cases in detail of label references but before that, we need to understand what are jump and return expressions.</p>
+<ul>
+<li><code>break</code> : Terminates the nearest enclosing loop.</li>
+<li><code>continue</code> : Proceeds to the next step of the nearest enclosing loop.</li>
+<li><code>return</code> : Return from the nearest enclosing function or anonymous function.</li>
+</ul>
+<p>Now let’s take an example of nested loop first to understand the use of label reference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">for</span>( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">3</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (j <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">5.</span>.<span style="color:#ae81ff">7</span>){
+</span></span><span style="display:flex;"><span>            print ((i * <span style="color:#ae81ff">100</span>) + j)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        println( i.toString() + <span style="color:#e6db74">&#34; loop ends&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;We are done&#34;</span>)
+</span></span></code></pre></div><p>The output of the above code is</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">105</span> <span style="color:#ae81ff">106</span> <span style="color:#ae81ff">107</span> <span style="color:#ae81ff">1</span> loop ends 
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">205</span> <span style="color:#ae81ff">206</span> <span style="color:#ae81ff">207</span> <span style="color:#ae81ff">2</span> loop ends 
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">305</span> <span style="color:#ae81ff">306</span> <span style="color:#ae81ff">307</span> <span style="color:#ae81ff">3</span> loop ends 
+</span></span><span style="display:flex;"><span>We are done
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>Now in the above example, what if I want to break the <code>i loop</code> (means the entire execution of loops) when <code>i equals to 2</code> and <code>j equals to 6</code> but still want to execute below code of lines.</p>
+<p>Means I want the output as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">105</span> <span style="color:#ae81ff">106</span> <span style="color:#ae81ff">107</span> <span style="color:#ae81ff">1</span> loop ends 
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">205</span> 
+</span></span><span style="display:flex;"><span>We are done
+</span></span></code></pre></div><p>I’ll use a break statement with if condition (<code>i == 2 &amp;&amp; j == 6</code>) inside the j loop and another if condition (<code>i == 2</code>) after execution of j loop.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">for</span>( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">3</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (j <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">5.</span>.<span style="color:#ae81ff">7</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> j <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>) <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>            print ((i * <span style="color:#ae81ff">100</span>) + j)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        println( i.toString() + <span style="color:#e6db74">&#34; loop ends&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;We are done&#34;</span>)
+</span></span></code></pre></div><p>We need to add two condition checks and break statements because the break statement only works for the nearest enclosing loop.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>What if I say there is a better way to do the same in Kotlin.</p>
+<p>Label the <code>i loop</code> and <code>break</code> the same loop using label reference by checking the condition inside the <code>j loop</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>loopi<span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#66d9ef">for</span>( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">3</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (j <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">5.</span>.<span style="color:#ae81ff">7</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> j <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>) <span style="color:#66d9ef">break</span><span style="color:#a6e22e">@loopi</span>
+</span></span><span style="display:flex;"><span>            print ((i * <span style="color:#ae81ff">100</span>) + j)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        }        
+</span></span><span style="display:flex;"><span>        println( i.toString() + <span style="color:#e6db74">&#34; loop ends&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;We are done&#34;</span>)
+</span></span></code></pre></div><p>In the above code, we labelled the outer loop as <code>loopi</code> and while checking the condition we break the loop using the same label. And this will break the entire execution of the loops when the condition will be true.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>The same can be used with <code>continue</code> expression also. The continue expression also works for the nearest enclosing loop but if we want to continue the outer loop, we can use the label reference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>loopi<span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#66d9ef">for</span>( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">3</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (j <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">5.</span>.<span style="color:#ae81ff">7</span>){
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> j <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>) <span style="color:#66d9ef">continue</span><span style="color:#a6e22e">@loopi</span>
+</span></span><span style="display:flex;"><span>            print ((i * <span style="color:#ae81ff">100</span>) + j)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        }        
+</span></span><span style="display:flex;"><span>        println( i.toString() + <span style="color:#e6db74">&#34; loop ends&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;We are done&#34;</span>)
+</span></span></code></pre></div><p>And the output will be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">105</span> <span style="color:#ae81ff">106</span> <span style="color:#ae81ff">107</span> <span style="color:#ae81ff">1</span> loop ends 
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">205</span> 
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">305</span> <span style="color:#ae81ff">306</span> <span style="color:#ae81ff">307</span> <span style="color:#ae81ff">3</span> loop ends 
+</span></span><span style="display:flex;"><span>We are done
+</span></span></code></pre></div><p>Now that we understand that labels can be used to <code>break</code> or <code>continue</code> the non-nearest enclosing loops, lets understand the use of label reference in <code>return</code> expression.</p>
+<p>With function literals, local functions and object expression, functions can be nested in Kotlin. Qualified returns allow us to return from an outer function.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>Lets take an example of labmda expression.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">somefunction</span>() {
+</span></span><span style="display:flex;"><span>    listOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>).forEach {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">it</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#66d9ef">it</span>)
+</span></span><span style="display:flex;"><span>        println()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;I will never be printed :( &#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above code, the function will return from the outer most function when the condition will be true and the output will be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>If we need to return from a lambda expression, we have to label it and qualify the <code>return</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">somefunction</span>() {
+</span></span><span style="display:flex;"><span>    listOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>).forEach lambda<span style="color:#960050;background-color:#1e0010">@</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">it</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#66d9ef">return</span><span style="color:#a6e22e">@lambda</span> 
+</span></span><span style="display:flex;"><span>        print(<span style="color:#66d9ef">it</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;I&#39;ll be printed too :) &#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And the output will be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">5</span> I<span style="color:#960050;background-color:#1e0010">&#39;</span>ll be printed too :)
+</span></span></code></pre></div><p>The reason why 4 and 5 were printed is that the forEach loop was called for each and every value separately. The condition for it == 3 passes and <code>return</code> for that condition only but not for 4 and 5.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>We can even use the implicit labels that are the same name as the function to which the lambda is passed and we don’t have to define the label explicitly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">somefunction</span>() {
+</span></span><span style="display:flex;"><span>    listOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>).forEach {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">it</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#66d9ef">return</span><span style="color:#a6e22e">@forEach</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#66d9ef">it</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;I&#39;ll be printed too :) &#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above example, we can even replace the lambda expression with an anonymous function. A <code>return</code> statement in an anonymous function will return from the anonymous function only and rest of the code will execute normally.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">somefunction</span>() {
+</span></span><span style="display:flex;"><span>    listOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>).forEach(<span style="color:#66d9ef">fun</span>(<span style="color:#66d9ef">value</span>: Int) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#66d9ef">value</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;I&#39;ll be printed too :) &#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The above code works as similar to the continue statement in <code>for</code> loop and will still print 4 and 5. If we want to <code>break</code> the loop or function execution based on some condition, we can use a nested labmda expression along with label referencing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">somefunction</span>() {
+</span></span><span style="display:flex;"><span>    run loop<span style="color:#960050;background-color:#1e0010">@</span>{
+</span></span><span style="display:flex;"><span>        listOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>).forEach {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">it</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) <span style="color:#66d9ef">return</span><span style="color:#a6e22e">@loop</span>
+</span></span><span style="display:flex;"><span>            print(<span style="color:#66d9ef">it</span>)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Now I&#39;ll be printed too :) &#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above code, the inner lambda expression will return from outer lambda expression that is labelled as <code>loop</code> based on the condition and will execute after the outer lambda expression.</p>
+<p>The output for the above code will be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> I<span style="color:#960050;background-color:#1e0010">&#39;</span>ll be printed too :)
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+
+
+						
+						<div class="tags-links">
+							<span>Tags:</span>
+							
+							<a href="https://agrawalsuneet.github.io/tags/kotlin/" rel="tag">Kotlin</a>
+							
+						</div>
+						
+
+						
+					</div>
+				</div>
+
+				
+				
+				<div class="comments-post scrolla-element-anim-1 scroll-animate" data-animate="active">
+					<div class="section__comments">
+
+						<div class="m-titles">
+							<div class="m-title align-left">Comments</div>
+						</div>
+
+						<div class="comments">
+							<div id="disqus_trigger" class="load-more">
+								<button onclick="load_disqus()" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<span>Load Comments</span>
+								</a>
+							</div>
+							<div id="disqus_thread"></div>
+							<script>
+								function load_disqus() {
+								  
+								  var disqus_trigger = document.getElementById('disqus_trigger'),
+									  disqus_target = document.getElementById('disqus_thread'),
+									  disqus_embed  = document.createElement('script'),
+									  disqus_hook   = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+								
+								  
+								  if( disqus_target && disqus_trigger ) {
+									disqus_embed.type = 'text/javascript';
+									disqus_embed.async = true;
+									disqus_embed.src = 'https://agrawalsuneet.disqus.com/embed.js';
+									disqus_hook.appendChild(disqus_embed);
+									disqus_trigger.remove();
+									console.log('Disqus loaded');
+
+									
+									let remove_ads = setInterval(() => {
+										console.log('Checking for Disqus Ads');
+
+										let iframes = document.getElementsByTagName('iframe');
+
+										for (var iframe in iframes) {
+											if (iframes[iframe].id.includes("dsq") 
+											&& iframes[iframe].name.includes("dsq") 
+											&& !iframes[iframe].src.includes("disqus.com/embed/comments")) {
+												iframes[iframe].style.display = 'none';
+												clearInterval(remove_ads);
+												console.log('Disqus Ads removed');
+											}
+										}
+									}, 1000);
+
+									setTimeout(function () {
+										clearInterval(remove_ads);
+									}, 5000);
+								  }
+								}
+							</script>
+							
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+	</div>
+</section>
+
+
+
+<div class="section section-inner m-page-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				<div class="h-titles h-navs">
+					
+					<a href="https://agrawalsuneet.github.io/blogs/tuple-in-swift/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Previous Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							Tuple in Swift
+						</span>
+					</a>
+					
+					</br>
+					</br>
+					
+					<a href="https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Next Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							The Nothing Type : Kotlin
+						</span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    
+<div class="footer">
+	<div class="footer__builder">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				<a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" title="Linkedin">
+				  <i aria-hidden="true" class="fab fa-linkedin"></i>
+				</a>
+				
+				<a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" title="Github">
+				  <i aria-hidden="true" class="fab fa-github"></i>
+				</a>
+				
+				<a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Medium">
+				  <i aria-hidden="true" class="fab fa-medium"></i>
+				</a>
+				
+				<a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Youtube">
+				  <i aria-hidden="true" class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		  </div>
+
+		  
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+				© 2023 <strong>Suneet</strong>. All rights reserved
+			</div>
+		  </div>
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Developed by <strong>Suneet Agrawal</strong>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Cursor -->
+	<div class="cursor"></div>
+
+  <!-- Scripts -->
+  <script src="https://agrawalsuneet.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/validate/jquery.validate.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/splitting/splitting.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/isotope/isotope.pkgd.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/jarallax/jarallax.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/scrolla/jquery.scrolla.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/skrollr/skrollr.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/cookie/jquery.cookie.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/typed/typed.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/rrssb/rrssb.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/plugins/mark/mark.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/fuse/fuse.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/search/simple-search.js"></script>
+
+
+
+<script src="https://agrawalsuneet.github.io/js/form-handler.min.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/js/common.min.js"></script>
+
 </body>
+
 </html>

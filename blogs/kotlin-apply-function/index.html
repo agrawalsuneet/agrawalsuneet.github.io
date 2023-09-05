@@ -1,68 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Kotlin apply function &middot; Suneet Agrawal</title>
 
-<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+  <!-- Meta -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
 
-    
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WCXZ73G');
-    </script>
-    
+  <meta name="author" content="Suneet Agrawal" />  
+  <meta name="owner" content="Suneet Agrawal">
+  <meta property="twitter:title" content="Suneet Agrawal">
 
-    
-    <script data-ad-client="ca-pub-1093303282603666" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-    </script>
-
-    <script>
-    function onErrorLoadingAds() {
-      console.log("AdBlocker blocks the ads")
-    }
-    </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
-    onerror="onErrorLoadingAds()"></script>
-    
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
-
-    <meta property="og:site_name" content="Suneet Agrawal">
-
-    <meta name="robots" content="index,follow">
-    <meta name="keywords" content="kotlin apply,apply kotlin,apply function kotlin,.apply kotlin">
-
-
-    
-    <meta name="author" content="Suneet Agrawal">
-    <meta name="owner" content="Suneet Agrawal">
-    <meta name="google-site-verification" content="ossQ8_U15s60mLv7-z4koMhDohVCMlfnvv3Ifb88mdU">
-
-    <meta name="title" content="Suneet Agrawal | Kotlin apply function" />
-    <meta property="og:title" content="Kotlin apply function">
-    <meta property="twitter:title" content="Kotlin apply function">
-    <meta name="twitter:site" content="@agrawalsuneet">
-
-    <meta name="topic" content="Kotlin apply function">
+  <meta name="topic" content="Kotlin apply function">
     <meta name="description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta property="og:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta property="twitter:description" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta name="abstract" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function.">
     <meta name="summary" content="Scope functions are nothing but the functions which define a scope to the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of that operation or operations from the scope function."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2021-04-29 "> 
+    <meta property="article:published_time" content=" 2020-04-27 "> 
 
     <meta name="url" content="https://agrawalsuneet.github.io/blogs/kotlin-apply-function/">
     <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/kotlin-apply-function/">
@@ -70,12 +28,10 @@
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
-
-    <meta name="category" content="Portfolio">
-    <meta name="email" content="agrawalsuneet@gmail.com">
-    <meta name="og:email" content="agrawalsuneet@gmail.com">
-
-    <meta name="twitter:creator" content="@agrawalsuneet">
+    
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="kotlin apply,apply kotlin,apply function kotlin,.apply kotlin">
+    
     <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/kotlin-apply-function/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
@@ -84,534 +40,668 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
     <meta property="og:tags" content="Kotlin"> 
-    <meta property="og:tags" content="Android"> 
-    <title>Kotlin apply function &middot; Suneet Agrawal</title>
 
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/style.css">
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/custom.css">
-    <link rel="stylesheet" href="https://agrawalsuneet.github.io/css/layout.css"> 
-    <link href="https://agrawalsuneet.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Suneet Agrawal" />  
-    <link rel="icon" href="https://agrawalsuneet.github.io/suneet_icon.ico" /> 
-</head>
-
-<body>
-
-    
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCXZ73G" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-    
-
-    
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			
-				<a class="navbar-brand" href="https://agrawalsuneet.github.io/">Suneet Agrawal</a>
-			
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				
-				
-					<li><a href="https://agrawalsuneet.github.io/publications">Publications</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/publicappearances">Public Appearances</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/personalgamesandapps">Personal Games &amp; Apps</a></li>
-				
-					<li><a href="https://agrawalsuneet.github.io/opensourcecontribution">Open Source Contribution</a></li>
-				
-			</ul>
-		</div>
-	</div>
-</nav>
-<div class="container-fluid">
-	<div class="row">
-		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
-	<div id="menu-content" class="vertical-align">
-
-		
-			<a href="https://agrawalsuneet.github.io/">
-				<img id="profile-pic" src="https://agrawalsuneet.github.io//img/suneet.jpg" alt="My Picture" class="img-circle center-block">
-			</a>
-		
-
-		
-			<h1 class="text-center" style="font-size:30px;">
-				<a href="https://agrawalsuneet.github.io/">
-					Suneet Agrawal
-				</a>
-		</h1>
-		
-
-		
-
-		<div id="links" class="text-center" style="margin-top:50px; margin-bottom:50px; font-size:24px; color:#ffffff">
-			
-			
-				<a href="https://agrawalsuneet.github.io/publications">
-						Publications
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/publicappearances">
-						Public Appearances
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/personalgamesandapps">
-						Personal Games &amp; Apps
-				</a>
-				</br>
-			
-				<a href="https://agrawalsuneet.github.io/opensourcecontribution">
-						Open Source Contribution
-				</a>
-				</br>
-			
-		</div>
-
-		<div id="social" class="text-center">
-			
-				<a href="https://github.com/agrawalsuneet"><i class="fa fa-github fa-2x"></i></a>
-			
-				<a href="https://www.linkedin.com/in/agrawalsuneet/"><i class="fa fa-linkedin fa-2x"></i></a>
-			
-				<a href="https://medium.com/@agrawalsuneet"><i class="fa fa-medium fa-2x"></i></a>
-			
-				<a href="https://www.instagram.com/agrawalsuneet/"><i class="fa fa-instagram fa-2x"></i></a>
-			
-				<a href="https://www.facebook.com/agrawalsuneet"><i class="fa fa-facebook fa-2x"></i></a>
-			
-
-			<a href="mailto:agrawalsuneet@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
-		</div>
-
-
-
-	</div>
-</div>
-
-		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
-			<div class="row">
-				<div id="post" class="col-xs-12">
- 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-112616552-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-<main>
-    <header>
-        <h1 class="mx16">Kotlin apply function</h1>
-    </header>
-
-    <div class="col-xs-12 vertical-centre">
-        
-        <small class="text-muted">
-			
-			
-				<a href="https://agrawalsuneet.github.io/tags/kotlin"><span class="label label-success">Kotlin</span></a>
-			
-				<a href="https://agrawalsuneet.github.io/tags/android"><span class="label label-success">Android</span></a>
-			
-		</small> 
-
-        
-
-    </div>
-
-    <article>
-        <div class="col-xs-12">
-            </br>
-<div class="row">
-<div class="col-lg-10">
-<div class="center-justified text-content">
-        In continuation to my previous post where I explained about <a href="/blogs/kotlin-let-function/" target="_blank">Kotlin let function</a>, let's try to understand today about <mark>apply</mark> function today.
-        </br>
-        </br>
-        Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        There are a few scope functions
-        <ul>
-                <li><a href="/blogs/kotlin-let-function/" target="_blank">let</a></li>
-                <li><a href="/blogs/kotlin-with-function/" target="_blank">with</a></li>
-                <li><a href="/blogs/kotlin-run-function/" target="_blank">run</a></li>
-                <li>apply</li>
-                <li><a href="/blogs/kotlin-also-function/" target="_blank">also</a></li>
-        </ul>
-        </br>
-        To keep this article short and to the point, we will talk only about <mark>apply</mark> in this article and all the use cases around it.
-        </br>
-        </br>
-        <mark>apply</mark> scope function is used to configure the object once initialized and returns the object itself. The context object is available inside the apply function as <mark>this</mark>.
-        </br>
-        </br>
-        To understand <mark>apply</mark> function lets look at the implementation of <mark>apply</mark> function first.
-</div>
-<pre class="zeropadding">
-  <br/>/**<br/> * Calls the specified function [block] <br/> * with `this` value as its receiver <br/> * and returns `this` value.<br/> *<br/> */<br/>@kotlin.internal.InlineOnly<br/>public inline fun &lt;T&gt; T.<b>apply</b>(block: T.() -> Unit): T {<br/>    contract {<br/>        callsInPlace(block, InvocationKind.EXACTLY_ONCE)<br/>    }<br/>    block()<br/>    return this<br/>}<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        <mark>apply</mark> is an extension function to Template class which takes a lambda as a parameter, apply contract on it, execute the lambda function within the scope of calling object and ultimately return the same calling object of Template class itself.
-</div>
-</br>
-<h3>
-        This clarifies a few things
-</h3>
-<div class="center-justified text-content">
-        <ol>
-                <li>The return type of the <mark>apply</mark> function is nothing but the same calling object.</li>
-                <li>Since its an extension function to the Template class, it can be called on any object.</li>
-        </ol>
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</br>
-<h3>
-        Now let's understand what is the contract
-</h3>
-<div class="center-justified text-content">
-        The contract is nothing but a contract applied to the passed lambda as a parameter.
-</div>
-<pre class="zeropadding">
-  <br/>/**<br/> * Specifies the contract of a function.<br/> *<br/> * The contract description must be at the beginning of a function and have at least one effect.<br/> *<br/> * Only the top-level functions can have a contract for now.<br/> *<br/> * @param builder the lambda where the contract of a function is described with the help of the [ContractBuilder] members.<br/> *<br/>@ContractsDsl<br/>@ExperimentalContracts<br/>@InlineOnly<br/>@SinceKotlin("1.3")<br/>@Suppress("UNUSED_PARAMETER")<br/>public inline fun <b>contract</b>(builder: ContractBuilder.() -> Unit) { }<br/>
-</pre>
-
-<div class="center-justified text-content">
-        This is exactly the same contract as to any other scope function. This superimposes some conditions on the lambda we passed as a parameter to the <mark>apply</mark> function. What conditions it superimposed, we need to check the parameter of the contract
-</div>
-</br>
-<h3>
-And what contract applied in the <mark>apply</mark> function ?
-</h3>
-<pre class="zeropadding">
-  <br/>/**<br/> * Specifies that the function parameter [lambda] is invoked in place.<br/> *<br/> * This contract specifies that:<br/> * 1. the function [lambda] can only be invoked during the call of the owner function,<br/> *  and it won't be invoked after that owner function call is completed;<br/> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,<br/> *  see the [InvocationKind] enum for possible values.<br/> *<br/> * A function declaring the `callsInPlace` effect must be _inline_.<br/> *<br/> */<br/>/* @sample samples.contracts.callsInPlaceAtMostOnceContract<br/>* @sample samples.contracts.callsInPlaceAtLeastOnceContract<br/>* @sample samples.contracts.callsInPlaceExactlyOnceContract<br/>* @sample samples.contracts.callsInPlaceUnknownContract<br/>*/<br/>@ContractsDsl public fun <R> <b>callsInPlace</b>(lambda: Function<R>, kind: InvocationKind = InvocationKind.UNKNOWN): CallsInPlace<br/>
-</pre>
-
-<div class="center-justified text-content">
-        It superimposes 2 conditions
-        <ol>
-        <li>The lambda will be invoked only during owner function call and it won't be called once the owner function is completed.</li>
-        <li>The number of times this lambda function will be invoked (which is exactly once in our case) which is an enum.</li>
-        </ol>
-        The above conditions are clear from there definition itself.
-</div>
-</br>
-<h3>
-        So basically, apply function will be
-</h3>
-<div class="center-justified text-content">
-        <ul>
-        <li>called only during the owner function will be called.</li>
-        <li>called ONLY ONCE.</li>
-        <li>called on the calling object.</li>
-        <li>and will return the object itself on which the <mark>apply</mark> function is called.</li>
-        </ul>
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<h3>
-Now let's look at the use cases
-</h3>
-<div class="center-justified text-content">
-        <mark>apply</mark> is recommended for lambdas that mainly operate on the object members or call its functions or assign properties. In short, it is mostly used for object configurations.
-</div>
-<pre class="zeropadding">
-  <br/>class <b>Employee</b> {<br/>    var firstName: String = ""<br/>    var age: Int = 0<br/>}<br/><br/>val employee = Employee().<b>apply</b>{<br/>        firstName = "Suneet Agrawal"<br/>        age = 27<br/>    }<br/>    <br/>println("name:${employee.firstName} age:${employee.age}" )<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        Please note that we can even point to the calling object by <mark>this</mark> but we can't use a named parameter in <mark>apply</mark>.
-</div>
-<pre class="zeropadding">
-  <br/>val employee = Employee().<b>apply</b>{<br/>        this.firstName = "Suneet Agrawal"<br/>        this.age = 27<br/>    }<br/>
-</pre>
-
-</br>
-<div class="center-justified text-content">
-        We can avoid the use of <mark>this</mark> pointer or use it to avoid the conflicts between other properties or objects with the same name within that class. It points to the calling object only.
-        </br>
-        </br>
-        There is no need to call the <mark>return</mark> from apply function. Although there won't be any compilation error. Since the return type of the lambda passed in apply function is <mark>Unit</mark>, no point of calling <mark>return</mark>.
-</div>
-<pre class="zeropadding">
-  <br/>val employee = Employee().<b>apply</b>{<br/>        this.firstName = "Suneet Agrawal"<br/>        this.age = 27<br/>        return //this line doesn't make sense at all<br/>    }<br/>
-</pre>
-
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-<div class="center-justified text-content">
-        We can even chain the <mark>apply</mark> function
-</div>
-<pre class="zeropadding">
-  <br/>class <b>Employee</b> {<br/>    var firstName: String = ""<br/>    var age: Int = 0<br/>    <br/>    fun somefunction(){<br/>        //do something here <br/>    }<br/>}<br/><br/>Employee().<b>apply</b>{<br/>        this.firstName = "Suneet Agrawal"<br/>        this.age = 27<br/>    }.somefunction()<br/>
-</pre>
-
-</br>
-<h3>
-        Two things to keep in mind about <mark>apply</mark>,
-</h3>
-<div class="center-justified text-content">
-        <ol>
-                <li><mark>apply</mark> uses the context as <mark>this</mark> and we can not use a named parameter instead of <mark>this</mark>.</li>
-                <li><mark>apply</mark> returns the calling object itself.</li>
-        </ol>
-        </br>
-        </br>
-        Reference: <a href="https://kotlinlang.org/docs/reference/scope-functions.html#apply" target="_blank">Kotlin docs</a>
-        </br>
-</div>
-<div class="col-xs-12 googleads">
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</div>
-<div class="col-lg-2 position-sticky-top">
-<div class="googleads">
-    
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-1093303282603666"
-        data-ad-slot="5801291010"
-        data-ad-format="vertical"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
-</div>
-</div>
-<div class="col-xs-12 center-justified text-subtitle">
-    <div class="col-sm-6 col-xs-12">
-        <a href="/blogs/">
-        &lt;&lt; All Blogs
-      </a>
-    </div>
-    <div class="col-sm-6 col-xs-12 text-right">
-        <a href="/blogs/kotlin-extension-property">
-        Kotlin Extension Property &gt;&gt;
-      </a>
-    </div>
-</div>
-
-        </div>
-    </article>
-</main>
-
-<script
-    data-name="BMC-Widget" 
-    data-cfasync="false" 
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-    data-id="agrawalsuneet" 
-    data-description="Support me on Buy me a coffee!" 
-    data-message="If you find this blog helpful, support us to keep this website up and free !!!" 
-    data-color="#ff813f" 
-    data-position="Right" 
-    data-x_margin="18" 
-    data-y_margin="18"></script>
-
- 
-<div id="disqus_thread">
-    <div id="disqus_empty"></div>
-</div>
-
-<script type="text/javascript" defer>
-
-    function onContentScrolled(e) {
-        var currentScroll = document.scrollingElement.scrollTop;
-        var disqus_target = document.getElementById('disqus_thread');
-
-        if (disqus_target && (currentScroll > disqus_target.getBoundingClientRect().top - 150)) {
-            load_disqus();
-            console.log('Disqus comments loaded');
-        }
-    }
-
-    function load_disqus() {
-        if (window.location.hostname == "localhost") {
-            var content = document.getElementById("content");
-            content.removeEventListener('scroll', onContentScrolled, false)
-            return;
-        }
-
-        
-        var is_disqus_empty = document.getElementById('disqus_empty'),
-            disqus_target = document.getElementById('disqus_thread'),
-            disqus_embed = document.createElement('script'),
-            disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
-
-        var disqus_shortname = 'agrawalsuneet';
-
-        
-        if (disqus_target && is_disqus_empty) {
-            disqus_embed.type = 'text/javascript';
-            disqus_embed.async = true;
-            disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            disqus_hook.appendChild(disqus_embed);
-            is_disqus_empty.remove();
-        }
-
-        var content = document.getElementById("content");
-        content.removeEventListener('scroll', onContentScrolled, false)
-
-        
-        let remove_ads = setInterval(() => {
-            console.log('Checking for Disqus Ads');
-
-            let iframes = document.getElementsByTagName('iframe');
-
-            for (var iframe in iframes) {
-                
-                
-                
-
-                
-                
-                
-                
-                
-
-                if (iframes[iframe].id.includes("dsq") 
-                && iframes[iframe].name.includes("dsq") 
-                && !iframes[iframe].src.includes("disqus.com/embed/comments")) {
-                    iframes[iframe].style.display = 'none';
-                    clearInterval(remove_ads);
-                    console.log('Disqus Ads removed');
-                }
-            }
-        }, 1000);
-
-        setTimeout(function () {
-            clearInterval(remove_ads);
-        }, 5000);
-    }
-
-    (function () {
-        var content = document.getElementById("content");
-        content.addEventListener('scroll', onContentScrolled, false);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-  </div>
-
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
 
   
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1093303282603666"
+     crossorigin="anonymous">
+  </script>
 
-    ga('create', 'code-here', 'auto');
-    ga('send', 'pageview');
-    window.baseURL = "https:\/\/agrawalsuneet.github.io\/";
+  <script>
+  function onErrorLoadingAds() {
+    console.log("AdBlocker blocks the ads")
+  }
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
+  onerror="onErrorLoadingAds()">
   </script>
   
 
+  
+  <meta name="google-site-verification" content="WsYlsB659Cuy0GKk82CS1ogZoTK0FIxmdSE759c1rMU" />
+  
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- Plugins Stylesheets -->
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/splitting/splitting.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/animate/animate.css" />
+
+  <!-- Main Stylesheets -->
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/scss/style.min.css" />
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/template-dark/dark.css" />
   
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+
   
-  <script src="https://agrawalsuneet.github.io//js/App.js"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WET08JY2Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WET08JY2Z');
+  </script>
   
+
+  </head>
+
+<body class="page dark-skin">
+  <div class="container-page ">
+    <!-- Preloader -->
+    
+<div class="preloader">
+  <div class="centrize full-width">
+    <div class="vertical-center">
+      <div class="spinner-logo">
+		
+        <img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="https://agrawalsuneet.github.io/Suneet%20Agrawal" />
+        <div class="spinner-dot"></div>
+        <div class="spinner spinner-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Header -->
+    
+<header class="header">
+	<div class="header__builder">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+				
+				<div class="logo">
+					<a href="https://agrawalsuneet.github.io/">
+            			
+						<img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="Suneet Agrawal" />
+					</a>
+				</div>
+
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+
+				
+				<a href="#" class="switcher-btn" aria-label="switcher-button">
+					<span class="sw-before">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+							<path id="Dark_Theme" data-name="Dark Theme" fill="#000" d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z" transform="translate(-1737 -98)" />
+						</svg>
+					</span>
+					<span class="sw-after">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313" viewBox="0 0 22.22 22.313">
+							<path id="Light_Theme" data-name="Light Theme" fill="#fff" d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z" transform="translate(-1737.44 -98.313)" />
+						</svg>
+					</span>
+				</a>
+
+				
+				<a href="#" class="menu-btn" aria-label="menu-button">
+					<span></span>
+					<span></span>
+				</a>
+
+				
+				<div class="menu-full-overlay">
+					<div class="menu-full-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									
+									<div class="menu-full">
+										<ul class="menu-full">
+											
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//">Home</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item menu-item-has-children has-children">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publications">Publications</a>
+                        
+                        <ul class="sub-menu">
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/blogs">Blogs</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/slides">Slides</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/gists">Gists</a></li>
+                          
+                        </ul>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publicappearances">Public Appearances</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//personalgamesandapps">Personal Games &amp; Apps</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//opensourcecontribution">Open Source Contribution</a>
+                        
+                      </li>
+                      
+										</ul>
+									</div>
+
+									
+									<div class="menu-social-links">
+                    
+                    <a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Linkedin">
+                      <i aria-hidden="true" class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Github">
+                      <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    
+                    <a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Medium">
+                      <i aria-hidden="true" class="fab fa-medium"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Youtube">
+                      <i aria-hidden="true" class="fab fa-youtube"></i>
+                    </a>
+                    
+									</div>
+
+									<div class="v-line-block"><span></span></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-overlay"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+    <!-- Wrapper -->
+		<div class="wrapper single-post">
+      
+
+
+
+<section class="section section-inner started-heading">
+	<div class="container">
+
+		
+		<div class="m-titles align-center">
+			<div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				
+				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
+				
+				
+				/ April 27, 2020 / 5 mins read / By Suneet Agrawal
+			</div>
+			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Kotlin apply function
+			</h1>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+
+<section class="section section-inner m-archive">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+				
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+						<p>In continuation to my previous post where I explained about <a href="/blogs/kotlin-let-function/">Kotlin let function</a>, let&rsquo;s try to understand today about <code>apply</code> function today.</p>
+<p>Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>There are a few scope functions</p>
+<ul>
+<li><a href="/blogs/kotlin-let-function/">let</a></li>
+<li><a href="/blogs/kotlin-with-function/">with</a></li>
+<li><a href="/blogs/kotlin-run-function/">run</a></li>
+<li>apply</li>
+<li><a href="/blogs/kotlin-also-function/">also</a></li>
+</ul>
+<p>To keep this article short and to the point, we will talk only about <code>apply</code> in this article and all the use cases around it.</p>
+<p><code>apply</code> scope function is used to configure the object once initialized and returns the object itself. The context object is available inside the apply function as <code>this</code>.</p>
+<p>To understand <code>apply</code> function lets look at the implementation of <code>apply</code> function first.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Calls the specified function [block] 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * with `this` value as its receiver 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * and returns `this` value.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@kotlin</span>.<span style="color:#66d9ef">internal</span>.InlineOnly
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">fun</span> <span style="color:#960050;background-color:#1e0010">&amp;</span><span style="color:#a6e22e">lt</span>;T&amp;gt; <span style="color:#a6e22e">T</span>.apply(block: <span style="color:#a6e22e">T</span>.() <span style="color:#f92672">-&gt;</span> Unit): T {
+</span></span><span style="display:flex;"><span>    contract {
+</span></span><span style="display:flex;"><span>        callsInPlace(block, <span style="color:#a6e22e">InvocationKind</span>.EXACTLY_ONCE)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    block()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>apply</code> is an extension function to Template class which takes a lambda as a parameter, apply contract on it, execute the lambda function within the scope of calling object and ultimately return the same calling object of Template class itself.</p>
+<h3 id="this-clarifies-a-few-things">This clarifies a few things</h3>
+<pre><code>    1. The return type of the `apply` function is nothing but the same calling object.
+    2. Since its an extension function to the Template class, it can be called on any object.
+</code></pre>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="now-lets-understand-what-is-the-contract">Now let&rsquo;s understand what is the contract</h3>
+<p>The contract is nothing but a contract applied to the passed lambda as a parameter.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>/**
+</span></span><span style="display:flex;"><span> * Specifies the contract of a function.
+</span></span><span style="display:flex;"><span> *
+</span></span><span style="display:flex;"><span> * The contract description must be at the beginning of a function and have at least one effect.
+</span></span><span style="display:flex;"><span> *
+</span></span><span style="display:flex;"><span> * Only the top-level functions can have a contract <span style="color:#66d9ef">for</span> now.
+</span></span><span style="display:flex;"><span> *
+</span></span><span style="display:flex;"><span> * <span style="color:#a6e22e">@param</span> builder the lambda <span style="color:#66d9ef">where</span> the contract of a function <span style="color:#66d9ef">is</span> described with the help of the [ContractBuilder] members.
+</span></span><span style="display:flex;"><span> *
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@ContractsDsl</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@ExperimentalContracts</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@InlineOnly</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@SinceKotlin</span>(<span style="color:#e6db74">&#34;1.3&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Suppress</span>(<span style="color:#e6db74">&#34;UNUSED_PARAMETER&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">contract</span>(builder: <span style="color:#a6e22e">ContractBuilder</span>.() <span style="color:#f92672">-&gt;</span> Unit) { }
+</span></span></code></pre></div><p>This is exactly the same contract as to any other scope function. This superimposes some conditions on the lambda we passed as a parameter to the <code>apply</code> function. What conditions it superimposed, we need to check the parameter of the contract</p>
+<h3 id="and-what-contract-applied-in-the-applyfunction-">And what contract applied in the <code>apply</code> function ?</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Specifies that the function parameter [lambda] is invoked in place.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * This contract specifies that:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * 1. the function [lambda] can only be invoked during the call of the owner function,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *  and it won&#39;t be invoked after that owner function call is completed;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * 2. _(optionally)_ the function [lambda] is invoked the amount of times specified by the [kind] parameter,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *  see the [InvocationKind] enum for possible values.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * A function declaring the `callsInPlace` effect must be _inline_.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* @sample samples.contracts.callsInPlaceAtMostOnceContract
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">* @sample samples.contracts.callsInPlaceAtLeastOnceContract
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">* @sample samples.contracts.callsInPlaceExactlyOnceContract
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">* @sample samples.contracts.callsInPlaceUnknownContract
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@ContractsDsl</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> &lt;<span style="color:#a6e22e">R</span>&gt; <span style="color:#a6e22e">callsInPlace</span>(lambda: Function&lt;R&gt;, kind: InvocationKind = <span style="color:#a6e22e">InvocationKind</span>.UNKNOWN): CallsInPlace
+</span></span></code></pre></div><p>It superimposes 2 conditions</p>
+<ol>
+<li>The lambda will be invoked only during owner function call and it won&rsquo;t be called once the owner function is completed.</li>
+<li>The number of times this lambda function will be invoked (which is exactly once in our case) which is an enum.</li>
+</ol>
+<p>The above conditions are clear from there definition itself.</p>
+<h3 id="so-basically-apply-function-willbe">So basically, apply function will be</h3>
+<ul>
+<li>called only during the owner function will be called.</li>
+<li>called ONLY ONCE.</li>
+<li>called on the calling object.</li>
+<li>and will return the object itself on which the <code>apply</code> function is called.</li>
+</ul>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="now-lets-look-at-the-usecases">Now let&rsquo;s look at the use cases</h3>
+<p><code>apply</code> is recommended for lambdas that mainly operate on the object members or call its functions or assign properties. In short, it is mostly used for object configurations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> firstName: String = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> age: Int = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> employee = Employee().apply{
+</span></span><span style="display:flex;"><span>        firstName = <span style="color:#e6db74">&#34;Suneet Agrawal&#34;</span>
+</span></span><span style="display:flex;"><span>        age = <span style="color:#ae81ff">27</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;name:</span><span style="color:#e6db74">${employee.firstName}</span><span style="color:#e6db74"> age:</span><span style="color:#e6db74">${employee.age}</span><span style="color:#e6db74">&#34;</span> )
+</span></span></code></pre></div><p>Please note that we can even point to the calling object by <code>this</code> but we can&rsquo;t use a named parameter in <code>apply</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> employee = Employee().apply{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.firstName = <span style="color:#e6db74">&#34;Suneet Agrawal&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.age = <span style="color:#ae81ff">27</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>We can avoid the use of <code>this</code> pointer or use it to avoid the conflicts between other properties or objects with the same name within that class. It points to the calling object only.</p>
+<p>There is no need to call the <code>return</code> from apply function. Although there won&rsquo;t be any compilation error. Since the return type of the lambda passed in apply function is <code>Unit</code>, no point of calling <code>return</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> employee = Employee().apply{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.firstName = <span style="color:#e6db74">&#34;Suneet Agrawal&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.age = <span style="color:#ae81ff">27</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#75715e">//this line doesn&#39;t make sense at all
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<p>We can even chain the <code>apply</code> function</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> firstName: String = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> age: Int = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">somefunction</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//do something here 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Employee().apply{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.firstName = <span style="color:#e6db74">&#34;Suneet Agrawal&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.age = <span style="color:#ae81ff">27</span>
+</span></span><span style="display:flex;"><span>    }.somefunction()
+</span></span></code></pre></div><h3 id="two-things-to-keep-in-mind-about-apply">Two things to keep in mind about <code>apply</code>,</h3>
+<ol>
+<li><code>apply</code> uses the context as <code>this</code> and we can not use a named parameter instead of <code>this</code>.</li>
+<li><code>apply</code> returns the calling object itself.</li>
+</ol>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+
+
+						
+						<div class="tags-links">
+							<span>Tags:</span>
+							
+							<a href="https://agrawalsuneet.github.io/tags/kotlin/" rel="tag">Kotlin</a>
+							
+						</div>
+						
+
+						
+					</div>
+				</div>
+
+				
+				
+				<div class="comments-post scrolla-element-anim-1 scroll-animate" data-animate="active">
+					<div class="section__comments">
+
+						<div class="m-titles">
+							<div class="m-title align-left">Comments</div>
+						</div>
+
+						<div class="comments">
+							<div id="disqus_trigger" class="load-more">
+								<button onclick="load_disqus()" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<span>Load Comments</span>
+								</a>
+							</div>
+							<div id="disqus_thread"></div>
+							<script>
+								function load_disqus() {
+								  
+								  var disqus_trigger = document.getElementById('disqus_trigger'),
+									  disqus_target = document.getElementById('disqus_thread'),
+									  disqus_embed  = document.createElement('script'),
+									  disqus_hook   = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+								
+								  
+								  if( disqus_target && disqus_trigger ) {
+									disqus_embed.type = 'text/javascript';
+									disqus_embed.async = true;
+									disqus_embed.src = 'https://agrawalsuneet.disqus.com/embed.js';
+									disqus_hook.appendChild(disqus_embed);
+									disqus_trigger.remove();
+									console.log('Disqus loaded');
+
+									
+									let remove_ads = setInterval(() => {
+										console.log('Checking for Disqus Ads');
+
+										let iframes = document.getElementsByTagName('iframe');
+
+										for (var iframe in iframes) {
+											if (iframes[iframe].id.includes("dsq") 
+											&& iframes[iframe].name.includes("dsq") 
+											&& !iframes[iframe].src.includes("disqus.com/embed/comments")) {
+												iframes[iframe].style.display = 'none';
+												clearInterval(remove_ads);
+												console.log('Disqus Ads removed');
+											}
+										}
+									}, 1000);
+
+									setTimeout(function () {
+										clearInterval(remove_ads);
+									}, 5000);
+								  }
+								}
+							</script>
+							
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+	</div>
+</section>
+
+
+
+<div class="section section-inner m-page-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				<div class="h-titles h-navs">
+					
+					<a href="https://agrawalsuneet.github.io/blogs/collections-in-kotlin/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Previous Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							Collections in Kotlin
+						</span>
+					</a>
+					
+					</br>
+					</br>
+					
+					<a href="https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Next Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							Native Android text sharing to particular app in Unity
+						</span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    
+<div class="footer">
+	<div class="footer__builder">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				<a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" title="Linkedin">
+				  <i aria-hidden="true" class="fab fa-linkedin"></i>
+				</a>
+				
+				<a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" title="Github">
+				  <i aria-hidden="true" class="fab fa-github"></i>
+				</a>
+				
+				<a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Medium">
+				  <i aria-hidden="true" class="fab fa-medium"></i>
+				</a>
+				
+				<a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Youtube">
+				  <i aria-hidden="true" class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		  </div>
+
+		  
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+				© 2023 <strong>Suneet</strong>. All rights reserved
+			</div>
+		  </div>
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Developed by <strong>Suneet Agrawal</strong>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Cursor -->
+	<div class="cursor"></div>
+
+  <!-- Scripts -->
+  <script src="https://agrawalsuneet.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/validate/jquery.validate.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/splitting/splitting.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/isotope/isotope.pkgd.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/jarallax/jarallax.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/scrolla/jquery.scrolla.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/skrollr/skrollr.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/cookie/jquery.cookie.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/typed/typed.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/rrssb/rrssb.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/plugins/mark/mark.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/fuse/fuse.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/search/simple-search.js"></script>
+
+
+
+<script src="https://agrawalsuneet.github.io/js/form-handler.min.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/js/common.min.js"></script>
+
 </body>
+
 </html>

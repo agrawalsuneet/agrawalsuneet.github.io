@@ -8,57 +8,120 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Nested Function in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/nested-function-in-javascript/</link>
+      <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/nested-function-in-javascript/</guid>
+      <description>JavaScript is a versatile and widely used programming language that empowers developers to create interactive and dynamic web applications. One of its powerful features is the ability to define functions within functions, known as nested functions.</description>
+    </item>
+    
+    <item>
+      <title>Date Object in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/date-object-in-javascript/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/date-object-in-javascript/</guid>
+      <description>Dates and time are fundamental concepts in programming, essential for tasks ranging from displaying the current date on a webpage to performing complex date calculations.</description>
+    </item>
+    
+    <item>
+      <title>Map vs Object : JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-vs-object-javascript/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-vs-object-javascript/</guid>
+      <description>In JavaScript, data structures play a vital role in organizing and manipulating data efficiently. Two commonly used data structures for storing key-value pairs are the Map and the Object.</description>
+    </item>
+    
+    <item>
+      <title>This Keyword in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/this-keyword-in-javascript/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/this-keyword-in-javascript/</guid>
+      <description>JavaScript is a versatile and dynamic programming language used extensively for web development. One of its key features is the this keyword, which plays a crucial role in determining the context of function execution.</description>
+    </item>
+    
+    <item>
+      <title>DrawDebugCylinder in Unreal</title>
+      <link>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</guid>
+      <description>Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences.</description>
+    </item>
+    
+    <item>
+      <title>DrawDebugSphere in Unreal</title>
+      <link>https://agrawalsuneet.github.io/blogs/drawdebugsphere-in-unreal/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/drawdebugsphere-in-unreal/</guid>
+      <description>Unreal Engine is a powerful and versatile game development framework that empowers developers to create stunning and immersive worlds. When it comes to debugging and visualizing game mechanics, Unreal Engine provides a variety of helpful tools, and one of them is DrawDebugSphere.</description>
+    </item>
+    
+    <item>
+      <title>DrawDebugLine in Unreal</title>
+      <link>https://agrawalsuneet.github.io/blogs/drawdebugline-in-unreal/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/drawdebugline-in-unreal/</guid>
+      <description>Debug visualization is a crucial aspect of game development, aiding programmers and artists in comprehending the behavior and interactions of various game elements.</description>
+    </item>
+    
+    <item>
+      <title>Set in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/set-in-javascript/</link>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/set-in-javascript/</guid>
+      <description>When it comes to managing collections of unique values in JavaScript, the Set object is a hidden gem that can greatly simplify your code and enhance your data handling.</description>
+    </item>
+    
+    <item>
+      <title>Map in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-in-javascript/</link>
+      <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-in-javascript/</guid>
+      <description>In the world of JavaScript, data manipulation is a crucial skill for developers. While arrays and objects are common choices for storing data, the Map data type is a powerful alternative that offers unique advantages.</description>
+    </item>
+    
+    <item>
+      <title>Map function in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-function-in-javascript/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-function-in-javascript/</guid>
+      <description>When it comes to working with arrays in JavaScript, the map() function is a versatile and powerful tool that should not be overlooked.</description>
+    </item>
+    
+    <item>
+      <title>Bind Function in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/bind-function-in-javascript/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/bind-function-in-javascript/</guid>
+      <description>JavaScript is a versatile programming language that empowers developers to create dynamic and interactive web applications. To harness its full potential, understanding its various features and functions is crucial.</description>
+    </item>
+    
+    <item>
+      <title>Closures in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/closures-in-javascript/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/closures-in-javascript/</guid>
+      <description>JavaScript, a language renowned for its versatility, offers a wealth of features that enable developers to create powerful and dynamic applications.</description>
+    </item>
+    
+    <item>
       <title>Vector in Java</title>
       <link>https://agrawalsuneet.github.io/blogs/vector-in-java/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/vector-in-java/</guid>
-      <description>Vectors are an important data structure in Java programming that are used to store and manipulate collections of elements. A vector is similar to an array, but with some additional features that make it more flexible and convenient to use. In this blog, we will explore the basics of vectors in Java, how they differ from arrays, and how to use them in your programs. What is a Vector in Java?</description>
-    </item>
-    
-    <item>
-      <title>‘takeIf’ and ‘takeUnless’ : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</guid>
-      <description>Ever thought of chaining an if condition? What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true? Kotlin has something very interesting to achieve the same. We can use takeIf and takeUnless to achieve the same. As clear from the name itself, takeIf will proceed in the chain only if the condition inside is true whereas takeUnless is the counter of takeIf and will proceed only if the provided condition is false.</description>
-    </item>
-    
-    <item>
-      <title>‘when’ operator in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</guid>
-      <description>when operator is a replacement of switch operator in other languages. var intNumber = 10 when (intNumber) { 1 -&gt; print(“value is 1”) 2 -&gt; print(“value is 2”) else -&gt; { print(“value of intNumber is neither 1 nor 2”) } } when operator matches its argument with all the branches until it matches with anyone, else it executes the else block. It can be used as an expression where the value of the satisfied branch becomes the value of the overall expression.</description>
-    </item>
-    
-    <item>
-      <title>Android : Share message directly to whatsapp contact</title>
-      <link>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</guid>
-      <description>Whatsapp is something which doesn&#39;t require any introduction. It&#39;s a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp. During recent times, I was asked multiple times in the comments section or even emails, if there is any possible way where we can send the text message directly to a WhatsApp contact?</description>
-    </item>
-    
-    <item>
-      <title>any(), none() &amp; all() : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</guid>
-      <description>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are any, non and all functions which were added to the Iterable interface and Map interface. Let try to understand what do they do, why they are required and when to use them. But before we begin, I am assuming a basic knowledge of Map, Set and List.</description>
-    </item>
-    
-    <item>
-      <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
-      <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</guid>
-      <description>JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript. Four important array manipulation methods are push, pop, shift, and unshift. These methods allow you to add and remove elements from the beginning or end of an array. In this blog, we will discuss these methods and their usage in JavaScript. Push Method in JS The push() method is used to add one or more elements to the end of an array.</description>
+      <description>Vectors are an important data structure in Java programming that are used to store and manipulate collections of elements. A vector is similar to an array, but with some additional features that make it more flexible and convenient to use.</description>
     </item>
     
     <item>
@@ -67,25 +130,7 @@
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/arraylist-in-java/</guid>
-      <description>ArrayList is one of the most commonly used data structures in Java. It provides a dynamic array implementation that allows you to add and remove elements from the list. The size of the ArrayList can also be dynamically changed based on the number of elements added or removed from the list. In this blog, we will dive into the details of ArrayList in Java, how it works, and some examples of how to use it.</description>
-    </item>
-    
-    <item>
-      <title>Backing Field in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</guid>
-      <description>What is Backing Field ? Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier. This backing field is used to avoid the recursive call of an accessor which ultimately prevents the StackOverflowError.</description>
-    </item>
-    
-    <item>
-      <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</title>
-      <link>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
-      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case. Let’s figure out what are the types of checks available in Kotlin. Structural Equality (‘==’) == operator is used to compare the data of two variables. Please don’t misunderstand this equality operator with the Java == operator as both are different.</description>
+      <description>ArrayList is one of the most commonly used data structures in Java. It provides a dynamic array implementation that allows you to add and remove elements from the list.</description>
     </item>
     
     <item>
@@ -94,178 +139,7 @@
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/opensourcecontribution/</guid>
-      <description>Contribution to public repositories CameraView CameraView is a well documented, high-level library that makes capturing pictures and videos easy, addressing most of the common issues and needs, and still leaving you with flexibility where needed. My contribution to this public repository was the implementation of live filters using fragment and vertex shaders on the previewing and capturing of camera feed on openGL surface view. Android Components (33 Components) Below animations/loaders were published as android components in JCenter and Maven which can directly be plugged into any android app and use.</description>
-    </item>
-    
-    <item>
-      <title>Personal Games &amp; Apps</title>
-      <link>https://agrawalsuneet.github.io/personalgamesandapps/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/personalgamesandapps/</guid>
-      <description>Unity Games Fire Block Shoot the blocks and make your way Escape between the blocks by making a safe passage to stay alive or shoot them all to increase your score if you really can. &amp;#39;Fire Block&amp;#39; is a simple arcade game where the player can be controlled with a single finger movement on the screen. The incoming blocks which will fall on the way will try to block your journey.</description>
-    </item>
-    
-    <item>
-      <title>Property, Getter and Setter : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</guid>
-      <description>I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods. The moment I converted my Java code to Kotlin, it replaced each variable along with its getter and setter with just a single line of code. Although I was amazed at how can a single line of code replace the complete variable with the same functionality, but later on understanding it, I started liking writing the code in Kotlin.</description>
-    </item>
-    
-    <item>
-      <title>Public Appearances</title>
-      <link>https://agrawalsuneet.github.io/publicappearances/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publicappearances/</guid>
-      <description>Past Speaker at Droidcon London 2022 London, UK - 27-28 Oct 2022 The power of Camera APIs and OpenGL Altogether Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen? Do you think your camera should do way more than just clicking a picture? Did you ever try to process the frames like applying filters or beautification before previewing it?</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://agrawalsuneet.github.io/publications/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/publications/</guid>
-      <description>Technical Blogs Technical Blogs (94 posts) Vector in Java Vector is a dynamic array that can grow or shrink in size as needed. Java provides a built-in Vector class that can be used to implement this data structure. The Vector class provides several useful methods for adding, accessing, and removing elements from the vector. read more 02 May 2023 Java ArrayList in Java An ArrayList is a class in Java that provides a dynamic array implementation that can resize itself during runtime.</description>
-    </item>
-    
-    <item>
-      <title>The Nothing Type : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</guid>
-      <description>What if I say there is a class called Nothing in Koltin. And What does it do? Nothing. The time I read about the class Nothing for the first time, it sounds interesting to me. This class has no instance and it is used to represent a value which never exists. This class is also used to represent a return type from a method that will never return. Confused? Let me explain.</description>
-    </item>
-    
-    <item>
-      <title>Tuple in Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</guid>
-      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a struct with just two variables and return that struct object from the method.</description>
-    </item>
-    
-    <item>
-      <title>Type Aliases in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</guid>
-      <description>Life is painful when you have two or more classes with the same name but different package name and you have to use them both in the same place. Only one import can be added and the other one needs to be referenced by its complete package name dot class name. Every time you use the second class name, you need to use it by the entire package name of that class.</description>
-    </item>
-    
-    <item>
-      <title>Typecast Android Object in Untiy</title>
-      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
-      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity Native Android image sharing in Unity AndroidJavaClass is the Unity representation of a generic instance of java.</description>
-    </item>
-    
-    <item>
-      <title>TypeCheck (‘is’) and Cast (‘as’) in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</guid>
-      <description>Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as Run Time Type Identification (RTTI). Let’s consider an example where we have an Interface called Shape having an abstract method as calculateArea. interface Shape { fun calculateArea(): Float} We have three different classes implementing the same interface and implementing their own area calculating method according to their shapes.</description>
-    </item>
-    
-    <item>
-      <title>UIDatePicker Date Change Listener : Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</guid>
-      <description>Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed. If you are not using xib or storyboard but creating the layout programmatically or by using swiftUI, you can the editing event using a target action that takes three parameters, target of Any type which is nullable action of Selector type controlEvents of UIControl.</description>
-    </item>
-    
-    <item>
-      <title>UISwitch Value Change Listener : Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</guid>
-      <description>Adding an value change event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed. If you are not using xib or storyboard but creating the layout programmatically or by using swiftUI, you can the editing event using a target action that takes three parameters, target of Any type which is nullable action of Selector type controlEvents of UIControl.</description>
-    </item>
-    
-    <item>
-      <title>UITextField Text Listener : Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</guid>
-      <description>Adding an editing event to a UITextField is something that is required most of the time. For views like UITextField, we can connect an IBAction with the event type as editing did end or value changed and get a callback for editing finished or value changed. If you are not using xib or storyboard but creating the layout programmatically or by using swiftUI, you can the editing event using a target action that takes three parameters, target of Any type which is nullable action of Selector type controlEvents of UIControl.</description>
-    </item>
-    
-    <item>
-      <title>UIView ClickListener : Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
-      <description>Adding a click event to a UIView is something that is required most of the time. For views like UIButton, we can connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views. If you try to add an IBAction to your view, you won&#39;t get Action as an option while connecting it with ViewController. The only possible way to add a click event on UIView is using UITapGestureRecognizer.</description>
-    </item>
-    
-    <item>
-      <title>UserDefaults in Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</guid>
-      <description>A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches. One way of keeping them is using a local database like core data in an iOS app. But core data is helpful in the case of tables and queries. There is another way to store a small set of data, UserDefaults. Let&#39;s try to understand what are UserDefaults first.</description>
-    </item>
-    
-    <item>
-      <title>Variable number of arguments (vararg) : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</guid>
-      <description>Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime. Kotlin provides us to achieve the same by defining a parameter of a function as vararg. We can pass n number of parameters to a vararg variable of the defined datatype or even of a generic type. Let me give you an example. We need a function which takes n number as inputs and returns the average of all the inputs.</description>
-    </item>
-    
-    <item>
-      <title>Variable vs Object vs Reference</title>
-      <link>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</guid>
-      <description>Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them. Let&#39;s try to understand a very basic definition along with an example for all three. The concept is similar in any object-oriented programming language but for reference, I&#39;ll be using Java examples. Feel free to comment below if you need examples in any specific language. Variables Variables are named storage of any primitive data type.</description>
-    </item>
-    
-    <item>
-      <title>Why let function is an Extension to Template class?</title>
-      <link>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not to Any class? Not only let, but other helper functions like apply, also, takeIf and takeUnless are also extension functions to the Template class. The question is why? Any is the base class for all the classes, similar to java.lang.Object class in Java, even if you extend it or not.</description>
-    </item>
-    
-    <item>
-      <title>Why Map does not extend Collection interface?</title>
-      <link>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</guid>
-      <description>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set. The Map is a well-known data structure used to store key-value pairs where keys will be unique. We can take a reference of any language but let&#39;s look at the example of Java for reference as Collection Framework from Java is very popular.</description>
-    </item>
-    
-    <item>
-      <title>Why with function is not an Extension to Template class?</title>
-      <link>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about Kotlin with function, a lot of developers have asked me about, why with is not an extension to Template class like other scope functions? Not only with, but run also has two implementations among which one is not an extension to Template class but a generic extension function. The question is why? with is an extension to generic class means it is not specific to any class.</description>
+      <description>Android Components (33 Components) Below animations/loaders were published as android components in JCenter and Maven which can directly be plugged into any android app and use.</description>
     </item>
     
     <item>
@@ -274,7 +148,7 @@
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</guid>
-      <description>Java provides a powerful data structure called Map, which is used to store key-value pairs. A Map is a collection of unique keys and their corresponding values, and it provides efficient methods to add, remove, and access elements in constant time. In this blog, we will discuss the implementation of the Map interface in Java and explore some of its useful methods. What is a Map? A map is used to store key value pairs where each key in a map will be unique.</description>
+      <description>Java provides a powerful data structure called Map, which is used to store key-value pairs. A Map is a collection of unique keys and their corresponding values, and it provides efficient methods to add, remove, and access elements in constant time.</description>
     </item>
     
     <item>
@@ -283,7 +157,7 @@
       <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</guid>
-      <description>Set is an interface in Java that represents a collection of unique elements, meaning that no two elements in a set can be the same. Java provides several implementations of Set, each with its own unique features and trade-offs. In this blog post, we will explore the different implementations of Set in Java and their use cases. What is a Set? A set is a collection of unique elements. This means that each element in a set is distinct from all other elements.</description>
+      <description>Set is an interface in Java that represents a collection of unique elements, meaning that no two elements in a set can be the same.</description>
     </item>
     
     <item>
@@ -292,7 +166,7 @@
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/function-expression-javascript/</guid>
-      <description>JavaScript is a dynamic and versatile programming language that allows developers to create complex and dynamic applications. One of the key features of JavaScript is its ability to use functions as first-class citizens. This means that functions can be assigned to variables, passed as arguments to other functions, and even returned as values from functions. In this article, we&#39;ll take a closer look at function expressions in JavaScript and explore how they can be used in your code.</description>
+      <description>JavaScript is a dynamic and versatile programming language that allows developers to create complex and dynamic applications. One of the key features of JavaScript is its ability to use functions as first-class citizens.</description>
     </item>
     
     <item>
@@ -301,7 +175,25 @@
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/javascript-for-loop/</guid>
-      <description>Loops are an essential part of any programming language, and JavaScript is no exception. One of the most common loops used in JavaScript is the for loop. In this blog, we will focus on the for loop in JavaScript and how it can be used to iterate over an array or object. What is a for loop? A for loop is a programming construct used to repeat a section of code for a specified number of times.</description>
+      <description>Loops are an essential part of any programming language, and JavaScript is no exception. One of the most common loops used in JavaScript is the for loop.</description>
+    </item>
+    
+    <item>
+      <title>Array Operations in JavaScript (Push, Pop, Shift and Unshift)</title>
+      <link>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/</guid>
+      <description>JavaScript is a powerful programming language that offers several ways to manipulate arrays, which are one of the most commonly used data structures in JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Destructuring Declarations in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</guid>
+      <description>Sometimes it&amp;rsquo;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using .</description>
     </item>
     
     <item>
@@ -310,16 +202,7 @@
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/equality-in-javascript/</guid>
-      <description>In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used. Understanding the differences between these operators is essential for writing efficient and reliable code in JavaScript. = Operator in JS The = operator is used for assigning values to variables. It is called the assignment operator. When using the = operator, the value on the right side of the operator is assigned to the variable on the left side.</description>
-    </item>
-    
-    <item>
-      <title>Lerp Function : Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
-      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
-      <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. In this blog post, we will explore the lerp function in Unity and its implementation. What is Lerp Function? The Lerp function stands for linear interpolation. The function returns a value that is a linear interpolation between the starting and ending values, based on the weight parameter.</description>
+      <description>In JavaScript, there are three types of equality operators: =, ==, and ===. Each of these operators has a different purpose and can lead to different results when used.</description>
     </item>
     
     <item>
@@ -328,7 +211,25 @@
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</guid>
-      <description>Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way. In this blog, we&#39;ll explore these concepts and understand how they can be used in Kotlin. Nested Classes A nested class is a class that is defined inside another class. It is also known as a static inner class, as it is not tied to any specific instance of the outer class.</description>
+      <description>Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way.</description>
+    </item>
+    
+    <item>
+      <title>Echoes</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/echoes/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/echoes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speaker at Droidcon London 2022</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/droidcon-london-2022/</link>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/droidcon-london-2022/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -337,7 +238,7 @@
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</guid>
-      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up. Let&#39;s understand them in detail before comparing. Before reading this blog, keep in mind that -3 is bigger than -4 and -3.</description>
+      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing.</description>
     </item>
     
     <item>
@@ -346,7 +247,7 @@
       <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</guid>
-      <description>In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references). For example, a normal property can’t hold a nil value and will show a compile error. var variable : CustomClass = CustomClass()variable = nil //compilation error //&#39;nil&#39; cannot be assigned to type &#39;CustomClass&#39; Instead, we can add a ? after the data type of that property which declares that variable as a nillable property.</description>
+      <description>In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references).</description>
     </item>
     
     <item>
@@ -355,7 +256,8 @@
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/</guid>
-      <description>In Swift, we can differentiate the variables into three different categories based on their possible values. The variable can be of default type, optional type or an explicit non-nil type. All three types of variables can be clubbed with both let and var. Or they can also be used with any data type. Before looking at their differences, Let&#39;s try to understand them one by one in detail. Default Type Variable Default type variables are the ones which need to be initialised either in the constructor or need to be declared along with the definition itself.</description>
+      <description>In Swift, we can differentiate the variables into three different categories based on their possible values.
+The variable can be of default type, optional type or an explicit non-nil type.</description>
     </item>
     
     <item>
@@ -364,7 +266,7 @@
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/question-mark-in-swift/</guid>
-      <description>In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining. Let&#39;s try to understand them in detail before looking at their differences. Optional Variable ? It makes the variable type optional if added as a suffix to the variable type while defining any variable. It will need a nil check before accessing the optional variable.</description>
+      <description>In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.</description>
     </item>
     
     <item>
@@ -373,7 +275,7 @@
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-count-function/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds functions. Count function is one of them. Lets try to understand the count function in detail. What is Count function? The count function is used to get the total number of elements in the collection.</description>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
     </item>
     
     <item>
@@ -382,7 +284,7 @@
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Plus and Minus operator are few of them of them. Lets try to understand the plus and minus operator in detail. What are plus and minus operator?</description>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
     </item>
     
     <item>
@@ -391,7 +293,7 @@
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/filter-operator-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Filter operator is one of them. Lets try to understand the filter operator in detail. What is filter operator? Filter operator is used to create a new collection object by iterating over the existing collection object and filtering the elements based on the predicates to it.</description>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
     </item>
     
     <item>
@@ -400,7 +302,7 @@
       <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/map-operator-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds transform operators. Map operator is one of them. Lets try to understand the map operator in detail. What is map operator? Map operator is used to create a new collection object by iterating over the existing collection object and applying some transformation to it.</description>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
     </item>
     
     <item>
@@ -409,7 +311,7 @@
       <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/</guid>
-      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up. Let&#39;s understand them in detail before comparing. Before reading this blog, keep in mind that -3 is bigger than -4 and -3.</description>
+      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing.</description>
     </item>
     
     <item>
@@ -418,52 +320,98 @@
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</guid>
-      <description>Swift has two data types (Double and Float) to hold the decimal values. Both of them hold the same decimal type values but have some differences. The basic difference is around the size of memory they both use based on which their precision varies. Let&#39;s try to understand the differences between both with example. Number of Digits The Double type is used to store values in up to 17 places.</description>
+      <description>Swift has two data types (Double and Float) to hold the decimal values. Both of them hold the same decimal type values but have some differences.</description>
+    </item>
+    
+    <item>
+      <title>For-in vs For-each in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</guid>
+      <description>For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary.</description>
     </item>
     
     <item>
       <title>Custom Object in UserDefaults : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</link>
-      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</guid>
-      <description>In continuation to my previous blog UserDefaults in Swift, where we understand the basic functionality of UserDefaults, we&#39;ll try to understand today how can we store custom objects in UserDefaults. UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults.</description>
+      <description>In continuation to my previous blog UserDefaults in Swift, where we understand the basic functionality of UserDefaults, we&amp;rsquo;ll try to understand today how can we store custom objects in UserDefaults.</description>
     </item>
     
     <item>
-      <title>Custom Object in UserDefaults : Swift (Github Gist)</title>
+      <title>Custom Object in UserDefaults : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</link>
-      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</guid>
-      <description> This particular script will help you to store and retrieve custom class or struct objects in UserDefaults. For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift. &amp;lt;&amp;lt; All Gists Native Android in Unity &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.
+For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift.</description>
     </item>
     
     <item>
-      <title>UISwitch Value Change Listener : Swift (Github Gist)</title>
+      <title>UserDefaults in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</guid>
+      <description>A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches.</description>
+    </item>
+    
+    <item>
+      <title>UISwitch Value Change Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</guid>
+      <description>Adding an value change event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.</description>
+    </item>
+    
+    <item>
+      <title>UISwitch Value Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</guid>
-      <description> This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way. For further explaination on how this works, please read the article UISwitch Value Change Listener : Swift. &amp;lt;&amp;lt; All Gists Custom Object in UserDefaults : Swift &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.</description>
     </item>
     
     <item>
-      <title>UIDatePicker Date Change Listener : Swift (Github Gist)</title>
+      <title>UIDatePicker Date Change Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</guid>
+      <description>Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.</description>
+    </item>
+    
+    <item>
+      <title>UIDatePicker Date Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</guid>
-      <description> This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way. For further explaination on how this works, please read the article UIDatePicker Date Change Listener : Swift. &amp;lt;&amp;lt; All Gists UISwitch Value Change Listener : Swift &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way.</description>
     </item>
     
     <item>
-      <title>UITextField Text Listener : Swift (Github Gist)</title>
+      <title>UITextField Text Listener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</guid>
+      <description>Adding an editing event to a UITextField is something that is required most of the time. For views like UITextField, we can connect an IBAction with the event type as editing did end or value changed and get a callback for editing finished or value changed.</description>
+    </item>
+    
+    <item>
+      <title>UITextField Text Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</guid>
-      <description> This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way. For further explaination on how this works, please read the article UITextField TextListener : Swift. &amp;lt;&amp;lt; All Gists Native Android in Unity &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.</description>
     </item>
     
     <item>
@@ -472,7 +420,7 @@
       <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</guid>
-      <description>The switch statement in Swift is used to execute a particular block of code based on multiple conditions. A switch statement is useful for more than one condition. For one or two conditions, if-else is a better option but for conditions more than that, a switch statement is a better option. We will try to understand the flow of switch statement in detail but let&#39;s try to understand its basic syntax first.</description>
+      <description>The switch statement in Swift is used to execute a particular block of code based on multiple conditions. A switch statement is useful for more than one condition.</description>
     </item>
     
     <item>
@@ -481,7 +429,7 @@
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</guid>
-      <description>Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion. The range operators can be used with for loops, if conditions or even in when operator. First, let to see a basic example of a range operator. A basic range operator can be defined with .. having a lower range value to the left side and upper range value to the right side of .</description>
+      <description>Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.</description>
     </item>
     
     <item>
@@ -490,16 +438,7 @@
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/iterators-in-kotlin/</guid>
-      <description>Collections (Sets, Maps and Lists) are something we use daily. Traversing (Iteration) is the most common operation we perform over any collection. Iterators are used to traverse over a collection object. It provides access to the elements of the collection object sequentially without exposing the underlying structure of the collection. How to get an iterator object? An iterator reference object can be obtained using iterator() function which is declared in the Iterable interface for generic type T.</description>
-    </item>
-    
-    <item>
-      <title>Destructuring Declarations in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</link>
-      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</guid>
-      <description>Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself. It is beneficial for a few reasons like, We don&#39;t have to use the dot property on the object again and again. If the object is of a nullable type, we can do the null check only once and then we can destructure it to non-nullable properties.</description>
+      <description>Collections (Sets, Maps and Lists) are something we use daily. Traversing (Iteration) is the most common operation we perform over any collection.</description>
     </item>
     
     <item>
@@ -508,16 +447,7 @@
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/swift-range-operators/</guid>
-      <description>Range Operator in Swift is a basic operator that is used to operate over a range. There are multiple types of range operators where we can include or exclude the upper range. Or we can start the range with some value or can end before some max value. The range operators can be used with for loops, if conditions, switch conditions or even in array iteration. First, let to see a basic example of a range operator.</description>
-    </item>
-    
-    <item>
-      <title>For-in vs For-each in Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</link>
-      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</guid>
-      <description>For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary. Both provide the same functionality but has a few limitations or differences when it comes to conditional access. To understand their differences, let&#39;s try to understand their examples in details first. For-in loop For-in loop is used to iterate over a range, set or dictionary using both the indexes as well an element based iteration.</description>
+      <description>Range Operator in Swift is a basic operator that is used to operate over a range. There are multiple types of range operators where we can include or exclude the upper range.</description>
     </item>
     
     <item>
@@ -526,16 +456,7 @@
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/swift-for-loop/</guid>
-      <description>For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes. Both of them are used to iterate over a range, array, set or dictionary but have a bit different syntaxes. While comparing with other languages, I realized in Swift, there are few concepts which are completely different from java or any other another language for loops.</description>
-    </item>
-    
-    <item>
-      <title>Computed Property in Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</link>
-      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</guid>
-      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it&#39;s not observable.</description>
+      <description>For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes.</description>
     </item>
     
     <item>
@@ -544,7 +465,7 @@
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/</guid>
-      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it&#39;s not observable.</description>
+      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor.</description>
     </item>
     
     <item>
@@ -553,7 +474,7 @@
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</guid>
-      <description>Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties. Let&#39;s try to understand some basic differences between then and when to use what. But before that let&#39;s quickly recap the lateinit and lazy properties lateinit property lateinit properties are the var properties that can be initialised later in the constructor or in any function according to the use.</description>
+      <description>Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.</description>
     </item>
     
     <item>
@@ -562,7 +483,7 @@
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</guid>
-      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it&#39;s not observable.</description>
+      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor.</description>
     </item>
     
     <item>
@@ -571,7 +492,7 @@
       <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/</guid>
-      <description>In continuation to my previous blog Native Android text sharing in Unity, where we learnt about sharing text from a Unity app targeting the Android platform, let&#39;s try to learn about how can we receive a text from other apps. Accepting a text from other apps is not that common but sometimes location-based games required to accept text or location shared from other apps. There can be a generic use case also where we want to accept some text from other apps for any purpose.</description>
+      <description>In continuation to my previous blog Native Android text sharing in Unity, where we learnt about sharing text from a Unity app targeting the Android platform, let&amp;rsquo;s try to learn about how can we receive a text from other apps.</description>
     </item>
     
     <item>
@@ -580,7 +501,25 @@
       <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/</guid>
-      <description>The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. The manifest file contains information about package name, permissions, application name, icon, activities, services, providers and much more. Usually, Unity takes care of this manifest file generation and putting it in the right place but sometimes we need to add some custom tags to the final generated manifest file like adding intent-filters to the activity tag.</description>
+      <description>The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.</description>
+    </item>
+    
+    <item>
+      <title>Lerp Function : Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
+      <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Typecast Android Object in Untiy</title>
+      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
+      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity.</description>
     </item>
     
     <item>
@@ -589,7 +528,8 @@
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</guid>
-      <description> This particular script will help you to typecast one Android/Java object into another in Unity. For further explaination on how this works, please read the article Native Android in Unity. &amp;lt;&amp;lt; All Gists Custom Android Manifest File in Unity &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to typecast one Android/Java object into another in Unity.
+For further explaination on how this works, please read the article Native Android in Unity.</description>
     </item>
     
     <item>
@@ -598,7 +538,17 @@
       <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</guid>
-      <description> This particular xml is an example of custom Android Manifest file which can be used in unity. For further explaination on how this works, please read the article Custom Android Manifest File in Unity. &amp;lt;&amp;lt; All Gists Native Android in Unity &amp;gt;&amp;gt; </description>
+      <description>This particular xml is an example of custom Android Manifest file which can be used in unity.
+For further explaination on how this works, please read the article Custom Android Manifest File in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Why with function is not an Extension to Template class?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</guid>
+      <description>After reading my last blog about Kotlin with function, a lot of developers have asked me about, why with is not an extension to Template class like other scope functions?</description>
     </item>
     
     <item>
@@ -607,7 +557,7 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them. Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions.</description>
     </item>
     
     <item>
@@ -616,7 +566,7 @@
       <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-with-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them. Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions.</description>
     </item>
     
     <item>
@@ -625,34 +575,25 @@
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-also-function/</guid>
-      <description>In continuation to my previous post where I explained about Kotlin let function and Kotlin apply function, let&#39;s try to understand today about also function today. Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+      <description>In continuation to my previous post where I explained about Kotlin let function and Kotlin apply function, let&amp;rsquo;s try to understand today about also function today.</description>
     </item>
     
     <item>
-      <title>Kotlin apply function</title>
-      <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <title>Why Map does not extend Collection interface?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
-      <description>In continuation to my previous post where I explained about Kotlin let function, let&#39;s try to understand today about apply function today. Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</guid>
+      <description>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set.</description>
     </item>
     
     <item>
-      <title>Kotlin let function</title>
-      <link>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <title>any(), none() &amp; all() : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them. Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</description>
-    </item>
-    
-    <item>
-      <title>Collections in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</link>
-      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</guid>
-      <description>Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in kotlin.collections package. Types of Collection in Kotlin There are two types of collection in Kotlin Immutable The one which can&#39;t be modified once the object is created. We can just iterate over them or create a copy of them but we can&#39;t modify the actual one.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</guid>
+      <description>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java.</description>
     </item>
     
     <item>
@@ -661,7 +602,7 @@
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</guid>
-      <description>if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality. To understand their differences, let&#39;s try to understand what they are in details first. if condition Normal if condition is nothing but to check whether a condition is true or not.</description>
+      <description>if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality.</description>
     </item>
     
     <item>
@@ -670,7 +611,7 @@
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</guid>
-      <description>Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code. The single expression function, as his name suggests, is the function that just has a single expression. We can remove the return type of that function, braces as well as return keyword from it. Think about a function that has some calculation to be done based on the passed argument and return the result.</description>
+      <description>Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code.</description>
     </item>
     
     <item>
@@ -679,16 +620,7 @@
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/reified-kotlin/</guid>
-      <description>Before we learn about reified, Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety. The best example for a generics is Array or any List/Collection implementation. package kotlin/** * Represents an array (specifically, a Java array when targeting the JVM platform). * Array instances can be created using the [arrayOf], [arrayOfNulls] and [emptyArray] * standard library functions.</description>
-    </item>
-    
-    <item>
-      <title>The power of Camera APIs and OpenGL all together</title>
-      <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
-      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
-      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen? Do you think your camera should do way more than just clicking a picture? Did you ever try to process the frames like applying filters or beautification before previewing it? How a view or camera frame is drawn on the screen? What is OpenGL?</description>
+      <description>Before we learn about reified, Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety.</description>
     </item>
     
     <item>
@@ -697,79 +629,35 @@
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</guid>
-      <description>Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable. The easiest way to define an enum is enum class Direction { EAST, WEST, NORTH, SOUTH} Here each enum constant is an object. For using these values var direction : Direction = Direction.EAST Base class of all Enum Classes There is a base class for all enum classes which is defined in kotlin package.</description>
+      <description>Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable.</description>
     </item>
     
     <item>
-      <title>‘mutating’ in Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</link>
+      <title>UIView ClickListener : Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</guid>
-      <description>As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value. If we try to change any variable inside a class it’s straight forward.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
+      <description>Adding a click event to a UIView is something that is required most of the time. For views like UIButton, we can connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.</description>
     </item>
     
     <item>
-      <title>UIView ClickListener : Swift (Github Gist)</title>
+      <title>UIView ClickListener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description> This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way. For further explaination on how this works, please read the article UIView ClickListener : Swift. &amp;lt;&amp;lt; All Gists UITextField Text Listener : Swift &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.</description>
     </item>
     
     <item>
-      <title>Android : Share message directly to whatsapp contact</title>
-      <link>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Variable vs Object vs Reference</title>
+      <link>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</guid>
-      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android. For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact. &amp;lt;&amp;lt; All Gists Native Android in Unity &amp;gt;&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>Native Android image sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</guid>
-      <description>This particular script will help you to implement native Android image sharing in Unity. We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT, EXTRA_TEXT and EXTRA_STREAM. The content type is set to image/png in the below example but you can change it to any type and share other formats also. For further explaination on how this works, please read the article Native Android screenshot/image sharing in Unity.</description>
-    </item>
-    
-    <item>
-      <title>Native Android image sharing in Unity using FileProvider</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</guid>
-      <description>This particular script will help you to implement native Android image sharing using Android&#39;s FileProvider in Unity. This is a fix for “android.os.FileUriExposedException” in Android 8 (Oreo) and above. We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT, EXTRA_TEXT and EXTRA_STREAM. The content type is set to image/png in the below example but you can change it to any type and share other formats also.</description>
-    </item>
-    
-    <item>
-      <title>Native Android in Unity</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-in-unity/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
-      <description> This particular script will help you to implement basic native Android in Unity. This show an example of showing a native Android&#39;s Toast in unity using AndroidJavaClass and AndroidJavaObject. For further explaination on how this works, please read the article Native Android in Unity. &amp;lt;&amp;lt; All Gists Native Android text sharing in Unity &amp;gt;&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>Native Android text sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
-      <description> This particular script will help you to implement native Android text sharing in Unity. We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT. For further explaination on how this works, please read the article Native Android text sharing in Unity. &amp;lt;&amp;lt; All Gists Native Android image sharing in Unity &amp;gt;&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>Native Android text sharing to particular app in Unity</title>
-      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>This particular script will help you to implement native Android text sharing to a particular app in Unity. We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&#39;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT, and share the content to a particular app with package name. For further explaination on how this works, please read the article Native Android share to a particular app in Unity.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</guid>
+      <description>Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them.
+Let&amp;rsquo;s try to understand a very basic definition along with an example for all three.</description>
     </item>
     
     <item>
@@ -778,97 +666,54 @@
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description>In the previous blogs, we learnt about how can we trigger native Android text, image or any other format file sharing in Unity App. A lot of you have asked me about how can we share some text directly to a WhatsApp contact. If you have not read the previous medium posts, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity Native Android image sharing in Unity Native Android text sharing to particular app in Unity Whatsapp is something which doesn&#39;t require any introduction.</description>
+      <description>In the previous blogs, we learnt about how can we trigger native Android text, image or any other format file sharing in Unity App.</description>
     </item>
     
     <item>
       <title>Native Android text sharing to Whatsapp contact in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description> This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity. For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity. &amp;lt;&amp;lt; All Gists Typecast Android Object in Untiy &amp;gt;&amp;gt; </description>
+      <description>This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.
+For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.</description>
     </item>
     
     <item>
-      <title>‘in’ operator in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Android : Share message directly to whatsapp contact</title>
+      <link>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</guid>
-      <description>‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false. It can also be used to iterate over a range or collection. 1. ‘in’ operator in ‘if’ condition val count = 5;if (count in 1..10 &amp;&amp; count !in 5..7) { print(“Number is between range 1 to 10 but not between 5 to 7”)}val array: IntArray = intArrayOf(1, 2, 3, 4, 5)if (count in array) { print(“Number is present in property array”)} 2.</description>
+      <guid>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</guid>
+      <description>This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.
+For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.</description>
     </item>
     
     <item>
-      <title>‘inout’ in Swift</title>
-      <link>https://agrawalsuneet.github.io/blogs/inout-in-swift/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>The power of Camera APIs and OpenGL all together</title>
+      <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/inout-in-swift/</guid>
-      <description>Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function. Eventually, all the variables passed to a function are of an immutable type which cannot be changed which is similar to a let variable. If it’s a class object, you cannot create a new object but you can manipulate the properties of that class object or you can call any function with that object.</description>
+      <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
+      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen?</description>
     </item>
     
     <item>
-      <title>Companion object in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Speaker at Mobile Optimized 2020</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/mobile-optimized-2020/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
-      <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead. If you need to write a function that can be called without having a class instance but needs access to the internals of a class, you can write it as a member of a companion object declaration inside that class. By declaring a companion object inside our class, you’ll be able to call its members with the same syntax as calling static methods in Java/C#, using only the class name as a qualifier.</description>
+      <guid>https://agrawalsuneet.github.io/publicappearances/mobile-optimized-2020/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Cut your APK Size with features on demand</title>
-      <link>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>The Last Library</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/the-last-library/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</guid>
-      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone? Is your App size is more than just a few MBs? What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not? Yes, The user thinks about the app size before downloading or updating an app which has a size larger than a few MBs.</description>
-    </item>
-    
-    <item>
-      <title>Difference between Any, Unit and Nothing : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</guid>
-      <description>We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what. Let try to understand what are these, when to use what and how these are different from one another. Any Any is an open class and by default the superclass for all the classes, whether we define it explicitly or not.</description>
-    </item>
-    
-    <item>
-      <title>Extensions as Members : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</guid>
-      <description>In continuation to my last Medium post Extensions in Kotlin where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class. An extension can be defined as members of some other class also. The benefit of defining an extension as a member of the other class is, we can access all the functions and properties of both the classes inside that extension method.</description>
-    </item>
-    
-    <item>
-      <title>Extensions in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</guid>
-      <description>Have you ever felt some useful functionality missing in an existing class? The class could be in the libraries provided by language also. “Yes” What exactly you do to add that functionality in the class? “Extend the class and add the method and then use my own extended class” If so, Kotlin extensions can definitely make your life easier. Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator.</description>
-    </item>
-    
-    <item>
-      <title>Higher-order functions in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</guid>
-      <description>What is a higher-order function? In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function. In other words, a higher-order function is a function that takes functions as parameters or returns a function. Let’s take an example fun &amp;lt;T&amp;gt; ArrayList&amp;lt;T&amp;gt;.filterOnCondition(condition: (T) -&gt; Boolean): ArrayList&amp;lt;T&amp;gt;{ val result = arrayListOf&amp;lt;T&amp;gt;() for (item in this){ if (condition(item)){ result.</description>
-    </item>
-    
-    <item>
-      <title>How can I migrate my Android code from Java to Kotlin?</title>
-      <link>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
-      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same. Developers know the benefit of Kotlin over Java for Android app development but they hesitate to try it or even sometimes doesn&#39;t know how to start using it in their existing code base.</description>
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/the-last-library/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -877,7 +722,8 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
-      <description>&#34;how are extension functions resolved?&#34; This question is being asked by almost everyone both in and outside the interviews. Even I have asked this question to many candidates during the interview. The shorted or the only answer I get is &#34;Statically&#34;. What does statically means? Or how does extension functions are actually resolved? Let&#39;s understand this with an example. Consider we have two classes BaseClass and DerivedClass. We added an extension function with the same function name to both the classes.</description>
+      <description>&amp;ldquo;how are extension functions resolved?&amp;rdquo;
+This question is being asked by almost everyone both in and outside the interviews. Even I have asked this question to many candidates during the interview.</description>
     </item>
     
     <item>
@@ -886,187 +732,602 @@
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/infix-notation-kotlin/</guid>
-      <description>Ever imagined calling a public function of a class without dot and parentheses of the parameter in Kotlin. Kotlin provides infix notation with which we can call a function with the class object without using a dot and parentheses across the parameter. Using infix function provides more readability to a function similar to other operators like in, is, as in Kotlin. To make a function infix notation enabled, add infix keyword before the function.</description>
+      <description>Ever imagined calling a public function of a class without dot and parentheses of the parameter in Kotlin. Kotlin provides infix notation with which we can call a function with the class object without using a dot and parentheses across the parameter.</description>
     </item>
     
     <item>
-      <title>Inheritance vs Extension functions</title>
-      <link>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Android : Share message directly to whatsapp contact</title>
+      <link>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</link>
+      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</guid>
-      <description>We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it. Sometimes we are confused about what to use when. To get help here, one needs to understand first what are these two and what are the benefits and limitations over the other.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</guid>
+      <description>Whatsapp is something which doesn&amp;rsquo;t require any introduction. It&amp;rsquo;s a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp.</description>
     </item>
     
     <item>
-      <title>Inline function : Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Native Android image sharing in Unity using FileProvider</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</guid>
-      <description>What is inlining? Inlining is basically requesting the compiler to copy the (inlined) code at the calling place. Why it is required? When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function. The CPU then executes the function code, stores the function return value in a predefined memory location/register and returns control to the calling function.</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</guid>
+      <description>This particular script will help you to implement native Android image sharing using Android&amp;rsquo;s FileProvider in Unity. This is a fix for “android.</description>
     </item>
     
     <item>
-      <title>Java or Kotlin, What do you use?</title>
-      <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Native Android text sharing to particular app in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
-      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot. It has multiple benefits and on top of everything, it&#39;s really easy to use. Its been three years, still devs or some companies hesitate to use it. What is Kotlin? How can it benefit your startup? Why devs resist themselves moving from Java to Kotlin language?</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</guid>
+      <description>This particular script will help you to implement native Android text sharing to a particular app in Unity.
+We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT, and share the content to a particular app with package name.</description>
     </item>
     
     <item>
-      <title>Kotlin ‘For’ loop</title>
-      <link>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Native Android image sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</link>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</guid>
-      <description>While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops. Wait! They are not this tough. In fact, they are very easy, interesting and helpful. Let’s check one by one. 1. Simple for loop in java that iterates from some number to some number incrementing one on each loop pass.</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</guid>
+      <description>This particular script will help you to implement native Android image sharing in Unity.
+We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT, EXTRA_TEXT and EXTRA_STREAM.</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
+      <description>This particular script will help you to implement native Android text sharing in Unity.
+We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.</description>
+    </item>
+    
+    <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-in-unity/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
+      <description>This particular script will help you to implement basic native Android in Unity.
+This show an example of showing a native Android&amp;rsquo;s Toast in unity using AndroidJavaClass and AndroidJavaObject.</description>
     </item>
     
     <item>
       <title>Kotlin Extension Property</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-extension-property/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-extension-property/</guid>
-      <description>Extension functions are really-really helpful while writing code in Kotlin. You don&#39;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties. A very interesting question asked to me during an interview or even a general situation where we need to add a property (variable) to an existing class without extending it. Is it even possible?</description>
-    </item>
-    
-    <item>
-      <title>Label Reference in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</guid>
-      <description>Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression. Let me give you an example loopi@ for( i in 1..5){ print(i) } But what is the use? Where I am going to use this label and why would I use it? These labels are really helpful when dealing with nested loops or nested functions.</description>
-    </item>
-    
-    <item>
-      <title>lateinit Property in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
-      <description>There can be two ways to declare and initialize a var property var variable : CustomClass = CustomClass() orvar variable : CustomClass? = null The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it. But in the second type, the property is initialized with a null value and will require a null check (?.) always while using it. variable?.someMethodCall()//orvariable!!.someMethodCall() There can be a use case where we don’t want to initialize the property while declaration but also at the same time we don’t want a null check on that property every time as we are sure that while using that property, it’s value will be not null for sure.</description>
-    </item>
-    
-    <item>
-      <title>Low Level Design : Tic-Tac-Toe</title>
-      <link>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</guid>
-      <description>System designing is the process of designing system elements such as architectures, modules, components, different interfaces of those components. Its the process of defining the lowest level entities in a software. It is the backbone of any software. System design is of two types Low level design High level design There is no fine line or a separator difference between the two that upto this part of software is low level and above this is high level but mostly, Low level defines reusable entities and relationship between them as well as the object creation and dependencies.</description>
-    </item>
-    
-    <item>
-      <title>Native Android image sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
-      <description>In continuation to my previous blogs Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity As the number says, an image gains more attention than a normal text while sharing.</description>
-    </item>
-    
-    <item>
-      <title>Native Android image sharing in Unity using FileProvider</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
-      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception “android.os.FileUriExposedException” in Android 8 (Oreo) and above. Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app. In this blog, will guide step by step to enable image sharing to any other app using FileProvider.</description>
-    </item>
-    
-    <item>
-      <title>Native Android in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
-      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.</description>
-    </item>
-    
-    <item>
-      <title>Native Android text sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
-      <description>In continuation to my previous blogs Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</description>
+      <description>Extension functions are really-really helpful while writing code in Kotlin. You don&amp;rsquo;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties.</description>
     </item>
     
     <item>
       <title>Native Android text sharing to particular app in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>In the previous blogs Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below.</description>
+      <description>In the previous blogs Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms.</description>
     </item>
     
     <item>
-      <title>Object Expression in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Low Level Design : Tic-Tac-Toe</title>
+      <link>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</link>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</guid>
-      <description>Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality. We can even create an object expression for an interface or abstract class by just implementing their abstract methods. This functionality is called an anonymous interface implementation or anonymous abstract class implementation.</description>
+      <guid>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</guid>
+      <description>System designing is the process of designing system elements such as architectures, modules, components, different interfaces of those components. Its the process of defining the lowest level entities in a software.</description>
+    </item>
+    
+    <item>
+      <title>FireBlock</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/fireblock/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/fireblock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How can I migrate my Android code from Java to Kotlin?</title>
+      <link>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
+      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.</description>
+    </item>
+    
+    <item>
+      <title>Speaker at Android Bootcamps part of Google for Startup Program</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/google-startup-program-1/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/google-startup-program-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lets Challenge</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/lets-challenge/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/lets-challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java or Kotlin, What do you use?</title>
+      <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
+      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot.</description>
+    </item>
+    
+    <item>
+      <title>Speaker at Android Bootcamps part of Google for Startup Program</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/google-startup-program-2/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/google-startup-program-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UFO</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/ufo/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/ufo/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Object-Oriented Programming (OOP) Concepts</title>
       <link>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
-      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&#39;s well optimized, reusable, efficient, future proof and much more. The basic concepts of Object-oriented programming are, Abstraction Encapsulation Dependency Association Composition Aggregation Inheritance Extensibility Run-Time Polymorphism (RTP) Substitutability Overriding Packaging Please note that these concepts are not language specific but applies to all object oriented programming languages.</description>
+      <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&amp;rsquo;s well optimized, reusable, efficient, future proof and much more.</description>
     </item>
     
     <item>
-      <title>Pair and Triple in Kotlin</title>
-      <link>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Kotlin apply function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</guid>
-      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types. What usually we do there is either create some local variables if the method is of the same class and set those variables from the method and consume them in the place where needed or we create a class with just two variables and return that class object from the method.</description>
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
+      <description>In continuation to my previous post where I explained about Kotlin let function, let&amp;rsquo;s try to understand today about apply function today.</description>
+    </item>
+    
+    <item>
+      <title>Collections in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</guid>
+      <description>Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it.</description>
     </item>
     
     <item>
       <title>Partial class in C# (partial modifier)</title>
       <link>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/partial-class-in-csharp-partial-modifier/</guid>
-      <description>Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class. Or assume they need to implement interfaces to the same class. There will be a merge conflict which needs to be resolved manually or using some tool. Or think about a situation where an automatically generated code needs to be added into some class without having to recreate the source file.</description>
+      <description>Think about a situation where two or more developers need to modify the same class or add new functionalities to the same class.</description>
+    </item>
+    
+    <item>
+      <title>Destructuring Declarations in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</guid>
+      <description>We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+    </item>
+    
+    <item>
+      <title>Why let function is an Extension to Template class?</title>
+      <link>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
+      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not to Any class?</description>
+    </item>
+    
+    <item>
+      <title>Kotlin let function</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</link>
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
+      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions.</description>
+    </item>
+    
+    <item>
+      <title>Inheritance vs Extension functions</title>
+      <link>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</guid>
+      <description>We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
     </item>
     
     <item>
       <title>partition() : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/partition-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/partition-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations. Recently in one of my use case, the basic operations were not enough for me.</description>
+      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
+    </item>
+    
+    <item>
+      <title>Speaker at Droidcon Greece</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/droidcon-greece-2019/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/droidcon-greece-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speaker at Droidcon Vienna</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/droidcon-vienna-2019/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/droidcon-vienna-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jaipur Metro</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/jaipur-metro/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/jaipur-metro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speaker at Droidcon Lisbon</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/droidcon-lisbon-2019/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/droidcon-lisbon-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speaker at DroidJam Bangalore</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/droidjam-bangalore-2019/</link>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/droidjam-bangalore-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpaceShooter</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/space-shooter/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/space-shooter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speaker at MobileConf 2019</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/mobileconf-2019/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/mobileconf-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Basketball 3D</title>
+      <link>https://agrawalsuneet.github.io/personalgamesandapps/basketball-3d/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/personalgamesandapps/basketball-3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cut your APK Size with features on demand</title>
+      <link>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</guid>
+      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone?</description>
+    </item>
+    
+    <item>
+      <title>Speaker at GDG Devfest Kolkata</title>
+      <link>https://agrawalsuneet.github.io/publicappearances/gdg-devfest-kolkata-2019/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/publicappearances/gdg-devfest-kolkata-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing in Unity using FileProvider</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
+      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception android.os.FileUriExposedException in Android 8 (Oreo) and above.</description>
+    </item>
+    
+    <item>
+      <title>takeIf and takeUnless : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</guid>
+      <description>Ever thought of chaining an if condition?
+What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?</description>
+    </item>
+    
+    <item>
+      <title>Inline function : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</link>
+      <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</guid>
+      <description>What is inlining? Inlining is basically requesting the compiler to copy the (inlined) code at the calling place.
+Why it is required?</description>
+    </item>
+    
+    <item>
+      <title>mutating in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</guid>
+      <description>As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.</description>
+    </item>
+    
+    <item>
+      <title>‘inout’ in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/inout-in-swift/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/inout-in-swift/</guid>
+      <description>Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function.</description>
     </item>
     
     <item>
       <title>Qualified ‘this’ in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</guid>
-      <description>The only thing we learnt about this pointer in other languages is “this is an implicit pointer which points to the calling object”. As clear from the definition, it points to the object which calls the respective function or property. Now the real problem arises when we have an inner class or anonymous interface implementation. We lose the reference of the outer class. Let me give you an example. //java code//extending Android View classpublic class CustomView extends View { public CustomView(Context context) { super(context); getViewTreeObserver() .</description>
+      <description>The only thing we learnt about this pointer in other languages is “this is an implicit pointer which points to the calling object”.</description>
+    </item>
+    
+    <item>
+      <title>Type Aliases in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</guid>
+      <description>Life is painful when you have two or more classes with the same name but different package name and you have to use them both in the same place.</description>
+    </item>
+    
+    <item>
+      <title>Extensions in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</guid>
+      <description>Have you ever felt some useful functionality missing in an existing class?
+The class could be in the libraries provided by language also.</description>
+    </item>
+    
+    <item>
+      <title>Variable number of arguments (vararg) : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</guid>
+      <description>Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime.</description>
+    </item>
+    
+    <item>
+      <title>Object Expression in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</guid>
+      <description>Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it.</description>
+    </item>
+    
+    <item>
+      <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</title>
+      <link>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
+      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.</description>
+    </item>
+    
+    <item>
+      <title>Pair and Triple in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</guid>
+      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.</description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
+      <description>In continuation to my previous blogs Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app.</description>
+    </item>
+    
+    <item>
+      <title>Extensions as Members : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</guid>
+      <description>In continuation to my last Medium post Extensions in Kotlin where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.</description>
+    </item>
+    
+    <item>
+      <title>Companion object in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
+      <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead.</description>
+    </item>
+    
+    <item>
+      <title>Computed Property in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</guid>
+      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor.</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
+      <description>In continuation to my previous blogs Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app.</description>
+    </item>
+    
+    <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
+      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game.</description>
+    </item>
+    
+    <item>
+      <title>The Nothing Type : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</guid>
+      <description>What if I say there is a class called Nothing in Koltin.
+And What does it do? Nothing. The time I read about the class Nothing for the first time, it sounds interesting to me.</description>
+    </item>
+    
+    <item>
+      <title>Label Reference in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</guid>
+      <description>Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.</description>
+    </item>
+    
+    <item>
+      <title>Tuple in Swift</title>
+      <link>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</guid>
+      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.</description>
+    </item>
+    
+    <item>
+      <title>Property, Getter and Setter : Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</guid>
+      <description>I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.</description>
+    </item>
+    
+    <item>
+      <title>Kotlin ‘For’ loop</title>
+      <link>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</guid>
+      <description>While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages.</description>
+    </item>
+    
+    <item>
+      <title>when operator in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</guid>
+      <description>when operator is a replacement of switch operator in other languages.
+when operator matches its argument with all the branches until it matches with anyone, else it executes the else block.</description>
+    </item>
+    
+    <item>
+      <title>‘in’ operator in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</link>
+      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</guid>
+      <description>‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!</description>
+    </item>
+    
+    <item>
+      <title>TypeCheck (‘is’) and Cast (‘as’) in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</guid>
+      <description>Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects.</description>
     </item>
     
     <item>
       <title>Safe calls(?.) vs Null checks(!!) in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</guid>
-      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references). For example, a normal property can’t hold a null value and will show a compile error. var variable : CustomClass = CustomClass()variable = null //compilation error Instead, we can add a ? after the data type of that property which declares that variable as a nullable property var nullableVariable : CustomClass?</description>
+      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).</description>
+    </item>
+    
+    <item>
+      <title>lateinit Property in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
+      <description>There can be two ways to declare and initialize a var property
+var variable : CustomClass = CustomClass() or var variable : CustomClass?</description>
+    </item>
+    
+    <item>
+      <title>Higher-order functions in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</guid>
+      <description>What is a higher-order function? In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function.</description>
+    </item>
+    
+    <item>
+      <title>Backing Field in Kotlin</title>
+      <link>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</guid>
+      <description>What is Backing Field ? Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier.</description>
     </item>
     
   </channel>

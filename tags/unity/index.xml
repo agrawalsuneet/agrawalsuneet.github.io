@@ -6,32 +6,14 @@
     <description>Recent content in Unity on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Typecast Android Object in Untiy</title>
-      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
-      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
-      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity Native Android image sharing in Unity AndroidJavaClass is the Unity representation of a generic instance of java.</description>
-    </item>
-    
-    <item>
-      <title>Lerp Function : Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
-      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
-      <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity. In this blog post, we will explore the lerp function in Unity and its implementation. What is Lerp Function? The Lerp function stands for linear interpolation. The function returns a value that is a linear interpolation between the starting and ending values, based on the weight parameter.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 26 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Native Android Receive Text from Other Apps in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/</link>
       <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-receive-text-from-other-apps-in-unity/</guid>
-      <description>In continuation to my previous blog Native Android text sharing in Unity, where we learnt about sharing text from a Unity app targeting the Android platform, let&#39;s try to learn about how can we receive a text from other apps. Accepting a text from other apps is not that common but sometimes location-based games required to accept text or location shared from other apps. There can be a generic use case also where we want to accept some text from other apps for any purpose.</description>
+      <description>In continuation to my previous blog Native Android text sharing in Unity, where we learnt about sharing text from a Unity app targeting the Android platform, let&amp;rsquo;s try to learn about how can we receive a text from other apps.</description>
     </item>
     
     <item>
@@ -40,7 +22,45 @@
       <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/</guid>
-      <description>The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. Every Android app or unity app running on the Android platform must have a Manifest file. The manifest file contains information about package name, permissions, application name, icon, activities, services, providers and much more. Usually, Unity takes care of this manifest file generation and putting it in the right place but sometimes we need to add some custom tags to the final generated manifest file like adding intent-filters to the activity tag.</description>
+      <description>The Android manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.</description>
+    </item>
+    
+    <item>
+      <title>Lerp Function : Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/lerp-function-unity/</guid>
+      <description>In game development, one of the most common problems is the smooth transition of objects from one position to another. A linear interpolation or Lerp function is a popular technique used to achieve this in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Typecast Android Object in Untiy</title>
+      <link>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/</guid>
+      <description>In continuation to previous my previous blogs, where we learnt about how can we use AndroidJavaClass and AndroidJavaObject to achieve simple native Android functionality in Unity, We will move one step ahead and see how can we typecast one Android object to another in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Typecast Android Object in Untiy</title>
+      <link>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</guid>
+      <description>This particular script will help you to typecast one Android/Java object into another in Unity.
+For further explaination on how this works, please read the article Native Android in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Custom Android Manifest File in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</guid>
+      <description>This particular xml is an example of custom Android Manifest file which can be used in unity.
+For further explaination on how this works, please read the article Custom Android Manifest File in Unity.</description>
     </item>
     
     <item>
@@ -49,52 +69,121 @@
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description>In the previous blogs, we learnt about how can we trigger native Android text, image or any other format file sharing in Unity App. A lot of you have asked me about how can we share some text directly to a WhatsApp contact. If you have not read the previous medium posts, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity Native Android image sharing in Unity Native Android text sharing to particular app in Unity Whatsapp is something which doesn&#39;t require any introduction.</description>
+      <description>In the previous blogs, we learnt about how can we trigger native Android text, image or any other format file sharing in Unity App.</description>
     </item>
     
     <item>
-      <title>Native Android image sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Native Android text sharing to Whatsapp contact in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
-      <description>In continuation to my previous blogs Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below. Native Android in Unity Native Android text sharing in Unity As the number says, an image gains more attention than a normal text while sharing.</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
+      <description>This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.
+For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.</description>
+    </item>
+    
+    <item>
+      <title>Android : Share message directly to whatsapp contact</title>
+      <link>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</guid>
+      <description>This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.
+For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.</description>
     </item>
     
     <item>
       <title>Native Android image sharing in Unity using FileProvider</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
-      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception “android.os.FileUriExposedException” in Android 8 (Oreo) and above. Since Google changed the sharing way using FileProvider to make it more secure, we can not share the file object directly to any other Application. We need to use the FileProvider and grant read URI permission to make it accessible for any other app. In this blog, will guide step by step to enable image sharing to any other app using FileProvider.</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</guid>
+      <description>This particular script will help you to implement native Android image sharing using Android&amp;rsquo;s FileProvider in Unity. This is a fix for “android.</description>
     </item>
     
     <item>
-      <title>Native Android in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Native Android text sharing to particular app in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
-      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game. These features can be showing notifications on certain actions in the game or can be sharing the high score with other players and inviting them to try our game using android native share. Android gives us all the possibilities to achieve these native android functionalities in unity app using C#.</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</guid>
+      <description>This particular script will help you to implement native Android text sharing to a particular app in Unity.
+We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT, and share the content to a particular app with package name.</description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</link>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</guid>
+      <description>This particular script will help you to implement native Android image sharing in Unity.
+We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT, EXTRA_TEXT and EXTRA_STREAM.</description>
     </item>
     
     <item>
       <title>Native Android text sharing in Unity</title>
-      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
-      <description>In continuation to my previous blogs Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</description>
+      <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
+      <description>This particular script will help you to implement native Android text sharing in Unity.
+We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.</description>
+    </item>
+    
+    <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/gists/native-android-in-unity/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
+      <description>This particular script will help you to implement basic native Android in Unity.
+This show an example of showing a native Android&amp;rsquo;s Toast in unity using AndroidJavaClass and AndroidJavaObject.</description>
     </item>
     
     <item>
       <title>Native Android text sharing to particular app in Unity</title>
       <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</link>
-      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>In the previous blogs Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms. In this post will target sharing the same text or image to some particular app directly. If you have not read the previous blogs, I would strongly recommend to read them first. You can read them on the links below.</description>
+      <description>In the previous blogs Native Android text sharing in Unity and Native Android image sharing in Unity we learnt about how to share some text or screenshot to other apps in a Unity app targeting Android platforms.</description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing in Unity using FileProvider</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity-using-fileprovider/</guid>
+      <description>While implementing native sharing using my previous post, Native Android image sharing in Unity we saw an exception android.os.FileUriExposedException in Android 8 (Oreo) and above.</description>
+    </item>
+    
+    <item>
+      <title>Native Android image sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-image-sharing-in-unity/</guid>
+      <description>In continuation to my previous blogs Native Android in Unity and Native Android text sharing in Unity, will consider another example of native Android screenshot sharing functionality in the unity app.</description>
+    </item>
+    
+    <item>
+      <title>Native Android text sharing in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-text-sharing-in-unity/</guid>
+      <description>In continuation to my previous blogs Native Android in Unity, will consider another example of native Android text sharing functionality in the unity app.</description>
+    </item>
+    
+    <item>
+      <title>Native Android in Unity</title>
+      <link>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/native-android-in-unity/</guid>
+      <description>While developing unity games in C# targeting android platform, we always want to use few native android features in our game.</description>
     </item>
     
   </channel>

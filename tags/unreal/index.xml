@@ -6,7 +6,16 @@
     <description>Recent content in Unreal on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/unreal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/unreal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FString vs FName vs Text in Unreal</title>
+      <link>https://agrawalsuneet.github.io/blogs/fstring-vs-fname-vs-text-in-unreal/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/fstring-vs-fname-vs-text-in-unreal/</guid>
+      <description>Unreal Engine, developed by Epic Games, is a popular game engine that powers many successful video games and interactive experiences. When working with Unreal Engine, you often encounter various data types for handling text and strings, including FString, FName, and Text.</description>
+    </item>
+    
     <item>
       <title>DrawDebugCylinder in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</link>

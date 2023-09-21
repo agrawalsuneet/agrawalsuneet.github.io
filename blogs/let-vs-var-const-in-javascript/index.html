@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Destructuring Declarations in Kotlin &middot; Suneet Agrawal</title>
+  <title>Let vs Var vs Const in JavaScript &middot; Suneet Agrawal</title>
 
   <!-- Meta -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -13,18 +13,18 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta property="twitter:title" content="Suneet Agrawal">
 
-  <meta name="topic" content="Destructuring Declarations in Kotlin">
-    <meta name="description" content="Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself.">
-    <meta property="og:description" content="Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself.">
-    <meta property="twitter:description" content="Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself.">
-    <meta name="abstract" content="Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself.">
-    <meta name="summary" content="Sometimes it&#39;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using . operator on the property or instance itself."> 
+  <meta name="topic" content="Let vs Var vs Const in JavaScript">
+    <meta name="description" content="JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including `let`, `var`, and `const`. Each of these declarations serves a specific purpose and has its own scope and behavior.">
+    <meta property="og:description" content="JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including `let`, `var`, and `const`. Each of these declarations serves a specific purpose and has its own scope and behavior.">
+    <meta property="twitter:description" content="JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including `let`, `var`, and `const`. Each of these declarations serves a specific purpose and has its own scope and behavior.">
+    <meta name="abstract" content="JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including `let`, `var`, and `const`. Each of these declarations serves a specific purpose and has its own scope and behavior.">
+    <meta name="summary" content="JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including `let`, `var`, and `const`. Each of these declarations serves a specific purpose and has its own scope and behavior."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2023-04-24 "> 
+    <meta property="article:published_time" content=" 2023-09-21 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -32,17 +32,17 @@
     <meta name="robots" content="max-image-preview:large">
     
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="destructuring declaration,property in kotlin,variables">
+    <meta name="keywords" content="let,var,const,javascript,js">
     
     
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
     <meta name="coverage" content="Worldwide" />
     <meta name="distribution" content="Global">
     <meta name="rating" content="safe for kids" /> 
-    <meta property="og:tags" content="Kotlin"> 
+    <meta property="og:tags" content="JavaScript"> 
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
@@ -279,10 +279,10 @@
 				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
 				
 				
-				/ April 24, 2023 / 4 mins read / By Suneet Agrawal
+				/ September 21, 2023 / 4 mins read / By Suneet Agrawal
 			</div>
 			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
-				Destructuring Declarations in Kotlin
+				Let vs Var vs Const in JavaScript
 			</h1>
 		</div>
 
@@ -296,7 +296,7 @@
 	</div>
 	<div class="image">
 		
-		<div class="img scrolla-element-anim-1 scroll-animate" data-animate="active" style="background-image: url(https://agrawalsuneet.github.io/images/blog/kotlin.webp);"></div>
+		<div class="img scrolla-element-anim-1 scroll-animate" data-animate="active" style="background-image: url(https://agrawalsuneet.github.io/images/blog/javascript.webp);"></div>
 		
 	</div>
 </div>
@@ -311,137 +311,92 @@
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
-						<p>Sometimes it&rsquo;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using <code>.</code> operator on the property or instance itself. It is beneficial for a few reasons like,</p>
-<ol>
-<li>We don&rsquo;t have to use the dot property on the object again and again.</li>
-<li>If the object is of a nullable type, we can do the null check only once and then we can destructure it to non-nullable properties.</li>
-<li>The defined variable will be alive within the defined scope.</li>
-<li>Fewer chances of confusion and more readability.</li>
-</ol>
+						<p>JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including <code>let</code>, <code>var</code>, and <code>const</code>. Each of these declarations serves a specific purpose and has its own scope and behavior. In this blog post, we&rsquo;ll dive into the differences between <code>let</code>, <code>var</code>, and <code>const</code> in JavaScript with examples to help you understand when and how to use them effectively.</p>
+<h3 id="var---the-traditional-variable-declaration">var - The Traditional Variable Declaration</h3>
+<p><code>var</code> is the oldest way to declare variables in JavaScript. Variables declared with <code>var</code> are function-scoped, which means their scope is limited to the function they are declared in or the global scope if declared outside any function.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">exampleVar</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>; <span style="color:#75715e">// This reassigns the outer &#39;x&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// Outputs 20
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>In the above example, the if block doesn&rsquo;t create a new scope for <code>x</code>, so it reassigns the outer <code>x</code> to <code>20</code>.</p>
+<h3 id="let---block-scoped-variables">let - Block-Scoped Variables</h3>
+<p><code>let</code> was introduced in ECMAScript 6 (ES6) to address some of the issues with <code>var</code>. Variables declared with <code>let</code> are block-scoped, meaning they are confined to the block (enclosed by curly braces) in which they are defined.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">exampleLet</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>; <span style="color:#75715e">// This is a separate &#39;x&#39; from the outer one
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// Outputs 10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Here, the inner <code>x</code> is distinct from the outer <code>x</code>, thanks to let&rsquo;s block-level scope.</p>
+<h3 id="const---constants">const - Constants</h3>
+<p><code>const</code> is another ES6 addition that allows you to declare variables that cannot be reassigned after their initial value is set. Like <code>let</code>, <code>const</code> is block-scoped.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">exampleConst</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>; <span style="color:#75715e">// This is a separate &#39;x&#39; from the outer one
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// Outputs 10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>In this case, you can&rsquo;t reassign the <code>x</code> variable inside the if block because it was declared as a constant.</p>
+<h3 id="let-vs-var-vs-const--key-differences">let vs var vs const : Key Differences</h3>
+<h5 id="scoping">Scoping:</h5>
+<ul>
+<li><code>var</code>: Function-scoped or globally scoped.</li>
+<li><code>let</code>: Block-scoped (limited to the block or function they are defined in).</li>
+<li><code>const</code>: Block-scoped (like <code>let</code>) and constants (cannot be reassigned).</li>
+</ul>
+<h5 id="reassignment">Reassignment:</h5>
+<ul>
+<li><code>var</code>: Allows reassignment within its scope.</li>
+<li><code>let</code>: Allows reassignment within its scope.</li>
+<li><code>const</code>: Does not allow reassignment once defined.</li>
+</ul>
+<h5 id="hoisting">Hoisting:</h5>
+<ul>
+<li><code>var</code>: Hoisted to the top of its function or global context. It can be used before it`s declared (but will be undefined).</li>
+<li><code>let</code>: Hoisted to the top of its block or function, but not initialized. It results in a ReferenceError if used before declaration.</li>
+<li><code>const</code>: Hoisted like <code>let,</code> but also results in a ReferenceError if used before declaration.</li>
+</ul>
+<h5 id="usage-for-constants">Usage for Constants:</h5>
+<ul>
+<li><code>var</code>: Not suitable for declaring constants as it allows reassignment.</li>
+<li><code>let</code>: Not suitable for declaring constants as it allows reassignment.</li>
+<li><code>const</code>: Ideal for declaring constants that should not be changed.</li>
+</ul>
+<h5 id="global-object-property">Global Object Property:</h5>
+<ul>
+<li><code>var</code>: Creates a property on the global object (e.g., <code>window</code> in a browser).</li>
+<li><code>let</code>: Does not create a global object property.</li>
+<li><code>const</code>: Does not create a global object property.</li>
+</ul>
+<h5 id="temporal-dead-zone-tdz">Temporal Dead Zone (TDZ):</h5>
+<ul>
+<li><code>var</code>: No TDZ; variables are initialized with <code>undefined.</code></li>
+<li><code>let</code>: Has a TDZ; accessing a <code>let</code> variable before declaration results in a ReferenceError.</li>
+<li><code>const</code>: Also has a TDZ; accessing a <code>const</code> variable before declaration results in a ReferenceError.</li>
+</ul>
+<h5 id="use-cases">Use Cases:</h5>
+<ul>
+<li><code>var</code>: Used less frequently in modern JavaScript due to its unpredictable scoping behavior. It`s mainly used in legacy codebases.</li>
+<li><code>let</code>: Preferred for most variable declarations, especially when reassignment may be required within a block.</li>
+<li><code>const</code>: Preferred for declaring constants and values that should remain unchanged.</li>
+</ul>
+<h3 id="when-to-use-each-declaration">When to Use Each Declaration:</h3>
+<ul>
+<li>Use <code>var</code> sparingly, as it has a global or function scope, which can lead to unintended variable hoisting and potential issues in your code. In modern JavaScript, <code>let</code> and <code>const</code> are often preferred over <code>var</code>.</li>
+<li>Use <code>let</code> when you need a variable that can be reassigned within the same block or function. It provides more predictable scoping behavior than <code>var</code>.</li>
+<li>Use <code>const</code> when you want to declare a constant value that should not be reassigned. It&rsquo;s a good practice to use <code>const</code> for values that should remain unchanged throughout your code.</li>
+</ul>
+<h3 id="conclusion">Conclusion:</h3>
+<p>Understanding the differences between <code>let</code>, <code>var</code>, and <code>const</code> in JavaScript is crucial for writing clean and maintainable code. By choosing the appropriate declaration based on your needs, you can avoid scope-related bugs and make your code more robust. As JavaScript continues to evolve, <code>let</code> and <code>const</code> have become the preferred choices for variable declarations, with <code>var</code> being used less frequently in modern codebases.</p>
 <div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="what-is-destructuring-declaration">What is destructuring declaration?</h3>
-<p>Let&rsquo;s try to understand what is a destructuring declaration and how does it works internally.</p>
-<p>Usually, when we declare a property, we can initialise it with some value or mark it nullable. If we want to extract a property from an object, we need to do that for each and every property, individually.</p>
-<p>Kotlin provides functionality to do that in a single declaration where we can destructure the object into multiple variables within a single declaration.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span> (<span style="color:#66d9ef">val</span> name : String,
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">val</span> age: Int,
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">val</span> department: String)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> employee = Employee(name = <span style="color:#e6db74">&#34;Suneet&#34;</span>, age = <span style="color:#ae81ff">29</span>, department = <span style="color:#e6db74">&#34;Engineering&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#960050;background-color:#1e0010">(</span>name, age, department) = employee
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$name</span><span style="color:#e6db74"> at the age of </span><span style="color:#e6db74">$age</span><span style="color:#e6db74"> is working in </span><span style="color:#e6db74">$department</span><span style="color:#e6db74"> department&#34;</span>)
-</span></span></code></pre></div><pre><code>    The output for the above print statement would be
-</code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Suneet at the age of <span style="color:#ae81ff">29</span> <span style="color:#66d9ef">is</span> working <span style="color:#66d9ef">in</span> Engineering department
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="how-does-it-works-internally">How does it works internally?</h3>
-<p>The compiler internally uses the <code>componentN</code> function of Kotlin to destructure the object and assign them to the properties individually.</p>
-<p><code>componentN</code> is a functionality provided by Kotlin for any data class which return the Nth property (in sequence from the beginning) of that data class.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#960050;background-color:#1e0010">(</span>name, age, department) = employee
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// is equivalent to
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> name = employee.component1()
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> age = employee.component2()
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> department = employee.component3()
-</span></span></code></pre></div><h3 id="things-to-keep-in-mind-while-using-destructuring-declaration">Things to keep in mind while using destructuring declaration</h3>
-<p>Since we don&rsquo;t use <code>componentN</code> function directly in the destructuring declaration, we can&rsquo;t skip any property. If we don&rsquo;t need any property to be used, the compiler will still extract it but we can avoid it by replacing it with an underscore ( <code>_</code> ) but we can&rsquo;t skip it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#960050;background-color:#1e0010">(</span>name, _, department) = employee
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="use-cases-of-destructuring-declaration">Use cases of destructuring declaration</h3>
-<p>Destructuring declaration can be used anywhere but will try to list its common use cases where it can be way more useful and the readability would be better.</p>
-<h3 id="1-normal-flow">1. Normal Flow</h3>
-<p>Destructuring declaration can be used in any normal flow where an object&rsquo;s properties need to be accessed multiple times.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> employee = Employee(name = <span style="color:#e6db74">&#34;Suneet&#34;</span>, age = <span style="color:#ae81ff">29</span>, department = <span style="color:#e6db74">&#34;Engineering&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#960050;background-color:#1e0010">(</span>name, age, department) = employee
-</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$name</span><span style="color:#e6db74"> at the age of </span><span style="color:#e6db74">$age</span><span style="color:#e6db74"> is working in </span><span style="color:#e6db74">$department</span><span style="color:#e6db74"> department&#34;</span>)
-</span></span></code></pre></div><h3 id="2-for-in-loop">2. For-In loop</h3>
-<p>Destructuring declaration can also be used with for-in loops. Instead of declaring the item while iteration, we can directly destructure them to variables and use them inside the loop.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> list = listOf(Employee(name = <span style="color:#e6db74">&#34;Suneet&#34;</span>, age = <span style="color:#ae81ff">29</span>, department = <span style="color:#e6db74">&#34;Engineering&#34;</span>),
-</span></span><span style="display:flex;"><span>                     Employee(name = <span style="color:#e6db74">&#34;John&#34;</span>, age = <span style="color:#ae81ff">40</span>, department = <span style="color:#e6db74">&#34;Marketing&#34;</span>),
-</span></span><span style="display:flex;"><span>                     Employee(name = <span style="color:#e6db74">&#34;Agrawal&#34;</span>, age = <span style="color:#ae81ff">35</span>, department = <span style="color:#e6db74">&#34;Sales&#34;</span>))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> ((name, age, department) <span style="color:#66d9ef">in</span> list){
-</span></span><span style="display:flex;"><span>    	println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$name</span><span style="color:#e6db74"> at the age of </span><span style="color:#e6db74">$age</span><span style="color:#e6db74"> is working in </span><span style="color:#e6db74">$department</span><span style="color:#e6db74"> department&#34;</span>)
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="3-return-from-functions">3. Return from functions</h3>
-<p>Destructuring declaration is also helpful while returning multiple values from a function. Instead of getting the result into a variable and that accessing its individual properties, we can directly destructure it to individual properties.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getBestEmployee</span>(): Employee {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//do some calculations
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> Employee(name = <span style="color:#e6db74">&#34;Suneet&#34;</span>, age = <span style="color:#ae81ff">29</span>, department = <span style="color:#e6db74">&#34;Engineering&#34;</span>)
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> <span style="color:#960050;background-color:#1e0010">(</span>name, age, department) = getBestEmployee()
-</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;The best Employee is </span><span style="color:#e6db74">$name</span><span style="color:#e6db74">&#34;</span>)
-</span></span></code></pre></div><p>Keep in mind we can use <a href="/blogs/pair-and-triple-in-kotlin/" target="_blank">Pair or Triple</a> also but it&rsquo;s better to have a named variable instead of Pair and Triple as that uses <code>first</code>, <code>second</code> and <code>third</code> as variable names.</p>
-<h3 id="4-in-maps">4. In Maps</h3>
-<p>Destructuring declaration can further be used with maps where each entry can be destructured into a key and a value where both can be used directly.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> map = mapOf(<span style="color:#ae81ff">1</span> to <span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#ae81ff">2</span> to <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#ae81ff">3</span> to <span style="color:#e6db74">&#34;three&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ((key, <span style="color:#66d9ef">value</span>) <span style="color:#66d9ef">in</span> map){
-</span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$key</span><span style="color:#e6db74"> is pointing to </span><span style="color:#e6db74">$value</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
     <ins class="adsbygoogle"
@@ -462,7 +417,7 @@
 						<div class="tags-links">
 							<span>Tags:</span>
 							
-							<a href="https://agrawalsuneet.github.io/tags/kotlin/" rel="tag">Kotlin</a>
+							<a href="https://agrawalsuneet.github.io/tags/javascript/" rel="tag">JavaScript</a>
 							
 						</div>
 						
@@ -550,26 +505,17 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				<div class="h-titles h-navs">
 					
-					<a href="https://agrawalsuneet.github.io/blogs/equality-in-javascript/">
+					<a href="https://agrawalsuneet.github.io/blogs/uproperty-in-unreal/">
 						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
 							Previous Post
 						</span>
 						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-							Equality (&#39;=&#39; vs &#39;==&#39; vs &#39;===&#39;) in JavaScript
+							UPROPERTY in Unreal
 						</span>
 					</a>
 					
 					</br>
 					</br>
-					
-					<a href="https://agrawalsuneet.github.io/blogs/array-operations-in-javascript-push-pop-shift-unshift/">
-						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
-							Next Post
-						</span>
-						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-							Array Operations in JavaScript (Push, Pop, Shift and Unshift)
-						</span>
-					</a>
 					
 				</div>
 			</div>

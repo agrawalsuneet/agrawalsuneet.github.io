@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Let vs Var vs Const in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/</link>
+      <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/</guid>
+      <description>JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including let, var, and const.</description>
+    </item>
+    
+    <item>
+      <title>UPROPERTY in Unreal</title>
+      <link>https://agrawalsuneet.github.io/blogs/uproperty-in-unreal/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/uproperty-in-unreal/</guid>
+      <description>Unreal Engine, renowned for its capabilities in creating visually stunning and highly interactive games and simulations, relies on several core features to achieve its potential.</description>
+    </item>
+    
+    <item>
       <title>FString vs FName vs Text in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/fstring-vs-fname-vs-text-in-unreal/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>

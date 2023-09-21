@@ -3,37 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/categories/blog/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/categories/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/javascript/</loc>
+    <lastmod>2023-09-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/</loc>
+    <lastmod>2023-09-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2023-09-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/tags/unreal/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/uproperty-in-unreal/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/fstring-vs-fname-vs-text-in-unreal/</loc>
     <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/unreal/</loc>
-    <lastmod>2023-09-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/tags/javascript/</loc>
-    <lastmod>2023-08-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

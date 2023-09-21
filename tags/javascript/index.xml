@@ -6,7 +6,16 @@
     <description>Recent content in JavaScript on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let vs Var vs Const in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/</link>
+      <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/</guid>
+      <description>JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including let, var, and const.</description>
+    </item>
+    
     <item>
       <title>Nested Function in JavaScript</title>
       <link>https://agrawalsuneet.github.io/blogs/nested-function-in-javascript/</link>

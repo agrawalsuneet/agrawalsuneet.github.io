@@ -6,7 +6,34 @@
     <description>Recent content in Blogs on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>While and Do-While Loop in C&#43;&#43;</title>
+      <link>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</link>
+      <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</guid>
+      <description>Loops are fundamental constructs in programming that allow us to repeat a block of code multiple times. In C++, two commonly used loop structures are the while loop and the do-while loop.</description>
+    </item>
+    
+    <item>
+      <title>For and Foreach Loop in C&#43;&#43;</title>
+      <link>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</guid>
+      <description>When it comes to repetitive tasks in programming, loops are a powerful and versatile tool that can simplify your code and make it more efficient.</description>
+    </item>
+    
+    <item>
+      <title>Forward Declaration in C&#43;&#43;</title>
+      <link>https://agrawalsuneet.github.io/blogs/forward-declaration-in-c&#43;&#43;/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/forward-declaration-in-c&#43;&#43;/</guid>
+      <description>In C++, `forward declaration`` is a powerful tool that allows you to declare the existence of various entities before providing their full definitions.</description>
+    </item>
+    
     <item>
       <title>Enum vs Enum Class in C&#43;&#43;</title>
       <link>https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c&#43;&#43;/</link>

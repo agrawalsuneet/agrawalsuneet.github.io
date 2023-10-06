@@ -3,31 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/categories/blog/</loc>
-    <lastmod>2023-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2023-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2023-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/categories/</loc>
-    <lastmod>2023-09-22T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c&#43;&#43;/</loc>
-    <lastmod>2023-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</loc>
+    <lastmod>2023-10-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</loc>
+    <lastmod>2023-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/forward-declaration-in-c&#43;&#43;/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c&#43;&#43;/</loc>
     <lastmod>2023-09-22T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

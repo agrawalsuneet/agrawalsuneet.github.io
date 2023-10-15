@@ -8,9 +8,45 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Get and Set Methods with Date Objects in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/get-and-set-methods-with-date-objects-in-javascript/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/get-and-set-methods-with-date-objects-in-javascript/</guid>
+      <description>Working with dates is a common task in web development, and JavaScript provides a built-in Date object to handle date and time-related operations.</description>
+    </item>
+    
+    <item>
+      <title>Date Comparison in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/date-comparison-in-javascript/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/date-comparison-in-javascript/</guid>
+      <description>Working with dates is a common task in web development, and JavaScript provides a powerful set of tools for manipulating and comparing dates.</description>
+    </item>
+    
+    <item>
+      <title>Map vs WeakMap in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/map-vs-weak-map-in-javascript/</link>
+      <pubDate>Mon, 09 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/map-vs-weak-map-in-javascript/</guid>
+      <description>JavaScript provides various data structures to manage collections of key-value pairs, and two commonly used ones are Map and WeakMap. Both are used to associate values with keys, but they have distinct characteristics and use cases.</description>
+    </item>
+    
+    <item>
+      <title>Set vs WeakSet in JavaScript</title>
+      <link>https://agrawalsuneet.github.io/blogs/set-vs-weak-set-in-javascript/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://agrawalsuneet.github.io/blogs/set-vs-weak-set-in-javascript/</guid>
+      <description>JavaScript provides various data structures to manage collections of data, and two commonly used ones are Set and WeakSet. Both are used to store collections of values, but they have distinct characteristics and use cases.</description>
+    </item>
+    
+    <item>
       <title>While and Do-While Loop in C&#43;&#43;</title>
       <link>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</link>
-      <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</guid>
       <description>Loops are fundamental constructs in programming that allow us to repeat a block of code multiple times. In C++, two commonly used loop structures are the while loop and the do-while loop.</description>
@@ -19,7 +55,7 @@
     <item>
       <title>For and Foreach Loop in C&#43;&#43;</title>
       <link>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</link>
-      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</guid>
       <description>When it comes to repetitive tasks in programming, loops are a powerful and versatile tool that can simplify your code and make it more efficient.</description>
@@ -516,7 +552,7 @@ For further explaination on how this works, please read the article Custom Objec
     <item>
       <title>Swift ‘For’ loop</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-for-loop/</link>
-      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://agrawalsuneet.github.io/blogs/swift-for-loop/</guid>
       <description>For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes.</description>

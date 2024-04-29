@@ -306,26 +306,15 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>ArrayList is one of the most commonly used data structures in Java. It provides a dynamic array implementation that allows you to add and remove elements from the list. The size of the ArrayList can also be dynamically changed based on the number of elements added or removed from the list. In this blog, we will dive into the details of ArrayList in Java, how it works, and some examples of how to use it.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="what-is-an-arraylist-in-java">What is an ArrayList in Java?</h3>
 <p>ArrayList is a class in the Java collections framework that provides a dynamic array implementation. It is similar to an array in that it stores a collection of elements, but it has several advantages over traditional arrays:</p>
 <ul>
@@ -333,21 +322,10 @@
 <li>ArrayList can store any type of object, whereas arrays are restricted to a specific type.</li>
 </ul>
 <p>In other words, an ArrayList is a resizable array that can store any type of object.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="features-of-arraylist">Features of ArrayList</h3>
 <ul>
 <li>Dynamic Size - The size of an ArrayList can be dynamically increased or decreased based on the elements that are added or removed from it.</li>
@@ -357,194 +335,128 @@
 <li>Random Access - Elements in an ArrayList can be accessed randomly, i.e., you can directly access any element in the ArrayList by its index number.</li>
 <li>Implements Serializable and Cloneable Interfaces - An ArrayList implements the Serializable and Cloneable interfaces, which allows it to be easily serialized and cloned.</li>
 </ul>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="creating-an-arraylist">Creating an ArrayList</h3>
 <p>To create an ArrayList in Java, you need to import the <code>java.util.ArrayList</code> package and then create an instance of the ArrayList class using the new keyword. Here&rsquo;s an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// create an ArrayList of strings
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> fruits <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// create an ArrayList of strings</span>
+</span></span><span style="display:flex;"><span>        ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> fruits <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add some elements to the ArrayList
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;banana&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;orange&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add some elements to the ArrayList</span>
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;apple&#34;</span>);
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;banana&#34;</span>);
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;orange&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// print the elements of the ArrayList
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>fruits<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// print the elements of the ArrayList</span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(fruits);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this example, we create an ArrayList of strings called fruits. We then add three elements to the ArrayList using the <code>add</code> method and print the elements using the <code>println</code> method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="accessing-elements-in-an-arraylist">Accessing Elements in an ArrayList</h3>
 <p>You can access elements in an ArrayList using the <code>get()</code> method, which takes an <code>index</code> as its argument and returns the element at that index. Here&rsquo;s an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// create an ArrayList of strings
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> fruits <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// create an ArrayList of strings</span>
+</span></span><span style="display:flex;"><span>        ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> fruits <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add some elements to the ArrayList
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;banana&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;orange&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add some elements to the ArrayList</span>
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;apple&#34;</span>);
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;banana&#34;</span>);
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;orange&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// get the element at index 1
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        String secondFruit <span style="color:#f92672">=</span> fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// get the element at index 1</span>
+</span></span><span style="display:flex;"><span>        String secondFruit <span style="color:#f92672">=</span> fruits.<span style="color:#a6e22e">get</span>(1);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// print the element
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>secondFruit<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// print the element</span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(secondFruit);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this example, we use the get method to retrieve the element at index <code>1</code> (which is <code>banana</code>) and assign it to a variable called secondFruit. We then print the value of <code>secondFruit</code>.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="adding-and-removing-elements-in-arraylist">Adding and Removing Elements in ArrayList</h3>
 <p>You can add and remove elements from an ArrayList using the <code>add()</code> and <code>remove()</code> methods. Here is an example of how to add and remove elements:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArrayListExample</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Apple&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Banana&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Orange&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArrayListExample</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>      ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>();
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Apple&#34;</span>);
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Banana&#34;</span>);
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Orange&#34;</span>);
 </span></span><span style="display:flex;"><span>      
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Grapes&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Grapes&#34;</span>);
+</span></span><span style="display:flex;"><span>      System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(list);
 </span></span><span style="display:flex;"><span>      
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span><span style="color:#ae81ff">2</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">remove</span>(2);
+</span></span><span style="display:flex;"><span>      System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(list);
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The above code will add <code>Grapes</code> to the end of the ArrayList and print the updated list. It will then remove the element at index <code>2</code> (which is <code>Orange</code>) and print the updated list again.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="modifying-elements-in-an-arraylist">Modifying Elements in an ArrayList</h3>
 <p>You can modify elements in an ArrayList using the <code>set()</code> method, which takes an <code>index</code> and a new value as its arguments and replaces the element at the specified index with the new value. Here&rsquo;s an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// create an ArrayList of strings
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> fruits <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// create an ArrayList of strings</span>
+</span></span><span style="display:flex;"><span>        ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> fruits <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add some elements to the ArrayList
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;banana&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;orange&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add some elements to the ArrayList</span>
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;apple&#34;</span>);
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;banana&#34;</span>);
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;orange&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// set the element at index 1 to &#34;pear&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        fruits<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;pear&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// set the element at index 1 to &#34;pear&#34;</span>
+</span></span><span style="display:flex;"><span>        fruits.<span style="color:#a6e22e">set</span>(1, <span style="color:#e6db74">&#34;pear&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// print the modified ArrayList
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>fruits<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// print the modified ArrayList</span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(fruits);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this example, we use the set method to replace the element at index <code>1</code> (which is <code>banana</code>) with the value <code>pear</code>. We then print the modified ArrayList.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="arraylist-size">ArrayList Size</h3>
 <p>The <code>size()</code> method is used to get the number of elements in the ArrayList. Here is an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.ArrayList;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArrayListExample</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Apple&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Banana&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Orange&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArrayListExample</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>      ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>();
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Apple&#34;</span>);
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Banana&#34;</span>);
+</span></span><span style="display:flex;"><span>      list.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;Orange&#34;</span>);
 </span></span><span style="display:flex;"><span>      
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">int</span> size <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">int</span> size <span style="color:#f92672">=</span> list.<span style="color:#a6e22e">size</span>();
+</span></span><span style="display:flex;"><span>      System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(size);
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The above code will print <code>3</code> because there are three elements in the ArrayList.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 
 
 						
@@ -625,22 +537,9 @@
 				
 			</div>
 
-			<div class="hidden-xs hidden-sm hidden-md col-lg-2 position-sticky-top">
-				<div class="googleads">
+			
 					
 					
-					<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-1093303282603666"
-						data-ad-slot="5801291010"
-						data-ad-format="vertical"
-						data-full-width-responsive="true"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-					
-				</div>
-			</div>
 		</div>
 
 		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>

@@ -6,43 +6,35 @@
     <description>Recent content in Programming-Basics on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/programming-basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://agrawalsuneet.github.io/tags/programming-basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Map does not extend Collection interface?</title>
       <link>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</link>
       <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/why-map-does-not-extend-collection-interface/</guid>
       <description>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are List and Set.</description>
     </item>
-    
     <item>
       <title>Variable vs Object vs Reference</title>
       <link>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/variable-vs-object-vs-reference/</guid>
-      <description>Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them.
-Let&amp;rsquo;s try to understand a very basic definition along with an example for all three.</description>
+      <description>Variables, Objects and References, we frequently listen to these terms while development but usually gets confused between them.&#xA;Let&amp;rsquo;s try to understand a very basic definition along with an example for all three.</description>
     </item>
-    
     <item>
       <title>Low Level Design : Tic-Tac-Toe</title>
       <link>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</link>
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/slides/low-level-design-tic-tac-toe/</guid>
       <description>System designing is the process of designing system elements such as architectures, modules, components, different interfaces of those components. Its the process of defining the lowest level entities in a software.</description>
     </item>
-    
     <item>
       <title>Object-Oriented Programming (OOP) Concepts</title>
       <link>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/slides/object-oriented-programming-oop-concepts/</guid>
       <description>Object-oriented programming (OOP) concepts are something which are fundamentals of any Object-oriented programming language. These concepts give you the power to structure your code in such a way that it&amp;rsquo;s well optimized, reusable, efficient, future proof and much more.</description>
     </item>
-    
   </channel>
 </rss>

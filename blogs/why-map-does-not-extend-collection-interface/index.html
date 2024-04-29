@@ -306,45 +306,23 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>Collections in any language is an interface that stores similar data type objects and provides an iteration functionality. The common extensions of Collection are <code>List</code> and <code>Set</code>.</p>
 <p>The Map is a well-known data structure used to store key-value pairs where keys will be unique.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>We can take a reference of any language but let&rsquo;s look at the example of Java for reference as Collection Framework from Java is very popular.</p>
 <p>Java has <code>Iterable</code> interface which is extended by <code>Collection</code>. The <code>Collection</code> is further extended by <code>List</code>, <code>Queue</code> and <code>Set</code> which has their different-different implementations but the unique thing notice is that the <code>Map</code> interface doesn&rsquo;t extend Collection interface.</p>
 <p><img src="/images/blog/blogs/why-map-does-not-extend-collection-interface/why-map-does-not-extend-collection-interface.png" alt="Why Map does not extend Collection interface"></p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="why-map-does-not-extend-collection-interface">Why Map does not extend Collection interface?</h3>
 <ul>
 <li>Because they are of an incompatible type.<br>
@@ -352,30 +330,19 @@ List, Set and Queue are a collection of similar kind of objects but just values 
 <li>List Set and Queue have add as a function which takes a value as param to add an element whereas Map has put as a function which takes a key and a value as params to add a key-value pair.</li>
 <li>List, Set and Queue provide iterate functionality over the value whereas Maps has keys to iterate over which is ultimately a Set and Values as Collection.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Map</span><span style="color:#f92672">&lt;</span>K<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Map</span><span style="color:#f92672">&lt;</span>K,V<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    ...
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    Set<span style="color:#f92672">&lt;</span>K<span style="color:#f92672">&gt;;</span> keySet<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    Set<span style="color:#f92672">&lt;</span>K<span style="color:#f92672">&gt;</span>; keySet();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    Collection<span style="color:#f92672">&lt;</span>V<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">values</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    Collection<span style="color:#f92672">&lt;</span>V<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">values</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 
 
 						
@@ -456,22 +423,9 @@ List, Set and Queue are a collection of similar kind of objects but just values 
 				
 			</div>
 
-			<div class="hidden-xs hidden-sm hidden-md col-lg-2 position-sticky-top">
-				<div class="googleads">
+			
 					
 					
-					<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-1093303282603666"
-						data-ad-slot="5801291010"
-						data-ad-format="vertical"
-						data-full-width-responsive="true"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-					
-				</div>
-			</div>
 		</div>
 
 		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>

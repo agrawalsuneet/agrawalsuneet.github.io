@@ -306,7 +306,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
@@ -317,21 +317,10 @@
 <li>action of <code>Selector</code> type</li>
 <li>controlEvents of <code>UIControl.Event</code></li>
 </ol>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>The code for the same will look like below.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">//swift code in viewcontroller</span>
 </span></span><span style="display:flex;"><span>
@@ -346,21 +335,10 @@
 </span></span></code></pre></div><p>This way is a bit inefficient as we need to add one function for each <code>UISwitch</code> where we need editing event.</p>
 <p>There is a better way where we can add this functionality to each <code>UISwitch</code> without making our class messy.</p>
 <p>We can add this to the <code>UISwitch</code> extension itself which will be a very clean approach and will make our life super easy.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>First, add a function as an extension to <code>UISwitch</code> class which takes a function as a parameter with 0 params and Void return type.</p>
 <p>Since this function will be our callback function, add <code>@escaping</code> to the function passed as the parameter.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">//</span><span style="color:#75715e">MARK:</span><span style="color:#75715e"> - UISwitch Extension</span>
@@ -388,21 +366,10 @@
 </span></span><span style="display:flex;"><span>        }, <span style="color:#66d9ef">for</span>: .valueChanged) 
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>This took care of all the boilerplate code and added a simple public function to each <code>UISwitch</code> for text change event.</p>
 <p>To call this function, simply call <code>setOnValueChangeListener</code> to any <code>UISwitch</code> in your ViewController.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">//swift code in view viewcontroller</span>
@@ -414,23 +381,12 @@
 <h3 id="but-keep-in-mind-the-function-addaction-is-only-available-in-ios-14-or-above">But keep in mind, the function addAction is only available in iOS 14 or above</h3>
 <p>If your codebase still supports below iOS 14, then you need to go with the <code>addTarget</code> and <code>Selector</code> function only.</p>
 <h3 id="complete-code">Complete code</h3>
-<script type="application/javascript" src="https://gist.github.com/agrawalsuneet/f08c850869a53d1f14378344337d82eb.js"></script>
+<script src="https://gist.github.com/agrawalsuneet/f08c850869a53d1f14378344337d82eb.js"></script>
 
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 
 
 						
@@ -511,22 +467,9 @@
 				
 			</div>
 
-			<div class="hidden-xs hidden-sm hidden-md col-lg-2 position-sticky-top">
-				<div class="googleads">
+			
 					
 					
-					<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-1093303282603666"
-						data-ad-slot="5801291010"
-						data-ad-format="vertical"
-						data-full-width-responsive="true"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-					
-				</div>
-			</div>
 		</div>
 
 		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>

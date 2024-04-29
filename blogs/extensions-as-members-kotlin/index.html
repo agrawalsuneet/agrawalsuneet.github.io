@@ -306,28 +306,17 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>In continuation to my last Medium post <a href="/blogs/extensions-in-kotlin/">Extensions in Kotlin</a> where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.</p>
 <p>An extension can be defined as members of some other class also.</p>
 <p>The benefit of defining an extension as a member of the other class is, we can access all the functions and properties of both the classes inside that extension method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>Let’s take an example</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseClass</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">baseClassFunctionality</span>() {
@@ -348,21 +337,10 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We have two classes named <code>BaseClass</code> and <code>OtherClass</code>. We have a method called <code>baseClassFunctionality</code> in <code>BaseClass</code> and <code>otherClassFunctionality</code> in <code>OtherClass</code>. Now, we added an extension function of BaseClass in OtherClass naming additionalFunctionality. The benefit of adding an extension function of <code>BaseClass</code> in <code>OtherClass</code> is we can access all the methods of <code>BaseClass</code> and <code>OtherClass</code> in that method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="what-if-both-the-classes-have-some-same-method-with-the-same-signature">What if both the classes have some same method with the same signature?</h3>
 <p>It will call the method of the class for which the extension function is defined. But if we want to call the method of the class in which the extension function is defined, we can use the qualified this expression.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseClass</span> {
@@ -394,21 +372,10 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//will be
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>I am <span style="color:#66d9ef">in</span> BaseClass 
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>Extension function as members can also be declared as open and can be overridden in the derived class. Which function will be called will be decided at runtime for virtual methods but statically for extension methods.</p>
 <p>Let me explain this with an example.</p>
 <p>Let’s say we have a class named <code>BaseClass</code> and another class named <code>DerivedClass</code> which is extending the <code>BaseClass</code>.</p>
@@ -444,21 +411,10 @@
 </span></span><span style="display:flex;"><span>                 DerivedOtherClass<span style="color:#e6db74">&#34;)</span>
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <p>Now will consider four different cases which will clear the picture of overriding extension methods.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>OtherClass().caller(BaseClass())
 </span></span><span style="display:flex;"><span>
@@ -483,21 +439,10 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">BaseClass</span>.someFunctionality <span style="color:#66d9ef">in</span> DerivedOtherClass
 </span></span></code></pre></div><p>This will call the extension function of <code>BaseClass</code> overridden in <code>DerivedOtherClass</code>.</p>
 <p>The virtual dependency of <code>OtherClass</code> and <code>DerivedOtherClass</code> was resolved at runtime and it called the <code>DerivedOtherClass’s</code> overridden method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <ol start="3">
 <li>When we call the caller method of <code>OtherClass</code> with <code>OtherClass</code> reference object and pass the <code>DerivedClass</code> object as the parameter.</li>
 </ol>
@@ -527,21 +472,10 @@
 <p>If the extension function is defined outside the class, it can not access the private variables or functions of that class.</p>
 </li>
 </ul>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 
 
 						
@@ -622,22 +556,9 @@
 				
 			</div>
 
-			<div class="hidden-xs hidden-sm hidden-md col-lg-2 position-sticky-top">
-				<div class="googleads">
+			
 					
 					
-					<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-1093303282603666"
-						data-ad-slot="5801291010"
-						data-ad-format="vertical"
-						data-full-width-responsive="true"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-					
-				</div>
-			</div>
 		</div>
 
 		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>

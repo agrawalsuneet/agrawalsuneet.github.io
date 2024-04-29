@@ -306,28 +306,17 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>The collection is something which is used by almost everyone. It makes our life easy. <code>List</code>, <code>Set</code> and <code>Map</code> are the best examples of them.</p>
 <p>To iterate, filter or modify the existing collection object, Kotlin provides us with a few in builds functions. Count function is one of them.</p>
 <p>Lets try to understand the count function in detail.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="what-is-count-function">What is Count function?</h3>
 <p>The count function is used to get the total number of elements in the collection.</p>
 <p>It can also be used to get the number of elements in the collection that satisfy some condition.</p>
@@ -355,21 +344,10 @@
 <p>The second overload take a predicate and returns the count of the elements which satisfy that predicate. The predicate takes every element one by one as a parameter and return a bool type.</p>
 <p>Both the overloads of count are available in all type of arrays like IntArray, CharArray and many more. They are also available in collection means in <code>List</code>, <code>Set</code> and <code>Map</code>.</p>
 <p>All the above implements are extension functions which returns the count of elements in that collection conditionally or unconditionally.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="filter-with-list">Filter with List</h3>
 <p>count function can be used over a list to get the size of the list. It can also be used to get the count of elements in the list that confirms the condition. The second overload can be used with a named parameter or using <code>it</code>.</p>
 <p>The code will look like below.</p>
@@ -378,21 +356,10 @@
 </span></span><span style="display:flex;"><span>println(list.count&lt;/b&gt;())
 </span></span><span style="display:flex;"><span>println(list.count&lt;/b&gt; { <span style="color:#66d9ef">it</span> % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> })
 </span></span><span style="display:flex;"><span>println(list.count&lt;/b&gt; { item <span style="color:#f92672">-&gt;</span> item % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> })
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="filter-with-set">Filter with Set</h3>
 <p>Similar to list, count function can be used over a set to get the size of the set. It can also be used to get the count of elements in the set that confirms the condition. The second overload can be used with a named parameter or using <code>it</code>.</p>
 <p>The code will look like below.</p>
@@ -401,21 +368,10 @@
 </span></span><span style="display:flex;"><span>println(<span style="color:#66d9ef">set</span>.count&lt;/b&gt;())
 </span></span><span style="display:flex;"><span>println(<span style="color:#66d9ef">set</span>.count&lt;/b&gt; { <span style="color:#66d9ef">it</span> % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> })
 </span></span><span style="display:flex;"><span>println(<span style="color:#66d9ef">set</span>.count&lt;/b&gt; { item <span style="color:#f92672">-&gt;</span> item % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> })
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 <h3 id="filter-with-map">Filter with Map</h3>
 <p>Similar to list and set, count function can be used over a map to get the size of the map. It can also be used to get the count of elements in the map that confirms the condition. The second overload can be used with a named parameter or using <code>it</code>.</p>
 <p>The code will look like below.</p>
@@ -424,21 +380,10 @@
 </span></span><span style="display:flex;"><span>println(map.count&lt;/b&gt;())
 </span></span><span style="display:flex;"><span>println(map.count&lt;/b&gt; { <span style="color:#66d9ef">it</span>.<span style="color:#66d9ef">value</span> % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>  })
 </span></span><span style="display:flex;"><span>println(map.count&lt;/b&gt; { element <span style="color:#f92672">-&gt;</span> element.<span style="color:#66d9ef">value</span> % <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>  })
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div>
     
     
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
+</br>
 
 
 						
@@ -519,22 +464,9 @@
 				
 			</div>
 
-			<div class="hidden-xs hidden-sm hidden-md col-lg-2 position-sticky-top">
-				<div class="googleads">
+			
 					
 					
-					<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-1093303282603666"
-						data-ad-slot="5801291010"
-						data-ad-format="vertical"
-						data-full-width-responsive="true"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-					
-				</div>
-			</div>
 		</div>
 
 		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>

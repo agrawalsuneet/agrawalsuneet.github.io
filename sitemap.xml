@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrawalsuneet.github.io/categories/blog/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/categories/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -23,12 +23,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/javascript/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -43,7 +43,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/set-vs-weak-set-in-javascript/</loc>
-    <lastmod>2023-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -128,7 +128,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/set-in-javascript/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -153,7 +153,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/java/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -188,7 +188,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -218,7 +218,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/kotlin/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -248,12 +248,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/tags/swift/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -358,7 +358,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -373,12 +373,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/swift-range-operators/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/swift-for-loop/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -873,7 +873,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</loc>
-    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

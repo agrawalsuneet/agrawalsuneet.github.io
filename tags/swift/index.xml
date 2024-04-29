@@ -6,242 +6,189 @@
     <description>Recent content in Swift on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://agrawalsuneet.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Round vs Floor vs Ceil : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/round-vs-floor-vs-ceil-swift/</guid>
       <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Swift has a few inbuilt functions which can do the rounding up for us but they are a bit confusing.</description>
     </item>
-    
     <item>
       <title>Safe calls(?.) vs Nil checks(!.) in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</link>
       <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-nil-checks-in-swift/</guid>
       <description>In Swift, the type system distinguishes between references that can hold nil (nil references) and those that can not (non-nil references).</description>
     </item>
-    
     <item>
       <title>Default vs Optional vs Explicit Non-nil Variables: Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/default-vs-optional-vs-explicit-non-nil-variables-swift/</guid>
-      <description>In Swift, we can differentiate the variables into three different categories based on their possible values.
-The variable can be of default type, optional type or an explicit non-nil type.</description>
+      <description>In Swift, we can differentiate the variables into three different categories based on their possible values.&#xA;The variable can be of default type, optional type or an explicit non-nil type.</description>
     </item>
-    
     <item>
       <title>Question Mark (? vs ?. vs ?? vs ? :) in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/question-mark-in-swift/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/question-mark-in-swift/</guid>
       <description>In Swift, the question mark works differently in different situations or when clubbed with some other keywords. It sometimes denotes the variable type as optional or sometimes being used for optional chaining.</description>
     </item>
-    
     <item>
       <title>Double vs Float : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/double-vs-float-swift/</guid>
       <description>Swift has two data types (Double and Float) to hold the decimal values. Both of them hold the same decimal type values but have some differences.</description>
     </item>
-    
     <item>
       <title>For-in vs For-each in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/for-in-vs-for-each-in-swift/</guid>
       <description>For-in and for-each are different variants of for loops in swift which are used to iterate over a range, set or dictionary.</description>
     </item>
-    
     <item>
       <title>Custom Object in UserDefaults : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/</guid>
       <description>In continuation to my previous blog UserDefaults in Swift, where we understand the basic functionality of UserDefaults, we&amp;rsquo;ll try to understand today how can we store custom objects in UserDefaults.</description>
     </item>
-    
     <item>
       <title>Custom Object in UserDefaults : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</guid>
-      <description>This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.
-For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift.</description>
+      <description>This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.&#xA;For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift.</description>
     </item>
-    
     <item>
       <title>UserDefaults in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/userdefaults-in-swift/</guid>
       <description>A small set of data is required to be stored and accessed very frequently and need to be persisted across sessions or app launches.</description>
     </item>
-    
     <item>
       <title>UISwitch Value Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/uiswitch-value-change-listener-swift/</guid>
       <description>Adding an value change event to a UISwitch is something that is required most of the time. For views like UISwitch, we can connect an IBAction with the event type as value changed and get a callback for the value changed.</description>
     </item>
-    
     <item>
       <title>UISwitch Value Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</guid>
       <description>This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.</description>
     </item>
-    
     <item>
       <title>UIDatePicker Date Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/uidatepicker-date-change-listener-swift/</guid>
       <description>Adding an editing event to a UIDatePicker is something that is required most of the time. For views like UIDatePicker, we can connect an IBAction with the event type as value changed and get a callback for the value changed.</description>
     </item>
-    
     <item>
       <title>UIDatePicker Date Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</guid>
       <description>This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way.</description>
     </item>
-    
     <item>
       <title>UITextField Text Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/uitextfield-text-listener-swift/</guid>
       <description>Adding an editing event to a UITextField is something that is required most of the time. For views like UITextField, we can connect an IBAction with the event type as editing did end or value changed and get a callback for editing finished or value changed.</description>
     </item>
-    
     <item>
       <title>UITextField Text Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</guid>
       <description>This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.</description>
     </item>
-    
     <item>
       <title>Switch Statement in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</link>
       <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/switch-statement-in-swift/</guid>
       <description>The switch statement in Swift is used to execute a particular block of code based on multiple conditions. A switch statement is useful for more than one condition.</description>
     </item>
-    
     <item>
       <title>Swift Range Operators</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-range-operators/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/swift-range-operators/</guid>
       <description>Range Operator in Swift is a basic operator that is used to operate over a range. There are multiple types of range operators where we can include or exclude the upper range.</description>
     </item>
-    
     <item>
       <title>Swift ‘For’ loop</title>
       <link>https://agrawalsuneet.github.io/blogs/swift-for-loop/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/swift-for-loop/</guid>
       <description>For loops are used by every developer regularly. There is for-in as well as a for-each loop in Swift which has a bit different syntaxes.</description>
     </item>
-    
     <item>
       <title>lazy Property in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/lazy-property-in-swift/</guid>
       <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor.</description>
     </item>
-    
     <item>
       <title>if vs if let vs guard let in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/if-vs-if-let-vs-guard-let-in-swift/</guid>
       <description>if let and guard let are two conditional operators or condition checker which make our life super easy. Other languages have only if as condition checker but swift provides if let as well as guard let also which are operationally same but a bit different in functionality.</description>
     </item>
-    
     <item>
       <title>UIView ClickListener : Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/</guid>
       <description>Adding a click event to a UIView is something that is required most of the time. For views like UIButton, we can connect an IBAction with the event type and detect the click events but sometimes we need it for Lable or even other views.</description>
     </item>
-    
     <item>
       <title>UIView ClickListener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
       <description>This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.</description>
     </item>
-    
     <item>
       <title>mutating in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</link>
       <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/mutating-in-swift/</guid>
       <description>As we all know, Classes are reference type whereas Structures and Enumerations are of a value type in swift. What does that mean is that a class object shares a single instance of the object and passes the same reference if passed to any function or new object whereas the value type is the one which creates a copy of it and passes only the value.</description>
     </item>
-    
     <item>
       <title>‘inout’ in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/inout-in-swift/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/inout-in-swift/</guid>
       <description>Recently, while working with swift I came up with a use case where I need to modify the variable passed as an argument to a function.</description>
     </item>
-    
     <item>
       <title>Computed Property in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/computed-property-in-swift/</guid>
       <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor.</description>
     </item>
-    
     <item>
       <title>Tuple in Swift</title>
       <link>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/tuple-in-swift/</guid>
       <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.</description>
     </item>
-    
   </channel>
 </rss>

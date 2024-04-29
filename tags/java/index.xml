@@ -6,42 +6,35 @@
     <description>Recent content in Java on Suneet Agrawal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://agrawalsuneet.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://agrawalsuneet.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vector in Java</title>
       <link>https://agrawalsuneet.github.io/blogs/vector-in-java/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/vector-in-java/</guid>
       <description>Vectors are an important data structure in Java programming that are used to store and manipulate collections of elements. A vector is similar to an array, but with some additional features that make it more flexible and convenient to use.</description>
     </item>
-    
     <item>
       <title>ArrayList in Java</title>
       <link>https://agrawalsuneet.github.io/blogs/arraylist-in-java/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/arraylist-in-java/</guid>
       <description>ArrayList is one of the most commonly used data structures in Java. It provides a dynamic array implementation that allows you to add and remove elements from the list.</description>
     </item>
-    
     <item>
       <title>Map Implementation in Java</title>
       <link>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/map-implementation-in-java/</guid>
       <description>Java provides a powerful data structure called Map, which is used to store key-value pairs. A Map is a collection of unique keys and their corresponding values, and it provides efficient methods to add, remove, and access elements in constant time.</description>
     </item>
-    
     <item>
       <title>Set Implementation in Java</title>
       <link>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</link>
       <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://agrawalsuneet.github.io/blogs/set-implementation-in-java/</guid>
       <description>Set is an interface in Java that represents a collection of unique elements, meaning that no two elements in a set can be the same.</description>
     </item>
-    
   </channel>
 </rss>

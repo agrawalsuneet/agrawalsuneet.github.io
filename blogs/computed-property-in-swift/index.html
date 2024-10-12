@@ -317,10 +317,21 @@
 <li>That object/property/variable is dependent on another object to initialise first and use its reference.</li></li>
 <li>The flow is such that we need that object only in a certain condition.</li></li>
 </ol>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>In Swift, we have certain features which can help us in delaying that object initialisation as per the requirement.</p>
 <p>One way of doing that is using computed properties.</p>
 <p>Computed properties are the properties that don&rsquo;t get initialised while object creation or constructor is called. They get computed every time the property is accessed.</p>
@@ -344,10 +355,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">self</span>.users.min(by: {$0.age <span style="color:#f92672">&lt;</span> $1.age})
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="lets-try-to-understand-what-exactly-computed-property-is">Let&rsquo;s try to understand what exactly computed property is</h3>
 <p>A Computed property is a delegation of property initialisation that will only be called when that property will be used. This will compute the property every time this property is accessed.</p>
 <p>A Computed property is similar to a normal function which will return a value of certain type but it can&rsquo;t accept parameters.</p>
@@ -383,10 +405,21 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//This will print: Department youngestUser is computed</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//followed by : User(name: &#34;Ballu&#34;, age: 20)</span>
 </span></span></code></pre></div><p>As we can see the computed property was not initialised even when we initialised the `Department class object. That only got initialised when we called the computed property.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h4 id="things-to-keep-in-mind-while-working-with-computed-property">Things to keep in mind while working with computed property</h4>
 <h3 id="can-only-be-a-var-type">Can only be a var type</h3>
 <p>caomputed property can only be <code>var but it can't a </code>let (immutable) property.</p>
@@ -410,10 +443,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">self</span>.users.min(by: {$0.age <span style="color:#f92672">&lt;</span> $1.age})
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="can-be-used-inside-or-outside-a-class-or-struct">Can be used inside or outside a class or struct.</h3>
 <p>A computed property can be used outside a <code>class or </code>struct also.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> pi : Float {
@@ -441,10 +485,21 @@
 </span></span><span style="display:flex;"><span>print(engineeringDepartment.youngestUser ?? <span style="color:#e6db74">&#34;&#34;</span>) 
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//error: Cannot assign to property: &#39;engineeringDepartment&#39; is a &#39;let&#39; constant</span>
 </span></span></code></pre></div><p>Please note that it&rsquo;s not compulsory to create all the objects of that <code>class or </code>struct should be <code>var but in order to access the computed property, the variable should be </code>var (mutable) type.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="can-also-be-defined-in-extensions">Can also be defined in extensions</h3>
 <p>A computed property can also be defined in an extension of the class.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Department</span> {
@@ -483,10 +538,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">self</span>.users.max(by: {$0.age <span style="color:#f92672">&lt;</span> $1.age})
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="the-value-will-be-computed-every-time-when-the-property-will-be-accessed">The value will be computed every time when the property will be accessed</h3>
 <p>The computation of the computed property will only every time when the property will be accessed.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> engineeringDepartment = Department(users: [
@@ -517,10 +583,21 @@
 </span></span></code></pre></div><h3 id="few-things-to-remember-about-computed-property">Few things to remember about computed property</h3>
 <p>A computed property is used to delay the initialisation of property and it will be computed every time when that property will be called. This is similar to a function only but it doesn&rsquo;t take any parameter.</p>
 <p>Also, it can be used inside or ouside a <code>class or </code>struct or even in extensions and the calling object should also be `var.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

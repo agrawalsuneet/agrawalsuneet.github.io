@@ -311,10 +311,21 @@
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>Unreal Engine, developed by Epic Games, is a popular game engine that powers many successful video games and interactive experiences. When working with Unreal Engine, you often encounter various data types for handling text and strings, including FString, FName, and Text. In this blog post, we&rsquo;ll dive into these three text-related data types, explore their differences, and provide examples of when to use each one.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="fstring">FString</h3>
 <p>FString, short for <code>Fixed String</code>, is a dynamic string type used in Unreal Engine. It is similar to the standard C++ string (std::string) and is the most flexible option for handling text. Here are some key features and examples of FString usage:</p>
 <p><strong>Dynamic and mutable</strong>: You can change the contents of an FString after its creation.</p>
@@ -324,10 +335,21 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>FString PlayerName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>;
 </span></span><span style="display:flex;"><span>FString Greeting <span style="color:#f92672">=</span> FString<span style="color:#f92672">::</span>Printf(TEXT(<span style="color:#e6db74">&#34;Hello, %s!&#34;</span>), <span style="color:#f92672">*</span>PlayerName);
 </span></span></code></pre></div><p><strong>Performance considerations</strong>: FString has a small performance overhead compared to FName and Text due to its dynamic nature. Avoid excessive use in performance-critical code.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="fname">FName</h3>
 <p>FName, short for <code>Fixed Name</code>, is a more specialized data type in Unreal Engine. It is primarily used to store and reference names, such as object names, property names, and asset names. Here&rsquo;s why you might want to use FName:</p>
 <p><strong>Efficient memory usage</strong>: FName uses a global name table, which reduces memory overhead when storing the same name multiple times.</p>
@@ -337,10 +359,21 @@
 <p><strong>Ideal for identifying assets</strong>: When referencing assets like textures or materials, FName can be more efficient than FString or Text.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>UTexture2D<span style="color:#f92672">*</span> MyTexture <span style="color:#f92672">=</span> LoadObject<span style="color:#f92672">&lt;</span>UTexture2D<span style="color:#f92672">&gt;</span>(<span style="color:#66d9ef">nullptr</span>, TEXT(<span style="color:#e6db74">&#34;TextureName&#34;</span>));
 </span></span></code></pre></div><p><strong>Not suitable for dynamic text</strong>: FName is immutable and not designed for dynamic text manipulation. Use FString or Text for such purposes.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="text">Text</h3>
 <p>Text is another text-related data type in Unreal Engine that&rsquo;s particularly useful for localization and maintaining text in a human-readable format. Here are some key characteristics and use cases for Text:</p>
 <p><strong>Localization support</strong>: Text supports localization, making it easier to manage multiple languages and translations in your game.</p>
@@ -350,10 +383,21 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>UTextBlock<span style="color:#f92672">*</span> TextElement <span style="color:#f92672">=</span> ...;
 </span></span><span style="display:flex;"><span>TextElement<span style="color:#f92672">-&gt;</span>SetText(MyLocalizedText);
 </span></span></code></pre></div><p><strong>Slightly more memory overhead</strong>: Text has a slightly higher memory overhead than FName due to its localization support, but it&rsquo;s still more memory-efficient than FString.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="differences-between-fstring-fname-and-text">Differences between FString, FName, and Text</h3>
 <h5 id="mutability">Mutability:</h5>
 <ul>
@@ -391,10 +435,21 @@
 Use FName for efficient storage of names and references to assets or objects.
 Use Text for user-facing text, localization, and maintaining human-readable text in a standardized way.
 By choosing the right data type for the job, you can optimize memory usage and improve the overall performance and maintainability of your Unreal Engine project.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

@@ -312,10 +312,21 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>In continuation to my previous blog <a href="/blogs/userdefaults-in-swift/">UserDefaults in Swift</a>, where we understand the basic functionality of UserDefaults, we&rsquo;ll try to understand today how can we store custom objects in UserDefaults.</p>
 <p>UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults. Let&rsquo;s try to understand in detail along with an example.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="what-are-custom-objects-and-codable">What are Custom Objects and Codable?</h3>
 <p>User-defined class or struct objects are known as custom objects. These classes or structs can have any number of properties.</p>
 <p>To store them in UserDefaults, we need to implement or confirm `Codable to the user-defined class or struct.</p>
@@ -346,10 +357,21 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Keep in mind that any custom class used inside the <code>Codable class or struct should also confirm the </code>Codable protocol.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="how-to-store-custom-object-in-userdefaults">How to store custom object in UserDefaults?</h3>
 <p><code>Codable provides the functionality to convert an object into a </code>Data class object.</p>
 <p>UserDefaults has a function similar to primitive data types which takes an `Any? class object and store the value against the key provided.</p>
@@ -372,10 +394,21 @@
 </span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> <span style="color:#66d9ef">let</span> error {
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Error encoding: </span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="how-to-retrieve-custom-object-from-userdefaults">How to retrieve custom object from UserDefaults?</h3>
 <p>UserDefaults has a function to retrieve `Data class objects similar to any other primitive data type.</p>
 <p>The same can be used to retrieve data from UserDefaults but the returned result will be in the `Data? class object.</p>
@@ -395,18 +428,40 @@
 </span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> <span style="color:#66d9ef">let</span> error {
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Error decoding: </span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="generic-extension">Generic Extension</h3>
 <p>We can even add a generic functionality to the UserDefaults class which will store the `Codable class or struct object of Template type and retrieve back the same object using the same key.</p>
 <script src="https://gist.github.com/agrawalsuneet/2546e6c36c01d8ac4808fce3a781e819.js"></script>
 
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>The above functions can be used as below.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> employee = Employee(employeeId: <span style="color:#ae81ff">100</span>, 
 </span></span><span style="display:flex;"><span>                        name: <span style="color:#e6db74">&#34;Suneet&#34;</span>, 
@@ -424,10 +479,21 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> emp = emp {
 </span></span><span style="display:flex;"><span>    print(emp)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

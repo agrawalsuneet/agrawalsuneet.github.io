@@ -317,10 +317,21 @@
 <li>The defined variable will be alive within the defined scope.</li>
 <li>Fewer chances of confusion and more readability.</li>
 </ol>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="what-is-destructuring-declaration">What is destructuring declaration?</h3>
 <p>Let&rsquo;s try to understand what is a destructuring declaration and how does it works internally.</p>
 <p>Usually, when we declare a property, we can initialise it with some value or mark it nullable. If we want to extract a property from an object, we need to do that for each and every property, individually.</p>
@@ -337,10 +348,21 @@
 </span></span></code></pre></div><pre><code>    The output for the above print statement would be
 </code></pre>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Suneet at the age of <span style="color:#ae81ff">29</span> <span style="color:#66d9ef">is</span> working <span style="color:#66d9ef">in</span> Engineering department
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="how-does-it-works-internally">How does it works internally?</h3>
 <p>The compiler internally uses the <code>componentN</code> function of Kotlin to destructure the object and assign them to the properties individually.</p>
 <p><code>componentN</code> is a functionality provided by Kotlin for any data class which return the Nth property (in sequence from the beginning) of that data class.</p>
@@ -354,10 +376,21 @@
 </span></span></code></pre></div><h3 id="things-to-keep-in-mind-while-using-destructuring-declaration">Things to keep in mind while using destructuring declaration</h3>
 <p>Since we don&rsquo;t use <code>componentN</code> function directly in the destructuring declaration, we can&rsquo;t skip any property. If we don&rsquo;t need any property to be used, the compiler will still extract it but we can avoid it by replacing it with an underscore ( <code>_</code> ) but we can&rsquo;t skip it.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#960050;background-color:#1e0010">(</span>name, _, department) = employee
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="use-cases-of-destructuring-declaration">Use cases of destructuring declaration</h3>
 <p>Destructuring declaration can be used anywhere but will try to list its common use cases where it can be way more useful and the readability would be better.</p>
 <h3 id="1-normal-flow">1. Normal Flow</h3>
@@ -375,10 +408,21 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> ((name, age, department) <span style="color:#66d9ef">in</span> list){
 </span></span><span style="display:flex;"><span>    	println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$name</span><span style="color:#e6db74"> at the age of </span><span style="color:#e6db74">$age</span><span style="color:#e6db74"> is working in </span><span style="color:#e6db74">$department</span><span style="color:#e6db74"> department&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="3-return-from-functions">3. Return from functions</h3>
 <p>Destructuring declaration is also helpful while returning multiple values from a function. Instead of getting the result into a variable and that accessing its individual properties, we can directly destructure it to individual properties.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getBestEmployee</span>(): Employee {
@@ -396,10 +440,21 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ((key, <span style="color:#66d9ef">value</span>) <span style="color:#66d9ef">in</span> map){
 </span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$key</span><span style="color:#e6db74"> is pointing to </span><span style="color:#e6db74">$value</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

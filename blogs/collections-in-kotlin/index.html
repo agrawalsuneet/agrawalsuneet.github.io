@@ -321,17 +321,39 @@
 <li>Mutable</li>
 </ol>
 <p>These can be modified means that we can add items or elements to the original object once they are created along with iteration and copy.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>To understand the immutable and mutable types, Let`s try to understand the interfaces in the Collection package of Kotlin first.</p>
 <p>Keep in mind we are only talking about the interfaces and implementations of Kotlin. Although, Android is compatible with Java also and we can use the Collections of Java also defined in <code>java.util</code> package but Kotlin has a separate Collection and a few of the implementations like <code>Vector</code>, <code>CopyOnWriteArrayList</code>, <code>CopyOnWriteArraySet</code> and many more are not there in Kotlin.</p>
 <p><img src="/images/blog/blogs/collection-in-kotlin/collection-in-kotlin.png" alt="Collections in Kotlin"></p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="iterable">Iterable</h3>
 <p>The parent of all the interfaces is <code>Iterable</code>. As the name suggests, it confirms the functionality of iteration by the class which implements it. This has an abstract function iterator that returns the <code>Iterator</code> reference object.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
@@ -358,10 +380,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">iterator</span>(): MutableIterator&lt;T&gt;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="collection">Collection</h3>
 <p>The <code>Iterable</code> is also extended by the <code>Collection</code> interface which provides the basic functions like size, isEmpty, contains and containsAll.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
@@ -449,10 +482,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">clear</span>(): Unit
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="list">List</h3>
 <p><code>List</code> is an ordered collection where we can access the elements by indices. <code>List</code> interface is extended by <code>Collection</code> interface.</p>
 <h3 id="mutablelist">MutableList</h3>
@@ -461,10 +505,21 @@
 <p><code>Set</code> is an unordered collection of unique elements. The order of insertion of elements or items is not maintained in <code>Set</code>. It is extended by <code>Collection</code> interface.</p>
 <h3 id="mutableset">MutableSet</h3>
 <p><code>MutableSet</code> is also an unordered collection of unique elements but this is mutable. The order of insertion of elements or items is also not maintained in <code>MutableSet</code>. It is extended by <code>MutableCollection</code> interface.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="map">Map</h3>
 <p><code>Map</code> is a set of key-value pairs where Keys are unique, and each of them maps to exactly one value. The values can be duplicates but the keys will be unique. The order of insertion of elements or items is not maintained in the map also. <code>Map</code> is immutable means we can<code>t modify the object(add or remove elements) once it</code>s created.</p>
 <p>This has no connection with any of the above interfaces but this has two objects, keys and values which are of types <code>Set</code> and <code>Collection</code> respectively.</p>
@@ -495,10 +550,21 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="mautablemap">MautableMap</h3>
 <p><code>MutableMap</code> is similar to <code>Map</code> only which holds key-value but this is mutable. This also has no connection with any of the above interfaces.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>Now that we have a clear picture of interfaces, lets look at how can we initialise the respective objects in Kotlin</p>
 <h3 id="immutable-and-mutable-list">Immutable and Mutable List</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">//Immutable Lists
@@ -525,10 +591,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> hashMap = hashMapOf(<span style="color:#ae81ff">1</span> to <span style="color:#e6db74">&#34;One&#34;</span>, <span style="color:#ae81ff">2</span> to <span style="color:#e6db74">&#34;Two&#34;</span>, <span style="color:#ae81ff">3</span> to <span style="color:#e6db74">&#34;Three&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> mutableMap = mutableMapOf(<span style="color:#ae81ff">1</span> to <span style="color:#e6db74">&#34;One&#34;</span>, <span style="color:#ae81ff">2</span> to <span style="color:#e6db74">&#34;Two&#34;</span>, <span style="color:#ae81ff">3</span> to <span style="color:#e6db74">&#34;Three&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> sortedMap = sortedMapOf(<span style="color:#ae81ff">1</span> to <span style="color:#e6db74">&#34;One&#34;</span>, <span style="color:#ae81ff">2</span> to <span style="color:#e6db74">&#34;Two&#34;</span>, <span style="color:#ae81ff">3</span> to <span style="color:#e6db74">&#34;Three&#34;</span>)
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

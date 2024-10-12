@@ -317,10 +317,21 @@
 <li>That object/property/variable is dependent on another object to initialise first and use its reference.</li>
 <li>The flow is such that we need that object only in a certain condition.</li>
 </ol>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>In Kotlin, we have certain features which can help us in delaying that object initialisation as per the requirement.</p>
 <p>One way to do that is by using <a href="/blogs/lateinit-property-in-kotlin/">lateinit Property</a> where we just declare the object/property and its type but didn&rsquo;t initialise it.</p>
 <p>The drawbacks with lateinit var is</p>
@@ -339,10 +350,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//can do other initialisation here
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        User(id = <span style="color:#ae81ff">1001</span>, username = <span style="color:#e6db74">&#34;ballu&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="lets-try-to-understand-what-exactly-lazy-is">Let&rsquo;s try to understand what exactly lazy is</h3>
 <p><code>lazy</code> is a function defined in <code>kotlin</code> package which takes a lambda or higher-order function as a parameter and returns <code>Lazy&lt;T&gt;</code> object.</p>
 <p>The passed lambda or higher-order function should return the object of Template class (<code>T</code>).</p>
@@ -356,10 +378,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * the returned instance as it may cause accidental deadlock. Also this behavior can be changed in the future.
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">actual</span> <span style="color:#66d9ef">fun</span> &lt;<span style="color:#a6e22e">T</span>&gt; <span style="color:#a6e22e">lazy</span>(initializer: () <span style="color:#f92672">-&gt;</span> T): Lazy&lt;T&gt; = SynchronizedLazyImpl(initializer)
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>The return type of the above lazy function is a <code>Lazy</code> interface reference object which is also defined in <code>kotlin</code> package. This <code>Lazy</code> reference object server as a delegate for implementation of lazy property.</p>
 <p>The first call to property&rsquo;s <code>get()</code> executes the lambda passed to the <code>lazy</code> function and remembers the result. Any subsequent calls to get the property simply return the remembered result.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
@@ -380,10 +413,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">isInitialized</span>(): Boolean
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="lets-look-at-the-thread-safety-of-lazy-property">Let&rsquo;s look at the thread-safety of lazy property</h3>
 <p>By default, the lazy property is synchronised or thread-safe. That means only a single thread will compute its value and all threads will use the same value. But there is an overload to the lazy function where we can pass the <code>LazyThreadSafetyMode</code> also.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
@@ -402,10 +446,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">LazyThreadSafetyMode</span>.PUBLICATION <span style="color:#f92672">-&gt;</span> SafePublicationLazyImpl(initializer)
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">LazyThreadSafetyMode</span>.NONE <span style="color:#f92672">-&gt;</span> UnsafeLazyImpl(initializer)
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p><code>LazyThreadSafetyMode</code> is an enum class with values as below</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/**
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Specifies how a [Lazy] instance synchronizes initialization among multiple threads.
@@ -430,10 +485,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
 </span></span><span style="display:flex;"><span>    NONE,
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>All 3 types are explained by themselves.</p>
 <ul>
 <li>SYNCHRONIZED is used to ensure thread safety. Only a single thread will initialise the value and it uses lock to ensure the same.</li>
@@ -452,10 +518,21 @@
 <li>By default, the property initialisation is thread-safe.</li>
 <li>We can do other computations also before initialising the actual property in the same lazy function.</li>
 </ol>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

@@ -312,20 +312,42 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are <code>any</code>, <code>non</code> and <code>all</code> functions which were added to the Iterable interface and Map interface.</p>
 <p>Let try to understand what do they do, why they are required and when to use them. But before we begin, I am assuming a basic knowledge of <code>Map</code>, <code>Set</code> and <code>List</code>.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>Any <code>Set</code> or <code>List</code> implementation implements <code>Collection</code> interface (indirectly) which extends <code>Iterable</code> and any <code>Map</code> implementation implement <code>Map</code> interface. All three of them are used to store similar data types with different benefits among the three.</p>
 <p>The <code>List</code> provides the functionality to maintain the ordered collection. whereas <code>Set</code> and <code>Map</code> don&rsquo;t provide the ordering. Both of them provides uniqueness but <code>Map</code> is a key-value pair mapping.</p>
 <p>In short, all three of them are used to store data/objects of similar types.</p>
 <p>Since the collection is involved, filtering will be required to iterate the data faster.
 To make this filter easier, Kotlin has added a few functions as an extension function to <code>Iterable</code> as well as <code>Map</code>.</p>
 <p>Let look at them one by one.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="any">Any</h3>
 <p><code>Any</code> is a function that is added as an extension to <code>Iterable</code> and <code>Map</code> interfaces, which take a <a href="/blogs/higher-order-functions-in-kotlin/">higher-order function</a> as param to predicate the condition and return <code>Boolean</code> as true, if any of the items in <code>List</code>, <code>Set</code> or <code>Map</code> confirms that condition, else return false.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> list = listOf(<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>)
@@ -358,10 +380,21 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (element <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>) <span style="color:#66d9ef">if</span> (predicate(element)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="none">None</h3>
 <p>Similar to <code>Any</code>, <code>None</code> is a function that is added as an extension to <code>Iterable</code> and <code>Map</code> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin/">higher-order function</a> as param to predicate the condition and return <code>Boolean</code> as true if none of the items in <code>List</code>, <code>Set</code> or <code>Map</code> confirms that condition, else return false.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> list = listOf(<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>)
@@ -393,10 +426,21 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (element <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>) <span style="color:#66d9ef">if</span> (predicate(element)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="all">All</h3>
 <p>Similar to <code>Any</code> and <code>None</code>, <code>All</code> is a function that is added as an extension to <code>Iterable</code> and <code>Map</code> interfaces, which also takes a <a href="/blogs/higher-order-functions-in-kotlin/">higher-order function</a> as param to predicate the condition and return <code>Boolean</code> as true if all of the items in <code>List</code>, <code>Set</code> or <code>Map</code> confirms that condition, else return false.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> list = listOf(<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>)
@@ -429,10 +473,21 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (element <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>) <span style="color:#66d9ef">if</span> (!predicate(element)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="any-and-none-without-any-params">Any and None without any params</h3>
 <p><code>Any</code> and <code>None</code> functions also have an overload to both <code>Iterable</code> and <code>Map</code> interfaces which don&rsquo;t take any param but just check if the collection is empty or not.</p>
 <p><code>Any</code> returns true if the collection is not empty whereas <code>None</code> return true if the collection is empty.</p>
@@ -486,17 +541,39 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> &lt;<span style="color:#a6e22e">K</span>, <span style="color:#a6e22e">V</span>&gt; <span style="color:#a6e22e">Map</span>&lt;<span style="color:#66d9ef">out</span> K, V&gt;.none(): Boolean {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> isEmpty()
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="benefits-of-using-these-functions">Benefits of using these functions</h3>
 <p>There is no difference in the implementation but since these are inbuild <a href="/blogs/inline-function-kotlin/">inline function</a>, you don’t have to write the entire iteration and condition check on your own. Please note that there is no difference in time or space complexity also.</p>
 <p>The only reason I wrote about this as a blog is because I feel I am lazy and prefers to use all inbuild functions to write fewer lines of code. :) These were a few of them.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

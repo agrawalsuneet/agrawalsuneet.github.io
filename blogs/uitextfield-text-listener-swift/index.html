@@ -317,10 +317,21 @@
 <li>action of <code>Selector</code> type</li>
 <li>controlEvents of <code>UIControl.Event</code></li>
 </ol>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>The code for the same will look like below.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">//swift code in viewcontroller</span>
 </span></span><span style="display:flex;"><span>
@@ -335,10 +346,21 @@
 </span></span></code></pre></div><p>This way is a bit inefficient as we need to add one function for each <code>UITextField</code> where we need editing event.</p>
 <p>There is a better way where we can add this functionality to each <code>UITextField</code> without making our class messy.</p>
 <p>We can add this to the <code>UITextField</code> extension itself which will be a very clean approach and will make our life super easy.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>First, add a function as an extension to <code>UITextField</code> class which takes a function as a parameter with 0 params and Void return type.</p>
 <p>Since this function will be our callback function, add <code>@escaping</code> to the function passed as the parameter.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">//</span><span style="color:#75715e">MARK:</span><span style="color:#75715e"> - UITextField Extension</span>
@@ -366,10 +388,21 @@
 </span></span><span style="display:flex;"><span>        }, <span style="color:#66d9ef">for</span>: .editingChanged) 
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>This took care of all the boilerplate code and added a simple public function to each <code>UITextField</code> for text change event.</p>
 <p>To call this function, simply call <code>setOnTextChangeListener</code> to any <code>UITextField</code> in your ViewController.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">//swift code in viewcontroller</span>
@@ -383,10 +416,21 @@
 <h3 id="complete-code">Complete code</h3>
 <script src="https://gist.github.com/agrawalsuneet/e36e8998a0e4e313953e8cb0f4e1fb77.js"></script>
 
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

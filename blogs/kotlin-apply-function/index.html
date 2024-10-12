@@ -312,10 +312,21 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>In continuation to my previous post where I explained about <a href="/blogs/kotlin-let-function/">Kotlin let function</a>, let&rsquo;s try to understand today about <code>apply</code> function today.</p>
 <p>Just to recap, Scope functions are nothing but the functions which define to the scope of the calling object. We can apply operations on that object within that scope and return the object itself from that scope function or we can even return the result of operation or operations from the scope function.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>There are a few scope functions</p>
 <ul>
 <li><a href="/blogs/kotlin-let-function/">let</a></li>
@@ -346,10 +357,21 @@
 <pre><code>    1. The return type of the `apply` function is nothing but the same calling object.
     2. Since its an extension function to the Template class, it can be called on any object.
 </code></pre>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="now-lets-understand-what-is-the-contract">Now let&rsquo;s understand what is the contract</h3>
 <p>The contract is nothing but a contract applied to the passed lambda as a parameter.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>/**
@@ -400,10 +422,21 @@
 <li>called on the calling object.</li>
 <li>and will return the object itself on which the <code>apply</code> function is called.</li>
 </ul>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="now-lets-look-at-the-usecases">Now let&rsquo;s look at the use cases</h3>
 <p><code>apply</code> is recommended for lambdas that mainly operate on the object members or call its functions or assign properties. In short, it is mostly used for object configurations.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span> {
@@ -429,10 +462,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.age = <span style="color:#ae81ff">27</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#75715e">//this line doesn&#39;t make sense at all
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>We can even chain the <code>apply</code> function</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> firstName: String = <span style="color:#e6db74">&#34;&#34;</span>
@@ -452,10 +496,21 @@
 <li><code>apply</code> uses the context as <code>this</code> and we can not use a named parameter instead of <code>this</code>.</li>
 <li><code>apply</code> returns the calling object itself.</li>
 </ol>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

@@ -312,10 +312,21 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.</p>
 <p>The range operators can be used with <a href="/blogs/kotlin-for-loop/">for loops</a>, if conditions or even in <a href="/blogs/when-operator-in-kotlin/">when operator</a>. First, let to see a basic example of a range operator.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>A basic range operator can be defined with <code>..</code> having a lower range value to the left side and upper range value to the right side of <code>..</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> x = <span style="color:#ae81ff">4</span>
 </span></span><span style="display:flex;"><span>
@@ -344,10 +355,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @sample samples.ranges.Ranges.rangeFromComparable
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">operator</span> <span style="color:#66d9ef">fun</span> <span style="color:#960050;background-color:#1e0010">&amp;</span><span style="color:#a6e22e">lt</span>;T : Comparable&amp;lt;T&amp;gt;&amp;gt; <span style="color:#a6e22e">T</span>.rangeTo(that: T): ClosedRange&amp;lt;T&amp;gt; = ComparableRange(<span style="color:#66d9ef">this</span>, that)
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="closedrange">ClosedRange</h3>
 <p>The <code>rangeTo()</code> function returns a <code>ClosedRange</code> interface object which has a <code>start</code> and an <code>endInclusive</code> variables and <code>contains</code> operator function which is used by the <code>in</code> operator and an <code>isEmpty</code> function.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">package</span> kotlin.ranges
@@ -378,10 +400,21 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">isEmpty</span>(): Boolean = start &amp;gt; endInclusive
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="charrange-intrange--longrange">CharRange, IntRange &amp; LongRange</h3>
 <p><code>ClosedRange</code> is further extended by <code>CharRange</code>, <code>IntRange</code> and <code>LongRange</code> which provides the functionality of <code>Iterable</code> also along with closed range which is used by [for loops](/blogs/kotlin-for-loop/&quot; target=&quot;_blank&quot;).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">package</span> kotlin.ranges
@@ -479,10 +512,21 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">val</span> EMPTY: LongRange = LongRange(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="downto">downTo</h3>
 <p>To iterate over a range in reverse order, we can use <code>downTo</code> operator which is an extension function on different types like <code>Int</code>, <code>Long</code>, <code>Char</code> and provides the reverse iteration with step size as <code>-1</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> x = <span style="color:#ae81ff">4</span>
@@ -500,10 +544,21 @@
 </span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;X is in range&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="until">until</h3>
 <p>The <code>until</code> operator can be used to exclude the <code>endElement</code>. The <code>iterator</code> or the <code>if</code> and <code>when</code> condition will not include the end element in case of <code>until</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> x = <span style="color:#ae81ff">4</span>
@@ -521,10 +576,21 @@
 </span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;X is in range&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="step">step</h3>
 <p>The <code>step</code> can be used to change the step size of the iteration over the range.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> x = <span style="color:#ae81ff">4</span>
@@ -542,10 +608,21 @@
 </span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;X is in range&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

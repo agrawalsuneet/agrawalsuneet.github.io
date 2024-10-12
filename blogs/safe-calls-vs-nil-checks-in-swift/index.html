@@ -315,10 +315,21 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> variable : CustomClass = CustomClass()
 </span></span><span style="display:flex;"><span>variable = <span style="color:#66d9ef">nil</span> <span style="color:#75715e">//compilation error </span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//&#39;nil&#39; cannot be assigned to type &#39;CustomClass&#39;</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>Instead, we can add a <code>?</code> after the data type of that property which declares that variable as a nillable property.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> nillableVariable : CustomClass? = CustomClass()
 </span></span><span style="display:flex;"><span>nillableVariable = <span style="color:#66d9ef">nil</span> <span style="color:#75715e">//works fine</span>
@@ -329,10 +340,21 @@
 </span></span><span style="display:flex;"><span>                                  <span style="color:#75715e">//as compiler is not sure as</span>
 </span></span><span style="display:flex;"><span>                                  <span style="color:#75715e">//nilVariable can be nil.</span>
 </span></span></code></pre></div><p>There are still few techniques for using or accessing the nillable variable. One of them is safe call <code>?.</code> and another one is nil check <code>!.</code> but before figuring out the difference among both, let’s understand what they are in detail first.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="if-let-and-guard-let">If Let and Guard Let</h3>
 <p>This is the old pattern that we use in every other language, checking the variable if its nil or not.</p>
 <p>If let checks if the nillable variable is nil or not.</p>
@@ -352,10 +374,21 @@
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>nillableVariable.someMethodCall()
 </span></span></code></pre></div><p>You can read the difference between if-let and guard-let on <a href="/blogs/if-vs-if-let-vs-guard-let-in-swift/">if vs if let vs guard let in Swift</a>.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="safe-calls-">Safe Calls (?.)</h3>
 <p>Another way of using a nillable property is safe call operator <code>?.</code></p>
 <p>This calls the method if the property is not nil or returns nil if that property is nil without throwing an NPE (nil pointer exception).</p>
@@ -363,19 +396,41 @@
 </span></span></code></pre></div><p>Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob’s department head (if any), we write the following</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> departmentHead = bob?.department?.head?.name
 </span></span></code></pre></div><p>Such a chain returns nil if any of the properties in it is nil.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="nil-coalescing-operator-">Nil-Coalescing Operator (??)</h3>
 <p>This one is similar to safe calls except the fact that it can return a non-nil value if the calling property is nil even</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>val result = nillableVariable?.someMethodCall()
 </span></span><span style="display:flex;"><span>                       ?? fallbackIfnilMethodCall()
 </span></span></code></pre></div><p>The Nil-Coalescing operator will evaluate the left expression and will return it if it’s not nil else will evaluate the right side expression. Please note that the right side expression will only be called if the left side expression is nil.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <h3 id="the--operator">The !. Operator</h3>
 <p>This operator is used to explicitly tell the compiler that the property is not nil and if it’s nil, please throw a nil pointer exception (<code>NPE</code>)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>nillableVariable!.someMethodCall()
@@ -386,10 +441,21 @@
 <li>But if you are sure that the property value is not nil use <code>!.</code> instead of <code>?.</code></li>
 <li>Also, <code>?.</code> can be used to call default flow using <code>??</code> at the end of the expression but <code>!!</code> will only throw an NPE.</li>
 </ul>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

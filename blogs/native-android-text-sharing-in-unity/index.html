@@ -312,10 +312,21 @@
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>In continuation to my previous blogs <a href="/blogs/native-android-in-unity/">Native Android in Unity</a>, will consider another example of native Android text sharing functionality in the unity app. This is a very common requirement in any unity app targeting Android platform to share the high score or challenge other players with a text message or a screenshot of the high score. The sharing can be done via any of the app available on the user’s device which supports sharing.</p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>Android provides a native share functionality to do the same where we provide the text and/or the image to share to the Android system and Android provides a list of available apps on the device to share, where the user can pick one app to perform the share action.</p>
 <p><img src="/images/blog/blogs/native-android-text-sharing-in-unity/native-android-text-sharing-in-unity-1.png" alt="Native Android text sharing in Unity"></p>
 <p>Now let’s see first how sharing works in native Android.</p>
@@ -348,10 +359,21 @@
 </span></span><span style="display:flex;"><span>sendIntent.putExtra(<span style="color:#a6e22e">Intent</span>.EXTRA_TEXT, shareMessage)
 </span></span><span style="display:flex;"><span>sendIntent.type = <span style="color:#e6db74">&#34;text/plain&#34;</span>
 </span></span><span style="display:flex;"><span>startActivity(<span style="color:#a6e22e">Intent</span>.createChooser(sendIntent, <span style="color:#e6db74">&#34;Share Via&#34;</span>))
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>Let’s see how we can use the same native Android share functionality in a unity app. As in the previous post about <a href="/blogs/native-android-in-unity/">Native Android in Unity</a> we learnt that we can use all the native android classes in unity using <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaClass.html">AndroidJavaClass</a> and <a href="https://docs.unity3d.com/ScriptReference/AndroidJavaObject.html">AndroidJavaObject</a></p>
 <p>Let’s use these classes and go step by step. First will create an <code>AndroidJavaClass</code> object of <code>Intent</code> class and will create and <code>AndroidJavaObject</code> of that class.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">//C# code in unity</span>
@@ -392,10 +414,21 @@
 </span></span><span style="display:flex;"><span>                     intentObject, <span style="color:#e6db74">&#34;Share your high score&#34;</span>);
 </span></span><span style="display:flex;"><span>currentActivity.Call (<span style="color:#e6db74">&#34;startActivity&#34;</span>, chooser);
 </span></span></code></pre></div><p><img src="/images/blog/blogs/native-android-text-sharing-in-unity/native-android-text-sharing-in-unity-2.png" alt="Native Android text sharing in Unity"></p>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 <p>The entire script for Android native text sharing in unity (C#) would be</p>
 <script src="https://gist.github.com/agrawalsuneet/5c3b2ccff8b443f37cc7e7237a03eb0d.js"></script>
 
@@ -405,10 +438,21 @@
 <li><a href="/blogs/native-android-image-sharing-in-unity/">Native Android image sharing in Unity</a></li>
 <li><a href="/blogs/native-android-image-sharing-in-unity-using-fileprovider/">Android image sharing in Unity using FileProvider</a></li>
 </ul>
-
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-</br>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
 
 
 						

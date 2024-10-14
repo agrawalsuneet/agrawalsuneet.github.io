@@ -316,7 +316,7 @@
 </span></span><span style="display:flex;"><span>     print(i)
 </span></span><span style="display:flex;"><span> }
 </span></span></code></pre></div><p>But what is the use? Where I am going to use this label and why would I use it?</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -356,7 +356,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">205</span> <span style="color:#ae81ff">206</span> <span style="color:#ae81ff">207</span> <span style="color:#ae81ff">2</span> loop ends 
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">305</span> <span style="color:#ae81ff">306</span> <span style="color:#ae81ff">307</span> <span style="color:#ae81ff">3</span> loop ends 
 </span></span><span style="display:flex;"><span>We are done
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -392,7 +392,7 @@
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;We are done&#34;</span>)
 </span></span></code></pre></div><p>We need to add two condition checks and break statements because the break statement only works for the nearest enclosing loop.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -422,7 +422,7 @@
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;We are done&#34;</span>)
 </span></span></code></pre></div><p>In the above code, we labelled the outer loop as <code>loopi</code> and while checking the condition we break the loop using the same label. And this will break the entire execution of the loops when the condition will be true.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -457,7 +457,7 @@
 </span></span><span style="display:flex;"><span>We are done
 </span></span></code></pre></div><p>Now that we understand that labels can be used to <code>break</code> or <code>continue</code> the non-nearest enclosing loops, lets understand the use of label reference in <code>return</code> expression.</p>
 <p>With function literals, local functions and object expression, functions can be nested in Kotlin. Qualified returns allow us to return from an outer function.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -497,7 +497,7 @@
 </span></span></code></pre></div><p>And the output will be</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">5</span> I<span style="color:#960050;background-color:#1e0010">&#39;</span>ll be printed too :)
 </span></span></code></pre></div><p>The reason why 4 and 5 were printed is that the forEach loop was called for each and every value separately. The condition for it == 3 passes and <code>return</code> for that condition only but not for 4 and 5.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -546,7 +546,7 @@
 </span></span></code></pre></div><p>In the above code, the inner lambda expression will return from outer lambda expression that is labelled as <code>loop</code> based on the condition and will execute after the outer lambda expression.</p>
 <p>The output for the above code will be</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> I<span style="color:#960050;background-color:#1e0010">&#39;</span>ll be printed too :)
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     

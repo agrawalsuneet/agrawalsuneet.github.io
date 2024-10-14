@@ -313,7 +313,7 @@
 						<p>In continuation to my last Medium post <a href="/blogs/extensions-in-kotlin/">Extensions in Kotlin</a> where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.</p>
 <p>An extension can be defined as members of some other class also.</p>
 <p>The benefit of defining an extension as a member of the other class is, we can access all the functions and properties of both the classes inside that extension method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -350,7 +350,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We have two classes named <code>BaseClass</code> and <code>OtherClass</code>. We have a method called <code>baseClassFunctionality</code> in <code>BaseClass</code> and <code>otherClassFunctionality</code> in <code>OtherClass</code>. Now, we added an extension function of BaseClass in OtherClass naming additionalFunctionality. The benefit of adding an extension function of <code>BaseClass</code> in <code>OtherClass</code> is we can access all the methods of <code>BaseClass</code> and <code>OtherClass</code> in that method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -398,7 +398,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//will be
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>I am <span style="color:#66d9ef">in</span> BaseClass 
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -450,7 +450,7 @@
 </span></span><span style="display:flex;"><span>                 DerivedOtherClass<span style="color:#e6db74">&#34;)</span>
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -491,7 +491,7 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">BaseClass</span>.someFunctionality <span style="color:#66d9ef">in</span> DerivedOtherClass
 </span></span></code></pre></div><p>This will call the extension function of <code>BaseClass</code> overridden in <code>DerivedOtherClass</code>.</p>
 <p>The virtual dependency of <code>OtherClass</code> and <code>DerivedOtherClass</code> was resolved at runtime and it called the <code>DerivedOtherClass’s</code> overridden method.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -537,7 +537,7 @@
 <p>If the extension function is defined outside the class, it can not access the private variables or functions of that class.</p>
 </li>
 </ul>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     

@@ -312,7 +312,7 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>In continuation to my previous blog <a href="/blogs/userdefaults-in-swift/">UserDefaults in Swift</a>, where we understand the basic functionality of UserDefaults, we&rsquo;ll try to understand today how can we store custom objects in UserDefaults.</p>
 <p>UserDefaults provides us with direct functions for storing primitive data types like Int, Double, Bool, and String. But for custom data types, there is no direct way to store them in UserDefaults. But there is a workaround with which we can store the custom object to UserDefaults. Let&rsquo;s try to understand in detail along with an example.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -359,7 +359,7 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Keep in mind that any custom class used inside the <code>Codable class or struct should also confirm the </code>Codable protocol.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -398,7 +398,7 @@
 </span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> <span style="color:#66d9ef">let</span> error {
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Error encoding: </span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -434,7 +434,7 @@
 </span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> <span style="color:#66d9ef">let</span> error {
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Error decoding: </span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -455,7 +455,7 @@
 <p>We can even add a generic functionality to the UserDefaults class which will store the `Codable class or struct object of Template type and retrieve back the same object using the same key.</p>
 <script src="https://gist.github.com/agrawalsuneet/2546e6c36c01d8ac4808fce3a781e819.js"></script>
 
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -489,7 +489,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> emp = emp {
 </span></span><span style="display:flex;"><span>    print(emp)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     

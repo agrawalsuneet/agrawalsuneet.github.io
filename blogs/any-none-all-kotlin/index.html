@@ -312,7 +312,7 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are <code>any</code>, <code>non</code> and <code>all</code> functions which were added to the Iterable interface and Map interface.</p>
 <p>Let try to understand what do they do, why they are required and when to use them. But before we begin, I am assuming a basic knowledge of <code>Map</code>, <code>Set</code> and <code>List</code>.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -335,7 +335,7 @@
 <p>Since the collection is involved, filtering will be required to iterate the data faster.
 To make this filter easier, Kotlin has added a few functions as an extension function to <code>Iterable</code> as well as <code>Map</code>.</p>
 <p>Let look at them one by one.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -384,7 +384,7 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (element <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>) <span style="color:#66d9ef">if</span> (predicate(element)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -432,7 +432,7 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (element <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>) <span style="color:#66d9ef">if</span> (predicate(element)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -481,7 +481,7 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (element <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">this</span>) <span style="color:#66d9ef">if</span> (!predicate(element)) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -551,7 +551,7 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> &lt;<span style="color:#a6e22e">K</span>, <span style="color:#a6e22e">V</span>&gt; <span style="color:#a6e22e">Map</span>&lt;<span style="color:#66d9ef">out</span> K, V&gt;.none(): Boolean {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> isEmpty()
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -571,7 +571,7 @@ To make this filter easier, Kotlin has added a few functions as an extension fun
 <h3 id="benefits-of-using-these-functions">Benefits of using these functions</h3>
 <p>There is no difference in the implementation but since these are inbuild <a href="/blogs/inline-function-kotlin/">inline function</a>, you don’t have to write the entire iteration and condition check on your own. Please note that there is no difference in time or space complexity also.</p>
 <p>The only reason I wrote about this as a blog is because I feel I am lazy and prefers to use all inbuild functions to write fewer lines of code. :) These were a few of them.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     

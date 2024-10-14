@@ -312,7 +312,7 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.</p>
 <p>Let&rsquo;s try to understand some basic differences between then and when to use what. But before that let&rsquo;s quickly recap the lateinit and lazy properties</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -340,7 +340,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> lazyUser : User? <span style="color:#66d9ef">by</span> lazy {
 </span></span><span style="display:flex;"><span>        User(id = <span style="color:#ae81ff">1</span>, username = <span style="color:#e6db74">&#34;agrawalsuneet&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -372,7 +372,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//can do other initialisation here
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        User(id = <span style="color:#ae81ff">1</span>, username = <span style="color:#e6db74">&#34;agrawalsuneet&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -407,7 +407,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> lazyUser <span style="color:#66d9ef">by</span> lazyUserDelegate   
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>println(lazyUserDelegate.isInitialized())
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -436,7 +436,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> lazyUser : User? <span style="color:#66d9ef">by</span> lazy(<span style="color:#a6e22e">LazyThreadSafetyMode</span>.SYNCHRONIZED) {
 </span></span><span style="display:flex;"><span>        User(id = <span style="color:#ae81ff">1</span>, username = <span style="color:#e6db74">&#34;agrawalsuneet&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -465,7 +465,7 @@
 <p>We can&rsquo;t ever access a lazy property before it hased been initialised. Remember that the lazy property can be null but the initialisation will still happen when the first time the property will be called.</p>
 <p>Based on the above difference we can decide when to use the lateinit property or when to use the lazy property. The developer doesn&rsquo;t have to remember if the property is initialised or not in case of lazy property but in case of lateinit we need to remember the flow.</p>
 <p>There are no guidelines in order to decide when to use what but according to the use case, we can decide.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     

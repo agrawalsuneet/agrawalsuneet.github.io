@@ -312,7 +312,7 @@
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
 						<p>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.</p>
 <p>Let’s figure out what are the types of checks available in Kotlin.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -344,7 +344,7 @@
 <li><code>NaN</code> is considered greater than any other element including POSITIVE_INFINITY</li>
 <li><code>-0.0</code> is considered less than <code>0.0</code></li>
 </ul>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -392,7 +392,7 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>println(emp1.name.equals(emp2.name))  <span style="color:#75715e">//true
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>println(emp1.name <span style="color:#f92672">===</span> emp2.name)      <span style="color:#75715e">//true
 </span></span></span></code></pre></div><p>The reason for the above comparison is obvious, As Empoyee is not a primitive datatype or wrapper class, all three compared the references, which returns <code>false</code> for all three checks. But in the case of string comparison, if only checks the contents of the string which were equal so it returns <code>true</code> for every case.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     
@@ -436,7 +436,7 @@
 <li>As there is no constructor as <code>String(“”)</code> in Kotlin, all string comparison will give <code>true</code> if the content will be equal.</li>
 <li>There’s no point in optimizing code when comparing to <code>null</code> explicitly. <code>a == null</code> will be automatically translated to <code>a === null</code> as null is a reference and at the end, it will a reference check.</li>
 </ul>
-<div class="col-xs-12 googleads" aria-hidden="true">
+<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
     
     
     

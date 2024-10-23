@@ -4,7 +4,7 @@
     <title>C&#43;&#43; on Suneet Agrawal</title>
     <link>https://agrawalsuneet.github.io/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Suneet Agrawal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Oct 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://agrawalsuneet.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</link>
       <pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/while-and-do-while-loop-in-c&#43;&#43;/</guid>
-      <description>Loops are fundamental constructs in programming that allow us to repeat a block of code multiple times. In C++, two commonly used loop structures are the while loop and the do-while loop.</description>
+      <description>&lt;p&gt;Loops are fundamental constructs in programming that allow us to repeat a block of code multiple times. In C++, two commonly used loop structures are the while loop and the do-while loop. In this blog post, we&amp;rsquo;ll dive into these loops, understand their syntax, and provide examples to illustrate their usage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>For and Foreach Loop in C&#43;&#43;</title>
       <link>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/for-and-foreach-loop-in-c&#43;&#43;/</guid>
-      <description>When it comes to repetitive tasks in programming, loops are a powerful and versatile tool that can simplify your code and make it more efficient.</description>
+      <description>&lt;p&gt;When it comes to repetitive tasks in programming, loops are a powerful and versatile tool that can simplify your code and make it more efficient. In C++, two commonly used loops are the for loop and the for each loop. In this comprehensive guide, we&amp;rsquo;ll explore both types of loops in C++ and provide you with various examples to help you master their usage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Forward Declaration in C&#43;&#43;</title>
       <link>https://agrawalsuneet.github.io/blogs/forward-declaration-in-c&#43;&#43;/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/forward-declaration-in-c&#43;&#43;/</guid>
-      <description>In C++, `forward declaration`` is a powerful tool that allows you to declare the existence of various entities before providing their full definitions.</description>
+      <description>&lt;p&gt;In C++, `forward declaration`` is a powerful tool that allows you to declare the existence of various entities before providing their full definitions. This technique is particularly useful for resolving circular dependencies, improving code organization, and optimizing compile times. In this blog post, we will explore forward declaration for a wide range of C++ entities, including classes, structs, enums, functions, variables, namespaces, class templates, and even friend functions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enum vs Enum Class in C&#43;&#43;</title>
       <link>https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c&#43;&#43;/</link>
       <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c&#43;&#43;/</guid>
-      <description>In C++, enumerations (enums) are a powerful tool for creating named sets of integer constants. They help improve code readability and maintainability by providing meaningful names to numeric values.</description>
+      <description>&lt;p&gt;In C++, enumerations (enums) are a powerful tool for creating named sets of integer constants. They help improve code readability and maintainability by providing meaningful names to numeric values. However, C++ offers two ways to define enums: the traditional enum and the more modern enum class. In this blog, we&amp;rsquo;ll explore the differences between these two options and when to use each with the help of examples.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

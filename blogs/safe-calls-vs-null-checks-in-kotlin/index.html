@@ -314,21 +314,19 @@
 For example, a normal property can&rsquo;t hold a null value and will show a compile error.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> variable : CustomClass = CustomClass()
 </span></span><span style="display:flex;"><span>variable = <span style="color:#66d9ef">null</span> <span style="color:#75715e">//compilation error
-</span></span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <p>Instead, we can add a <code>?</code> after the data type of that property which declares that variable as a nullable property</p>
@@ -341,21 +339,19 @@ For example, a normal property can&rsquo;t hold a null value and will show a com
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                  <span style="color:#75715e">//as compiler is not sure as
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                  <span style="color:#75715e">//nullVariable can be null.
 </span></span></span></code></pre></div><p>There are still few techniques for using or accessing the nullable variable. One of them is safe call <code>?.</code> and another one is null check <code>!!</code> but before figuring out the difference among both, let&rsquo;s understand what they are in detail first.</p>
-<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <h3 id="explicit-null-check">Explicit Null Check</h3>
@@ -368,21 +364,19 @@ For example, a normal property can&rsquo;t hold a null value and will show a com
 </span></span></code></pre></div><p>Note this exclusive works where &rsquo;nullableVariable&rsquo; is immutable (i.e. a local property which can&rsquo;t be altered between the check and the utilization or a member &lsquo;val&rsquo; which has a backing field and is not overridable), else it may happen that &rsquo;nullableVariable&rsquo; changes to null after the check.</p>
 <p>If it&rsquo;s a mutable property, the explicit null check won&rsquo;t work and the compiler will show the below compilation error.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Smart cast to CustomClass <span style="color:#66d9ef">is</span> impossible, because nullableVariable <span style="color:#66d9ef">is</span> a mutable <span style="color:#66d9ef">property</span> that could have been changed <span style="color:#66d9ef">by</span> <span style="color:#66d9ef">this</span> time.
-</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <h3 id="safe-calls-">Safe Calls (?.)</h3>
@@ -397,21 +391,19 @@ For example, a normal property can&rsquo;t hold a null value and will show a com
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (item <span style="color:#66d9ef">in</span> listWithNulls) {
 </span></span><span style="display:flex;"><span> item<span style="color:#f92672">?.</span>let { println(<span style="color:#66d9ef">it</span>) } <span style="color:#75715e">// prints A and ignores null
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <h3 id="elvis-operator-">Elvis Operator (?:)</h3>
@@ -425,21 +417,19 @@ For example, a normal property can&rsquo;t hold a null value and will show a com
 </span></span><span style="display:flex;"><span> <span style="color:#66d9ef">val</span> name = node.getName() <span style="color:#f92672">?:</span> <span style="color:#66d9ef">throw</span> IllegalArgumentException(<span style="color:#e6db74">&#34;name expected&#34;</span>)
 </span></span><span style="display:flex;"><span> <span style="color:#75715e">// …
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span></code></pre></div><div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+</span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <h3 id="the--operator">The !! Operator</h3>
@@ -452,21 +442,19 @@ For example, a normal property can&rsquo;t hold a null value and will show a com
 <li>But if you are sure that the var property value is not null use <code>!!</code> instead of <code>?.</code></li>
 <li>Also, <code>?.</code> can be used to return or throw a different kind of exceptions using <code>?:</code> at the end of the expression but <code>!!</code> will only throw an NPE.</li>
 </ul>
-<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 

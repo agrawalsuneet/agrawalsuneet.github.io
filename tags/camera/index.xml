@@ -4,7 +4,7 @@
     <title>Camera on Suneet Agrawal</title>
     <link>https://agrawalsuneet.github.io/tags/camera/</link>
     <description>Recent content in Camera on Suneet Agrawal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://agrawalsuneet.github.io/tags/camera/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
-      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen?</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Are you using the best out of your device camera and GPU in your app?&lt;/li&gt;&#xA;&lt;li&gt;Do you know how camera frames are drawn on the screen?&lt;/li&gt;&#xA;&lt;li&gt;Do you think your camera should do way more than just clicking a picture?&lt;/li&gt;&#xA;&lt;li&gt;Did you ever try to process the frames like applying filters or beautification before previewing it?&lt;/li&gt;&#xA;&lt;li&gt;How a view or camera frame is drawn on the screen?&lt;/li&gt;&#xA;&lt;li&gt;What is OpenGL? How OpenGL controls GPU rendering?&lt;/li&gt;&#xA;&lt;li&gt;What are vertex and fragment shaders? How do they affect the camera frame and preview?&lt;/li&gt;&#xA;&lt;li&gt;How can we modify the camera frames between camera APIs and previewing? What all can we do with that?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Well, let&amp;rsquo;s get all these questions answered in the presentation below with our experiences and challenges we&amp;rsquo;ve faced.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

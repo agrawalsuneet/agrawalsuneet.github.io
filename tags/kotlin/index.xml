@@ -4,7 +4,7 @@
     <title>Kotlin on Suneet Agrawal</title>
     <link>https://agrawalsuneet.github.io/tags/kotlin/</link>
     <description>Recent content in Kotlin on Suneet Agrawal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://agrawalsuneet.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
@@ -13,364 +13,364 @@
       <link>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/destructuring-declarations-in-kotlin/</guid>
-      <description>Sometimes it&amp;rsquo;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using .</description>
+      <description>&lt;p&gt;Sometimes it&amp;rsquo;s easy to destructure an object into multiple variables of different properties instead of calling it again and again using &lt;code&gt;.&lt;/code&gt; operator on the property or instance itself. It is beneficial for a few reasons like,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nested Class vs Inner Class : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</link>
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/nested-class-vs-inner-class-kotlin/</guid>
-      <description>Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way.</description>
+      <description>&lt;p&gt;Nested and Inner classes are two important concepts in Kotlin that allow developers to organize and structure their code in a more effective way. In this blog, we&amp;rsquo;ll explore these concepts and understand how they can be used in Kotlin.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin Count Function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-count-function/</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-count-function/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
+      <description>&lt;p&gt;The collection is something which is used by almost everyone. It makes our life easy. &lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt; and &lt;code&gt;Map&lt;/code&gt; are the best examples of them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Plus(&#43;) and Minus(-) Operator : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</link>
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/plus-and-minus-operator-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
+      <description>&lt;p&gt;The collection is something which is used by almost everyone. It makes our life easy. &lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt; and &lt;code&gt;Map&lt;/code&gt; are the best examples of them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Filter Operator : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/filter-operator-kotlin/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/filter-operator-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
+      <description>&lt;p&gt;The collection is something which is used by almost everyone. It makes our life easy. &lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt; and &lt;code&gt;Map&lt;/code&gt; are the best examples of them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Map Operator : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/map-operator-kotlin/</link>
       <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/map-operator-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
+      <description>&lt;p&gt;The collection is something which is used by almost everyone. It makes our life easy. &lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt; and &lt;code&gt;Map&lt;/code&gt; are the best examples of them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Math.round vs Math.floor vs Math.ceil : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/</link>
       <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/math-round-vs-math-floor-vs-math-ceil-kotlin/</guid>
-      <description>Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing.</description>
+      <description>&lt;p&gt;Rounding up to the nearest Integer value functionality is something required a lot of times. Kotlin has a few inbuilt functions which can do the rounding up for us but they are a bit confusing. To decide when to use what, we need to understand which rounding function rounds up in which direction and which data types it can round up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin Range Operator</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-range-operator/</guid>
-      <description>Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.</description>
+      <description>&lt;p&gt;Range Operator in Kotlin is a basic operator that is used to operate over a range. A range can be defined with a start value and an end value with and without inclusion.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Iterators in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/iterators-in-kotlin/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/iterators-in-kotlin/</guid>
-      <description>Collections (Sets, Maps and Lists) are something we use daily. Traversing (Iteration) is the most common operation we perform over any collection.</description>
+      <description>&lt;p&gt;Collections (&lt;code&gt;Sets&lt;/code&gt;, &lt;code&gt;Maps&lt;/code&gt; and &lt;code&gt;Lists&lt;/code&gt;) are something we use daily. Traversing (Iteration) is the most common operation we perform over any collection.&lt;/p&gt;</description>
     </item>
     <item>
       <title>lateinit vs lazy Property in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-vs-lazy-property-in-kotlin/</guid>
-      <description>Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required.</description>
+      <description>&lt;p&gt;Since object creation is a heavy process as it initialises all the public and private properties defined in that class when the constructor is called, Kotlin has few ways to initialise properties later when required. We already discussed lateinit properties and lazy properties.&lt;/p&gt;</description>
     </item>
     <item>
       <title>lazy Property in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/lazy-property-in-kotlin/</guid>
-      <description>Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor.</description>
+      <description>&lt;p&gt;Object creation is a heavy process. When we create a class object, all the public and private properties of that class are initialised inside the constructor. Every variable inside a class initialisation requires a certain amount of time to allocate the memory on the heap and hold its reference on the stack. The more variables, the more time it may take but since the time is in microseconds or even less, it&amp;rsquo;s not observable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why with function is not an Extension to Template class?</title>
       <link>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</link>
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/why-with-function-is-not-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about Kotlin with function, a lot of developers have asked me about, why with is not an extension to Template class like other scope functions?</description>
+      <description>&lt;p&gt;After reading my last blog about &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/kotlin-with-function/&#34;&gt;Kotlin with function&lt;/a&gt;, a lot of developers have asked me about, why &lt;code&gt;with&lt;/code&gt; is not an extension to &lt;code&gt;Template&lt;/code&gt; class like other scope functions?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin run function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-run-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions.</description>
+      <description>&lt;p&gt;Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin with function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-with-function/</link>
       <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-with-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions.</description>
+      <description>&lt;p&gt;Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin also function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-also-function/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-also-function/</guid>
-      <description>In continuation to my previous post where I explained about Kotlin let function and Kotlin apply function, let&amp;rsquo;s try to understand today about also function today.</description>
+      <description>&lt;p&gt;In continuation to my previous post where I explained about &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/kotlin-let-function/&#34;&gt;Kotlin let function&lt;/a&gt; and &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/kotlin-apply-function/&#34;&gt;Kotlin apply function&lt;/a&gt;, let&amp;rsquo;s try to understand today about &lt;code&gt;also&lt;/code&gt; function today.&lt;/p&gt;</description>
     </item>
     <item>
       <title>any(), none() &amp; all() : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</link>
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/any-none-all-kotlin/</guid>
-      <description>Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java.</description>
+      <description>&lt;p&gt;Kotlin is a powerful language that reduces a lot of boilerplate code required to perform basic operations in comparison to Java. The classic examples for the same are &lt;code&gt;any&lt;/code&gt;, &lt;code&gt;non&lt;/code&gt; and &lt;code&gt;all&lt;/code&gt; functions which were added to the Iterable interface and Map interface.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin : Single Expression Function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-single-expression-function/</guid>
-      <description>Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code.</description>
+      <description>&lt;p&gt;Kotlin is a powerful language that reduced a lot of boilerplate code when compared to Java. The single expression function is the same in terms of reducing the boilerplate code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reified : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/reified-kotlin/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/reified-kotlin/</guid>
-      <description>Before we learn about reified, Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety.</description>
+      <description>&lt;h3 id=&#34;before-we-learn-about-reified&#34;&gt;Before we learn about reified,&lt;/h3&gt;&#xA;&lt;p&gt;Generics in any language is the powerful features that allow us to define classes, methods and properties which are accessible using different data types while keeping a check of the compile-time type safety.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin Enum Classes</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</link>
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-enum-classes/</guid>
-      <description>Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable.</description>
+      <description>&lt;p&gt;Enums are special classes which limit the possible values of an object for that class. The possible values defined for that class are final or unchangeable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How extension functions resolved?</title>
       <link>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/how-extension-functions-resolved/</guid>
-      <description>&amp;ldquo;how are extension functions resolved?&amp;rdquo;&#xA;This question is being asked by almost everyone both in and outside the interviews. Even I have asked this question to many candidates during the interview.</description>
+      <description>&lt;p&gt;&amp;ldquo;how are extension functions resolved?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;This question is being asked by almost everyone both in and outside the interviews. &lt;/p&gt;&#xA;&lt;p&gt;Even I have asked this question to many candidates during the interview. &lt;/p&gt;</description>
     </item>
     <item>
       <title>Infix Notation : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/infix-notation-kotlin/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/infix-notation-kotlin/</guid>
-      <description>Ever imagined calling a public function of a class without dot and parentheses of the parameter in Kotlin. Kotlin provides infix notation with which we can call a function with the class object without using a dot and parentheses across the parameter.</description>
+      <description>&lt;p&gt;Ever imagined calling a public function of a class without dot and parentheses of the parameter in Kotlin. Kotlin provides infix notation with which we can call a function with the class object without using a dot and parentheses across the parameter. Using infix function provides more readability to a function similar to other operators like in, is, as in Kotlin.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android : Share message directly to whatsapp contact</title>
       <link>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</link>
       <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/</guid>
-      <description>Whatsapp is something which doesn&amp;rsquo;t require any introduction. It&amp;rsquo;s a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp.</description>
+      <description>&lt;p&gt;Whatsapp is something which doesn&amp;rsquo;t require any introduction. It&amp;rsquo;s a conversation app used by millions of users across the world. These million users make it unique for developers also to give special attention when it comes to sharing some message through Whatsapp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin Extension Property</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-extension-property/</link>
       <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-extension-property/</guid>
-      <description>Extension functions are really-really helpful while writing code in Kotlin. You don&amp;rsquo;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties.</description>
+      <description>&lt;p&gt;Extension functions are really-really helpful while writing code in Kotlin. You don&amp;rsquo;t have to extend the class but you can add the functionality to even a final (non-open) class which will be resolved statically but how about extension properties.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin apply function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-apply-function/</guid>
-      <description>In continuation to my previous post where I explained about Kotlin let function, let&amp;rsquo;s try to understand today about apply function today.</description>
+      <description>&lt;p&gt;In continuation to my previous post where I explained about &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/kotlin-let-function/&#34;&gt;Kotlin let function&lt;/a&gt;, let&amp;rsquo;s try to understand today about &lt;code&gt;apply&lt;/code&gt; function today.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Collections in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/collections-in-kotlin/</guid>
-      <description>Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it.</description>
+      <description>&lt;p&gt;Collections are a common concept for most programming languages. It is a way of storing similar data types in a single object and iterate over it. Similar to any other language, Kotlin also has Collection defined in &lt;code&gt;kotlin.collections&lt;/code&gt; package.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Destructuring Declarations in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/difference-between-any-unit-and-nothing-kotlin/</guid>
-      <description>We all know about three classes Any, Unit and Nothing in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.</description>
+      <description>&lt;p&gt;We all know about three classes &lt;code&gt;Any&lt;/code&gt;, &lt;code&gt;Unit&lt;/code&gt; and &lt;code&gt;Nothing&lt;/code&gt; in Kotlin which have their own functionality and use cases but we usually confuse between the differences among them and when to use what.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why let function is an Extension to Template class?</title>
       <link>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/why-let-function-is-an-extension-to-template-class/</guid>
-      <description>After reading my last blog about Kotlin let function, a lot of developers have asked me about, why let is an extension to Template class but not to Any class?</description>
+      <description>&lt;p&gt;After reading my last blog about &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/kotlin-let-function/&#34;&gt;Kotlin let function&lt;/a&gt;, a lot of developers have asked me about, why &lt;code&gt;let&lt;/code&gt; is an extension to &lt;code&gt;Template&lt;/code&gt; class but not to &lt;code&gt;Any&lt;/code&gt; class?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin let function</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</link>
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-let-function/</guid>
-      <description>Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions.</description>
+      <description>&lt;p&gt;Kotlin has made our life very easy by providing features like extension functions, nullability check and much more. One such kind of really helpful feature is Scope functions. Once you understand what scope functions are, you will not able to resist yourself from using them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inheritance vs Extension functions</title>
       <link>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/inheritance-vs-extension-functions/</guid>
-      <description>We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it.</description>
+      <description>&lt;p&gt;We all know about inheritance which is there in the OOPs concept where one can extend a class and add functionality to it. In the new programming languages, there is something called as extension functions which can add a functionality to an existing class without extending it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>partition() : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/partition-kotlin/</link>
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/partition-kotlin/</guid>
-      <description>The collection is something which is used by almost everyone. It makes our life easy. List, Set and Map are the best examples of them.</description>
+      <description>&lt;p&gt;The collection is something which is used by almost everyone. It makes our life easy. &lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt; and &lt;code&gt;Map&lt;/code&gt; are the best examples of them. Even the programming language in which you are writing code provides you with a few basic operations that can be performed on those collections, But sometimes you need even more operations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>takeIf and takeUnless : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/takeif-and-takeunless-kotlin/</guid>
-      <description>Ever thought of chaining an if condition?&#xA;What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?</description>
+      <description>&lt;p&gt;Ever thought of chaining an if condition?&lt;/p&gt;&#xA;&lt;p&gt;What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inline function : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</link>
       <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/inline-function-kotlin/</guid>
-      <description>What is inlining? Inlining is basically requesting the compiler to copy the (inlined) code at the calling place.&#xA;Why it is required?</description>
+      <description>&lt;h3 id=&#34;what-is-inlining&#34;&gt;What is inlining?&lt;/h3&gt;&#xA;&lt;p&gt;Inlining is basically requesting the compiler to copy the (inlined) code at the calling place.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-it-is-required&#34;&gt;Why it is required?&lt;/h3&gt;&#xA;&lt;p&gt;When a program is executed and a function is called, CPU stores the memory address of the instruction following the function call, copies the arguments of the function into a stack and finally transfers control to the specified function. The CPU then executes the function code, stores the function return value in a predefined memory location/register and returns control to the calling function.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Qualified ‘this’ in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/qualified-this-in-kotlin/</guid>
-      <description>The only thing we learnt about this pointer in other languages is “this is an implicit pointer which points to the calling object”.</description>
+      <description>&lt;p&gt;The only thing we learnt about &lt;code&gt;this&lt;/code&gt; pointer in other languages is “this is an implicit pointer which points to the calling object”. As clear from the definition, it points to the object which calls the respective function or property.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Type Aliases in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/type-aliases-in-kotlin/</guid>
-      <description>Life is painful when you have two or more classes with the same name but different package name and you have to use them both in the same place.</description>
+      <description>&lt;p&gt;Life is painful when you have two or more classes with the same name but different package name and you have to use them both in the same place.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Extensions in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/</guid>
-      <description>Have you ever felt some useful functionality missing in an existing class?&#xA;The class could be in the libraries provided by language also.</description>
+      <description>&lt;p&gt;Have you ever felt some useful functionality missing in an existing class?&lt;/p&gt;&#xA;&lt;p&gt;The class could be in the libraries provided by language also.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Variable number of arguments (vararg) : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/variable-number-of-arguments-vararg-kotlin/</guid>
-      <description>Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime.</description>
+      <description>&lt;p&gt;Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime. Kotlin provides us to achieve the same by defining a parameter of a function as &lt;code&gt;vararg&lt;/code&gt;. We can pass n number of parameters to a &lt;code&gt;vararg&lt;/code&gt; variable of the defined datatype or even of a generic type.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Object Expression in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</link>
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/object-expression-in-kotlin/</guid>
-      <description>Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it.</description>
+      <description>&lt;p&gt;Sometimes we need to create an object of some class with slight modification, without explicitly declaring a new subclass for it. Java handles this case with anonymous inner classes. Kotlin uses object expression to achieve the same functionality.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Equality in Kotlin (‘==’, ‘===’ and ‘equals’)</title>
       <link>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</link>
       <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/equality-in-kotlin/</guid>
-      <description>We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.</description>
+      <description>&lt;p&gt;We often need to compare the data of two variables or objects or the references of two objects in Kotlin. This brings in another question, which equality check should we use in which case.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pair and Triple in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</link>
       <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/pair-and-triple-in-kotlin/</guid>
-      <description>It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.</description>
+      <description>&lt;p&gt;It is a very common use case where we want to return two values from a method, can be either of same data type or can be of different data types.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Extensions as Members : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/extensions-as-members-kotlin/</guid>
-      <description>In continuation to my last Medium post Extensions in Kotlin where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.</description>
+      <description>&lt;p&gt;In continuation to my last Medium post &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/extensions-in-kotlin/&#34;&gt;Extensions in Kotlin&lt;/a&gt; where I explained what are Extensions and how do we use it, this medium post will cover the implementation of Extensions as members of some other class.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Companion object in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/companion-object-in-kotlin/</guid>
-      <description>Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead.</description>
+      <description>&lt;p&gt;Unlike Java or C#, Kotlin doesn’t have static members or member functions. Kotlin recommends to simply use package-level functions instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Nothing Type : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/the-nothing-type-kotlin/</guid>
-      <description>What if I say there is a class called Nothing in Koltin.&#xA;And What does it do? Nothing. The time I read about the class Nothing for the first time, it sounds interesting to me.</description>
+      <description>&lt;p&gt;What if I say there is a class called &lt;code&gt;Nothing&lt;/code&gt; in Koltin.&lt;/p&gt;&#xA;&lt;h3 id=&#34;and-what-does-it-do-nothing&#34;&gt;And What does it do? Nothing.&lt;/h3&gt;&#xA;&lt;p&gt;The time I read about the class &lt;code&gt;Nothing&lt;/code&gt; for the first time, it sounds interesting to me. This class has no instance and it is used to represent a value which never exists. This class is also used to represent a return type from a method that will never return.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Label Reference in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/</guid>
-      <description>Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by @ sign in front of any expression.</description>
+      <description>&lt;p&gt;Any expression in Kotlin may be marked with a label. This can be used to as an identifier. A label can be defined in Kotlin using label name followed by &lt;code&gt;@&lt;/code&gt; sign in front of any expression.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Property, Getter and Setter : Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/property-getter-and-setter-kotlin/</guid>
-      <description>I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods.</description>
+      <description>&lt;p&gt;I started developing Android apps in Java where encapsulation of object-oriented programming was achieved through declaring variables as private fields with their getter and setter as public methods. The moment I converted my Java code to Kotlin, it replaced each variable along with its getter and setter with just a single line of code. Although I was amazed at how can a single line of code replace the complete variable with the same functionality, but later on understanding it, I started liking writing the code in Kotlin. Let’s understand how it works in Kotlin.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kotlin ‘For’ loop</title>
       <link>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</link>
       <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/kotlin-for-loop/</guid>
-      <description>While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages.</description>
+      <description>&lt;p&gt;While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language &lt;code&gt;for&lt;/code&gt; loops.&lt;/p&gt;</description>
     </item>
     <item>
       <title>when operator in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/</guid>
-      <description>when operator is a replacement of switch operator in other languages.&#xA;when operator matches its argument with all the branches until it matches with anyone, else it executes the else block.</description>
+      <description>&lt;p&gt;&lt;code&gt;when&lt;/code&gt; operator is a replacement of &lt;code&gt;switch&lt;/code&gt; operator in other languages.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;when&lt;/code&gt; operator matches its argument with all the branches until it matches with anyone, else it executes the &lt;code&gt;else&lt;/code&gt; block.&lt;/p&gt;</description>
     </item>
     <item>
       <title>‘in’ operator in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</link>
       <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/in-operator-in-kotlin/</guid>
-      <description>‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!</description>
+      <description>&lt;p&gt;‘in’ operator in Koltin is used to check the existence of particular variable or property in a Range or Collection whereas a ‘!in’ operator is just a not of ‘in’ operator and returns true if the condition is false. It can also be used to iterate over a range or collection.&lt;/p&gt;</description>
     </item>
     <item>
       <title>TypeCheck (‘is’) and Cast (‘as’) in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</link>
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/typecheck-is-and-cast-as-in-kotlin/</guid>
-      <description>Type check is a way of checking the type(DataType) or Class of a particular instance or variable while runtime to separate the flow for different objects.</description>
+      <description>&lt;p&gt;Type check is a way of checking the type(&lt;code&gt;DataType&lt;/code&gt;) or &lt;code&gt;Class&lt;/code&gt; of a particular instance or variable while runtime to separate the flow for different objects. In few languages, it’s also denoted as &lt;code&gt;Run Time Type Identification (RTTI)&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Safe calls(?.) vs Null checks(!!) in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</link>
       <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/safe-calls-vs-null-checks-in-kotlin/</guid>
-      <description>In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).</description>
+      <description>&lt;p&gt;In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that can not (non-null references).&#xA;For example, a normal property can&amp;rsquo;t hold a null value and will show a compile error.&lt;/p&gt;</description>
     </item>
     <item>
       <title>lateinit Property in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</link>
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/lateinit-property-in-kotlin/</guid>
-      <description>There can be two ways to declare and initialize a var property&#xA;var variable : CustomClass = CustomClass() or var variable : CustomClass?</description>
+      <description>&lt;p&gt;There can be two ways to declare and initialize a var property&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; variable : CustomClass = CustomClass() &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; or&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; variable : CustomClass? = &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;col-xs-12 googleads&#34; aria-hidden=&#34;true&#34;&gt;&#xA;    &#xA;    &#xA;    &lt;ins class=&#34;adsbygoogle&#34;&#xA;     style=&#34;display:block&#34;&#xA;     data-ad-client=&#34;ca-pub-1093303282603666&#34;&#xA;     data-ad-slot=&#34;5254968909&#34;&#xA;     data-ad-format=&#34;horizontal&#34;&#xA;     data-full-width-responsive=&#34;true&#34;&gt;&lt;/ins&gt;&#xA;     &#xA;    &lt;script&gt;&#xA;        (adsbygoogle = window.adsbygoogle || []).push({});&#xA;    &lt;/script&gt;&#xA;    &#xA;&lt;/div&gt;&#xA;&lt;p&gt;The first property is initialized while declaration itself and doesn’t require a null check (?.) while using it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Higher-order functions in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</link>
       <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/higher-order-functions-in-kotlin/</guid>
-      <description>What is a higher-order function? In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function.</description>
+      <description>&lt;h3 id=&#34;what-is-a-higher-order-function&#34;&gt;What is a higher-order function?&lt;/h3&gt;&#xA;&lt;p&gt;In Kotlin, a function can be passed as a parameter or can be returned from a function, the function which does the same is known as a higher-order function. In other words, a higher-order function is a function that takes functions as parameters or returns a function.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Backing Field in Kotlin</title>
       <link>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</link>
       <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/backing-field-in-kotlin/</guid>
-      <description>What is Backing Field ? Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier.</description>
+      <description>&lt;h3 id=&#34;what-is-backing-field-&#34;&gt;What is Backing Field ?&lt;/h3&gt;&#xA;&lt;p&gt;Backing field is an autogenerated field for any property which can only be used inside the accessors(getter or setter) and will be present only if it uses the default implementation of at least one of the accessors, or if a custom accessor references it through the field identifier. This backing field is used to avoid the recursive call of an accessor which ultimately prevents the StackOverflowError.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

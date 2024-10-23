@@ -4,7 +4,7 @@
     <title>Unreal on Suneet Agrawal</title>
     <link>https://agrawalsuneet.github.io/tags/unreal/</link>
     <description>Recent content in Unreal on Suneet Agrawal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://agrawalsuneet.github.io/tags/unreal/index.xml" rel="self" type="application/rss+xml" />
@@ -13,35 +13,35 @@
       <link>https://agrawalsuneet.github.io/blogs/uproperty-in-unreal/</link>
       <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/uproperty-in-unreal/</guid>
-      <description>Unreal Engine, renowned for its capabilities in creating visually stunning and highly interactive games and simulations, relies on several core features to achieve its potential.</description>
+      <description>&lt;p&gt;Unreal Engine, renowned for its capabilities in creating visually stunning and highly interactive games and simulations, relies on several core features to achieve its potential. Among these, Unreal Property Specifiers, or UPROPERTY, stand out as a powerful tool for developers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FString vs FName vs Text in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/fstring-vs-fname-vs-text-in-unreal/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/fstring-vs-fname-vs-text-in-unreal/</guid>
-      <description>Unreal Engine, developed by Epic Games, is a popular game engine that powers many successful video games and interactive experiences. When working with Unreal Engine, you often encounter various data types for handling text and strings, including FString, FName, and Text.</description>
+      <description>&lt;p&gt;Unreal Engine, developed by Epic Games, is a popular game engine that powers many successful video games and interactive experiences. When working with Unreal Engine, you often encounter various data types for handling text and strings, including FString, FName, and Text. In this blog post, we&amp;rsquo;ll dive into these three text-related data types, explore their differences, and provide examples of when to use each one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DrawDebugCylinder in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/</guid>
-      <description>Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences.</description>
+      <description>&lt;p&gt;Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world. In this blog post, we will dive into the details of DrawDebugCylinder in Unreal Engine using C++, including its function signature, parameter explanation, necessary headers, and real-world examples.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DrawDebugSphere in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/drawdebugsphere-in-unreal/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/drawdebugsphere-in-unreal/</guid>
-      <description>Unreal Engine is a powerful and versatile game development framework that empowers developers to create stunning and immersive worlds. When it comes to debugging and visualizing game mechanics, Unreal Engine provides a variety of helpful tools, and one of them is DrawDebugSphere.</description>
+      <description>&lt;p&gt;Unreal Engine is a powerful and versatile game development framework that empowers developers to create stunning and immersive worlds. When it comes to debugging and visualizing game mechanics, Unreal Engine provides a variety of helpful tools, and one of them is DrawDebugSphere. In this blog post, we&amp;rsquo;ll delve into the details of DrawDebugSphere in Unreal Engine using C++, understand its function signature and parameters, explore the necessary headers to include, and provide real-world examples to showcase its usage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DrawDebugLine in Unreal</title>
       <link>https://agrawalsuneet.github.io/blogs/drawdebugline-in-unreal/</link>
       <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/blogs/drawdebugline-in-unreal/</guid>
-      <description>Debug visualization is a crucial aspect of game development, aiding programmers and artists in comprehending the behavior and interactions of various game elements.</description>
+      <description>&lt;p&gt;Debug visualization is a crucial aspect of game development, aiding programmers and artists in comprehending the behavior and interactions of various game elements. Unreal Engine offers a suite of debugging tools, and one such tool is the DrawDebugLine function. In this blog, we&amp;rsquo;ll delve into the usage of DrawDebugLine in Unreal Engine using C++, accompanied by illustrative examples.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

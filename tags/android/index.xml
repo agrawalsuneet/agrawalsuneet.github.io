@@ -4,7 +4,7 @@
     <title>Android on Suneet Agrawal</title>
     <link>https://agrawalsuneet.github.io/tags/android/</link>
     <description>Recent content in Android on Suneet Agrawal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://agrawalsuneet.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/slides/the-power-of-camera-apis-and-opengl-all-together/</guid>
-      <description>Are you using the best out of your device camera and GPU in your app? Do you know how camera frames are drawn on the screen?</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Are you using the best out of your device camera and GPU in your app?&lt;/li&gt;&#xA;&lt;li&gt;Do you know how camera frames are drawn on the screen?&lt;/li&gt;&#xA;&lt;li&gt;Do you think your camera should do way more than just clicking a picture?&lt;/li&gt;&#xA;&lt;li&gt;Did you ever try to process the frames like applying filters or beautification before previewing it?&lt;/li&gt;&#xA;&lt;li&gt;How a view or camera frame is drawn on the screen?&lt;/li&gt;&#xA;&lt;li&gt;What is OpenGL? How OpenGL controls GPU rendering?&lt;/li&gt;&#xA;&lt;li&gt;What are vertex and fragment shaders? How do they affect the camera frame and preview?&lt;/li&gt;&#xA;&lt;li&gt;How can we modify the camera frames between camera APIs and previewing? What all can we do with that?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Well, let&amp;rsquo;s get all these questions answered in the presentation below with our experiences and challenges we&amp;rsquo;ve faced.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How can I migrate my Android code from Java to Kotlin?</title>
       <link>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</link>
       <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/slides/how-can-i-migrate-my-android-code-from-java-to-kotlin/</guid>
-      <description>In continuation of the previews session for Google Accelerator program on the topic Java or Kotlin. what do you use? today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.</description>
+      <description>&lt;p&gt;In continuation of the previews session for &lt;a href=&#34;https://startup.google.com/&#34;&gt;Google Accelerator program&lt;/a&gt; on the topic &lt;a href=&#34;https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use&#34;&gt;Java or Kotlin. what do you use?&lt;/a&gt; today we are going to look at how can you migrate the codebase from java to Kotlin and what are the common mistake made by developers while doing the same.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Java or Kotlin, What do you use?</title>
       <link>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/slides/java-or-kotlin-what-do-you-use/</guid>
-      <description>Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot.</description>
+      <description>&lt;p&gt;Kotlin is something which was introduced as an official language for Android development in Google I/O 2017. Since then it has grown and evolved a lot. It has multiple benefits and on top of everything, it&amp;rsquo;s really easy to use.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cut your APK Size with features on demand</title>
       <link>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</link>
       <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/slides/cut-your-apk-size-with-features-on-demand/</guid>
-      <description>Do APK or app size matters? Does a user think about the APK size before downloading it? Does a user think about space, an app occupying on the phone?</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Do APK or app size matters?&lt;/li&gt;&#xA;&lt;li&gt;Does a user think about the APK size before downloading it?&lt;/li&gt;&#xA;&lt;li&gt;Does a user think about space, an app occupying on the phone?&lt;/li&gt;&#xA;&lt;li&gt;Is your App size is more than just a few MBs?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;What if we provide very basic functionality and let the user decide whether he wants the advanced or additional functionality or not?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

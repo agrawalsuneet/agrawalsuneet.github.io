@@ -4,7 +4,7 @@
     <title>Gists on Suneet Agrawal</title>
     <link>https://agrawalsuneet.github.io/gists/</link>
     <description>Recent content in Gists on Suneet Agrawal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://agrawalsuneet.github.io/gists/index.xml" rel="self" type="application/rss+xml" />
@@ -13,98 +13,98 @@
       <link>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/custom-object-in-userdefaults-swift/</guid>
-      <description>This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.&#xA;For further explaination on how this works, please read the article Custom Object in UserDefaults : Swift.</description>
+      <description>&lt;p&gt;This particular script will help you to store and retrieve custom class or struct objects in UserDefaults.&lt;/p&gt;&#xA;&lt;p&gt;For further explaination on how this works, please read the article &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/custom-object-in-userdefaults-swift/&#34;&gt;Custom Object in UserDefaults : Swift&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UISwitch Value Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/uiswitch-value-change-listener-swift/</guid>
-      <description>This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.</description>
+      <description>&lt;p&gt;This particular script will help you to implement a Value Change listener to all UISwitch and its subclasses in a clean way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UIDatePicker Date Change Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</link>
       <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/uidatepicker-date-change-listener-swift/</guid>
-      <description>This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way.</description>
+      <description>&lt;p&gt;This particular script will help you to implement a Date Change listener to all UIDatePicker and its subclasses in a clean way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UITextField Text Listener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/uitextfield-text-listener-swift/</guid>
-      <description>This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.</description>
+      <description>&lt;p&gt;This particular script will help you to implement a Text listener to all UITextField and its subclasses in a clean way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Typecast Android Object in Untiy</title>
       <link>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</link>
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/typecast-android-object-in-unity/</guid>
-      <description>This particular script will help you to typecast one Android/Java object into another in Unity.&#xA;For further explaination on how this works, please read the article Native Android in Unity.</description>
+      <description>&lt;p&gt;This particular script will help you to typecast one Android/Java object into another in Unity.&lt;/p&gt;&#xA;&lt;p&gt;For further explaination on how this works, please read the article &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/typecast-android-object-in-unity/&#34;&gt;Native Android in Unity&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Custom Android Manifest File in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</link>
       <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/custom-android-manifest-file-in-unity/</guid>
-      <description>This particular xml is an example of custom Android Manifest file which can be used in unity.&#xA;For further explaination on how this works, please read the article Custom Android Manifest File in Unity.</description>
+      <description>&lt;p&gt;This particular xml is an example of custom Android Manifest file which can be used in unity.&lt;/p&gt;&#xA;&lt;p&gt;For further explaination on how this works, please read the article &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/custom-android-manifest-file-in-unity/&#34;&gt;Custom Android Manifest File in Unity&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UIView ClickListener : Swift</title>
       <link>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</link>
       <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/uiview-clicklistener-swift/</guid>
-      <description>This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.</description>
+      <description>&lt;p&gt;This particular script will help you to implement a Click listener to all UIView and its subclasses in a clean way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Native Android text sharing to Whatsapp contact in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</link>
       <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-whatsapp-contact-in-unity/</guid>
-      <description>This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.&#xA;For further explaination on how this works, please read the article Native Android text sharing to Whatsapp contact in Unity.</description>
+      <description>&lt;p&gt;This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Unity.&lt;/p&gt;&#xA;&lt;p&gt;For further explaination on how this works, please read the article &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/native-android-text-sharing-to-whatsapp-contact-in-unity/&#34;&gt;Native Android text sharing to Whatsapp contact in Unity&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android : Share message directly to whatsapp contact</title>
       <link>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</link>
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/android-share-message-directly-to-whatsapp-contact/</guid>
-      <description>This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.&#xA;For further explaination on how this works, please read the article Android : Share message directly to whatsapp contact.</description>
+      <description>&lt;p&gt;This particular script will help you to implement a text message sharing directly to a WhatsApp contact in Android.&lt;/p&gt;&#xA;&lt;p&gt;For further explaination on how this works, please read the article &lt;a href=&#34;https://agrawalsuneet.github.io/blogs/android-share-message-directly-to-whatsapp-contact/&#34;&gt;Android : Share message directly to whatsapp contact&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Native Android image sharing in Unity using FileProvider</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</link>
       <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity-using-fileprovider/</guid>
-      <description>This particular script will help you to implement native Android image sharing using Android&amp;rsquo;s FileProvider in Unity. This is a fix for “android.</description>
+      <description>&lt;p&gt;This particular script will help you to implement native Android image sharing using Android&amp;rsquo;s &lt;code&gt;FileProvider&lt;/code&gt; in Unity. This is a fix for “android.os.FileUriExposedException” in Android 8 (Oreo) and above.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Native Android text sharing to particular app in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</link>
       <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-to-particular-app-in-unity/</guid>
-      <description>This particular script will help you to implement native Android text sharing to a particular app in Unity.&#xA;We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT, and share the content to a particular app with package name.</description>
+      <description>&lt;p&gt;This particular script will help you to implement native Android text sharing to a particular app in Unity.&lt;/p&gt;&#xA;&lt;p&gt;We use all the native classes of Android in Unity using &lt;code&gt;AndroidJavaClass&lt;/code&gt; and &lt;code&gt;AndroidJavaObject&lt;/code&gt; and perform the Android&amp;rsquo;s &lt;code&gt;ACTION_SEND&lt;/code&gt; with &lt;code&gt;EXTRA_SUBJECT&lt;/code&gt; and &lt;code&gt;EXTRA_TEXT&lt;/code&gt;, and share the content to a particular app with package name.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Native Android image sharing in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</link>
       <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/native-android-image-sharing-in-unity/</guid>
-      <description>This particular script will help you to implement native Android image sharing in Unity.&#xA;We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT, EXTRA_TEXT and EXTRA_STREAM.</description>
+      <description>&lt;p&gt;This particular script will help you to implement native Android image sharing in Unity.&lt;/p&gt;&#xA;&lt;p&gt;We use all the native classes of Android in Unity using &lt;code&gt;AndroidJavaClass&lt;/code&gt; and &lt;code&gt;AndroidJavaObject&lt;/code&gt; and perform the Android&amp;rsquo;s &lt;code&gt;ACTION_SEND&lt;/code&gt; with &lt;code&gt;EXTRA_SUBJECT&lt;/code&gt;, &lt;code&gt;EXTRA_TEXT&lt;/code&gt; and &lt;code&gt;EXTRA_STREAM&lt;/code&gt;.&#xA;The content type is set to &lt;code&gt;image/png&lt;/code&gt; in the below example but you can change it to any type and share other formats also.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Native Android text sharing in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/native-android-text-sharing-in-unity/</guid>
-      <description>This particular script will help you to implement native Android text sharing in Unity.&#xA;We use all the native classes of Android in Unity using AndroidJavaClass and AndroidJavaObject and perform the Android&amp;rsquo;s ACTION_SEND with EXTRA_SUBJECT and EXTRA_TEXT.</description>
+      <description>&lt;p&gt;This particular script will help you to implement native Android text sharing in Unity.&lt;/p&gt;&#xA;&lt;p&gt;We use all the native classes of Android in Unity using &lt;code&gt;AndroidJavaClass&lt;/code&gt; and &lt;code&gt;AndroidJavaObject&lt;/code&gt; and perform the Android&amp;rsquo;s &lt;code&gt;ACTION_SEND&lt;/code&gt; with &lt;code&gt;EXTRA_SUBJECT&lt;/code&gt; and &lt;code&gt;EXTRA_TEXT&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Native Android in Unity</title>
       <link>https://agrawalsuneet.github.io/gists/native-android-in-unity/</link>
       <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://agrawalsuneet.github.io/gists/native-android-in-unity/</guid>
-      <description>This particular script will help you to implement basic native Android in Unity.&#xA;This show an example of showing a native Android&amp;rsquo;s Toast in unity using AndroidJavaClass and AndroidJavaObject.</description>
+      <description>&lt;p&gt;This particular script will help you to implement basic native Android in Unity.&lt;/p&gt;&#xA;&lt;p&gt;This show an example of showing a native Android&amp;rsquo;s &lt;code&gt;Toast&lt;/code&gt; in unity using &lt;code&gt;AndroidJavaClass&lt;/code&gt; and &lt;code&gt;AndroidJavaObject&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

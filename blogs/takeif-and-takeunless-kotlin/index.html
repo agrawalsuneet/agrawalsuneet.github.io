@@ -314,21 +314,19 @@
 <p>What if we can chain the if condition also and moves or executes the next code in the chain only if the condition is true?</p>
 <p>Kotlin has something very interesting to achieve the same.</p>
 <p>We can use <code>takeIf</code> and <code>takeUnless</code> to achieve the same. As clear from the name itself, takeIf will proceed in the chain only if the condition inside is true whereas takeUnless is the counter of takeIf and will proceed only if the provided condition is false.</p>
-<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <h3 id="takeif">takeIf</h3>
@@ -345,21 +343,19 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    println(<span style="color:#e6db74">&#34;can join the game with latency </span><span style="color:#e6db74">$networkLatency</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In the above example, we need to check the latency of the network and join the game only it is less than 20. Now to achieve the same we need to put an if condition, the reason I need to introduce a new variable networkLatency is because I need to pass it to the inner function also.</p>
-<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 <p>Now to achieve the same within single chaining, I can use takeIf.</p>
@@ -375,21 +371,19 @@
 </span></span><span style="display:flex;"><span>            println(<span style="color:#e6db74">&#34;warning : high latency </span><span style="color:#e6db74">$it</span><span style="color:#e6db74">&#34;</span>) 
 </span></span><span style="display:flex;"><span>         }
 </span></span></code></pre></div><p>In this case, this will only proceed when the latency is more than 20 ie not less than 20, and will chain it further. Also, if the condition is false that means if the latency is less than 20, it will return null so we need to use the <a href="/blogs/safe-calls-vs-null-checks-in-kotlin/">safe call or null check</a>.</p>
-<div class="col-xs-12 googleads" style="text-align: center;" aria-hidden="true">
+<div class="col-xs-12 googleads" aria-hidden="true">
     
     
-    
-
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'e5263a711e00021ca0c766503d4d2767',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript" src="//www.topcpmcreativeformat.com/e5263a711e00021ca0c766503d4d2767/invoke.js"></script>
     
 </div>
 

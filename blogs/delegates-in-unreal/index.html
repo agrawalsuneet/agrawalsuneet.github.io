@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delegates in Unreal &middot; Suneet Agrawal</title>
+
+  <!-- Meta -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <meta name="author" content="Suneet Agrawal" />  
+  <meta name="owner" content="Suneet Agrawal">
+  <meta property="twitter:title" content="Suneet Agrawal">
+
+  <meta name="topic" content="Delegates in Unreal">
+    <meta name="description" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
+    <meta property="og:description" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
+    <meta property="twitter:description" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
+    <meta name="abstract" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
+    <meta name="summary" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior."> 
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content=" 2024-11-01 "> 
+
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
+
+    <meta name="site_name" content="Suneet Agrawal">
+    <meta property="og:site_name" content="Suneet Agrawal">
+
+    <meta name="robots" content="max-image-preview:large">
+    
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="uproperty,unreal,unreal engine,ue uproperty,ue">
+    
+    
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="target" content="all" />
+    <meta name="audience" content="all" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="safe for kids" /> 
+    <meta property="og:tags" content="Unreal"> 
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
+
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1093303282603666"
+     crossorigin="anonymous">
+  </script>
+
+  <script>
+  function onErrorLoadingAds() {
+    console.log("AdBlocker blocks the ads")
+  }
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" 
+  onerror="onErrorLoadingAds()">
+  </script>
+  
+
+  
+  <meta name="google-site-verification" content="WsYlsB659Cuy0GKk82CS1ogZoTK0FIxmdSE759c1rMU" />
+  
+
+  <!-- Plugins Stylesheets -->
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/splitting/splitting.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/animate/animate.css" />
+
+  <!-- Main Stylesheets -->
+  
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/scss/style.min.css" />
+
+  <link rel="stylesheet" href="https://agrawalsuneet.github.io/plugins/template-dark/dark.css" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://agrawalsuneet.github.io/images/favicon/favicon.ico" type="image/x-icon" />
+
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WET08JY2Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WET08JY2Z');
+  </script>
+  
+
+  </head>
+
+<body class="page dark-skin">
+  <div class="container-page ">
+    <!-- Preloader -->
+    
+<div class="preloader">
+  <div class="centrize full-width">
+    <div class="vertical-center">
+      <div class="spinner-logo">
+		
+        <img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="https://agrawalsuneet.github.io/Suneet%20Agrawal" />
+        <div class="spinner-dot"></div>
+        <div class="spinner spinner-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Header -->
+    
+<header class="header">
+	<div class="header__builder">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+				
+				<div class="logo">
+					<a href="https://agrawalsuneet.github.io/">
+            			
+						<img src="https://agrawalsuneet.github.io/images/ballu.webp" alt="Suneet Agrawal" />
+					</a>
+				</div>
+
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+
+				
+				<a href="#" class="switcher-btn" aria-label="switcher-button">
+					<span class="sw-before">
+						<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+							<path id="Dark_Theme" data-name="Dark Theme" fill="#000" d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z" transform="translate(-1737 -98)" />
+						</svg>
+					</span>
+					<span class="sw-after">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313" viewBox="0 0 22.22 22.313">
+							<path id="Light_Theme" data-name="Light Theme" fill="#fff" d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z" transform="translate(-1737.44 -98.313)" />
+						</svg>
+					</span>
+				</a>
+
+				
+				<a href="#" class="menu-btn" aria-label="menu-button">
+					<span></span>
+					<span></span>
+				</a>
+
+				
+				<div class="menu-full-overlay">
+					<div class="menu-full-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									
+									<div class="menu-full">
+										<ul class="menu-full">
+											
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//">Home</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item menu-item-has-children has-children">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publications">Publications</a>
+                        
+                        <ul class="sub-menu">
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/blogs">Blogs</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/slides">Slides</a></li>
+                          
+                          
+                          
+                          <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="/gists">Gists</a></li>
+                          
+                        </ul>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//publicappearances">Public Appearances</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//personalgamesandapps">Personal Games &amp; Apps</a>
+                        
+                      </li>
+                      
+                      
+                      
+                      
+                      <li class="menu-item">
+                        <a class="splitting-text-anim-2" data-splitting="chars" href="https://agrawalsuneet.github.io//opensourcecontribution">Open Source Contribution</a>
+                        
+                      </li>
+                      
+										</ul>
+									</div>
+
+									
+									<div class="menu-social-links">
+                    
+                    <a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Linkedin">
+                      <i aria-hidden="true" class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Github">
+                      <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    
+                    <a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Medium">
+                      <i aria-hidden="true" class="fab fa-medium"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" class="scrolla-element-anim-1" title="Youtube">
+                      <i aria-hidden="true" class="fab fa-youtube"></i>
+                    </a>
+                    
+									</div>
+
+									<div class="v-line-block"><span></span></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-overlay"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+    <!-- Wrapper -->
+		<div class="wrapper single-post">
+      
+
+
+
+<section class="section section-inner started-heading">
+	<div class="container">
+
+		
+		<div class="m-titles align-center">
+			<div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				
+				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
+				
+				
+				/ November 1, 2024 / 5 mins read / By Suneet Agrawal
+			</div>
+			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Delegates in Unreal
+			</h1>
+		</div>
+
+	</div>
+</section>
+
+
+<div class="section section-inner m-image-large">
+	<div class="container">
+		<div class="v-line-right v-line-top"><div class="v-line-block"><span></span></div></div>
+	</div>
+	<div class="image">
+		
+		<div class="img scrolla-element-anim-1 scroll-animate" data-animate="active" style="background-image: url(https://agrawalsuneet.github.io/images/blog/unreal.webp);"></div>
+		
+	</div>
+</div>
+
+
+<section class="section section-inner m-archive">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+						<p>Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior. In Unreal, delegates are especially useful in game development to handle events, respond to actions, or manage callbacks.</p>
+<p>In this blog, we&rsquo;ll go through the different types of delegates in Unreal Engine, explaining what they are, how they differ, and providing code examples for each type.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="what-is-a-delegate">What is a Delegate?</h3>
+<p>A delegate in Unreal is a type-safe callback mechanism that allows one part of code to &ldquo;delegate&rdquo; functionality to another. Delegates are powerful tools to manage responses to actions, such as when a player triggers a specific action or when a game object completes an animation or reaches a target location.</p>
+<p>In Unreal Engine, there are four main types of delegates:</p>
+<ol>
+<li>Single-cast Delegates</li>
+<li>Multi-cast Delegates</li>
+<li>Dynamic Single-cast Delegates</li>
+<li>Dynamic Multi-cast Delegates</li>
+</ol>
+<p>Let’s take a deeper look into each type.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="1-single-cast-delegates">1. Single-cast Delegates</h3>
+<p>A single-cast delegate is a delegate that can have only one binding at any given time. This is useful for situations where only one object needs to respond to a particular event.</p>
+<h5 id="how-to-declare-and-use-single-cast-delegates">How to Declare and Use Single-cast Delegates</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Single-cast Delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DELEGATE(FOnHealthChanged);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// A class using Single-cast Delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">APlayerCharacter</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> ACharacter
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The single-cast delegate instance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnHealthChanged OnHealthChangedDelegate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">TakeDamage</span>(<span style="color:#66d9ef">float</span> DamageAmount)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        Health <span style="color:#f92672">-=</span> DamageAmount;
+</span></span><span style="display:flex;"><span>        OnHealthChangedDelegate.ExecuteIfBound(); <span style="color:#75715e">// Trigger the delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h5 id="binding-and-executing-a-single-cast-delegate">Binding and Executing a Single-cast Delegate</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>APlayerCharacter<span style="color:#f92672">*</span> Player <span style="color:#f92672">=</span> GetPlayerCharacter();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Player<span style="color:#f92672">-&gt;</span>OnHealthChangedDelegate.BindLambda([]()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Player&#39;s health has changed!&#34;</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Player<span style="color:#f92672">-&gt;</span>TakeDamage(<span style="color:#ae81ff">50.0f</span>); <span style="color:#75715e">// This will call the delegate if health changes
+</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="2-multi-cast-delegates">2. Multi-cast Delegates</h3>
+<p>A multi-cast delegate can bind multiple functions to a single event, allowing multiple listeners to respond when the event occurs. Multi-cast delegates are perfect when multiple systems or actors need to respond to the same event, such as a global game event that should notify various UI elements.</p>
+<h5 id="how-to-declare-and-use-multi-cast-delegates">How to Declare and Use Multi-cast Delegates</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Multi-cast Delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_MULTICAST_DELEGATE(FOnPlayerDied);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// A class using Multi-cast Delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AGameModeBase</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> AGameMode
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The multi-cast delegate instance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnPlayerDied OnPlayerDiedDelegate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">PlayerDeath</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        OnPlayerDiedDelegate.Broadcast(); <span style="color:#75715e">// Notify all listeners
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h5 id="binding-and-executing-a-multi-cast-delegate">Binding and Executing a Multi-cast Delegate</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>AGameModeBase<span style="color:#f92672">*</span> GameMode <span style="color:#f92672">=</span> GetWorld()<span style="color:#f92672">-&gt;</span>GetAuthGameMode<span style="color:#f92672">&lt;</span>AGameModeBase<span style="color:#f92672">&gt;</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Binding multiple listeners
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>GameMode<span style="color:#f92672">-&gt;</span>OnPlayerDiedDelegate.AddLambda([]()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Listener 1: Player has died!&#34;</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GameMode<span style="color:#f92672">-&gt;</span>OnPlayerDiedDelegate.AddLambda([]()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Listener 2: Player has died!&#34;</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Trigger the delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>GameMode<span style="color:#f92672">-&gt;</span>PlayerDeath();
+</span></span></code></pre></div><p>When <code>PlayerDeath()</code> is called, both listeners will log a message to the console.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="3-dynamic-single-cast-delegates">3. Dynamic Single-cast Delegates</h3>
+<p>Dynamic single-cast delegates can be serialized and exposed to Blueprints. They are useful when you need to bind a function that can be called in both C++ and Blueprints. This is ideal when creating modular systems that may be extended by designers in the Unreal Editor.</p>
+<h5 id="how-to-declare-and-use-dynamic-single-cast-delegates">How to Declare and Use Dynamic Single-cast Delegates</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Dynamic Single-cast Delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DYNAMIC_DELEGATE(FOnHealthRestored);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AHealingStation</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> AActor
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    GENERATED_BODY()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The dynamic single-cast delegate instance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnHealthRestored OnHealthRestoredDelegate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">HealPlayer</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        OnHealthRestoredDelegate.ExecuteIfBound();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h5 id="binding-a-dynamic-single-cast-delegate">Binding a Dynamic Single-cast Delegate</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>AHealingStation<span style="color:#f92672">*</span> HealingStation <span style="color:#f92672">=</span> GetWorld()<span style="color:#f92672">-&gt;</span>SpawnActor<span style="color:#f92672">&lt;</span>AHealingStation<span style="color:#f92672">&gt;</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HealingStation<span style="color:#f92672">-&gt;</span>OnHealthRestoredDelegate.BindDynamic(<span style="color:#66d9ef">this</span>, <span style="color:#f92672">&amp;</span>AMyClass<span style="color:#f92672">::</span>OnPlayerHealed);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> AMyClass<span style="color:#f92672">::</span>OnPlayerHealed()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Player healed through a dynamic delegate!&#34;</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HealingStation<span style="color:#f92672">-&gt;</span>HealPlayer(); <span style="color:#75715e">// This will trigger OnPlayerHealed
+</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="4-dynamic-multi-cast-delegates">4. Dynamic Multi-cast Delegates</h3>
+<p>Dynamic multi-cast delegates can bind multiple functions and are also exposed to Blueprints. They are useful for managing events where both C++ and Blueprint classes might need to respond, making them ideal for gameplay events such as starting or ending a game round.</p>
+<h5 id="how-to-declare-and-use-dynamic-multi-cast-delegates">How to Declare and Use Dynamic Multi-cast Delegates</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Dynamic Multi-cast Delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoundStarted);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AGameModeBase</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> AGameMode
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    GENERATED_BODY()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The dynamic multi-cast delegate instance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    UPROPERTY(BlueprintAssignable)
+</span></span><span style="display:flex;"><span>    FOnRoundStarted OnRoundStartedDelegate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">StartRound</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        OnRoundStartedDelegate.Broadcast(); <span style="color:#75715e">// Notify all bound listeners
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h5 id="binding-a-dynamic-multi-cast-delegate-in-blueprints">Binding a Dynamic Multi-cast Delegate in Blueprints</h5>
+<p>Dynamic multi-cast delegates can be bound directly in Blueprints by dragging the <code>OnRoundStarted</code> event into the Blueprint editor. This makes it easy to integrate C++ and Blueprint functionality for events that multiple Blueprint scripts need to react to.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="using-parameters-and-return-types-with-delegates">Using Parameters and Return Types with Delegates</h3>
+<p>Delegates can be defined to accept parameters and, in some cases, a return type, which allows data to be passed directly through the delegate. Here is a breakdown of what is supported by each type:</p>
+<ul>
+<li><strong>Single-cast delegates</strong>: Support parameters and return types.</li>
+<li><strong>Multi-cast delegates</strong>: Support parameters but not return types, as multiple listeners could return conflicting values.</li>
+<li><strong>Dynamic single-cast delegates</strong>: Support parameters but not return types.</li>
+<li><strong>Dynamic multi-cast delegates</strong>: Support parameters but not return types.</li>
+</ul>
+<p>To define delegates with parameters, you can use Unreal&rsquo;s parameterized macros, such as <code>DECLARE_DELEGATE_OneParam</code> or <code>DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam</code>. To add a return type, use macros like <code>DECLARE_DELEGATE_RetVal</code>.</p>
+<p>For example, here’s a single-cast delegate with a <code>float</code> parameter and a <code>bool</code> return type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Single-cast Delegate with Parameter and Return Type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DELEGATE_RetVal_OneParam(<span style="color:#66d9ef">bool</span>, FOnHealthCheck, <span style="color:#66d9ef">float</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">APlayerCharacter</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> ACharacter
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The single-cast delegate instance with a float parameter and a bool return type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnHealthCheck OnHealthCheckDelegate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">CheckHealth</span>(<span style="color:#66d9ef">float</span> Threshold)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (OnHealthCheckDelegate.IsBound())
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> OnHealthCheckDelegate.Execute(Threshold);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>You could then bind a function or lambda to this delegate that returns <code>true</code> or <code>false</code> based on the health threshold.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<div style="overflow-x: auto">
+<h3 id="comparison-table">Comparison Table</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Delegate Type</strong></th>
+          <th style="text-align: center"><strong>Supports Parameters</strong></th>
+          <th style="text-align: center"><strong>Supports Return Type</strong></th>
+          <th style="text-align: center"><strong>Blueprint Accessible</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Single-cast Delegate</strong></td>
+          <td style="text-align: center">Yes</td>
+          <td style="text-align: center">Yes</td>
+          <td style="text-align: center">No</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Multi-cast Delegate</strong></td>
+          <td style="text-align: center">Yes</td>
+          <td style="text-align: center">No</td>
+          <td style="text-align: center">No</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Dynamic Single-cast Delegate</strong></td>
+          <td style="text-align: center">Yes</td>
+          <td style="text-align: center">No</td>
+          <td style="text-align: center">Yes</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Dynamic Multi-cast Delegate</strong></td>
+          <td style="text-align: center">Yes</td>
+          <td style="text-align: center">No</td>
+          <td style="text-align: center">Yes</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="conclusion">Conclusion</h3>
+<p>Delegates are essential for creating event-driven systems in Unreal Engine, providing flexibility, modularity, and ease of use. Understanding when to use each type of delegate (single-cast vs. multi-cast, dynamic vs. non-dynamic) helps in designing scalable and responsive game systems. Using the right delegate type ensures that your code is maintainable, whether working in C++ or Blueprint, and opens up creative ways to trigger events across your game’s actors and components.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+
+
+						
+						<div class="tags-links">
+							<span>Tags:</span>
+							
+							<a href="https://agrawalsuneet.github.io/tags/unreal/" rel="tag">Unreal</a>
+							
+						</div>
+						
+
+						
+					</div>
+				</div>
+
+				
+				
+				<div class="comments-post scrolla-element-anim-1 scroll-animate" data-animate="active">
+					<div class="section__comments">
+
+						<div class="m-titles">
+							<div class="m-title align-left">Comments</div>
+						</div>
+
+						<div class="comments">
+							<div id="disqus_trigger" class="load-more">
+								<button onclick="load_disqus()" class="btn scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<span>Load Comments</span>
+								</a>
+							</div>
+							<div id="disqus_thread"></div>
+							<script>
+								function load_disqus() {
+								  
+								  var disqus_trigger = document.getElementById('disqus_trigger'),
+									  disqus_target = document.getElementById('disqus_thread'),
+									  disqus_embed  = document.createElement('script'),
+									  disqus_hook   = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+								
+								  
+								  if( disqus_target && disqus_trigger ) {
+									disqus_embed.type = 'text/javascript';
+									disqus_embed.async = true;
+									disqus_embed.src = 'https://agrawalsuneet.disqus.com/embed.js';
+									disqus_hook.appendChild(disqus_embed);
+									disqus_trigger.remove();
+									console.log('Disqus loaded');
+
+									
+									let remove_ads = setInterval(() => {
+										console.log('Checking for Disqus Ads');
+
+										let iframes = document.getElementsByTagName('iframe');
+
+										for (var iframe in iframes) {
+											if (iframes[iframe].id.includes("dsq") 
+											&& iframes[iframe].name.includes("dsq") 
+											&& !iframes[iframe].src.includes("disqus.com/embed/comments")) {
+												iframes[iframe].style.display = 'none';
+												clearInterval(remove_ads);
+												console.log('Disqus Ads removed');
+											}
+										}
+									}, 1000);
+
+									setTimeout(function () {
+										clearInterval(remove_ads);
+									}, 5000);
+								  }
+								}
+							</script>
+							
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+
+			
+					
+					
+		</div>
+
+		<div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+	</div>
+</section>
+
+
+
+<div class="section section-inner m-page-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				<div class="h-titles h-navs">
+					
+					<a href="https://agrawalsuneet.github.io/blogs/get-and-set-methods-with-date-objects-in-javascript/">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+							Previous Post
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							Get and Set Methods with Date Objects in JavaScript
+						</span>
+					</a>
+					
+					</br>
+					</br>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    
+<div class="footer">
+	<div class="footer__builder">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+				
+				<a href="https://www.linkedin.com/in/agrawalsuneet/" target="_blank" rel="nofollow" title="Linkedin">
+				  <i aria-hidden="true" class="fab fa-linkedin"></i>
+				</a>
+				
+				<a href="https://github.com/agrawalsuneet" target="_blank" rel="nofollow" title="Github">
+				  <i aria-hidden="true" class="fab fa-github"></i>
+				</a>
+				
+				<a href="https://medium.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Medium">
+				  <i aria-hidden="true" class="fab fa-medium"></i>
+				</a>
+				
+				<a href="https://www.youtube.com/@agrawalsuneet" target="_blank" rel="nofollow" title="Youtube">
+				  <i aria-hidden="true" class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		  </div>
+
+		  
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+				© 2023 <strong>Suneet</strong>. All rights reserved
+			</div>
+		  </div>
+		  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+				Developed by <strong>Suneet Agrawal</strong>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Cursor -->
+	<div class="cursor"></div>
+
+  <!-- Scripts -->
+  <script src="https://agrawalsuneet.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/validate/jquery.validate.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/swiper/swiper.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/magnific-popup/magnific-popup.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/splitting/splitting.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/isotope/isotope.pkgd.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/jarallax/jarallax.min.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/scrolla/jquery.scrolla.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/skrollr/skrollr.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/cookie/jquery.cookie.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/typed/typed.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/rrssb/rrssb.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/plugins/mark/mark.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/fuse/fuse.js"></script>
+<script src="https://agrawalsuneet.github.io/plugins/search/simple-search.js"></script>
+
+
+
+<script src="https://agrawalsuneet.github.io/js/form-handler.min.js"></script>
+
+
+<script src="https://agrawalsuneet.github.io/js/common.min.js"></script>
+
+</body>
+
+</html>

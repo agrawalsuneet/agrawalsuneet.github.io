@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Delegates in Unreal &middot; Suneet Agrawal</title>
+  <title>Lambda in Unreal &middot; Suneet Agrawal</title>
 
   <!-- Meta -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -13,18 +13,18 @@
   <meta name="owner" content="Suneet Agrawal">
   <meta property="twitter:title" content="Suneet Agrawal">
 
-  <meta name="topic" content="Delegates in Unreal">
-    <meta name="description" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
-    <meta property="og:description" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
-    <meta property="twitter:description" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
-    <meta name="abstract" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior.">
-    <meta name="summary" content="Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior."> 
+  <meta name="topic" content="Lambda in Unreal">
+    <meta name="description" content="Lambda functions, or lambdas, are an essential tool in modern C&#43;&#43; programming and have powerful applications in Unreal Engine. They offer a concise way to define small, inline functions and are ideal for simplifying code, especially when working with delegates, multi-threaded tasks, or passing functions as parameters.">
+    <meta property="og:description" content="Lambda functions, or lambdas, are an essential tool in modern C&#43;&#43; programming and have powerful applications in Unreal Engine. They offer a concise way to define small, inline functions and are ideal for simplifying code, especially when working with delegates, multi-threaded tasks, or passing functions as parameters.">
+    <meta property="twitter:description" content="Lambda functions, or lambdas, are an essential tool in modern C&#43;&#43; programming and have powerful applications in Unreal Engine. They offer a concise way to define small, inline functions and are ideal for simplifying code, especially when working with delegates, multi-threaded tasks, or passing functions as parameters.">
+    <meta name="abstract" content="Lambda functions, or lambdas, are an essential tool in modern C&#43;&#43; programming and have powerful applications in Unreal Engine. They offer a concise way to define small, inline functions and are ideal for simplifying code, especially when working with delegates, multi-threaded tasks, or passing functions as parameters.">
+    <meta name="summary" content="Lambda functions, or lambdas, are an essential tool in modern C&#43;&#43; programming and have powerful applications in Unreal Engine. They offer a concise way to define small, inline functions and are ideal for simplifying code, especially when working with delegates, multi-threaded tasks, or passing functions as parameters."> 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content=" 2024-11-01 "> 
+    <meta property="article:published_time" content=" 2024-11-15 "> 
 
-    <meta name="url" content="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
-    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
-    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
+    <meta name="url" content="https://agrawalsuneet.github.io/blogs/lambda-in-unreal/">
+    <meta property="og:url" content="https://agrawalsuneet.github.io/blogs/lambda-in-unreal/">
+    <meta property="al:web:url" content="https://agrawalsuneet.github.io/blogs/lambda-in-unreal/">
 
     <meta name="site_name" content="Suneet Agrawal">
     <meta property="og:site_name" content="Suneet Agrawal">
@@ -32,10 +32,10 @@
     <meta name="robots" content="max-image-preview:large">
     
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="delegates,unreal delegate,dynamic delegate,multicast delegate">
+    <meta name="keywords" content="lambda,unreal lambda,lambdas unreal">
     
     
-    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
+    <link rel="canonical" href="https://agrawalsuneet.github.io/blogs/lambda-in-unreal/">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="target" content="all" />
     <meta name="audience" content="all" />
@@ -279,10 +279,10 @@
 				<a href="https://agrawalsuneet.github.io/categories/blog/">Blog</a>
 				
 				
-				/ November 1, 2024 / 5 mins read / By Suneet Agrawal
+				/ November 15, 2024 / 6 mins read / By Suneet Agrawal
 			</div>
 			<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
-				Delegates in Unreal
+				Lambda in Unreal
 			</h1>
 		</div>
 
@@ -310,8 +310,24 @@
 				
 				<div class="description">
 					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
-						<p>Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior. In Unreal, delegates are especially useful in game development to handle events, respond to actions, or manage callbacks.</p>
-<p>In this blog, we&rsquo;ll go through the different types of delegates in Unreal Engine, explaining what they are, how they differ, and providing code examples for each type.</p>
+						<p>Lambda functions, or lambdas, are an essential tool in modern C++ programming and have powerful applications in Unreal Engine. They offer a concise way to define small, inline functions and are ideal for simplifying code, especially when working with delegates, multi-threaded tasks, or passing functions as parameters.</p>
+<p>In this blog, we’ll explore what lambdas are, how they work in Unreal Engine, and practical examples for common use cases.</p>
+<h3 id="what-is-a-lambda">What is a Lambda?</h3>
+<p>A lambda is an anonymous function defined directly within code, often as an inline expression. Lambdas are beneficial when the function logic is simple and doesn&rsquo;t need to be reused, as they reduce code clutter by avoiding the need for separate function declarations and definitions.</p>
+<p>In Unreal Engine, lambdas are particularly useful for:</p>
+<ul>
+<li>Event handling with delegates</li>
+<li>Multithreading with Async tasks</li>
+<li>Writing concise, inline code for loops or algorithms</li>
+</ul>
+<p>A lambda function in C++ has the following basic syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>[<span style="color:#75715e">/* capture */</span>](<span style="color:#75715e">/* parameters */</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#75715e">/* return type */</span> { <span style="color:#75715e">/* function body */</span> };
+</span></span></code></pre></div><ul>
+<li><strong>Capture</strong>: Specifies which variables from the enclosing scope are available within the lambda.</li>
+<li><strong>Parameters</strong>: The parameters that the lambda accepts.</li>
+<li><strong>Return Type</strong>: Optional; usually inferred automatically.</li>
+<li><strong>Function Body</strong>: The code that runs when the lambda is executed.</li>
+</ul>
 <div class="col-xs-12 googleads" aria-hidden="true">
     
     
@@ -327,109 +343,81 @@
     </script>
     
 </div>
-<h3 id="what-is-a-delegate">What is a Delegate?</h3>
-<p>A delegate in Unreal is a type-safe callback mechanism that allows one part of code to &ldquo;delegate&rdquo; functionality to another. Delegates are powerful tools to manage responses to actions, such as when a player triggers a specific action or when a game object completes an animation or reaches a target location.</p>
-<p>In Unreal Engine, there are four main types of delegates:</p>
-<ol>
-<li>Single-cast Delegates</li>
-<li>Multi-cast Delegates</li>
-<li>Dynamic Single-cast Delegates</li>
-<li>Dynamic Multi-cast Delegates</li>
-</ol>
-<p>Let’s take a deeper look into each type.</p>
-<div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="1-single-cast-delegates">1. Single-cast Delegates</h3>
-<p>A single-cast delegate is a delegate that can have only one binding at any given time. This is useful for situations where only one object needs to respond to a particular event.</p>
-<h5 id="how-to-declare-and-use-single-cast-delegates">How to Declare and Use Single-cast Delegates</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Single-cast Delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DELEGATE(FOnHealthChanged);
+<h3 id="1-using-lambdas-with-single-cast-delegates">1. Using Lambdas with Single-cast Delegates</h3>
+<p>Single-cast delegates in Unreal Engine allow you to bind a function to an event that can only have one listener. Lambdas are a perfect fit for these since you can easily define small, specific responses directly inline without creating additional functions.</p>
+<h5 id="example-binding-a-lambda-to-a-delegate">Example: Binding a Lambda to a Delegate</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DELEGATE(FOnJumpPressed);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// A class using Single-cast Delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">APlayerCharacter</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> ACharacter
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AMyCharacter</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> ACharacter
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The single-cast delegate instance
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Delegate instance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnJumpPressed OnJumpPressedDelegate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">Jump</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        OnJumpPressedDelegate.ExecuteIfBound();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>AMyCharacter<span style="color:#f92672">*</span> Character <span style="color:#f92672">=</span> GetMyCharacter();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Bind a lambda to the delegate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Character<span style="color:#f92672">-&gt;</span>OnJumpPressedDelegate.BindLambda([]()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Player pressed jump!&#34;</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Character<span style="color:#f92672">-&gt;</span>Jump(); <span style="color:#75715e">// This will log &#34;Player pressed jump!&#34;
+</span></span></span></code></pre></div><p>In this example, we define a <code>Jump</code> function that triggers the <code>OnJumpPressedDelegate</code>. By binding a lambda to the delegate, we log a message whenever the jump function is called.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="2-lambdas-with-parameters">2. Lambdas with Parameters</h3>
+<p>Lambdas can accept parameters just like regular functions. This is especially useful for delegates that pass data to their listeners, such as when passing player input values or state changes.</p>
+<h5 id="example-binding-a-lambda-with-parameters">Example: Binding a Lambda with Parameters</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a delegate with parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DELEGATE_OneParam(FOnHealthChanged, <span style="color:#66d9ef">float</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AMyCharacter</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> ACharacter
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Delegate instance
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnHealthChanged OnHealthChangedDelegate;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">TakeDamage</span>(<span style="color:#66d9ef">float</span> DamageAmount)
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>        Health <span style="color:#f92672">-=</span> DamageAmount;
-</span></span><span style="display:flex;"><span>        OnHealthChangedDelegate.ExecuteIfBound(); <span style="color:#75715e">// Trigger the delegate
+</span></span><span style="display:flex;"><span>        OnHealthChangedDelegate.ExecuteIfBound(Health); <span style="color:#75715e">// Pass health as parameter
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> Health <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0f</span>;
 </span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><h5 id="binding-and-executing-a-single-cast-delegate">Binding and Executing a Single-cast Delegate</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>APlayerCharacter<span style="color:#f92672">*</span> Player <span style="color:#f92672">=</span> GetPlayerCharacter();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Player<span style="color:#f92672">-&gt;</span>OnHealthChangedDelegate.BindLambda([]()
+</span></span><span style="display:flex;"><span>AMyCharacter<span style="color:#f92672">*</span> Character <span style="color:#f92672">=</span> GetMyCharacter();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Bind a lambda that accepts the current health as a parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Character<span style="color:#f92672">-&gt;</span>OnHealthChangedDelegate.BindLambda([](<span style="color:#66d9ef">float</span> CurrentHealth)
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Player&#39;s health has changed!&#34;</span>));
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Health changed! New Health: %f&#34;</span>), CurrentHealth);
 </span></span><span style="display:flex;"><span>});
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Player<span style="color:#f92672">-&gt;</span>TakeDamage(<span style="color:#ae81ff">50.0f</span>); <span style="color:#75715e">// This will call the delegate if health changes
-</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="2-multi-cast-delegates">2. Multi-cast Delegates</h3>
-<p>A multi-cast delegate can bind multiple functions to a single event, allowing multiple listeners to respond when the event occurs. Multi-cast delegates are perfect when multiple systems or actors need to respond to the same event, such as a global game event that should notify various UI elements.</p>
-<h5 id="how-to-declare-and-use-multi-cast-delegates">How to Declare and Use Multi-cast Delegates</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Multi-cast Delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_MULTICAST_DELEGATE(FOnPlayerDied);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// A class using Multi-cast Delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AGameModeBase</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> AGameMode
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The multi-cast delegate instance
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnPlayerDied OnPlayerDiedDelegate;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">PlayerDeath</span>()
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        OnPlayerDiedDelegate.Broadcast(); <span style="color:#75715e">// Notify all listeners
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><h5 id="binding-and-executing-a-multi-cast-delegate">Binding and Executing a Multi-cast Delegate</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>AGameModeBase<span style="color:#f92672">*</span> GameMode <span style="color:#f92672">=</span> GetWorld()<span style="color:#f92672">-&gt;</span>GetAuthGameMode<span style="color:#f92672">&lt;</span>AGameModeBase<span style="color:#f92672">&gt;</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Binding multiple listeners
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>GameMode<span style="color:#f92672">-&gt;</span>OnPlayerDiedDelegate.AddLambda([]()
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Listener 1: Player has died!&#34;</span>));
-</span></span><span style="display:flex;"><span>});
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>GameMode<span style="color:#f92672">-&gt;</span>OnPlayerDiedDelegate.AddLambda([]()
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Listener 2: Player has died!&#34;</span>));
-</span></span><span style="display:flex;"><span>});
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Trigger the delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>GameMode<span style="color:#f92672">-&gt;</span>PlayerDeath();
-</span></span></code></pre></div><p>When <code>PlayerDeath()</code> is called, both listeners will log a message to the console.</p>
+</span></span><span style="display:flex;"><span>Character<span style="color:#f92672">-&gt;</span>TakeDamage(<span style="color:#ae81ff">20.0f</span>); <span style="color:#75715e">// This will log the new health value
+</span></span></span></code></pre></div><p>Here, <code>OnHealthChangedDelegate</code> is triggered whenever the character’s health changes. We bind a lambda that takes the current health as a parameter and logs it, making it easy to track health changes in real-time.</p>
 <div class="col-xs-12 googleads" aria-hidden="true">
     
     
@@ -445,73 +433,20 @@
     </script>
     
 </div>
-<h3 id="3-dynamic-single-cast-delegates">3. Dynamic Single-cast Delegates</h3>
-<p>Dynamic single-cast delegates can be serialized and exposed to Blueprints. They are useful when you need to bind a function that can be called in both C++ and Blueprints. This is ideal when creating modular systems that may be extended by designers in the Unreal Editor.</p>
-<h5 id="how-to-declare-and-use-dynamic-single-cast-delegates">How to Declare and Use Dynamic Single-cast Delegates</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Dynamic Single-cast Delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DYNAMIC_DELEGATE(FOnHealthRestored);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AHealingStation</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> AActor
+<h3 id="3-using-lambdas-for-multithreading-with-async">3. Using Lambdas for Multithreading with Async</h3>
+<p>The <code>Async</code> function in Unreal Engine simplifies running tasks on a separate thread, which is useful for tasks that could block the game thread, like heavy computations or network requests. Lambdas make it easy to define these tasks inline.</p>
+<h5 id="example-running-a-heavy-computation-with-async-and-a-lambda">Example: Running a Heavy Computation with Async and a Lambda</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Perform a heavy computation asynchronously
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Async(EAsyncExecution<span style="color:#f92672">::</span>Thread, []()
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    GENERATED_BODY()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The dynamic single-cast delegate instance
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnHealthRestored OnHealthRestoredDelegate;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">HealPlayer</span>()
+</span></span><span style="display:flex;"><span>    int32 Result <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (int32 i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1000000</span>; <span style="color:#f92672">++</span>i)
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        OnHealthRestoredDelegate.ExecuteIfBound();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><h5 id="binding-a-dynamic-single-cast-delegate">Binding a Dynamic Single-cast Delegate</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>AHealingStation<span style="color:#f92672">*</span> HealingStation <span style="color:#f92672">=</span> GetWorld()<span style="color:#f92672">-&gt;</span>SpawnActor<span style="color:#f92672">&lt;</span>AHealingStation<span style="color:#f92672">&gt;</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>HealingStation<span style="color:#f92672">-&gt;</span>OnHealthRestoredDelegate.BindDynamic(<span style="color:#66d9ef">this</span>, <span style="color:#f92672">&amp;</span>AMyClass<span style="color:#f92672">::</span>OnPlayerHealed);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> AMyClass<span style="color:#f92672">::</span>OnPlayerHealed()
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Player healed through a dynamic delegate!&#34;</span>));
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>HealingStation<span style="color:#f92672">-&gt;</span>HealPlayer(); <span style="color:#75715e">// This will trigger OnPlayerHealed
-</span></span></span></code></pre></div><div class="col-xs-12 googleads" aria-hidden="true">
-    
-    
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1093303282603666"
-     data-ad-slot="5254968909"
-     data-ad-format="horizontal"
-     data-full-width-responsive="true"></ins>
-     
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-</div>
-<h3 id="4-dynamic-multi-cast-delegates">4. Dynamic Multi-cast Delegates</h3>
-<p>Dynamic multi-cast delegates can bind multiple functions and are also exposed to Blueprints. They are useful for managing events where both C++ and Blueprint classes might need to respond, making them ideal for gameplay events such as starting or ending a game round.</p>
-<h5 id="how-to-declare-and-use-dynamic-multi-cast-delegates">How to Declare and Use Dynamic Multi-cast Delegates</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Dynamic Multi-cast Delegate
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoundStarted);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AGameModeBase</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> AGameMode
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    GENERATED_BODY()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The dynamic multi-cast delegate instance
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    UPROPERTY(BlueprintAssignable)
-</span></span><span style="display:flex;"><span>    FOnRoundStarted OnRoundStartedDelegate;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">StartRound</span>()
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        OnRoundStartedDelegate.Broadcast(); <span style="color:#75715e">// Notify all bound listeners
+</span></span><span style="display:flex;"><span>        Result <span style="color:#f92672">+=</span> i; <span style="color:#75715e">// Simulate heavy computation
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><h5 id="binding-a-dynamic-multi-cast-delegate-in-blueprints">Binding a Dynamic Multi-cast Delegate in Blueprints</h5>
-<p>Dynamic multi-cast delegates can be bound directly in Blueprints by dragging the <code>OnRoundStarted</code> event into the Blueprint editor. This makes it easy to integrate C++ and Blueprint functionality for events that multiple Blueprint scripts need to react to.</p>
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Computation finished with result: %d&#34;</span>), Result);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>In this example, we execute a lambda on a separate thread to handle a heavy computation, which prevents it from blocking the game thread. Using <code>Async</code> with a lambda keeps the code compact and readable.</p>
 <div class="col-xs-12 googleads" aria-hidden="true">
     
     
@@ -527,35 +462,52 @@
     </script>
     
 </div>
-<h3 id="using-parameters-and-return-types-with-delegates">Using Parameters and Return Types with Delegates</h3>
-<p>Delegates can be defined to accept parameters and, in some cases, a return type, which allows data to be passed directly through the delegate. Here is a breakdown of what is supported by each type:</p>
+<h3 id="4-using-lambdas-in-timers">4. Using Lambdas in Timers</h3>
+<p>Unreal Engine’s <code>GetWorldTimerManager().SetTimer</code> function allows you to set up delayed events or recurring timers. Lambdas are convenient here, as they allow you to define the callback function directly within the timer call, making the code concise and keeping related logic in one place.</p>
+<h5 id="example-setting-up-a-timer-with-a-lambda">Example: Setting Up a Timer with a Lambda</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>FTimerHandle TimerHandle;
+</span></span><span style="display:flex;"><span>GetWorldTimerManager().SetTimer(TimerHandle, []()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Timer tick!&#34;</span>));
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">1.0f</span>, true); <span style="color:#75715e">// Executes every second
+</span></span></span></code></pre></div><p>This code sets up a timer to log <code>Timer tick!</code> every second. Using a lambda for the callback keeps the timer setup code clean and concise.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="5-capturing-variables-in-lambdas">5. Capturing Variables in Lambdas</h3>
+<p>Capturing variables in a lambda means allowing it to access variables from the surrounding scope. In Unreal, this can be handy when you need to use class members or external variables within the lambda body.</p>
+<p>There are three common capture modes:</p>
 <ul>
-<li><strong>Single-cast delegates</strong>: Support parameters and return types.</li>
-<li><strong>Multi-cast delegates</strong>: Support parameters but not return types, as multiple listeners could return conflicting values.</li>
-<li><strong>Dynamic single-cast delegates</strong>: Support parameters but not return types.</li>
-<li><strong>Dynamic multi-cast delegates</strong>: Support parameters but not return types.</li>
+<li><code>[=]</code>: Captures variables by value (a copy).</li>
+<li><code>[&amp;]</code>: Captures variables by reference (allows modification).</li>
+<li><code>[this]</code>: Captures the current object by reference (used often in Unreal for class member access).</li>
 </ul>
-<p>To define delegates with parameters, you can use Unreal&rsquo;s parameterized macros, such as <code>DECLARE_DELEGATE_OneParam</code> or <code>DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam</code>. To add a return type, use macros like <code>DECLARE_DELEGATE_RetVal</code>.</p>
-<p>For example, here’s a single-cast delegate with a <code>float</code> parameter and a <code>bool</code> return type:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// Declare a Single-cast Delegate with Parameter and Return Type
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DECLARE_DELEGATE_RetVal_OneParam(<span style="color:#66d9ef">bool</span>, FOnHealthCheck, <span style="color:#66d9ef">float</span>);
+<h5 id="example-capturing-variables-in-a-lambda">Example: Capturing Variables in a Lambda</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> PlayerHealth <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0f</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Damage <span style="color:#f92672">=</span> <span style="color:#ae81ff">25.0f</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">APlayerCharacter</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> ACharacter
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Lambda that captures PlayerHealth by reference and Damage by value
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> ApplyDamage <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>, Damage]()
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The single-cast delegate instance with a float parameter and a bool return type
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    FOnHealthCheck OnHealthCheckDelegate;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">CheckHealth</span>(<span style="color:#66d9ef">float</span> Threshold)
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (OnHealthCheckDelegate.IsBound())
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> OnHealthCheckDelegate.Execute(Threshold);
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> false;
-</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    PlayerHealth <span style="color:#f92672">-=</span> Damage;
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Player Health after damage: %f&#34;</span>), PlayerHealth);
 </span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><p>You could then bind a function or lambda to this delegate that returns <code>true</code> or <code>false</code> based on the health threshold.</p>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Call the lambda
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>ApplyDamage(); <span style="color:#75715e">// Outputs updated health
+</span></span></span></code></pre></div><p>In this example, <code>PlayerHealth</code> is captured by reference (using <code>[&amp;]</code>), allowing the lambda to modify it, while <code>Damage</code> is captured by value, creating a local copy of the original variable.</p>
 <div class="col-xs-12 googleads" aria-hidden="true">
     
     
@@ -571,47 +523,83 @@
     </script>
     
 </div>
-<h3 id="comparison-table">Comparison Table</h3>
+<h3 id="6-using-lambdas-with-tarraysort">6. Using Lambdas with TArray::Sort</h3>
+<p>Lambdas are often used with Unreal&rsquo;s array functions like <code>Sort</code>, <code>FilterByPredicate</code>, etc., to quickly define sorting or filtering behavior inline.</p>
+<h5 id="example-sorting-an-array-of-integers-with-a-lambda">Example: Sorting an Array of Integers with a Lambda</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>TArray<span style="color:#f92672">&lt;</span>int32<span style="color:#f92672">&gt;</span> Scores <span style="color:#f92672">=</span> { <span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">89</span>, <span style="color:#ae81ff">72</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Sort scores in descending order
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Scores.Sort([](int32 A, int32 B)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> A <span style="color:#f92672">&gt;</span> B; <span style="color:#75715e">// Sort descending
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (int32 Score : Scores)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    UE_LOG(LogTemp, Warning, TEXT(<span style="color:#e6db74">&#34;Score: %d&#34;</span>), Score);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This lambda sorts an array of scores in descending order. By defining the sorting criteria directly in the lambda, you keep the code concise and focused.</p>
+<div class="col-xs-12 googleads" aria-hidden="true">
+    
+    
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1093303282603666"
+     data-ad-slot="5254968909"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+     
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+</div>
+<h3 id="summary-table-of-lambda-use-cases-in-unreal-engine">Summary Table of Lambda Use Cases in Unreal Engine</h3>
 <div style="overflow-x: auto">
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"><strong>Delegate Type</strong></th>
-          <th style="text-align: center"><strong>Supports Parameters</strong></th>
-          <th style="text-align: center"><strong>Supports Return Type</strong></th>
-          <th style="text-align: center"><strong>Blueprint Accessible</strong></th>
+          <th style="text-align: left"><strong>Use Case</strong></th>
+          <th style="text-align: center"><strong>Example Code Snippet</strong></th>
+          <th style="text-align: center"><strong>Description</strong></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><strong>Single-cast Delegate</strong></td>
-          <td style="text-align: center">Yes</td>
-          <td style="text-align: center">Yes</td>
-          <td style="text-align: center">No</td>
+          <td style="text-align: left"><strong>Single-cast Delegate Binding</strong></td>
+          <td style="text-align: center"><code>Delegate.BindLambda([](){ /*...*/ });</code></td>
+          <td style="text-align: center">Inline event handling for specific events</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Multi-cast Delegate</strong></td>
-          <td style="text-align: center">Yes</td>
-          <td style="text-align: center">No</td>
-          <td style="text-align: center">No</td>
+          <td style="text-align: left"><strong>Delegate with Parameters</strong></td>
+          <td style="text-align: center"><code>Delegate.BindLambda([](float Value){ /*...*/ });</code></td>
+          <td style="text-align: center">Passes parameters to inline delegate actions</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Dynamic Single-cast Delegate</strong></td>
-          <td style="text-align: center">Yes</td>
-          <td style="text-align: center">No</td>
-          <td style="text-align: center">Yes</td>
+          <td style="text-align: left"><strong>Async Task Execution</strong></td>
+          <td style="text-align: center"><code>Async(EAsyncExecution::Thread, [](){ /*...*/ });</code></td>
+          <td style="text-align: center">Runs heavy tasks on separate threads</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Dynamic Multi-cast Delegate</strong></td>
-          <td style="text-align: center">Yes</td>
-          <td style="text-align: center">No</td>
-          <td style="text-align: center">Yes</td>
+          <td style="text-align: left"><strong>Timer Callback</strong></td>
+          <td style="text-align: center"><code>SetTimer(TimerHandle, [](){ /*...*/ }, 1.0f, true);</code></td>
+          <td style="text-align: center">Inline timer callbacks</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Capture by Reference/Value</strong></td>
+          <td style="text-align: center"><code>auto Lambda = [&amp;, Var](){ /*...*/ };</code></td>
+          <td style="text-align: center">Access outer scope variables in lambda</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Array Sorting</strong></td>
+          <td style="text-align: center"><code>Array.Sort([](Type A, Type B) { return A &lt; B; });</code></td>
+          <td style="text-align: center">Custom sort directly within Sort function</td>
       </tr>
   </tbody>
 </table>
 </div>
 <h3 id="conclusion">Conclusion</h3>
-<p>Delegates are essential for creating event-driven systems in Unreal Engine, providing flexibility, modularity, and ease of use. Understanding when to use each type of delegate (single-cast vs. multi-cast, dynamic vs. non-dynamic) helps in designing scalable and responsive game systems. Using the right delegate type ensures that your code is maintainable, whether working in C++ or Blueprint, and opens up creative ways to trigger events across your game’s actors and components.</p>
+<p>Lambdas are versatile, anonymous functions that add flexibility and conciseness to Unreal Engine code. By using them with delegates, timers, async tasks, and sorting functions, you can streamline code and keep related functionality localized to the place where it’s needed. Whether you’re handling input events, managing game state, or creating efficient multithreaded tasks, lambdas can help you keep your Unreal Engine codebase efficient and readable.</p>
 <div class="col-xs-12 googleads" aria-hidden="true">
     
     
@@ -725,26 +713,17 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
 				<div class="h-titles h-navs">
 					
-					<a href="https://agrawalsuneet.github.io/blogs/get-and-set-methods-with-date-objects-in-javascript/">
+					<a href="https://agrawalsuneet.github.io/blogs/delegates-in-unreal/">
 						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
 							Previous Post
 						</span>
 						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-							Get and Set Methods with Date Objects in JavaScript
+							Delegates in Unreal
 						</span>
 					</a>
 					
 					</br>
 					</br>
-					
-					<a href="https://agrawalsuneet.github.io/blogs/lambda-in-unreal/">
-						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
-							Next Post
-						</span>
-						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
-							Lambda in Unreal
-						</span>
-					</a>
 					
 				</div>
 			</div>
